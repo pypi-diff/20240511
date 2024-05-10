@@ -205,3 +205,45 @@
 [2024-05-11 00:08:03] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.9.tar.gz]
 [2024-05-11 00:08:03] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
 [2024-05-11 00:08:03] INFO root fetch - main [MainThread]: Store serial: [23153602]
+[2024-05-11 00:10:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153602]
+[2024-05-11 00:10:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 00:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prophetverse
+[2024-05-11 00:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-11 00:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glpic
+[2024-05-11 00:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nnfasta
+[2024-05-11 00:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leo-1c
+[2024-05-11 00:10:12] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 00:10:12] INFO root fetch - processPackages [prophetverse]: New version: [0.0.4] Old Version: [0.0.3rc1]
+[2024-05-11 00:10:12] INFO root fetch - processPackages [glpic]: New version: [99.0.202405101336] Old Version: [99.0.202405101249]
+[2024-05-11 00:10:12] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 00:10:12] WARNING root fetch - processPackages [leo-1c]: Skipping, unable to determine old version
+[2024-05-11 00:10:12] INFO root fetch - main [MainThread]: End processing [leo-1c] error
+[2024-05-11 00:10:12] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [prophetverse]: Downloading https://files.pythonhosted.org/packages/77/71/935e16a0e84141354285424ccc84d682d9735ac87bfe85afca6c8b3f1109/prophetverse-0.0.3rc1.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/36/b1/9ca524f3f4d04917263dc965af227ce234ed34bd1a2c883f4ae02e55271c/glpic-99.0.202405101249.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [prophetverse]: Downloading https://files.pythonhosted.org/packages/69/9f/2113da3bbc3daf02a623728c61233f025c4f5e926242e9ae213304c2b40d/prophetverse-0.0.4.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [prophetverse]: executing diffoscope
+[2024-05-11 00:10:12] INFO root fetch - processPackages [prophetverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prophetverse-0.0.3rc1.tar.gz tmp/prophetverse-0.0.4.tar.gz --markdown 20240511/p/prophetverse/0.0.3rc1-0.0.4/README.md --exclude *.pyd
+[2024-05-11 00:10:12] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/3f/42/da228b8c98409151251a087e727a4f75a97a91b2e7a2859ec005bbef92be/glpic-99.0.202405101336.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 00:10:12] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-11 00:10:12] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240511/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 00:10:12] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-11 00:10:12] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405101249.tar.gz tmp/glpic-99.0.202405101336.tar.gz --markdown 20240511/g/glpic/99.0.202405101249-99.0.202405101336/README.md --exclude *.pyd
+[2024-05-11 00:10:12] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 00:10:12] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 00:10:13] INFO root fetch - processPackages [prophetverse]: Remove: archive file [/home/abi/fetcher/tmp/prophetverse-0.0.3rc1.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - processPackages [prophetverse]: Remove: archive file [/home/abi/fetcher/tmp/prophetverse-0.0.4.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - main [MainThread]: End processing [prophetverse]: success
+[2024-05-11 00:10:13] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405101249.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405101336.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-11 00:10:13] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-11 00:10:13] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 00:10:13] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 00:10:13] INFO root fetch - main [MainThread]: Store serial: [23153619]
