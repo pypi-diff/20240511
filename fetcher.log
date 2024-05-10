@@ -928,3 +928,24 @@
 [2024-05-11 01:00:17] INFO root fetch - processPackages [netbox-data-flows]: Remove: archive file [/home/abi/fetcher/tmp/netbox_data_flows-0.9.0.tar.gz]
 [2024-05-11 01:00:17] INFO root fetch - main [MainThread]: End processing [netbox-data-flows]: success
 [2024-05-11 01:00:17] INFO root fetch - main [MainThread]: Store serial: [23153871]
+[2024-05-11 01:02:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153871]
+[2024-05-11 01:02:27] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 01:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkscreener
+[2024-05-11 01:02:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hydroperiodz
+[2024-05-11 01:02:27] INFO root fetch - processPackages [hydroperiodz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:02:27] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240510.358] Old Version: [0.44.20240509.357]
+[2024-05-11 01:02:27] INFO root fetch - processPackages [hydroperiodz]: Downloading https://files.pythonhosted.org/packages/34/5b/99d20653b78f3852f45116784962ff294b596efa885b1127b7ed3d8d185e/hydroperiodz-1.1.tar.gz
+[2024-05-11 01:02:27] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/84/09/5cb5f7835160ea1e960f2754aab45ef69566252bd62eed8645e007d9ed22/pkscreener-0.44.20240509.357.tar.gz
+[2024-05-11 01:02:27] INFO root fetch - processPackages [hydroperiodz]: Downloading https://files.pythonhosted.org/packages/ff/1e/9e39b15b200da53a6ec4d3b29e2a0bf59850581a0f464b26e5bad9fade01/hydroperiodz-2.1.tar.gz
+[2024-05-11 01:02:28] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e9/7a/3ab5041c801147217659001aedcf12a61fdd950c2e801185e0d997b49b7e/pkscreener-0.44.20240510.358.tar.gz
+[2024-05-11 01:02:28] INFO root fetch - processPackages [hydroperiodz]: executing diffoscope
+[2024-05-11 01:02:28] INFO root fetch - processPackages [hydroperiodz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydroperiodz-1.1.tar.gz tmp/hydroperiodz-2.1.tar.gz --markdown 20240511/h/hydroperiodz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:02:28] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-11 01:02:28] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240509.357.tar.gz tmp/pkscreener-0.44.20240510.358.tar.gz --markdown 20240511/p/pkscreener/0.44.20240509.357-0.44.20240510.358/README.md --exclude *.pyd
+[2024-05-11 01:02:28] INFO root fetch - processPackages [hydroperiodz]: Remove: archive file [/home/abi/fetcher/tmp/hydroperiodz-1.1.tar.gz]
+[2024-05-11 01:02:28] INFO root fetch - processPackages [hydroperiodz]: Remove: archive file [/home/abi/fetcher/tmp/hydroperiodz-2.1.tar.gz]
+[2024-05-11 01:02:28] INFO root fetch - main [MainThread]: End processing [hydroperiodz]: success
+[2024-05-11 01:02:29] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240509.357.tar.gz]
+[2024-05-11 01:02:29] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240510.358.tar.gz]
+[2024-05-11 01:02:29] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-11 01:02:29] INFO root fetch - main [MainThread]: Store serial: [23153876]
