@@ -247,3 +247,36 @@
 [2024-05-11 00:10:13] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 00:10:13] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 00:10:13] INFO root fetch - main [MainThread]: Store serial: [23153619]
+[2024-05-11 00:12:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153619]
+[2024-05-11 00:12:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 00:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: handprintz
+[2024-05-11 00:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pseudovisium
+[2024-05-11 00:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mosaicml-streaming
+[2024-05-11 00:12:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: munits
+[2024-05-11 00:12:22] INFO root fetch - processPackages [Pseudovisium]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 00:12:22] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/ec/02/4f0ff6ebfecb2857195a25c3ca342a7a1af99e21acd71f8a0f89061491f0/Pseudovisium-0.0.8.tar.gz
+[2024-05-11 00:12:22] INFO root fetch - processPackages [handprintz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:12:22] WARNING root fetch - processPackages [munits]: Skipping, unable to determine old version
+[2024-05-11 00:12:22] INFO root fetch - main [MainThread]: End processing [munits] error
+[2024-05-11 00:12:22] INFO root fetch - processPackages [mosaicml-streaming]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-05-11 00:12:22] INFO root fetch - processPackages [handprintz]: Downloading https://files.pythonhosted.org/packages/aa/53/69d47939cf95b7891c4484e91d87af7abb9dfebeec3be2bf07ffd1598354/handprintz-1.1.tar.gz
+[2024-05-11 00:12:22] INFO root fetch - processPackages [Pseudovisium]: Downloading https://files.pythonhosted.org/packages/6a/7f/032756880a4d5dbead5465d90e6d9ef1046690f858021036f62dfcda246a/Pseudovisium-0.0.9.tar.gz
+[2024-05-11 00:12:22] INFO root fetch - processPackages [Pseudovisium]: executing diffoscope
+[2024-05-11 00:12:22] INFO root fetch - processPackages [Pseudovisium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Pseudovisium-0.0.8.tar.gz tmp/Pseudovisium-0.0.9.tar.gz --markdown 20240511/P/Pseudovisium/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:12:22] INFO root fetch - processPackages [handprintz]: Downloading https://files.pythonhosted.org/packages/47/25/62c330fa3a7238476c2d79eb781aa050d3ce58e3efac881eb692981cf872/handprintz-2.1.tar.gz
+[2024-05-11 00:12:22] INFO root fetch - processPackages [handprintz]: executing diffoscope
+[2024-05-11 00:12:22] INFO root fetch - processPackages [handprintz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/handprintz-1.1.tar.gz tmp/handprintz-2.1.tar.gz --markdown 20240511/h/handprintz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:12:23] INFO root fetch - processPackages [mosaicml-streaming]: Downloading https://files.pythonhosted.org/packages/08/01/3b27e240a799b0415f2444c66e35bbf89c012db420a7d0923742a4827d08/mosaicml-streaming-0.7.5.tar.gz
+[2024-05-11 00:12:23] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.8.tar.gz]
+[2024-05-11 00:12:23] INFO root fetch - processPackages [Pseudovisium]: Remove: archive file [/home/abi/fetcher/tmp/Pseudovisium-0.0.9.tar.gz]
+[2024-05-11 00:12:23] INFO root fetch - main [MainThread]: End processing [Pseudovisium]: success
+[2024-05-11 00:12:23] INFO root fetch - processPackages [handprintz]: Remove: archive file [/home/abi/fetcher/tmp/handprintz-1.1.tar.gz]
+[2024-05-11 00:12:23] INFO root fetch - processPackages [handprintz]: Remove: archive file [/home/abi/fetcher/tmp/handprintz-2.1.tar.gz]
+[2024-05-11 00:12:23] INFO root fetch - main [MainThread]: End processing [handprintz]: success
+[2024-05-11 00:12:23] INFO root fetch - processPackages [mosaicml-streaming]: Downloading https://files.pythonhosted.org/packages/8d/e6/40a6f97ff259073b3a7bde91758bf590c148e2bc9034de8df1399ec10ca4/mosaicml-streaming-0.7.6.tar.gz
+[2024-05-11 00:12:23] INFO root fetch - processPackages [mosaicml-streaming]: executing diffoscope
+[2024-05-11 00:12:23] INFO root fetch - processPackages [mosaicml-streaming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mosaicml-streaming-0.7.5.tar.gz tmp/mosaicml-streaming-0.7.6.tar.gz --markdown 20240511/m/mosaicml-streaming/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-05-11 00:12:24] INFO root fetch - processPackages [mosaicml-streaming]: Remove: archive file [/home/abi/fetcher/tmp/mosaicml-streaming-0.7.5.tar.gz]
+[2024-05-11 00:12:24] INFO root fetch - processPackages [mosaicml-streaming]: Remove: archive file [/home/abi/fetcher/tmp/mosaicml-streaming-0.7.6.tar.gz]
+[2024-05-11 00:12:24] INFO root fetch - main [MainThread]: End processing [mosaicml-streaming]: success
+[2024-05-11 00:12:24] INFO root fetch - main [MainThread]: Store serial: [23153631]
