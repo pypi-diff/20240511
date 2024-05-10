@@ -839,3 +839,24 @@
 [2024-05-11 00:53:46] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 00:53:46] INFO root fetch - main [MainThread]: Store serial: [23153841]
+[2024-05-11 00:55:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153841]
+[2024-05-11 00:55:55] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-11 00:55:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cterasdk
+[2024-05-11 00:55:55] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 00:55:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 00:55:55] INFO root fetch - processPackages [cterasdk]: New version: [2.9.0] Old Version: [2.8.32]
+[2024-05-11 00:55:55] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/c2/ce/c95746ee47212ba7b5c85fcfa94d1ebbcf4e2531af136ebcc0e3a2e3bf1e/cterasdk-2.8.32.tar.gz
+[2024-05-11 00:55:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 00:55:56] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 00:55:56] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 00:55:56] INFO root fetch - processPackages [cterasdk]: Downloading https://files.pythonhosted.org/packages/d4/ab/317328c3787fbc48fb1b583a042be4337d3957d4b83b9eaa386bffe76e02/cterasdk-2.9.0.tar.gz
+[2024-05-11 00:55:56] INFO root fetch - processPackages [cterasdk]: executing diffoscope
+[2024-05-11 00:55:56] INFO root fetch - processPackages [cterasdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cterasdk-2.8.32.tar.gz tmp/cterasdk-2.9.0.tar.gz --markdown 20240511/c/cterasdk/2.8.32-2.9.0/README.md --exclude *.pyd
+[2024-05-11 00:55:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 00:55:56] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 00:55:56] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 00:55:57] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.8.32.tar.gz]
+[2024-05-11 00:55:57] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.9.0.tar.gz]
+[2024-05-11 00:55:57] INFO root fetch - main [MainThread]: End processing [cterasdk]: success
+[2024-05-11 00:55:57] INFO root fetch - main [MainThread]: Store serial: [23153847]
