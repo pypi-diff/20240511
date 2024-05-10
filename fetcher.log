@@ -1174,3 +1174,63 @@
 [2024-05-11 01:17:41] INFO root fetch - processPackages [eintorch]: Remove: archive file [/home/abi/fetcher/tmp/eintorch-0.2.2.tar.gz]
 [2024-05-11 01:17:41] INFO root fetch - main [MainThread]: End processing [eintorch]: success
 [2024-05-11 01:17:41] INFO root fetch - main [MainThread]: Store serial: [23153953]
+[2024-05-11 01:19:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153953]
+[2024-05-11 01:19:49] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-kubernetes
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: illaudablyz
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wolf-comm
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GazooResearchUtils
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fal
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jiggetyz
+[2024-05-11 01:19:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dyff-storage
+[2024-05-11 01:19:49] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-11 01:19:49] INFO root fetch - processPackages [dyff-storage]: New version: [0.7.3] Old Version: [0.7.2]
+[2024-05-11 01:19:49] INFO root fetch - processPackages [fal]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 01:19:50] INFO root fetch - processPackages [pulumi-kubernetes]: New version: [4.9.1] Old Version: [4.9.0a1709600505]
+[2024-05-11 01:19:50] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/dd/29/4170ec640c465b90b59513b2d7dbb846930256b0c98884de2ab64f052807/GazooResearchUtils-1.3.1.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [wolf-comm]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 01:19:50] INFO root fetch - processPackages [illaudablyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:19:50] WARNING root fetch - processPackages [jiggetyz]: Skipping, unable to determine old version
+[2024-05-11 01:19:50] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/45/51/b737be9fd5a0781c5d7adc070609a31efbe0a49e69cb9e05fba9d74f38fa/dyff_storage-0.7.2.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - main [MainThread]: End processing [jiggetyz] error
+[2024-05-11 01:19:50] INFO root fetch - processPackages [fal]: Downloading https://files.pythonhosted.org/packages/45/8b/bd95ffbabbaae04ef49876fcb8360d1e64e6687b8fec9c5824cc497f52ef/fal-1.0.0.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [pulumi-kubernetes]: Downloading https://files.pythonhosted.org/packages/f5/70/02e4a8984b201b842988e123d98828a8b1023a0fe6f592c98fdebdca7506/pulumi_kubernetes-4.9.0a1709600505.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [wolf-comm]: Downloading https://files.pythonhosted.org/packages/f4/68/85dcde244d4373e6591953b8fcccd655128d5814455ef2454242dbb3f4b9/wolf_comm-0.0.7.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [illaudablyz]: Downloading https://files.pythonhosted.org/packages/f5/b9/fbfdc283f35ae09c126f51fd9004be328b0e7f7543c9330d45c8ba2a53b1/illaudablyz-1.1.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/e3/cd/51763bfd7b5169cbed73f46f053cf7a13f98d95dc542a1c0cd8d3dce7c23/GazooResearchUtils-1.3.2.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.3.1.tar.gz tmp/GazooResearchUtils-1.3.2.tar.gz --markdown 20240511/G/GazooResearchUtils/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-11 01:19:50] INFO root fetch - processPackages [fal]: Downloading https://files.pythonhosted.org/packages/e4/69/789a2b0d825cba3a6cf1316018425948e6568680f780bf3ff93a12b6ba87/fal-1.0.1.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/8d/ba/981e07b4a124a14de2bbf37f21139f80e0683b5d6bdb1412c68bd45590ca/dyff_storage-0.7.3.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [pulumi-kubernetes]: Downloading https://files.pythonhosted.org/packages/ae/8c/e58bd57f74c8cbc29a99be666c50a014e5a311981c62ce715186a4c80d41/pulumi_kubernetes-4.9.1.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [illaudablyz]: Downloading https://files.pythonhosted.org/packages/e0/1d/dd8ea56b0a3127e25bc6a1fb19716e5601c68149341b4aa71cab68faae7e/illaudablyz-2.1.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [fal]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [fal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fal-1.0.0.tar.gz tmp/fal-1.0.1.tar.gz --markdown 20240511/f/fal/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 01:19:50] INFO root fetch - processPackages [dyff-storage]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [dyff-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_storage-0.7.2.tar.gz tmp/dyff_storage-0.7.3.tar.gz --markdown 20240511/d/dyff-storage/0.7.2-0.7.3/README.md --exclude *.pyd
+[2024-05-11 01:19:50] INFO root fetch - processPackages [pulumi-kubernetes]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [pulumi-kubernetes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_kubernetes-4.9.0a1709600505.tar.gz tmp/pulumi_kubernetes-4.9.1.tar.gz --markdown 20240511/p/pulumi-kubernetes/4.9.0a1709600505-4.9.1/README.md --exclude *.pyd
+[2024-05-11 01:19:50] INFO root fetch - processPackages [wolf-comm]: Downloading https://files.pythonhosted.org/packages/9d/26/01ee3b9d00228ad6432e298c3cc298ec031e278d4a02de179178bec6826d/wolf_comm-0.0.8.tar.gz
+[2024-05-11 01:19:50] INFO root fetch - processPackages [illaudablyz]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [illaudablyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/illaudablyz-1.1.tar.gz tmp/illaudablyz-2.1.tar.gz --markdown 20240511/i/illaudablyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:19:50] INFO root fetch - processPackages [wolf-comm]: executing diffoscope
+[2024-05-11 01:19:50] INFO root fetch - processPackages [wolf-comm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wolf_comm-0.0.7.tar.gz tmp/wolf_comm-0.0.8.tar.gz --markdown 20240511/w/wolf-comm/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 01:19:51] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.1.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.2.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 01:19:51] INFO root fetch - processPackages [illaudablyz]: Remove: archive file [/home/abi/fetcher/tmp/illaudablyz-1.1.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - processPackages [illaudablyz]: Remove: archive file [/home/abi/fetcher/tmp/illaudablyz-2.1.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - main [MainThread]: End processing [illaudablyz]: success
+[2024-05-11 01:19:51] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.2.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.3.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - main [MainThread]: End processing [dyff-storage]: success
+[2024-05-11 01:19:51] INFO root fetch - processPackages [wolf-comm]: Remove: archive file [/home/abi/fetcher/tmp/wolf_comm-0.0.7.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - processPackages [wolf-comm]: Remove: archive file [/home/abi/fetcher/tmp/wolf_comm-0.0.8.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - main [MainThread]: End processing [wolf-comm]: success
+[2024-05-11 01:19:51] INFO root fetch - processPackages [fal]: Remove: archive file [/home/abi/fetcher/tmp/fal-1.0.0.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - processPackages [fal]: Remove: archive file [/home/abi/fetcher/tmp/fal-1.0.1.tar.gz]
+[2024-05-11 01:19:51] INFO root fetch - main [MainThread]: End processing [fal]: success
+[2024-05-11 01:19:53] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.0a1709600505.tar.gz]
+[2024-05-11 01:19:53] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.1.tar.gz]
+[2024-05-11 01:19:53] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
+[2024-05-11 01:19:53] INFO root fetch - main [MainThread]: Store serial: [23153970]
