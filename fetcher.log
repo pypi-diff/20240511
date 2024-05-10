@@ -289,3 +289,27 @@
 [2024-05-11 00:14:33] WARNING root fetch - processPackages [unwavingz]: Skipping, unable to determine old version
 [2024-05-11 00:14:33] INFO root fetch - main [MainThread]: End processing [unwavingz] error
 [2024-05-11 00:14:33] INFO root fetch - main [MainThread]: Store serial: [23153640]
+[2024-05-11 00:16:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153640]
+[2024-05-11 00:16:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 00:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyDevDTK
+[2024-05-11 00:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hatticz
+[2024-05-11 00:16:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bltzr
+[2024-05-11 00:16:43] INFO root fetch - processPackages [PyDevDTK]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 00:16:43] WARNING root fetch - processPackages [bltzr]: Skipping, unable to determine old version
+[2024-05-11 00:16:43] INFO root fetch - main [MainThread]: End processing [bltzr] error
+[2024-05-11 00:16:43] INFO root fetch - processPackages [hatticz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:16:43] INFO root fetch - processPackages [PyDevDTK]: Downloading https://files.pythonhosted.org/packages/9e/3b/824ee52dca676e5b6647924c5d656efb4c74f69f706f66e7d62a03c162b6/pydevdtk-0.1.0.tar.gz
+[2024-05-11 00:16:43] INFO root fetch - processPackages [hatticz]: Downloading https://files.pythonhosted.org/packages/6b/c8/4703a4d49f7a5bd73e11a302bb320a5c8ed7cefeba4e02cf6d20f48e449e/hatticz-1.1.tar.gz
+[2024-05-11 00:16:43] INFO root fetch - processPackages [hatticz]: Downloading https://files.pythonhosted.org/packages/51/35/d94607897d8c804b9d5ebc2f8e39f2c857b4195068a2ea7cb7dc929951ed/hatticz-2.1.tar.gz
+[2024-05-11 00:16:43] INFO root fetch - processPackages [PyDevDTK]: Downloading https://files.pythonhosted.org/packages/aa/a4/55729da01d17786aa1f2fbbc80ab6e3924f23a01bb5fd92a4b87f7fa33c8/pydevdtk-0.1.1.tar.gz
+[2024-05-11 00:16:43] INFO root fetch - processPackages [hatticz]: executing diffoscope
+[2024-05-11 00:16:43] INFO root fetch - processPackages [hatticz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatticz-1.1.tar.gz tmp/hatticz-2.1.tar.gz --markdown 20240511/h/hatticz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:16:43] INFO root fetch - processPackages [PyDevDTK]: executing diffoscope
+[2024-05-11 00:16:43] INFO root fetch - processPackages [PyDevDTK]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydevdtk-0.1.0.tar.gz tmp/pydevdtk-0.1.1.tar.gz --markdown 20240511/P/PyDevDTK/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 00:16:44] INFO root fetch - processPackages [hatticz]: Remove: archive file [/home/abi/fetcher/tmp/hatticz-1.1.tar.gz]
+[2024-05-11 00:16:44] INFO root fetch - processPackages [hatticz]: Remove: archive file [/home/abi/fetcher/tmp/hatticz-2.1.tar.gz]
+[2024-05-11 00:16:44] INFO root fetch - main [MainThread]: End processing [hatticz]: success
+[2024-05-11 00:16:44] INFO root fetch - processPackages [PyDevDTK]: Remove: archive file [/home/abi/fetcher/tmp/pydevdtk-0.1.0.tar.gz]
+[2024-05-11 00:16:44] INFO root fetch - processPackages [PyDevDTK]: Remove: archive file [/home/abi/fetcher/tmp/pydevdtk-0.1.1.tar.gz]
+[2024-05-11 00:16:44] INFO root fetch - main [MainThread]: End processing [PyDevDTK]: success
+[2024-05-11 00:16:44] INFO root fetch - main [MainThread]: Store serial: [23153650]
