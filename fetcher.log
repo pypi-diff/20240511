@@ -1997,3 +1997,63 @@
 [2024-05-11 01:52:51] INFO root fetch - processPackages [cvxpy-base]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy_base-1.5.0.tar.gz]
 [2024-05-11 01:52:51] INFO root fetch - main [MainThread]: End processing [cvxpy-base]: success
 [2024-05-11 01:52:51] INFO root fetch - main [MainThread]: Store serial: [23154279]
+[2024-05-11 01:55:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154279]
+[2024-05-11 01:55:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chaiverse
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meshgpt-pytorch
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlglot
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cvxpy
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pemicansz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: incomplyingz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llama_tools
+[2024-05-11 01:55:05] INFO root fetch - processPackages [chaiverse]: New version: [1.9.9] Old Version: [1.9.8]
+[2024-05-11 01:55:05] INFO root fetch - processPackages [meshgpt-pytorch]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-11 01:55:05] INFO root fetch - processPackages [llama_tools]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-11 01:55:05] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-11 01:55:05] INFO root fetch - processPackages [chaiverse]: Downloading https://files.pythonhosted.org/packages/40/8f/0c28b09c5b933f63a5e9e2b50a3e8a06a87151afc8e162b2c09deedc4bf0/chaiverse-1.9.8.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/08/f3/7c69755d3ef873bb5fe62b73750ea94e0bd5f0d1c9dcd012a8c51ff4f598/meshgpt_pytorch-1.2.1.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/2c/15/bcb18530d1d6b07452ecc5e31d6e4f0c768ec5cba8610820853ee42357d6/llama_tools-0.1.7.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [incomplyingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:55:05] WARNING root fetch - processPackages [pemicansz]: Skipping, unable to determine old version
+[2024-05-11 01:55:05] INFO root fetch - main [MainThread]: End processing [pemicansz] error
+[2024-05-11 01:55:05] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [cvxpy]: New version: [1.5.0] Old Version: [1.4.4]
+[2024-05-11 01:55:05] INFO root fetch - processPackages [chaiverse]: Downloading https://files.pythonhosted.org/packages/4c/ed/6d3e89ab870b31d2281b7595f6030d767109316508a89f1d6178491348cd/chaiverse-1.9.9.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [incomplyingz]: Downloading https://files.pythonhosted.org/packages/85/a4/79ff84bf75056aaf8080f7827ebc35b253eebb55d0fd13529c8fa9025b00/incomplyingz-1.1.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [cvxpy]: Downloading https://files.pythonhosted.org/packages/d8/e5/f49fdbcb078e4fc89b381da0fd4b66aa6d7bace03037e88cc276882718d7/cvxpy-1.4.4-cp310-cp310-win_amd64.whl
+[2024-05-11 01:55:05] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/73/d3/df41b4c443b501ea52e2e49a98fb00ec78f1fbbf27636467847178decf2e/meshgpt_pytorch-1.2.2.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/a8/55/43247b59a289e0459a611874224f09597a28f206ece4c888349b83d661bb/llama_tools-0.1.8.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [chaiverse]: executing diffoscope
+[2024-05-11 01:55:05] INFO root fetch - processPackages [chaiverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaiverse-1.9.8.tar.gz tmp/chaiverse-1.9.9.tar.gz --markdown 20240511/c/chaiverse/1.9.8-1.9.9/README.md --exclude *.pyd
+[2024-05-11 01:55:05] INFO root fetch - processPackages [meshgpt-pytorch]: executing diffoscope
+[2024-05-11 01:55:05] INFO root fetch - processPackages [meshgpt-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshgpt_pytorch-1.2.1.tar.gz tmp/meshgpt_pytorch-1.2.2.tar.gz --markdown 20240511/m/meshgpt-pytorch/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-11 01:55:05] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-11 01:55:05] INFO root fetch - processPackages [llama_tools]: executing diffoscope
+[2024-05-11 01:55:05] INFO root fetch - processPackages [llama_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_tools-0.1.7.tar.gz tmp/llama_tools-0.1.8.tar.gz --markdown 20240511/l/llama_tools/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-11 01:55:06] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-11 01:55:06] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240511/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-11 01:55:06] INFO root fetch - processPackages [incomplyingz]: Downloading https://files.pythonhosted.org/packages/2c/4a/b4015928f5816882c2d4f93d734bdfb0fdc009034af0f42b961e710dd45d/incomplyingz-2.1.tar.gz
+[2024-05-11 01:55:06] INFO root fetch - processPackages [incomplyingz]: executing diffoscope
+[2024-05-11 01:55:06] INFO root fetch - processPackages [incomplyingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/incomplyingz-1.1.tar.gz tmp/incomplyingz-2.1.tar.gz --markdown 20240511/i/incomplyingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:55:06] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.7.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.8.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - main [MainThread]: End processing [llama_tools]: success
+[2024-05-11 01:55:06] INFO root fetch - processPackages [cvxpy]: Downloading https://files.pythonhosted.org/packages/e3/ef/3e2eee09c922bbb1c6b40dcc5d8e7892b6416913eab59850036ada16acf1/cvxpy-1.5.0.tar.gz
+[2024-05-11 01:55:06] INFO root fetch - processPackages [chaiverse]: Remove: archive file [/home/abi/fetcher/tmp/chaiverse-1.9.8.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - processPackages [chaiverse]: Remove: archive file [/home/abi/fetcher/tmp/chaiverse-1.9.9.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - main [MainThread]: End processing [chaiverse]: success
+[2024-05-11 01:55:06] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.1.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.2.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - main [MainThread]: End processing [meshgpt-pytorch]: success
+[2024-05-11 01:55:06] INFO root fetch - processPackages [cvxpy]: executing diffoscope
+[2024-05-11 01:55:06] INFO root fetch - processPackages [cvxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpy-1.4.4-cp310-cp310-win_amd64.whl.zip tmp/cvxpy-1.5.0.tar.gz --markdown 20240511/c/cvxpy/1.4.4-1.5.0/README.md --exclude *.pyd
+[2024-05-11 01:55:06] INFO root fetch - processPackages [incomplyingz]: Remove: archive file [/home/abi/fetcher/tmp/incomplyingz-1.1.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - processPackages [incomplyingz]: Remove: archive file [/home/abi/fetcher/tmp/incomplyingz-2.1.tar.gz]
+[2024-05-11 01:55:06] INFO root fetch - main [MainThread]: End processing [incomplyingz]: success
+[2024-05-11 01:55:07] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-11 01:55:07] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-11 01:55:07] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-11 01:55:08] INFO root fetch - processPackages [cvxpy]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy-1.4.4-cp310-cp310-win_amd64.whl.zip]
+[2024-05-11 01:55:08] INFO root fetch - processPackages [cvxpy]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy-1.5.0.tar.gz]
+[2024-05-11 01:55:08] INFO root fetch - main [MainThread]: End processing [cvxpy]: success
+[2024-05-11 01:55:08] INFO root fetch - main [MainThread]: Store serial: [23154300]
