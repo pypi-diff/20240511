@@ -1162,3 +1162,15 @@
 [2024-05-11 01:15:31] WARNING root fetch - processPackages [colorimetricz]: Skipping, unable to determine old version
 [2024-05-11 01:15:31] INFO root fetch - main [MainThread]: End processing [colorimetricz] error
 [2024-05-11 01:15:31] INFO root fetch - main [MainThread]: Store serial: [23153950]
+[2024-05-11 01:17:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153950]
+[2024-05-11 01:17:40] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 01:17:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eintorch
+[2024-05-11 01:17:40] INFO root fetch - processPackages [eintorch]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 01:17:40] INFO root fetch - processPackages [eintorch]: Downloading https://files.pythonhosted.org/packages/4d/5e/82edb08135148cf50196782bb76a04de785180a022a44af55dc2ca14bcdb/eintorch-0.2.1.tar.gz
+[2024-05-11 01:17:40] INFO root fetch - processPackages [eintorch]: Downloading https://files.pythonhosted.org/packages/9d/16/cc08a987d581f7e3276a2b97e740807de068435e19d1fc59b651601c01b7/eintorch-0.2.2.tar.gz
+[2024-05-11 01:17:41] INFO root fetch - processPackages [eintorch]: executing diffoscope
+[2024-05-11 01:17:41] INFO root fetch - processPackages [eintorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eintorch-0.2.1.tar.gz tmp/eintorch-0.2.2.tar.gz --markdown 20240511/e/eintorch/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 01:17:41] INFO root fetch - processPackages [eintorch]: Remove: archive file [/home/abi/fetcher/tmp/eintorch-0.2.1.tar.gz]
+[2024-05-11 01:17:41] INFO root fetch - processPackages [eintorch]: Remove: archive file [/home/abi/fetcher/tmp/eintorch-0.2.2.tar.gz]
+[2024-05-11 01:17:41] INFO root fetch - main [MainThread]: End processing [eintorch]: success
+[2024-05-11 01:17:41] INFO root fetch - main [MainThread]: Store serial: [23153953]
