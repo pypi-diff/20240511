@@ -890,3 +890,41 @@
 [2024-05-11 00:58:07] INFO root fetch - processPackages [finch-api]: Remove: archive file [/home/abi/fetcher/tmp/finch_api-0.9.5.tar.gz]
 [2024-05-11 00:58:07] INFO root fetch - main [MainThread]: End processing [finch-api]: success
 [2024-05-11 00:58:07] INFO root fetch - main [MainThread]: Store serial: [23153855]
+[2024-05-11 01:00:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153855]
+[2024-05-11 01:00:15] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 01:00:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Files.com
+[2024-05-11 01:00:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sklearn-viz
+[2024-05-11 01:00:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netbox-data-flows
+[2024-05-11 01:00:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: capillarimeterz
+[2024-05-11 01:00:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: FoKL
+[2024-05-11 01:00:16] INFO root fetch - processPackages [sklearn-viz]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 01:00:16] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/c0/19/976fcea329787b2110a74e1e9c3cfa3dd2ff0032ace4b1d964d18a470b9b/sklearn_viz-0.6.0.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [netbox-data-flows]: New version: [0.9.0] Old Version: [0.8.3]
+[2024-05-11 01:00:16] WARNING root fetch - processPackages [capillarimeterz]: Skipping, unable to determine old version
+[2024-05-11 01:00:16] INFO root fetch - main [MainThread]: End processing [capillarimeterz] error
+[2024-05-11 01:00:16] INFO root fetch - processPackages [Files.com]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-11 01:00:16] INFO root fetch - processPackages [FoKL]: New version: [3.2.4] Old Version: [3.2.3]
+[2024-05-11 01:00:16] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/fe/9f/8654a34abe6ed4232708475bb6c7dd30b128ab68594cd684d58e72375385/Files.com-1.4.8.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/97/54/5e4bf17b4172a71a5255bdbdb0782ad91a138bc153b64e5d4f44f79c16b2/sklearn_viz-0.6.1.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/50/2a/081bc12536110f3d42e66312b9c23d07fc87bd3eafaaa4b731c3a21d1660/Files.com-1.4.9.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [FoKL]: Downloading https://files.pythonhosted.org/packages/4a/ec/e4711770f010eac38bcef7867efbdbbb492470e87d8d97169cb777b4dad7/fokl-3.2.3.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [netbox-data-flows]: Downloading https://files.pythonhosted.org/packages/48/76/820ba1f2742f0ba65228ee6f6e0d899d81b3fd0aea7dadf3bcb5bc60e1ae/netbox_data_flows-0.8.3.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [sklearn-viz]: executing diffoscope
+[2024-05-11 01:00:16] INFO root fetch - processPackages [sklearn-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_viz-0.6.0.tar.gz tmp/sklearn_viz-0.6.1.tar.gz --markdown 20240511/s/sklearn-viz/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-11 01:00:16] WARNING root fetch - processPackages [FoKL]: Skipping package: exceeds size limit 22434671>=10485760
+[2024-05-11 01:00:16] INFO root fetch - main [MainThread]: End processing [FoKL] error
+[2024-05-11 01:00:16] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2024-05-11 01:00:16] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.4.8.tar.gz tmp/Files.com-1.4.9.tar.gz --markdown 20240511/F/Files.com/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-11 01:00:16] INFO root fetch - processPackages [netbox-data-flows]: Downloading https://files.pythonhosted.org/packages/19/a7/36fca1a87c461de4bbbb23e2deb375e5d298eff66ce96315d284ae2a7b4c/netbox_data_flows-0.9.0.tar.gz
+[2024-05-11 01:00:16] INFO root fetch - processPackages [netbox-data-flows]: executing diffoscope
+[2024-05-11 01:00:16] INFO root fetch - processPackages [netbox-data-flows]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_data_flows-0.8.3.tar.gz tmp/netbox_data_flows-0.9.0.tar.gz --markdown 20240511/n/netbox-data-flows/0.8.3-0.9.0/README.md --exclude *.pyd
+[2024-05-11 01:00:17] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.0.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.1.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - main [MainThread]: End processing [sklearn-viz]: success
+[2024-05-11 01:00:17] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.8.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.9.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2024-05-11 01:00:17] INFO root fetch - processPackages [netbox-data-flows]: Remove: archive file [/home/abi/fetcher/tmp/netbox_data_flows-0.8.3.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - processPackages [netbox-data-flows]: Remove: archive file [/home/abi/fetcher/tmp/netbox_data_flows-0.9.0.tar.gz]
+[2024-05-11 01:00:17] INFO root fetch - main [MainThread]: End processing [netbox-data-flows]: success
+[2024-05-11 01:00:17] INFO root fetch - main [MainThread]: Store serial: [23153871]
