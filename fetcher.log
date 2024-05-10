@@ -1680,3 +1680,30 @@
 [2024-05-11 01:35:16] INFO root fetch - processPackages [yt-dlp]: Remove: archive file [/home/abi/fetcher/tmp/yt_dlp-2024.5.8.232715.dev0.tar.gz]
 [2024-05-11 01:35:16] INFO root fetch - main [MainThread]: End processing [yt-dlp]: success
 [2024-05-11 01:35:16] INFO root fetch - main [MainThread]: Store serial: [23154147]
+[2024-05-11 01:37:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154147]
+[2024-05-11 01:37:25] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sonusai-asr-openai-whisper
+[2024-05-11 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: html-to-django
+[2024-05-11 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-docker
+[2024-05-11 01:37:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zerofun
+[2024-05-11 01:37:25] INFO root fetch - processPackages [zerofun]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-11 01:37:25] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/02/02/0db2453f62369c2817b2e0540b699117d897655040c1d0180d0f8c2583a4/zerofun-2.0.1.tar.gz
+[2024-05-11 01:37:25] WARNING root fetch - processPackages [sonusai-asr-openai-whisper]: Skipping, unable to determine old version
+[2024-05-11 01:37:25] INFO root fetch - main [MainThread]: End processing [sonusai-asr-openai-whisper] error
+[2024-05-11 01:37:25] WARNING root fetch - processPackages [html-to-django]: Skipping, unable to determine old version
+[2024-05-11 01:37:25] INFO root fetch - main [MainThread]: End processing [html-to-django] error
+[2024-05-11 01:37:25] INFO root fetch - processPackages [pulumi-docker]: New version: [4.7.0a1705628423] Old Version: [4.7.0a1705607229]
+[2024-05-11 01:37:25] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/60/4d/20db01394ae207e38e34244a087a77010c3163b5176d5ed60b9e938b94df/pulumi_docker-4.7.0a1705607229.tar.gz
+[2024-05-11 01:37:26] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/44/32/96de105c7cbdcad735666e98628af03cf37c3d4f4e01e37dc29ac554fab3/zerofun-2.0.2.tar.gz
+[2024-05-11 01:37:26] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 01:37:26] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-2.0.1.tar.gz tmp/zerofun-2.0.2.tar.gz --markdown 20240511/z/zerofun/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-11 01:37:26] INFO root fetch - processPackages [pulumi-docker]: Downloading https://files.pythonhosted.org/packages/3a/93/a866b50173039bae813e131505cf7ed97c33cb79c113926b2b63dfd1caf2/pulumi_docker-4.7.0a1705628423.tar.gz
+[2024-05-11 01:37:26] INFO root fetch - processPackages [pulumi-docker]: executing diffoscope
+[2024-05-11 01:37:26] INFO root fetch - processPackages [pulumi-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_docker-4.7.0a1705607229.tar.gz tmp/pulumi_docker-4.7.0a1705628423.tar.gz --markdown 20240511/p/pulumi-docker/4.7.0a1705607229-4.7.0a1705628423/README.md --exclude *.pyd
+[2024-05-11 01:37:26] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.1.tar.gz]
+[2024-05-11 01:37:26] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.2.tar.gz]
+[2024-05-11 01:37:26] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 01:37:27] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705607229.tar.gz]
+[2024-05-11 01:37:27] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705628423.tar.gz]
+[2024-05-11 01:37:27] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
+[2024-05-11 01:37:27] INFO root fetch - main [MainThread]: Store serial: [23154166]
