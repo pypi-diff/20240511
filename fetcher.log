@@ -1,0 +1,54 @@
+[2024-05-11 00:01:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153525]
+[2024-05-11 00:01:26] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: launchflow
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langchain
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: grunchz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: altscore-workflow-builder
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xmonkey-namonica
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dyff-schema
+[2024-05-11 00:01:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: EasyDonate-Py
+[2024-05-11 00:01:26] WARNING root fetch - processPackages [grunchz]: Skipping, unable to determine old version
+[2024-05-11 00:01:26] INFO root fetch - main [MainThread]: End processing [grunchz] error
+[2024-05-11 00:01:26] INFO root fetch - processPackages [xmonkey-namonica]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 00:01:26] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 00:01:26] INFO root fetch - processPackages [launchflow]: New version: [0.3.9.dev8] Old Version: [0.3.9.dev7]
+[2024-05-11 00:01:26] INFO root fetch - processPackages [langchain]: New version: [0.2.0rc2] Old Version: [0.2.0rc1]
+[2024-05-11 00:01:26] INFO root fetch - processPackages [xmonkey-namonica]: Downloading https://files.pythonhosted.org/packages/b0/3d/6203ff7af6294781f051903a25270845fd90f2978f0aad2922baf027467a/xmonkey_namonica-0.1.8.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [dyff-schema]: New version: [0.5.3] Old Version: [0.5.1]
+[2024-05-11 00:01:26] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/48/58/dc4bcb9a1d74952a08d0cfc5e24c45d961d331cb7a4434c9059bab154c72/launchflow-0.3.9.dev7.tar.gz
+[2024-05-11 00:01:26] WARNING root fetch - processPackages [EasyDonate-Py]: Skipping, unable to determine old version
+[2024-05-11 00:01:26] INFO root fetch - main [MainThread]: End processing [EasyDonate-Py] error
+[2024-05-11 00:01:26] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/4b/0f/224cfe36cbf4ee9320375e5882c101bb72707df92d97d8ee67a2c1b95696/langchain-0.2.0rc1.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [xmonkey-namonica]: Downloading https://files.pythonhosted.org/packages/cf/b8/696ff3c9499cdf66adacf2f654a1d6d3e21fc8d3f60fedd73208f3172235/xmonkey_namonica-0.1.9.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/90/fe/8ec57c4d58efe720e776fa2c7abfb144c77faf926ddf6392b0b3aeb85744/dyff_schema-0.5.1.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/8c/d2/f0544d4c3383370934bcc7b31fa0449e89fcfa2edeeac48bd86ada84b492/launchflow-0.3.9.dev8.tar.gz
+[2024-05-11 00:01:26] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 00:01:26] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:01:26] INFO root fetch - processPackages [xmonkey-namonica]: executing diffoscope
+[2024-05-11 00:01:26] INFO root fetch - processPackages [xmonkey-namonica]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmonkey_namonica-0.1.8.tar.gz tmp/xmonkey_namonica-0.1.9.tar.gz --markdown 20240511/x/xmonkey-namonica/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 00:01:26] INFO root fetch - processPackages [launchflow]: executing diffoscope
+[2024-05-11 00:01:26] INFO root fetch - processPackages [launchflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/launchflow-0.3.9.dev7.tar.gz tmp/launchflow-0.3.9.dev8.tar.gz --markdown 20240511/l/launchflow/0.3.9.dev7-0.3.9.dev8/README.md --exclude *.pyd
+[2024-05-11 00:01:27] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/d6/91/77ca1e907b40b8358c7ec4fa6d8de9ede21829c268016821ea9b90013c7d/langchain-0.2.0rc2.tar.gz
+[2024-05-11 00:01:27] INFO root fetch - processPackages [dyff-schema]: Downloading https://files.pythonhosted.org/packages/a6/9e/793197abc16e09f7b118e2cca9a1306e87e4e8cc3f3d9d11a9e2c64d025c/dyff_schema-0.5.3.tar.gz
+[2024-05-11 00:01:27] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2024-05-11 00:01:27] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.2.0rc1.tar.gz tmp/langchain-0.2.0rc2.tar.gz --markdown 20240511/l/langchain/0.2.0rc1-0.2.0rc2/README.md --exclude *.pyd
+[2024-05-11 00:01:27] INFO root fetch - processPackages [dyff-schema]: executing diffoscope
+[2024-05-11 00:01:27] INFO root fetch - processPackages [dyff-schema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_schema-0.5.1.tar.gz tmp/dyff_schema-0.5.3.tar.gz --markdown 20240511/d/dyff-schema/0.5.1-0.5.3/README.md --exclude *.pyd
+[2024-05-11 00:01:27] INFO root fetch - processPackages [xmonkey-namonica]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey_namonica-0.1.8.tar.gz]
+[2024-05-11 00:01:27] INFO root fetch - processPackages [xmonkey-namonica]: Remove: archive file [/home/abi/fetcher/tmp/xmonkey_namonica-0.1.9.tar.gz]
+[2024-05-11 00:01:27] INFO root fetch - main [MainThread]: End processing [xmonkey-namonica]: success
+[2024-05-11 00:01:27] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 00:01:27] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 00:01:27] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 00:01:28] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.5.1.tar.gz]
+[2024-05-11 00:01:28] INFO root fetch - processPackages [dyff-schema]: Remove: archive file [/home/abi/fetcher/tmp/dyff_schema-0.5.3.tar.gz]
+[2024-05-11 00:01:28] INFO root fetch - main [MainThread]: End processing [dyff-schema]: success
+[2024-05-11 00:01:28] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev7.tar.gz]
+[2024-05-11 00:01:28] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
+[2024-05-11 00:01:28] INFO root fetch - main [MainThread]: End processing [launchflow]: success
+[2024-05-11 00:01:31] INFO root fetch - processPackages [langchain]: Remove: archive file [/home/abi/fetcher/tmp/langchain-0.2.0rc1.tar.gz]
+[2024-05-11 00:01:31] INFO root fetch - processPackages [langchain]: Remove: archive file [/home/abi/fetcher/tmp/langchain-0.2.0rc2.tar.gz]
+[2024-05-11 00:01:31] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2024-05-11 00:01:31] INFO root fetch - main [MainThread]: Store serial: [23153547]
