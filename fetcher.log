@@ -355,3 +355,12 @@
 [2024-05-11 00:21:05] INFO root fetch - processPackages [heliographyz]: Remove: archive file [/home/abi/fetcher/tmp/heliographyz-2.1.tar.gz]
 [2024-05-11 00:21:05] INFO root fetch - main [MainThread]: End processing [heliographyz]: success
 [2024-05-11 00:21:05] INFO root fetch - main [MainThread]: Store serial: [23153672]
+[2024-05-11 00:23:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153672]
+[2024-05-11 00:23:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rhythmidia
+[2024-05-11 00:23:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: miserez
+[2024-05-11 00:23:13] WARNING root fetch - processPackages [miserez]: Skipping, unable to determine old version
+[2024-05-11 00:23:14] INFO root fetch - main [MainThread]: End processing [miserez] error
+[2024-05-11 00:23:14] WARNING root fetch - processPackages [rhythmidia]: Skipping, unable to determine old version
+[2024-05-11 00:23:14] INFO root fetch - main [MainThread]: End processing [rhythmidia] error
+[2024-05-11 00:23:14] INFO root fetch - main [MainThread]: Store serial: [23153680]
