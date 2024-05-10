@@ -340,3 +340,18 @@
 [2024-05-11 00:18:55] INFO root fetch - processPackages [fast-plate-ocr]: Remove: archive file [/home/abi/fetcher/tmp/fast_plate_ocr-0.1.6.tar.gz]
 [2024-05-11 00:18:55] INFO root fetch - main [MainThread]: End processing [fast-plate-ocr]: success
 [2024-05-11 00:18:55] INFO root fetch - main [MainThread]: Store serial: [23153665]
+[2024-05-11 00:20:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153665]
+[2024-05-11 00:21:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: heliographyz
+[2024-05-11 00:21:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openelm-pytorch
+[2024-05-11 00:21:04] INFO root fetch - processPackages [heliographyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:21:04] WARNING root fetch - processPackages [openelm-pytorch]: Skipping, unable to determine old version
+[2024-05-11 00:21:04] INFO root fetch - main [MainThread]: End processing [openelm-pytorch] error
+[2024-05-11 00:21:04] INFO root fetch - processPackages [heliographyz]: Downloading https://files.pythonhosted.org/packages/3e/33/36588babeb5423fae2b32e1d02a7abac4d8c54f6ca9d436ed11b78a161bd/heliographyz-1.1.tar.gz
+[2024-05-11 00:21:04] INFO root fetch - processPackages [heliographyz]: Downloading https://files.pythonhosted.org/packages/87/08/161093df539265cbf7613535992bddf933b2a228721c40a935c8170a84ee/heliographyz-2.1.tar.gz
+[2024-05-11 00:21:04] INFO root fetch - processPackages [heliographyz]: executing diffoscope
+[2024-05-11 00:21:04] INFO root fetch - processPackages [heliographyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heliographyz-1.1.tar.gz tmp/heliographyz-2.1.tar.gz --markdown 20240511/h/heliographyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:21:05] INFO root fetch - processPackages [heliographyz]: Remove: archive file [/home/abi/fetcher/tmp/heliographyz-1.1.tar.gz]
+[2024-05-11 00:21:05] INFO root fetch - processPackages [heliographyz]: Remove: archive file [/home/abi/fetcher/tmp/heliographyz-2.1.tar.gz]
+[2024-05-11 00:21:05] INFO root fetch - main [MainThread]: End processing [heliographyz]: success
+[2024-05-11 00:21:05] INFO root fetch - main [MainThread]: Store serial: [23153672]
