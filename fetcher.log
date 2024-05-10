@@ -949,3 +949,54 @@
 [2024-05-11 01:02:29] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240510.358.tar.gz]
 [2024-05-11 01:02:29] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
 [2024-05-11 01:02:29] INFO root fetch - main [MainThread]: Store serial: [23153876]
+[2024-05-11 01:04:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153876]
+[2024-05-11 01:04:37] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: matadi
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cybrid-api-organization-python
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gasz
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glpic
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cybrid-api-id-python
+[2024-05-11 01:04:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cybrid-api-bank-python
+[2024-05-11 01:04:37] INFO root fetch - processPackages [glpic]: New version: [99.0.202405102208] Old Version: [99.0.202405101336]
+[2024-05-11 01:04:37] INFO root fetch - processPackages [matadi]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-id-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-bank-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-organization-python]: New version: [0.99.0] Old Version: [0.98.2]
+[2024-05-11 01:04:37] WARNING root fetch - processPackages [gasz]: Skipping, unable to determine old version
+[2024-05-11 01:04:37] INFO root fetch - main [MainThread]: End processing [gasz] error
+[2024-05-11 01:04:37] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/3f/42/da228b8c98409151251a087e727a4f75a97a91b2e7a2859ec005bbef92be/glpic-99.0.202405101336.tar.gz
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/2d/66/0d5dc17801b737dd53e021a1548eb784ef8520799bdffbae60e088bf723c/cybrid-api-id-python-0.98.2.tar.gz
+[2024-05-11 01:04:37] INFO root fetch - processPackages [matadi]: Downloading https://files.pythonhosted.org/packages/53/db/64ef4477b4bd518267503761a3551be2a44de45885c79ce0aaac1d671f04/matadi-0.1.9.tar.gz
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/da/dd/e8ea2fc7e8f671e18adae35333d00fdc692f7637860f9e361fba5fe3b85a/cybrid-api-bank-python-0.98.2.tar.gz
+[2024-05-11 01:04:37] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/75/d9/17a583a2d5fccaef7210a11d9f7dc963aab51cd4a5ae5f7983c03291f4bc/cybrid-api-organization-python-0.98.2.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-id-python]: Downloading https://files.pythonhosted.org/packages/de/07/de389a95ca98f482f653401dbe8342cf8d4930d1efee86d1f28f3c1afcd1/cybrid-api-id-python-0.99.0.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [matadi]: Downloading https://files.pythonhosted.org/packages/3b/e6/483f9e06b18d0722b01e5f73d90e03fb0ad54a90f5f24b493426c811b5e7/matadi-0.2.0.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-organization-python]: Downloading https://files.pythonhosted.org/packages/93/ab/a857018ac26aeaa884608066dbe6bd482e17a4edf88533d3335a3ed2a25c/cybrid-api-organization-python-0.99.0.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-bank-python]: Downloading https://files.pythonhosted.org/packages/a1/e6/1c6a95191a8826ea0636949d5bfdb7d34a65b1f81b3cb27e1863a88a1552/cybrid-api-bank-python-0.99.0.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/bb/cb/ce7bf0251b399538f271909222435d9981e2c8799cb00329d095c6c991b4/glpic-99.0.202405102208.tar.gz
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-id-python]: executing diffoscope
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-id-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-id-python-0.98.2.tar.gz tmp/cybrid-api-id-python-0.99.0.tar.gz --markdown 20240511/c/cybrid-api-id-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-organization-python]: executing diffoscope
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-organization-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-organization-python-0.98.2.tar.gz tmp/cybrid-api-organization-python-0.99.0.tar.gz --markdown 20240511/c/cybrid-api-organization-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-11 01:04:38] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-11 01:04:38] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405101336.tar.gz tmp/glpic-99.0.202405102208.tar.gz --markdown 20240511/g/glpic/99.0.202405101336-99.0.202405102208/README.md --exclude *.pyd
+[2024-05-11 01:04:38] INFO root fetch - processPackages [matadi]: executing diffoscope
+[2024-05-11 01:04:38] INFO root fetch - processPackages [matadi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matadi-0.1.9.tar.gz tmp/matadi-0.2.0.tar.gz --markdown 20240511/m/matadi/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-bank-python]: executing diffoscope
+[2024-05-11 01:04:38] INFO root fetch - processPackages [cybrid-api-bank-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cybrid-api-bank-python-0.98.2.tar.gz tmp/cybrid-api-bank-python-0.99.0.tar.gz --markdown 20240511/c/cybrid-api-bank-python/0.98.2-0.99.0/README.md --exclude *.pyd
+[2024-05-11 01:04:39] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405101336.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102208.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-11 01:04:39] INFO root fetch - processPackages [matadi]: Remove: archive file [/home/abi/fetcher/tmp/matadi-0.1.9.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.98.2.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - processPackages [matadi]: Remove: archive file [/home/abi/fetcher/tmp/matadi-0.2.0.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - processPackages [cybrid-api-organization-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-organization-python-0.99.0.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - main [MainThread]: End processing [matadi]: success
+[2024-05-11 01:04:39] INFO root fetch - main [MainThread]: End processing [cybrid-api-organization-python]: success
+[2024-05-11 01:04:39] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.98.2.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - processPackages [cybrid-api-id-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-id-python-0.99.0.tar.gz]
+[2024-05-11 01:04:39] INFO root fetch - main [MainThread]: End processing [cybrid-api-id-python]: success
+[2024-05-11 01:04:40] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.98.2.tar.gz]
+[2024-05-11 01:04:40] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
+[2024-05-11 01:04:40] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
+[2024-05-11 01:04:40] INFO root fetch - main [MainThread]: Store serial: [23153895]
