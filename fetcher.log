@@ -1908,3 +1908,32 @@
 [2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: Remove: archive file [/home/abi/fetcher/tmp/fmeval-1.0.3-py3-none-any.whl.zip]
 [2024-05-11 01:46:18] INFO root fetch - main [MainThread]: End processing [fmeval]: success
 [2024-05-11 01:46:18] INFO root fetch - main [MainThread]: Store serial: [23154239]
+[2024-05-11 01:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154239]
+[2024-05-11 01:48:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 01:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-11 01:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DeepMIMOv3
+[2024-05-11 01:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: atopile
+[2024-05-11 01:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fleks
+[2024-05-11 01:48:26] INFO root fetch - processPackages [pypomes-db]: New version: [0.6.8] Old Version: [0.6.7]
+[2024-05-11 01:48:26] INFO root fetch - processPackages [atopile]: New version: [0.3.0.dev0] Old Version: [0.2.9]
+[2024-05-11 01:48:26] WARNING root fetch - processPackages [DeepMIMOv3]: Skipping, unable to determine old version
+[2024-05-11 01:48:26] INFO root fetch - main [MainThread]: End processing [DeepMIMOv3] error
+[2024-05-11 01:48:26] INFO root fetch - processPackages [fleks]: New version: [2024.5.10.23.48] Old Version: [2024.4.5.9.29]
+[2024-05-11 01:48:26] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/9a/4a/de3dd03c244af86dc511fc6172b0ed4863cfc8bc649381b3696fcfaa678a/pypomes_db-0.6.7.tar.gz
+[2024-05-11 01:48:26] INFO root fetch - processPackages [atopile]: Downloading https://files.pythonhosted.org/packages/b9/4b/f9ec536fd464d0e26a65a2027efe19630c4f5dbd38d7329e74df46ff0a91/atopile-0.2.9.tar.gz
+[2024-05-11 01:48:27] WARNING root fetch - processPackages [atopile]: Skipping package: exceeds size limit 25663075>=10485760
+[2024-05-11 01:48:27] INFO root fetch - main [MainThread]: End processing [atopile] error
+[2024-05-11 01:48:27] INFO root fetch - processPackages [fleks]: Downloading https://files.pythonhosted.org/packages/b8/b3/36eba7c3cacb5b1f4988af66824a62b04f4bf83ee59c32a47674111e2fe0/fleks-2024.4.5.9.29.tar.gz
+[2024-05-11 01:48:27] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/9e/f1/3e1ec0c026dd6453a9fb3d02e9cbcc87c1c017313c2f2850b900ffcfe047/pypomes_db-0.6.8.tar.gz
+[2024-05-11 01:48:27] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-11 01:48:27] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.6.7.tar.gz tmp/pypomes_db-0.6.8.tar.gz --markdown 20240511/p/pypomes-db/0.6.7-0.6.8/README.md --exclude *.pyd
+[2024-05-11 01:48:27] INFO root fetch - processPackages [fleks]: Downloading https://files.pythonhosted.org/packages/4f/d6/7f12394055b474141ea5b4e193398320e3ee0e41e22f2114f3cf0f104d24/fleks-2024.5.10.23.48.tar.gz
+[2024-05-11 01:48:27] INFO root fetch - processPackages [fleks]: executing diffoscope
+[2024-05-11 01:48:27] INFO root fetch - processPackages [fleks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fleks-2024.4.5.9.29.tar.gz tmp/fleks-2024.5.10.23.48.tar.gz --markdown 20240511/f/fleks/2024.4.5.9.29-2024.5.10.23.48/README.md --exclude *.pyd
+[2024-05-11 01:48:27] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.7.tar.gz]
+[2024-05-11 01:48:27] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.8.tar.gz]
+[2024-05-11 01:48:27] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-11 01:48:28] INFO root fetch - processPackages [fleks]: Remove: archive file [/home/abi/fetcher/tmp/fleks-2024.4.5.9.29.tar.gz]
+[2024-05-11 01:48:28] INFO root fetch - processPackages [fleks]: Remove: archive file [/home/abi/fetcher/tmp/fleks-2024.5.10.23.48.tar.gz]
+[2024-05-11 01:48:28] INFO root fetch - main [MainThread]: End processing [fleks]: success
+[2024-05-11 01:48:28] INFO root fetch - main [MainThread]: Store serial: [23154253]
