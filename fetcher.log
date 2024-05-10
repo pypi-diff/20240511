@@ -1111,3 +1111,48 @@
 [2024-05-11 01:11:12] INFO root fetch - processPackages [dcqc]: Remove: archive file [/home/abi/fetcher/tmp/dcqc-1.7.0.tar.gz]
 [2024-05-11 01:11:12] INFO root fetch - main [MainThread]: End processing [dcqc]: success
 [2024-05-11 01:11:12] INFO root fetch - main [MainThread]: Store serial: [23153930]
+[2024-05-11 01:13:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153930]
+[2024-05-11 01:13:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GazooResearchUtils
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: finman
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: yunxiao
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: altscore-workflow-builder
+[2024-05-11 01:13:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hyperpiesisz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 01:13:21] WARNING root fetch - processPackages [hyperpiesisz]: Skipping, unable to determine old version
+[2024-05-11 01:13:21] INFO root fetch - main [MainThread]: End processing [hyperpiesisz] error
+[2024-05-11 01:13:21] WARNING root fetch - processPackages [finman]: Skipping, unable to determine old version
+[2024-05-11 01:13:21] INFO root fetch - main [MainThread]: End processing [finman] error
+[2024-05-11 01:13:21] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 01:13:21] INFO root fetch - processPackages [yunxiao]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-11 01:13:21] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-11 01:13:21] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/91/30/7dab021fbebcbc8a948535a3259771c4ba186e097cba0298a6fc3e09bfad/yunxiao-0.5.8.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/dd/29/4170ec640c465b90b59513b2d7dbb846930256b0c98884de2ab64f052807/GazooResearchUtils-1.3.1.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/65/ea/8d09efecced01316117ff8cca25d25d952fb19ccfc4d0fa3a890e60f9eb1/yunxiao-0.5.9.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 01:13:21] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 01:13:21] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 01:13:21] INFO root fetch - processPackages [yunxiao]: executing diffoscope
+[2024-05-11 01:13:21] INFO root fetch - processPackages [yunxiao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunxiao-0.5.8.tar.gz tmp/yunxiao-0.5.9.tar.gz --markdown 20240511/y/yunxiao/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-11 01:13:22] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 01:13:22] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 01:13:22] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/e3/cd/51763bfd7b5169cbed73f46f053cf7a13f98d95dc542a1c0cd8d3dce7c23/GazooResearchUtils-1.3.2.tar.gz
+[2024-05-11 01:13:22] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 01:13:22] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.3.1.tar.gz tmp/GazooResearchUtils-1.3.2.tar.gz --markdown 20240511/G/GazooResearchUtils/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-11 01:13:22] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 01:13:22] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.1.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.2.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 01:13:22] INFO root fetch - processPackages [yunxiao]: Remove: archive file [/home/abi/fetcher/tmp/yunxiao-0.5.8.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - processPackages [yunxiao]: Remove: archive file [/home/abi/fetcher/tmp/yunxiao-0.5.9.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - main [MainThread]: End processing [yunxiao]: success
+[2024-05-11 01:13:22] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 01:13:22] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 01:13:22] INFO root fetch - main [MainThread]: Store serial: [23153946]
