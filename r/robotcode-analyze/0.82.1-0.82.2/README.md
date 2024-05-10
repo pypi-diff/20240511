@@ -1,4 +1,4 @@
-# Comparing `tmp/robotcode_analyze-0.82.1.tar.gz` & `tmp/robotcode_analyze-0.82.2-py3-none-any.whl.zip`
+# Comparing `tmp/robotcode_analyze-0.82.1.tar.gz` & `tmp/robotcode_analyze-0.82.2.tar.gz`
 
 ## filetype from file(1)
 

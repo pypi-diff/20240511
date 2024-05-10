@@ -1488,3 +1488,132 @@
 [2024-05-11 01:30:49] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.82.2-py3-none-any.whl.zip]
 [2024-05-11 01:30:49] INFO root fetch - main [MainThread]: End processing [robotcode-analyze]: success
 [2024-05-11 01:30:49] INFO root fetch - main [MainThread]: Store serial: [23154048]
+[2024-05-11 01:32:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154048]
+[2024-05-11 01:32:57] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: robotcode-analyze
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robotcode-plugin
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: robotcode-modifiers
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: robotcode-robot
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: robotcode
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sqlglot
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: robotcode-jsonrpc2
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: robotcode-core
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robotcode-debugger
+[2024-05-11 01:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: robotcode-runner
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-analyze]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/18/b8/d11d784c9386f635b48d68430e06ded49ad32436832e0ccb172fe356bceb/robotcode_analyze-0.82.1.tar.gz
+[2024-05-11 01:32:57] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-plugin]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-runner]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-debugger]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-modifiers]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-core]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-jsonrpc2]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-robot]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode]: New version: [0.9.6] Old Version: [0.9.5]
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-plugin]: Downloading https://files.pythonhosted.org/packages/4f/7d/2ef69c6c9bace57c465f7858c3da35e833c5a8d4c803e2564ba6d567cc72/robotcode_plugin-0.82.1.tar.gz
+[2024-05-11 01:32:57] INFO root fetch - processPackages [robotcode-debugger]: Downloading https://files.pythonhosted.org/packages/0e/b6/bfb7e116a1fa3ed1fda67f4f5c8df8ac69704222d25daf57c837a1e5c5e3/robotcode_debugger-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-modifiers]: Downloading https://files.pythonhosted.org/packages/a0/e0/a163e286ef831e029bde205676e73cb4146b4be7abf104fe8d513894b0d5/robotcode_modifiers-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-runner]: Downloading https://files.pythonhosted.org/packages/e6/61/cc2137db8fe14cabdada361e934f7fa30384d42306bcca99fecf2c5a545a/robotcode_runner-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-core]: Downloading https://files.pythonhosted.org/packages/1f/2a/8c6da3a98fe8fdf9e8762f783d08011ad288df5b3b05f97f98340d4dd353/robotcode_core-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode]: Downloading https://files.pythonhosted.org/packages/e2/7e/d5a5aab3562b4e784a46b9a19878b348e6684bdc581650800581a7a198b8/robotcode-0.9.5.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/a3/92/d334b1f03fd572f932662bce52f3a3e2c746d0bc03b21e9da0f67e871d28/robotcode_analyze-0.82.2-py3-none-any.whl
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-robot]: Downloading https://files.pythonhosted.org/packages/32/0f/3c828cf03f572d586ec64104b503d758c8eab120b1dff8b76e8da938ca40/robotcode_robot-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-jsonrpc2]: Downloading https://files.pythonhosted.org/packages/4c/ac/4ad72a342b6c99918faee0f975bb833a41acbcb6dd314e75dc3497d3d2c0/robotcode_jsonrpc2-0.82.1.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-analyze]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-analyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_analyze-0.82.1.tar.gz tmp/robotcode_analyze-0.82.2.tar.gz --markdown 20240511/r/robotcode-analyze/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-modifiers]: Downloading https://files.pythonhosted.org/packages/be/aa/bf753d6e7c1cee69b4c7248d3e9a60fb67852e48ce49276856779b818755/robotcode_modifiers-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-plugin]: Downloading https://files.pythonhosted.org/packages/05/e9/2ec5ed4cf9e284ed3abc5e873536bc900ec37be77713786a65614c644c98/robotcode_plugin-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-debugger]: Downloading https://files.pythonhosted.org/packages/bd/0a/c480e48d44ebdd745a2c766047f264a2e5ee0cd6a13ad254da6bd1fa138e/robotcode_debugger-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240511/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-runner]: Downloading https://files.pythonhosted.org/packages/1c/41/05314438036531681935091f25c4787d97c5409ee07a139e2a273e4f775d/robotcode_runner-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-core]: Downloading https://files.pythonhosted.org/packages/5a/10/df9c8ffc4e2f7420f0a905b9ca28be341e23fb133c520dbf05ec6808cbf3/robotcode_core-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-plugin]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-plugin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_plugin-0.82.1.tar.gz tmp/robotcode_plugin-0.82.2.tar.gz --markdown 20240511/r/robotcode-plugin/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-robot]: Downloading https://files.pythonhosted.org/packages/a9/62/f976ca4180dc4ec0c6a5f777a278f3f6eff8bffe4ffe6d9709a2f61cd84b/robotcode_robot-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-debugger]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-debugger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_debugger-0.82.1.tar.gz tmp/robotcode_debugger-0.82.2.tar.gz --markdown 20240511/r/robotcode-debugger/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-modifiers]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-modifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_modifiers-0.82.1.tar.gz tmp/robotcode_modifiers-0.82.2.tar.gz --markdown 20240511/r/robotcode-modifiers/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-jsonrpc2]: Downloading https://files.pythonhosted.org/packages/aa/d4/ac4c17ce5a2b0c2402f35473bee67c97a3c920d3bb7922e1adc43cb21284/robotcode_jsonrpc2-0.82.2.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode]: Downloading https://files.pythonhosted.org/packages/b7/ab/96637a51c1fdfc4ddca0c75fb12ea6dca9295477c4f8a80f501ee7c3b2ec/robotcode-0.9.6.tar.gz
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-runner]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_runner-0.82.1.tar.gz tmp/robotcode_runner-0.82.2.tar.gz --markdown 20240511/r/robotcode-runner/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-core]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_core-0.82.1.tar.gz tmp/robotcode_core-0.82.2.tar.gz --markdown 20240511/r/robotcode-core/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-robot]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-robot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_robot-0.82.1.tar.gz tmp/robotcode_robot-0.82.2.tar.gz --markdown 20240511/r/robotcode-robot/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-jsonrpc2]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode-jsonrpc2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_jsonrpc2-0.82.1.tar.gz tmp/robotcode_jsonrpc2-0.82.2.tar.gz --markdown 20240511/r/robotcode-jsonrpc2/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode]: executing diffoscope
+[2024-05-11 01:32:58] INFO root fetch - processPackages [robotcode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode-0.9.5.tar.gz tmp/robotcode-0.9.6.tar.gz --markdown 20240511/r/robotcode/0.9.5-0.9.6/README.md --exclude *.pyd
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-analyze]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-analyze]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/49/19/144bf1f1f7db9481bb538b69b526fc2f82f79bb049d968b778d6c75d9648/nonebot_plugin_ranfurrypic-1.0.1.tar.gz
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-plugin]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_plugin-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-plugin]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_plugin-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-plugin]: Start processing: cyberdrop-dl
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-plugin]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.2.9] Old Version: [5.2.8]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_modifiers-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-modifiers]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_modifiers-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-modifiers]: Start processing: zerofun
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-modifiers]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/de/9a/28b598784240ed5ee22b855a993f88e38716f82f33d8db2f79db3994742e/nonebot_plugin_ranfurrypic-1.0.2.tar.gz
+[2024-05-11 01:32:59] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d0/4d/1bcce6fd4b01edc3088927c67c6a1f036da4325e2d64f9023ffc785bf41f/cyberdrop_dl-5.2.8.tar.gz
+[2024-05-11 01:32:59] INFO root fetch - processPackages [zerofun]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-runner]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_runner-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-runner]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_runner-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-runner]: Start processing: dem-roughness-calculator
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-runner]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-debugger]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_debugger-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-debugger]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_debugger-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-debugger]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-core]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_core-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-core]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_core-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-core]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-jsonrpc2]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_jsonrpc2-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-jsonrpc2]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_jsonrpc2-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-jsonrpc2]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 01:32:59] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.1.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.2.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-11 01:32:59] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/0b/a2/3278ab26458c4f2792797cc8db874d40d922bdad79c96737da547af99e19/zerofun-2.0.0.tar.gz
+[2024-05-11 01:32:59] INFO root fetch - processPackages [dem-roughness-calculator]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_robot-0.82.1.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - processPackages [robotcode-robot]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_robot-0.82.2.tar.gz]
+[2024-05-11 01:32:59] INFO root fetch - main [MainThread]: End processing [robotcode-robot]: success
+[2024-05-11 01:32:59] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-11 01:32:59] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.8.tar.gz tmp/cyberdrop_dl-5.2.9.tar.gz --markdown 20240511/c/cyberdrop-dl/5.2.8-5.2.9/README.md --exclude *.pyd
+[2024-05-11 01:33:00] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/5c/07/f8c9ab6a0719f5b26f648e7844fa916ee86350aa4e178196e89c65992ba0/dem_roughness_calculator-1.1.0.tar.gz
+[2024-05-11 01:33:00] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/02/02/0db2453f62369c2817b2e0540b699117d897655040c1d0180d0f8c2583a4/zerofun-2.0.1.tar.gz
+[2024-05-11 01:33:00] INFO root fetch - processPackages [robotcode]: Remove: archive file [/home/abi/fetcher/tmp/robotcode-0.9.5.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - processPackages [robotcode]: Remove: archive file [/home/abi/fetcher/tmp/robotcode-0.9.6.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - main [MainThread]: End processing [robotcode]: success
+[2024-05-11 01:33:00] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 01:33:00] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-2.0.0.tar.gz tmp/zerofun-2.0.1.tar.gz --markdown 20240511/z/zerofun/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-11 01:33:00] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.1.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.2.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 01:33:00] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/24/9a/2a1e48dd90227bd83c3a0ee1ced74b3a53a3cc891aab4556a47495a03fec/dem_roughness_calculator-1.2.0.tar.gz
+[2024-05-11 01:33:00] INFO root fetch - processPackages [dem-roughness-calculator]: executing diffoscope
+[2024-05-11 01:33:00] INFO root fetch - processPackages [dem-roughness-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dem_roughness_calculator-1.1.0.tar.gz tmp/dem_roughness_calculator-1.2.0.tar.gz --markdown 20240511/d/dem-roughness-calculator/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-11 01:33:00] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.8.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-11 01:33:00] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.0.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.1.tar.gz]
+[2024-05-11 01:33:00] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 01:33:01] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.1.0.tar.gz]
+[2024-05-11 01:33:01] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.2.0.tar.gz]
+[2024-05-11 01:33:01] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator]: success
+[2024-05-11 01:33:01] INFO root fetch - main [MainThread]: Store serial: [23154091]
