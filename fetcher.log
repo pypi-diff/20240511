@@ -280,3 +280,12 @@
 [2024-05-11 00:12:24] INFO root fetch - processPackages [mosaicml-streaming]: Remove: archive file [/home/abi/fetcher/tmp/mosaicml-streaming-0.7.6.tar.gz]
 [2024-05-11 00:12:24] INFO root fetch - main [MainThread]: End processing [mosaicml-streaming]: success
 [2024-05-11 00:12:24] INFO root fetch - main [MainThread]: Store serial: [23153631]
+[2024-05-11 00:14:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153631]
+[2024-05-11 00:14:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unwavingz
+[2024-05-11 00:14:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wbmaker
+[2024-05-11 00:14:33] WARNING root fetch - processPackages [wbmaker]: Skipping, unable to determine old version
+[2024-05-11 00:14:33] INFO root fetch - main [MainThread]: End processing [wbmaker] error
+[2024-05-11 00:14:33] WARNING root fetch - processPackages [unwavingz]: Skipping, unable to determine old version
+[2024-05-11 00:14:33] INFO root fetch - main [MainThread]: End processing [unwavingz] error
+[2024-05-11 00:14:33] INFO root fetch - main [MainThread]: Store serial: [23153640]
