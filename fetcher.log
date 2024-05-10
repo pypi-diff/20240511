@@ -779,3 +779,63 @@
 [2024-05-11 00:51:36] INFO root fetch - processPackages [matadi]: Remove: archive file [/home/abi/fetcher/tmp/matadi-0.2.0.tar.gz]
 [2024-05-11 00:51:36] INFO root fetch - main [MainThread]: End processing [matadi]: success
 [2024-05-11 00:51:36] INFO root fetch - main [MainThread]: Store serial: [23153820]
+[2024-05-11 00:53:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153820]
+[2024-05-11 00:53:45] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hostagesz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: yunxiao
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mona-sdk
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypomes-db
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vbimagetotext
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mimllearning
+[2024-05-11 00:53:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sonsierz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [vbimagetotext]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 00:53:45] INFO root fetch - processPackages [pypomes-db]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-05-11 00:53:45] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 00:53:45] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/52/25/b7a358be0660e7fcc8fe251103fdedaa06a4d9e5dd6f187d24a5fd4cf69f/vbimagetotext-0.1.8.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [hostagesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:53:45] INFO root fetch - processPackages [yunxiao]: New version: [0.5.9] Old Version: [0.5.8]
+[2024-05-11 00:53:45] WARNING root fetch - processPackages [sonsierz]: Skipping, unable to determine old version
+[2024-05-11 00:53:45] INFO root fetch - main [MainThread]: End processing [sonsierz] error
+[2024-05-11 00:53:45] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/34/3d/1e8fcf9a8a35de30e58a8fec0191ee7ef35f5c1e0962aea7e120a5675476/pypomes_db-0.6.6.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [mona-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 00:53:45] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/91/30/7dab021fbebcbc8a948535a3259771c4ba186e097cba0298a6fc3e09bfad/yunxiao-0.5.8.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [hostagesz]: Downloading https://files.pythonhosted.org/packages/c4/aa/65fd0ec0292a27d944e2d21dbddb7b90880ddd84189a6d3116fa6315234a/hostagesz-1.1.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [mona-sdk]: Downloading https://files.pythonhosted.org/packages/77/c2/28caca48c10e039777e0b30189572242e59f5bf35f99d1c5187ce51fa97d/mona_sdk-0.0.8.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/ca/ab/d04b9565c08e65166ef59f04608945a4f32a943cc2e38d220d87b781eff7/vbimagetotext-0.1.9.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/9a/4a/de3dd03c244af86dc511fc6172b0ed4863cfc8bc649381b3696fcfaa678a/pypomes_db-0.6.7.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [vbimagetotext]: executing diffoscope
+[2024-05-11 00:53:45] INFO root fetch - processPackages [vbimagetotext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimagetotext-0.1.8.tar.gz tmp/vbimagetotext-0.1.9.tar.gz --markdown 20240511/v/vbimagetotext/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 00:53:45] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/65/ea/8d09efecced01316117ff8cca25d25d952fb19ccfc4d0fa3a890e60f9eb1/yunxiao-0.5.9.tar.gz
+[2024-05-11 00:53:45] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-11 00:53:45] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.6.6.tar.gz tmp/pypomes_db-0.6.7.tar.gz --markdown 20240511/p/pypomes-db/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-05-11 00:53:45] INFO root fetch - processPackages [hostagesz]: Downloading https://files.pythonhosted.org/packages/af/f0/3cbe18d3abb1a7a68c4d633e285d35ab7d0a707267e12b661f2d622085e9/hostagesz-2.1.tar.gz
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mona-sdk]: Downloading https://files.pythonhosted.org/packages/53/31/03a2f02a79557a6670cc5a0342bce2ac3783dac2252cba394719bc2a6cff/mona_sdk-0.0.9.tar.gz
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 00:53:46] INFO root fetch - processPackages [yunxiao]: executing diffoscope
+[2024-05-11 00:53:46] INFO root fetch - processPackages [yunxiao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunxiao-0.5.8.tar.gz tmp/yunxiao-0.5.9.tar.gz --markdown 20240511/y/yunxiao/0.5.8-0.5.9/README.md --exclude *.pyd
+[2024-05-11 00:53:46] INFO root fetch - processPackages [hostagesz]: executing diffoscope
+[2024-05-11 00:53:46] INFO root fetch - processPackages [hostagesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hostagesz-1.1.tar.gz tmp/hostagesz-2.1.tar.gz --markdown 20240511/h/hostagesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mona-sdk]: executing diffoscope
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mona-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mona_sdk-0.0.8.tar.gz tmp/mona_sdk-0.0.9.tar.gz --markdown 20240511/m/mona-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:53:46] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.6.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.7.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-11 00:53:46] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.8.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.9.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [vbimagetotext]: success
+[2024-05-11 00:53:46] INFO root fetch - processPackages [yunxiao]: Remove: archive file [/home/abi/fetcher/tmp/yunxiao-0.5.8.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [yunxiao]: Remove: archive file [/home/abi/fetcher/tmp/yunxiao-0.5.9.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [yunxiao]: success
+[2024-05-11 00:53:46] INFO root fetch - processPackages [hostagesz]: Remove: archive file [/home/abi/fetcher/tmp/hostagesz-1.1.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [hostagesz]: Remove: archive file [/home/abi/fetcher/tmp/hostagesz-2.1.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [hostagesz]: success
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mona-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mona_sdk-0.0.8.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mona-sdk]: Remove: archive file [/home/abi/fetcher/tmp/mona_sdk-0.0.9.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [mona-sdk]: success
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 00:53:46] INFO root fetch - main [MainThread]: Store serial: [23153841]
