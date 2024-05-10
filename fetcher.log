@@ -608,3 +608,18 @@
 [2024-05-11 00:36:23] INFO root fetch - processPackages [cirq-core]: Remove: archive file [/home/abi/fetcher/tmp/cirq_core-1.4.0.dev20240510015550-py3-none-any.whl.zip]
 [2024-05-11 00:36:23] INFO root fetch - main [MainThread]: End processing [cirq-core]: success
 [2024-05-11 00:36:23] INFO root fetch - main [MainThread]: Store serial: [23153758]
+[2024-05-11 00:38:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153758]
+[2024-05-11 00:38:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: drf-nested-routers
+[2024-05-11 00:38:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slupz
+[2024-05-11 00:38:31] INFO root fetch - processPackages [drf-nested-routers]: New version: [0.94.0] Old Version: [0.93.5]
+[2024-05-11 00:38:32] INFO root fetch - processPackages [drf-nested-routers]: Downloading https://files.pythonhosted.org/packages/ef/d6/028deaac557c92be1dbd56acb59b976f0ba8020894836e2404d4f79a3db6/drf-nested-routers-0.93.5.tar.gz
+[2024-05-11 00:38:32] WARNING root fetch - processPackages [slupz]: Skipping, unable to determine old version
+[2024-05-11 00:38:32] INFO root fetch - main [MainThread]: End processing [slupz] error
+[2024-05-11 00:38:32] INFO root fetch - processPackages [drf-nested-routers]: Downloading https://files.pythonhosted.org/packages/56/46/6b8b6a6da04032bdaf35a416e6cf60b2a58b14decf409d799d87206960c7/drf-nested-routers-0.94.0.tar.gz
+[2024-05-11 00:38:32] INFO root fetch - processPackages [drf-nested-routers]: executing diffoscope
+[2024-05-11 00:38:32] INFO root fetch - processPackages [drf-nested-routers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-nested-routers-0.93.5.tar.gz tmp/drf-nested-routers-0.94.0.tar.gz --markdown 20240511/d/drf-nested-routers/0.93.5-0.94.0/README.md --exclude *.pyd
+[2024-05-11 00:38:33] INFO root fetch - processPackages [drf-nested-routers]: Remove: archive file [/home/abi/fetcher/tmp/drf-nested-routers-0.93.5.tar.gz]
+[2024-05-11 00:38:33] INFO root fetch - processPackages [drf-nested-routers]: Remove: archive file [/home/abi/fetcher/tmp/drf-nested-routers-0.94.0.tar.gz]
+[2024-05-11 00:38:33] INFO root fetch - main [MainThread]: End processing [drf-nested-routers]: success
+[2024-05-11 00:38:33] INFO root fetch - main [MainThread]: Store serial: [23153765]
