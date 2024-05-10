@@ -1234,3 +1234,42 @@
 [2024-05-11 01:19:53] INFO root fetch - processPackages [pulumi-kubernetes]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_kubernetes-4.9.1.tar.gz]
 [2024-05-11 01:19:53] INFO root fetch - main [MainThread]: End processing [pulumi-kubernetes]: success
 [2024-05-11 01:19:53] INFO root fetch - main [MainThread]: Store serial: [23153970]
+[2024-05-11 01:21:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153970]
+[2024-05-11 01:22:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 01:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dyff-storage
+[2024-05-11 01:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beaker-py
+[2024-05-11 01:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: peopledatalabs
+[2024-05-11 01:22:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GazooResearchUtils
+[2024-05-11 01:22:02] INFO root fetch - processPackages [dyff-storage]: New version: [0.7.4] Old Version: [0.7.3]
+[2024-05-11 01:22:02] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.3.3] Old Version: [1.3.2]
+[2024-05-11 01:22:02] INFO root fetch - processPackages [beaker-py]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-11 01:22:02] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/8d/ba/981e07b4a124a14de2bbf37f21139f80e0683b5d6bdb1412c68bd45590ca/dyff_storage-0.7.3.tar.gz
+[2024-05-11 01:22:02] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/e3/cd/51763bfd7b5169cbed73f46f053cf7a13f98d95dc542a1c0cd8d3dce7c23/GazooResearchUtils-1.3.2.tar.gz
+[2024-05-11 01:22:02] INFO root fetch - processPackages [peopledatalabs]: New version: [3.0.9] Old Version: [3.0.8]
+[2024-05-11 01:22:02] INFO root fetch - processPackages [beaker-py]: Downloading https://files.pythonhosted.org/packages/1e/03/bd1b0b6d77693846240ec0ebd1d73dacd011695f5a0f3118ca23b8545c53/beaker-py-1.9.1.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [peopledatalabs]: Downloading https://files.pythonhosted.org/packages/37/86/0f60ea99c90d9663630b3ef9eabacdd4ab79fe6aec68edf156e139c4edb3/peopledatalabs-3.0.8.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/f8/69/cfe43ec89479c8b6ce1c27e3872ded0ed493a7a84e80eff644e4fa5c2fa5/GazooResearchUtils-1.3.3.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/2f/0b/3488c03a6099b6e57c121868e2e1e688a16237299ee39b1efeab56255c6a/dyff_storage-0.7.4.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [beaker-py]: Downloading https://files.pythonhosted.org/packages/0c/fc/715bf075aa3cd4e6a75dc7581bbba27a337add27bc93465c1719ad25ab7c/beaker-py-1.9.2.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 01:22:03] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.3.2.tar.gz tmp/GazooResearchUtils-1.3.3.tar.gz --markdown 20240511/G/GazooResearchUtils/1.3.2-1.3.3/README.md --exclude *.pyd
+[2024-05-11 01:22:03] INFO root fetch - processPackages [dyff-storage]: executing diffoscope
+[2024-05-11 01:22:03] INFO root fetch - processPackages [dyff-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_storage-0.7.3.tar.gz tmp/dyff_storage-0.7.4.tar.gz --markdown 20240511/d/dyff-storage/0.7.3-0.7.4/README.md --exclude *.pyd
+[2024-05-11 01:22:03] INFO root fetch - processPackages [beaker-py]: executing diffoscope
+[2024-05-11 01:22:03] INFO root fetch - processPackages [beaker-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beaker-py-1.9.1.tar.gz tmp/beaker-py-1.9.2.tar.gz --markdown 20240511/b/beaker-py/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-11 01:22:03] INFO root fetch - processPackages [peopledatalabs]: Downloading https://files.pythonhosted.org/packages/d4/d5/65a817d79185d8a8fd4d7e328060c14c1ddd61a424865829a56f2eb8c8d1/peopledatalabs-3.0.9.tar.gz
+[2024-05-11 01:22:03] INFO root fetch - processPackages [peopledatalabs]: executing diffoscope
+[2024-05-11 01:22:03] INFO root fetch - processPackages [peopledatalabs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peopledatalabs-3.0.8.tar.gz tmp/peopledatalabs-3.0.9.tar.gz --markdown 20240511/p/peopledatalabs/3.0.8-3.0.9/README.md --exclude *.pyd
+[2024-05-11 01:22:03] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.2.tar.gz]
+[2024-05-11 01:22:03] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.3.tar.gz]
+[2024-05-11 01:22:03] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 01:22:04] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.3.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.4.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - main [MainThread]: End processing [dyff-storage]: success
+[2024-05-11 01:22:04] INFO root fetch - processPackages [beaker-py]: Remove: archive file [/home/abi/fetcher/tmp/beaker-py-1.9.1.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - processPackages [beaker-py]: Remove: archive file [/home/abi/fetcher/tmp/beaker-py-1.9.2.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - main [MainThread]: End processing [beaker-py]: success
+[2024-05-11 01:22:04] INFO root fetch - processPackages [peopledatalabs]: Remove: archive file [/home/abi/fetcher/tmp/peopledatalabs-3.0.8.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - processPackages [peopledatalabs]: Remove: archive file [/home/abi/fetcher/tmp/peopledatalabs-3.0.9.tar.gz]
+[2024-05-11 01:22:04] INFO root fetch - main [MainThread]: End processing [peopledatalabs]: success
+[2024-05-11 01:22:04] INFO root fetch - main [MainThread]: Store serial: [23153981]
