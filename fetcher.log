@@ -190,3 +190,18 @@
 [2024-05-11 00:05:53] INFO root fetch - processPackages [prophetverse]: Remove: archive file [/home/abi/fetcher/tmp/prophetverse-0.0.4.tar.gz]
 [2024-05-11 00:05:53] INFO root fetch - main [MainThread]: End processing [prophetverse]: success
 [2024-05-11 00:05:53] INFO root fetch - main [MainThread]: Store serial: [23153594]
+[2024-05-11 00:07:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153594]
+[2024-05-11 00:08:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 00:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datascope-experiments
+[2024-05-11 00:08:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: arecaceaez
+[2024-05-11 00:08:02] WARNING root fetch - processPackages [arecaceaez]: Skipping, unable to determine old version
+[2024-05-11 00:08:02] INFO root fetch - main [MainThread]: End processing [arecaceaez] error
+[2024-05-11 00:08:02] INFO root fetch - processPackages [datascope-experiments]: New version: [0.0.9] Old Version: [0.0.85]
+[2024-05-11 00:08:02] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/3f/41/f068ef9f27cd29d5edba9415d3e9602ec497f3ccf2451c89c3436de00b53/datascope-experiments-0.0.85.tar.gz
+[2024-05-11 00:08:02] INFO root fetch - processPackages [datascope-experiments]: Downloading https://files.pythonhosted.org/packages/b1/bc/05ddc96ba1314c3a59709691d24646790023b2b8b38620c39e9ae4412371/datascope-experiments-0.0.9.tar.gz
+[2024-05-11 00:08:02] INFO root fetch - processPackages [datascope-experiments]: executing diffoscope
+[2024-05-11 00:08:02] INFO root fetch - processPackages [datascope-experiments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datascope-experiments-0.0.85.tar.gz tmp/datascope-experiments-0.0.9.tar.gz --markdown 20240511/d/datascope-experiments/0.0.85-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:08:03] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.85.tar.gz]
+[2024-05-11 00:08:03] INFO root fetch - processPackages [datascope-experiments]: Remove: archive file [/home/abi/fetcher/tmp/datascope-experiments-0.0.9.tar.gz]
+[2024-05-11 00:08:03] INFO root fetch - main [MainThread]: End processing [datascope-experiments]: success
+[2024-05-11 00:08:03] INFO root fetch - main [MainThread]: Store serial: [23153602]
