@@ -860,3 +860,33 @@
 [2024-05-11 00:55:57] INFO root fetch - processPackages [cterasdk]: Remove: archive file [/home/abi/fetcher/tmp/cterasdk-2.9.0.tar.gz]
 [2024-05-11 00:55:57] INFO root fetch - main [MainThread]: End processing [cterasdk]: success
 [2024-05-11 00:55:57] INFO root fetch - main [MainThread]: Store serial: [23153847]
+[2024-05-11 00:58:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153847]
+[2024-05-11 00:58:05] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 00:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: altscore-workflow-builder
+[2024-05-11 00:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: finch-api
+[2024-05-11 00:58:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: huntleyz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [huntleyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:58:06] INFO root fetch - processPackages [finch-api]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-11 00:58:06] INFO root fetch - processPackages [finch-api]: Downloading https://files.pythonhosted.org/packages/3d/83/67d49a54417f2f4fb7f39eaa7f7d3b0c524160f4c3540dd576224afb685b/finch_api-0.9.4.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [huntleyz]: Downloading https://files.pythonhosted.org/packages/a8/08/c9a1b418d56123cadccb4dc3fe1d97c6b5a76e39af0363f8c76e15f088d3/huntleyz-1.1.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:58:06] INFO root fetch - processPackages [huntleyz]: Downloading https://files.pythonhosted.org/packages/27/22/e999cd5b74386735146f6a098101972feb4ab7a2c27144b8592392e7a82b/huntleyz-2.1.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [finch-api]: Downloading https://files.pythonhosted.org/packages/a7/40/69f973fbe568114c3e198cd4cd3586aedb3c65810d7fb43b1fe366bbead9/finch_api-0.9.5.tar.gz
+[2024-05-11 00:58:06] INFO root fetch - processPackages [huntleyz]: executing diffoscope
+[2024-05-11 00:58:06] INFO root fetch - processPackages [huntleyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/huntleyz-1.1.tar.gz tmp/huntleyz-2.1.tar.gz --markdown 20240511/h/huntleyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:58:06] INFO root fetch - processPackages [finch-api]: executing diffoscope
+[2024-05-11 00:58:06] INFO root fetch - processPackages [finch-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finch_api-0.9.4.tar.gz tmp/finch_api-0.9.5.tar.gz --markdown 20240511/f/finch-api/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 00:58:06] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 00:58:06] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 00:58:07] INFO root fetch - processPackages [huntleyz]: Remove: archive file [/home/abi/fetcher/tmp/huntleyz-1.1.tar.gz]
+[2024-05-11 00:58:07] INFO root fetch - processPackages [huntleyz]: Remove: archive file [/home/abi/fetcher/tmp/huntleyz-2.1.tar.gz]
+[2024-05-11 00:58:07] INFO root fetch - main [MainThread]: End processing [huntleyz]: success
+[2024-05-11 00:58:07] INFO root fetch - processPackages [finch-api]: Remove: archive file [/home/abi/fetcher/tmp/finch_api-0.9.4.tar.gz]
+[2024-05-11 00:58:07] INFO root fetch - processPackages [finch-api]: Remove: archive file [/home/abi/fetcher/tmp/finch_api-0.9.5.tar.gz]
+[2024-05-11 00:58:07] INFO root fetch - main [MainThread]: End processing [finch-api]: success
+[2024-05-11 00:58:07] INFO root fetch - main [MainThread]: Store serial: [23153855]
