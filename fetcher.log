@@ -1866,3 +1866,45 @@
 [2024-05-11 01:44:06] INFO root fetch - processPackages [beaker-gantry]: Remove: archive file [/home/abi/fetcher/tmp/beaker-gantry-0.9.4.tar.gz]
 [2024-05-11 01:44:06] INFO root fetch - main [MainThread]: End processing [beaker-gantry]: success
 [2024-05-11 01:44:06] INFO root fetch - main [MainThread]: Store serial: [23154225]
+[2024-05-11 01:46:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154225]
+[2024-05-11 01:46:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 01:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama_tools
+[2024-05-11 01:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: graftingz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: inappellablez
+[2024-05-11 01:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: fmeval
+[2024-05-11 01:46:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dem-roughness-calculator
+[2024-05-11 01:46:16] INFO root fetch - processPackages [dem-roughness-calculator]: New version: [1.2.0] Old Version: [1.1.0]
+[2024-05-11 01:46:16] INFO root fetch - processPackages [llama_tools]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 01:46:16] INFO root fetch - processPackages [fmeval]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 01:46:16] INFO root fetch - processPackages [inappellablez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:46:16] WARNING root fetch - processPackages [graftingz]: Skipping, unable to determine old version
+[2024-05-11 01:46:16] INFO root fetch - main [MainThread]: End processing [graftingz] error
+[2024-05-11 01:46:16] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/5c/07/f8c9ab6a0719f5b26f648e7844fa916ee86350aa4e178196e89c65992ba0/dem_roughness_calculator-1.1.0.tar.gz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/04/10/44be2d7bd4637ed0d9f77190e889b09d285cd1c1e53f74bc242a3a28f2ee/llama_tools-0.1.6.tar.gz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [fmeval]: Downloading https://files.pythonhosted.org/packages/05/a1/309239945989947d7f769eac4714e185726b390edac338127485e2a1d1e1/fmeval-1.0.2-py3-none-any.whl
+[2024-05-11 01:46:16] INFO root fetch - processPackages [inappellablez]: Downloading https://files.pythonhosted.org/packages/be/89/f57dd127900c29d33b8027275ef0a383f3f4d0857c9469d0b3a9aab50c95/inappellablez-1.1.tar.gz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/24/9a/2a1e48dd90227bd83c3a0ee1ced74b3a53a3cc891aab4556a47495a03fec/dem_roughness_calculator-1.2.0.tar.gz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [llama_tools]: Downloading https://files.pythonhosted.org/packages/2c/15/bcb18530d1d6b07452ecc5e31d6e4f0c768ec5cba8610820853ee42357d6/llama_tools-0.1.7.tar.gz
+[2024-05-11 01:46:16] INFO root fetch - processPackages [llama_tools]: executing diffoscope
+[2024-05-11 01:46:16] INFO root fetch - processPackages [llama_tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_tools-0.1.6.tar.gz tmp/llama_tools-0.1.7.tar.gz --markdown 20240511/l/llama_tools/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 01:46:16] INFO root fetch - processPackages [dem-roughness-calculator]: executing diffoscope
+[2024-05-11 01:46:16] INFO root fetch - processPackages [dem-roughness-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dem_roughness_calculator-1.1.0.tar.gz tmp/dem_roughness_calculator-1.2.0.tar.gz --markdown 20240511/d/dem-roughness-calculator/1.1.0-1.2.0/README.md --exclude *.pyd
+[2024-05-11 01:46:17] INFO root fetch - processPackages [inappellablez]: Downloading https://files.pythonhosted.org/packages/15/a0/16789a2cebb26ae2f860ffbc38cc9ad2ec07a1a21a9f457119a03c06a607/inappellablez-2.1.tar.gz
+[2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: Downloading https://files.pythonhosted.org/packages/74/59/7ed73990a20200e3d2f28f894b1d7b20b74da618e51510722a1f3c1bdcbd/fmeval-1.0.3-py3-none-any.whl
+[2024-05-11 01:46:17] INFO root fetch - processPackages [inappellablez]: executing diffoscope
+[2024-05-11 01:46:17] INFO root fetch - processPackages [inappellablez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inappellablez-1.1.tar.gz tmp/inappellablez-2.1.tar.gz --markdown 20240511/i/inappellablez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: executing diffoscope
+[2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmeval-1.0.2-py3-none-any.whl.zip tmp/fmeval-1.0.3-py3-none-any.whl.zip --markdown 20240511/f/fmeval/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 01:46:17] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.1.0.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.2.0.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator]: success
+[2024-05-11 01:46:17] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.6.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - processPackages [llama_tools]: Remove: archive file [/home/abi/fetcher/tmp/llama_tools-0.1.7.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - main [MainThread]: End processing [llama_tools]: success
+[2024-05-11 01:46:17] INFO root fetch - processPackages [inappellablez]: Remove: archive file [/home/abi/fetcher/tmp/inappellablez-1.1.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - processPackages [inappellablez]: Remove: archive file [/home/abi/fetcher/tmp/inappellablez-2.1.tar.gz]
+[2024-05-11 01:46:17] INFO root fetch - main [MainThread]: End processing [inappellablez]: success
+[2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: Remove: archive file [/home/abi/fetcher/tmp/fmeval-1.0.2-py3-none-any.whl.zip]
+[2024-05-11 01:46:17] INFO root fetch - processPackages [fmeval]: Remove: archive file [/home/abi/fetcher/tmp/fmeval-1.0.3-py3-none-any.whl.zip]
+[2024-05-11 01:46:18] INFO root fetch - main [MainThread]: End processing [fmeval]: success
+[2024-05-11 01:46:18] INFO root fetch - main [MainThread]: Store serial: [23154239]
