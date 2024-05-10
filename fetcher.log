@@ -707,3 +707,36 @@
 [2024-05-11 00:47:15] INFO root fetch - processPackages [countdown-cli]: Remove: archive file [/home/abi/fetcher/tmp/countdown_cli-1.0.3.tar.gz]
 [2024-05-11 00:47:15] INFO root fetch - main [MainThread]: End processing [countdown-cli]: success
 [2024-05-11 00:47:15] INFO root fetch - main [MainThread]: Store serial: [23153796]
+[2024-05-11 00:49:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153796]
+[2024-05-11 00:49:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 00:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gantry-logger
+[2024-05-11 00:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: srslib
+[2024-05-11 00:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sacrilegerz
+[2024-05-11 00:49:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: adafruit-circuitpython-pycamera
+[2024-05-11 00:49:24] INFO root fetch - processPackages [gantry-logger]: New version: [0.0.2a7] Old Version: [0.0.2a6]
+[2024-05-11 00:49:24] WARNING root fetch - processPackages [sacrilegerz]: Skipping, unable to determine old version
+[2024-05-11 00:49:24] INFO root fetch - main [MainThread]: End processing [sacrilegerz] error
+[2024-05-11 00:49:24] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-11 00:49:24] INFO root fetch - processPackages [srslib]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 00:49:24] INFO root fetch - processPackages [gantry-logger]: Downloading https://files.pythonhosted.org/packages/a5/7e/4d7fa16ba4c58a81be3c7b8bb3f121e38f1756ed71da988a7eec8a93810f/gantry_logger-0.0.2a6.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: Downloading https://files.pythonhosted.org/packages/f3/ea/426d19f0ecd5a15cd20616d19a2196ead15192145a3e6904770fb7d6eff5/adafruit-circuitpython-pycamera-1.3.0.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [srslib]: Downloading https://files.pythonhosted.org/packages/04/d2/0ff8454bb8a79306e02549f85a83569d34ce39d8fd26dbe706d08752d41d/srslib-0.1.4.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [gantry-logger]: Downloading https://files.pythonhosted.org/packages/fa/cf/633238a8e7652ba098bd8d742b215074246cd72f0e86c196c023a74d691a/gantry_logger-0.0.2a7.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: Downloading https://files.pythonhosted.org/packages/19/75/79c2129c2bf35c6e660e9caa084e80b45f11075bc149ae818f04079511ab/adafruit_circuitpython_pycamera-1.3.1.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [srslib]: Downloading https://files.pythonhosted.org/packages/de/45/ffba3af1d7496875d035a4e71355b49969b5fc8bced561374c234d05dd8b/srslib-0.1.5.tar.gz
+[2024-05-11 00:49:24] INFO root fetch - processPackages [gantry-logger]: executing diffoscope
+[2024-05-11 00:49:24] INFO root fetch - processPackages [gantry-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gantry_logger-0.0.2a6.tar.gz tmp/gantry_logger-0.0.2a7.tar.gz --markdown 20240511/g/gantry-logger/0.0.2a6-0.0.2a7/README.md --exclude *.pyd
+[2024-05-11 00:49:24] INFO root fetch - processPackages [srslib]: executing diffoscope
+[2024-05-11 00:49:24] INFO root fetch - processPackages [srslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/srslib-0.1.4.tar.gz tmp/srslib-0.1.5.tar.gz --markdown 20240511/s/srslib/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 00:49:24] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: executing diffoscope
+[2024-05-11 00:49:24] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adafruit-circuitpython-pycamera-1.3.0.tar.gz tmp/adafruit_circuitpython_pycamera-1.3.1.tar.gz --markdown 20240511/a/adafruit-circuitpython-pycamera/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-11 00:49:25] INFO root fetch - processPackages [srslib]: Remove: archive file [/home/abi/fetcher/tmp/srslib-0.1.4.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - processPackages [srslib]: Remove: archive file [/home/abi/fetcher/tmp/srslib-0.1.5.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - main [MainThread]: End processing [srslib]: success
+[2024-05-11 00:49:25] INFO root fetch - processPackages [gantry-logger]: Remove: archive file [/home/abi/fetcher/tmp/gantry_logger-0.0.2a6.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - processPackages [gantry-logger]: Remove: archive file [/home/abi/fetcher/tmp/gantry_logger-0.0.2a7.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - main [MainThread]: End processing [gantry-logger]: success
+[2024-05-11 00:49:25] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: Remove: archive file [/home/abi/fetcher/tmp/adafruit-circuitpython-pycamera-1.3.0.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_pycamera-1.3.1.tar.gz]
+[2024-05-11 00:49:25] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-pycamera]: success
+[2024-05-11 00:49:25] INFO root fetch - main [MainThread]: Store serial: [23153809]
