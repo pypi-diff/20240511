@@ -364,3 +364,39 @@
 [2024-05-11 00:23:14] WARNING root fetch - processPackages [rhythmidia]: Skipping, unable to determine old version
 [2024-05-11 00:23:14] INFO root fetch - main [MainThread]: End processing [rhythmidia] error
 [2024-05-11 00:23:14] INFO root fetch - main [MainThread]: Store serial: [23153680]
+[2024-05-11 00:25:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153680]
+[2024-05-11 00:25:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 00:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spyglass-neuro
+[2024-05-11 00:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openmargin
+[2024-05-11 00:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pizzoo
+[2024-05-11 00:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: OZI
+[2024-05-11 00:25:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dyff-storage
+[2024-05-11 00:25:22] INFO root fetch - processPackages [dyff-storage]: New version: [0.7.2] Old Version: [0.7.1]
+[2024-05-11 00:25:22] WARNING root fetch - processPackages [pizzoo]: Skipping, unable to determine old version
+[2024-05-11 00:25:22] INFO root fetch - main [MainThread]: End processing [pizzoo] error
+[2024-05-11 00:25:22] WARNING root fetch - processPackages [openmargin]: Skipping, unable to determine old version
+[2024-05-11 00:25:22] INFO root fetch - main [MainThread]: End processing [openmargin] error
+[2024-05-11 00:25:22] INFO root fetch - processPackages [OZI]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-05-11 00:25:22] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/40/40/2ae1f9cbe59536c1cf4156f733c8e43cf7eb1fe45a027aeca9368ab229ef/dyff_storage-0.7.1.tar.gz
+[2024-05-11 00:25:22] INFO root fetch - processPackages [spyglass-neuro]: New version: [0.5.2a5] Old Version: [0.5.2a4]
+[2024-05-11 00:25:22] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/dd/43/861f01cf41815f76f4490851e3915e2c2971abf9305f652a63ce1b96ee8c/OZI-1.5.0.tar.gz
+[2024-05-11 00:25:23] INFO root fetch - processPackages [spyglass-neuro]: Downloading https://files.pythonhosted.org/packages/5b/f7/b85c63529dd15906ad5247bd7752940040d16660e6b5d205d0b71d055b61/spyglass_neuro-0.5.2a4.tar.gz
+[2024-05-11 00:25:23] INFO root fetch - processPackages [dyff-storage]: Downloading https://files.pythonhosted.org/packages/45/51/b737be9fd5a0781c5d7adc070609a31efbe0a49e69cb9e05fba9d74f38fa/dyff_storage-0.7.2.tar.gz
+[2024-05-11 00:25:23] INFO root fetch - processPackages [OZI]: Downloading https://files.pythonhosted.org/packages/64/04/4af03341fdc71067402bf2cd05d28b1fdf15a338c7432b032596f263a375/OZI-1.5.1.tar.gz
+[2024-05-11 00:25:23] INFO root fetch - processPackages [dyff-storage]: executing diffoscope
+[2024-05-11 00:25:23] INFO root fetch - processPackages [dyff-storage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_storage-0.7.1.tar.gz tmp/dyff_storage-0.7.2.tar.gz --markdown 20240511/d/dyff-storage/0.7.1-0.7.2/README.md --exclude *.pyd
+[2024-05-11 00:25:23] INFO root fetch - processPackages [OZI]: executing diffoscope
+[2024-05-11 00:25:23] INFO root fetch - processPackages [OZI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI-1.5.0.tar.gz tmp/OZI-1.5.1.tar.gz --markdown 20240511/O/OZI/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-05-11 00:25:23] INFO root fetch - processPackages [spyglass-neuro]: Downloading https://files.pythonhosted.org/packages/d3/f7/9d0f006831b020148499b2bec9c4a0ee246d814942f7efb21165e006e417/spyglass_neuro-0.5.2a5.tar.gz
+[2024-05-11 00:25:23] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.1.tar.gz]
+[2024-05-11 00:25:23] INFO root fetch - processPackages [dyff-storage]: Remove: archive file [/home/abi/fetcher/tmp/dyff_storage-0.7.2.tar.gz]
+[2024-05-11 00:25:23] INFO root fetch - main [MainThread]: End processing [dyff-storage]: success
+[2024-05-11 00:25:23] INFO root fetch - processPackages [spyglass-neuro]: executing diffoscope
+[2024-05-11 00:25:23] INFO root fetch - processPackages [spyglass-neuro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spyglass_neuro-0.5.2a4.tar.gz tmp/spyglass_neuro-0.5.2a5.tar.gz --markdown 20240511/s/spyglass-neuro/0.5.2a4-0.5.2a5/README.md --exclude *.pyd
+[2024-05-11 00:25:24] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.5.0.tar.gz]
+[2024-05-11 00:25:24] INFO root fetch - processPackages [OZI]: Remove: archive file [/home/abi/fetcher/tmp/OZI-1.5.1.tar.gz]
+[2024-05-11 00:25:24] INFO root fetch - main [MainThread]: End processing [OZI]: success
+[2024-05-11 00:25:25] INFO root fetch - processPackages [spyglass-neuro]: Remove: archive file [/home/abi/fetcher/tmp/spyglass_neuro-0.5.2a4.tar.gz]
+[2024-05-11 00:25:25] INFO root fetch - processPackages [spyglass-neuro]: Remove: archive file [/home/abi/fetcher/tmp/spyglass_neuro-0.5.2a5.tar.gz]
+[2024-05-11 00:25:25] INFO root fetch - main [MainThread]: End processing [spyglass-neuro]: success
+[2024-05-11 00:25:25] INFO root fetch - main [MainThread]: Store serial: [23153697]
