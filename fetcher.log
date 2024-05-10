@@ -2069,3 +2069,24 @@
 [2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.3.0.tar.gz]
 [2024-05-11 01:57:23] INFO root fetch - main [MainThread]: End processing [runtime-generics]: success
 [2024-05-11 01:57:23] INFO root fetch - main [MainThread]: Store serial: [23154317]
+[2024-05-11 01:59:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154317]
+[2024-05-11 01:59:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 01:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elia-chat
+[2024-05-11 01:59:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlexecx
+[2024-05-11 01:59:32] INFO root fetch - processPackages [sqlexecx]: New version: [0.5.0] Old Version: [0.3.0]
+[2024-05-11 01:59:32] INFO root fetch - processPackages [sqlexecx]: Downloading https://files.pythonhosted.org/packages/42/d0/ffcd4a64e9dccc5dc5b607a9985320945567590734754723dc7197474bb2/sqlexecx-0.3.0.tar.gz
+[2024-05-11 01:59:32] INFO root fetch - processPackages [elia-chat]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-05-11 01:59:32] INFO root fetch - processPackages [elia-chat]: Downloading https://files.pythonhosted.org/packages/22/dc/fadc02d7ed9b77e4ed1bd316f5d9376815c097fe4efbc118d4bd4c1e1246/elia_chat-1.1.1.tar.gz
+[2024-05-11 01:59:32] INFO root fetch - processPackages [sqlexecx]: Downloading https://files.pythonhosted.org/packages/47/51/d4bd88ba1d536b6beef85954fe1419f7ef7a6c56b5c64b0bd79d1e3135b2/sqlexecx-0.5.0.tar.gz
+[2024-05-11 01:59:32] INFO root fetch - processPackages [sqlexecx]: executing diffoscope
+[2024-05-11 01:59:32] INFO root fetch - processPackages [sqlexecx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecx-0.3.0.tar.gz tmp/sqlexecx-0.5.0.tar.gz --markdown 20240511/s/sqlexecx/0.3.0-0.5.0/README.md --exclude *.pyd
+[2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: Downloading https://files.pythonhosted.org/packages/29/01/c0c14b710cbe5a2985e6e5ec2181aa509b74aea574d996fcdd5a119b3233/elia_chat-1.2.0.tar.gz
+[2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: executing diffoscope
+[2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elia_chat-1.1.1.tar.gz tmp/elia_chat-1.2.0.tar.gz --markdown 20240511/e/elia-chat/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-05-11 01:59:33] INFO root fetch - processPackages [sqlexecx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecx-0.3.0.tar.gz]
+[2024-05-11 01:59:33] INFO root fetch - processPackages [sqlexecx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecx-0.5.0.tar.gz]
+[2024-05-11 01:59:33] INFO root fetch - main [MainThread]: End processing [sqlexecx]: success
+[2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: Remove: archive file [/home/abi/fetcher/tmp/elia_chat-1.1.1.tar.gz]
+[2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: Remove: archive file [/home/abi/fetcher/tmp/elia_chat-1.2.0.tar.gz]
+[2024-05-11 01:59:33] INFO root fetch - main [MainThread]: End processing [elia-chat]: success
+[2024-05-11 01:59:33] INFO root fetch - main [MainThread]: Store serial: [23154326]
