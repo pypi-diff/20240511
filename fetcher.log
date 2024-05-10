@@ -1396,3 +1396,95 @@
 [2024-05-11 01:28:38] INFO root fetch - processPackages [msticpy]: Remove: archive file [/home/abi/fetcher/tmp/msticpy-2.9.0.tar.gz]
 [2024-05-11 01:28:38] INFO root fetch - main [MainThread]: End processing [msticpy]: success
 [2024-05-11 01:28:38] INFO root fetch - main [MainThread]: Store serial: [23154021]
+[2024-05-11 01:30:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154021]
+[2024-05-11 01:30:46] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: immersingz
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-dynamic-theme
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ennuyantez
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: glpic
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: git-pyinit
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GazooResearchUtils
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: yoto-api
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: altscore-workflow-builder
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: robotcode-language-server
+[2024-05-11 01:30:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: finman
+[2024-05-11 01:30:46] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [git-pyinit]: New version: [1.3.2] Old Version: [1.2.0]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [finman]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [glpic]: New version: [99.0.202405102303] Old Version: [99.0.202405102208]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [yoto-api]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [immersingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [django-dynamic-theme]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 01:30:46] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 01:30:47] WARNING root fetch - processPackages [ennuyantez]: Skipping, unable to determine old version
+[2024-05-11 01:30:47] INFO root fetch - processPackages [ennuyantez]: Start processing: robotcode-analyze
+[2024-05-11 01:30:47] INFO root fetch - main [MainThread]: End processing [ennuyantez] error
+[2024-05-11 01:30:47] INFO root fetch - processPackages [git-pyinit]: Downloading https://files.pythonhosted.org/packages/77/f8/19f5531a1f32dbba95dc32882022818fb1975d4b98701d8fe68de1d0fcbb/git_pyinit-1.2.0.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/90/19/a4b75f64b0ac73e3e0172f9f380d10d2a597bcdf1e67857d47dcee27f8a7/GazooResearchUtils-1.3.4.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/bb/cb/ce7bf0251b399538f271909222435d9981e2c8799cb00329d095c6c991b4/glpic-99.0.202405102208.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/0c/ce/e8631b9319eccf4ffbaef962e56044d41f29cb3f8c07be1556f741f2569a/yoto_api-1.8.0.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-language-server]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:30:47] INFO root fetch - processPackages [immersingz]: Downloading https://files.pythonhosted.org/packages/e0/7d/e6e01b9f72be968d756e5ba6410f2db8b935c0d32c6b982f2c60bed82648/immersingz-1.1.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/40/b5/06e5ad6b9bc577cd6521f41d5bfa1e3de296967c72bdb44cb3226905f11d/django_dynamic_theme-0.0.7.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [finman]: Downloading https://files.pythonhosted.org/packages/b6/6a/0533aaa15cde719a748eff92f88a332000b2b748d862e70ed903899aaf0a/finman-0.1.0.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-analyze]: New version: [0.82.2] Old Version: [0.82.1]
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-language-server]: Downloading https://files.pythonhosted.org/packages/b3/e7/66d3b55c198b8b8b43dd29a68bb99ff03116130d2d9729dbbc1f8c664fec/robotcode_language_server-0.82.1.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [git-pyinit]: Downloading https://files.pythonhosted.org/packages/40/8b/88c650901285ae05cc30e3d77a71b8c2ae9428a892fe7ff2f66eb02828b0/git_pyinit-1.3.2.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [yoto-api]: Downloading https://files.pythonhosted.org/packages/28/bc/e9d37198654bf82ae9be692dd9ee95b753eb8ca5b6edf44ab69ecca38f17/yoto_api-1.9.0.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/92/a0/70e9e5f41aa1e4fe0f147358f3ca7d89ec3bdfc8685a63932a0c9d2d6074/glpic-99.0.202405102303.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/18/b8/d11d784c9386f635b48d68430e06ded49ad32436832e0ccb172fe356bceb/robotcode_analyze-0.82.1.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/ba/15/145b4ebb9a79eb9205c3c75d9d99480345355630a40cb6dcd9f662ce5a5b/GazooResearchUtils-1.3.5.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [git-pyinit]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - processPackages [git-pyinit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_pyinit-1.2.0.tar.gz tmp/git_pyinit-1.3.2.tar.gz --markdown 20240511/g/git-pyinit/1.2.0-1.3.2/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [immersingz]: Downloading https://files.pythonhosted.org/packages/92/d2/acf390c07fa702f75578b0167071020b97683cd33f833e3531354f225b3f/immersingz-2.1.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [yoto-api]: executing diffoscope
+[2024-05-11 01:30:47] ERROR root fetch - processPackages [finman]: Unable to fetch info: No such project/version 'finman' 0.1.1
+[2024-05-11 01:30:47] INFO root fetch - processPackages [yoto-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yoto_api-1.8.0.tar.gz tmp/yoto_api-1.9.0.tar.gz --markdown 20240511/y/yoto-api/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - main [MainThread]: End processing [finman] error
+[2024-05-11 01:30:47] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [django-dynamic-theme]: Downloading https://files.pythonhosted.org/packages/0d/69/459d62502d4378e991949679fa86044d77003038b70926c1ecaa2dd00d44/django_dynamic_theme-0.0.8.tar.gz
+[2024-05-11 01:30:47] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.3.4.tar.gz tmp/GazooResearchUtils-1.3.5.tar.gz --markdown 20240511/G/GazooResearchUtils/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405102208.tar.gz tmp/glpic-99.0.202405102303.tar.gz --markdown 20240511/g/glpic/99.0.202405102208-99.0.202405102303/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [immersingz]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - processPackages [immersingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/immersingz-1.1.tar.gz tmp/immersingz-2.1.tar.gz --markdown 20240511/i/immersingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [django-dynamic-theme]: executing diffoscope
+[2024-05-11 01:30:47] INFO root fetch - processPackages [django-dynamic-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_dynamic_theme-0.0.7.tar.gz tmp/django_dynamic_theme-0.0.8.tar.gz --markdown 20240511/d/django-dynamic-theme/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-language-server]: Downloading https://files.pythonhosted.org/packages/d0/28/6d5c290c588c4ceec17961b6fe3d987f8ade01fab339889833f7b2d31b6e/robotcode_language_server-0.82.2-py3-none-any.whl
+[2024-05-11 01:30:47] INFO root fetch - processPackages [robotcode-analyze]: Downloading https://files.pythonhosted.org/packages/a3/92/d334b1f03fd572f932662bce52f3a3e2c746d0bc03b21e9da0f67e871d28/robotcode_analyze-0.82.2-py3-none-any.whl
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-language-server]: executing diffoscope
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-language-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_language_server-0.82.1.tar.gz tmp/robotcode_language_server-0.82.2-py3-none-any.whl.zip --markdown 20240511/r/robotcode-language-server/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:30:48] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.4.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.5.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-analyze]: executing diffoscope
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-analyze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robotcode_analyze-0.82.1.tar.gz tmp/robotcode_analyze-0.82.2-py3-none-any.whl.zip --markdown 20240511/r/robotcode-analyze/0.82.1-0.82.2/README.md --exclude *.pyd
+[2024-05-11 01:30:48] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102208.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102303.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [immersingz]: Remove: archive file [/home/abi/fetcher/tmp/immersingz-1.1.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [immersingz]: Remove: archive file [/home/abi/fetcher/tmp/immersingz-2.1.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [immersingz]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.8.0.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [yoto-api]: Remove: archive file [/home/abi/fetcher/tmp/yoto_api-1.9.0.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [yoto-api]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [git-pyinit]: Remove: archive file [/home/abi/fetcher/tmp/git_pyinit-1.2.0.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [git-pyinit]: Remove: archive file [/home/abi/fetcher/tmp/git_pyinit-1.3.2.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [git-pyinit]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-language-server]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_language_server-0.82.1.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [robotcode-language-server]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_language_server-0.82.2-py3-none-any.whl.zip]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [robotcode-language-server]: success
+[2024-05-11 01:30:48] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.7.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - processPackages [django-dynamic-theme]: Remove: archive file [/home/abi/fetcher/tmp/django_dynamic_theme-0.0.8.tar.gz]
+[2024-05-11 01:30:48] INFO root fetch - main [MainThread]: End processing [django-dynamic-theme]: success
+[2024-05-11 01:30:49] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.82.1.tar.gz]
+[2024-05-11 01:30:49] INFO root fetch - processPackages [robotcode-analyze]: Remove: archive file [/home/abi/fetcher/tmp/robotcode_analyze-0.82.2-py3-none-any.whl.zip]
+[2024-05-11 01:30:49] INFO root fetch - main [MainThread]: End processing [robotcode-analyze]: success
+[2024-05-11 01:30:49] INFO root fetch - main [MainThread]: Store serial: [23154048]
