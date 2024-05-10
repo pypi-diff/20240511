@@ -1081,3 +1081,33 @@
 [2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-2.0.0.tar.gz]
 [2024-05-11 01:09:02] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
 [2024-05-11 01:09:02] INFO root fetch - main [MainThread]: Store serial: [23153921]
+[2024-05-11 01:11:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153921]
+[2024-05-11 01:11:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 01:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: welkin
+[2024-05-11 01:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dcqc
+[2024-05-11 01:11:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crowbar-package-manager
+[2024-05-11 01:11:11] INFO root fetch - processPackages [welkin]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 01:11:11] INFO root fetch - processPackages [dcqc]: New version: [1.7.0] Old Version: [1.6.5]
+[2024-05-11 01:11:11] INFO root fetch - processPackages [dcqc]: Downloading https://files.pythonhosted.org/packages/62/fa/186df18bcb77bebee001fc6fb57e85fc44f0f6b99852505bb3cc989db946/dcqc-1.6.5.tar.gz
+[2024-05-11 01:11:11] INFO root fetch - processPackages [crowbar-package-manager]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 01:11:11] INFO root fetch - processPackages [welkin]: Downloading https://files.pythonhosted.org/packages/8a/80/4aa9151290718bf4f1ada006260a19d174139feff722960c85eec2fbf55b/welkin-0.1.2.tar.gz
+[2024-05-11 01:11:11] INFO root fetch - processPackages [crowbar-package-manager]: Downloading https://files.pythonhosted.org/packages/63/97/4cb1d2617c5619e7148f9ac7c4a014fba249dc920ead6cc4d17a0b3b8359/crowbar_package_manager-0.1.8.tar.gz
+[2024-05-11 01:11:11] INFO root fetch - processPackages [dcqc]: Downloading https://files.pythonhosted.org/packages/14/f2/45eac3f2f7e3c557ca2371bed89a0ac3ee78e231a3432ef11b53b8da790e/dcqc-1.7.0.tar.gz
+[2024-05-11 01:11:11] INFO root fetch - processPackages [welkin]: Downloading https://files.pythonhosted.org/packages/3c/21/b21c7d93037c1c7e725ac13df4161fe36e20ca0a19ba7f1f6242b69cf6b0/welkin-0.1.3.tar.gz
+[2024-05-11 01:11:11] INFO root fetch - processPackages [welkin]: executing diffoscope
+[2024-05-11 01:11:11] INFO root fetch - processPackages [welkin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/welkin-0.1.2.tar.gz tmp/welkin-0.1.3.tar.gz --markdown 20240511/w/welkin/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 01:11:11] INFO root fetch - processPackages [dcqc]: executing diffoscope
+[2024-05-11 01:11:11] INFO root fetch - processPackages [dcqc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dcqc-1.6.5.tar.gz tmp/dcqc-1.7.0.tar.gz --markdown 20240511/d/dcqc/1.6.5-1.7.0/README.md --exclude *.pyd
+[2024-05-11 01:11:11] INFO root fetch - processPackages [crowbar-package-manager]: Downloading https://files.pythonhosted.org/packages/59/37/0dd70904f55a40f9d1306d5e4dbb6c73e7e18f7120c236406426245e1b93/crowbar_package_manager-0.1.9.tar.gz
+[2024-05-11 01:11:12] INFO root fetch - processPackages [crowbar-package-manager]: executing diffoscope
+[2024-05-11 01:11:12] INFO root fetch - processPackages [crowbar-package-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crowbar_package_manager-0.1.8.tar.gz tmp/crowbar_package_manager-0.1.9.tar.gz --markdown 20240511/c/crowbar-package-manager/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 01:11:12] INFO root fetch - processPackages [welkin]: Remove: archive file [/home/abi/fetcher/tmp/welkin-0.1.2.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - processPackages [welkin]: Remove: archive file [/home/abi/fetcher/tmp/welkin-0.1.3.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - main [MainThread]: End processing [welkin]: success
+[2024-05-11 01:11:12] INFO root fetch - processPackages [crowbar-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/crowbar_package_manager-0.1.8.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - processPackages [crowbar-package-manager]: Remove: archive file [/home/abi/fetcher/tmp/crowbar_package_manager-0.1.9.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - main [MainThread]: End processing [crowbar-package-manager]: success
+[2024-05-11 01:11:12] INFO root fetch - processPackages [dcqc]: Remove: archive file [/home/abi/fetcher/tmp/dcqc-1.6.5.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - processPackages [dcqc]: Remove: archive file [/home/abi/fetcher/tmp/dcqc-1.7.0.tar.gz]
+[2024-05-11 01:11:12] INFO root fetch - main [MainThread]: End processing [dcqc]: success
+[2024-05-11 01:11:12] INFO root fetch - main [MainThread]: Store serial: [23153930]
