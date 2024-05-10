@@ -458,3 +458,51 @@
 [2024-05-11 00:29:49] INFO root fetch - processPackages [nequip]: Remove: archive file [/home/abi/fetcher/tmp/nequip-0.6.0.tar.gz]
 [2024-05-11 00:29:49] INFO root fetch - main [MainThread]: End processing [nequip]: success
 [2024-05-11 00:29:49] INFO root fetch - main [MainThread]: Store serial: [23153717]
+[2024-05-11 00:31:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153717]
+[2024-05-11 00:31:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 00:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zerofun
+[2024-05-11 00:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indexify-extractor-sdk
+[2024-05-11 00:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fal
+[2024-05-11 00:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hemiplegyz
+[2024-05-11 00:31:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mimllearning
+[2024-05-11 00:31:57] INFO root fetch - processPackages [zerofun]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-05-11 00:31:57] INFO root fetch - processPackages [fal]: New version: [1.0.0] Old Version: [0.9.5]
+[2024-05-11 00:31:57] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 00:31:58] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/89/06/22f8282dff2eb41d6ca82644ee8ac628102c97877885199a1d63e6008d59/zerofun-1.2.0.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [indexify-extractor-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 00:31:58] INFO root fetch - processPackages [hemiplegyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 00:31:58] INFO root fetch - processPackages [fal]: Downloading https://files.pythonhosted.org/packages/1f/19/76b0975dea51404e3e86e1bdaf7bcaf35843068dded2e9eb0e9a020ec8d4/fal-0.9.5.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/25/fb/8dcfb1ddf593ada77ca7aebff3d9add072c6922c5b3efddeb31e991f5968/indexify-extractor-sdk-0.0.8.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/0b/a2/3278ab26458c4f2792797cc8db874d40d922bdad79c96737da547af99e19/zerofun-2.0.0.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [hemiplegyz]: Downloading https://files.pythonhosted.org/packages/51/d9/ab053d2b5dc91a26c7cf00ada153b3fd9cf055c73922d9579eb48c7b0f75/hemiplegyz-1.1.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [fal]: Downloading https://files.pythonhosted.org/packages/45/8b/bd95ffbabbaae04ef49876fcb8360d1e64e6687b8fec9c5824cc497f52ef/fal-1.0.0.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 00:31:58] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-1.2.0.tar.gz tmp/zerofun-2.0.0.tar.gz --markdown 20240511/z/zerofun/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 00:31:58] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [fal]: executing diffoscope
+[2024-05-11 00:31:58] INFO root fetch - processPackages [fal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fal-0.9.5.tar.gz tmp/fal-1.0.0.tar.gz --markdown 20240511/f/fal/0.9.5-1.0.0/README.md --exclude *.pyd
+[2024-05-11 00:31:58] INFO root fetch - processPackages [indexify-extractor-sdk]: Downloading https://files.pythonhosted.org/packages/6b/69/1a816cb64f283ffbd7a285fc0aacdf84a8f4bc7214eaab78ac42be5e93ba/indexify-extractor-sdk-0.0.9.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 00:31:58] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 00:31:58] INFO root fetch - processPackages [hemiplegyz]: Downloading https://files.pythonhosted.org/packages/20/c3/a02a274effd6c4d7865bdb8ea43a243c154e0c90fa475e7c217354cfe208/hemiplegyz-2.1.tar.gz
+[2024-05-11 00:31:58] INFO root fetch - processPackages [indexify-extractor-sdk]: executing diffoscope
+[2024-05-11 00:31:58] INFO root fetch - processPackages [indexify-extractor-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indexify-extractor-sdk-0.0.8.tar.gz tmp/indexify-extractor-sdk-0.0.9.tar.gz --markdown 20240511/i/indexify-extractor-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 00:31:58] INFO root fetch - processPackages [hemiplegyz]: executing diffoscope
+[2024-05-11 00:31:58] INFO root fetch - processPackages [hemiplegyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hemiplegyz-1.1.tar.gz tmp/hemiplegyz-2.1.tar.gz --markdown 20240511/h/hemiplegyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 00:31:59] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-1.2.0.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.0.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 00:31:59] INFO root fetch - processPackages [fal]: Remove: archive file [/home/abi/fetcher/tmp/fal-0.9.5.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - processPackages [fal]: Remove: archive file [/home/abi/fetcher/tmp/fal-1.0.0.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [fal]: success
+[2024-05-11 00:31:59] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.8.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - processPackages [indexify-extractor-sdk]: Remove: archive file [/home/abi/fetcher/tmp/indexify-extractor-sdk-0.0.9.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [indexify-extractor-sdk]: success
+[2024-05-11 00:31:59] INFO root fetch - processPackages [hemiplegyz]: Remove: archive file [/home/abi/fetcher/tmp/hemiplegyz-1.1.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - processPackages [hemiplegyz]: Remove: archive file [/home/abi/fetcher/tmp/hemiplegyz-2.1.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [hemiplegyz]: success
+[2024-05-11 00:31:59] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 00:31:59] INFO root fetch - main [MainThread]: Store serial: [23153729]
