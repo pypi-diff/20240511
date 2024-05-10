@@ -2057,3 +2057,15 @@
 [2024-05-11 01:55:08] INFO root fetch - processPackages [cvxpy]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy-1.5.0.tar.gz]
 [2024-05-11 01:55:08] INFO root fetch - main [MainThread]: End processing [cvxpy]: success
 [2024-05-11 01:55:08] INFO root fetch - main [MainThread]: Store serial: [23154300]
+[2024-05-11 01:57:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154300]
+[2024-05-11 01:57:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 01:57:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: runtime-generics
+[2024-05-11 01:57:22] INFO root fetch - processPackages [runtime-generics]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-05-11 01:57:22] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/9c/70/3e06af549a158c6a7cd07cb0c3804a6f5247b3248e82bf61666c38f2ec34/runtime_generics-3.2.0.tar.gz
+[2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/05/d1/087c1bf715b583890bf7f785ff44e6a424d96a9c4ab45ade8b763a70af72/runtime_generics-3.3.0.tar.gz
+[2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: executing diffoscope
+[2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtime_generics-3.2.0.tar.gz tmp/runtime_generics-3.3.0.tar.gz --markdown 20240511/r/runtime-generics/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.2.0.tar.gz]
+[2024-05-11 01:57:23] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.3.0.tar.gz]
+[2024-05-11 01:57:23] INFO root fetch - main [MainThread]: End processing [runtime-generics]: success
+[2024-05-11 01:57:23] INFO root fetch - main [MainThread]: Store serial: [23154317]
