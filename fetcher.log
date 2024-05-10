@@ -426,3 +426,35 @@
 [2024-05-11 00:27:38] INFO root fetch - processPackages [allotropy]: Remove: archive file [/home/abi/fetcher/tmp/allotropy-0.1.9.tar.gz]
 [2024-05-11 00:27:38] INFO root fetch - main [MainThread]: End processing [allotropy]: success
 [2024-05-11 00:27:38] INFO root fetch - main [MainThread]: Store serial: [23153702]
+[2024-05-11 00:29:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153702]
+[2024-05-11 00:29:47] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 00:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aesim.simba
+[2024-05-11 00:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unicorn-donkey
+[2024-05-11 00:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: warnerz
+[2024-05-11 00:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nequip
+[2024-05-11 00:29:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zerofun
+[2024-05-11 00:29:47] INFO root fetch - processPackages [aesim.simba]: New version: [2024.5.9a1] Old Version: [2024.5.6a1]
+[2024-05-11 00:29:47] INFO root fetch - processPackages [nequip]: New version: [0.6.0] Old Version: [0.5.6]
+[2024-05-11 00:29:47] WARNING root fetch - processPackages [unicorn-donkey]: Skipping, unable to determine old version
+[2024-05-11 00:29:47] INFO root fetch - main [MainThread]: End processing [unicorn-donkey] error
+[2024-05-11 00:29:47] WARNING root fetch - processPackages [warnerz]: Skipping, unable to determine old version
+[2024-05-11 00:29:47] INFO root fetch - main [MainThread]: End processing [warnerz] error
+[2024-05-11 00:29:47] INFO root fetch - processPackages [aesim.simba]: Downloading https://files.pythonhosted.org/packages/72/ac/b14b191c0c6c14602939f406e0f09f856e7176ca26444537afd53ffde690/aesim.simba-2024.5.6a1-py3-none-win_amd64.whl
+[2024-05-11 00:29:47] INFO root fetch - processPackages [zerofun]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-05-11 00:29:47] WARNING root fetch - processPackages [aesim.simba]: Skipping package: exceeds size limit 76443085>=10485760
+[2024-05-11 00:29:47] INFO root fetch - main [MainThread]: End processing [aesim.simba] error
+[2024-05-11 00:29:47] INFO root fetch - processPackages [nequip]: Downloading https://files.pythonhosted.org/packages/a8/5a/40166f668da8d541ed912418a5ab73683e65ca2f0d0341ae8946a3a5e518/nequip-0.5.6.tar.gz
+[2024-05-11 00:29:47] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/89/06/22f8282dff2eb41d6ca82644ee8ac628102c97877885199a1d63e6008d59/zerofun-1.2.0.tar.gz
+[2024-05-11 00:29:47] INFO root fetch - processPackages [nequip]: Downloading https://files.pythonhosted.org/packages/7c/7d/2551ded17b91d1dc577912f41eef16424fc3c42d7a5fc5234e209d5550b3/nequip-0.6.0.tar.gz
+[2024-05-11 00:29:48] INFO root fetch - processPackages [nequip]: executing diffoscope
+[2024-05-11 00:29:48] INFO root fetch - processPackages [nequip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nequip-0.5.6.tar.gz tmp/nequip-0.6.0.tar.gz --markdown 20240511/n/nequip/0.5.6-0.6.0/README.md --exclude *.pyd
+[2024-05-11 00:29:48] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/0b/a2/3278ab26458c4f2792797cc8db874d40d922bdad79c96737da547af99e19/zerofun-2.0.0.tar.gz
+[2024-05-11 00:29:48] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 00:29:48] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-1.2.0.tar.gz tmp/zerofun-2.0.0.tar.gz --markdown 20240511/z/zerofun/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 00:29:48] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-1.2.0.tar.gz]
+[2024-05-11 00:29:48] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.0.tar.gz]
+[2024-05-11 00:29:48] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 00:29:49] INFO root fetch - processPackages [nequip]: Remove: archive file [/home/abi/fetcher/tmp/nequip-0.5.6.tar.gz]
+[2024-05-11 00:29:49] INFO root fetch - processPackages [nequip]: Remove: archive file [/home/abi/fetcher/tmp/nequip-0.6.0.tar.gz]
+[2024-05-11 00:29:49] INFO root fetch - main [MainThread]: End processing [nequip]: success
+[2024-05-11 00:29:49] INFO root fetch - main [MainThread]: Store serial: [23153717]
