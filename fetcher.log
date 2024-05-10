@@ -52,3 +52,81 @@
 [2024-05-11 00:01:31] INFO root fetch - processPackages [langchain]: Remove: archive file [/home/abi/fetcher/tmp/langchain-0.2.0rc2.tar.gz]
 [2024-05-11 00:01:31] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2024-05-11 00:01:31] INFO root fetch - main [MainThread]: Store serial: [23153547]
+[2024-05-11 00:03:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153547]
+[2024-05-11 00:03:39] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gwpopulation-pipe
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: modal
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gable
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: modal-client
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PicImageSearch
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: preoccupied.proxytype
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: danteanz
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: groundlight
+[2024-05-11 00:03:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: elements
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gable]: New version: [0.9.0a3] Old Version: [0.9.0a2]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal-client]: New version: [0.62.99] Old Version: [0.62.98]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal]: New version: [0.62.99] Old Version: [0.62.98]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [elements]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [preoccupied.proxytype]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-11 00:03:40] WARNING root fetch - processPackages [danteanz]: Skipping, unable to determine old version
+[2024-05-11 00:03:40] INFO root fetch - main [MainThread]: End processing [danteanz] error
+[2024-05-11 00:03:40] INFO root fetch - processPackages [groundlight]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gwpopulation-pipe]: New version: [0.4.0rc2] Old Version: [0.4.0rc1]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [PicImageSearch]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gable]: Downloading https://files.pythonhosted.org/packages/3c/25/205ee4d565d0bf0f974e4b429be2eb6f978c964647c940357bfa9601db85/gable-0.9.0a2.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/b5/38/bb0788928bcf76bff83916023bd1f84d88b1eb03c43f34ae832eff523ed0/modal-0.62.98-py3-none-any.whl
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/e1/43/8909e36efe8c88188326519159ac1faa149227f01c6a0d968acc30efedde/modal_client-0.62.98-py3-none-any.whl
+[2024-05-11 00:03:40] INFO root fetch - processPackages [preoccupied.proxytype]: Downloading https://files.pythonhosted.org/packages/aa/32/3710d23a41ba9fe3f14d6118e4484166120862691d50bdcb0288caeec2fb/preoccupied.proxytype-0.2.0-py3-none-any.whl
+[2024-05-11 00:03:40] INFO root fetch - processPackages [elements]: Downloading https://files.pythonhosted.org/packages/17/39/41be5974a83942afb40e0dd25283dd25d220962bc8b6b7a458942a8552dd/elements-3.2.0.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gwpopulation-pipe]: Downloading https://files.pythonhosted.org/packages/c4/09/f4e76b31c678bd08e4bd924f9a3972678672480167622ee1fa0e1eb75d98/gwpopulation_pipe-0.4.0rc1.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [PicImageSearch]: Downloading https://files.pythonhosted.org/packages/2f/8b/efbe359e1bcce780aa1d72a28b13e90a4f84f35f10026b5c2a2ac9686ec3/picimagesearch-3.9.6.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [groundlight]: Downloading https://files.pythonhosted.org/packages/3a/df/76ee87a63f1fc0c43e8f923ccbd7cc4cd09452b2a87ab397f93766cda801/groundlight-0.9.0.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gable]: Downloading https://files.pythonhosted.org/packages/df/19/7ed3e403c062cfa539ddfa26caecd22d3365e387d62ab3f2a6db2e30ac8a/gable-0.9.0a3.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal-client]: Downloading https://files.pythonhosted.org/packages/b4/3a/7e3a60540b0de2b4f28de13c20c04bab97a40c022bd147b48a204b987fc1/modal_client-0.62.99-py3-none-any.whl
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal]: Downloading https://files.pythonhosted.org/packages/c7/ec/8086cd0c36b12ca7d4d2ac1f4bf86cbe082ba12dae2dd7c3cccb68a4746e/modal-0.62.99-py3-none-any.whl
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gable]: executing diffoscope
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gable-0.9.0a2.tar.gz tmp/gable-0.9.0a3.tar.gz --markdown 20240511/g/gable/0.9.0a2-0.9.0a3/README.md --exclude *.pyd
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal-client]: executing diffoscope
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal_client-0.62.98-py3-none-any.whl.zip tmp/modal_client-0.62.99-py3-none-any.whl.zip --markdown 20240511/m/modal-client/0.62.98-0.62.99/README.md --exclude *.pyd
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal]: executing diffoscope
+[2024-05-11 00:03:40] INFO root fetch - processPackages [modal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/modal-0.62.98-py3-none-any.whl.zip tmp/modal-0.62.99-py3-none-any.whl.zip --markdown 20240511/m/modal/0.62.98-0.62.99/README.md --exclude *.pyd
+[2024-05-11 00:03:40] INFO root fetch - processPackages [elements]: Downloading https://files.pythonhosted.org/packages/00/b5/162d306ada3c84d80cb87e46023c970ce284da9b121514c2d5c4cf1a6a30/elements-3.3.0.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [preoccupied.proxytype]: Downloading https://files.pythonhosted.org/packages/66/6a/f82e6a2d8d82c76e96eded56ca45934a2cc383cd33f00e980842c817c521/preoccupied_proxytype-0.3.0.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [gwpopulation-pipe]: Downloading https://files.pythonhosted.org/packages/70/fd/d4197ace486dc98893d911382bc174951cdba42f93589206e1c4e55901b7/gwpopulation_pipe-0.4.0rc2.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [PicImageSearch]: Downloading https://files.pythonhosted.org/packages/24/de/a4a806db624033d994ed41d6f614d0304ec2a357e69bc30034a8b2c62da8/picimagesearch-3.9.7.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [groundlight]: Downloading https://files.pythonhosted.org/packages/ef/6b/31809c56b9597c3d1a1308c41d7f7426a9bca64fe57525282e51fdd9ff22/groundlight-0.9.1.tar.gz
+[2024-05-11 00:03:40] INFO root fetch - processPackages [elements]: executing diffoscope
+[2024-05-11 00:03:40] INFO root fetch - processPackages [elements]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elements-3.2.0.tar.gz tmp/elements-3.3.0.tar.gz --markdown 20240511/e/elements/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-05-11 00:03:40] INFO root fetch - processPackages [PicImageSearch]: executing diffoscope
+[2024-05-11 00:03:40] INFO root fetch - processPackages [PicImageSearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picimagesearch-3.9.6.tar.gz tmp/picimagesearch-3.9.7.tar.gz --markdown 20240511/P/PicImageSearch/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-05-11 00:03:41] INFO root fetch - processPackages [groundlight]: executing diffoscope
+[2024-05-11 00:03:41] INFO root fetch - processPackages [groundlight]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/groundlight-0.9.0.tar.gz tmp/groundlight-0.9.1.tar.gz --markdown 20240511/g/groundlight/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-11 00:03:41] INFO root fetch - processPackages [preoccupied.proxytype]: executing diffoscope
+[2024-05-11 00:03:41] INFO root fetch - processPackages [preoccupied.proxytype]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preoccupied.proxytype-0.2.0-py3-none-any.whl.zip tmp/preoccupied_proxytype-0.3.0.tar.gz --markdown 20240511/p/preoccupied.proxytype/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-11 00:03:41] INFO root fetch - processPackages [gwpopulation-pipe]: executing diffoscope
+[2024-05-11 00:03:41] INFO root fetch - processPackages [gwpopulation-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gwpopulation_pipe-0.4.0rc1.tar.gz tmp/gwpopulation_pipe-0.4.0rc2.tar.gz --markdown 20240511/g/gwpopulation-pipe/0.4.0rc1-0.4.0rc2/README.md --exclude *.pyd
+[2024-05-11 00:03:41] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.98-py3-none-any.whl.zip]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [modal-client]: Remove: archive file [/home/abi/fetcher/tmp/modal_client-0.62.99-py3-none-any.whl.zip]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [modal-client]: success
+[2024-05-11 00:03:41] INFO root fetch - processPackages [gable]: Remove: archive file [/home/abi/fetcher/tmp/gable-0.9.0a2.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [gable]: Remove: archive file [/home/abi/fetcher/tmp/gable-0.9.0a3.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [gable]: success
+[2024-05-11 00:03:41] INFO root fetch - processPackages [elements]: Remove: archive file [/home/abi/fetcher/tmp/elements-3.2.0.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [elements]: Remove: archive file [/home/abi/fetcher/tmp/elements-3.3.0.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [elements]: success
+[2024-05-11 00:03:41] INFO root fetch - processPackages [preoccupied.proxytype]: Remove: archive file [/home/abi/fetcher/tmp/preoccupied.proxytype-0.2.0-py3-none-any.whl.zip]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [preoccupied.proxytype]: Remove: archive file [/home/abi/fetcher/tmp/preoccupied_proxytype-0.3.0.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [preoccupied.proxytype]: success
+[2024-05-11 00:03:41] INFO root fetch - processPackages [groundlight]: Remove: archive file [/home/abi/fetcher/tmp/groundlight-0.9.0.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [groundlight]: Remove: archive file [/home/abi/fetcher/tmp/groundlight-0.9.1.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [groundlight]: success
+[2024-05-11 00:03:41] INFO root fetch - processPackages [PicImageSearch]: Remove: archive file [/home/abi/fetcher/tmp/picimagesearch-3.9.6.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - processPackages [PicImageSearch]: Remove: archive file [/home/abi/fetcher/tmp/picimagesearch-3.9.7.tar.gz]
+[2024-05-11 00:03:41] INFO root fetch - main [MainThread]: End processing [PicImageSearch]: success
+[2024-05-11 00:03:42] INFO root fetch - processPackages [gwpopulation-pipe]: Remove: archive file [/home/abi/fetcher/tmp/gwpopulation_pipe-0.4.0rc1.tar.gz]
+[2024-05-11 00:03:42] INFO root fetch - processPackages [gwpopulation-pipe]: Remove: archive file [/home/abi/fetcher/tmp/gwpopulation_pipe-0.4.0rc2.tar.gz]
+[2024-05-11 00:03:42] INFO root fetch - main [MainThread]: End processing [gwpopulation-pipe]: success
+[2024-05-11 00:03:42] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.98-py3-none-any.whl.zip]
+[2024-05-11 00:03:42] INFO root fetch - processPackages [modal]: Remove: archive file [/home/abi/fetcher/tmp/modal-0.62.99-py3-none-any.whl.zip]
+[2024-05-11 00:03:42] INFO root fetch - main [MainThread]: End processing [modal]: success
+[2024-05-11 00:03:42] INFO root fetch - main [MainThread]: Store serial: [23153572]
