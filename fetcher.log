@@ -1707,3 +1707,72 @@
 [2024-05-11 01:37:27] INFO root fetch - processPackages [pulumi-docker]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_docker-4.7.0a1705628423.tar.gz]
 [2024-05-11 01:37:27] INFO root fetch - main [MainThread]: End processing [pulumi-docker]: success
 [2024-05-11 01:37:27] INFO root fetch - main [MainThread]: Store serial: [23154166]
+[2024-05-11 01:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154166]
+[2024-05-11 01:39:35] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unicorn-donkey
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airtestProject
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: glpic
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: edgedb-pydantic-codegen
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrainbird
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: infrable
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pulumi-azuredevops
+[2024-05-11 01:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: logarithmeticallyz
+[2024-05-11 01:39:35] INFO root fetch - processPackages [airtestProject]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 01:39:35] INFO root fetch - processPackages [glpic]: New version: [99.0.202405102329] Old Version: [99.0.202405102303]
+[2024-05-11 01:39:35] INFO root fetch - processPackages [pulumi-azuredevops]: New version: [3.1.0a1715335882] Old Version: [3.1.0a1715232079]
+[2024-05-11 01:39:36] INFO root fetch - processPackages [unicorn-donkey]: New version: [3.2.2.dev20240510233735] Old Version: [3.2.2.dev20240510222739]
+[2024-05-11 01:39:36] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/f1/31/b95ec45c797c1f0c6e052ac98fd7102e165390a15305295187e290ebfa5c/airtestproject-0.1.1.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pyrainbird]: New version: [6.0.0] Old Version: [5.0.0]
+[2024-05-11 01:39:36] INFO root fetch - processPackages [edgedb-pydantic-codegen]: New version: [2024.5.1] Old Version: [2024.5.0]
+[2024-05-11 01:39:36] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/92/a0/70e9e5f41aa1e4fe0f147358f3ca7d89ec3bdfc8685a63932a0c9d2d6074/glpic-99.0.202405102303.tar.gz
+[2024-05-11 01:39:36] WARNING root fetch - processPackages [logarithmeticallyz]: Skipping, unable to determine old version
+[2024-05-11 01:39:36] INFO root fetch - main [MainThread]: End processing [logarithmeticallyz] error
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/65/0e/52bf32d2339278f5f010d084eaaecb2befeaa142cc1971d7af60b7b74e16/pulumi_azuredevops-3.1.0a1715232079.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [infrable]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 01:39:36] INFO root fetch - processPackages [infrable]: Downloading https://files.pythonhosted.org/packages/27/e3/9758cb56ce91f7499aa307bc8c521c22d2990adf3fabbd8ae8aefac40c42/infrable-0.1.8.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [unicorn-donkey]: Downloading https://files.pythonhosted.org/packages/9e/8c/5cbf28923c9a99fe885fe4cee018d0dc4d0ce294bb573c2bba69473929f3/unicorn_donkey-3.2.2.dev20240510222739.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/4a/d8/d62141ef9b5caed913e0f6981643e286f5f469779a9b0b61a6bcb06fd9a9/pyrainbird-5.0.0.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/8b/da/3d767340e59534c633964d9f215063294b63b2d9568d6eec84f404a343a3/edgedb_pydantic_codegen-2024.5.0.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pulumi-azuredevops]: Downloading https://files.pythonhosted.org/packages/d7/41/8a55aaca590b45b1e532ea97a931ff91e23b99d24e315ba0ec45392453ce/pulumi_azuredevops-3.1.0a1715335882.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [infrable]: Downloading https://files.pythonhosted.org/packages/c6/b7/929866de2fa6d2dd8f5310bedf07a1513c40236c5be4a9697505488b59aa/infrable-0.1.9.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/54/a0/c066bcc08c534b4792f2f92b6713c5610376350f0834f487f406040c0984/airtestproject-0.1.2.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/e8/61/d5e438ef8a068a97cf8adfeb1075edf93fcf43c5f43052800fc8acdc96fd/glpic-99.0.202405102329.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [infrable]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pulumi-azuredevops]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [infrable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infrable-0.1.8.tar.gz tmp/infrable-0.1.9.tar.gz --markdown 20240511/i/infrable/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pulumi-azuredevops]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_azuredevops-3.1.0a1715232079.tar.gz tmp/pulumi_azuredevops-3.1.0a1715335882.tar.gz --markdown 20240511/p/pulumi-azuredevops/3.1.0a1715232079-3.1.0a1715335882/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405102303.tar.gz tmp/glpic-99.0.202405102329.tar.gz --markdown 20240511/g/glpic/99.0.202405102303-99.0.202405102329/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [airtestProject]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [airtestProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airtestproject-0.1.1.tar.gz tmp/airtestproject-0.1.2.tar.gz --markdown 20240511/a/airtestProject/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/79/10/14af9bd703f494694cd75104afe48fbbdaca333078b3a6e16015b8c0d979/pyrainbird-6.0.0.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Downloading https://files.pythonhosted.org/packages/a5/05/db0e4fc16ff64fe07be17892917d9d356e32394fc476b2dbffd2e537bab6/edgedb_pydantic_codegen-2024.5.1.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [unicorn-donkey]: Downloading https://files.pythonhosted.org/packages/fa/23/7b05bef069b6a222cafaa77ff1cbb13b2c435f89ea2aa50784ba91883d37/unicorn_donkey-3.2.2.dev20240510233735.tar.gz
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pyrainbird]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [pyrainbird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrainbird-5.0.0.tar.gz tmp/pyrainbird-6.0.0.tar.gz --markdown 20240511/p/pyrainbird/5.0.0-6.0.0/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [edgedb-pydantic-codegen]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [edgedb-pydantic-codegen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edgedb_pydantic_codegen-2024.5.0.tar.gz tmp/edgedb_pydantic_codegen-2024.5.1.tar.gz --markdown 20240511/e/edgedb-pydantic-codegen/2024.5.0-2024.5.1/README.md --exclude *.pyd
+[2024-05-11 01:39:36] INFO root fetch - processPackages [unicorn-donkey]: executing diffoscope
+[2024-05-11 01:39:36] INFO root fetch - processPackages [unicorn-donkey]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unicorn_donkey-3.2.2.dev20240510222739.tar.gz tmp/unicorn_donkey-3.2.2.dev20240510233735.tar.gz --markdown 20240511/u/unicorn-donkey/3.2.2.dev20240510222739-3.2.2.dev20240510233735/README.md --exclude *.pyd
+[2024-05-11 01:39:37] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102303.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102329.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [infrable]: Remove: archive file [/home/abi/fetcher/tmp/infrable-0.1.8.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [infrable]: Remove: archive file [/home/abi/fetcher/tmp/infrable-0.1.9.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [infrable]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.0.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [edgedb-pydantic-codegen]: Remove: archive file [/home/abi/fetcher/tmp/edgedb_pydantic_codegen-2024.5.1.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [edgedb-pydantic-codegen]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-5.0.0.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-6.0.0.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [pyrainbird]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.1.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.2.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [airtestProject]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1715232079.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [pulumi-azuredevops]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azuredevops-3.1.0a1715335882.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [pulumi-azuredevops]: success
+[2024-05-11 01:39:37] INFO root fetch - processPackages [unicorn-donkey]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_donkey-3.2.2.dev20240510222739.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - processPackages [unicorn-donkey]: Remove: archive file [/home/abi/fetcher/tmp/unicorn_donkey-3.2.2.dev20240510233735.tar.gz]
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: End processing [unicorn-donkey]: success
+[2024-05-11 01:39:37] INFO root fetch - main [MainThread]: Store serial: [23154192]
