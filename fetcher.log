@@ -1363,3 +1363,36 @@
 [2024-05-11 01:26:26] INFO root fetch - processPackages [msticpy]: Remove: archive file [/home/abi/fetcher/tmp/msticpy-2.9.0.tar.gz]
 [2024-05-11 01:26:26] INFO root fetch - main [MainThread]: End processing [msticpy]: success
 [2024-05-11 01:26:26] INFO root fetch - main [MainThread]: Store serial: [23154004]
+[2024-05-11 01:28:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154004]
+[2024-05-11 01:28:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 01:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: msticpy
+[2024-05-11 01:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eintorch
+[2024-05-11 01:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-fastly
+[2024-05-11 01:28:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: norch
+[2024-05-11 01:28:35] INFO root fetch - processPackages [eintorch]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 01:28:35] INFO root fetch - processPackages [msticpy]: New version: [2.9.0] Old Version: [2.8.0rc1]
+[2024-05-11 01:28:35] INFO root fetch - processPackages [pulumi-fastly]: New version: [8.7.0a1715351477] Old Version: [8.7.0a1715303918]
+[2024-05-11 01:28:35] INFO root fetch - processPackages [eintorch]: Downloading https://files.pythonhosted.org/packages/4d/5e/82edb08135148cf50196782bb76a04de785180a022a44af55dc2ca14bcdb/eintorch-0.2.1.tar.gz
+[2024-05-11 01:28:35] WARNING root fetch - processPackages [norch]: Skipping, unable to determine old version
+[2024-05-11 01:28:35] INFO root fetch - main [MainThread]: End processing [norch] error
+[2024-05-11 01:28:35] INFO root fetch - processPackages [msticpy]: Downloading https://files.pythonhosted.org/packages/a7/9f/f8811935a9f42239bc126a4629a45c554695abeb353b70d00542795dc827/msticpy-2.8.0rc1.tar.gz
+[2024-05-11 01:28:36] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/80/b1/7ed8fddc76d1ef1e4a38475e38c0aff0ac717700cc39cbac4186560f3eeb/pulumi_fastly-8.7.0a1715303918.tar.gz
+[2024-05-11 01:28:36] INFO root fetch - processPackages [eintorch]: Downloading https://files.pythonhosted.org/packages/9d/16/cc08a987d581f7e3276a2b97e740807de068435e19d1fc59b651601c01b7/eintorch-0.2.2.tar.gz
+[2024-05-11 01:28:36] INFO root fetch - processPackages [msticpy]: Downloading https://files.pythonhosted.org/packages/a8/cd/efd74bf613ee755182df87b096cf4784fa7d059c40ddbe3b8779ef37efb9/msticpy-2.9.0.tar.gz
+[2024-05-11 01:28:36] INFO root fetch - processPackages [pulumi-fastly]: Downloading https://files.pythonhosted.org/packages/8b/d2/1fc73a1ae9879bd1a62594f8d3d530daacfe1519321c3f1d30d0198a1390/pulumi_fastly-8.7.0a1715351477.tar.gz
+[2024-05-11 01:28:36] INFO root fetch - processPackages [eintorch]: executing diffoscope
+[2024-05-11 01:28:36] INFO root fetch - processPackages [eintorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eintorch-0.2.1.tar.gz tmp/eintorch-0.2.2.tar.gz --markdown 20240511/e/eintorch/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 01:28:36] INFO root fetch - processPackages [pulumi-fastly]: executing diffoscope
+[2024-05-11 01:28:36] INFO root fetch - processPackages [pulumi-fastly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_fastly-8.7.0a1715303918.tar.gz tmp/pulumi_fastly-8.7.0a1715351477.tar.gz --markdown 20240511/p/pulumi-fastly/8.7.0a1715303918-8.7.0a1715351477/README.md --exclude *.pyd
+[2024-05-11 01:28:36] INFO root fetch - processPackages [msticpy]: executing diffoscope
+[2024-05-11 01:28:36] INFO root fetch - processPackages [msticpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/msticpy-2.8.0rc1.tar.gz tmp/msticpy-2.9.0.tar.gz --markdown 20240511/m/msticpy/2.8.0rc1-2.9.0/README.md --exclude *.pyd
+[2024-05-11 01:28:36] INFO root fetch - processPackages [eintorch]: Remove: archive file [/home/abi/fetcher/tmp/eintorch-0.2.1.tar.gz]
+[2024-05-11 01:28:36] INFO root fetch - processPackages [eintorch]: Remove: archive file [/home/abi/fetcher/tmp/eintorch-0.2.2.tar.gz]
+[2024-05-11 01:28:36] INFO root fetch - main [MainThread]: End processing [eintorch]: success
+[2024-05-11 01:28:37] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.7.0a1715303918.tar.gz]
+[2024-05-11 01:28:37] INFO root fetch - processPackages [pulumi-fastly]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_fastly-8.7.0a1715351477.tar.gz]
+[2024-05-11 01:28:37] INFO root fetch - main [MainThread]: End processing [pulumi-fastly]: success
+[2024-05-11 01:28:38] INFO root fetch - processPackages [msticpy]: Remove: archive file [/home/abi/fetcher/tmp/msticpy-2.8.0rc1.tar.gz]
+[2024-05-11 01:28:38] INFO root fetch - processPackages [msticpy]: Remove: archive file [/home/abi/fetcher/tmp/msticpy-2.9.0.tar.gz]
+[2024-05-11 01:28:38] INFO root fetch - main [MainThread]: End processing [msticpy]: success
+[2024-05-11 01:28:38] INFO root fetch - main [MainThread]: Store serial: [23154021]
