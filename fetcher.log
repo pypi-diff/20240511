@@ -740,3 +740,42 @@
 [2024-05-11 00:49:25] INFO root fetch - processPackages [adafruit-circuitpython-pycamera]: Remove: archive file [/home/abi/fetcher/tmp/adafruit_circuitpython_pycamera-1.3.1.tar.gz]
 [2024-05-11 00:49:25] INFO root fetch - main [MainThread]: End processing [adafruit-circuitpython-pycamera]: success
 [2024-05-11 00:49:25] INFO root fetch - main [MainThread]: Store serial: [23153809]
+[2024-05-11 00:51:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153809]
+[2024-05-11 00:51:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 00:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: api4all
+[2024-05-11 00:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matadi
+[2024-05-11 00:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zerofun
+[2024-05-11 00:51:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-11 00:51:34] INFO root fetch - processPackages [zerofun]: New version: [2.0.0] Old Version: [1.2.0]
+[2024-05-11 00:51:35] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 00:51:35] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/89/06/22f8282dff2eb41d6ca82644ee8ac628102c97877885199a1d63e6008d59/zerofun-1.2.0.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [api4all]: New version: [0.4.0] Old Version: [0.3.1]
+[2024-05-11 00:51:35] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [matadi]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-11 00:51:35] INFO root fetch - processPackages [api4all]: Downloading https://files.pythonhosted.org/packages/39/ad/410d4b8935a2e1c8f4bfe4a3652d76290edadd6f481957d65a288700f122/api4all-0.3.1.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [matadi]: Downloading https://files.pythonhosted.org/packages/53/db/64ef4477b4bd518267503761a3551be2a44de45885c79ce0aaac1d671f04/matadi-0.1.9.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/0b/a2/3278ab26458c4f2792797cc8db874d40d922bdad79c96737da547af99e19/zerofun-2.0.0.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 00:51:35] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-1.2.0.tar.gz tmp/zerofun-2.0.0.tar.gz --markdown 20240511/z/zerofun/1.2.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 00:51:35] INFO root fetch - processPackages [api4all]: Downloading https://files.pythonhosted.org/packages/2b/9c/6aafee91da0eb5e042302cd668f0afafb7e68780bd5c5eee61c502a6a55e/api4all-0.4.0.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 00:51:35] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 00:51:35] INFO root fetch - processPackages [api4all]: executing diffoscope
+[2024-05-11 00:51:35] INFO root fetch - processPackages [api4all]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/api4all-0.3.1.tar.gz tmp/api4all-0.4.0.tar.gz --markdown 20240511/a/api4all/0.3.1-0.4.0/README.md --exclude *.pyd
+[2024-05-11 00:51:35] INFO root fetch - processPackages [matadi]: Downloading https://files.pythonhosted.org/packages/3b/e6/483f9e06b18d0722b01e5f73d90e03fb0ad54a90f5f24b493426c811b5e7/matadi-0.2.0.tar.gz
+[2024-05-11 00:51:35] INFO root fetch - processPackages [matadi]: executing diffoscope
+[2024-05-11 00:51:35] INFO root fetch - processPackages [matadi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matadi-0.1.9.tar.gz tmp/matadi-0.2.0.tar.gz --markdown 20240511/m/matadi/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-11 00:51:36] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-1.2.0.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.0.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 00:51:36] INFO root fetch - processPackages [api4all]: Remove: archive file [/home/abi/fetcher/tmp/api4all-0.3.1.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - processPackages [api4all]: Remove: archive file [/home/abi/fetcher/tmp/api4all-0.4.0.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - main [MainThread]: End processing [api4all]: success
+[2024-05-11 00:51:36] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 00:51:36] INFO root fetch - processPackages [matadi]: Remove: archive file [/home/abi/fetcher/tmp/matadi-0.1.9.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - processPackages [matadi]: Remove: archive file [/home/abi/fetcher/tmp/matadi-0.2.0.tar.gz]
+[2024-05-11 00:51:36] INFO root fetch - main [MainThread]: End processing [matadi]: success
+[2024-05-11 00:51:36] INFO root fetch - main [MainThread]: Store serial: [23153820]
