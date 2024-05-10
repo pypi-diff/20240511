@@ -1039,3 +1039,45 @@
 [2024-05-11 01:06:51] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240509.tar.gz]
 [2024-05-11 01:06:51] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
 [2024-05-11 01:06:51] INFO root fetch - main [MainThread]: Store serial: [23153907]
+[2024-05-11 01:08:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153907]
+[2024-05-11 01:09:01] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 01:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-11 01:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkg-inspect
+[2024-05-11 01:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperdeliciouslyz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sae-lens
+[2024-05-11 01:09:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ingrammaticismz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 01:09:01] INFO root fetch - processPackages [hyperdeliciouslyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 01:09:01] WARNING root fetch - processPackages [ingrammaticismz]: Skipping, unable to determine old version
+[2024-05-11 01:09:01] INFO root fetch - main [MainThread]: End processing [ingrammaticismz] error
+[2024-05-11 01:09:01] INFO root fetch - processPackages [sae-lens]: New version: [2.0.0] Old Version: [1.8.0]
+[2024-05-11 01:09:01] INFO root fetch - processPackages [pkg-inspect]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-11 01:09:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [hyperdeliciouslyz]: Downloading https://files.pythonhosted.org/packages/b8/e3/c04373bbbca371383cac219befeb4c55029d553b778a6aad3886b274e763/hyperdeliciouslyz-1.1.tar.gz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/29/db/808445ce9d83262e0781cd4412a1ea29702c9ebdc4180f7cb0731269f912/sae_lens-1.8.0.tar.gz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/a2/d8/c69936e7e912ebc290b2b12178fbb58d919b1d5d2b09de6812282091f0f2/pkg_inspect-0.2.0.tar.gz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 01:09:01] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 01:09:01] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 01:09:01] INFO root fetch - processPackages [hyperdeliciouslyz]: Downloading https://files.pythonhosted.org/packages/f5/ba/6c5c3cc17e75c0c3022faf04bcda60123afbf2d90819f9bd3280cf7a66c2/hyperdeliciouslyz-2.1.tar.gz
+[2024-05-11 01:09:02] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/00/f3/f9da92caf83aa9570c73a8c9619e24736ece8fff1ee73c42a540f1778a23/pkg_inspect-0.2.1.tar.gz
+[2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/b2/63/67b8bde748ae2cb3bc4a574d48888950a37f88956b6f90808e05eca26bcd/sae_lens-2.0.0.tar.gz
+[2024-05-11 01:09:02] INFO root fetch - processPackages [hyperdeliciouslyz]: executing diffoscope
+[2024-05-11 01:09:02] INFO root fetch - processPackages [hyperdeliciouslyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperdeliciouslyz-1.1.tar.gz tmp/hyperdeliciouslyz-2.1.tar.gz --markdown 20240511/h/hyperdeliciouslyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: executing diffoscope
+[2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae_lens-1.8.0.tar.gz tmp/sae_lens-2.0.0.tar.gz --markdown 20240511/s/sae-lens/1.8.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 01:09:02] INFO root fetch - processPackages [pkg-inspect]: executing diffoscope
+[2024-05-11 01:09:02] INFO root fetch - processPackages [pkg-inspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkg_inspect-0.2.0.tar.gz tmp/pkg_inspect-0.2.1.tar.gz --markdown 20240511/p/pkg-inspect/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 01:09:02] INFO root fetch - processPackages [hyperdeliciouslyz]: Remove: archive file [/home/abi/fetcher/tmp/hyperdeliciouslyz-1.1.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - processPackages [hyperdeliciouslyz]: Remove: archive file [/home/abi/fetcher/tmp/hyperdeliciouslyz-2.1.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - main [MainThread]: End processing [hyperdeliciouslyz]: success
+[2024-05-11 01:09:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 01:09:02] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.0.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.1.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - main [MainThread]: End processing [pkg-inspect]: success
+[2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-1.8.0.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-2.0.0.tar.gz]
+[2024-05-11 01:09:02] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
+[2024-05-11 01:09:02] INFO root fetch - main [MainThread]: Store serial: [23153921]
