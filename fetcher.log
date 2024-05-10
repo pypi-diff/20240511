@@ -1000,3 +1000,42 @@
 [2024-05-11 01:04:40] INFO root fetch - processPackages [cybrid-api-bank-python]: Remove: archive file [/home/abi/fetcher/tmp/cybrid-api-bank-python-0.99.0.tar.gz]
 [2024-05-11 01:04:40] INFO root fetch - main [MainThread]: End processing [cybrid-api-bank-python]: success
 [2024-05-11 01:04:40] INFO root fetch - main [MainThread]: Store serial: [23153895]
+[2024-05-11 01:06:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153895]
+[2024-05-11 01:06:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 01:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tmnt
+[2024-05-11 01:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pg-es-fdw
+[2024-05-11 01:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flwr-nightly
+[2024-05-11 01:06:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gable
+[2024-05-11 01:06:49] INFO root fetch - processPackages [gable]: New version: [0.9.0a3] Old Version: [0.9.0a2]
+[2024-05-11 01:06:49] INFO root fetch - processPackages [tmnt]: New version: [0.7.52b20240509] Old Version: [0.7.52b20240508]
+[2024-05-11 01:06:49] INFO root fetch - processPackages [flwr-nightly]: New version: [1.9.0.dev20240509] Old Version: [1.9.0.dev20240508]
+[2024-05-11 01:06:49] INFO root fetch - processPackages [gable]: Downloading https://files.pythonhosted.org/packages/3c/25/205ee4d565d0bf0f974e4b429be2eb6f978c964647c940357bfa9601db85/gable-0.9.0a2.tar.gz
+[2024-05-11 01:06:49] INFO root fetch - processPackages [pg-es-fdw]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 01:06:49] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/36/05/ceda9a5e97d4b744c1c3b6a637e1abbd1cff6cb8db24155ac60a8b4bba8e/tmnt-0.7.52b20240508.tar.gz
+[2024-05-11 01:06:49] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/dd/87/ecd88114b851bdcab076f01d8f22c296b3f8f3fb3ee7e9258e616dd7261a/flwr_nightly-1.9.0.dev20240508.tar.gz
+[2024-05-11 01:06:49] INFO root fetch - processPackages [pg-es-fdw]: Downloading https://files.pythonhosted.org/packages/6c/ac/d9d2d0dd0c40d80d9d9dff62bf9a8a7163724567baa1664bf78ee9715b75/pg-es-fdw-0.8.0.tar.gz
+[2024-05-11 01:06:49] INFO root fetch - processPackages [gable]: Downloading https://files.pythonhosted.org/packages/df/19/7ed3e403c062cfa539ddfa26caecd22d3365e387d62ab3f2a6db2e30ac8a/gable-0.9.0a3.tar.gz
+[2024-05-11 01:06:49] INFO root fetch - processPackages [gable]: executing diffoscope
+[2024-05-11 01:06:49] INFO root fetch - processPackages [gable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gable-0.9.0a2.tar.gz tmp/gable-0.9.0a3.tar.gz --markdown 20240511/g/gable/0.9.0a2-0.9.0a3/README.md --exclude *.pyd
+[2024-05-11 01:06:50] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/93/0a/d5b200b7d16bb997efa4ed76dc6d96472003206e9d8512684dcf4269883d/tmnt-0.7.52b20240509.tar.gz
+[2024-05-11 01:06:50] INFO root fetch - processPackages [flwr-nightly]: Downloading https://files.pythonhosted.org/packages/9e/81/a22dd8dde2ccd58ba3e878e7f0b88646bb28d2c3287bdbb38a67f30a4f13/flwr_nightly-1.9.0.dev20240509.tar.gz
+[2024-05-11 01:06:50] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2024-05-11 01:06:50] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.52b20240508.tar.gz tmp/tmnt-0.7.52b20240509.tar.gz --markdown 20240511/t/tmnt/0.7.52b20240508-0.7.52b20240509/README.md --exclude *.pyd
+[2024-05-11 01:06:50] INFO root fetch - processPackages [flwr-nightly]: executing diffoscope
+[2024-05-11 01:06:50] INFO root fetch - processPackages [flwr-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flwr_nightly-1.9.0.dev20240508.tar.gz tmp/flwr_nightly-1.9.0.dev20240509.tar.gz --markdown 20240511/f/flwr-nightly/1.9.0.dev20240508-1.9.0.dev20240509/README.md --exclude *.pyd
+[2024-05-11 01:06:50] INFO root fetch - processPackages [pg-es-fdw]: Downloading https://files.pythonhosted.org/packages/35/1c/f77fdc9e91ba360ab0ef448ce6866897f810cb232edcc6ae670b22539fc5/pg-es-fdw-0.9.0.tar.gz
+[2024-05-11 01:06:50] INFO root fetch - processPackages [pg-es-fdw]: executing diffoscope
+[2024-05-11 01:06:50] INFO root fetch - processPackages [pg-es-fdw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg-es-fdw-0.8.0.tar.gz tmp/pg-es-fdw-0.9.0.tar.gz --markdown 20240511/p/pg-es-fdw/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 01:06:50] INFO root fetch - processPackages [gable]: Remove: archive file [/home/abi/fetcher/tmp/gable-0.9.0a2.tar.gz]
+[2024-05-11 01:06:50] INFO root fetch - processPackages [gable]: Remove: archive file [/home/abi/fetcher/tmp/gable-0.9.0a3.tar.gz]
+[2024-05-11 01:06:50] INFO root fetch - main [MainThread]: End processing [gable]: success
+[2024-05-11 01:06:50] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240508.tar.gz]
+[2024-05-11 01:06:50] INFO root fetch - processPackages [tmnt]: Remove: archive file [/home/abi/fetcher/tmp/tmnt-0.7.52b20240509.tar.gz]
+[2024-05-11 01:06:50] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2024-05-11 01:06:51] INFO root fetch - processPackages [pg-es-fdw]: Remove: archive file [/home/abi/fetcher/tmp/pg-es-fdw-0.8.0.tar.gz]
+[2024-05-11 01:06:51] INFO root fetch - processPackages [pg-es-fdw]: Remove: archive file [/home/abi/fetcher/tmp/pg-es-fdw-0.9.0.tar.gz]
+[2024-05-11 01:06:51] INFO root fetch - main [MainThread]: End processing [pg-es-fdw]: success
+[2024-05-11 01:06:51] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240508.tar.gz]
+[2024-05-11 01:06:51] INFO root fetch - processPackages [flwr-nightly]: Remove: archive file [/home/abi/fetcher/tmp/flwr_nightly-1.9.0.dev20240509.tar.gz]
+[2024-05-11 01:06:51] INFO root fetch - main [MainThread]: End processing [flwr-nightly]: success
+[2024-05-11 01:06:51] INFO root fetch - main [MainThread]: Store serial: [23153907]
