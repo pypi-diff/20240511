@@ -1156,3 +1156,9 @@
 [2024-05-11 01:13:22] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 01:13:22] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 01:13:22] INFO root fetch - main [MainThread]: Store serial: [23153946]
+[2024-05-11 01:15:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153946]
+[2024-05-11 01:15:31] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 01:15:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colorimetricz
+[2024-05-11 01:15:31] WARNING root fetch - processPackages [colorimetricz]: Skipping, unable to determine old version
+[2024-05-11 01:15:31] INFO root fetch - main [MainThread]: End processing [colorimetricz] error
+[2024-05-11 01:15:31] INFO root fetch - main [MainThread]: Store serial: [23153950]
