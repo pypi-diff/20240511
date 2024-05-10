@@ -506,3 +506,45 @@
 [2024-05-11 00:31:59] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 00:31:59] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 00:31:59] INFO root fetch - main [MainThread]: Store serial: [23153729]
+[2024-05-11 00:34:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23153729]
+[2024-05-11 00:34:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 00:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MobileInventoryCLI
+[2024-05-11 00:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feelinglessz
+[2024-05-11 00:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cirq-ionq
+[2024-05-11 00:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cirq
+[2024-05-11 00:34:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cirq-google
+[2024-05-11 00:34:07] INFO root fetch - processPackages [MobileInventoryCLI]: New version: [0.4.99] Old Version: [0.4.98]
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq-ionq]: New version: [1.4.0.dev20240510015550] Old Version: [1.4.0.dev20240509230054]
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq-google]: New version: [1.4.0.dev20240510015550] Old Version: [1.4.0.dev20240509230054]
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq]: New version: [1.4.0.dev20240510015550] Old Version: [1.4.0.dev20240509230054]
+[2024-05-11 00:34:07] WARNING root fetch - processPackages [feelinglessz]: Skipping, unable to determine old version
+[2024-05-11 00:34:07] INFO root fetch - main [MainThread]: End processing [feelinglessz] error
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/be/11/484469fd7b05d2b733b700e3483cfeb85cc9f5068ae83444f750a7a7f22a/cirq_google-1.4.0.dev20240509230054-py3-none-any.whl
+[2024-05-11 00:34:07] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/34/2d/1e50d7f512e3d39590afb4a6c37340af98e5c4eadc77d9de653aab0cb49f/MobileInventoryCLI-0.4.98.tar.gz
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/95/46/728535c4a42f8503beb0eac62feecdd7485c825a35fd3cce9f827597b007/cirq_ionq-1.4.0.dev20240509230054-py3-none-any.whl
+[2024-05-11 00:34:07] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/ad/d0/f6d3adc185d36c4cd18c3a37254df40de68896cdacf593e4872c4bcbd925/cirq-1.4.0.dev20240509230054-py3-none-any.whl
+[2024-05-11 00:34:08] INFO root fetch - processPackages [MobileInventoryCLI]: Downloading https://files.pythonhosted.org/packages/44/8c/14cdf7fc3f0b69cae35ba7ee2852fb70e3cab687142869ee3deb104ffc71/MobileInventoryCLI-0.4.99.tar.gz
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-ionq]: Downloading https://files.pythonhosted.org/packages/c1/83/3045c9a5af1d2c72d9bb515428d53e7ae791c383bc2015dd7cbf4690c9f0/cirq_ionq-1.4.0.dev20240510015550-py3-none-any.whl
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq]: Downloading https://files.pythonhosted.org/packages/e7/8e/d604799af8ae33375e1eda0a7d3cd7b359205dcf57858d3c7e35f7eaee06/cirq-1.4.0.dev20240510015550-py3-none-any.whl
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-google]: Downloading https://files.pythonhosted.org/packages/12/d2/3a42b4f4b7ffc48e607fdd7e913add6f5d4d3053d61afc4a52e2fc9c9053/cirq_google-1.4.0.dev20240510015550-py3-none-any.whl
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-ionq]: executing diffoscope
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-ionq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_ionq-1.4.0.dev20240509230054-py3-none-any.whl.zip tmp/cirq_ionq-1.4.0.dev20240510015550-py3-none-any.whl.zip --markdown 20240511/c/cirq-ionq/1.4.0.dev20240509230054-1.4.0.dev20240510015550/README.md --exclude *.pyd
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq]: executing diffoscope
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq-1.4.0.dev20240509230054-py3-none-any.whl.zip tmp/cirq-1.4.0.dev20240510015550-py3-none-any.whl.zip --markdown 20240511/c/cirq/1.4.0.dev20240509230054-1.4.0.dev20240510015550/README.md --exclude *.pyd
+[2024-05-11 00:34:08] INFO root fetch - processPackages [MobileInventoryCLI]: executing diffoscope
+[2024-05-11 00:34:08] INFO root fetch - processPackages [MobileInventoryCLI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MobileInventoryCLI-0.4.98.tar.gz tmp/MobileInventoryCLI-0.4.99.tar.gz --markdown 20240511/M/MobileInventoryCLI/0.4.98-0.4.99/README.md --exclude *.pyd
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-google]: executing diffoscope
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq-google]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cirq_google-1.4.0.dev20240509230054-py3-none-any.whl.zip tmp/cirq_google-1.4.0.dev20240510015550-py3-none-any.whl.zip --markdown 20240511/c/cirq-google/1.4.0.dev20240509230054-1.4.0.dev20240510015550/README.md --exclude *.pyd
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq]: Remove: archive file [/home/abi/fetcher/tmp/cirq-1.4.0.dev20240509230054-py3-none-any.whl.zip]
+[2024-05-11 00:34:08] INFO root fetch - processPackages [cirq]: Remove: archive file [/home/abi/fetcher/tmp/cirq-1.4.0.dev20240510015550-py3-none-any.whl.zip]
+[2024-05-11 00:34:09] INFO root fetch - main [MainThread]: End processing [cirq]: success
+[2024-05-11 00:34:09] INFO root fetch - processPackages [cirq-ionq]: Remove: archive file [/home/abi/fetcher/tmp/cirq_ionq-1.4.0.dev20240509230054-py3-none-any.whl.zip]
+[2024-05-11 00:34:09] INFO root fetch - processPackages [cirq-ionq]: Remove: archive file [/home/abi/fetcher/tmp/cirq_ionq-1.4.0.dev20240510015550-py3-none-any.whl.zip]
+[2024-05-11 00:34:09] INFO root fetch - main [MainThread]: End processing [cirq-ionq]: success
+[2024-05-11 00:34:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.98.tar.gz]
+[2024-05-11 00:34:09] INFO root fetch - processPackages [MobileInventoryCLI]: Remove: archive file [/home/abi/fetcher/tmp/MobileInventoryCLI-0.4.99.tar.gz]
+[2024-05-11 00:34:09] INFO root fetch - main [MainThread]: End processing [MobileInventoryCLI]: success
+[2024-05-11 00:34:09] INFO root fetch - processPackages [cirq-google]: Remove: archive file [/home/abi/fetcher/tmp/cirq_google-1.4.0.dev20240509230054-py3-none-any.whl.zip]
+[2024-05-11 00:34:09] INFO root fetch - processPackages [cirq-google]: Remove: archive file [/home/abi/fetcher/tmp/cirq_google-1.4.0.dev20240510015550-py3-none-any.whl.zip]
+[2024-05-11 00:34:09] INFO root fetch - main [MainThread]: End processing [cirq-google]: success
+[2024-05-11 00:34:09] INFO root fetch - main [MainThread]: Store serial: [23153742]
