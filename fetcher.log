@@ -19516,3 +19516,33 @@
 [2024-05-11 18:08:38] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
 [2024-05-11 18:08:38] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
 [2024-05-11 18:08:38] INFO root fetch - main [MainThread]: Store serial: [23162529]
+[2024-05-11 18:10:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162529]
+[2024-05-11 18:10:47] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 18:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rpi-lgpio
+[2024-05-11 18:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyanno4rt
+[2024-05-11 18:10:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: starstonez
+[2024-05-11 18:10:47] INFO root fetch - processPackages [rpi-lgpio]: New version: [0.6] Old Version: [0.5]
+[2024-05-11 18:10:47] INFO root fetch - processPackages [pyanno4rt]: New version: [0.16.0] Old Version: [0.15.0]
+[2024-05-11 18:10:47] INFO root fetch - processPackages [starstonez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:10:47] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/0a/87/7739f7922a7c35cd4c8cf7d1f73fa4ffa1027b8ffba5697be843a6da7441/pyanno4rt-0.15.0.tar.gz
+[2024-05-11 18:10:47] INFO root fetch - processPackages [rpi-lgpio]: Downloading https://files.pythonhosted.org/packages/19/b6/c8709722eadaacb0c821d72b37cef57b9631b63728bba8737b73bd787021/rpi-lgpio-0.5.tar.gz
+[2024-05-11 18:10:47] INFO root fetch - processPackages [starstonez]: Downloading https://files.pythonhosted.org/packages/65/32/0d861c451366cd12a874a522661f30b60163d8be457e0ce3bebc0c56604d/starstonez-1.1.tar.gz
+[2024-05-11 18:10:47] INFO root fetch - processPackages [rpi-lgpio]: Downloading https://files.pythonhosted.org/packages/6e/6d/7b6cb0def16abda6af89d16a3363d4036501bf042f9c67668aad3b34927f/rpi_lgpio-0.6.tar.gz
+[2024-05-11 18:10:47] INFO root fetch - processPackages [starstonez]: Downloading https://files.pythonhosted.org/packages/c0/77/f19c927a32da2e932a648ba16ab0302d86b47bf9da98168bce1697357986/starstonez-2.1.tar.gz
+[2024-05-11 18:10:48] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/c5/b6/635a6de65dcddf110a3fb966b14208cde699c7e744d64c3dcdc6197fc2d5/pyanno4rt-0.16.0.tar.gz
+[2024-05-11 18:10:48] INFO root fetch - processPackages [rpi-lgpio]: executing diffoscope
+[2024-05-11 18:10:48] INFO root fetch - processPackages [rpi-lgpio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpi-lgpio-0.5.tar.gz tmp/rpi_lgpio-0.6.tar.gz --markdown 20240511/r/rpi-lgpio/0.5-0.6/README.md --exclude *.pyd
+[2024-05-11 18:10:48] INFO root fetch - processPackages [starstonez]: executing diffoscope
+[2024-05-11 18:10:48] INFO root fetch - processPackages [starstonez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starstonez-1.1.tar.gz tmp/starstonez-2.1.tar.gz --markdown 20240511/s/starstonez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:10:48] INFO root fetch - processPackages [pyanno4rt]: executing diffoscope
+[2024-05-11 18:10:48] INFO root fetch - processPackages [pyanno4rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanno4rt-0.15.0.tar.gz tmp/pyanno4rt-0.16.0.tar.gz --markdown 20240511/p/pyanno4rt/0.15.0-0.16.0/README.md --exclude *.pyd
+[2024-05-11 18:10:48] INFO root fetch - processPackages [starstonez]: Remove: archive file [/home/abi/fetcher/tmp/starstonez-1.1.tar.gz]
+[2024-05-11 18:10:48] INFO root fetch - processPackages [starstonez]: Remove: archive file [/home/abi/fetcher/tmp/starstonez-2.1.tar.gz]
+[2024-05-11 18:10:48] INFO root fetch - main [MainThread]: End processing [starstonez]: success
+[2024-05-11 18:10:48] INFO root fetch - processPackages [rpi-lgpio]: Remove: archive file [/home/abi/fetcher/tmp/rpi-lgpio-0.5.tar.gz]
+[2024-05-11 18:10:48] INFO root fetch - processPackages [rpi-lgpio]: Remove: archive file [/home/abi/fetcher/tmp/rpi_lgpio-0.6.tar.gz]
+[2024-05-11 18:10:48] INFO root fetch - main [MainThread]: End processing [rpi-lgpio]: success
+[2024-05-11 18:10:51] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.15.0.tar.gz]
+[2024-05-11 18:10:51] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.16.0.tar.gz]
+[2024-05-11 18:10:51] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
+[2024-05-11 18:10:51] INFO root fetch - main [MainThread]: Store serial: [23162538]
