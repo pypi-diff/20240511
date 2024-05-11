@@ -20134,3 +20134,45 @@
 [2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: Remove: archive file [/home/abi/fetcher/tmp/abarms-1.1.2.tar.gz]
 [2024-05-11 18:51:54] INFO root fetch - main [MainThread]: End processing [abarms]: success
 [2024-05-11 18:51:54] INFO root fetch - main [MainThread]: Store serial: [23162830]
+[2024-05-11 18:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162830]
+[2024-05-11 18:54:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 18:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dialog-lib
+[2024-05-11 18:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-date-range
+[2024-05-11 18:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dash-oflog-components
+[2024-05-11 18:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pydglab
+[2024-05-11 18:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphaerioidaceaez
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dash-oflog-components]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/87/0b/f416b5cdfcc73fcb0e1d8e73d90f0fde8fa4a3042b87eef6a6f78630737b/dash_oflog_components-0.0.8.tar.gz
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2024-05-11 18:54:03] INFO root fetch - processPackages [pydglab]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 18:54:03] WARNING root fetch - processPackages [sphaerioidaceaez]: Skipping, unable to determine old version
+[2024-05-11 18:54:03] INFO root fetch - main [MainThread]: End processing [sphaerioidaceaez] error
+[2024-05-11 18:54:03] INFO root fetch - processPackages [odoo14-addon-date-range]: New version: [14.0.2.2.0] Old Version: [14.0.2.1.4.dev2]
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/e9/13/4188899d6b95c46737dcb91b618d7f043ee4fc94128efb54e8917315026d/dialog_lib-0.0.1.8.tar.gz
+[2024-05-11 18:54:03] INFO root fetch - processPackages [pydglab]: Downloading https://files.pythonhosted.org/packages/02/db/49b35420fc465c17c9ddf1918676fc918b9ab7efbd4c577a024c11cbf823/pydglab-0.1.0.tar.gz
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/8b/f4/0b8659ff282e21dd91120e7b693c909d64230d30799a6ecfcf808cad6c44/dash_oflog_components-0.0.9.tar.gz
+[2024-05-11 18:54:03] INFO root fetch - processPackages [odoo14-addon-date-range]: Downloading https://files.pythonhosted.org/packages/7b/f1/028ba066677ca1b8e2e491f5cc6a051a7e6776c4797313bfdff5aa4850fc/odoo14_addon_date_range-14.0.2.1.4.dev2-py3-none-any.whl
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dash-oflog-components]: executing diffoscope
+[2024-05-11 18:54:03] INFO root fetch - processPackages [dash-oflog-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_oflog_components-0.0.8.tar.gz tmp/dash_oflog_components-0.0.9.tar.gz --markdown 20240511/d/dash-oflog-components/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/a6/99/91b03e62dec54e7fb1c05a8fb35ed00fe60baf6eb48ab34311a56782abd6/dialog_lib-0.0.1.9.tar.gz
+[2024-05-11 18:54:04] INFO root fetch - processPackages [pydglab]: Downloading https://files.pythonhosted.org/packages/8e/77/685e8964950307d388ef5b01cc54c98a6ad34e7480c06fb3b732379063c1/pydglab-0.2.0.tar.gz
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.8.tar.gz tmp/dialog_lib-0.0.1.9.tar.gz --markdown 20240511/d/dialog-lib/0.0.1.8-0.0.1.9/README.md --exclude *.pyd
+[2024-05-11 18:54:04] INFO root fetch - processPackages [pydglab]: executing diffoscope
+[2024-05-11 18:54:04] INFO root fetch - processPackages [pydglab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydglab-0.1.0.tar.gz tmp/pydglab-0.2.0.tar.gz --markdown 20240511/p/pydglab/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 18:54:04] INFO root fetch - processPackages [odoo14-addon-date-range]: Downloading https://files.pythonhosted.org/packages/c2/8f/e1d198f8c2f0439bc0370702342e4fe1360fb9db09e0d7b4e013b0189d7a/odoo14_addon_date_range-14.0.2.2.0-py3-none-any.whl
+[2024-05-11 18:54:04] INFO root fetch - processPackages [odoo14-addon-date-range]: executing diffoscope
+[2024-05-11 18:54:04] INFO root fetch - processPackages [odoo14-addon-date-range]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_date_range-14.0.2.1.4.dev2-py3-none-any.whl.zip tmp/odoo14_addon_date_range-14.0.2.2.0-py3-none-any.whl.zip --markdown 20240511/o/odoo14-addon-date-range/14.0.2.1.4.dev2-14.0.2.2.0/README.md --exclude *.pyd
+[2024-05-11 18:54:04] INFO root fetch - processPackages [pydglab]: Remove: archive file [/home/abi/fetcher/tmp/pydglab-0.1.0.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - processPackages [pydglab]: Remove: archive file [/home/abi/fetcher/tmp/pydglab-0.2.0.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - main [MainThread]: End processing [pydglab]: success
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.8.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.9.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.8.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.9.tar.gz]
+[2024-05-11 18:54:04] INFO root fetch - main [MainThread]: End processing [dash-oflog-components]: success
+[2024-05-11 18:54:05] INFO root fetch - processPackages [odoo14-addon-date-range]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_date_range-14.0.2.1.4.dev2-py3-none-any.whl.zip]
+[2024-05-11 18:54:05] INFO root fetch - processPackages [odoo14-addon-date-range]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_date_range-14.0.2.2.0-py3-none-any.whl.zip]
+[2024-05-11 18:54:05] INFO root fetch - main [MainThread]: End processing [odoo14-addon-date-range]: success
+[2024-05-11 18:54:05] INFO root fetch - main [MainThread]: Store serial: [23162844]
