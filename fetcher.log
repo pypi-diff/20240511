@@ -18710,3 +18710,51 @@
 [2024-05-11 17:17:40] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc9.tar.gz]
 [2024-05-11 17:17:40] INFO root fetch - main [MainThread]: End processing [feffery-antd-components]: success
 [2024-05-11 17:17:40] INFO root fetch - main [MainThread]: Store serial: [23162216]
+[2024-05-11 17:19:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162216]
+[2024-05-11 17:19:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 17:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: simpleheartedz
+[2024-05-11 17:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: airfly
+[2024-05-11 17:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 17:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-sync-roles
+[2024-05-11 17:19:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hotsos
+[2024-05-11 17:19:51] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.4] Old Version: [1.0.3.4]
+[2024-05-11 17:19:52] INFO root fetch - processPackages [simpleheartedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:19:52] INFO root fetch - processPackages [airfly]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-05-11 17:19:52] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/39/e2/ff3d3937ea932ed35564569edca0b2480f7673b7ab995a6195513b33ceff/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [hotsos]: New version: [1.17.0.post9] Old Version: [1.17.0.post8]
+[2024-05-11 17:19:52] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 17:19:52] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [simpleheartedz]: Downloading https://files.pythonhosted.org/packages/af/30/b4651818e26137fc9de9dfc762456fef516d248f27a5d77edf07d3055e83/simpleheartedz-1.1.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [airfly]: Downloading https://files.pythonhosted.org/packages/e5/c5/722d94ff34e0ef285d314dae30699c15f1e2d87066c0590aebb69ef436a4/airfly-0.9.0.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/a7/57/15e4fe4e4dbc4381d9bf00a81267a7c13df4ca3f2dc3b2afa7db65518860/hotsos-1.17.0.post8.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/24/3d/1ae670abf99ac9fff996ad044e10b1c1fc9455a9bb723a393be3761ec1bf/nonebot_plugin_ranfurrypic-1.0.4.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-11 17:19:52] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240511/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 17:19:52] INFO root fetch - processPackages [simpleheartedz]: Downloading https://files.pythonhosted.org/packages/57/17/551a5b8aaecb008e56209c7e8cc454bdb7b5c0bd630e54d1f90cb5a63dda/simpleheartedz-2.1.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [airfly]: Downloading https://files.pythonhosted.org/packages/0d/c3/3a012aaa3bbe658a3b0dd2957c575eedb1c3723568fe9eda647ff51041fe/airfly-1.0.0.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 17:19:52] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.4.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.3.4-1.0.4/README.md --exclude *.pyd
+[2024-05-11 17:19:52] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/7f/57/f6a4fc3900f977e567bcf108bd2787ce8624445d42b84c26b710b18c7c3d/hotsos-1.17.0.post9.tar.gz
+[2024-05-11 17:19:52] INFO root fetch - processPackages [airfly]: executing diffoscope
+[2024-05-11 17:19:52] INFO root fetch - processPackages [airfly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airfly-0.9.0.tar.gz tmp/airfly-1.0.0.tar.gz --markdown 20240511/a/airfly/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-05-11 17:19:52] INFO root fetch - processPackages [simpleheartedz]: executing diffoscope
+[2024-05-11 17:19:52] INFO root fetch - processPackages [simpleheartedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simpleheartedz-1.1.tar.gz tmp/simpleheartedz-2.1.tar.gz --markdown 20240511/s/simpleheartedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:19:52] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2024-05-11 17:19:52] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.17.0.post8.tar.gz tmp/hotsos-1.17.0.post9.tar.gz --markdown 20240511/h/hotsos/1.17.0.post8-1.17.0.post9/README.md --exclude *.pyd
+[2024-05-11 17:19:53] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-11 17:19:53] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.4.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 17:19:53] INFO root fetch - processPackages [simpleheartedz]: Remove: archive file [/home/abi/fetcher/tmp/simpleheartedz-1.1.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - processPackages [simpleheartedz]: Remove: archive file [/home/abi/fetcher/tmp/simpleheartedz-2.1.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - main [MainThread]: End processing [simpleheartedz]: success
+[2024-05-11 17:19:53] INFO root fetch - processPackages [airfly]: Remove: archive file [/home/abi/fetcher/tmp/airfly-0.9.0.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - processPackages [airfly]: Remove: archive file [/home/abi/fetcher/tmp/airfly-1.0.0.tar.gz]
+[2024-05-11 17:19:53] INFO root fetch - main [MainThread]: End processing [airfly]: success
+[2024-05-11 17:19:54] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post8.tar.gz]
+[2024-05-11 17:19:54] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
+[2024-05-11 17:19:54] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2024-05-11 17:19:54] INFO root fetch - main [MainThread]: Store serial: [23162230]
