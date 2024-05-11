@@ -17561,3 +17561,21 @@
 [2024-05-11 16:03:30] INFO root fetch - processPackages [zensols.deepnlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deepnlp-1.9.1-py3-none-any.whl.zip]
 [2024-05-11 16:03:30] INFO root fetch - main [MainThread]: End processing [zensols.deepnlp]: success
 [2024-05-11 16:03:30] INFO root fetch - main [MainThread]: Store serial: [23161708]
+[2024-05-11 16:05:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161708]
+[2024-05-11 16:05:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 16:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: open-chat-api-client
+[2024-05-11 16:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: palestricz
+[2024-05-11 16:05:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rotundatez
+[2024-05-11 16:05:39] INFO root fetch - processPackages [rotundatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:05:39] WARNING root fetch - processPackages [palestricz]: Skipping, unable to determine old version
+[2024-05-11 16:05:39] INFO root fetch - main [MainThread]: End processing [palestricz] error
+[2024-05-11 16:05:39] WARNING root fetch - processPackages [open-chat-api-client]: Skipping, unable to determine old version
+[2024-05-11 16:05:39] INFO root fetch - main [MainThread]: End processing [open-chat-api-client] error
+[2024-05-11 16:05:39] INFO root fetch - processPackages [rotundatez]: Downloading https://files.pythonhosted.org/packages/b1/53/ae4e93cf1b524d5024b663d096d0e381fd067240cb0081c9716b50d04a0d/rotundatez-1.1.tar.gz
+[2024-05-11 16:05:39] INFO root fetch - processPackages [rotundatez]: Downloading https://files.pythonhosted.org/packages/da/78/f64d06f7fde6c766e05e22d3c344a813c4d852d6c609b0637e623a905542/rotundatez-2.1.tar.gz
+[2024-05-11 16:05:39] INFO root fetch - processPackages [rotundatez]: executing diffoscope
+[2024-05-11 16:05:39] INFO root fetch - processPackages [rotundatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rotundatez-1.1.tar.gz tmp/rotundatez-2.1.tar.gz --markdown 20240511/r/rotundatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:05:40] INFO root fetch - processPackages [rotundatez]: Remove: archive file [/home/abi/fetcher/tmp/rotundatez-1.1.tar.gz]
+[2024-05-11 16:05:40] INFO root fetch - processPackages [rotundatez]: Remove: archive file [/home/abi/fetcher/tmp/rotundatez-2.1.tar.gz]
+[2024-05-11 16:05:40] INFO root fetch - main [MainThread]: End processing [rotundatez]: success
+[2024-05-11 16:05:40] INFO root fetch - main [MainThread]: Store serial: [23161719]
