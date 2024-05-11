@@ -19741,3 +19741,18 @@
 [2024-05-11 18:21:45] INFO root fetch - processPackages [stegocephalousz]: Remove: archive file [/home/abi/fetcher/tmp/stegocephalousz-2.1.tar.gz]
 [2024-05-11 18:21:45] INFO root fetch - main [MainThread]: End processing [stegocephalousz]: success
 [2024-05-11 18:21:45] INFO root fetch - main [MainThread]: Store serial: [23162628]
+[2024-05-11 18:23:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162628]
+[2024-05-11 18:23:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 18:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bathycentesisz
+[2024-05-11 18:23:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plom
+[2024-05-11 18:23:54] WARNING root fetch - processPackages [bathycentesisz]: Skipping, unable to determine old version
+[2024-05-11 18:23:54] INFO root fetch - main [MainThread]: End processing [bathycentesisz] error
+[2024-05-11 18:23:54] INFO root fetch - processPackages [plom]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-11 18:23:54] INFO root fetch - processPackages [plom]: Downloading https://files.pythonhosted.org/packages/b7/81/1b078fee79f3aedaf708eb138abc2d993edc0d9cbccae2c1489964d07b9d/plom-0.9.3.tar.gz
+[2024-05-11 18:23:55] INFO root fetch - processPackages [plom]: Downloading https://files.pythonhosted.org/packages/df/29/cf8edd42fcc9085316f922d56e165eaf4e309691af920ec89baee4e3b5f0/plom-0.9.4.tar.gz
+[2024-05-11 18:23:55] INFO root fetch - processPackages [plom]: executing diffoscope
+[2024-05-11 18:23:55] INFO root fetch - processPackages [plom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plom-0.9.3.tar.gz tmp/plom-0.9.4.tar.gz --markdown 20240511/p/plom/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-11 18:23:56] INFO root fetch - processPackages [plom]: Remove: archive file [/home/abi/fetcher/tmp/plom-0.9.3.tar.gz]
+[2024-05-11 18:23:56] INFO root fetch - processPackages [plom]: Remove: archive file [/home/abi/fetcher/tmp/plom-0.9.4.tar.gz]
+[2024-05-11 18:23:56] INFO root fetch - main [MainThread]: End processing [plom]: success
+[2024-05-11 18:23:56] INFO root fetch - main [MainThread]: Store serial: [23162635]
