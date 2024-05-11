@@ -22809,3 +22809,30 @@
 [2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-aio-1.9.tar.gz]
 [2024-05-11 21:55:17] INFO root fetch - main [MainThread]: End processing [telemetrix-aio]: success
 [2024-05-11 21:55:17] INFO root fetch - main [MainThread]: Store serial: [23164126]
+[2024-05-11 21:57:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164126]
+[2024-05-11 21:57:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 21:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mangainfo
+[2024-05-11 21:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: energy-assistant
+[2024-05-11 21:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: philosophos
+[2024-05-11 21:57:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: layrz-sdk
+[2024-05-11 21:57:26] WARNING root fetch - processPackages [mangainfo]: Skipping, unable to determine old version
+[2024-05-11 21:57:26] INFO root fetch - main [MainThread]: End processing [mangainfo] error
+[2024-05-11 21:57:26] INFO root fetch - processPackages [energy-assistant]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 21:57:26] WARNING root fetch - processPackages [philosophos]: Skipping, unable to determine old version
+[2024-05-11 21:57:26] INFO root fetch - main [MainThread]: End processing [philosophos] error
+[2024-05-11 21:57:26] INFO root fetch - processPackages [energy-assistant]: Downloading https://files.pythonhosted.org/packages/06/6e/124fdb50af13f8190c25946892a452bd0709cd626b34eed662c9b7e2b275/energy_assistant-0.1.6.tar.gz
+[2024-05-11 21:57:26] INFO root fetch - processPackages [layrz-sdk]: New version: [3.0.1] Old Version: [3.0.0]
+[2024-05-11 21:57:27] INFO root fetch - processPackages [energy-assistant]: Downloading https://files.pythonhosted.org/packages/8c/1a/1ddacac8adbad71516960149d53d1e4262d3d29a07465bdff5dbaec1ca87/energy_assistant-0.1.7.tar.gz
+[2024-05-11 21:57:27] INFO root fetch - processPackages [layrz-sdk]: Downloading https://files.pythonhosted.org/packages/a6/5e/38687c2a5c85d181d5d50cc5590656d39d9b047097cdf6e2432aa2e678ba/layrz_sdk-3.0.0.tar.gz
+[2024-05-11 21:57:27] INFO root fetch - processPackages [energy-assistant]: executing diffoscope
+[2024-05-11 21:57:27] INFO root fetch - processPackages [energy-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energy_assistant-0.1.6.tar.gz tmp/energy_assistant-0.1.7.tar.gz --markdown 20240511/e/energy-assistant/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 21:57:27] INFO root fetch - processPackages [layrz-sdk]: Downloading https://files.pythonhosted.org/packages/1b/ac/3210ca68b4eb496077730a8c0f46ccd48990d813130f10d427f03da6aa0e/layrz_sdk-3.0.1.tar.gz
+[2024-05-11 21:57:27] INFO root fetch - processPackages [layrz-sdk]: executing diffoscope
+[2024-05-11 21:57:27] INFO root fetch - processPackages [layrz-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/layrz_sdk-3.0.0.tar.gz tmp/layrz_sdk-3.0.1.tar.gz --markdown 20240511/l/layrz-sdk/3.0.0-3.0.1/README.md --exclude *.pyd
+[2024-05-11 21:57:27] INFO root fetch - processPackages [energy-assistant]: Remove: archive file [/home/abi/fetcher/tmp/energy_assistant-0.1.6.tar.gz]
+[2024-05-11 21:57:27] INFO root fetch - processPackages [energy-assistant]: Remove: archive file [/home/abi/fetcher/tmp/energy_assistant-0.1.7.tar.gz]
+[2024-05-11 21:57:27] INFO root fetch - main [MainThread]: End processing [energy-assistant]: success
+[2024-05-11 21:57:28] INFO root fetch - processPackages [layrz-sdk]: Remove: archive file [/home/abi/fetcher/tmp/layrz_sdk-3.0.0.tar.gz]
+[2024-05-11 21:57:28] INFO root fetch - processPackages [layrz-sdk]: Remove: archive file [/home/abi/fetcher/tmp/layrz_sdk-3.0.1.tar.gz]
+[2024-05-11 21:57:28] INFO root fetch - main [MainThread]: End processing [layrz-sdk]: success
+[2024-05-11 21:57:28] INFO root fetch - main [MainThread]: Store serial: [23164140]
