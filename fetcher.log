@@ -9319,3 +9319,18 @@
 [2024-05-11 05:47:57] INFO root fetch - processPackages [dbinfer-bench]: Remove: archive file [/home/abi/fetcher/tmp/dbinfer_bench-0.1-py3-none-any.whl.zip]
 [2024-05-11 05:47:57] INFO root fetch - main [MainThread]: End processing [dbinfer-bench]: success
 [2024-05-11 05:47:57] INFO root fetch - main [MainThread]: Store serial: [23157121]
+[2024-05-11 05:50:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157121]
+[2024-05-11 05:50:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 05:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hc-log-filter
+[2024-05-11 05:50:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mastodonsz
+[2024-05-11 05:50:07] WARNING root fetch - processPackages [hc-log-filter]: Skipping, unable to determine old version
+[2024-05-11 05:50:07] INFO root fetch - main [MainThread]: End processing [hc-log-filter] error
+[2024-05-11 05:50:07] INFO root fetch - processPackages [mastodonsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:50:07] INFO root fetch - processPackages [mastodonsz]: Downloading https://files.pythonhosted.org/packages/e1/aa/d1d61961680a89dc36429250e4e7a9f4e6d8bd592634339f8f64ff127ec0/mastodonsz-1.1.tar.gz
+[2024-05-11 05:50:07] INFO root fetch - processPackages [mastodonsz]: Downloading https://files.pythonhosted.org/packages/53/7b/0d07da20b70cfdf3ae93a38f055ab32ac578d3fa57f62fcfcb2dbb370a39/mastodonsz-2.1.tar.gz
+[2024-05-11 05:50:07] INFO root fetch - processPackages [mastodonsz]: executing diffoscope
+[2024-05-11 05:50:07] INFO root fetch - processPackages [mastodonsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mastodonsz-1.1.tar.gz tmp/mastodonsz-2.1.tar.gz --markdown 20240511/m/mastodonsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:50:08] INFO root fetch - processPackages [mastodonsz]: Remove: archive file [/home/abi/fetcher/tmp/mastodonsz-1.1.tar.gz]
+[2024-05-11 05:50:08] INFO root fetch - processPackages [mastodonsz]: Remove: archive file [/home/abi/fetcher/tmp/mastodonsz-2.1.tar.gz]
+[2024-05-11 05:50:08] INFO root fetch - main [MainThread]: End processing [mastodonsz]: success
+[2024-05-11 05:50:08] INFO root fetch - main [MainThread]: Store serial: [23157126]
