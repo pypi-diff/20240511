@@ -23059,3 +23059,24 @@
 [2024-05-11 22:14:50] INFO root fetch - processPackages [fed-net-liquidity]: Remove: archive file [/home/abi/fetcher/tmp/fed_net_liquidity-0.0.3.tar.gz]
 [2024-05-11 22:14:50] INFO root fetch - main [MainThread]: End processing [fed-net-liquidity]: success
 [2024-05-11 22:14:50] INFO root fetch - main [MainThread]: Store serial: [23164225]
+[2024-05-11 22:16:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164225]
+[2024-05-11 22:16:59] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 22:16:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: launchflow
+[2024-05-11 22:16:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anabih-python-test
+[2024-05-11 22:16:59] INFO root fetch - processPackages [launchflow]: New version: [0.3.9.dev8] Old Version: [0.3.9.dev7]
+[2024-05-11 22:16:59] INFO root fetch - processPackages [anabih-python-test]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-05-11 22:16:59] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/48/58/dc4bcb9a1d74952a08d0cfc5e24c45d961d331cb7a4434c9059bab154c72/launchflow-0.3.9.dev7.tar.gz
+[2024-05-11 22:16:59] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/fe/59/3ee30a3988ad24152dbd1b0a8e7a65938f78196c60635fe4061602de3152/anabih_python_test-6.0.0.tar.gz
+[2024-05-11 22:16:59] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/56/32/b41dd88cf4696ae73b7088c3bb9b26eb476dc0382545b7067144ef3db813/anabih_python_test-7.0.0.tar.gz
+[2024-05-11 22:16:59] INFO root fetch - processPackages [launchflow]: Downloading https://files.pythonhosted.org/packages/8c/d2/f0544d4c3383370934bcc7b31fa0449e89fcfa2edeeac48bd86ada84b492/launchflow-0.3.9.dev8.tar.gz
+[2024-05-11 22:16:59] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-11 22:16:59] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-6.0.0.tar.gz tmp/anabih_python_test-7.0.0.tar.gz --markdown 20240511/a/anabih-python-test/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-05-11 22:16:59] INFO root fetch - processPackages [launchflow]: executing diffoscope
+[2024-05-11 22:16:59] INFO root fetch - processPackages [launchflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/launchflow-0.3.9.dev7.tar.gz tmp/launchflow-0.3.9.dev8.tar.gz --markdown 20240511/l/launchflow/0.3.9.dev7-0.3.9.dev8/README.md --exclude *.pyd
+[2024-05-11 22:17:00] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-6.0.0.tar.gz]
+[2024-05-11 22:17:00] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-7.0.0.tar.gz]
+[2024-05-11 22:17:00] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-11 22:17:00] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev7.tar.gz]
+[2024-05-11 22:17:00] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
+[2024-05-11 22:17:00] INFO root fetch - main [MainThread]: End processing [launchflow]: success
+[2024-05-11 22:17:00] INFO root fetch - main [MainThread]: Store serial: [23164243]
