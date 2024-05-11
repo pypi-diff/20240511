@@ -23148,3 +23148,27 @@
 [2024-05-11 22:25:37] INFO root fetch - processPackages [uncoachablez]: Remove: archive file [/home/abi/fetcher/tmp/uncoachablez-2.1.tar.gz]
 [2024-05-11 22:25:37] INFO root fetch - main [MainThread]: End processing [uncoachablez]: success
 [2024-05-11 22:25:37] INFO root fetch - main [MainThread]: Store serial: [23164298]
+[2024-05-11 22:27:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164298]
+[2024-05-11 22:27:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 22:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soccer-poisson
+[2024-05-11 22:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bw-aggregation
+[2024-05-11 22:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apprise
+[2024-05-11 22:27:46] WARNING root fetch - processPackages [bw-aggregation]: Skipping, unable to determine old version
+[2024-05-11 22:27:46] INFO root fetch - processPackages [soccer-poisson]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 22:27:46] INFO root fetch - main [MainThread]: End processing [bw-aggregation] error
+[2024-05-11 22:27:46] INFO root fetch - processPackages [apprise]: New version: [1.8.0] Old Version: [1.7.6]
+[2024-05-11 22:27:46] INFO root fetch - processPackages [soccer-poisson]: Downloading https://files.pythonhosted.org/packages/57/ca/41a90f17d9a6d8b683312e83a1c8528634de60dde046ed16eaaa5d147c79/soccer_poisson-0.1.8.tar.gz
+[2024-05-11 22:27:46] INFO root fetch - processPackages [apprise]: Downloading https://files.pythonhosted.org/packages/a2/fb/e64be71a57f69f46db65043b16f86750870c1710ee2650c30c20a9bfa624/apprise-1.7.6.tar.gz
+[2024-05-11 22:27:46] INFO root fetch - processPackages [soccer-poisson]: Downloading https://files.pythonhosted.org/packages/1a/7c/696694f798bbc554489117a34f6ab5235e8424247805f2644373cdffbcaf/soccer_poisson-0.1.9.tar.gz
+[2024-05-11 22:27:46] INFO root fetch - processPackages [soccer-poisson]: executing diffoscope
+[2024-05-11 22:27:46] INFO root fetch - processPackages [soccer-poisson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soccer_poisson-0.1.8.tar.gz tmp/soccer_poisson-0.1.9.tar.gz --markdown 20240511/s/soccer-poisson/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 22:27:46] INFO root fetch - processPackages [apprise]: Downloading https://files.pythonhosted.org/packages/69/4d/58246222a75eb06c22e3cf5bd2db1a7c07cb9fef6afc919b3f4d1d562a65/apprise-1.8.0.tar.gz
+[2024-05-11 22:27:47] INFO root fetch - processPackages [apprise]: executing diffoscope
+[2024-05-11 22:27:47] INFO root fetch - processPackages [apprise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apprise-1.7.6.tar.gz tmp/apprise-1.8.0.tar.gz --markdown 20240511/a/apprise/1.7.6-1.8.0/README.md --exclude *.pyd
+[2024-05-11 22:27:47] INFO root fetch - processPackages [soccer-poisson]: Remove: archive file [/home/abi/fetcher/tmp/soccer_poisson-0.1.8.tar.gz]
+[2024-05-11 22:27:47] INFO root fetch - processPackages [soccer-poisson]: Remove: archive file [/home/abi/fetcher/tmp/soccer_poisson-0.1.9.tar.gz]
+[2024-05-11 22:27:47] INFO root fetch - main [MainThread]: End processing [soccer-poisson]: success
+[2024-05-11 22:27:51] INFO root fetch - processPackages [apprise]: Remove: archive file [/home/abi/fetcher/tmp/apprise-1.7.6.tar.gz]
+[2024-05-11 22:27:51] INFO root fetch - processPackages [apprise]: Remove: archive file [/home/abi/fetcher/tmp/apprise-1.8.0.tar.gz]
+[2024-05-11 22:27:51] INFO root fetch - main [MainThread]: End processing [apprise]: success
+[2024-05-11 22:27:51] INFO root fetch - main [MainThread]: Store serial: [23164310]
