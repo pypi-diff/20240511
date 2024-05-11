@@ -23967,3 +23967,36 @@
 [2024-05-11 23:15:58] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-11 23:15:58] INFO root fetch - main [MainThread]: End processing [AyiinXd]: success
 [2024-05-11 23:15:58] INFO root fetch - main [MainThread]: Store serial: [23164646]
+[2024-05-11 23:18:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164646]
+[2024-05-11 23:18:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 23:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sourcesage
+[2024-05-11 23:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unirradiatedz
+[2024-05-11 23:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: logninja
+[2024-05-11 23:18:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chrisbase
+[2024-05-11 23:18:08] INFO root fetch - processPackages [chrisbase]: New version: [0.5.2] Old Version: [0.5.1]
+[2024-05-11 23:18:08] INFO root fetch - processPackages [sourcesage]: New version: [4.2.0] Old Version: [4.1.6]
+[2024-05-11 23:18:08] INFO root fetch - processPackages [unirradiatedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:18:08] WARNING root fetch - processPackages [logninja]: Skipping, unable to determine old version
+[2024-05-11 23:18:08] INFO root fetch - main [MainThread]: End processing [logninja] error
+[2024-05-11 23:18:08] INFO root fetch - processPackages [chrisbase]: Downloading https://files.pythonhosted.org/packages/6e/60/df9768cb177e3ca6df6014b63c9441c97fbf3a0134af2a6866a9dcef6ed1/chrisbase-0.5.1.tar.gz
+[2024-05-11 23:18:08] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/d1/cb/873f9c7203643a503fbbc37d7e3abfeb9597fd0412f90c2faf8bd2d698c6/sourcesage-4.1.6.tar.gz
+[2024-05-11 23:18:08] INFO root fetch - processPackages [unirradiatedz]: Downloading https://files.pythonhosted.org/packages/58/98/a5083024d8c6af5abdceb704fed70c5987e7b185904528f2203156dc6903/unirradiatedz-1.1.tar.gz
+[2024-05-11 23:18:08] INFO root fetch - processPackages [chrisbase]: Downloading https://files.pythonhosted.org/packages/55/53/735f1401f8b241c0f8269fc769555df53c7ef49eca76a74e8ee1ed5ace6a/chrisbase-0.5.2.tar.gz
+[2024-05-11 23:18:08] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/30/58/02f31b30104f2e5f3473341944f09f65ce9876bf8785493187af45f4491d/sourcesage-4.2.0.tar.gz
+[2024-05-11 23:18:09] INFO root fetch - processPackages [chrisbase]: executing diffoscope
+[2024-05-11 23:18:09] INFO root fetch - processPackages [chrisbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chrisbase-0.5.1.tar.gz tmp/chrisbase-0.5.2.tar.gz --markdown 20240511/c/chrisbase/0.5.1-0.5.2/README.md --exclude *.pyd
+[2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: Downloading https://files.pythonhosted.org/packages/c7/d9/fc3dcce9cefb251bd754701259858faef7145f29ce54e2a1a6afe29049f6/unirradiatedz-2.1.tar.gz
+[2024-05-11 23:18:09] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-05-11 23:18:09] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.1.6.tar.gz tmp/sourcesage-4.2.0.tar.gz --markdown 20240511/s/sourcesage/4.1.6-4.2.0/README.md --exclude *.pyd
+[2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: executing diffoscope
+[2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unirradiatedz-1.1.tar.gz tmp/unirradiatedz-2.1.tar.gz --markdown 20240511/u/unirradiatedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:18:09] INFO root fetch - processPackages [chrisbase]: Remove: archive file [/home/abi/fetcher/tmp/chrisbase-0.5.1.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - processPackages [chrisbase]: Remove: archive file [/home/abi/fetcher/tmp/chrisbase-0.5.2.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - main [MainThread]: End processing [chrisbase]: success
+[2024-05-11 23:18:09] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.1.6.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.2.0.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: Remove: archive file [/home/abi/fetcher/tmp/unirradiatedz-1.1.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: Remove: archive file [/home/abi/fetcher/tmp/unirradiatedz-2.1.tar.gz]
+[2024-05-11 23:18:09] INFO root fetch - main [MainThread]: End processing [unirradiatedz]: success
+[2024-05-11 23:18:09] INFO root fetch - main [MainThread]: Store serial: [23164659]
