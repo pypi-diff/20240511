@@ -22749,3 +22749,39 @@
 [2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-1.9.tar.gz]
 [2024-05-11 21:50:56] INFO root fetch - main [MainThread]: End processing [telemetrix]: success
 [2024-05-11 21:50:56] INFO root fetch - main [MainThread]: Store serial: [23164103]
+[2024-05-11 21:53:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164103]
+[2024-05-11 21:53:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Books-Lib
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ryght-platform-sdk
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: badkeys
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: troughingz
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: paraselenez
+[2024-05-11 21:53:05] INFO root fetch - processPackages [ryght-platform-sdk]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 21:53:05] WARNING root fetch - processPackages [Books-Lib]: Skipping, unable to determine old version
+[2024-05-11 21:53:05] INFO root fetch - main [MainThread]: End processing [Books-Lib] error
+[2024-05-11 21:53:05] INFO root fetch - processPackages [troughingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:53:05] INFO root fetch - processPackages [badkeys]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 21:53:06] WARNING root fetch - processPackages [paraselenez]: Skipping, unable to determine old version
+[2024-05-11 21:53:06] INFO root fetch - main [MainThread]: End processing [paraselenez] error
+[2024-05-11 21:53:06] INFO root fetch - processPackages [ryght-platform-sdk]: Downloading https://files.pythonhosted.org/packages/2b/66/1affb9a6f153378b4a6d5945e02328fb080815a58791b686c26fa196eb3d/ryght_platform_sdk-0.3.8.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [troughingz]: Downloading https://files.pythonhosted.org/packages/5e/34/bea424b3bd17bbd90771c633f0a6b72ecea6ca7f9705a5716e58c61cdd93/troughingz-1.1.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [badkeys]: Downloading https://files.pythonhosted.org/packages/ef/be/ebdc7b274a4bacaab1d0f01da8237b5dac6e98f04063b7802a6cf88a75ea/badkeys-0.0.8.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [troughingz]: Downloading https://files.pythonhosted.org/packages/14/4d/71bc4f9c95367baff40403a5f29c8dad840c8cd1014eaf40dcf6f101f493/troughingz-2.1.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [ryght-platform-sdk]: Downloading https://files.pythonhosted.org/packages/34/43/6feec924f7903a6cac196b8652681a41b540008288a7647e8420b4554257/ryght_platform_sdk-0.3.9.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [badkeys]: Downloading https://files.pythonhosted.org/packages/88/1e/8f47852ae7030e034f5d2b1710e2e45c5fe1ae2233f2e2ae62acc93ffcc0/badkeys-0.0.9.tar.gz
+[2024-05-11 21:53:06] INFO root fetch - processPackages [ryght-platform-sdk]: executing diffoscope
+[2024-05-11 21:53:06] INFO root fetch - processPackages [ryght-platform-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ryght_platform_sdk-0.3.8.tar.gz tmp/ryght_platform_sdk-0.3.9.tar.gz --markdown 20240511/r/ryght-platform-sdk/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 21:53:06] INFO root fetch - processPackages [troughingz]: executing diffoscope
+[2024-05-11 21:53:06] INFO root fetch - processPackages [troughingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/troughingz-1.1.tar.gz tmp/troughingz-2.1.tar.gz --markdown 20240511/t/troughingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:53:06] INFO root fetch - processPackages [badkeys]: executing diffoscope
+[2024-05-11 21:53:06] INFO root fetch - processPackages [badkeys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/badkeys-0.0.8.tar.gz tmp/badkeys-0.0.9.tar.gz --markdown 20240511/b/badkeys/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 21:53:07] INFO root fetch - processPackages [troughingz]: Remove: archive file [/home/abi/fetcher/tmp/troughingz-1.1.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - processPackages [troughingz]: Remove: archive file [/home/abi/fetcher/tmp/troughingz-2.1.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - main [MainThread]: End processing [troughingz]: success
+[2024-05-11 21:53:07] INFO root fetch - processPackages [ryght-platform-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ryght_platform_sdk-0.3.8.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - processPackages [ryght-platform-sdk]: Remove: archive file [/home/abi/fetcher/tmp/ryght_platform_sdk-0.3.9.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - main [MainThread]: End processing [ryght-platform-sdk]: success
+[2024-05-11 21:53:07] INFO root fetch - processPackages [badkeys]: Remove: archive file [/home/abi/fetcher/tmp/badkeys-0.0.8.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - processPackages [badkeys]: Remove: archive file [/home/abi/fetcher/tmp/badkeys-0.0.9.tar.gz]
+[2024-05-11 21:53:07] INFO root fetch - main [MainThread]: End processing [badkeys]: success
+[2024-05-11 21:53:07] INFO root fetch - main [MainThread]: Store serial: [23164115]
