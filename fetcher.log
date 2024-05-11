@@ -15160,3 +15160,18 @@
 [2024-05-11 13:10:05] INFO root fetch - processPackages [aa-drifters]: Remove: archive file [/home/abi/fetcher/tmp/aa_drifters-0.4.3a0.tar.gz]
 [2024-05-11 13:10:05] INFO root fetch - main [MainThread]: End processing [aa-drifters]: success
 [2024-05-11 13:10:05] INFO root fetch - main [MainThread]: Store serial: [23160398]
+[2024-05-11 13:12:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160398]
+[2024-05-11 13:12:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cryptostegiaz
+[2024-05-11 13:12:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyanno4rt
+[2024-05-11 13:12:13] WARNING root fetch - processPackages [cryptostegiaz]: Skipping, unable to determine old version
+[2024-05-11 13:12:13] INFO root fetch - main [MainThread]: End processing [cryptostegiaz] error
+[2024-05-11 13:12:13] INFO root fetch - processPackages [pyanno4rt]: New version: [0.13.0] Old Version: [0.12.0]
+[2024-05-11 13:12:14] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/21/43/6696dc9bf0fe1e06ae0dd99f80ff77a92bc4ad50df1525b13f58c5251b8b/pyanno4rt-0.12.0.tar.gz
+[2024-05-11 13:12:14] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/4e/96/cfaad2bb64ec19965130f5ef81a2d929d2319a392cbf5b9856a9023da573/pyanno4rt-0.13.0.tar.gz
+[2024-05-11 13:12:14] INFO root fetch - processPackages [pyanno4rt]: executing diffoscope
+[2024-05-11 13:12:14] INFO root fetch - processPackages [pyanno4rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanno4rt-0.12.0.tar.gz tmp/pyanno4rt-0.13.0.tar.gz --markdown 20240511/p/pyanno4rt/0.12.0-0.13.0/README.md --exclude *.pyd
+[2024-05-11 13:12:18] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.12.0.tar.gz]
+[2024-05-11 13:12:18] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.13.0.tar.gz]
+[2024-05-11 13:12:18] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
+[2024-05-11 13:12:18] INFO root fetch - main [MainThread]: Store serial: [23160405]
