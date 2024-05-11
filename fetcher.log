@@ -14952,3 +14952,60 @@
 [2024-05-11 12:56:57] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.9.tar.gz]
 [2024-05-11 12:56:57] INFO root fetch - main [MainThread]: End processing [soco-cli]: success
 [2024-05-11 12:56:57] INFO root fetch - main [MainThread]: Store serial: [23160323]
+[2024-05-11 12:59:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160323]
+[2024-05-11 12:59:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logrich
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: roboticstoolbox-python
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xss-shield
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torch-model-manager
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: preinstallationz
+[2024-05-11 12:59:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: glang
+[2024-05-11 12:59:06] INFO root fetch - processPackages [logrich]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-11 12:59:06] INFO root fetch - processPackages [logrich]: Downloading https://files.pythonhosted.org/packages/22/c2/7091c28e975445cf81479f594dcd339aa5a9419b5c7476bd04222758b32d/logrich-1.0.5.tar.gz
+[2024-05-11 12:59:06] INFO root fetch - processPackages [xss-shield]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 12:59:06] INFO root fetch - processPackages [glang]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 12:59:06] INFO root fetch - processPackages [torch-model-manager]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-05-11 12:59:06] INFO root fetch - processPackages [preinstallationz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:59:06] INFO root fetch - processPackages [roboticstoolbox-python]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-11 12:59:07] INFO root fetch - processPackages [xss-shield]: Downloading https://files.pythonhosted.org/packages/95/54/f6af18fed8e244e71d85fcf5e449717ee9a4783f0213b5bab8b28307f0ba/xss_shield-0.1.1.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [roboticstoolbox-python]: Downloading https://files.pythonhosted.org/packages/04/99/c460df149faac36e0a4f4a47111ac23ae25154d0e29065747ea972e78920/roboticstoolbox-python-1.1.0.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [preinstallationz]: Downloading https://files.pythonhosted.org/packages/d8/aa/9838c1f0ac3de1bc4b1b7f678a21f70b047a938947eb63252e52707ac98f/preinstallationz-1.1.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/52/2a/f1ee6f524ac08e001c5e946829cb5139504c9d61ce54fda6f9a90564747c/torch_model_manager-0.2.0.dev8.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [glang]: Downloading https://files.pythonhosted.org/packages/96/b7/bcb5918cbb34a2572de2deec50950ec6eb2c9df1deebcb2957f3c25df826/glang-0.4.0.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [logrich]: Downloading https://files.pythonhosted.org/packages/8b/2e/e5995f7d1e2b09ab9d8224b398c011ac97df83e299f0f4ba1b2b0a3e1d71/logrich-1.0.6.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [logrich]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [logrich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logrich-1.0.5.tar.gz tmp/logrich-1.0.6.tar.gz --markdown 20240511/l/logrich/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-11 12:59:07] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/74/72/d37fb1c20b9919d276f0f36cc47753d4cd5f9a15720240bbdb098639efdc/torch_model_manager-0.2.0.dev9.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [xss-shield]: Downloading https://files.pythonhosted.org/packages/de/16/97c936519bf1304b2384b9fc48787ff849dda267b2addc39394a35464252/xss_shield-0.1.2.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [preinstallationz]: Downloading https://files.pythonhosted.org/packages/a5/ca/23b796874e9b299e0d36f1f71cfed07959aaab31921604ef25b5eea7c7fd/preinstallationz-2.1.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [glang]: Downloading https://files.pythonhosted.org/packages/91/95/a5a5b800e6c0bdee1eceaaba64e6e0209bf04209e2f250c46e6f8a454c99/glang-0.4.1.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [roboticstoolbox-python]: Downloading https://files.pythonhosted.org/packages/06/ba/c7534df8fb3f04c48862f24f1b4118c0d1e793fdf78e90fe514cbf404e01/roboticstoolbox_python-1.1.1.tar.gz
+[2024-05-11 12:59:07] INFO root fetch - processPackages [preinstallationz]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [preinstallationz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preinstallationz-1.1.tar.gz tmp/preinstallationz-2.1.tar.gz --markdown 20240511/p/preinstallationz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:59:07] INFO root fetch - processPackages [xss-shield]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [xss-shield]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xss_shield-0.1.1.tar.gz tmp/xss_shield-0.1.2.tar.gz --markdown 20240511/x/xss-shield/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 12:59:07] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.2.0.dev8.tar.gz tmp/torch_model_manager-0.2.0.dev9.tar.gz --markdown 20240511/t/torch-model-manager/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-05-11 12:59:07] INFO root fetch - processPackages [glang]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [glang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glang-0.4.0.tar.gz tmp/glang-0.4.1.tar.gz --markdown 20240511/g/glang/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 12:59:07] INFO root fetch - processPackages [roboticstoolbox-python]: executing diffoscope
+[2024-05-11 12:59:07] INFO root fetch - processPackages [roboticstoolbox-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roboticstoolbox-python-1.1.0.tar.gz tmp/roboticstoolbox_python-1.1.1.tar.gz --markdown 20240511/r/roboticstoolbox-python/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-11 12:59:08] INFO root fetch - processPackages [logrich]: Remove: archive file [/home/abi/fetcher/tmp/logrich-1.0.5.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - processPackages [logrich]: Remove: archive file [/home/abi/fetcher/tmp/logrich-1.0.6.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - main [MainThread]: End processing [logrich]: success
+[2024-05-11 12:59:08] INFO root fetch - processPackages [xss-shield]: Remove: archive file [/home/abi/fetcher/tmp/xss_shield-0.1.1.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - processPackages [xss-shield]: Remove: archive file [/home/abi/fetcher/tmp/xss_shield-0.1.2.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - main [MainThread]: End processing [xss-shield]: success
+[2024-05-11 12:59:08] INFO root fetch - processPackages [preinstallationz]: Remove: archive file [/home/abi/fetcher/tmp/preinstallationz-1.1.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - processPackages [preinstallationz]: Remove: archive file [/home/abi/fetcher/tmp/preinstallationz-2.1.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - main [MainThread]: End processing [preinstallationz]: success
+[2024-05-11 12:59:08] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev8.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev9.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-11 12:59:08] INFO root fetch - processPackages [glang]: Remove: archive file [/home/abi/fetcher/tmp/glang-0.4.0.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - processPackages [glang]: Remove: archive file [/home/abi/fetcher/tmp/glang-0.4.1.tar.gz]
+[2024-05-11 12:59:08] INFO root fetch - main [MainThread]: End processing [glang]: success
+[2024-05-11 12:59:10] INFO root fetch - processPackages [roboticstoolbox-python]: Remove: archive file [/home/abi/fetcher/tmp/roboticstoolbox-python-1.1.0.tar.gz]
+[2024-05-11 12:59:10] INFO root fetch - processPackages [roboticstoolbox-python]: Remove: archive file [/home/abi/fetcher/tmp/roboticstoolbox_python-1.1.1.tar.gz]
+[2024-05-11 12:59:10] INFO root fetch - main [MainThread]: End processing [roboticstoolbox-python]: success
+[2024-05-11 12:59:10] INFO root fetch - main [MainThread]: Store serial: [23160340]
