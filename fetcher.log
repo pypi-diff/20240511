@@ -15062,3 +15062,24 @@
 [2024-05-11 13:03:33] INFO root fetch - processPackages [hscloud]: Remove: archive file [/home/abi/fetcher/tmp/hscloud-0.0.0.3.tar.gz]
 [2024-05-11 13:03:33] INFO root fetch - main [MainThread]: End processing [hscloud]: success
 [2024-05-11 13:03:33] INFO root fetch - main [MainThread]: Store serial: [23160367]
+[2024-05-11 13:05:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160367]
+[2024-05-11 13:05:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: preoccupierz
+[2024-05-11 13:05:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pddl-embeddings
+[2024-05-11 13:05:42] INFO root fetch - processPackages [preoccupierz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:05:42] INFO root fetch - processPackages [pddl-embeddings]: New version: [0.0.2] Old Version: [0.0.1.dev1]
+[2024-05-11 13:05:42] INFO root fetch - processPackages [preoccupierz]: Downloading https://files.pythonhosted.org/packages/dd/6e/27962e2a42f189a5ed7dd355648e6011544be375f1ecacdafe44f5d3b07a/preoccupierz-1.1.tar.gz
+[2024-05-11 13:05:42] INFO root fetch - processPackages [pddl-embeddings]: Downloading https://files.pythonhosted.org/packages/2a/04/da51f3c2554d0f87f37b7978833439ce290c9892888b106a7cf14453b527/pddl_embeddings-0.0.1.dev1.tar.gz
+[2024-05-11 13:05:42] INFO root fetch - processPackages [preoccupierz]: Downloading https://files.pythonhosted.org/packages/7d/d8/fb98caa3332ad0d815f64d54b16c7f9226cb9080bd1dd926e40a2294017c/preoccupierz-2.1.tar.gz
+[2024-05-11 13:05:42] INFO root fetch - processPackages [pddl-embeddings]: Downloading https://files.pythonhosted.org/packages/97/a6/959d8a6ebdc2e61efd2c6bbc961574fd581b72d2a32c09150969e00bf78a/pddl_embeddings-0.0.2.tar.gz
+[2024-05-11 13:05:42] INFO root fetch - processPackages [preoccupierz]: executing diffoscope
+[2024-05-11 13:05:42] INFO root fetch - processPackages [preoccupierz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preoccupierz-1.1.tar.gz tmp/preoccupierz-2.1.tar.gz --markdown 20240511/p/preoccupierz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:05:42] INFO root fetch - processPackages [pddl-embeddings]: executing diffoscope
+[2024-05-11 13:05:42] INFO root fetch - processPackages [pddl-embeddings]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pddl_embeddings-0.0.1.dev1.tar.gz tmp/pddl_embeddings-0.0.2.tar.gz --markdown 20240511/p/pddl-embeddings/0.0.1.dev1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 13:05:43] INFO root fetch - processPackages [preoccupierz]: Remove: archive file [/home/abi/fetcher/tmp/preoccupierz-1.1.tar.gz]
+[2024-05-11 13:05:43] INFO root fetch - processPackages [preoccupierz]: Remove: archive file [/home/abi/fetcher/tmp/preoccupierz-2.1.tar.gz]
+[2024-05-11 13:05:43] INFO root fetch - main [MainThread]: End processing [preoccupierz]: success
+[2024-05-11 13:05:43] INFO root fetch - processPackages [pddl-embeddings]: Remove: archive file [/home/abi/fetcher/tmp/pddl_embeddings-0.0.1.dev1.tar.gz]
+[2024-05-11 13:05:43] INFO root fetch - processPackages [pddl-embeddings]: Remove: archive file [/home/abi/fetcher/tmp/pddl_embeddings-0.0.2.tar.gz]
+[2024-05-11 13:05:43] INFO root fetch - main [MainThread]: End processing [pddl-embeddings]: success
+[2024-05-11 13:05:43] INFO root fetch - main [MainThread]: Store serial: [23160372]
