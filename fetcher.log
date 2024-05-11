@@ -8672,3 +8672,18 @@
 [2024-05-11 05:11:02] INFO root fetch - processPackages [rumydata]: Remove: archive file [/home/abi/fetcher/tmp/rumydata-1.5.0.tar.gz]
 [2024-05-11 05:11:02] INFO root fetch - main [MainThread]: End processing [rumydata]: success
 [2024-05-11 05:11:02] INFO root fetch - main [MainThread]: Store serial: [23156880]
+[2024-05-11 05:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156880]
+[2024-05-11 05:13:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 05:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Pynapse
+[2024-05-11 05:13:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lwoz
+[2024-05-11 05:13:11] INFO root fetch - processPackages [lwoz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:13:11] WARNING root fetch - processPackages [Pynapse]: Skipping, unable to determine old version
+[2024-05-11 05:13:11] INFO root fetch - main [MainThread]: End processing [Pynapse] error
+[2024-05-11 05:13:11] INFO root fetch - processPackages [lwoz]: Downloading https://files.pythonhosted.org/packages/dd/6b/3c67f8fd8361386c587f61ffdb43d13b9e036b5f1458cd0318dacb4456e6/lwoz-1.1.tar.gz
+[2024-05-11 05:13:11] INFO root fetch - processPackages [lwoz]: Downloading https://files.pythonhosted.org/packages/b1/c3/d86f09291638459c8251cc4228aea876e07ba4fa3077e1dea89ff4fa3106/lwoz-2.1.tar.gz
+[2024-05-11 05:13:11] INFO root fetch - processPackages [lwoz]: executing diffoscope
+[2024-05-11 05:13:11] INFO root fetch - processPackages [lwoz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lwoz-1.1.tar.gz tmp/lwoz-2.1.tar.gz --markdown 20240511/l/lwoz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:13:12] INFO root fetch - processPackages [lwoz]: Remove: archive file [/home/abi/fetcher/tmp/lwoz-1.1.tar.gz]
+[2024-05-11 05:13:12] INFO root fetch - processPackages [lwoz]: Remove: archive file [/home/abi/fetcher/tmp/lwoz-2.1.tar.gz]
+[2024-05-11 05:13:12] INFO root fetch - main [MainThread]: End processing [lwoz]: success
+[2024-05-11 05:13:12] INFO root fetch - main [MainThread]: Store serial: [23156888]
