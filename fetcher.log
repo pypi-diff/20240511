@@ -19173,3 +19173,51 @@
 [2024-05-11 17:48:43] INFO root fetch - processPackages [pyfury]: Remove: archive file [/home/abi/fetcher/tmp/pyfury-0.6.0.dev0-cp39-cp39-manylinux1_x86_64.whl.zip]
 [2024-05-11 17:48:43] INFO root fetch - main [MainThread]: End processing [pyfury]: success
 [2024-05-11 17:48:43] INFO root fetch - main [MainThread]: Store serial: [23162405]
+[2024-05-11 17:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162405]
+[2024-05-11 17:50:57] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 17:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: model-checker
+[2024-05-11 17:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lineoptim
+[2024-05-11 17:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: crud-repository
+[2024-05-11 17:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spiremz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tm_parser
+[2024-05-11 17:50:57] INFO root fetch - processPackages [model-checker]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 17:50:57] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 17:50:57] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/af/30/4ed3932e6601fb2157b1867c447d2527ce33319207b9569a92999c51897d/model_checker-0.2.8.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [crud-repository]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-11 17:50:57] INFO root fetch - processPackages [lineoptim]: New version: [1.2.0] Old Version: [1.1.1]
+[2024-05-11 17:50:57] INFO root fetch - processPackages [spiremz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:50:57] INFO root fetch - processPackages [lineoptim]: Downloading https://files.pythonhosted.org/packages/24/e6/033d7e67d16e25338608cf4af98dbf50775935d908e638e2d0357dfdd908/lineoptim-1.1.1.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [crud-repository]: Downloading https://files.pythonhosted.org/packages/15/3c/c1472137701d9a83851c3de02da9397ed048f7200a91ea1e565512ec0047/crud_repository-0.2.2.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [spiremz]: Downloading https://files.pythonhosted.org/packages/3a/6f/2ff01fb4d92ff9686140c30da6c4815e37433f2342e230e3b87fe4ed8be8/spiremz-1.1.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 17:50:57] INFO root fetch - processPackages [model-checker]: Downloading https://files.pythonhosted.org/packages/b0/5d/2fd0841d97c92fe2c2e0aad9e80136575bc38e7eef167fe4380eda54a596/model_checker-0.2.9.tar.gz
+[2024-05-11 17:50:58] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 17:50:58] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 17:50:58] INFO root fetch - processPackages [model-checker]: executing diffoscope
+[2024-05-11 17:50:58] INFO root fetch - processPackages [model-checker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/model_checker-0.2.8.tar.gz tmp/model_checker-0.2.9.tar.gz --markdown 20240511/m/model-checker/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: Downloading https://files.pythonhosted.org/packages/27/a5/5af768b2f8970f69f640bce22fb9feba1992b87d00fcf94cc9e2b4945384/crud_repository-0.2.3.tar.gz
+[2024-05-11 17:50:58] INFO root fetch - processPackages [spiremz]: Downloading https://files.pythonhosted.org/packages/95/2d/4b015de69a0213c3e61105af8c07241b0edaced7f5314e244af7b8b3c6a7/spiremz-2.1.tar.gz
+[2024-05-11 17:50:58] INFO root fetch - processPackages [lineoptim]: Downloading https://files.pythonhosted.org/packages/d4/46/3b69fc8fb458139384954f5639598f71f800c1201097f64192fb020955a3/lineoptim-1.2.0.tar.gz
+[2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: executing diffoscope
+[2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crud_repository-0.2.2.tar.gz tmp/crud_repository-0.2.3.tar.gz --markdown 20240511/c/crud-repository/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-11 17:50:58] INFO root fetch - processPackages [spiremz]: executing diffoscope
+[2024-05-11 17:50:58] INFO root fetch - processPackages [spiremz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spiremz-1.1.tar.gz tmp/spiremz-2.1.tar.gz --markdown 20240511/s/spiremz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:50:58] INFO root fetch - processPackages [lineoptim]: executing diffoscope
+[2024-05-11 17:50:58] INFO root fetch - processPackages [lineoptim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineoptim-1.1.1.tar.gz tmp/lineoptim-1.2.0.tar.gz --markdown 20240511/l/lineoptim/1.1.1-1.2.0/README.md --exclude *.pyd
+[2024-05-11 17:50:58] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 17:50:58] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.8.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - processPackages [model-checker]: Remove: archive file [/home/abi/fetcher/tmp/model_checker-0.2.9.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [model-checker]: success
+[2024-05-11 17:50:58] INFO root fetch - processPackages [spiremz]: Remove: archive file [/home/abi/fetcher/tmp/spiremz-1.1.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - processPackages [spiremz]: Remove: archive file [/home/abi/fetcher/tmp/spiremz-2.1.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [spiremz]: success
+[2024-05-11 17:50:58] INFO root fetch - processPackages [lineoptim]: Remove: archive file [/home/abi/fetcher/tmp/lineoptim-1.1.1.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - processPackages [lineoptim]: Remove: archive file [/home/abi/fetcher/tmp/lineoptim-1.2.0.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [lineoptim]: success
+[2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: Remove: archive file [/home/abi/fetcher/tmp/crud_repository-0.2.2.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: Remove: archive file [/home/abi/fetcher/tmp/crud_repository-0.2.3.tar.gz]
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [crud-repository]: success
+[2024-05-11 17:50:58] INFO root fetch - main [MainThread]: Store serial: [23162421]
