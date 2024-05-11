@@ -10207,3 +10207,18 @@
 [2024-05-11 07:06:43] INFO root fetch - processPackages [pytest-homeassistant-custom-component]: Remove: archive file [/home/abi/fetcher/tmp/pytest-homeassistant-custom-component-0.9.9.tar.gz]
 [2024-05-11 07:06:43] INFO root fetch - main [MainThread]: End processing [pytest-homeassistant-custom-component]: success
 [2024-05-11 07:06:43] INFO root fetch - main [MainThread]: Store serial: [23157505]
+[2024-05-11 07:08:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157505]
+[2024-05-11 07:08:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: muckz
+[2024-05-11 07:08:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: estabz
+[2024-05-11 07:08:52] WARNING root fetch - processPackages [estabz]: Skipping, unable to determine old version
+[2024-05-11 07:08:52] INFO root fetch - main [MainThread]: End processing [estabz] error
+[2024-05-11 07:08:52] INFO root fetch - processPackages [muckz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:08:52] INFO root fetch - processPackages [muckz]: Downloading https://files.pythonhosted.org/packages/30/5e/cad91eee15c3400f213512e31f9be507ade4c218925603f43c0bac0fede8/muckz-1.1.tar.gz
+[2024-05-11 07:08:52] INFO root fetch - processPackages [muckz]: Downloading https://files.pythonhosted.org/packages/2f/37/fb2ef6a82e895a16e9132c350fa6875af0193f5595a3106be4411a18e1eb/muckz-2.1.tar.gz
+[2024-05-11 07:08:52] INFO root fetch - processPackages [muckz]: executing diffoscope
+[2024-05-11 07:08:52] INFO root fetch - processPackages [muckz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muckz-1.1.tar.gz tmp/muckz-2.1.tar.gz --markdown 20240511/m/muckz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:08:53] INFO root fetch - processPackages [muckz]: Remove: archive file [/home/abi/fetcher/tmp/muckz-1.1.tar.gz]
+[2024-05-11 07:08:53] INFO root fetch - processPackages [muckz]: Remove: archive file [/home/abi/fetcher/tmp/muckz-2.1.tar.gz]
+[2024-05-11 07:08:53] INFO root fetch - main [MainThread]: End processing [muckz]: success
+[2024-05-11 07:08:53] INFO root fetch - main [MainThread]: Store serial: [23157515]
