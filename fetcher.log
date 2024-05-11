@@ -19275,3 +19275,48 @@
 [2024-05-11 17:53:10] INFO root fetch - processPackages [eth-ape]: Remove: archive file [/home/abi/fetcher/tmp/eth-ape-0.7.9.tar.gz]
 [2024-05-11 17:53:10] INFO root fetch - main [MainThread]: End processing [eth-ape]: success
 [2024-05-11 17:53:10] INFO root fetch - main [MainThread]: Store serial: [23162440]
+[2024-05-11 17:55:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162440]
+[2024-05-11 17:55:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: habits.txt
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mcbootflash
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: muko
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: splanchnosomaticz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: remla24-team8-lib-ml
+[2024-05-11 17:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 17:55:20] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 17:55:20] INFO root fetch - processPackages [muko]: New version: [2.45] Old Version: [2.44]
+[2024-05-11 17:55:20] WARNING root fetch - processPackages [remla24-team8-lib-ml]: Skipping, unable to determine old version
+[2024-05-11 17:55:20] INFO root fetch - main [MainThread]: End processing [remla24-team8-lib-ml] error
+[2024-05-11 17:55:20] WARNING root fetch - processPackages [habits.txt]: Skipping, unable to determine old version
+[2024-05-11 17:55:20] INFO root fetch - main [MainThread]: End processing [habits.txt] error
+[2024-05-11 17:55:20] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/81/f5/26a55a7441f8b3617a88b9019534711d4acb8e4a3af9e37195f423bc50f5/nonebot_plugin_ranfurrypic-1.1.1.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/47/38/9db1a0186c337f30ec1a0a1534c37c531f29b47ff0be07cc68c1b6f6f879/muko-2.44-py3-none-any.whl
+[2024-05-11 17:55:20] INFO root fetch - processPackages [mcbootflash]: New version: [8.0.2] Old Version: [8.0.1]
+[2024-05-11 17:55:20] INFO root fetch - processPackages [splanchnosomaticz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:55:20] INFO root fetch - processPackages [mcbootflash]: Downloading https://files.pythonhosted.org/packages/84/be/f4c44936efcfe4411b4148ad872b4db649c8229f888d40428378b7e4fa18/mcbootflash-8.0.1.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [splanchnosomaticz]: Downloading https://files.pythonhosted.org/packages/e1/cd/3e3c7a019fae7278461b481e32fd4b85723a7ca53c60d7c214c123a746f6/splanchnosomaticz-1.1.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/ad/41/ccb540261fd7212f7b246724441c10c7aaf560c74fff596ade3747619119/nonebot_plugin_ranfurrypic-1.1.2.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/86/3b/b971d5f9e8c7ad8347ee7c39f6969dd2c9ac5f23c4ce15536fcf4e314e91/muko-2.45-py3-none-any.whl
+[2024-05-11 17:55:20] INFO root fetch - processPackages [splanchnosomaticz]: Downloading https://files.pythonhosted.org/packages/b2/ea/9612b213634a8467aa83cb03424854e50a15790beaf834bcc9221b298334/splanchnosomaticz-2.1.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 17:55:20] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.1.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.2.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 17:55:20] INFO root fetch - processPackages [mcbootflash]: Downloading https://files.pythonhosted.org/packages/ff/58/ed25e717b27904552201d85aabc6793cf350920b65d38634a7f10b7c1c3b/mcbootflash-8.0.2.tar.gz
+[2024-05-11 17:55:20] INFO root fetch - processPackages [splanchnosomaticz]: executing diffoscope
+[2024-05-11 17:55:20] INFO root fetch - processPackages [splanchnosomaticz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splanchnosomaticz-1.1.tar.gz tmp/splanchnosomaticz-2.1.tar.gz --markdown 20240511/s/splanchnosomaticz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:55:21] INFO root fetch - processPackages [mcbootflash]: executing diffoscope
+[2024-05-11 17:55:21] INFO root fetch - processPackages [mcbootflash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcbootflash-8.0.1.tar.gz tmp/mcbootflash-8.0.2.tar.gz --markdown 20240511/m/mcbootflash/8.0.1-8.0.2/README.md --exclude *.pyd
+[2024-05-11 17:55:21] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-11 17:55:21] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.44-py3-none-any.whl.zip tmp/muko-2.45-py3-none-any.whl.zip --markdown 20240511/m/muko/2.44-2.45/README.md --exclude *.pyd
+[2024-05-11 17:55:21] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.1.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.2.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 17:55:21] INFO root fetch - processPackages [splanchnosomaticz]: Remove: archive file [/home/abi/fetcher/tmp/splanchnosomaticz-1.1.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - processPackages [splanchnosomaticz]: Remove: archive file [/home/abi/fetcher/tmp/splanchnosomaticz-2.1.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - main [MainThread]: End processing [splanchnosomaticz]: success
+[2024-05-11 17:55:21] INFO root fetch - processPackages [mcbootflash]: Remove: archive file [/home/abi/fetcher/tmp/mcbootflash-8.0.1.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - processPackages [mcbootflash]: Remove: archive file [/home/abi/fetcher/tmp/mcbootflash-8.0.2.tar.gz]
+[2024-05-11 17:55:21] INFO root fetch - main [MainThread]: End processing [mcbootflash]: success
+[2024-05-11 17:55:25] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.44-py3-none-any.whl.zip]
+[2024-05-11 17:55:25] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.45-py3-none-any.whl.zip]
+[2024-05-11 17:55:25] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-11 17:55:25] INFO root fetch - main [MainThread]: Store serial: [23162456]
