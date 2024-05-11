@@ -8195,3 +8195,45 @@
 [2024-05-11 04:38:23] INFO root fetch - processPackages [EasyPage]: Remove: archive file [/home/abi/fetcher/tmp/EasyPage-0.0.5.tar.gz]
 [2024-05-11 04:38:23] INFO root fetch - main [MainThread]: End processing [EasyPage]: success
 [2024-05-11 04:38:23] INFO root fetch - main [MainThread]: Store serial: [23156691]
+[2024-05-11 04:40:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156691]
+[2024-05-11 04:40:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 04:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jf-ingest
+[2024-05-11 04:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dflow-galaxy
+[2024-05-11 04:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sulcatorimosez
+[2024-05-11 04:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: GazooResearchUtils
+[2024-05-11 04:40:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cloudpss
+[2024-05-11 04:40:31] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.4.1] Old Version: [1.3.6]
+[2024-05-11 04:40:31] INFO root fetch - processPackages [jf-ingest]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 04:40:32] INFO root fetch - processPackages [dflow-galaxy]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-11 04:40:32] WARNING root fetch - processPackages [sulcatorimosez]: Skipping, unable to determine old version
+[2024-05-11 04:40:32] INFO root fetch - main [MainThread]: End processing [sulcatorimosez] error
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/a2/05/1687797910cb88289735486960081c7482d12ff8badb7048bfb20e8830a3/GazooResearchUtils-1.3.6.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [jf-ingest]: Downloading https://files.pythonhosted.org/packages/ab/69/cdacc4d37658c3a874a18a4271b009abfd71573c47463e7ec97bb55d627a/jf-ingest-0.0.8.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [cloudpss]: New version: [4.1.1b9] Old Version: [4.1.1b8]
+[2024-05-11 04:40:32] INFO root fetch - processPackages [jf-ingest]: Downloading https://files.pythonhosted.org/packages/56/ad/eef9cdd010a54f9b398ad1967a06a7e480aa5f7faafef61a3a1bea2f40fe/jf-ingest-0.0.9.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [dflow-galaxy]: Downloading https://files.pythonhosted.org/packages/a9/79/992bfc9a5ccb51e555e522623600c495523e0a5f54ab0beb51f454b8c6f2/dflow_galaxy-0.1.7.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/65/0d/e9ba31f289288d38ec199f38c22f1178ac0366abcaa1e81a28f168399008/cloudpss-4.1.1b8.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/81/00/93be6884af8959643b8fc1401275ceedd9af9e688dd7fcf5e63ac3edfac6/GazooResearchUtils-1.4.1.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [jf-ingest]: executing diffoscope
+[2024-05-11 04:40:32] INFO root fetch - processPackages [jf-ingest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jf-ingest-0.0.8.tar.gz tmp/jf-ingest-0.0.9.tar.gz --markdown 20240511/j/jf-ingest/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.3.6.tar.gz tmp/GazooResearchUtils-1.4.1.tar.gz --markdown 20240511/G/GazooResearchUtils/1.3.6-1.4.1/README.md --exclude *.pyd
+[2024-05-11 04:40:32] INFO root fetch - processPackages [cloudpss]: Downloading https://files.pythonhosted.org/packages/5b/24/24989e49cb8cf21d5d2c8b071d835f6a78aca17eceeb1885baa86476f8d4/cloudpss-4.1.1b9.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [dflow-galaxy]: Downloading https://files.pythonhosted.org/packages/e6/ad/e42a1c39833f862a795e57b0ec2d408504b3a4067bb381be35425a7cfa1e/dflow_galaxy-0.1.8.tar.gz
+[2024-05-11 04:40:32] INFO root fetch - processPackages [cloudpss]: executing diffoscope
+[2024-05-11 04:40:32] INFO root fetch - processPackages [cloudpss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpss-4.1.1b8.tar.gz tmp/cloudpss-4.1.1b9.tar.gz --markdown 20240511/c/cloudpss/4.1.1b8-4.1.1b9/README.md --exclude *.pyd
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.3.6.tar.gz]
+[2024-05-11 04:40:32] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.1.tar.gz]
+[2024-05-11 04:40:32] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 04:40:32] INFO root fetch - processPackages [dflow-galaxy]: executing diffoscope
+[2024-05-11 04:40:32] INFO root fetch - processPackages [dflow-galaxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dflow_galaxy-0.1.7.tar.gz tmp/dflow_galaxy-0.1.8.tar.gz --markdown 20240511/d/dflow-galaxy/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-11 04:40:33] INFO root fetch - processPackages [jf-ingest]: Remove: archive file [/home/abi/fetcher/tmp/jf-ingest-0.0.8.tar.gz]
+[2024-05-11 04:40:33] INFO root fetch - processPackages [jf-ingest]: Remove: archive file [/home/abi/fetcher/tmp/jf-ingest-0.0.9.tar.gz]
+[2024-05-11 04:40:33] INFO root fetch - main [MainThread]: End processing [jf-ingest]: success
+[2024-05-11 04:40:33] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b8.tar.gz]
+[2024-05-11 04:40:33] INFO root fetch - processPackages [cloudpss]: Remove: archive file [/home/abi/fetcher/tmp/cloudpss-4.1.1b9.tar.gz]
+[2024-05-11 04:40:33] INFO root fetch - main [MainThread]: End processing [cloudpss]: success
+[2024-05-11 04:40:34] INFO root fetch - processPackages [dflow-galaxy]: Remove: archive file [/home/abi/fetcher/tmp/dflow_galaxy-0.1.7.tar.gz]
+[2024-05-11 04:40:34] INFO root fetch - processPackages [dflow-galaxy]: Remove: archive file [/home/abi/fetcher/tmp/dflow_galaxy-0.1.8.tar.gz]
+[2024-05-11 04:40:34] INFO root fetch - main [MainThread]: End processing [dflow-galaxy]: success
+[2024-05-11 04:40:34] INFO root fetch - main [MainThread]: Store serial: [23156706]
