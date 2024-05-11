@@ -20559,3 +20559,47 @@
 [2024-05-11 19:20:18] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.8.tar.gz]
 [2024-05-11 19:20:18] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
 [2024-05-11 19:20:18] INFO root fetch - main [MainThread]: Store serial: [23163016]
+[2024-05-11 19:22:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163016]
+[2024-05-11 19:22:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 19:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: CustomTkinterMessagebox
+[2024-05-11 19:22:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpr
+[2024-05-11 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: suckerfishesz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: name-that-fucking-film
+[2024-05-11 19:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-tpu
+[2024-05-11 19:22:27] INFO root fetch - processPackages [name-that-fucking-film]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-11 19:22:27] INFO root fetch - processPackages [CustomTkinterMessagebox]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 19:22:27] INFO root fetch - processPackages [mlpr]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-11 19:22:27] INFO root fetch - processPackages [suckerfishesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:22:27] INFO root fetch - processPackages [tf-nightly-tpu]: New version: [2.17.0.dev20240511] Old Version: [2.17.0.dev20240510]
+[2024-05-11 19:22:27] INFO root fetch - processPackages [CustomTkinterMessagebox]: Downloading https://files.pythonhosted.org/packages/fa/fc/137664f2be23c98c475281fe55a1136c2f188abbb54785ecffb9594e1578/customtkintermessagebox-0.0.2.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [name-that-fucking-film]: Downloading https://files.pythonhosted.org/packages/9d/24/3413d3cc52e42785539fa589d3bb7e00fe22244bbf596a192e81c98934d4/name_that_fucking_film-0.2.0.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/9b/50/1092c5cd8bc9b8c612cad47b3db9ab4a7a35503af0f9999f1079e16ec38b/mlpr-0.1.7.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [suckerfishesz]: Downloading https://files.pythonhosted.org/packages/76/ff/d37bcbe60fc6e3cbf688e797720b4ae3a58ed12f0f66918c7af1f8365ce8/suckerfishesz-1.1.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [tf-nightly-tpu]: Downloading https://files.pythonhosted.org/packages/f8/38/cf2f0cb75c82de2e9f256488c6292e56be2a9fadab061d953d111c78e163/tf_nightly_tpu-2.17.0.dev20240510-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-11 19:22:27] INFO root fetch - processPackages [name-that-fucking-film]: Downloading https://files.pythonhosted.org/packages/0d/6e/2b6d20f9e93ff93f5084615e5bec7c5f2dd93ba702dfde0fa3ccd4cb023f/name_that_fucking_film-0.3.0.tar.gz
+[2024-05-11 19:22:27] WARNING root fetch - processPackages [tf-nightly-tpu]: Skipping package: exceeds size limit 220599021>=10485760
+[2024-05-11 19:22:27] INFO root fetch - main [MainThread]: End processing [tf-nightly-tpu] error
+[2024-05-11 19:22:27] INFO root fetch - processPackages [CustomTkinterMessagebox]: Downloading https://files.pythonhosted.org/packages/d0/95/c19e774e3935da910a9f1f43ef51baf7503fde95a6b574a90910b629919f/customtkintermessagebox-0.0.3.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/73/3a/39153727c1ce2f4aa9d8d804e48fc7942f19f53dac796571b94f0121a129/mlpr-0.1.8.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [name-that-fucking-film]: executing diffoscope
+[2024-05-11 19:22:27] INFO root fetch - processPackages [name-that-fucking-film]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_that_fucking_film-0.2.0.tar.gz tmp/name_that_fucking_film-0.3.0.tar.gz --markdown 20240511/n/name-that-fucking-film/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-11 19:22:27] INFO root fetch - processPackages [CustomTkinterMessagebox]: executing diffoscope
+[2024-05-11 19:22:27] INFO root fetch - processPackages [CustomTkinterMessagebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/customtkintermessagebox-0.0.2.tar.gz tmp/customtkintermessagebox-0.0.3.tar.gz --markdown 20240511/C/CustomTkinterMessagebox/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 19:22:27] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-11 19:22:27] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.7.tar.gz tmp/mlpr-0.1.8.tar.gz --markdown 20240511/m/mlpr/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-11 19:22:27] INFO root fetch - processPackages [suckerfishesz]: Downloading https://files.pythonhosted.org/packages/fc/f9/802875bfd7a1a51b47c9b34100a480bae4cbc8b6407d6782701e1f957ea8/suckerfishesz-2.1.tar.gz
+[2024-05-11 19:22:27] INFO root fetch - processPackages [suckerfishesz]: executing diffoscope
+[2024-05-11 19:22:27] INFO root fetch - processPackages [suckerfishesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suckerfishesz-1.1.tar.gz tmp/suckerfishesz-2.1.tar.gz --markdown 20240511/s/suckerfishesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:22:28] INFO root fetch - processPackages [CustomTkinterMessagebox]: Remove: archive file [/home/abi/fetcher/tmp/customtkintermessagebox-0.0.2.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - processPackages [CustomTkinterMessagebox]: Remove: archive file [/home/abi/fetcher/tmp/customtkintermessagebox-0.0.3.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - main [MainThread]: End processing [CustomTkinterMessagebox]: success
+[2024-05-11 19:22:28] INFO root fetch - processPackages [name-that-fucking-film]: Remove: archive file [/home/abi/fetcher/tmp/name_that_fucking_film-0.2.0.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - processPackages [name-that-fucking-film]: Remove: archive file [/home/abi/fetcher/tmp/name_that_fucking_film-0.3.0.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - main [MainThread]: End processing [name-that-fucking-film]: success
+[2024-05-11 19:22:28] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.7.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.8.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-11 19:22:28] INFO root fetch - processPackages [suckerfishesz]: Remove: archive file [/home/abi/fetcher/tmp/suckerfishesz-1.1.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - processPackages [suckerfishesz]: Remove: archive file [/home/abi/fetcher/tmp/suckerfishesz-2.1.tar.gz]
+[2024-05-11 19:22:28] INFO root fetch - main [MainThread]: End processing [suckerfishesz]: success
+[2024-05-11 19:22:28] INFO root fetch - main [MainThread]: Store serial: [23163037]
