@@ -2945,3 +2945,33 @@
 [2024-05-11 02:39:02] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.1.tar.gz]
 [2024-05-11 02:39:02] INFO root fetch - main [MainThread]: End processing [connected-components-3d]: success
 [2024-05-11 02:39:02] INFO root fetch - main [MainThread]: Store serial: [23154725]
+[2024-05-11 02:41:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154725]
+[2024-05-11 02:41:12] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 02:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: connected-components-3d
+[2024-05-11 02:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyrainbird
+[2024-05-11 02:41:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tgqSim
+[2024-05-11 02:41:12] INFO root fetch - processPackages [tgqSim]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 02:41:12] INFO root fetch - processPackages [pyrainbird]: New version: [6.0.0] Old Version: [5.0.0]
+[2024-05-11 02:41:12] INFO root fetch - processPackages [connected-components-3d]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-05-11 02:41:12] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/9e/3f/fe71a0e830788c5233c1ff11b7097700dcbe8f59a30cd0974d77fe9533d3/tgqSim-0.1.2.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/4a/d8/d62141ef9b5caed913e0f6981643e286f5f469779a9b0b61a6bcb06fd9a9/pyrainbird-5.0.0.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [connected-components-3d]: Downloading https://files.pythonhosted.org/packages/51/f7/273086ac8fbe360bd2595ef0d4dd153890299f2197dacb752a43441f87cf/connected-components-3d-3.9.0.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [pyrainbird]: Downloading https://files.pythonhosted.org/packages/79/10/14af9bd703f494694cd75104afe48fbbdaca333078b3a6e16015b8c0d979/pyrainbird-6.0.0.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [tgqSim]: Downloading https://files.pythonhosted.org/packages/4e/10/d6c6df42dafa7b8e032367eb66ec0ee97696bbc7db820922b0db2bfe35a8/tgqSim-0.1.3.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [connected-components-3d]: Downloading https://files.pythonhosted.org/packages/14/97/5d0d6bde68a8f6a4eca89d60116c7e6c1761f7d410f586fecde73d7d67dc/connected-components-3d-3.9.1.tar.gz
+[2024-05-11 02:41:12] INFO root fetch - processPackages [pyrainbird]: executing diffoscope
+[2024-05-11 02:41:12] INFO root fetch - processPackages [pyrainbird]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrainbird-5.0.0.tar.gz tmp/pyrainbird-6.0.0.tar.gz --markdown 20240511/p/pyrainbird/5.0.0-6.0.0/README.md --exclude *.pyd
+[2024-05-11 02:41:12] INFO root fetch - processPackages [tgqSim]: executing diffoscope
+[2024-05-11 02:41:12] INFO root fetch - processPackages [tgqSim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tgqSim-0.1.2.tar.gz tmp/tgqSim-0.1.3.tar.gz --markdown 20240511/t/tgqSim/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 02:41:12] INFO root fetch - processPackages [connected-components-3d]: executing diffoscope
+[2024-05-11 02:41:12] INFO root fetch - processPackages [connected-components-3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connected-components-3d-3.9.0.tar.gz tmp/connected-components-3d-3.9.1.tar.gz --markdown 20240511/c/connected-components-3d/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-05-11 02:41:13] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-5.0.0.tar.gz]
+[2024-05-11 02:41:13] INFO root fetch - processPackages [pyrainbird]: Remove: archive file [/home/abi/fetcher/tmp/pyrainbird-6.0.0.tar.gz]
+[2024-05-11 02:41:13] INFO root fetch - main [MainThread]: End processing [pyrainbird]: success
+[2024-05-11 02:41:13] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.1.2.tar.gz]
+[2024-05-11 02:41:13] INFO root fetch - processPackages [tgqSim]: Remove: archive file [/home/abi/fetcher/tmp/tgqSim-0.1.3.tar.gz]
+[2024-05-11 02:41:13] INFO root fetch - main [MainThread]: End processing [tgqSim]: success
+[2024-05-11 02:41:14] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.0.tar.gz]
+[2024-05-11 02:41:14] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.1.tar.gz]
+[2024-05-11 02:41:14] INFO root fetch - main [MainThread]: End processing [connected-components-3d]: success
+[2024-05-11 02:41:14] INFO root fetch - main [MainThread]: Store serial: [23154774]
