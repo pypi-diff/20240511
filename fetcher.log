@@ -23769,3 +23769,55 @@
 [2024-05-11 23:02:49] INFO root fetch - processPackages [stringthings]: Remove: archive file [/home/abi/fetcher/tmp/stringthings-0.2.8.tar.gz]
 [2024-05-11 23:02:49] INFO root fetch - main [MainThread]: End processing [stringthings]: success
 [2024-05-11 23:02:49] INFO root fetch - main [MainThread]: Store serial: [23164556]
+[2024-05-11 23:04:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164556]
+[2024-05-11 23:04:58] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: InterProcessPyObjects
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqooler
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiocmc
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ginormal
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rereleasez
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mojii
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mojii
+[2024-05-11 23:04:58] INFO root fetch - processPackages [InterProcessPyObjects]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 23:04:58] INFO root fetch - processPackages [InterProcessPyObjects]: Downloading https://files.pythonhosted.org/packages/ff/12/d08ef441bbf974c5d238e27e784cb240b7a861b3c08a66855ba58d8f2de6/interprocesspyobjects-1.0.3.tar.gz
+[2024-05-11 23:04:58] WARNING root fetch - processPackages [rereleasez]: Skipping, unable to determine old version
+[2024-05-11 23:04:58] INFO root fetch - main [MainThread]: End processing [rereleasez] error
+[2024-05-11 23:04:58] WARNING root fetch - processPackages [aiocmc]: Skipping, unable to determine old version
+[2024-05-11 23:04:58] INFO root fetch - main [MainThread]: End processing [aiocmc] error
+[2024-05-11 23:04:58] INFO root fetch - processPackages [ginormal]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 23:04:58] INFO root fetch - processPackages [mojii]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 23:04:58] INFO root fetch - processPackages [mojii]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 23:04:58] INFO root fetch - processPackages [sqooler]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/79/53/cd34af8c0536a907ed72efa203c2ce9934f0b4e6179c5417eb1ad54083ee/mojii-0.1.1-py3-none-any.whl
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/79/53/cd34af8c0536a907ed72efa203c2ce9934f0b4e6179c5417eb1ad54083ee/mojii-0.1.1-py3-none-any.whl
+[2024-05-11 23:04:59] INFO root fetch - processPackages [ginormal]: Downloading https://files.pythonhosted.org/packages/1e/34/e7b46c26868af3a25e2eeb008e978d8f6d7c4c841db243d4388544d7ecbf/ginormal-0.0.8.tar.gz
+[2024-05-11 23:04:59] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/2e/65/82c85bb38f8307659de258ae2d3f8bcef23358963ef9eaf64e73a29825cc/sqooler-0.7.0.tar.gz
+[2024-05-11 23:04:59] INFO root fetch - processPackages [InterProcessPyObjects]: Downloading https://files.pythonhosted.org/packages/7d/4a/fffa8b5a6f0b66e39a63248d9c0cd47aba9185600af669737f88874a5741/interprocesspyobjects-1.0.4.tar.gz
+[2024-05-11 23:04:59] INFO root fetch - processPackages [InterProcessPyObjects]: executing diffoscope
+[2024-05-11 23:04:59] INFO root fetch - processPackages [InterProcessPyObjects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interprocesspyobjects-1.0.3.tar.gz tmp/interprocesspyobjects-1.0.4.tar.gz --markdown 20240511/I/InterProcessPyObjects/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 23:04:59] INFO root fetch - processPackages [ginormal]: Downloading https://files.pythonhosted.org/packages/ac/cc/f37e39077b34d0cb2fc733ffac1373f85aaef43238b4546b266fd79efdd7/ginormal-0.0.9.tar.gz
+[2024-05-11 23:04:59] INFO root fetch - processPackages [sqooler]: Downloading https://files.pythonhosted.org/packages/51/07/99fe16630a79f8ac354ca7dc01e9abee3ae9610d06770317a3b027a32ff8/sqooler-0.7.1.tar.gz
+[2024-05-11 23:04:59] INFO root fetch - processPackages [ginormal]: executing diffoscope
+[2024-05-11 23:04:59] INFO root fetch - processPackages [ginormal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ginormal-0.0.8.tar.gz tmp/ginormal-0.0.9.tar.gz --markdown 20240511/g/ginormal/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/30/60/0f83aaa0d486f5f8866ef2111d8ea046e2a17bb910d094aaf70fb6cbc64b/mojii-0.1.2-py3-none-any.whl
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/30/60/0f83aaa0d486f5f8866ef2111d8ea046e2a17bb910d094aaf70fb6cbc64b/mojii-0.1.2-py3-none-any.whl
+[2024-05-11 23:04:59] INFO root fetch - processPackages [sqooler]: executing diffoscope
+[2024-05-11 23:04:59] INFO root fetch - processPackages [sqooler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqooler-0.7.0.tar.gz tmp/sqooler-0.7.1.tar.gz --markdown 20240511/s/sqooler/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: executing diffoscope
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojii-0.1.1-py3-none-any.whl.zip tmp/mojii-0.1.2-py3-none-any.whl.zip --markdown 20240511/m/mojii/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: executing diffoscope
+[2024-05-11 23:04:59] INFO root fetch - processPackages [mojii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojii-0.1.1-py3-none-any.whl.zip tmp/mojii-0.1.2-py3-none-any.whl.zip --markdown 20240511/m/mojii/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 23:04:59] INFO root fetch - processPackages [InterProcessPyObjects]: Remove: archive file [/home/abi/fetcher/tmp/interprocesspyobjects-1.0.3.tar.gz]
+[2024-05-11 23:04:59] INFO root fetch - processPackages [InterProcessPyObjects]: Remove: archive file [/home/abi/fetcher/tmp/interprocesspyobjects-1.0.4.tar.gz]
+[2024-05-11 23:04:59] INFO root fetch - main [MainThread]: End processing [InterProcessPyObjects]: success
+[2024-05-11 23:05:00] INFO root fetch - processPackages [ginormal]: Remove: archive file [/home/abi/fetcher/tmp/ginormal-0.0.8.tar.gz]
+[2024-05-11 23:05:00] INFO root fetch - processPackages [ginormal]: Remove: archive file [/home/abi/fetcher/tmp/ginormal-0.0.9.tar.gz]
+[2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [ginormal]: success
+[2024-05-11 23:05:00] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.7.0.tar.gz]
+[2024-05-11 23:05:00] INFO root fetch - processPackages [sqooler]: Remove: archive file [/home/abi/fetcher/tmp/sqooler-0.7.1.tar.gz]
+[2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [sqooler]: success
+[2024-05-11 23:05:00] INFO root fetch - processPackages [mojii]: Remove: archive file [/home/abi/fetcher/tmp/mojii-0.1.1-py3-none-any.whl.zip]
+[2024-05-11 23:05:00] INFO root fetch - processPackages [mojii]: Remove: archive file [/home/abi/fetcher/tmp/mojii-0.1.2-py3-none-any.whl.zip]
+[2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [mojii]: success
+[2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [mojii]: success
+[2024-05-11 23:05:00] INFO root fetch - main [MainThread]: Store serial: [23164578]
