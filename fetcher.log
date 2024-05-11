@@ -22078,3 +22078,27 @@
 [2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.3.tar.gz]
 [2024-05-11 21:04:55] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
 [2024-05-11 21:04:55] INFO root fetch - main [MainThread]: Store serial: [23163836]
+[2024-05-11 21:06:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163836]
+[2024-05-11 21:07:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysparkler
+[2024-05-11 21:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tiemakerz
+[2024-05-11 21:07:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: empuzzlez
+[2024-05-11 21:07:04] INFO root fetch - processPackages [pysparkler]: New version: [0.9.dev1715453058] Old Version: [0.9.dev1706788159]
+[2024-05-11 21:07:04] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/4b/99/43b679234ff700e8a408ca4141caae76897e61b7f755fe5490cda162bf03/pysparkler-0.9.dev1706788159.tar.gz
+[2024-05-11 21:07:04] INFO root fetch - processPackages [tiemakerz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:07:04] WARNING root fetch - processPackages [empuzzlez]: Skipping, unable to determine old version
+[2024-05-11 21:07:04] INFO root fetch - main [MainThread]: End processing [empuzzlez] error
+[2024-05-11 21:07:04] INFO root fetch - processPackages [tiemakerz]: Downloading https://files.pythonhosted.org/packages/88/81/367315322e6f625d803e3c4c3dd5681d5bc7bdfd395d85aa0e1f2f592a89/tiemakerz-1.1.tar.gz
+[2024-05-11 21:07:04] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/80/f6/38ed156ac4bf5f92bf51073598fc9ac6371e395290043e4b4e84e08bd858/pysparkler-0.9.dev1715453058.tar.gz
+[2024-05-11 21:07:05] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2024-05-11 21:07:05] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.9.dev1706788159.tar.gz tmp/pysparkler-0.9.dev1715453058.tar.gz --markdown 20240511/p/pysparkler/0.9.dev1706788159-0.9.dev1715453058/README.md --exclude *.pyd
+[2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: Downloading https://files.pythonhosted.org/packages/04/f9/8eaaab919ff2a86ab575d362f35c3c682f2b4d8c8e312af38e8aea921bdc/tiemakerz-2.1.tar.gz
+[2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: executing diffoscope
+[2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiemakerz-1.1.tar.gz tmp/tiemakerz-2.1.tar.gz --markdown 20240511/t/tiemakerz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:07:05] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1706788159.tar.gz]
+[2024-05-11 21:07:05] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1715453058.tar.gz]
+[2024-05-11 21:07:05] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: Remove: archive file [/home/abi/fetcher/tmp/tiemakerz-1.1.tar.gz]
+[2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: Remove: archive file [/home/abi/fetcher/tmp/tiemakerz-2.1.tar.gz]
+[2024-05-11 21:07:05] INFO root fetch - main [MainThread]: End processing [tiemakerz]: success
+[2024-05-11 21:07:05] INFO root fetch - main [MainThread]: Store serial: [23163845]
