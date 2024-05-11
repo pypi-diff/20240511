@@ -13482,3 +13482,21 @@
 [2024-05-11 11:27:05] INFO root fetch - processPackages [solaredge-influxdb]: Remove: archive file [/home/abi/fetcher/tmp/solaredge_influxdb-1.3.0.tar.gz]
 [2024-05-11 11:27:05] INFO root fetch - main [MainThread]: End processing [solaredge-influxdb]: success
 [2024-05-11 11:27:05] INFO root fetch - main [MainThread]: Store serial: [23159605]
+[2024-05-11 11:29:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159605]
+[2024-05-11 11:29:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: subsaturatedz
+[2024-05-11 11:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: candlestix
+[2024-05-11 11:29:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 11:29:14] WARNING root fetch - processPackages [candlestix]: Skipping, unable to determine old version
+[2024-05-11 11:29:14] INFO root fetch - main [MainThread]: End processing [candlestix] error
+[2024-05-11 11:29:14] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 11:29:14] WARNING root fetch - processPackages [subsaturatedz]: Skipping, unable to determine old version
+[2024-05-11 11:29:14] INFO root fetch - main [MainThread]: End processing [subsaturatedz] error
+[2024-05-11 11:29:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 11:29:14] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 11:29:14] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 11:29:14] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 11:29:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 11:29:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 11:29:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 11:29:15] INFO root fetch - main [MainThread]: Store serial: [23159615]
