@@ -17419,3 +17419,32 @@
 [2024-05-11 15:52:37] INFO root fetch - processPackages [chickenstats]: Remove: archive file [/home/abi/fetcher/tmp/chickenstats-1.7.9.2.tar.gz]
 [2024-05-11 15:52:37] INFO root fetch - main [MainThread]: End processing [chickenstats]: success
 [2024-05-11 15:52:37] INFO root fetch - main [MainThread]: Store serial: [23161519]
+[2024-05-11 15:54:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161519]
+[2024-05-11 15:54:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 15:54:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly
+[2024-05-11 15:54:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyopenhc
+[2024-05-11 15:54:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vnai
+[2024-05-11 15:54:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kicksz
+[2024-05-11 15:54:46] WARNING root fetch - processPackages [kicksz]: Skipping, unable to determine old version
+[2024-05-11 15:54:46] INFO root fetch - main [MainThread]: End processing [kicksz] error
+[2024-05-11 15:54:46] INFO root fetch - processPackages [pyopenhc]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-11 15:54:46] INFO root fetch - processPackages [vnai]: New version: [0.1.0] Old Version: [0.0.9]
+[2024-05-11 15:54:46] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2024.5.9] Old Version: [2024.5.11]
+[2024-05-11 15:54:47] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/45/44/7935a3a8afebe34e31a65a2c27eff306e15ff766cc70138b6f7aa2b456e4/fbgemm_gpu_nightly-2024.5.11-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 15:54:47] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 223061439>=10485760
+[2024-05-11 15:54:47] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2024-05-11 15:54:47] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/7b/df/6187def8604f3678360961933f45051880e11bdb397fa8b85880bac68ad8/pyopenhc-0.0.9-py3-none-win_amd64.whl
+[2024-05-11 15:54:47] INFO root fetch - processPackages [vnai]: Downloading https://files.pythonhosted.org/packages/c6/62/c1a000a9584dd67df939f97f8f701854d472abdaa30577d41a5f45aaa1d5/vnai-0.0.9.tar.gz
+[2024-05-11 15:54:48] INFO root fetch - processPackages [vnai]: Downloading https://files.pythonhosted.org/packages/00/56/42700bb993fb0bc6367336d016f4d4cf262e4765d2e56b704633c1e68162/vnai-0.1.0.tar.gz
+[2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/eb/48/77a0d7245a6bcf1c26ec7c0687430ee0cf01b88a954d709b65845f16d759/pyopenhc-0.1.0-py3-none-manylinux1_x86_64.whl
+[2024-05-11 15:54:48] INFO root fetch - processPackages [vnai]: executing diffoscope
+[2024-05-11 15:54:48] INFO root fetch - processPackages [vnai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vnai-0.0.9.tar.gz tmp/vnai-0.1.0.tar.gz --markdown 20240511/v/vnai/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: executing diffoscope
+[2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopenhc-0.0.9-py3-none-win_amd64.whl.zip tmp/pyopenhc-0.1.0-py3-none-manylinux1_x86_64.whl.zip --markdown 20240511/p/pyopenhc/0.0.9-0.1.0/README.md --exclude *.pyd
+[2024-05-11 15:54:48] INFO root fetch - processPackages [vnai]: Remove: archive file [/home/abi/fetcher/tmp/vnai-0.0.9.tar.gz]
+[2024-05-11 15:54:48] INFO root fetch - processPackages [vnai]: Remove: archive file [/home/abi/fetcher/tmp/vnai-0.1.0.tar.gz]
+[2024-05-11 15:54:48] INFO root fetch - main [MainThread]: End processing [vnai]: success
+[2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.9-py3-none-win_amd64.whl.zip]
+[2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.1.0-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-11 15:54:48] INFO root fetch - main [MainThread]: End processing [pyopenhc]: success
+[2024-05-11 15:54:48] INFO root fetch - main [MainThread]: Store serial: [23161532]
