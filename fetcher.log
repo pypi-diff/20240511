@@ -10961,3 +10961,59 @@
 [2024-05-11 08:12:53] INFO root fetch - processPackages [pulumi-azure]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_azure-5.9.0a1654522381.tar.gz]
 [2024-05-11 08:12:53] INFO root fetch - main [MainThread]: End processing [pulumi-azure]: success
 [2024-05-11 08:12:53] INFO root fetch - main [MainThread]: Store serial: [23158149]
+[2024-05-11 08:14:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158149]
+[2024-05-11 08:15:02] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-awscdk-resolver
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonoperaticallyz
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: manutenencyz
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pretext
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: uitestrunner-syberos
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fake-bpy-module-latest
+[2024-05-11 08:15:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fake-bpy-module
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module]: New version: [20240510] Old Version: [20240509]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20240510] Old Version: [20240509]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [nonoperaticallyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/13/21/a8e21c045f69a6eed84f616a41fc34be92bfdf7a11613d3f8a9a6bd9c720/fake_bpy_module-20240509.tar.gz
+[2024-05-11 08:15:03] WARNING root fetch - processPackages [manutenencyz]: Skipping, unable to determine old version
+[2024-05-11 08:15:03] INFO root fetch - main [MainThread]: End processing [manutenencyz] error
+[2024-05-11 08:15:03] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [pretext]: New version: [2.4.1.dev20240511] Old Version: [2.4.1.dev20240509]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [uitestrunner-syberos]: New version: [2.4.0] Old Version: [2.3.5]
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/39/b3/5d1c2358f74accbcd4f62b448e529f8435dd0ab230dffedf27d4d84941ac/fake_bpy_module_latest-20240509.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [nonoperaticallyz]: Downloading https://files.pythonhosted.org/packages/51/2b/e0b8e253caef5e7eb1391e12ba9a3c44202252c548a4ffb5ac48859bd6c2/nonoperaticallyz-1.1.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/07/20/19ec9266389742d2a3c04ab3687b33ce4fbc2bbb57bfcec31da1a9bcbd23/cdk8s-awscdk-resolver-0.0.98.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/2a/95/d227b89660bb7a23d845386534ae4b36fc1ffac2238a12e1028efc6491c2/pretext-2.4.1.dev20240509.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [uitestrunner-syberos]: Downloading https://files.pythonhosted.org/packages/48/fe/91538a9f10608de22b1e8094614772eede1de077ee223b4a57aea7141793/uitestrunner_syberos-2.3.5.tar.gz
+[2024-05-11 08:15:03] WARNING root fetch - processPackages [uitestrunner-syberos]: Skipping package: exceeds size limit 61923947>=10485760
+[2024-05-11 08:15:03] INFO root fetch - main [MainThread]: End processing [uitestrunner-syberos] error
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module]: Downloading https://files.pythonhosted.org/packages/b3/55/be7cf8cbc09db4bb2fc0d59f114d814091f22116986bbbf5bfd393d1660b/fake_bpy_module-20240510.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [nonoperaticallyz]: Downloading https://files.pythonhosted.org/packages/f4/39/bab6fc3bb25a3271a25e811ef3a25bfdec7bb3b242e1e053bb0faa55a6e5/nonoperaticallyz-2.1.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/c8/03/ccbc9846544c8e05447ed88628a7de78722e7544ff0e0b86531e7dee2735/fake_bpy_module_latest-20240510.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Downloading https://files.pythonhosted.org/packages/c7/b2/54a44e3f76d560a3b27d6d369382450e19f3b34970ec7c2ee462c06c50c0/cdk8s-awscdk-resolver-0.0.99.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [nonoperaticallyz]: executing diffoscope
+[2024-05-11 08:15:03] INFO root fetch - processPackages [nonoperaticallyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonoperaticallyz-1.1.tar.gz tmp/nonoperaticallyz-2.1.tar.gz --markdown 20240511/n/nonoperaticallyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:15:03] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/30/bd/fd85f5d8f1c503b19cb6898fc09a9386fa63094970070e90812119cf66c1/pretext-2.4.1.dev20240511.tar.gz
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module]: executing diffoscope
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module-20240509.tar.gz tmp/fake_bpy_module-20240510.tar.gz --markdown 20240511/f/fake-bpy-module/20240509-20240510/README.md --exclude *.pyd
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2024-05-11 08:15:03] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake_bpy_module_latest-20240509.tar.gz tmp/fake_bpy_module_latest-20240510.tar.gz --markdown 20240511/f/fake-bpy-module-latest/20240509-20240510/README.md --exclude *.pyd
+[2024-05-11 08:15:04] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: executing diffoscope
+[2024-05-11 08:15:04] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-awscdk-resolver-0.0.98.tar.gz tmp/cdk8s-awscdk-resolver-0.0.99.tar.gz --markdown 20240511/c/cdk8s-awscdk-resolver/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-11 08:15:04] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2024-05-11 08:15:04] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-2.4.1.dev20240509.tar.gz tmp/pretext-2.4.1.dev20240511.tar.gz --markdown 20240511/p/pretext/2.4.1.dev20240509-2.4.1.dev20240511/README.md --exclude *.pyd
+[2024-05-11 08:15:04] INFO root fetch - processPackages [nonoperaticallyz]: Remove: archive file [/home/abi/fetcher/tmp/nonoperaticallyz-1.1.tar.gz]
+[2024-05-11 08:15:04] INFO root fetch - processPackages [nonoperaticallyz]: Remove: archive file [/home/abi/fetcher/tmp/nonoperaticallyz-2.1.tar.gz]
+[2024-05-11 08:15:04] INFO root fetch - main [MainThread]: End processing [nonoperaticallyz]: success
+[2024-05-11 08:15:04] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.98.tar.gz]
+[2024-05-11 08:15:04] INFO root fetch - processPackages [cdk8s-awscdk-resolver]: Remove: archive file [/home/abi/fetcher/tmp/cdk8s-awscdk-resolver-0.0.99.tar.gz]
+[2024-05-11 08:15:04] INFO root fetch - main [MainThread]: End processing [cdk8s-awscdk-resolver]: success
+[2024-05-11 08:15:07] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240509.tar.gz]
+[2024-05-11 08:15:07] INFO root fetch - processPackages [pretext]: Remove: archive file [/home/abi/fetcher/tmp/pretext-2.4.1.dev20240511.tar.gz]
+[2024-05-11 08:15:07] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2024-05-11 08:15:11] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240509.tar.gz]
+[2024-05-11 08:15:11] INFO root fetch - processPackages [fake-bpy-module]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module-20240510.tar.gz]
+[2024-05-11 08:15:11] INFO root fetch - main [MainThread]: End processing [fake-bpy-module]: success
+[2024-05-11 08:15:11] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240509.tar.gz]
+[2024-05-11 08:15:11] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240510.tar.gz]
+[2024-05-11 08:15:11] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2024-05-11 08:15:11] INFO root fetch - main [MainThread]: Store serial: [23158177]
