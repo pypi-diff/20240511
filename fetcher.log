@@ -7861,3 +7861,105 @@
 [2024-05-11 04:16:36] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
 [2024-05-11 04:16:36] INFO root fetch - main [MainThread]: End processing [netron] error
 [2024-05-11 04:16:36] INFO root fetch - main [MainThread]: Store serial: [23156558]
+[2024-05-11 04:18:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156558]
+[2024-05-11 04:18:45] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laserdiskz
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robin-api
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hc-log-filter
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pbt-simple
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: types-Pillow
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: types-regex
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: types-psutil
+[2024-05-11 04:18:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: types-wurlitzer
+[2024-05-11 04:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: types-pynput
+[2024-05-11 04:18:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: types-flake8
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-psutil]: New version: [5.9.5.9] Old Version: [5.9.5.8]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-pynput]: New version: [1.7.6.20240511] Old Version: [1.7.5.7]
+[2024-05-11 04:18:46] WARNING root fetch - processPackages [hc-log-filter]: Skipping, unable to determine old version
+[2024-05-11 04:18:46] INFO root fetch - processPackages [hc-log-filter]: Start processing: types-beautifulsoup4
+[2024-05-11 04:18:46] INFO root fetch - main [MainThread]: End processing [hc-log-filter] error
+[2024-05-11 04:18:46] INFO root fetch - processPackages [pbt-simple]: New version: [1.7.4] Old Version: [1.7.3]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-wurlitzer]: New version: [3.1.0.20240511] Old Version: [3.0.0.20240311]
+[2024-05-11 04:18:46] ERROR root fetch - processPackages [types-flake8]: Unable to get metadata: No such project 'types-flake8'
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-flake8]: Start processing: types-docker
+[2024-05-11 04:18:46] INFO root fetch - main [MainThread]: End processing [types-flake8] error
+[2024-05-11 04:18:46] INFO root fetch - processPackages [laserdiskz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-Pillow]: New version: [9.5.0.6] Old Version: [9.5.0.5]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [robin-api]: New version: [1.51] Old Version: [1.5]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-regex]: New version: [2024.5.10.20240511] Old Version: [2024.4.28.20240506]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-beautifulsoup4]: New version: [4.9.4] Old Version: [4.9.3]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-docker]: New version: [7.0.0.20240511] Old Version: [7.0.0.20240507]
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-psutil]: Downloading https://files.pythonhosted.org/packages/80/5a/9c74621dac0e8576522348dac6d61a43913103caff81521ffa70d1310482/types-psutil-5.9.5.8.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-pynput]: Downloading https://files.pythonhosted.org/packages/bf/89/8c560db211a16ebe992ed07e7c6148a2533a86f2685785243d5f7a6f1cac/types-pynput-1.7.5.7.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [laserdiskz]: Downloading https://files.pythonhosted.org/packages/e2/30/4b1a4bf11715d981854aa7fa9398c950ddb1d048814bdeaf8093240d0e83/laserdiskz-1.1.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [robin-api]: Downloading https://files.pythonhosted.org/packages/0a/5b/4c2640f0fe5b180248fc74acce5cf1547ce17506a4895df69fe14ec5a958/robin_api-1.5.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/a5/e3/5a8d22ac79bc3e0cfb21447170f76e4eb66fef93a7415831e3befd63cb7a/pbt_simple-1.7.3.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-wurlitzer]: Downloading https://files.pythonhosted.org/packages/d2/61/a1ca8bee533591ee628b6bd2b7cc6f56d90a1b25cdd302339b2fa04fdd01/types-wurlitzer-3.0.0.20240311.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-beautifulsoup4]: Downloading https://files.pythonhosted.org/packages/15/f8/3da169b5dd53dd9d049f73571650290670edcf2e1d8ee7bbf0fa6997dad5/types-beautifulsoup4-4.9.3.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/ca/22/16c37b8bb47e1826207f4c93909fe9b4810342c56fbf3313dc20091baa0e/types-regex-2024.4.28.20240506.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/fe/b4/ffa2908d4b69a4cb983289fdf30cb11ca33bee293012fc663529fcba7615/types-Pillow-9.5.0.5.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [types-docker]: Downloading https://files.pythonhosted.org/packages/30/cf/b57fe13f2b279a4e8b6a6ebf233b8c22b4e099c3a1a50320b9f91bf61073/types-docker-7.0.0.20240507.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [laserdiskz]: Downloading https://files.pythonhosted.org/packages/6f/9c/540defc9acf6a738de068c8cb7c31df5058617979871c0fb6599a64e8642/laserdiskz-2.1.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [pbt-simple]: Downloading https://files.pythonhosted.org/packages/40/d5/328c9dbfdecf9e961be78eea259d44227fb25d7d24ed20d1144d2851d585/pbt_simple-1.7.4.tar.gz
+[2024-05-11 04:18:46] INFO root fetch - processPackages [robin-api]: Downloading https://files.pythonhosted.org/packages/0a/35/4a1247bba42bd58b9144b31db3642b596b0135a4f342a030ba01c2ae7a77/robin_api-1.51.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-pynput]: Downloading https://files.pythonhosted.org/packages/c4/00/0c261dc2d481ad5f03324b2c0d7a7f6ef940a47801e769020a3f9bb881fb/types-pynput-1.7.6.20240511.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-beautifulsoup4]: Downloading https://files.pythonhosted.org/packages/df/c7/11c3c1c5b6d81abb604ab3c208e797821b60876c14633ecbcffc6a3da730/types-beautifulsoup4-4.9.4.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [laserdiskz]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [laserdiskz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laserdiskz-1.1.tar.gz tmp/laserdiskz-2.1.tar.gz --markdown 20240511/l/laserdiskz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-docker]: Downloading https://files.pythonhosted.org/packages/49/8d/1a73bf72c5b6131527e93e72c0f52cc004270af54e14afea60f9a82e34da/types-docker-7.0.0.20240511.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-Pillow]: Downloading https://files.pythonhosted.org/packages/2d/78/d71281c253ba82f7630f5fabef175ea2f19556f2d1004eecae276e71bc75/types-Pillow-9.5.0.6.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-regex]: Downloading https://files.pythonhosted.org/packages/3f/ea/dece30e6c695456a669ce85c3ae5243ceba196d531d6ddfed86f99ed103e/types-regex-2024.5.10.20240511.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [pbt-simple]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [pbt-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pbt_simple-1.7.3.tar.gz tmp/pbt_simple-1.7.4.tar.gz --markdown 20240511/p/pbt-simple/1.7.3-1.7.4/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-wurlitzer]: Downloading https://files.pythonhosted.org/packages/86/43/3c2c82190932b12e3763411421a70fbcc9c31e53e95adb3041c2cb0d8ee0/types-wurlitzer-3.1.0.20240511.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [robin-api]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [robin-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robin_api-1.5.tar.gz tmp/robin_api-1.51.tar.gz --markdown 20240511/r/robin-api/1.5-1.51/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-pynput]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-pynput]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-pynput-1.7.5.7.tar.gz tmp/types-pynput-1.7.6.20240511.tar.gz --markdown 20240511/t/types-pynput/1.7.5.7-1.7.6.20240511/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-docker]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-docker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-docker-7.0.0.20240507.tar.gz tmp/types-docker-7.0.0.20240511.tar.gz --markdown 20240511/t/types-docker/7.0.0.20240507-7.0.0.20240511/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-regex]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-regex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-regex-2024.4.28.20240506.tar.gz tmp/types-regex-2024.5.10.20240511.tar.gz --markdown 20240511/t/types-regex/2024.4.28.20240506-2024.5.10.20240511/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-Pillow]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-Pillow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-Pillow-9.5.0.5.tar.gz tmp/types-Pillow-9.5.0.6.tar.gz --markdown 20240511/t/types-Pillow/9.5.0.5-9.5.0.6/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-wurlitzer]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-wurlitzer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-wurlitzer-3.0.0.20240311.tar.gz tmp/types-wurlitzer-3.1.0.20240511.tar.gz --markdown 20240511/t/types-wurlitzer/3.0.0.20240311-3.1.0.20240511/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-psutil]: Downloading https://files.pythonhosted.org/packages/48/17/84ab868524425e5f0553f1916898b2a5ec0bf8d3c330d854eb5fabd35aec/types-psutil-5.9.5.9.tar.gz
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-beautifulsoup4]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-beautifulsoup4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-beautifulsoup4-4.9.3.tar.gz tmp/types-beautifulsoup4-4.9.4.tar.gz --markdown 20240511/t/types-beautifulsoup4/4.9.3-4.9.4/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-psutil]: executing diffoscope
+[2024-05-11 04:18:47] INFO root fetch - processPackages [types-psutil]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/types-psutil-5.9.5.8.tar.gz tmp/types-psutil-5.9.5.9.tar.gz --markdown 20240511/t/types-psutil/5.9.5.8-5.9.5.9/README.md --exclude *.pyd
+[2024-05-11 04:18:47] INFO root fetch - processPackages [laserdiskz]: Remove: archive file [/home/abi/fetcher/tmp/laserdiskz-1.1.tar.gz]
+[2024-05-11 04:18:47] INFO root fetch - processPackages [laserdiskz]: Remove: archive file [/home/abi/fetcher/tmp/laserdiskz-2.1.tar.gz]
+[2024-05-11 04:18:47] INFO root fetch - processPackages [laserdiskz]: Start processing: misadjustz
+[2024-05-11 04:18:47] INFO root fetch - main [MainThread]: End processing [laserdiskz]: success
+[2024-05-11 04:18:48] WARNING root fetch - processPackages [misadjustz]: Skipping, unable to determine old version
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [misadjustz] error
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-pynput]: Remove: archive file [/home/abi/fetcher/tmp/types-pynput-1.7.5.7.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-pynput]: Remove: archive file [/home/abi/fetcher/tmp/types-pynput-1.7.6.20240511.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-pynput]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [robin-api]: Remove: archive file [/home/abi/fetcher/tmp/robin_api-1.5.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [robin-api]: Remove: archive file [/home/abi/fetcher/tmp/robin_api-1.51.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [robin-api]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.4.28.20240506.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-regex]: Remove: archive file [/home/abi/fetcher/tmp/types-regex-2024.5.10.20240511.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-regex]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.3.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [pbt-simple]: Remove: archive file [/home/abi/fetcher/tmp/pbt_simple-1.7.4.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [pbt-simple]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-beautifulsoup4]: Remove: archive file [/home/abi/fetcher/tmp/types-beautifulsoup4-4.9.3.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-beautifulsoup4]: Remove: archive file [/home/abi/fetcher/tmp/types-beautifulsoup4-4.9.4.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-beautifulsoup4]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-docker]: Remove: archive file [/home/abi/fetcher/tmp/types-docker-7.0.0.20240507.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-docker]: Remove: archive file [/home/abi/fetcher/tmp/types-docker-7.0.0.20240511.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-docker]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-psutil]: Remove: archive file [/home/abi/fetcher/tmp/types-psutil-5.9.5.8.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-psutil]: Remove: archive file [/home/abi/fetcher/tmp/types-psutil-5.9.5.9.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-psutil]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-Pillow]: Remove: archive file [/home/abi/fetcher/tmp/types-Pillow-9.5.0.5.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-Pillow]: Remove: archive file [/home/abi/fetcher/tmp/types-Pillow-9.5.0.6.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-Pillow]: success
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-wurlitzer]: Remove: archive file [/home/abi/fetcher/tmp/types-wurlitzer-3.0.0.20240311.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - processPackages [types-wurlitzer]: Remove: archive file [/home/abi/fetcher/tmp/types-wurlitzer-3.1.0.20240511.tar.gz]
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: End processing [types-wurlitzer]: success
+[2024-05-11 04:18:48] INFO root fetch - main [MainThread]: Store serial: [23156602]
