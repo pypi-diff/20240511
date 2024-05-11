@@ -13199,3 +13199,27 @@
 [2024-05-11 11:07:27] INFO root fetch - processPackages [gmxpy]: Remove: archive file [/home/abi/fetcher/tmp/gmxpy-0.0.5.tar.gz]
 [2024-05-11 11:07:27] INFO root fetch - main [MainThread]: End processing [gmxpy]: success
 [2024-05-11 11:07:27] INFO root fetch - main [MainThread]: Store serial: [23159275]
+[2024-05-11 11:09:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159275]
+[2024-05-11 11:09:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: allworkz
+[2024-05-11 11:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imesh
+[2024-05-11 11:09:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-LLM
+[2024-05-11 11:09:35] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 11:09:35] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/49/b9/5964a8f2aa51fd5533fda3456f798b00723eddab8833ea2e2cb1127fa65f/zibuyu_LLM-0.0.4-py3-none-any.whl
+[2024-05-11 11:09:35] WARNING root fetch - processPackages [allworkz]: Skipping, unable to determine old version
+[2024-05-11 11:09:35] INFO root fetch - main [MainThread]: End processing [allworkz] error
+[2024-05-11 11:09:35] INFO root fetch - processPackages [imesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 11:09:36] INFO root fetch - processPackages [imesh]: Downloading https://files.pythonhosted.org/packages/f8/11/fbb815700a24d95cfbe7365213d0aee80141c751106cf6f5ca79461d9263/imesh-0.0.8.tar.gz
+[2024-05-11 11:09:36] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/6e/39/33e948f7e74160f3b1c7fb57ba750ff3d60411f104a219b577e6113dfc63/zibuyu_LLM-0.0.5-py3-none-any.whl
+[2024-05-11 11:09:36] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-11 11:09:36] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.4-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.5-py3-none-any.whl.zip --markdown 20240511/z/zibuyu-LLM/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 11:09:36] INFO root fetch - processPackages [imesh]: Downloading https://files.pythonhosted.org/packages/9b/8d/a9d2b6ef3ee8c478fed84a6db20ce40bbc8121280b7ede35f9e98d939a5d/imesh-0.0.9.tar.gz
+[2024-05-11 11:09:36] INFO root fetch - processPackages [imesh]: executing diffoscope
+[2024-05-11 11:09:36] INFO root fetch - processPackages [imesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imesh-0.0.8.tar.gz tmp/imesh-0.0.9.tar.gz --markdown 20240511/i/imesh/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 11:09:36] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.4-py3-none-any.whl.zip]
+[2024-05-11 11:09:36] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.5-py3-none-any.whl.zip]
+[2024-05-11 11:09:36] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-11 11:09:37] INFO root fetch - processPackages [imesh]: Remove: archive file [/home/abi/fetcher/tmp/imesh-0.0.8.tar.gz]
+[2024-05-11 11:09:37] INFO root fetch - processPackages [imesh]: Remove: archive file [/home/abi/fetcher/tmp/imesh-0.0.9.tar.gz]
+[2024-05-11 11:09:37] INFO root fetch - main [MainThread]: End processing [imesh]: success
+[2024-05-11 11:09:37] INFO root fetch - main [MainThread]: Store serial: [23159342]
