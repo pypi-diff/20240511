@@ -20759,3 +20759,9 @@
 [2024-05-11 19:33:19] INFO root fetch - processPackages [DLMS-SPODES]: Remove: archive file [/home/abi/fetcher/tmp/DLMS_SPODES-0.9.0.tar.gz]
 [2024-05-11 19:33:19] INFO root fetch - main [MainThread]: End processing [DLMS-SPODES]: success
 [2024-05-11 19:33:19] INFO root fetch - main [MainThread]: Store serial: [23163119]
+[2024-05-11 19:35:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163119]
+[2024-05-11 19:35:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 19:35:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arythmicallyz
+[2024-05-11 19:35:28] WARNING root fetch - processPackages [arythmicallyz]: Skipping, unable to determine old version
+[2024-05-11 19:35:28] INFO root fetch - main [MainThread]: End processing [arythmicallyz] error
+[2024-05-11 19:35:28] INFO root fetch - main [MainThread]: Store serial: [23163123]
