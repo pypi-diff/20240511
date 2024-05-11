@@ -8687,3 +8687,45 @@
 [2024-05-11 05:13:12] INFO root fetch - processPackages [lwoz]: Remove: archive file [/home/abi/fetcher/tmp/lwoz-2.1.tar.gz]
 [2024-05-11 05:13:12] INFO root fetch - main [MainThread]: End processing [lwoz]: success
 [2024-05-11 05:13:12] INFO root fetch - main [MainThread]: Store serial: [23156888]
+[2024-05-11 05:15:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156888]
+[2024-05-11 05:15:20] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PepperPepper
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ccdt
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hc-log-tools
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: benignancyz
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyproject-fmt
+[2024-05-11 05:15:20] INFO root fetch - processPackages [pyproject-fmt]: New version: [2.0.0] Old Version: [1.8.0]
+[2024-05-11 05:15:20] INFO root fetch - processPackages [ccdt]: New version: [2.1.99] Old Version: [2.1.98]
+[2024-05-11 05:15:20] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-11 05:15:20] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/20/06/b755e0469c6d2126a950b91f5361274b3403f7fe3099ac586fc26563ffea/pyproject_fmt-1.8.0.tar.gz
+[2024-05-11 05:15:20] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-11 05:15:20] WARNING root fetch - processPackages [benignancyz]: Skipping, unable to determine old version
+[2024-05-11 05:15:20] INFO root fetch - main [MainThread]: End processing [benignancyz] error
+[2024-05-11 05:15:20] INFO root fetch - processPackages [hc-log-tools]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-11 05:15:21] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/5e/9c/468b97d81f651afdc79c90181caf3e96586e1faf49f1f0272cd9d59234cc/ccdt-2.1.98.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/f4/01/cc621904439812d296338258533d5a69c73c6eb2cbb3c98936b3b9e8f750/pyproject_fmt-2.0.0.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/30/c8/c011d2ae789c8ce20a1ca29fabd339af6ee302a752671d19fb9d43e7fd91/hc_log_tools-1.2.1.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [pyproject-fmt]: executing diffoscope
+[2024-05-11 05:15:21] INFO root fetch - processPackages [pyproject-fmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt-1.8.0.tar.gz tmp/pyproject_fmt-2.0.0.tar.gz --markdown 20240511/p/pyproject-fmt/1.8.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 05:15:21] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-11 05:15:21] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240511/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-11 05:15:21] INFO root fetch - processPackages [ccdt]: Downloading https://files.pythonhosted.org/packages/bf/88/0a8bde31365394e095dda74c8f4ec442ff47265c632929a84196b5192056/ccdt-2.1.99.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/3b/41/76197a59dc14d2df739cc6875859fcd827a560cce28f049fe1f7f27c1aa8/hc_log_tools-1.2.2.tar.gz
+[2024-05-11 05:15:21] INFO root fetch - processPackages [ccdt]: executing diffoscope
+[2024-05-11 05:15:21] INFO root fetch - processPackages [ccdt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccdt-2.1.98.tar.gz tmp/ccdt-2.1.99.tar.gz --markdown 20240511/c/ccdt/2.1.98-2.1.99/README.md --exclude *.pyd
+[2024-05-11 05:15:21] INFO root fetch - processPackages [hc-log-tools]: executing diffoscope
+[2024-05-11 05:15:21] INFO root fetch - processPackages [hc-log-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hc_log_tools-1.2.1.tar.gz tmp/hc_log_tools-1.2.2.tar.gz --markdown 20240511/h/hc-log-tools/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-11 05:15:21] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-11 05:15:21] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-11 05:15:21] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-11 05:15:21] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-1.8.0.tar.gz]
+[2024-05-11 05:15:21] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.0.tar.gz]
+[2024-05-11 05:15:21] INFO root fetch - main [MainThread]: End processing [pyproject-fmt]: success
+[2024-05-11 05:15:22] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.98.tar.gz]
+[2024-05-11 05:15:22] INFO root fetch - processPackages [ccdt]: Remove: archive file [/home/abi/fetcher/tmp/ccdt-2.1.99.tar.gz]
+[2024-05-11 05:15:22] INFO root fetch - main [MainThread]: End processing [ccdt]: success
+[2024-05-11 05:15:22] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.1.tar.gz]
+[2024-05-11 05:15:22] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.2.tar.gz]
+[2024-05-11 05:15:22] INFO root fetch - main [MainThread]: End processing [hc-log-tools]: success
+[2024-05-11 05:15:22] INFO root fetch - main [MainThread]: Store serial: [23156904]
