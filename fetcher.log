@@ -18911,3 +18911,42 @@
 [2024-05-11 17:33:05] INFO root fetch - processPackages [rotary-embedding-torch]: Remove: archive file [/home/abi/fetcher/tmp/rotary_embedding_torch-0.6.1.tar.gz]
 [2024-05-11 17:33:05] INFO root fetch - main [MainThread]: End processing [rotary-embedding-torch]: success
 [2024-05-11 17:33:05] INFO root fetch - main [MainThread]: Store serial: [23162302]
+[2024-05-11 17:35:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162302]
+[2024-05-11 17:35:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 17:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: apicat
+[2024-05-11 17:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sneerlessz
+[2024-05-11 17:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 17:35:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetry-moment
+[2024-05-11 17:35:13] INFO root fetch - processPackages [poetry-moment]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 17:35:13] INFO root fetch - processPackages [apicat]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 17:35:13] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-11 17:35:13] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/9b/e0/22cd37397aaead0dc7e3bb2b881a7bb097507159fa504101525325bb52e2/poetry_moment-0.0.3.tar.gz
+[2024-05-11 17:35:13] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/9a/1a/57fcc04cf9dbab26031c6c2030f33658e60e47abde3f1855a6be4efeec68/nonebot_plugin_ranfurrypic-1.1.0.tar.gz
+[2024-05-11 17:35:13] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/b5/62/a9f5c92608531098811bfed3d44190ee239b0e24998cb40464869b89cb71/apicat-0.0.3.tar.gz
+[2024-05-11 17:35:13] INFO root fetch - processPackages [sneerlessz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:35:14] INFO root fetch - processPackages [sneerlessz]: Downloading https://files.pythonhosted.org/packages/3c/6c/0017413fbb9995c6936736d4de816df8ceeb5cf335b8147133d02a4932cf/sneerlessz-1.1.tar.gz
+[2024-05-11 17:35:14] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/55/53/189435188ffdbe7d06d8599c87500a92e247c74136f49dc314f812d5e16a/apicat-0.0.4.tar.gz
+[2024-05-11 17:35:14] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/81/f5/26a55a7441f8b3617a88b9019534711d4acb8e4a3af9e37195f423bc50f5/nonebot_plugin_ranfurrypic-1.1.1.tar.gz
+[2024-05-11 17:35:14] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/2f/29/9bce5e369e84adbc389762acc3ceaafcf103928f700bacb42f7a24289f3b/poetry_moment-0.0.4.tar.gz
+[2024-05-11 17:35:14] INFO root fetch - processPackages [apicat]: executing diffoscope
+[2024-05-11 17:35:14] INFO root fetch - processPackages [apicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apicat-0.0.3.tar.gz tmp/apicat-0.0.4.tar.gz --markdown 20240511/a/apicat/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 17:35:14] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 17:35:14] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.1.0.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.1.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-11 17:35:14] INFO root fetch - processPackages [poetry-moment]: executing diffoscope
+[2024-05-11 17:35:14] INFO root fetch - processPackages [poetry-moment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_moment-0.0.3.tar.gz tmp/poetry_moment-0.0.4.tar.gz --markdown 20240511/p/poetry-moment/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 17:35:14] INFO root fetch - processPackages [sneerlessz]: Downloading https://files.pythonhosted.org/packages/9d/38/04ee7ed5069acfab2fce75b2c25034fc5e070ca3b42aadd59b634f4c3aeb/sneerlessz-2.1.tar.gz
+[2024-05-11 17:35:14] INFO root fetch - processPackages [sneerlessz]: executing diffoscope
+[2024-05-11 17:35:14] INFO root fetch - processPackages [sneerlessz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneerlessz-1.1.tar.gz tmp/sneerlessz-2.1.tar.gz --markdown 20240511/s/sneerlessz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:35:14] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.3.tar.gz]
+[2024-05-11 17:35:14] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.4.tar.gz]
+[2024-05-11 17:35:14] INFO root fetch - main [MainThread]: End processing [apicat]: success
+[2024-05-11 17:35:14] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.0.tar.gz]
+[2024-05-11 17:35:14] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.1.tar.gz]
+[2024-05-11 17:35:14] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 17:35:15] INFO root fetch - processPackages [sneerlessz]: Remove: archive file [/home/abi/fetcher/tmp/sneerlessz-1.1.tar.gz]
+[2024-05-11 17:35:15] INFO root fetch - processPackages [sneerlessz]: Remove: archive file [/home/abi/fetcher/tmp/sneerlessz-2.1.tar.gz]
+[2024-05-11 17:35:15] INFO root fetch - main [MainThread]: End processing [sneerlessz]: success
+[2024-05-11 17:35:15] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.3.tar.gz]
+[2024-05-11 17:35:15] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.4.tar.gz]
+[2024-05-11 17:35:15] INFO root fetch - main [MainThread]: End processing [poetry-moment]: success
+[2024-05-11 17:35:15] INFO root fetch - main [MainThread]: Store serial: [23162314]
