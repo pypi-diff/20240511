@@ -9655,3 +9655,20 @@
 [2024-05-11 06:27:20] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.1.tar.gz]
 [2024-05-11 06:27:20] INFO root fetch - main [MainThread]: End processing [pyproject-fmt]: success
 [2024-05-11 06:27:20] INFO root fetch - main [MainThread]: Store serial: [23157245]
+[2024-05-11 06:29:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157245]
+[2024-05-11 06:29:29] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 06:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdktf-cdktf-provider-azurerm
+[2024-05-11 06:29:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pynapse
+[2024-05-11 06:29:29] INFO root fetch - processPackages [Pynapse]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-11 06:29:29] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: New version: [9.0.8] Old Version: [9.0.7]
+[2024-05-11 06:29:29] INFO root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Downloading https://files.pythonhosted.org/packages/bf/17/c9386b4842b68525aae4b3da38fa0030881fa08061804f556c93dd424cda/cdktf-cdktf-provider-azurerm-9.0.7.tar.gz
+[2024-05-11 06:29:29] WARNING root fetch - processPackages [cdktf-cdktf-provider-azurerm]: Skipping package: exceeds size limit 31649071>=10485760
+[2024-05-11 06:29:29] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-azurerm] error
+[2024-05-11 06:29:29] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/ac/13/86eacc58cb6b3376b332d7bfb69aad493cbff48cc918ac91beb79889ed0e/pynapse-0.2.0.tar.gz
+[2024-05-11 06:29:29] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/ee/d6/b0caf8e27b4ec196bffd70ea21aac277c84f49c462939ce3729ae2929fa5/pynapse-0.3.0.tar.gz
+[2024-05-11 06:29:29] INFO root fetch - processPackages [Pynapse]: executing diffoscope
+[2024-05-11 06:29:29] INFO root fetch - processPackages [Pynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynapse-0.2.0.tar.gz tmp/pynapse-0.3.0.tar.gz --markdown 20240511/P/Pynapse/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-11 06:29:30] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.2.0.tar.gz]
+[2024-05-11 06:29:30] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.3.0.tar.gz]
+[2024-05-11 06:29:30] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
+[2024-05-11 06:29:30] INFO root fetch - main [MainThread]: Store serial: [23157251]
