@@ -18806,3 +18806,33 @@
 [2024-05-11 17:24:22] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
 [2024-05-11 17:24:22] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
 [2024-05-11 17:24:22] INFO root fetch - main [MainThread]: Store serial: [23162253]
+[2024-05-11 17:26:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162253]
+[2024-05-11 17:26:31] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:26:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 17:26:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2024-05-11 17:26:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infodesreg
+[2024-05-11 17:26:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.1.0] Old Version: [1.0.4]
+[2024-05-11 17:26:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/24/3d/1ae670abf99ac9fff996ad044e10b1c1fc9455a9bb723a393be3761ec1bf/nonebot_plugin_ranfurrypic-1.0.4.tar.gz
+[2024-05-11 17:26:31] INFO root fetch - processPackages [infodesreg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 17:26:31] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-11 17:26:31] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/f5/eb/ab3af7accfd723fd23d38ceaa2ddd5e105d4156b3cc172e4a7efb2be4342/infodesreg-0.0.7.tar.gz
+[2024-05-11 17:26:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/9a/1a/57fcc04cf9dbab26031c6c2030f33658e60e47abde3f1855a6be4efeec68/nonebot_plugin_ranfurrypic-1.1.0.tar.gz
+[2024-05-11 17:26:31] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-11 17:26:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 17:26:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.4.tar.gz tmp/nonebot_plugin_ranfurrypic-1.1.0.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.4-1.1.0/README.md --exclude *.pyd
+[2024-05-11 17:26:32] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/17/69/72f7895d14860cf05da8ce829334f6f4588aca72560ba8a39129955e1349/infodesreg-0.0.8.tar.gz
+[2024-05-11 17:26:32] INFO root fetch - processPackages [infodesreg]: executing diffoscope
+[2024-05-11 17:26:32] INFO root fetch - processPackages [infodesreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodesreg-0.0.7.tar.gz tmp/infodesreg-0.0.8.tar.gz --markdown 20240511/i/infodesreg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 17:26:32] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-11 17:26:32] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-11 17:26:32] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240511/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-11 17:26:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.4.tar.gz]
+[2024-05-11 17:26:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.1.0.tar.gz]
+[2024-05-11 17:26:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 17:26:32] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.7.tar.gz]
+[2024-05-11 17:26:32] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.8.tar.gz]
+[2024-05-11 17:26:32] INFO root fetch - main [MainThread]: End processing [infodesreg]: success
+[2024-05-11 17:26:33] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-11 17:26:33] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-11 17:26:33] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-11 17:26:33] INFO root fetch - main [MainThread]: Store serial: [23162262]
