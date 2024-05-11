@@ -10848,3 +10848,36 @@
 [2024-05-11 08:01:54] INFO root fetch - processPackages [LSDpy]: Remove: archive file [/home/abi/fetcher/tmp/lsdpy-0.4.7.tar.gz]
 [2024-05-11 08:01:54] INFO root fetch - main [MainThread]: End processing [LSDpy]: success
 [2024-05-11 08:01:54] INFO root fetch - main [MainThread]: Store serial: [23158090]
+[2024-05-11 08:03:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158090]
+[2024-05-11 08:04:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 08:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nondepravityz
+[2024-05-11 08:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: alibabacloud-cloudapi20160714
+[2024-05-11 08:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openai
+[2024-05-11 08:04:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lochaberz
+[2024-05-11 08:04:03] WARNING root fetch - processPackages [lochaberz]: Skipping, unable to determine old version
+[2024-05-11 08:04:03] INFO root fetch - main [MainThread]: End processing [lochaberz] error
+[2024-05-11 08:04:03] INFO root fetch - processPackages [nondepravityz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:04:03] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: New version: [4.0.2] Old Version: [4.0.1]
+[2024-05-11 08:04:03] INFO root fetch - processPackages [openai]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-11 08:04:03] INFO root fetch - processPackages [nondepravityz]: Downloading https://files.pythonhosted.org/packages/c7/3b/a4fbf293bec148c38ce952314e0a19087223fa742e75dac7e51697d75ec0/nondepravityz-1.1.tar.gz
+[2024-05-11 08:04:03] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Downloading https://files.pythonhosted.org/packages/06/14/f6dc1b5c9f29195384ce145f3d2daef988bf240b58e1da9b3c94b2d57b89/alibabacloud_cloudapi20160714-4.0.1.tar.gz
+[2024-05-11 08:04:03] INFO root fetch - processPackages [openai]: Downloading https://files.pythonhosted.org/packages/9a/25/578115b5b9cf35478ce098a8242ed82741e56b3452ebc171f7dc7b77c433/openai-1.8.0.tar.gz
+[2024-05-11 08:04:03] INFO root fetch - processPackages [nondepravityz]: Downloading https://files.pythonhosted.org/packages/3b/56/9ed28e4b1500edea212ac2297bb9a23baacdcf5cf03ab36985f248cce68b/nondepravityz-2.1.tar.gz
+[2024-05-11 08:04:04] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Downloading https://files.pythonhosted.org/packages/f6/e2/7f48e4aea8a6c2795d962f92296fec0a2b6329d84efdec495d2193974211/alibabacloud_cloudapi20160714-4.0.2.tar.gz
+[2024-05-11 08:04:04] INFO root fetch - processPackages [nondepravityz]: executing diffoscope
+[2024-05-11 08:04:04] INFO root fetch - processPackages [nondepravityz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nondepravityz-1.1.tar.gz tmp/nondepravityz-2.1.tar.gz --markdown 20240511/n/nondepravityz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:04:04] INFO root fetch - processPackages [openai]: Downloading https://files.pythonhosted.org/packages/98/0d/d97f8c264ba77978754751a83e5e27a7783a5389b8f18da384f616a43bb8/openai-1.9.0.tar.gz
+[2024-05-11 08:04:04] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: executing diffoscope
+[2024-05-11 08:04:04] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_cloudapi20160714-4.0.1.tar.gz tmp/alibabacloud_cloudapi20160714-4.0.2.tar.gz --markdown 20240511/a/alibabacloud-cloudapi20160714/4.0.1-4.0.2/README.md --exclude *.pyd
+[2024-05-11 08:04:04] INFO root fetch - processPackages [openai]: executing diffoscope
+[2024-05-11 08:04:04] INFO root fetch - processPackages [openai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openai-1.8.0.tar.gz tmp/openai-1.9.0.tar.gz --markdown 20240511/o/openai/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-11 08:04:04] INFO root fetch - processPackages [nondepravityz]: Remove: archive file [/home/abi/fetcher/tmp/nondepravityz-1.1.tar.gz]
+[2024-05-11 08:04:04] INFO root fetch - processPackages [nondepravityz]: Remove: archive file [/home/abi/fetcher/tmp/nondepravityz-2.1.tar.gz]
+[2024-05-11 08:04:04] INFO root fetch - main [MainThread]: End processing [nondepravityz]: success
+[2024-05-11 08:04:05] INFO root fetch - processPackages [openai]: Remove: archive file [/home/abi/fetcher/tmp/openai-1.8.0.tar.gz]
+[2024-05-11 08:04:05] INFO root fetch - processPackages [openai]: Remove: archive file [/home/abi/fetcher/tmp/openai-1.9.0.tar.gz]
+[2024-05-11 08:04:05] INFO root fetch - main [MainThread]: End processing [openai]: success
+[2024-05-11 08:04:06] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_cloudapi20160714-4.0.1.tar.gz]
+[2024-05-11 08:04:06] INFO root fetch - processPackages [alibabacloud-cloudapi20160714]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_cloudapi20160714-4.0.2.tar.gz]
+[2024-05-11 08:04:06] INFO root fetch - main [MainThread]: End processing [alibabacloud-cloudapi20160714]: success
+[2024-05-11 08:04:06] INFO root fetch - main [MainThread]: Store serial: [23158103]
