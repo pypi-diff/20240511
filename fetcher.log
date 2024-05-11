@@ -21943,3 +21943,18 @@
 [2024-05-11 20:54:04] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
 [2024-05-11 20:54:04] INFO root fetch - main [MainThread]: End processing [dektools]: success
 [2024-05-11 20:54:04] INFO root fetch - main [MainThread]: Store serial: [23163771]
+[2024-05-11 20:56:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163771]
+[2024-05-11 20:56:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: thimbleriggerz
+[2024-05-11 20:56:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-easy-schedule
+[2024-05-11 20:56:13] INFO root fetch - processPackages [thimbleriggerz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:56:13] WARNING root fetch - processPackages [django-easy-schedule]: Skipping, unable to determine old version
+[2024-05-11 20:56:13] INFO root fetch - main [MainThread]: End processing [django-easy-schedule] error
+[2024-05-11 20:56:13] INFO root fetch - processPackages [thimbleriggerz]: Downloading https://files.pythonhosted.org/packages/21/5a/6d12da22ecff04abec8bedca780d23314c7dd2c5f0438d3adb08b4cdadee/thimbleriggerz-1.1.tar.gz
+[2024-05-11 20:56:13] INFO root fetch - processPackages [thimbleriggerz]: Downloading https://files.pythonhosted.org/packages/c4/e3/3eb490be84e30c094ba3237967df454cad1791b6012a5862f795e02d8ab1/thimbleriggerz-2.1.tar.gz
+[2024-05-11 20:56:14] INFO root fetch - processPackages [thimbleriggerz]: executing diffoscope
+[2024-05-11 20:56:14] INFO root fetch - processPackages [thimbleriggerz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thimbleriggerz-1.1.tar.gz tmp/thimbleriggerz-2.1.tar.gz --markdown 20240511/t/thimbleriggerz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:56:14] INFO root fetch - processPackages [thimbleriggerz]: Remove: archive file [/home/abi/fetcher/tmp/thimbleriggerz-1.1.tar.gz]
+[2024-05-11 20:56:14] INFO root fetch - processPackages [thimbleriggerz]: Remove: archive file [/home/abi/fetcher/tmp/thimbleriggerz-2.1.tar.gz]
+[2024-05-11 20:56:14] INFO root fetch - main [MainThread]: End processing [thimbleriggerz]: success
+[2024-05-11 20:56:14] INFO root fetch - main [MainThread]: Store serial: [23163778]
