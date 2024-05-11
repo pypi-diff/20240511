@@ -11656,3 +11656,66 @@
 [2024-05-11 09:07:26] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715408609.tar.gz]
 [2024-05-11 09:07:26] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2024-05-11 09:07:26] INFO root fetch - main [MainThread]: Store serial: [23158542]
+[2024-05-11 09:09:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158542]
+[2024-05-11 09:09:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ngstoolkits
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: example-package-sundebin
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infrable
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: docopt-sh
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rcrypt
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ketacli
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: galileo-core
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-hub-nightly
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ketacli]: New version: [0.9] Old Version: [0.8]
+[2024-05-11 09:09:36] INFO root fetch - processPackages [tf-hub-nightly]: New version: [0.9.0.dev202008190006] Old Version: [0.9.0.dev202008180006]
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ngstoolkits]: New version: [1.0.0rc8] Old Version: [1.0.0rc7]
+[2024-05-11 09:09:36] WARNING root fetch - processPackages [rcrypt]: Skipping, unable to determine old version
+[2024-05-11 09:09:36] INFO root fetch - main [MainThread]: End processing [rcrypt] error
+[2024-05-11 09:09:36] INFO root fetch - processPackages [ketacli]: Downloading https://files.pythonhosted.org/packages/26/21/56d65bb9c164a4fda18b7374277a8c8235463d0e639ec6f3b77630516473/ketacli-0.8.tar.gz
+[2024-05-11 09:09:36] INFO root fetch - processPackages [docopt-sh]: New version: [2.0.0a3] Old Version: [2.0.0a2]
+[2024-05-11 09:09:36] INFO root fetch - processPackages [galileo-core]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 09:09:36] WARNING root fetch - processPackages [example-package-sundebin]: Skipping, unable to determine old version
+[2024-05-11 09:09:36] INFO root fetch - main [MainThread]: End processing [example-package-sundebin] error
+[2024-05-11 09:09:36] INFO root fetch - processPackages [infrable]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 09:09:36] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/e8/6b/02811fcd79aec590e7355647130c822f1bd53092a205ce986e6df7364f52/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl
+[2024-05-11 09:09:36] INFO root fetch - processPackages [infrable]: Downloading https://files.pythonhosted.org/packages/27/e3/9758cb56ce91f7499aa307bc8c521c22d2990adf3fabbd8ae8aefac40c42/infrable-0.1.8.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ngstoolkits]: Downloading https://files.pythonhosted.org/packages/0c/cb/ac434020be07784e11960fecfbc8f6470e6815735e784d07bf884ef6eda1/ngstoolkits-1.0.0rc7.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [docopt-sh]: Downloading https://files.pythonhosted.org/packages/44/70/55605815f9e89299282b65930f4204e99b2e1ebddb5b6353e21754d36ceb/docopt_sh-2.0.0a2.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/6f/f0/5826385abd4248ad65f773e78c48ef383421e75e5cd4f97c46e0072ad4dd/galileo_core-0.9.2.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ketacli]: Downloading https://files.pythonhosted.org/packages/a9/f4/d17557b1ae241bb7d49f310e2d6dca5c0bc3fae2f46dd05d76b0ac740d16/ketacli-0.9.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [tf-hub-nightly]: Downloading https://files.pythonhosted.org/packages/d1/9a/6b02d0906847e11386093420119d147f7306d7a9cad79e8e575a9d29ae76/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ketacli]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ketacli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ketacli-0.8.tar.gz tmp/ketacli-0.9.tar.gz --markdown 20240511/k/ketacli/0.8-0.9/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [tf-hub-nightly]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [tf-hub-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip --markdown 20240511/t/tf-hub-nightly/0.9.0.dev202008180006-0.9.0.dev202008190006/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [infrable]: Downloading https://files.pythonhosted.org/packages/c6/b7/929866de2fa6d2dd8f5310bedf07a1513c40236c5be4a9697505488b59aa/infrable-0.1.9.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ngstoolkits]: Downloading https://files.pythonhosted.org/packages/7b/0c/2dcda17fab3da25f1ee884bbce77517dcaf5f864247c2d27619c9ea37bcc/ngstoolkits-1.0.0rc8.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [docopt-sh]: Downloading https://files.pythonhosted.org/packages/f8/78/251efbc8be99a3483a27aae6c167493063e83d81bd5c25bcab702f7fa885/docopt_sh-2.0.0a3.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [galileo-core]: Downloading https://files.pythonhosted.org/packages/f0/c7/e023c318f23c58eb11b4ed5e1d891b23890a3438a17d3d1648dbecbc855d/galileo_core-0.9.3.tar.gz
+[2024-05-11 09:09:37] INFO root fetch - processPackages [infrable]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [infrable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infrable-0.1.8.tar.gz tmp/infrable-0.1.9.tar.gz --markdown 20240511/i/infrable/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ngstoolkits]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ngstoolkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngstoolkits-1.0.0rc7.tar.gz tmp/ngstoolkits-1.0.0rc8.tar.gz --markdown 20240511/n/ngstoolkits/1.0.0rc7-1.0.0rc8/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [docopt-sh]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [docopt-sh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docopt_sh-2.0.0a2.tar.gz tmp/docopt_sh-2.0.0a3.tar.gz --markdown 20240511/d/docopt-sh/2.0.0a2-2.0.0a3/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [galileo-core]: executing diffoscope
+[2024-05-11 09:09:37] INFO root fetch - processPackages [galileo-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/galileo_core-0.9.2.tar.gz tmp/galileo_core-0.9.3.tar.gz --markdown 20240511/g/galileo-core/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ketacli]: Remove: archive file [/home/abi/fetcher/tmp/ketacli-0.8.tar.gz]
+[2024-05-11 09:09:37] INFO root fetch - processPackages [ketacli]: Remove: archive file [/home/abi/fetcher/tmp/ketacli-0.9.tar.gz]
+[2024-05-11 09:09:37] INFO root fetch - main [MainThread]: End processing [ketacli]: success
+[2024-05-11 09:09:38] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008180006-py2.py3-none-any.whl.zip]
+[2024-05-11 09:09:38] INFO root fetch - processPackages [tf-hub-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_hub_nightly-0.9.0.dev202008190006-py2.py3-none-any.whl.zip]
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [tf-hub-nightly]: success
+[2024-05-11 09:09:38] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.9.2.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - processPackages [galileo-core]: Remove: archive file [/home/abi/fetcher/tmp/galileo_core-0.9.3.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [galileo-core]: success
+[2024-05-11 09:09:38] INFO root fetch - processPackages [infrable]: Remove: archive file [/home/abi/fetcher/tmp/infrable-0.1.8.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - processPackages [infrable]: Remove: archive file [/home/abi/fetcher/tmp/infrable-0.1.9.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [infrable]: success
+[2024-05-11 09:09:38] INFO root fetch - processPackages [docopt-sh]: Remove: archive file [/home/abi/fetcher/tmp/docopt_sh-2.0.0a2.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - processPackages [docopt-sh]: Remove: archive file [/home/abi/fetcher/tmp/docopt_sh-2.0.0a3.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [docopt-sh]: success
+[2024-05-11 09:09:38] INFO root fetch - processPackages [ngstoolkits]: Remove: archive file [/home/abi/fetcher/tmp/ngstoolkits-1.0.0rc7.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - processPackages [ngstoolkits]: Remove: archive file [/home/abi/fetcher/tmp/ngstoolkits-1.0.0rc8.tar.gz]
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [ngstoolkits]: success
+[2024-05-11 09:09:38] INFO root fetch - main [MainThread]: Store serial: [23158567]
