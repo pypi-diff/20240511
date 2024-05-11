@@ -19441,3 +19441,51 @@
 [2024-05-11 18:04:07] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
 [2024-05-11 18:04:07] INFO root fetch - main [MainThread]: End processing [openadapt]: success
 [2024-05-11 18:04:07] INFO root fetch - main [MainThread]: Store serial: [23162501]
+[2024-05-11 18:06:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162501]
+[2024-05-11 18:06:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 18:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: squirmsz
+[2024-05-11 18:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bcp47
+[2024-05-11 18:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mke-sculib
+[2024-05-11 18:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: imaparms
+[2024-05-11 18:06:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: TINTOlib
+[2024-05-11 18:06:16] INFO root fetch - processPackages [TINTOlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 18:06:16] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/88/66/5ff78a7354d96c5cb6040119eab2be915cdf9e9570f5bf18b1c2dba81c64/tintolib-0.0.8.tar.gz
+[2024-05-11 18:06:16] INFO root fetch - processPackages [squirmsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:06:16] INFO root fetch - processPackages [mke-sculib]: New version: [2.5.0] Old Version: [2.4.9]
+[2024-05-11 18:06:16] INFO root fetch - processPackages [imaparms]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-05-11 18:06:16] INFO root fetch - processPackages [bcp47]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 18:06:16] INFO root fetch - processPackages [squirmsz]: Downloading https://files.pythonhosted.org/packages/f1/ef/2451e409aa28963c79e9644cb07d4cc6a5a7da249a16417e0254493a5932/squirmsz-1.1.tar.gz
+[2024-05-11 18:06:16] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/0b/68/247b1c631da97d2abc29625af838c0405fb3e749788a65abcc1f8b5d8094/mke_sculib-2.4.9.tar.gz
+[2024-05-11 18:06:16] INFO root fetch - processPackages [bcp47]: Downloading https://files.pythonhosted.org/packages/e9/e2/5d9560dba7b272281edf2bed3c953c03d425b6d84af339a967475de068c7/bcp47-0.0.4.tar.gz
+[2024-05-11 18:06:16] INFO root fetch - processPackages [imaparms]: Downloading https://files.pythonhosted.org/packages/4a/1c/135ec401a92da65a6b330b7a558cf73ed9fcebcb2174490636ad60062412/imaparms-2.6.0.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [squirmsz]: Downloading https://files.pythonhosted.org/packages/8a/9f/af2694ac37aa462da6720e79e349c394698ba594e1fc636141a12628e1f8/squirmsz-2.1.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/c4/27/a91d5cfaf102a55a2a1c9d05c61fa9b4e7a94ef94ddb79a837edafdb6324/tintolib-0.0.9.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [bcp47]: Downloading https://files.pythonhosted.org/packages/49/86/4c4421935d6035d36c14cbc26849c75a1c1ed9f672676cd7ecc8e8e15fb6/bcp47-0.0.5.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/3f/46/b55a8a7e7140ddf851152aef6c19651fe60bcb0bc7f7370b045a1338af19/mke_sculib-2.5.0.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [squirmsz]: executing diffoscope
+[2024-05-11 18:06:17] INFO root fetch - processPackages [squirmsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/squirmsz-1.1.tar.gz tmp/squirmsz-2.1.tar.gz --markdown 20240511/s/squirmsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:06:17] INFO root fetch - processPackages [bcp47]: executing diffoscope
+[2024-05-11 18:06:17] INFO root fetch - processPackages [bcp47]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcp47-0.0.4.tar.gz tmp/bcp47-0.0.5.tar.gz --markdown 20240511/b/bcp47/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 18:06:17] INFO root fetch - processPackages [imaparms]: Downloading https://files.pythonhosted.org/packages/eb/c2/6094c574c0114541ff302ae522f5141e978c63bb027ccaba88edfe6ef03b/imaparms-2.6.1.tar.gz
+[2024-05-11 18:06:17] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-05-11 18:06:17] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.4.9.tar.gz tmp/mke_sculib-2.5.0.tar.gz --markdown 20240511/m/mke-sculib/2.4.9-2.5.0/README.md --exclude *.pyd
+[2024-05-11 18:06:17] INFO root fetch - processPackages [imaparms]: executing diffoscope
+[2024-05-11 18:06:17] INFO root fetch - processPackages [imaparms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imaparms-2.6.0.tar.gz tmp/imaparms-2.6.1.tar.gz --markdown 20240511/i/imaparms/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-05-11 18:06:17] INFO root fetch - processPackages [TINTOlib]: executing diffoscope
+[2024-05-11 18:06:17] INFO root fetch - processPackages [TINTOlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tintolib-0.0.8.tar.gz tmp/tintolib-0.0.9.tar.gz --markdown 20240511/T/TINTOlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:06:17] INFO root fetch - processPackages [squirmsz]: Remove: archive file [/home/abi/fetcher/tmp/squirmsz-1.1.tar.gz]
+[2024-05-11 18:06:17] INFO root fetch - processPackages [squirmsz]: Remove: archive file [/home/abi/fetcher/tmp/squirmsz-2.1.tar.gz]
+[2024-05-11 18:06:17] INFO root fetch - main [MainThread]: End processing [squirmsz]: success
+[2024-05-11 18:06:17] INFO root fetch - processPackages [bcp47]: Remove: archive file [/home/abi/fetcher/tmp/bcp47-0.0.4.tar.gz]
+[2024-05-11 18:06:17] INFO root fetch - processPackages [bcp47]: Remove: archive file [/home/abi/fetcher/tmp/bcp47-0.0.5.tar.gz]
+[2024-05-11 18:06:17] INFO root fetch - main [MainThread]: End processing [bcp47]: success
+[2024-05-11 18:06:18] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.4.9.tar.gz]
+[2024-05-11 18:06:18] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.0.tar.gz]
+[2024-05-11 18:06:18] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-05-11 18:06:18] INFO root fetch - processPackages [imaparms]: Remove: archive file [/home/abi/fetcher/tmp/imaparms-2.6.0.tar.gz]
+[2024-05-11 18:06:18] INFO root fetch - processPackages [imaparms]: Remove: archive file [/home/abi/fetcher/tmp/imaparms-2.6.1.tar.gz]
+[2024-05-11 18:06:18] INFO root fetch - main [MainThread]: End processing [imaparms]: success
+[2024-05-11 18:06:26] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.8.tar.gz]
+[2024-05-11 18:06:26] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
+[2024-05-11 18:06:26] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
+[2024-05-11 18:06:26] INFO root fetch - main [MainThread]: Store serial: [23162513]
