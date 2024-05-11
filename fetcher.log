@@ -3347,3 +3347,36 @@
 [2024-05-11 02:59:08] INFO root fetch - processPackages [openpolicedata]: Remove: archive file [/home/abi/fetcher/tmp/openpolicedata-0.7.tar.gz]
 [2024-05-11 02:59:08] INFO root fetch - main [MainThread]: End processing [openpolicedata]: success
 [2024-05-11 02:59:08] INFO root fetch - main [MainThread]: Store serial: [23154991]
+[2024-05-11 03:01:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154991]
+[2024-05-11 03:01:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BunkrrUploader
+[2024-05-11 03:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hydroqc2mqtt
+[2024-05-11 03:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-loom
+[2024-05-11 03:01:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: matchcode-toolkit
+[2024-05-11 03:01:18] INFO root fetch - processPackages [matchcode-toolkit]: New version: [5.1.0] Old Version: [5.0.0]
+[2024-05-11 03:01:18] INFO root fetch - processPackages [dbt-loom]: New version: [0.5.3] Old Version: [0.5.2]
+[2024-05-11 03:01:18] INFO root fetch - processPackages [hydroqc2mqtt]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-05-11 03:01:18] WARNING root fetch - processPackages [BunkrrUploader]: Skipping, unable to determine old version
+[2024-05-11 03:01:18] INFO root fetch - main [MainThread]: End processing [BunkrrUploader] error
+[2024-05-11 03:01:18] INFO root fetch - processPackages [hydroqc2mqtt]: Downloading https://files.pythonhosted.org/packages/dd/84/c1593b38b013cc27274768ab48c73de079c0e4f084006c69090e982beafc/hydroqc2mqtt-1.2.0.tar.gz
+[2024-05-11 03:01:18] INFO root fetch - processPackages [matchcode-toolkit]: Downloading https://files.pythonhosted.org/packages/05/6a/dd421e2160066a24e0bd0fcdace4dd928f0a3e55c28b321f8b9d23d3dabd/matchcode_toolkit-5.0.0.tar.gz
+[2024-05-11 03:01:18] INFO root fetch - processPackages [dbt-loom]: Downloading https://files.pythonhosted.org/packages/5f/f0/52b357c2347a326aa9dd898a706e0e8e1db0fff8611313582f70a97c5253/dbt_loom-0.5.2.tar.gz
+[2024-05-11 03:01:18] INFO root fetch - processPackages [dbt-loom]: Downloading https://files.pythonhosted.org/packages/63/34/3d9713592f921fa43874416adf3489a5878a001afa9a888c50ac3f83313d/dbt_loom-0.5.3.tar.gz
+[2024-05-11 03:01:19] INFO root fetch - processPackages [hydroqc2mqtt]: Downloading https://files.pythonhosted.org/packages/0d/94/9842c73d130a12c9332fbbeaa9ab16b022d2b4160073e0484d49a69d0401/hydroqc2mqtt-1.3.0.tar.gz
+[2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: Downloading https://files.pythonhosted.org/packages/31/6c/66022fdf320e778d2ad9e541e20e5eeb1e33ceb177441c4328b8d4a0f2d7/matchcode_toolkit-5.1.0.tar.gz
+[2024-05-11 03:01:19] INFO root fetch - processPackages [dbt-loom]: executing diffoscope
+[2024-05-11 03:01:19] INFO root fetch - processPackages [dbt-loom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_loom-0.5.2.tar.gz tmp/dbt_loom-0.5.3.tar.gz --markdown 20240511/d/dbt-loom/0.5.2-0.5.3/README.md --exclude *.pyd
+[2024-05-11 03:01:19] INFO root fetch - processPackages [hydroqc2mqtt]: executing diffoscope
+[2024-05-11 03:01:19] INFO root fetch - processPackages [hydroqc2mqtt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydroqc2mqtt-1.2.0.tar.gz tmp/hydroqc2mqtt-1.3.0.tar.gz --markdown 20240511/h/hydroqc2mqtt/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: executing diffoscope
+[2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matchcode_toolkit-5.0.0.tar.gz tmp/matchcode_toolkit-5.1.0.tar.gz --markdown 20240511/m/matchcode-toolkit/5.0.0-5.1.0/README.md --exclude *.pyd
+[2024-05-11 03:01:19] INFO root fetch - processPackages [dbt-loom]: Remove: archive file [/home/abi/fetcher/tmp/dbt_loom-0.5.2.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - processPackages [dbt-loom]: Remove: archive file [/home/abi/fetcher/tmp/dbt_loom-0.5.3.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - main [MainThread]: End processing [dbt-loom]: success
+[2024-05-11 03:01:19] INFO root fetch - processPackages [hydroqc2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/hydroqc2mqtt-1.2.0.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - processPackages [hydroqc2mqtt]: Remove: archive file [/home/abi/fetcher/tmp/hydroqc2mqtt-1.3.0.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - main [MainThread]: End processing [hydroqc2mqtt]: success
+[2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/matchcode_toolkit-5.0.0.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/matchcode_toolkit-5.1.0.tar.gz]
+[2024-05-11 03:01:19] INFO root fetch - main [MainThread]: End processing [matchcode-toolkit]: success
+[2024-05-11 03:01:19] INFO root fetch - main [MainThread]: Store serial: [23155005]
