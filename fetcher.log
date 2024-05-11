@@ -9409,3 +9409,27 @@
 [2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.2.0.tar.gz]
 [2024-05-11 05:58:49] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
 [2024-05-11 05:58:49] INFO root fetch - main [MainThread]: Store serial: [23157152]
+[2024-05-11 06:00:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157152]
+[2024-05-11 06:00:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 06:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: memoriterz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sklearn-viz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: etherialisedz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [sklearn-viz]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-11 06:00:59] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/97/54/5e4bf17b4172a71a5255bdbdb0782ad91a138bc153b64e5d4f44f79c16b2/sklearn_viz-0.6.1.tar.gz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [memoriterz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:00:59] WARNING root fetch - processPackages [etherialisedz]: Skipping, unable to determine old version
+[2024-05-11 06:00:59] INFO root fetch - main [MainThread]: End processing [etherialisedz] error
+[2024-05-11 06:00:59] INFO root fetch - processPackages [memoriterz]: Downloading https://files.pythonhosted.org/packages/ae/a4/82f0934e7cd1a63ad7a9d43e6aa9a3ed7b78cd743d69b0935b57df3e456c/memoriterz-1.1.tar.gz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/3f/51/dac552c80f023ebf17e56724efecf5d448a22621a892ea24faa78b669414/sklearn_viz-0.6.2.tar.gz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [sklearn-viz]: executing diffoscope
+[2024-05-11 06:00:59] INFO root fetch - processPackages [sklearn-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_viz-0.6.1.tar.gz tmp/sklearn_viz-0.6.2.tar.gz --markdown 20240511/s/sklearn-viz/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-11 06:00:59] INFO root fetch - processPackages [memoriterz]: Downloading https://files.pythonhosted.org/packages/7d/fb/ecd9217d9c2f2bf46915abf61b6f0af7a155865b18ecb9d59f1d581b6603/memoriterz-2.1.tar.gz
+[2024-05-11 06:00:59] INFO root fetch - processPackages [memoriterz]: executing diffoscope
+[2024-05-11 06:00:59] INFO root fetch - processPackages [memoriterz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/memoriterz-1.1.tar.gz tmp/memoriterz-2.1.tar.gz --markdown 20240511/m/memoriterz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:01:00] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.1.tar.gz]
+[2024-05-11 06:01:00] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.2.tar.gz]
+[2024-05-11 06:01:00] INFO root fetch - main [MainThread]: End processing [sklearn-viz]: success
+[2024-05-11 06:01:00] INFO root fetch - processPackages [memoriterz]: Remove: archive file [/home/abi/fetcher/tmp/memoriterz-1.1.tar.gz]
+[2024-05-11 06:01:00] INFO root fetch - processPackages [memoriterz]: Remove: archive file [/home/abi/fetcher/tmp/memoriterz-2.1.tar.gz]
+[2024-05-11 06:01:00] INFO root fetch - main [MainThread]: End processing [memoriterz]: success
+[2024-05-11 06:01:00] INFO root fetch - main [MainThread]: Store serial: [23157157]
