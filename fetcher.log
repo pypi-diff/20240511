@@ -13798,3 +13798,69 @@
 [2024-05-11 11:51:01] INFO root fetch - processPackages [xtuner]: Remove: archive file [/home/abi/fetcher/tmp/xtuner-0.1.9.tar.gz]
 [2024-05-11 11:51:01] INFO root fetch - main [MainThread]: End processing [xtuner]: success
 [2024-05-11 11:51:01] INFO root fetch - main [MainThread]: Store serial: [23159726]
+[2024-05-11 11:53:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159726]
+[2024-05-11 11:53:11] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pneumologyz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydantic-xml
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cap-tools
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: port-pulumi
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: toycv
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tabulous
+[2024-05-11 11:53:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mteb
+[2024-05-11 11:53:11] INFO root fetch - processPackages [pneumologyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [port-pulumi]: New version: [2.0.0] Old Version: [1.9.1]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [toycv]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [cap-tools]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [tabulous]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [pydantic-xml]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [mteb]: New version: [1.8.8] Old Version: [1.8.7]
+[2024-05-11 11:53:11] INFO root fetch - processPackages [pneumologyz]: Downloading https://files.pythonhosted.org/packages/e7/b1/66dcc97cc8e08caa2cd39ad9bfc58f703100b39d7e22570888a02c8613d2/pneumologyz-1.1.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [port-pulumi]: Downloading https://files.pythonhosted.org/packages/ea/2a/ec281ecca97eed4407ef53b83fca5b3f239ff640429119e3e1b5bd5fb948/port_pulumi-1.9.1.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [pydantic-xml]: Downloading https://files.pythonhosted.org/packages/cc/be/9e9054a9759582e735e26863336d564810782e4579e58cad8d9846304f59/pydantic_xml-2.9.1.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [cap-tools]: Downloading https://files.pythonhosted.org/packages/91/31/14f4f1e68338cfb114e2f52b57c95f2e1f0f6a20aac77eae96af31bf9855/cap_tools-1.0.0.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/10/28/83def78ee538d26e1efa062db59230d7e7632d5d19508381b9711f6fdc0f/toycv-0.3.2.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [tabulous]: Downloading https://files.pythonhosted.org/packages/47/76/4f371c912d5285aed95afd3fbf75090ba28d7672f8aea1d787bd0c874941/tabulous-0.5.6.tar.gz
+[2024-05-11 11:53:11] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/d7/6c/f7f0c5fb933ec8f6a87f72f30609b61a95fef5aad9b3828e661c9d8cf855/mteb-1.8.7.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pneumologyz]: Downloading https://files.pythonhosted.org/packages/ee/a8/d0b4f5ff6f1f7739964ea50e9ac4ea9092a85c10a0b427ec94db61352fdb/pneumologyz-2.1.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [cap-tools]: Downloading https://files.pythonhosted.org/packages/d0/18/abbbfc4a2a2498e95fc77e590f2deda47d2b6a483b7c95d395654141ff4f/cap_tools-1.1.0.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pydantic-xml]: Downloading https://files.pythonhosted.org/packages/2c/06/6e537e2196b729c34bd1ff1c22b02f46e86832309fff92def091015062b0/pydantic_xml-2.9.2.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [port-pulumi]: Downloading https://files.pythonhosted.org/packages/94/68/0757345bfbe8b3a38e22fa6de25f07fa1f1154ea25d9575f049b7785a0f7/port_pulumi-2.0.0.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/36/bc/be2236a09fa99efdb3676bcd704f14b6b7237e87b946a7faf18abe1ab8be/toycv-0.3.4.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [tabulous]: Downloading https://files.pythonhosted.org/packages/b4/dc/f6386f9c18ef732e832f0ae0e808804602ca9d95facc4c723dbfb9c59750/tabulous-0.5.7.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pneumologyz]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pneumologyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pneumologyz-1.1.tar.gz tmp/pneumologyz-2.1.tar.gz --markdown 20240511/p/pneumologyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [cap-tools]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [cap-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cap_tools-1.0.0.tar.gz tmp/cap_tools-1.1.0.tar.gz --markdown 20240511/c/cap-tools/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pydantic-xml]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pydantic-xml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydantic_xml-2.9.1.tar.gz tmp/pydantic_xml-2.9.2.tar.gz --markdown 20240511/p/pydantic-xml/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [toycv]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [toycv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toycv-0.3.2.tar.gz tmp/toycv-0.3.4.tar.gz --markdown 20240511/t/toycv/0.3.2-0.3.4/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [port-pulumi]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [port-pulumi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/port_pulumi-1.9.1.tar.gz tmp/port_pulumi-2.0.0.tar.gz --markdown 20240511/p/port-pulumi/1.9.1-2.0.0/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/67/03/34ece901f53f12b3005b0a989c7feaee38cf202c3f4f5ee2b36118cf93b4/mteb-1.8.8.tar.gz
+[2024-05-11 11:53:12] INFO root fetch - processPackages [tabulous]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [tabulous]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tabulous-0.5.6.tar.gz tmp/tabulous-0.5.7.tar.gz --markdown 20240511/t/tabulous/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-11 11:53:12] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.8.7.tar.gz tmp/mteb-1.8.8.tar.gz --markdown 20240511/m/mteb/1.8.7-1.8.8/README.md --exclude *.pyd
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pneumologyz]: Remove: archive file [/home/abi/fetcher/tmp/pneumologyz-1.1.tar.gz]
+[2024-05-11 11:53:12] INFO root fetch - processPackages [pneumologyz]: Remove: archive file [/home/abi/fetcher/tmp/pneumologyz-2.1.tar.gz]
+[2024-05-11 11:53:12] INFO root fetch - main [MainThread]: End processing [pneumologyz]: success
+[2024-05-11 11:53:13] INFO root fetch - processPackages [pydantic-xml]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_xml-2.9.1.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - processPackages [pydantic-xml]: Remove: archive file [/home/abi/fetcher/tmp/pydantic_xml-2.9.2.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - main [MainThread]: End processing [pydantic-xml]: success
+[2024-05-11 11:53:13] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.2.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.4.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - main [MainThread]: End processing [toycv]: success
+[2024-05-11 11:53:13] INFO root fetch - processPackages [cap-tools]: Remove: archive file [/home/abi/fetcher/tmp/cap_tools-1.0.0.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - processPackages [cap-tools]: Remove: archive file [/home/abi/fetcher/tmp/cap_tools-1.1.0.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - main [MainThread]: End processing [cap-tools]: success
+[2024-05-11 11:53:13] INFO root fetch - processPackages [port-pulumi]: Remove: archive file [/home/abi/fetcher/tmp/port_pulumi-1.9.1.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - processPackages [port-pulumi]: Remove: archive file [/home/abi/fetcher/tmp/port_pulumi-2.0.0.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - main [MainThread]: End processing [port-pulumi]: success
+[2024-05-11 11:53:13] INFO root fetch - processPackages [tabulous]: Remove: archive file [/home/abi/fetcher/tmp/tabulous-0.5.6.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - processPackages [tabulous]: Remove: archive file [/home/abi/fetcher/tmp/tabulous-0.5.7.tar.gz]
+[2024-05-11 11:53:13] INFO root fetch - main [MainThread]: End processing [tabulous]: success
+[2024-05-11 11:53:15] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.7.tar.gz]
+[2024-05-11 11:53:15] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.8.tar.gz]
+[2024-05-11 11:53:15] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-11 11:53:15] INFO root fetch - main [MainThread]: Store serial: [23159744]
