@@ -13864,3 +13864,33 @@
 [2024-05-11 11:53:15] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.8.tar.gz]
 [2024-05-11 11:53:15] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-11 11:53:15] INFO root fetch - main [MainThread]: Store serial: [23159744]
+[2024-05-11 11:55:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159744]
+[2024-05-11 11:55:24] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alibabacloud-eventbridge20200401
+[2024-05-11 11:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: caudillosz
+[2024-05-11 11:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mtg-card-api
+[2024-05-11 11:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: audio-recaptchav2-solver
+[2024-05-11 11:55:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: team-14-lib-version
+[2024-05-11 11:55:24] WARNING root fetch - processPackages [team-14-lib-version]: Skipping, unable to determine old version
+[2024-05-11 11:55:24] INFO root fetch - main [MainThread]: End processing [team-14-lib-version] error
+[2024-05-11 11:55:24] INFO root fetch - processPackages [mtg-card-api]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 11:55:24] INFO root fetch - processPackages [mtg-card-api]: Downloading https://files.pythonhosted.org/packages/36/34/13aa2ef02a484222d26260625238e59d66c85c529e577a0e95edd0c4eb32/mtg_card_api-0.1.1.tar.gz
+[2024-05-11 11:55:24] WARNING root fetch - processPackages [caudillosz]: Skipping, unable to determine old version
+[2024-05-11 11:55:24] INFO root fetch - main [MainThread]: End processing [caudillosz] error
+[2024-05-11 11:55:24] WARNING root fetch - processPackages [audio-recaptchav2-solver]: Skipping, unable to determine old version
+[2024-05-11 11:55:24] INFO root fetch - main [MainThread]: End processing [audio-recaptchav2-solver] error
+[2024-05-11 11:55:24] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: New version: [4.1.0] Old Version: [4.0.1]
+[2024-05-11 11:55:24] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: Downloading https://files.pythonhosted.org/packages/6a/86/2b366cb634ff6eefcd06945b6db5df1e341b6c0aa5b9d4f4eac7ddc9c3a8/alibabacloud_eventbridge20200401-4.0.1.tar.gz
+[2024-05-11 11:55:24] INFO root fetch - processPackages [mtg-card-api]: Downloading https://files.pythonhosted.org/packages/50/85/8dd287b69f0d8facad41d8209d4c42ed3e2196ffeab3e9db2477de23a148/mtg_card_api-0.1.2.tar.gz
+[2024-05-11 11:55:24] INFO root fetch - processPackages [mtg-card-api]: executing diffoscope
+[2024-05-11 11:55:24] INFO root fetch - processPackages [mtg-card-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mtg_card_api-0.1.1.tar.gz tmp/mtg_card_api-0.1.2.tar.gz --markdown 20240511/m/mtg-card-api/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 11:55:25] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: Downloading https://files.pythonhosted.org/packages/b4/b0/f581471c875d2260d3729c558681988fa623cf7d5afd1b43f60800fbfaea/alibabacloud_eventbridge20200401-4.1.0.tar.gz
+[2024-05-11 11:55:25] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: executing diffoscope
+[2024-05-11 11:55:25] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_eventbridge20200401-4.0.1.tar.gz tmp/alibabacloud_eventbridge20200401-4.1.0.tar.gz --markdown 20240511/a/alibabacloud-eventbridge20200401/4.0.1-4.1.0/README.md --exclude *.pyd
+[2024-05-11 11:55:25] INFO root fetch - processPackages [mtg-card-api]: Remove: archive file [/home/abi/fetcher/tmp/mtg_card_api-0.1.1.tar.gz]
+[2024-05-11 11:55:25] INFO root fetch - processPackages [mtg-card-api]: Remove: archive file [/home/abi/fetcher/tmp/mtg_card_api-0.1.2.tar.gz]
+[2024-05-11 11:55:25] INFO root fetch - main [MainThread]: End processing [mtg-card-api]: success
+[2024-05-11 11:55:26] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eventbridge20200401-4.0.1.tar.gz]
+[2024-05-11 11:55:26] INFO root fetch - processPackages [alibabacloud-eventbridge20200401]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_eventbridge20200401-4.1.0.tar.gz]
+[2024-05-11 11:55:26] INFO root fetch - main [MainThread]: End processing [alibabacloud-eventbridge20200401]: success
+[2024-05-11 11:55:26] INFO root fetch - main [MainThread]: Store serial: [23159761]
