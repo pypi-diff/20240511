@@ -22650,3 +22650,18 @@
 [2024-05-11 21:44:26] INFO root fetch - processPackages [energy-assistant]: Remove: archive file [/home/abi/fetcher/tmp/energy_assistant-0.1.7.tar.gz]
 [2024-05-11 21:44:26] INFO root fetch - main [MainThread]: End processing [energy-assistant]: success
 [2024-05-11 21:44:26] INFO root fetch - main [MainThread]: Store serial: [23164059]
+[2024-05-11 21:46:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164059]
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 21:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: react-iq
+[2024-05-11 21:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hydrate-minio-weaviate
+[2024-05-11 21:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hydrate-minio-weaviate
+[2024-05-11 21:46:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-alchemy
+[2024-05-11 21:46:35] WARNING root fetch - processPackages [ai-alchemy]: Skipping, unable to determine old version
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: End processing [ai-alchemy] error
+[2024-05-11 21:46:35] WARNING root fetch - processPackages [hydrate-minio-weaviate]: Skipping, unable to determine old version
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: End processing [hydrate-minio-weaviate] error
+[2024-05-11 21:46:35] WARNING root fetch - processPackages [hydrate-minio-weaviate]: Skipping, unable to determine old version
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: End processing [hydrate-minio-weaviate] error
+[2024-05-11 21:46:35] WARNING root fetch - processPackages [react-iq]: Skipping, unable to determine old version
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: End processing [react-iq] error
+[2024-05-11 21:46:35] INFO root fetch - main [MainThread]: Store serial: [23164074]
