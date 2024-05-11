@@ -17448,3 +17448,36 @@
 [2024-05-11 15:54:48] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.1.0-py3-none-manylinux1_x86_64.whl.zip]
 [2024-05-11 15:54:48] INFO root fetch - main [MainThread]: End processing [pyopenhc]: success
 [2024-05-11 15:54:48] INFO root fetch - main [MainThread]: Store serial: [23161532]
+[2024-05-11 15:56:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161532]
+[2024-05-11 15:56:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revolutioneeringz
+[2024-05-11 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyTgCrypto
+[2024-05-11 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tensordict-nightly
+[2024-05-11 15:56:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gkj-homeautomation
+[2024-05-11 15:56:57] WARNING root fetch - processPackages [gkj-homeautomation]: Skipping, unable to determine old version
+[2024-05-11 15:56:57] INFO root fetch - main [MainThread]: End processing [gkj-homeautomation] error
+[2024-05-11 15:56:57] INFO root fetch - processPackages [tensordict-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-11 15:56:57] INFO root fetch - processPackages [revolutioneeringz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:56:57] INFO root fetch - processPackages [PyTgCrypto]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-11 15:56:57] INFO root fetch - processPackages [PyTgCrypto]: Downloading https://files.pythonhosted.org/packages/01/0f/140fce7aaa287807332a4f147d8ab89fcbb026eca6261755eaea8360b3d1/PyTgCrypto-1.2.6-pp39-pypy39_pp73-win_amd64.whl
+[2024-05-11 15:56:57] INFO root fetch - processPackages [revolutioneeringz]: Downloading https://files.pythonhosted.org/packages/5b/7b/60c574dfdbd3242c978994ebc46fd3a28aeab717255079f085c6a75f1f8e/revolutioneeringz-1.1.tar.gz
+[2024-05-11 15:56:57] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/92/36/819c077c6f13e604fee257ce897f68e5860a53e54214b83dce4b4878dff6/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-11 15:56:58] INFO root fetch - processPackages [revolutioneeringz]: Downloading https://files.pythonhosted.org/packages/e8/20/325a7032afc91b7afd64a3ad4ebffb0948c2b903ed94650523ca90c3c431/revolutioneeringz-2.1.tar.gz
+[2024-05-11 15:56:58] INFO root fetch - processPackages [PyTgCrypto]: Downloading https://files.pythonhosted.org/packages/1b/89/fee35058f09eadc21daf33881905155f63e990482efc815ae957f2a30f4c/PyTgCrypto-1.2.7-pp39-pypy39_pp73-win_amd64.whl
+[2024-05-11 15:56:58] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/b9/28/e296d4b168e87aedf19b6cf0d7e65b1474a3da33b8e5314b4a04050bda78/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-11 15:56:58] INFO root fetch - processPackages [revolutioneeringz]: executing diffoscope
+[2024-05-11 15:56:58] INFO root fetch - processPackages [revolutioneeringz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revolutioneeringz-1.1.tar.gz tmp/revolutioneeringz-2.1.tar.gz --markdown 20240511/r/revolutioneeringz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:56:58] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2024-05-11 15:56:58] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240511/t/tensordict-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-11 15:56:58] INFO root fetch - processPackages [PyTgCrypto]: executing diffoscope
+[2024-05-11 15:56:58] INFO root fetch - processPackages [PyTgCrypto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyTgCrypto-1.2.6-pp39-pypy39_pp73-win_amd64.whl.zip tmp/PyTgCrypto-1.2.7-pp39-pypy39_pp73-win_amd64.whl.zip --markdown 20240511/P/PyTgCrypto/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-11 15:56:58] INFO root fetch - processPackages [revolutioneeringz]: Remove: archive file [/home/abi/fetcher/tmp/revolutioneeringz-1.1.tar.gz]
+[2024-05-11 15:56:58] INFO root fetch - processPackages [revolutioneeringz]: Remove: archive file [/home/abi/fetcher/tmp/revolutioneeringz-2.1.tar.gz]
+[2024-05-11 15:56:58] INFO root fetch - main [MainThread]: End processing [revolutioneeringz]: success
+[2024-05-11 15:56:59] INFO root fetch - processPackages [PyTgCrypto]: Remove: archive file [/home/abi/fetcher/tmp/PyTgCrypto-1.2.6-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-05-11 15:56:59] INFO root fetch - processPackages [PyTgCrypto]: Remove: archive file [/home/abi/fetcher/tmp/PyTgCrypto-1.2.7-pp39-pypy39_pp73-win_amd64.whl.zip]
+[2024-05-11 15:56:59] INFO root fetch - main [MainThread]: End processing [PyTgCrypto]: success
+[2024-05-11 15:56:59] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 15:56:59] INFO root fetch - processPackages [tensordict-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensordict_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 15:56:59] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2024-05-11 15:56:59] INFO root fetch - main [MainThread]: Store serial: [23161620]
