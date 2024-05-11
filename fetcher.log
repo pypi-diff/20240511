@@ -15528,3 +15528,53 @@
 [2024-05-11 13:36:24] INFO root fetch - processPackages [statute-utils]: Remove: archive file [/home/abi/fetcher/tmp/statute-utils-0.6.9.tar.gz]
 [2024-05-11 13:36:24] INFO root fetch - main [MainThread]: End processing [statute-utils]: success
 [2024-05-11 13:36:24] INFO root fetch - main [MainThread]: Store serial: [23160623]
+[2024-05-11 13:38:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160623]
+[2024-05-11 13:38:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: woodworksz
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xenharmlib
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: apicat
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lprocess
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gomall
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: decision-utils
+[2024-05-11 13:38:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: emdbva
+[2024-05-11 13:38:33] INFO root fetch - processPackages [lprocess]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 13:38:33] INFO root fetch - processPackages [emdbva]: New version: [0.1.2.dev1] Old Version: [0.0.1.dev8]
+[2024-05-11 13:38:33] INFO root fetch - processPackages [emdbva]: Downloading https://files.pythonhosted.org/packages/0b/ed/819c08dea6ffadd882526d30413daac295d755fe2e50a8f10693c7467495/emdbva-0.0.1.dev8.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/80/ff/f9fbf69e5cfe824e783adfb7a2d8a6824f640c995bf68ef9014da02dfa44/lprocess-0.0.3.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [gomall]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 13:38:33] WARNING root fetch - processPackages [woodworksz]: Skipping, unable to determine old version
+[2024-05-11 13:38:33] INFO root fetch - main [MainThread]: End processing [woodworksz] error
+[2024-05-11 13:38:33] INFO root fetch - processPackages [decision-utils]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 13:38:33] INFO root fetch - processPackages [apicat]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 13:38:33] WARNING root fetch - processPackages [xenharmlib]: Skipping, unable to determine old version
+[2024-05-11 13:38:33] INFO root fetch - main [MainThread]: End processing [xenharmlib] error
+[2024-05-11 13:38:33] WARNING root fetch - processPackages [emdbva]: Skipping package: exceeds size limit 25862942>=10485760
+[2024-05-11 13:38:33] INFO root fetch - main [MainThread]: End processing [emdbva] error
+[2024-05-11 13:38:33] INFO root fetch - processPackages [gomall]: Downloading https://files.pythonhosted.org/packages/d7/48/bfe8719f78c6c5299f6b5e9e75b0cfbb5bc9e1cede0a8c3762e6aa1d5ae3/gomall-0.0.3.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [decision-utils]: Downloading https://files.pythonhosted.org/packages/35/71/6296862e51295102390b40b567fbcda4cf4ceadfc2d73ccc501962d9ec7d/decision_utils-0.0.6.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/f4/8e/b2e1fc6fe57d4b87141a45223e3213543ffbd3a88b0cd9c6e363db011943/apicat-0.0.1.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/74/1f/dad4fc8145a1b8c6ec69ba82ce1a170fd3c8f40a5ace41c550d7062298e3/lprocess-0.0.4.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [lprocess]: executing diffoscope
+[2024-05-11 13:38:33] INFO root fetch - processPackages [lprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lprocess-0.0.3.tar.gz tmp/lprocess-0.0.4.tar.gz --markdown 20240511/l/lprocess/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 13:38:33] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/a8/30/f5daa72924244068ace4812a17697ef705e627c9402a82c6d9c73ca970d4/apicat-0.0.2.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [decision-utils]: Downloading https://files.pythonhosted.org/packages/c3/ba/1ccd13d10b90587d2430de7a80f914075062ae33c1fc7237e4f924bf8ae0/decision_utils-0.0.7.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [gomall]: Downloading https://files.pythonhosted.org/packages/f2/4b/df2e0db77edd94ed0431365c7bf0511e5acc546f1adeef1935edcdaba344/gomall-0.0.4.tar.gz
+[2024-05-11 13:38:33] INFO root fetch - processPackages [apicat]: executing diffoscope
+[2024-05-11 13:38:33] INFO root fetch - processPackages [apicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apicat-0.0.1.tar.gz tmp/apicat-0.0.2.tar.gz --markdown 20240511/a/apicat/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 13:38:33] INFO root fetch - processPackages [gomall]: executing diffoscope
+[2024-05-11 13:38:33] INFO root fetch - processPackages [gomall]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gomall-0.0.3.tar.gz tmp/gomall-0.0.4.tar.gz --markdown 20240511/g/gomall/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 13:38:33] INFO root fetch - processPackages [decision-utils]: executing diffoscope
+[2024-05-11 13:38:33] INFO root fetch - processPackages [decision-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decision_utils-0.0.6.tar.gz tmp/decision_utils-0.0.7.tar.gz --markdown 20240511/d/decision-utils/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 13:38:34] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.3.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.4.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - main [MainThread]: End processing [lprocess]: success
+[2024-05-11 13:38:34] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.1.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.2.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - main [MainThread]: End processing [apicat]: success
+[2024-05-11 13:38:34] INFO root fetch - processPackages [gomall]: Remove: archive file [/home/abi/fetcher/tmp/gomall-0.0.3.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - processPackages [gomall]: Remove: archive file [/home/abi/fetcher/tmp/gomall-0.0.4.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - main [MainThread]: End processing [gomall]: success
+[2024-05-11 13:38:34] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision_utils-0.0.6.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision_utils-0.0.7.tar.gz]
+[2024-05-11 13:38:34] INFO root fetch - main [MainThread]: End processing [decision-utils]: success
+[2024-05-11 13:38:34] INFO root fetch - main [MainThread]: Store serial: [23160646]
