@@ -24205,3 +24205,29 @@
 [2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.7.tar.gz]
 [2024-05-11 23:37:39] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
 [2024-05-11 23:37:39] INFO root fetch - main [MainThread]: Store serial: [23164783]
+[2024-05-11 23:39:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164783]
+[2024-05-11 23:39:48] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 23:41:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164783]
+[2024-05-11 23:41:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 23:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: perichaetialz
+[2024-05-11 23:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NetStructer
+[2024-05-11 23:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiocmcapi
+[2024-05-11 23:41:54] INFO root fetch - processPackages [aiocmcapi]: New version: [0.2] Old Version: [0.1]
+[2024-05-11 23:41:54] WARNING root fetch - processPackages [perichaetialz]: Skipping, unable to determine old version
+[2024-05-11 23:41:54] INFO root fetch - main [MainThread]: End processing [perichaetialz] error
+[2024-05-11 23:41:54] INFO root fetch - processPackages [NetStructer]: New version: [2.9] Old Version: [2.8]
+[2024-05-11 23:41:54] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/42/38/3f41318bde4b4ec256555416aaf9b3608b8883d7c1fed4abb306158b1303/aiocmcapi-0.1.tar.gz
+[2024-05-11 23:41:54] INFO root fetch - processPackages [NetStructer]: Downloading https://files.pythonhosted.org/packages/e2/41/6219f6928dd07320b80e128c9550ce59be6fef36f00a85ac78eb71ab5096/NetStructer-2.8.tar.gz
+[2024-05-11 23:41:54] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/3c/c9/e1768b119cecf178c2ebc594fd2bc10b91ee7f85644943d7e5c16a8ba642/aiocmcapi-0.2.tar.gz
+[2024-05-11 23:41:54] INFO root fetch - processPackages [NetStructer]: Downloading https://files.pythonhosted.org/packages/c1/20/19b2bc590502cbd82f3c76c38879a99e39755805e970c47d872439ddf9a2/netstructer-2.9.tar.gz
+[2024-05-11 23:41:54] INFO root fetch - processPackages [aiocmcapi]: executing diffoscope
+[2024-05-11 23:41:54] INFO root fetch - processPackages [aiocmcapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocmcapi-0.1.tar.gz tmp/aiocmcapi-0.2.tar.gz --markdown 20240511/a/aiocmcapi/0.1-0.2/README.md --exclude *.pyd
+[2024-05-11 23:41:55] INFO root fetch - processPackages [NetStructer]: executing diffoscope
+[2024-05-11 23:41:55] INFO root fetch - processPackages [NetStructer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NetStructer-2.8.tar.gz tmp/netstructer-2.9.tar.gz --markdown 20240511/N/NetStructer/2.8-2.9/README.md --exclude *.pyd
+[2024-05-11 23:41:55] INFO root fetch - processPackages [NetStructer]: Remove: archive file [/home/abi/fetcher/tmp/NetStructer-2.8.tar.gz]
+[2024-05-11 23:41:55] INFO root fetch - processPackages [NetStructer]: Remove: archive file [/home/abi/fetcher/tmp/netstructer-2.9.tar.gz]
+[2024-05-11 23:41:55] INFO root fetch - main [MainThread]: End processing [NetStructer]: success
+[2024-05-11 23:41:55] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.1.tar.gz]
+[2024-05-11 23:41:55] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.2.tar.gz]
+[2024-05-11 23:41:55] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
+[2024-05-11 23:41:55] INFO root fetch - main [MainThread]: Store serial: [23164792]
