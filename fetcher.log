@@ -14833,3 +14833,21 @@
 [2024-05-11 12:50:24] INFO root fetch - processPackages [aa-alumni]: Remove: archive file [/home/abi/fetcher/tmp/aa_alumni-0.2.0.tar.gz]
 [2024-05-11 12:50:24] INFO root fetch - main [MainThread]: End processing [aa-alumni]: success
 [2024-05-11 12:50:24] INFO root fetch - main [MainThread]: Store serial: [23160273]
+[2024-05-11 12:52:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160273]
+[2024-05-11 12:52:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 12:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: monandayz
+[2024-05-11 12:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mongo-objects
+[2024-05-11 12:52:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiotgm
+[2024-05-11 12:52:33] WARNING root fetch - processPackages [monandayz]: Skipping, unable to determine old version
+[2024-05-11 12:52:33] INFO root fetch - main [MainThread]: End processing [monandayz] error
+[2024-05-11 12:52:33] INFO root fetch - processPackages [mongo-objects]: New version: [1.2.0] Old Version: [1.1.2]
+[2024-05-11 12:52:34] WARNING root fetch - processPackages [aiotgm]: Skipping, unable to determine old version
+[2024-05-11 12:52:34] INFO root fetch - main [MainThread]: End processing [aiotgm] error
+[2024-05-11 12:52:34] INFO root fetch - processPackages [mongo-objects]: Downloading https://files.pythonhosted.org/packages/17/e6/e5d4a63661a1cfff56e7df2acf7912fb55ef0ce856ae6ea0f6d00e23177f/mongo_objects-1.1.2.tar.gz
+[2024-05-11 12:52:34] INFO root fetch - processPackages [mongo-objects]: Downloading https://files.pythonhosted.org/packages/88/1c/b158cde701b8566517c1f98fc0a8a68c97918a60dc15d2f7541dcf4f45fa/mongo_objects-1.2.0.tar.gz
+[2024-05-11 12:52:34] INFO root fetch - processPackages [mongo-objects]: executing diffoscope
+[2024-05-11 12:52:34] INFO root fetch - processPackages [mongo-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mongo_objects-1.1.2.tar.gz tmp/mongo_objects-1.2.0.tar.gz --markdown 20240511/m/mongo-objects/1.1.2-1.2.0/README.md --exclude *.pyd
+[2024-05-11 12:52:35] INFO root fetch - processPackages [mongo-objects]: Remove: archive file [/home/abi/fetcher/tmp/mongo_objects-1.1.2.tar.gz]
+[2024-05-11 12:52:35] INFO root fetch - processPackages [mongo-objects]: Remove: archive file [/home/abi/fetcher/tmp/mongo_objects-1.2.0.tar.gz]
+[2024-05-11 12:52:35] INFO root fetch - main [MainThread]: End processing [mongo-objects]: success
+[2024-05-11 12:52:35] INFO root fetch - main [MainThread]: Store serial: [23160284]
