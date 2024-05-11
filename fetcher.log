@@ -10330,3 +10330,24 @@
 [2024-05-11 07:19:45] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies-taster-1.2.2.tar.gz]
 [2024-05-11 07:19:45] INFO root fetch - main [MainThread]: End processing [proxies-taster]: success
 [2024-05-11 07:19:45] INFO root fetch - main [MainThread]: Store serial: [23157739]
+[2024-05-11 07:21:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157739]
+[2024-05-11 07:21:54] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dez
+[2024-05-11 07:21:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: myalgicz
+[2024-05-11 07:21:54] INFO root fetch - processPackages [dez]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-11 07:21:54] INFO root fetch - processPackages [dez]: Downloading https://files.pythonhosted.org/packages/1e/81/48d71e93c2525619543513ac060532d30fe665f6a30041b7dd4486dbc43f/dez-0.9.4-py2.7.egg
+[2024-05-11 07:21:54] INFO root fetch - processPackages [myalgicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:21:54] INFO root fetch - processPackages [myalgicz]: Downloading https://files.pythonhosted.org/packages/bb/ed/f4e2bc0bba02bc83c9886ad826fda327c2a7ba72053f2f1650e74383a3ec/myalgicz-1.1.tar.gz
+[2024-05-11 07:21:55] INFO root fetch - processPackages [myalgicz]: Downloading https://files.pythonhosted.org/packages/36/1b/1878f7c80303820273d1e81baa4e1d42ba8ebc4ff343fdb30dd544cd2c1c/myalgicz-2.1.tar.gz
+[2024-05-11 07:21:55] INFO root fetch - processPackages [myalgicz]: executing diffoscope
+[2024-05-11 07:21:55] INFO root fetch - processPackages [myalgicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myalgicz-1.1.tar.gz tmp/myalgicz-2.1.tar.gz --markdown 20240511/m/myalgicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:21:55] INFO root fetch - processPackages [myalgicz]: Remove: archive file [/home/abi/fetcher/tmp/myalgicz-1.1.tar.gz]
+[2024-05-11 07:21:55] INFO root fetch - processPackages [myalgicz]: Remove: archive file [/home/abi/fetcher/tmp/myalgicz-2.1.tar.gz]
+[2024-05-11 07:21:55] INFO root fetch - main [MainThread]: End processing [myalgicz]: success
+[2024-05-11 07:21:56] INFO root fetch - processPackages [dez]: Downloading https://files.pythonhosted.org/packages/76/85/f4c826ed86b69c7e8f3ebc368a4d9737f219fbaf86efdb7156c8a99503ce/dez-0.9.5-py2.7.egg
+[2024-05-11 07:21:56] INFO root fetch - processPackages [dez]: executing diffoscope
+[2024-05-11 07:21:56] INFO root fetch - processPackages [dez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dez-0.9.4-py2.7.egg tmp/dez-0.9.5-py2.7.egg --markdown 20240511/d/dez/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-11 07:21:57] INFO root fetch - processPackages [dez]: Remove: archive file [/home/abi/fetcher/tmp/dez-0.9.4-py2.7.egg]
+[2024-05-11 07:21:57] INFO root fetch - processPackages [dez]: Remove: archive file [/home/abi/fetcher/tmp/dez-0.9.5-py2.7.egg]
+[2024-05-11 07:21:57] INFO root fetch - main [MainThread]: End processing [dez]: success
+[2024-05-11 07:21:57] INFO root fetch - main [MainThread]: Store serial: [23157744]
