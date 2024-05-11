@@ -15763,3 +15763,38 @@
 [2024-05-11 13:53:49] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.tar.gz]
 [2024-05-11 13:53:49] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
 [2024-05-11 13:53:49] INFO root fetch - main [MainThread]: Store serial: [23160712]
+[2024-05-11 13:55:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160712]
+[2024-05-11 13:55:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 13:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapeddit
+[2024-05-11 13:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: muko
+[2024-05-11 13:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-xe-21
+[2024-05-11 13:55:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deltalake
+[2024-05-11 13:55:58] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 13:55:58] INFO root fetch - processPackages [bigdl-core-xe-21]: New version: [2.5.0b20240510] Old Version: [2.5.0b20240509]
+[2024-05-11 13:55:58] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/93/78/b584d29a579341262f86cc0d9038871db5165f322da63d060dc65566b126/scrapeddit-0.1.5.tar.gz
+[2024-05-11 13:55:58] INFO root fetch - processPackages [muko]: New version: [2.44] Old Version: [2.43]
+[2024-05-11 13:55:58] INFO root fetch - processPackages [bigdl-core-xe-21]: Downloading https://files.pythonhosted.org/packages/5d/69/d69d95a31c5e5d13d56dd8987245d452ee4c37a483636d74bf8a5fd1e1fb/bigdl_core_xe_21-2.5.0b20240509-cp39-cp39-win_amd64.whl
+[2024-05-11 13:55:58] INFO root fetch - processPackages [deltalake]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-11 13:55:58] WARNING root fetch - processPackages [bigdl-core-xe-21]: Skipping package: exceeds size limit 29667253>=10485760
+[2024-05-11 13:55:58] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-21] error
+[2024-05-11 13:55:58] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/0e/47/2cdce74696561ab9df2169ffef9c06ed32110f5c5c27e9a383e586d37f79/muko-2.43-py3-none-any.whl
+[2024-05-11 13:55:58] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/e3/94/5318c62210b4ea0757a90811047573a75efa206ea5f41cf730c6d08a1e85/scrapeddit-0.1.6.tar.gz
+[2024-05-11 13:55:58] INFO root fetch - processPackages [deltalake]: Downloading https://files.pythonhosted.org/packages/fd/0e/b5472564df2041caea5b9d85de4be27ba13a03d845250b370f01319fa857/deltalake-0.8.1.tar.gz
+[2024-05-11 13:55:58] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 13:55:58] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.5.tar.gz tmp/scrapeddit-0.1.6.tar.gz --markdown 20240511/s/scrapeddit/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 13:55:58] INFO root fetch - processPackages [muko]: Downloading https://files.pythonhosted.org/packages/47/38/9db1a0186c337f30ec1a0a1534c37c531f29b47ff0be07cc68c1b6f6f879/muko-2.44-py3-none-any.whl
+[2024-05-11 13:55:59] INFO root fetch - processPackages [muko]: executing diffoscope
+[2024-05-11 13:55:59] INFO root fetch - processPackages [muko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muko-2.43-py3-none-any.whl.zip tmp/muko-2.44-py3-none-any.whl.zip --markdown 20240511/m/muko/2.43-2.44/README.md --exclude *.pyd
+[2024-05-11 13:55:59] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.5.tar.gz]
+[2024-05-11 13:55:59] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.6.tar.gz]
+[2024-05-11 13:55:59] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 13:56:00] INFO root fetch - processPackages [deltalake]: Downloading https://files.pythonhosted.org/packages/a5/58/38edf79c582fbb1a46b8d0ded08d033a1b1085b8c7997c592aacc5d38e35/deltalake-0.9.0.tar.gz
+[2024-05-11 13:56:00] INFO root fetch - processPackages [deltalake]: executing diffoscope
+[2024-05-11 13:56:00] INFO root fetch - processPackages [deltalake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deltalake-0.8.1.tar.gz tmp/deltalake-0.9.0.tar.gz --markdown 20240511/d/deltalake/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-11 13:56:02] INFO root fetch - processPackages [deltalake]: Remove: archive file [/home/abi/fetcher/tmp/deltalake-0.8.1.tar.gz]
+[2024-05-11 13:56:02] INFO root fetch - processPackages [deltalake]: Remove: archive file [/home/abi/fetcher/tmp/deltalake-0.9.0.tar.gz]
+[2024-05-11 13:56:02] INFO root fetch - main [MainThread]: End processing [deltalake]: success
+[2024-05-11 13:56:03] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.43-py3-none-any.whl.zip]
+[2024-05-11 13:56:03] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.44-py3-none-any.whl.zip]
+[2024-05-11 13:56:03] INFO root fetch - main [MainThread]: End processing [muko]: success
+[2024-05-11 13:56:03] INFO root fetch - main [MainThread]: Store serial: [23160724]
