@@ -16260,3 +16260,12 @@
 [2024-05-11 14:22:19] INFO root fetch - processPackages [rAPIdy]: Remove: archive file [/home/abi/fetcher/tmp/rapidy-0.2.2.tar.gz]
 [2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [rAPIdy]: success
 [2024-05-11 14:22:19] INFO root fetch - main [MainThread]: Store serial: [23160992]
+[2024-05-11 14:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160992]
+[2024-05-11 14:24:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 14:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ultrafilterablez
+[2024-05-11 14:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backtest-pro
+[2024-05-11 14:24:28] WARNING root fetch - processPackages [ultrafilterablez]: Skipping, unable to determine old version
+[2024-05-11 14:24:28] INFO root fetch - main [MainThread]: End processing [ultrafilterablez] error
+[2024-05-11 14:24:28] WARNING root fetch - processPackages [backtest-pro]: Skipping, unable to determine old version
+[2024-05-11 14:24:28] INFO root fetch - main [MainThread]: End processing [backtest-pro] error
+[2024-05-11 14:24:28] INFO root fetch - main [MainThread]: Store serial: [23161028]
