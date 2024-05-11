@@ -7689,3 +7689,32 @@
 [2024-05-11 04:00:36] INFO root fetch - processPackages [lapsidedz]: Remove: archive file [/home/abi/fetcher/tmp/lapsidedz-2.1.tar.gz]
 [2024-05-11 04:00:36] INFO root fetch - main [MainThread]: End processing [lapsidedz]: success
 [2024-05-11 04:00:36] INFO root fetch - main [MainThread]: Store serial: [23156482]
+[2024-05-11 04:02:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156482]
+[2024-05-11 04:02:44] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 04:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autodynatrace
+[2024-05-11 04:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dektools
+[2024-05-11 04:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: claimSurs
+[2024-05-11 04:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: secretflow-doctools
+[2024-05-11 04:02:45] INFO root fetch - processPackages [autodynatrace]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-05-11 04:02:45] INFO root fetch - processPackages [autodynatrace]: Downloading https://files.pythonhosted.org/packages/60/72/03b77a0745897b21a3d41c417da15cc73d99682debe8e74239055d7ddcdc/autodynatrace-2.0.0.tar.gz
+[2024-05-11 04:02:45] WARNING root fetch - processPackages [claimSurs]: Skipping, unable to determine old version
+[2024-05-11 04:02:45] INFO root fetch - main [MainThread]: End processing [claimSurs] error
+[2024-05-11 04:02:45] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-11 04:02:45] INFO root fetch - processPackages [secretflow-doctools]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 04:02:45] INFO root fetch - processPackages [autodynatrace]: Downloading https://files.pythonhosted.org/packages/06/4c/32d4ba15cf4b10f1d40156c2089688bba9bd6a0d3c829e86c617c80fa192/autodynatrace-2.0.2.tar.gz
+[2024-05-11 04:02:45] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-05-11 04:02:45] INFO root fetch - processPackages [secretflow-doctools]: Downloading https://files.pythonhosted.org/packages/8a/c8/e2750554992a4041610b50a35f8c903de6d7e07a271722f3a5d3c5fad667/secretflow_doctools-0.7.0.tar.gz
+[2024-05-11 04:02:45] INFO root fetch - processPackages [autodynatrace]: executing diffoscope
+[2024-05-11 04:02:45] INFO root fetch - processPackages [autodynatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autodynatrace-2.0.0.tar.gz tmp/autodynatrace-2.0.2.tar.gz --markdown 20240511/a/autodynatrace/2.0.0-2.0.2/README.md --exclude *.pyd
+[2024-05-11 04:02:45] WARNING root fetch - processPackages [secretflow-doctools]: Skipping package: exceeds size limit 50069976>=10485760
+[2024-05-11 04:02:45] INFO root fetch - main [MainThread]: End processing [secretflow-doctools] error
+[2024-05-11 04:02:45] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-05-11 04:02:45] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-11 04:02:45] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240511/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-11 04:02:46] INFO root fetch - processPackages [autodynatrace]: Remove: archive file [/home/abi/fetcher/tmp/autodynatrace-2.0.0.tar.gz]
+[2024-05-11 04:02:46] INFO root fetch - processPackages [autodynatrace]: Remove: archive file [/home/abi/fetcher/tmp/autodynatrace-2.0.2.tar.gz]
+[2024-05-11 04:02:46] INFO root fetch - main [MainThread]: End processing [autodynatrace]: success
+[2024-05-11 04:02:46] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-05-11 04:02:46] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-05-11 04:02:46] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-11 04:02:46] INFO root fetch - main [MainThread]: Store serial: [23156493]
