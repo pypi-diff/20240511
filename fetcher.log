@@ -13034,3 +13034,27 @@
 [2024-05-11 10:56:35] INFO root fetch - processPackages [applang]: Remove: archive file [/home/abi/fetcher/tmp/applang-0.0.1a4.tar.gz]
 [2024-05-11 10:56:35] INFO root fetch - main [MainThread]: End processing [applang]: success
 [2024-05-11 10:56:35] INFO root fetch - main [MainThread]: Store serial: [23159216]
+[2024-05-11 10:58:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159216]
+[2024-05-11 10:58:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gipsyhoodz
+[2024-05-11 10:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: JianYingDraft.PY
+[2024-05-11 10:58:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gy-redis
+[2024-05-11 10:58:45] WARNING root fetch - processPackages [gipsyhoodz]: Skipping, unable to determine old version
+[2024-05-11 10:58:45] INFO root fetch - main [MainThread]: End processing [gipsyhoodz] error
+[2024-05-11 10:58:45] INFO root fetch - processPackages [gy-redis]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 10:58:45] INFO root fetch - processPackages [JianYingDraft.PY]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 10:58:45] INFO root fetch - processPackages [gy-redis]: Downloading https://files.pythonhosted.org/packages/63/50/cf60a4b23683149206c0b4c90b2ac9630bb1d64ba16f7f4e201ca4155bb4/gy_redis-0.1.6.tar.gz
+[2024-05-11 10:58:45] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/48/21/ffe0244d2fa649948719e48ce14ecc0d08bee6558b4d2493e54e3d000a50/jianyingdraft_py-1.0.3.tar.gz
+[2024-05-11 10:58:45] INFO root fetch - processPackages [JianYingDraft.PY]: Downloading https://files.pythonhosted.org/packages/4a/2f/3568879e40005617d38fdcc4670afdd7c4022c581c72d5d6841f5b2a9d8d/jianyingdraft_py-1.0.4.tar.gz
+[2024-05-11 10:58:45] INFO root fetch - processPackages [gy-redis]: Downloading https://files.pythonhosted.org/packages/f9/61/60d5ee6b76b2a9fbbea00d910622fcff25d5cc6667356e976dd062814170/gy_redis-0.1.7.tar.gz
+[2024-05-11 10:58:45] INFO root fetch - processPackages [JianYingDraft.PY]: executing diffoscope
+[2024-05-11 10:58:45] INFO root fetch - processPackages [JianYingDraft.PY]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jianyingdraft_py-1.0.3.tar.gz tmp/jianyingdraft_py-1.0.4.tar.gz --markdown 20240511/J/JianYingDraft.PY/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 10:58:45] INFO root fetch - processPackages [gy-redis]: executing diffoscope
+[2024-05-11 10:58:45] INFO root fetch - processPackages [gy-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy_redis-0.1.6.tar.gz tmp/gy_redis-0.1.7.tar.gz --markdown 20240511/g/gy-redis/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 10:58:46] INFO root fetch - processPackages [gy-redis]: Remove: archive file [/home/abi/fetcher/tmp/gy_redis-0.1.6.tar.gz]
+[2024-05-11 10:58:46] INFO root fetch - processPackages [gy-redis]: Remove: archive file [/home/abi/fetcher/tmp/gy_redis-0.1.7.tar.gz]
+[2024-05-11 10:58:46] INFO root fetch - main [MainThread]: End processing [gy-redis]: success
+[2024-05-11 10:58:46] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.3.tar.gz]
+[2024-05-11 10:58:46] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.4.tar.gz]
+[2024-05-11 10:58:46] INFO root fetch - main [MainThread]: End processing [JianYingDraft.PY]: success
+[2024-05-11 10:58:46] INFO root fetch - main [MainThread]: Store serial: [23159233]
