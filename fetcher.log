@@ -16919,3 +16919,24 @@
 [2024-05-11 15:10:34] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.8.tar.gz]
 [2024-05-11 15:10:34] INFO root fetch - main [MainThread]: End processing [mteb]: success
 [2024-05-11 15:10:34] INFO root fetch - main [MainThread]: Store serial: [23161286]
+[2024-05-11 15:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161286]
+[2024-05-11 15:12:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 15:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fbgemm-gpu-nightly-cpu
+[2024-05-11 15:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapeddit
+[2024-05-11 15:12:43] INFO root fetch - processPackages [scrapeddit]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-11 15:12:43] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/c6/48/fa97aac679d5ad62f1541891178e406d0ef1e36d14ee19660e172a6818e2/scrapeddit-0.2.6.tar.gz
+[2024-05-11 15:12:43] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: New version: [2024.5.9] Old Version: [2024.5.11]
+[2024-05-11 15:12:43] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/02/47/8c59ea74281a1290ace648ce7715a57d2af8d14688380871a6aa9012c08c/fbgemm_gpu_nightly_cpu-2024.5.11-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 15:12:44] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/01/2e/de41f84070fe4b7b033b55a12677f3e0d5d3a9926f1134c3bfede5654ceb/scrapeddit-0.2.7.tar.gz
+[2024-05-11 15:12:44] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 15:12:44] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.2.6.tar.gz tmp/scrapeddit-0.2.7.tar.gz --markdown 20240511/s/scrapeddit/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-11 15:12:44] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/34/33/65604f909cf0830076814afa9f0dceaa2c308165d02d78b5b11cc85f8d10/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 15:12:44] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.6.tar.gz]
+[2024-05-11 15:12:44] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.7.tar.gz]
+[2024-05-11 15:12:44] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 15:12:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: executing diffoscope
+[2024-05-11 15:12:45] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fbgemm_gpu_nightly_cpu-2024.5.11-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240511/f/fbgemm-gpu-nightly-cpu/2024.5.11-2024.5.9/README.md --exclude *.pyd
+[2024-05-11 15:13:24] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.11-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 15:13:24] INFO root fetch - processPackages [fbgemm-gpu-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/fbgemm_gpu_nightly_cpu-2024.5.9-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 15:13:24] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
+[2024-05-11 15:13:24] INFO root fetch - main [MainThread]: Store serial: [23161295]
