@@ -10351,3 +10351,36 @@
 [2024-05-11 07:21:57] INFO root fetch - processPackages [dez]: Remove: archive file [/home/abi/fetcher/tmp/dez-0.9.5-py2.7.egg]
 [2024-05-11 07:21:57] INFO root fetch - main [MainThread]: End processing [dez]: success
 [2024-05-11 07:21:57] INFO root fetch - main [MainThread]: Store serial: [23157744]
+[2024-05-11 07:24:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157744]
+[2024-05-11 07:24:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 07:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myalgicz
+[2024-05-11 07:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antirabicz
+[2024-05-11 07:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-restit
+[2024-05-11 07:24:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epyxid
+[2024-05-11 07:24:05] INFO root fetch - processPackages [myalgicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:24:05] INFO root fetch - processPackages [django-restit]: New version: [4.2.9] Old Version: [4.2.8]
+[2024-05-11 07:24:05] INFO root fetch - processPackages [epyxid]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-11 07:24:06] INFO root fetch - processPackages [myalgicz]: Downloading https://files.pythonhosted.org/packages/bb/ed/f4e2bc0bba02bc83c9886ad826fda327c2a7ba72053f2f1650e74383a3ec/myalgicz-1.1.tar.gz
+[2024-05-11 07:24:06] WARNING root fetch - processPackages [antirabicz]: Skipping, unable to determine old version
+[2024-05-11 07:24:06] INFO root fetch - main [MainThread]: End processing [antirabicz] error
+[2024-05-11 07:24:06] INFO root fetch - processPackages [epyxid]: Downloading https://files.pythonhosted.org/packages/7c/23/6708b8af07eea62a0d345c8f1df48b78a96728b9d3baa3e53c15d560b94c/epyxid-0.1.4.tar.gz
+[2024-05-11 07:24:06] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/c2/a7/9a624d19b03f5a2774d34ae27fa11ab51ecdc59b679adabd04219cc8b435/django_restit-4.2.8.tar.gz
+[2024-05-11 07:24:06] INFO root fetch - processPackages [myalgicz]: Downloading https://files.pythonhosted.org/packages/36/1b/1878f7c80303820273d1e81baa4e1d42ba8ebc4ff343fdb30dd544cd2c1c/myalgicz-2.1.tar.gz
+[2024-05-11 07:24:06] INFO root fetch - processPackages [epyxid]: Downloading https://files.pythonhosted.org/packages/ba/50/4fbaa8ddd250148194128f98ba8251f9d115242bb34596940407b136b5b5/epyxid-0.2.0.tar.gz
+[2024-05-11 07:24:06] INFO root fetch - processPackages [myalgicz]: executing diffoscope
+[2024-05-11 07:24:06] INFO root fetch - processPackages [myalgicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myalgicz-1.1.tar.gz tmp/myalgicz-2.1.tar.gz --markdown 20240511/m/myalgicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:24:06] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/04/6a/4a0798142c60a6490ec67b5805d087bb35d3e9fc4b5da82c2af6c231a3d8/django_restit-4.2.9.tar.gz
+[2024-05-11 07:24:06] INFO root fetch - processPackages [epyxid]: executing diffoscope
+[2024-05-11 07:24:06] INFO root fetch - processPackages [epyxid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyxid-0.1.4.tar.gz tmp/epyxid-0.2.0.tar.gz --markdown 20240511/e/epyxid/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-11 07:24:06] INFO root fetch - processPackages [django-restit]: executing diffoscope
+[2024-05-11 07:24:06] INFO root fetch - processPackages [django-restit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_restit-4.2.8.tar.gz tmp/django_restit-4.2.9.tar.gz --markdown 20240511/d/django-restit/4.2.8-4.2.9/README.md --exclude *.pyd
+[2024-05-11 07:24:07] INFO root fetch - processPackages [myalgicz]: Remove: archive file [/home/abi/fetcher/tmp/myalgicz-1.1.tar.gz]
+[2024-05-11 07:24:07] INFO root fetch - processPackages [myalgicz]: Remove: archive file [/home/abi/fetcher/tmp/myalgicz-2.1.tar.gz]
+[2024-05-11 07:24:07] INFO root fetch - main [MainThread]: End processing [myalgicz]: success
+[2024-05-11 07:24:07] INFO root fetch - processPackages [epyxid]: Remove: archive file [/home/abi/fetcher/tmp/epyxid-0.1.4.tar.gz]
+[2024-05-11 07:24:07] INFO root fetch - processPackages [epyxid]: Remove: archive file [/home/abi/fetcher/tmp/epyxid-0.2.0.tar.gz]
+[2024-05-11 07:24:07] INFO root fetch - main [MainThread]: End processing [epyxid]: success
+[2024-05-11 07:24:08] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.8.tar.gz]
+[2024-05-11 07:24:08] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
+[2024-05-11 07:24:08] INFO root fetch - main [MainThread]: End processing [django-restit]: success
+[2024-05-11 07:24:08] INFO root fetch - main [MainThread]: Store serial: [23157762]
