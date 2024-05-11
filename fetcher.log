@@ -18264,3 +18264,26 @@
 [2024-05-11 16:48:28] INFO root fetch - processPackages [terragrunt-generator]: Remove: archive file [/home/abi/fetcher/tmp/terragrunt_generator-0.7.6.tar.gz]
 [2024-05-11 16:48:28] INFO root fetch - main [MainThread]: End processing [terragrunt-generator]: success
 [2024-05-11 16:48:28] INFO root fetch - main [MainThread]: Store serial: [23162042]
+[2024-05-11 16:50:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162042]
+[2024-05-11 16:50:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 16:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkout-time-computer
+[2024-05-11 16:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmexio
+[2024-05-11 16:50:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cic
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: Downloading https://files.pythonhosted.org/packages/74/48/1ea6772ce0bdaef58c672dab6cb56a33304b35d75b09ebf176c81fd6204d/tmexio-0.0.1.tar.gz
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [checkout-time-computer]: Skipping, unable to determine old version
+[2024-05-11 16:50:37] INFO root fetch - main [MainThread]: End processing [checkout-time-computer] error
+[2024-05-11 16:50:37] INFO root fetch - processPackages [cic]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [cic]: fallback to get urls: [0.0.0]
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: Downloading https://files.pythonhosted.org/packages/e8/0f/30f788e178ef9e0ed7cbd2faec1cf25a85cd912412b6d4cef468fc1fad9f/tmexio-0.1.0.tar.gz
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [cic]: None
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [cic]: None
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: executing diffoscope
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmexio-0.0.1.tar.gz tmp/tmexio-0.1.0.tar.gz --markdown 20240511/t/tmexio/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [cic]: unable to get url for both version [0.0.0]
+[2024-05-11 16:50:37] WARNING root fetch - processPackages [cic]: None
+[2024-05-11 16:50:37] INFO root fetch - main [MainThread]: End processing [cic] error
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: Remove: archive file [/home/abi/fetcher/tmp/tmexio-0.0.1.tar.gz]
+[2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: Remove: archive file [/home/abi/fetcher/tmp/tmexio-0.1.0.tar.gz]
+[2024-05-11 16:50:37] INFO root fetch - main [MainThread]: End processing [tmexio]: success
+[2024-05-11 16:50:37] INFO root fetch - main [MainThread]: Store serial: [23162055]
