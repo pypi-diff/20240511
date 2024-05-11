@@ -18113,3 +18113,61 @@
 [2024-05-11 16:37:30] INFO root fetch - processPackages [scolopendridz]: Remove: archive file [/home/abi/fetcher/tmp/scolopendridz-2.1.tar.gz]
 [2024-05-11 16:37:30] INFO root fetch - main [MainThread]: End processing [scolopendridz]: success
 [2024-05-11 16:37:30] INFO root fetch - main [MainThread]: Store serial: [23161985]
+[2024-05-11 16:39:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161985]
+[2024-05-11 16:39:38] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 16:41:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161985]
+[2024-05-11 16:41:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-discord
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tauromachyz
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sensitiserz
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gen-wrappers
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PgQueuer
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: MaixPy
+[2024-05-11 16:41:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: joulescope-ui
+[2024-05-11 16:41:44] INFO root fetch - processPackages [gen-wrappers]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 16:41:44] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/8e/e1/a6a1a6ecb41ac835384b6f0c14709423704076974481c22c32c0b1ae799a/gen_wrappers-0.2.5.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [pytest-discord]: New version: [0.2.0] Old Version: [0.1.6]
+[2024-05-11 16:41:44] INFO root fetch - processPackages [PgQueuer]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-11 16:41:44] INFO root fetch - processPackages [sensitiserz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:41:44] WARNING root fetch - processPackages [tauromachyz]: Skipping, unable to determine old version
+[2024-05-11 16:41:44] INFO root fetch - main [MainThread]: End processing [tauromachyz] error
+[2024-05-11 16:41:44] INFO root fetch - processPackages [MaixPy]: New version: [4.1.0] Old Version: [4.0.7]
+[2024-05-11 16:41:44] INFO root fetch - processPackages [joulescope-ui]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-11 16:41:44] INFO root fetch - processPackages [pytest-discord]: Downloading https://files.pythonhosted.org/packages/07/23/b7eea8908c081813dba4cd9820a350831ad7bf9e5e741c2b30e4242c59b2/pytest-discord-0.1.6.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [PgQueuer]: Downloading https://files.pythonhosted.org/packages/24/35/5cd9fe8895896533f90496fb07624787c135df26d45787ed6d7a0c173392/pgqueuer-0.3.4.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [sensitiserz]: Downloading https://files.pythonhosted.org/packages/60/8e/3ba11e5a99b5e3bcde968c16c0625500dc15fd4799002b54f8756fdc3855/sensitiserz-1.1.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [MaixPy]: Downloading https://files.pythonhosted.org/packages/85/c9/0524d4649cbfd76746ba5e890d6f62b9c90214194bbf3c481419c1f449f4/MaixPy-4.0.7-py3-none-any.whl
+[2024-05-11 16:41:44] INFO root fetch - processPackages [joulescope-ui]: Downloading https://files.pythonhosted.org/packages/29/01/fa327cff0b80e57c88166d74e315315b047ece1bff45d9bdc4a24b3c5125/joulescope_ui-1.1.6.tar.gz
+[2024-05-11 16:41:44] WARNING root fetch - processPackages [MaixPy]: Skipping package: exceeds size limit 14829601>=10485760
+[2024-05-11 16:41:44] INFO root fetch - main [MainThread]: End processing [MaixPy] error
+[2024-05-11 16:41:44] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/b3/85/8b69ad38615a14e9ca66bc899a2bf505455ad5c81e5a08de6e8c5bed0b6b/gen_wrappers-0.2.6.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [gen-wrappers]: executing diffoscope
+[2024-05-11 16:41:44] INFO root fetch - processPackages [gen-wrappers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen_wrappers-0.2.5.tar.gz tmp/gen_wrappers-0.2.6.tar.gz --markdown 20240511/g/gen-wrappers/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 16:41:44] INFO root fetch - processPackages [pytest-discord]: Downloading https://files.pythonhosted.org/packages/ab/47/af777f9c6369c28222dfe8bd409ef85c3a9f9314ddd23ba113af03a94d13/pytest_discord-0.2.0.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [sensitiserz]: Downloading https://files.pythonhosted.org/packages/02/dc/9adcff9822beb3b112ba9bf9d8e37eab901938162a3b8433c7d992143a6d/sensitiserz-2.1.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [PgQueuer]: Downloading https://files.pythonhosted.org/packages/e7/c4/40273583ce92ebd7a9733d9347797e2687c3770fba31a062ccf45c6ceb53/pgqueuer-0.3.5.tar.gz
+[2024-05-11 16:41:44] INFO root fetch - processPackages [pytest-discord]: executing diffoscope
+[2024-05-11 16:41:44] INFO root fetch - processPackages [pytest-discord]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-discord-0.1.6.tar.gz tmp/pytest_discord-0.2.0.tar.gz --markdown 20240511/p/pytest-discord/0.1.6-0.2.0/README.md --exclude *.pyd
+[2024-05-11 16:41:45] INFO root fetch - processPackages [sensitiserz]: executing diffoscope
+[2024-05-11 16:41:45] INFO root fetch - processPackages [sensitiserz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sensitiserz-1.1.tar.gz tmp/sensitiserz-2.1.tar.gz --markdown 20240511/s/sensitiserz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:41:45] INFO root fetch - processPackages [PgQueuer]: executing diffoscope
+[2024-05-11 16:41:45] INFO root fetch - processPackages [PgQueuer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgqueuer-0.3.4.tar.gz tmp/pgqueuer-0.3.5.tar.gz --markdown 20240511/P/PgQueuer/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-11 16:41:45] INFO root fetch - processPackages [joulescope-ui]: Downloading https://files.pythonhosted.org/packages/a7/72/6c06a47755ef4164b849bf06d85e7842eae04f8105a1fdc6af81e2e9a517/joulescope_ui-1.1.7.tar.gz
+[2024-05-11 16:41:45] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.2.5.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.2.6.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - main [MainThread]: End processing [gen-wrappers]: success
+[2024-05-11 16:41:45] INFO root fetch - processPackages [sensitiserz]: Remove: archive file [/home/abi/fetcher/tmp/sensitiserz-1.1.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - processPackages [sensitiserz]: Remove: archive file [/home/abi/fetcher/tmp/sensitiserz-2.1.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - main [MainThread]: End processing [sensitiserz]: success
+[2024-05-11 16:41:45] INFO root fetch - processPackages [pytest-discord]: Remove: archive file [/home/abi/fetcher/tmp/pytest-discord-0.1.6.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - processPackages [pytest-discord]: Remove: archive file [/home/abi/fetcher/tmp/pytest_discord-0.2.0.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - main [MainThread]: End processing [pytest-discord]: success
+[2024-05-11 16:41:45] INFO root fetch - processPackages [PgQueuer]: Remove: archive file [/home/abi/fetcher/tmp/pgqueuer-0.3.4.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - processPackages [PgQueuer]: Remove: archive file [/home/abi/fetcher/tmp/pgqueuer-0.3.5.tar.gz]
+[2024-05-11 16:41:45] INFO root fetch - main [MainThread]: End processing [PgQueuer]: success
+[2024-05-11 16:41:46] INFO root fetch - processPackages [joulescope-ui]: executing diffoscope
+[2024-05-11 16:41:46] INFO root fetch - processPackages [joulescope-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joulescope_ui-1.1.6.tar.gz tmp/joulescope_ui-1.1.7.tar.gz --markdown 20240511/j/joulescope-ui/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-11 16:41:50] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.6.tar.gz]
+[2024-05-11 16:41:50] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.7.tar.gz]
+[2024-05-11 16:41:50] INFO root fetch - main [MainThread]: End processing [joulescope-ui]: success
+[2024-05-11 16:41:50] INFO root fetch - main [MainThread]: Store serial: [23162002]
