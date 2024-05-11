@@ -13335,3 +13335,27 @@
 [2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
 [2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
 [2024-05-11 11:16:09] INFO root fetch - main [MainThread]: Store serial: [23159512]
+[2024-05-11 11:18:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159512]
+[2024-05-11 11:18:21] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: create-app-fastapi
+[2024-05-11 11:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clipp
+[2024-05-11 11:18:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: refertilizedz
+[2024-05-11 11:18:21] INFO root fetch - processPackages [create-app-fastapi]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 11:18:21] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/cd/6e/240f3f18aadc3b07f6b23654a435e55d75f6b727bfd5b2d23ae600f77106/create-app-fastapi-0.0.6.tar.gz
+[2024-05-11 11:18:21] WARNING root fetch - processPackages [refertilizedz]: Skipping, unable to determine old version
+[2024-05-11 11:18:21] INFO root fetch - main [MainThread]: End processing [refertilizedz] error
+[2024-05-11 11:18:21] INFO root fetch - processPackages [clipp]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 11:18:21] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/f7/65/ed1fbfcdd5b3405bccc60b1e8663638220ae5ed8cb3f6a3a999de256489f/create-app-fastapi-0.0.7.tar.gz
+[2024-05-11 11:18:21] INFO root fetch - processPackages [clipp]: Downloading https://files.pythonhosted.org/packages/4a/7d/7930a373970267d102a76c44f56c6508be051e11ecd34eac78498500ce76/clipp-1.0.3.tar.gz
+[2024-05-11 11:18:21] INFO root fetch - processPackages [create-app-fastapi]: executing diffoscope
+[2024-05-11 11:18:21] INFO root fetch - processPackages [create-app-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create-app-fastapi-0.0.6.tar.gz tmp/create-app-fastapi-0.0.7.tar.gz --markdown 20240511/c/create-app-fastapi/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 11:18:22] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.6.tar.gz]
+[2024-05-11 11:18:22] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.7.tar.gz]
+[2024-05-11 11:18:22] INFO root fetch - main [MainThread]: End processing [create-app-fastapi]: success
+[2024-05-11 11:18:22] INFO root fetch - processPackages [clipp]: Downloading https://files.pythonhosted.org/packages/91/87/32158eb09df27047747da586bb2dcd8fec72b0ead6726cf6003618b8c68a/clipp-1.0.4.tar.gz
+[2024-05-11 11:18:22] INFO root fetch - processPackages [clipp]: executing diffoscope
+[2024-05-11 11:18:22] INFO root fetch - processPackages [clipp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clipp-1.0.3.tar.gz tmp/clipp-1.0.4.tar.gz --markdown 20240511/c/clipp/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 11:18:23] INFO root fetch - processPackages [clipp]: Remove: archive file [/home/abi/fetcher/tmp/clipp-1.0.3.tar.gz]
+[2024-05-11 11:18:23] INFO root fetch - processPackages [clipp]: Remove: archive file [/home/abi/fetcher/tmp/clipp-1.0.4.tar.gz]
+[2024-05-11 11:18:23] INFO root fetch - main [MainThread]: End processing [clipp]: success
+[2024-05-11 11:18:23] INFO root fetch - main [MainThread]: Store serial: [23159522]
