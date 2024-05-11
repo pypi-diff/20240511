@@ -9553,3 +9553,27 @@
 [2024-05-11 06:14:19] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.66.tar.gz]
 [2024-05-11 06:14:19] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
 [2024-05-11 06:14:19] INFO root fetch - main [MainThread]: Store serial: [23157199]
+[2024-05-11 06:16:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157199]
+[2024-05-11 06:16:28] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 06:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: metalogicz
+[2024-05-11 06:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloud-volume
+[2024-05-11 06:16:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metabioticallyz
+[2024-05-11 06:16:28] INFO root fetch - processPackages [metalogicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:16:28] WARNING root fetch - processPackages [metabioticallyz]: Skipping, unable to determine old version
+[2024-05-11 06:16:28] INFO root fetch - main [MainThread]: End processing [metabioticallyz] error
+[2024-05-11 06:16:28] INFO root fetch - processPackages [cloud-volume]: New version: [8.9.2] Old Version: [8.9.1]
+[2024-05-11 06:16:28] INFO root fetch - processPackages [metalogicz]: Downloading https://files.pythonhosted.org/packages/d7/89/4c506c1544af667ebd03a0eace06e4b6d6f8fdaece8c879ec17d85d75b31/metalogicz-1.1.tar.gz
+[2024-05-11 06:16:29] INFO root fetch - processPackages [cloud-volume]: Downloading https://files.pythonhosted.org/packages/39/3d/cb4e0c72c35d1d378a72f0e333b770568ce202a45f7ce6e4ee88fe508d9d/cloud-volume-8.9.1.tar.gz
+[2024-05-11 06:16:29] INFO root fetch - processPackages [metalogicz]: Downloading https://files.pythonhosted.org/packages/ec/02/da67d687d85b126ff4b6ab19775d8868b3d9f2b937311c5cdf7dfa7b58ba/metalogicz-2.1.tar.gz
+[2024-05-11 06:16:29] INFO root fetch - processPackages [metalogicz]: executing diffoscope
+[2024-05-11 06:16:29] INFO root fetch - processPackages [metalogicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalogicz-1.1.tar.gz tmp/metalogicz-2.1.tar.gz --markdown 20240511/m/metalogicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:16:29] INFO root fetch - processPackages [cloud-volume]: Downloading https://files.pythonhosted.org/packages/5c/5c/0be84b9822b3ecf3f89e49556ccdc9715e63ead9772ef037c5f2b8e51145/cloud-volume-8.9.2.tar.gz
+[2024-05-11 06:16:29] INFO root fetch - processPackages [cloud-volume]: executing diffoscope
+[2024-05-11 06:16:29] INFO root fetch - processPackages [cloud-volume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-volume-8.9.1.tar.gz tmp/cloud-volume-8.9.2.tar.gz --markdown 20240511/c/cloud-volume/8.9.1-8.9.2/README.md --exclude *.pyd
+[2024-05-11 06:16:29] INFO root fetch - processPackages [metalogicz]: Remove: archive file [/home/abi/fetcher/tmp/metalogicz-1.1.tar.gz]
+[2024-05-11 06:16:29] INFO root fetch - processPackages [metalogicz]: Remove: archive file [/home/abi/fetcher/tmp/metalogicz-2.1.tar.gz]
+[2024-05-11 06:16:29] INFO root fetch - main [MainThread]: End processing [metalogicz]: success
+[2024-05-11 06:16:30] INFO root fetch - processPackages [cloud-volume]: Remove: archive file [/home/abi/fetcher/tmp/cloud-volume-8.9.1.tar.gz]
+[2024-05-11 06:16:30] INFO root fetch - processPackages [cloud-volume]: Remove: archive file [/home/abi/fetcher/tmp/cloud-volume-8.9.2.tar.gz]
+[2024-05-11 06:16:30] INFO root fetch - main [MainThread]: End processing [cloud-volume]: success
+[2024-05-11 06:16:30] INFO root fetch - main [MainThread]: Store serial: [23157208]
