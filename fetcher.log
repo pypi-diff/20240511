@@ -15599,3 +15599,39 @@
 [2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: Remove: archive file [/home/abi/fetcher/tmp/propertyshipz-2.1.tar.gz]
 [2024-05-11 13:40:44] INFO root fetch - main [MainThread]: End processing [propertyshipz]: success
 [2024-05-11 13:40:44] INFO root fetch - main [MainThread]: Store serial: [23160651]
+[2024-05-11 13:42:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160651]
+[2024-05-11 13:42:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 13:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shipper-shippy
+[2024-05-11 13:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: asm1-influent-generator
+[2024-05-11 13:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: projectZ
+[2024-05-11 13:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: orthophosphoricz
+[2024-05-11 13:42:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semantic-router
+[2024-05-11 13:42:53] WARNING root fetch - processPackages [asm1-influent-generator]: Skipping, unable to determine old version
+[2024-05-11 13:42:53] INFO root fetch - main [MainThread]: End processing [asm1-influent-generator] error
+[2024-05-11 13:42:53] INFO root fetch - processPackages [projectZ]: New version: [1.1.7.2.1.4] Old Version: [1.1.7.2.1]
+[2024-05-11 13:42:53] INFO root fetch - processPackages [semantic-router]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 13:42:53] INFO root fetch - processPackages [shipper-shippy]: New version: [2.37.0] Old Version: [2.36.8]
+[2024-05-11 13:42:53] INFO root fetch - processPackages [projectZ]: Downloading https://files.pythonhosted.org/packages/d7/32/45212fd10a6edd55e1e658a17145913799d6324f2c38dcb8d72077d70f59/projectZ-1.1.7.2.1.tar.gz
+[2024-05-11 13:42:53] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/c8/0d/05f5c85154679556646f2859bb214924f424d1eaa976882df7ecc9610cc7/shipper_shippy-2.36.8.tar.gz
+[2024-05-11 13:42:53] WARNING root fetch - processPackages [orthophosphoricz]: Skipping, unable to determine old version
+[2024-05-11 13:42:53] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/69/f5/24f7ed2376beeca68004c749ee072334bcdbcd70becd7e5549ea5773efae/semantic_router-0.0.8.tar.gz
+[2024-05-11 13:42:53] INFO root fetch - main [MainThread]: End processing [orthophosphoricz] error
+[2024-05-11 13:42:54] INFO root fetch - processPackages [projectZ]: Downloading https://files.pythonhosted.org/packages/8f/4a/19dc18560098cdb25a8d52951146cbc672609119acbd054644012a4a677d/projectZ-1.1.7.2.1.4.tar.gz
+[2024-05-11 13:42:54] INFO root fetch - processPackages [semantic-router]: Downloading https://files.pythonhosted.org/packages/c6/e8/868f59ad8c7643feea9a25db402d4e84236189e1a9d89a4c840838be947f/semantic_router-0.0.9.tar.gz
+[2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: Downloading https://files.pythonhosted.org/packages/3a/72/9da74c6d563ffcf5bbd25ad94b02226e715bbf7be2c1df1c64b84bbdd312/shipper_shippy-2.37.0.tar.gz
+[2024-05-11 13:42:54] INFO root fetch - processPackages [projectZ]: executing diffoscope
+[2024-05-11 13:42:54] INFO root fetch - processPackages [projectZ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projectZ-1.1.7.2.1.tar.gz tmp/projectZ-1.1.7.2.1.4.tar.gz --markdown 20240511/p/projectZ/1.1.7.2.1-1.1.7.2.1.4/README.md --exclude *.pyd
+[2024-05-11 13:42:54] INFO root fetch - processPackages [semantic-router]: executing diffoscope
+[2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: executing diffoscope
+[2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shipper_shippy-2.36.8.tar.gz tmp/shipper_shippy-2.37.0.tar.gz --markdown 20240511/s/shipper-shippy/2.36.8-2.37.0/README.md --exclude *.pyd
+[2024-05-11 13:42:54] INFO root fetch - processPackages [semantic-router]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_router-0.0.8.tar.gz tmp/semantic_router-0.0.9.tar.gz --markdown 20240511/s/semantic-router/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 13:42:54] INFO root fetch - processPackages [projectZ]: Remove: archive file [/home/abi/fetcher/tmp/projectZ-1.1.7.2.1.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - processPackages [projectZ]: Remove: archive file [/home/abi/fetcher/tmp/projectZ-1.1.7.2.1.4.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - main [MainThread]: End processing [projectZ]: success
+[2024-05-11 13:42:54] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.8.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - processPackages [semantic-router]: Remove: archive file [/home/abi/fetcher/tmp/semantic_router-0.0.9.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - main [MainThread]: End processing [semantic-router]: success
+[2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.36.8.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.37.0.tar.gz]
+[2024-05-11 13:42:54] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
+[2024-05-11 13:42:54] INFO root fetch - main [MainThread]: Store serial: [23160667]
