@@ -7494,3 +7494,21 @@
 [2024-05-11 03:42:05] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.2.2.tar.gz]
 [2024-05-11 03:42:05] INFO root fetch - main [MainThread]: End processing [clicra]: success
 [2024-05-11 03:42:05] INFO root fetch - main [MainThread]: Store serial: [23156409]
+[2024-05-11 03:44:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156409]
+[2024-05-11 03:44:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 03:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: antipharmicz
+[2024-05-11 03:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ucg-client
+[2024-05-11 03:44:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lamebrainedz
+[2024-05-11 03:44:14] INFO root fetch - processPackages [lamebrainedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 03:44:14] WARNING root fetch - processPackages [ucg-client]: Skipping, unable to determine old version
+[2024-05-11 03:44:14] WARNING root fetch - processPackages [antipharmicz]: Skipping, unable to determine old version
+[2024-05-11 03:44:14] INFO root fetch - main [MainThread]: End processing [ucg-client] error
+[2024-05-11 03:44:14] INFO root fetch - main [MainThread]: End processing [antipharmicz] error
+[2024-05-11 03:44:14] INFO root fetch - processPackages [lamebrainedz]: Downloading https://files.pythonhosted.org/packages/c7/6a/713d5f17f9ed5b91ccb15bdf2f6c14a94de5cbb4158aae16cd5a8f3f3bea/lamebrainedz-1.1.tar.gz
+[2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: Downloading https://files.pythonhosted.org/packages/5a/6e/d259b28a034978355aa2ace5b793372897be66ee22be9cae0af7f80b75f8/lamebrainedz-2.1.tar.gz
+[2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: executing diffoscope
+[2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lamebrainedz-1.1.tar.gz tmp/lamebrainedz-2.1.tar.gz --markdown 20240511/l/lamebrainedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: Remove: archive file [/home/abi/fetcher/tmp/lamebrainedz-1.1.tar.gz]
+[2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: Remove: archive file [/home/abi/fetcher/tmp/lamebrainedz-2.1.tar.gz]
+[2024-05-11 03:44:15] INFO root fetch - main [MainThread]: End processing [lamebrainedz]: success
+[2024-05-11 03:44:15] INFO root fetch - main [MainThread]: Store serial: [23156420]
