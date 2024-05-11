@@ -15722,3 +15722,24 @@
 [2024-05-11 13:49:28] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.14.0.tar.gz]
 [2024-05-11 13:49:28] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-11 13:49:28] INFO root fetch - main [MainThread]: Store serial: [23160697]
+[2024-05-11 13:51:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160697]
+[2024-05-11 13:51:38] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pseudodemocraticz
+[2024-05-11 13:51:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hijiki
+[2024-05-11 13:51:38] INFO root fetch - processPackages [hijiki]: New version: [1.0.60] Old Version: [1.0.59]
+[2024-05-11 13:51:38] INFO root fetch - processPackages [hijiki]: Downloading https://files.pythonhosted.org/packages/f5/9d/56ee5b9707b347b7078f587a9804827b2d6638942747462fcb76e606267e/hijiki-1.0.59.tar.gz
+[2024-05-11 13:51:38] INFO root fetch - processPackages [pseudodemocraticz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:51:38] INFO root fetch - processPackages [hijiki]: Downloading https://files.pythonhosted.org/packages/f1/e6/3a691f6e4140716b68c5f559ff5b3675cb99c3025424f12aac12983ad891/hijiki-1.0.60.tar.gz
+[2024-05-11 13:51:38] INFO root fetch - processPackages [pseudodemocraticz]: Downloading https://files.pythonhosted.org/packages/e6/b8/204def4296c30712b3c8008188562600fb17be0909ebd0f75697ddaf3a70/pseudodemocraticz-1.1.tar.gz
+[2024-05-11 13:51:38] INFO root fetch - processPackages [hijiki]: executing diffoscope
+[2024-05-11 13:51:38] INFO root fetch - processPackages [hijiki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hijiki-1.0.59.tar.gz tmp/hijiki-1.0.60.tar.gz --markdown 20240511/h/hijiki/1.0.59-1.0.60/README.md --exclude *.pyd
+[2024-05-11 13:51:38] INFO root fetch - processPackages [pseudodemocraticz]: Downloading https://files.pythonhosted.org/packages/e5/e1/3faea34fc17bb7320057587dd76c627d2ad82e514c9f27d5b171abb4a56f/pseudodemocraticz-2.1.tar.gz
+[2024-05-11 13:51:38] INFO root fetch - processPackages [pseudodemocraticz]: executing diffoscope
+[2024-05-11 13:51:38] INFO root fetch - processPackages [pseudodemocraticz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudodemocraticz-1.1.tar.gz tmp/pseudodemocraticz-2.1.tar.gz --markdown 20240511/p/pseudodemocraticz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:51:39] INFO root fetch - processPackages [hijiki]: Remove: archive file [/home/abi/fetcher/tmp/hijiki-1.0.59.tar.gz]
+[2024-05-11 13:51:39] INFO root fetch - processPackages [hijiki]: Remove: archive file [/home/abi/fetcher/tmp/hijiki-1.0.60.tar.gz]
+[2024-05-11 13:51:39] INFO root fetch - main [MainThread]: End processing [hijiki]: success
+[2024-05-11 13:51:39] INFO root fetch - processPackages [pseudodemocraticz]: Remove: archive file [/home/abi/fetcher/tmp/pseudodemocraticz-1.1.tar.gz]
+[2024-05-11 13:51:39] INFO root fetch - processPackages [pseudodemocraticz]: Remove: archive file [/home/abi/fetcher/tmp/pseudodemocraticz-2.1.tar.gz]
+[2024-05-11 13:51:39] INFO root fetch - main [MainThread]: End processing [pseudodemocraticz]: success
+[2024-05-11 13:51:39] INFO root fetch - main [MainThread]: Store serial: [23160703]
