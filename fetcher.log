@@ -22665,3 +22665,63 @@
 [2024-05-11 21:46:35] WARNING root fetch - processPackages [react-iq]: Skipping, unable to determine old version
 [2024-05-11 21:46:35] INFO root fetch - main [MainThread]: End processing [react-iq] error
 [2024-05-11 21:46:35] INFO root fetch - main [MainThread]: Store serial: [23164074]
+[2024-05-11 21:48:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164074]
+[2024-05-11 21:48:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bisos.banna
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: loopquest
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lipkg
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: trochz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: perjuredz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ptsqld
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: auto-circuit
+[2024-05-11 21:48:44] INFO root fetch - processPackages [bisos.banna]: New version: [0.3] Old Version: [0.2]
+[2024-05-11 21:48:44] INFO root fetch - processPackages [loopquest]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-11 21:48:44] INFO root fetch - processPackages [trochz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ptsqld]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 21:48:44] INFO root fetch - processPackages [lipkg]: New version: [1.0.0] Old Version: [0.0.6]
+[2024-05-11 21:48:44] WARNING root fetch - processPackages [perjuredz]: Skipping, unable to determine old version
+[2024-05-11 21:48:44] INFO root fetch - main [MainThread]: End processing [perjuredz] error
+[2024-05-11 21:48:44] INFO root fetch - processPackages [auto-circuit]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 21:48:44] INFO root fetch - processPackages [bisos.banna]: Downloading https://files.pythonhosted.org/packages/1c/d4/1ceee6ddb3a4a35daacc5801986449ad92fc64b6602849f80ddea2e9fc39/bisos.banna-0.2.tar.gz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [loopquest]: Downloading https://files.pythonhosted.org/packages/65/98/79944c29363f6878d5e4131fe364c4a55d24353dd924baad59e0fccbac51/loopquest-0.2.3.tar.gz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [trochz]: Downloading https://files.pythonhosted.org/packages/0a/f6/5253daec5bcc0b4f4077ea12aed82faec5268fde661b791da1089929d8a4/trochz-1.1.tar.gz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [lipkg]: Downloading https://files.pythonhosted.org/packages/58/21/5ab5850da979aacf29ad175b7a00ef5407aa6c4160b59c2e80353c058560/lipkg-0.0.6.tar.gz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [ptsqld]: Downloading https://files.pythonhosted.org/packages/38/ef/b96af6962e1575e6f2d16fabf64ead2d2d183ee0e3a2386abe40bf21c08c/ptsqld-0.1.2.tar.gz
+[2024-05-11 21:48:44] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/b8/c6/f3e77b7a65f11ce6e82aeb9b4a473a972946af6b9e6eb3abc4a286e2a7de/auto_circuit-0.1.3.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [bisos.banna]: Downloading https://files.pythonhosted.org/packages/4c/f1/160f67c2d76f2abe546694360177d35ef2c1fd0ea947861e7d8efe934524/bisos.banna-0.3.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [loopquest]: Downloading https://files.pythonhosted.org/packages/12/ab/85d42fb287e6c8526a4c63c76a8aa76771a282c83e739ca67d0e51a2781d/loopquest-0.2.4.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [trochz]: Downloading https://files.pythonhosted.org/packages/43/2a/c7a2af04c4dba09fd35dc89243c0bd14b0ea50e10795632991fcf2e44fb4/trochz-2.1.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [ptsqld]: Downloading https://files.pythonhosted.org/packages/23/8d/63db14f1ceea486b69d1c3b8235dcc795a9d0c064c5c7e71c1eb383d3d56/ptsqld-0.1.3.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/b9/ca/3c2b195fcee2b86f5feff620bf6c742cd4a15d45becacf9a9e768b91ec8d/auto_circuit-0.1.4.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [lipkg]: Downloading https://files.pythonhosted.org/packages/cb/ec/2fe83e942a032412508b8ec23307fecb2fefa025286d1a1ec13bd84882f2/lipkg-1.0.0.tar.gz
+[2024-05-11 21:48:45] INFO root fetch - processPackages [loopquest]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [loopquest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/loopquest-0.2.3.tar.gz tmp/loopquest-0.2.4.tar.gz --markdown 20240511/l/loopquest/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [trochz]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [trochz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trochz-1.1.tar.gz tmp/trochz-2.1.tar.gz --markdown 20240511/t/trochz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [bisos.banna]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [bisos.banna]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.banna-0.2.tar.gz tmp/bisos.banna-0.3.tar.gz --markdown 20240511/b/bisos.banna/0.2-0.3/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [ptsqld]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [ptsqld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptsqld-0.1.2.tar.gz tmp/ptsqld-0.1.3.tar.gz --markdown 20240511/p/ptsqld/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [lipkg]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [lipkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lipkg-0.0.6.tar.gz tmp/lipkg-1.0.0.tar.gz --markdown 20240511/l/lipkg/0.0.6-1.0.0/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [auto-circuit]: executing diffoscope
+[2024-05-11 21:48:45] INFO root fetch - processPackages [auto-circuit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_circuit-0.1.3.tar.gz tmp/auto_circuit-0.1.4.tar.gz --markdown 20240511/a/auto-circuit/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 21:48:45] INFO root fetch - processPackages [trochz]: Remove: archive file [/home/abi/fetcher/tmp/trochz-1.1.tar.gz]
+[2024-05-11 21:48:45] INFO root fetch - processPackages [trochz]: Remove: archive file [/home/abi/fetcher/tmp/trochz-2.1.tar.gz]
+[2024-05-11 21:48:45] INFO root fetch - main [MainThread]: End processing [trochz]: success
+[2024-05-11 21:48:45] INFO root fetch - processPackages [loopquest]: Remove: archive file [/home/abi/fetcher/tmp/loopquest-0.2.3.tar.gz]
+[2024-05-11 21:48:45] INFO root fetch - processPackages [loopquest]: Remove: archive file [/home/abi/fetcher/tmp/loopquest-0.2.4.tar.gz]
+[2024-05-11 21:48:45] INFO root fetch - main [MainThread]: End processing [loopquest]: success
+[2024-05-11 21:48:46] INFO root fetch - processPackages [bisos.banna]: Remove: archive file [/home/abi/fetcher/tmp/bisos.banna-0.2.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - processPackages [bisos.banna]: Remove: archive file [/home/abi/fetcher/tmp/bisos.banna-0.3.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - main [MainThread]: End processing [bisos.banna]: success
+[2024-05-11 21:48:46] INFO root fetch - processPackages [lipkg]: Remove: archive file [/home/abi/fetcher/tmp/lipkg-0.0.6.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - processPackages [lipkg]: Remove: archive file [/home/abi/fetcher/tmp/lipkg-1.0.0.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - main [MainThread]: End processing [lipkg]: success
+[2024-05-11 21:48:46] INFO root fetch - processPackages [ptsqld]: Remove: archive file [/home/abi/fetcher/tmp/ptsqld-0.1.2.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - processPackages [ptsqld]: Remove: archive file [/home/abi/fetcher/tmp/ptsqld-0.1.3.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - main [MainThread]: End processing [ptsqld]: success
+[2024-05-11 21:48:46] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.3.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.4.tar.gz]
+[2024-05-11 21:48:46] INFO root fetch - main [MainThread]: End processing [auto-circuit]: success
+[2024-05-11 21:48:46] INFO root fetch - main [MainThread]: Store serial: [23164094]
