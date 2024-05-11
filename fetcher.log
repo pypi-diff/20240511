@@ -11791,3 +11791,9 @@
 [2024-05-11 09:16:08] INFO root fetch - processPackages [otiorhynchidaez]: Remove: archive file [/home/abi/fetcher/tmp/otiorhynchidaez-2.1.tar.gz]
 [2024-05-11 09:16:08] INFO root fetch - main [MainThread]: End processing [otiorhynchidaez]: success
 [2024-05-11 09:16:08] INFO root fetch - main [MainThread]: Store serial: [23158599]
+[2024-05-11 09:18:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158599]
+[2024-05-11 09:18:16] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 09:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-aidot
+[2024-05-11 09:18:17] WARNING root fetch - processPackages [python-aidot]: Skipping, unable to determine old version
+[2024-05-11 09:18:17] INFO root fetch - main [MainThread]: End processing [python-aidot] error
+[2024-05-11 09:18:17] INFO root fetch - main [MainThread]: Store serial: [23158604]
