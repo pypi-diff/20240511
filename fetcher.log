@@ -8568,3 +8568,45 @@
 [2024-05-11 05:04:30] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.8.tar.gz]
 [2024-05-11 05:04:30] INFO root fetch - main [MainThread]: End processing [cycling-dynamics]: success
 [2024-05-11 05:04:30] INFO root fetch - main [MainThread]: Store serial: [23156836]
+[2024-05-11 05:06:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156836]
+[2024-05-11 05:06:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 05:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: undisinheritedz
+[2024-05-11 05:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PepperPepper
+[2024-05-11 05:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: litellm
+[2024-05-11 05:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aliyun-python-sdk-live
+[2024-05-11 05:06:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easytl
+[2024-05-11 05:06:39] WARNING root fetch - processPackages [undisinheritedz]: Skipping, unable to determine old version
+[2024-05-11 05:06:39] INFO root fetch - main [MainThread]: End processing [undisinheritedz] error
+[2024-05-11 05:06:39] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-11 05:06:39] INFO root fetch - processPackages [aliyun-python-sdk-live]: New version: [3.9.9] Old Version: [3.9.8]
+[2024-05-11 05:06:39] INFO root fetch - processPackages [easytl]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-11 05:06:39] INFO root fetch - processPackages [litellm]: New version: [1.9.dev0] Old Version: [1.9.5]
+[2024-05-11 05:06:39] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/38/f3/1cbeaf4074e7b284cd140263ff165948d8f4cc8f5dd72c89be43a0469387/litellm-1.9.5.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [aliyun-python-sdk-live]: Downloading https://files.pythonhosted.org/packages/31/65/4f6a896045410caad0fb1072937d98a415358d05f026fcc623fc7b574676/aliyun-python-sdk-live-3.9.8.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/35/58/847587a783ec27fff28064756a2163b1125ea302f506fc68c769c8b54cbf/easytl-0.3.0.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [litellm]: Downloading https://files.pythonhosted.org/packages/ad/6c/162b83e9cf68f5a94c30153e835414c3ee11c8602ffaacc9a032851dfa26/litellm-1.9.dev0.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [easytl]: Downloading https://files.pythonhosted.org/packages/7b/a4/b380a2a06beaacc0897b79a1836c200a80dff04fcc6633da668ef1b8865b/easytl-0.3.1.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [aliyun-python-sdk-live]: Downloading https://files.pythonhosted.org/packages/c9/c2/cab5cf2ebd2f262d29f54860eed7fac4412fa50e6388b0053c4dd76ae3ad/aliyun-python-sdk-live-3.9.9.tar.gz
+[2024-05-11 05:06:40] INFO root fetch - processPackages [litellm]: executing diffoscope
+[2024-05-11 05:06:40] INFO root fetch - processPackages [litellm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litellm-1.9.5.tar.gz tmp/litellm-1.9.dev0.tar.gz --markdown 20240511/l/litellm/1.9.5-1.9.dev0/README.md --exclude *.pyd
+[2024-05-11 05:06:40] INFO root fetch - processPackages [easytl]: executing diffoscope
+[2024-05-11 05:06:40] INFO root fetch - processPackages [easytl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easytl-0.3.0.tar.gz tmp/easytl-0.3.1.tar.gz --markdown 20240511/e/easytl/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-11 05:06:40] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-11 05:06:40] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240511/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-11 05:06:40] INFO root fetch - processPackages [aliyun-python-sdk-live]: executing diffoscope
+[2024-05-11 05:06:40] INFO root fetch - processPackages [aliyun-python-sdk-live]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aliyun-python-sdk-live-3.9.8.tar.gz tmp/aliyun-python-sdk-live-3.9.9.tar.gz --markdown 20240511/a/aliyun-python-sdk-live/3.9.8-3.9.9/README.md --exclude *.pyd
+[2024-05-11 05:06:41] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-11 05:06:41] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.3.0.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - processPackages [easytl]: Remove: archive file [/home/abi/fetcher/tmp/easytl-0.3.1.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - main [MainThread]: End processing [easytl]: success
+[2024-05-11 05:06:41] INFO root fetch - processPackages [aliyun-python-sdk-live]: Remove: archive file [/home/abi/fetcher/tmp/aliyun-python-sdk-live-3.9.8.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - processPackages [aliyun-python-sdk-live]: Remove: archive file [/home/abi/fetcher/tmp/aliyun-python-sdk-live-3.9.9.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - main [MainThread]: End processing [aliyun-python-sdk-live]: success
+[2024-05-11 05:06:41] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.5.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
+[2024-05-11 05:06:41] INFO root fetch - main [MainThread]: End processing [litellm]: success
+[2024-05-11 05:06:41] INFO root fetch - main [MainThread]: Store serial: [23156854]
