@@ -19813,3 +19813,33 @@
 [2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: Remove: archive file [/home/abi/fetcher/tmp/ofnodes-2.0.tar.gz]
 [2024-05-11 18:28:16] INFO root fetch - main [MainThread]: End processing [ofnodes]: success
 [2024-05-11 18:28:16] INFO root fetch - main [MainThread]: Store serial: [23162659]
+[2024-05-11 18:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162659]
+[2024-05-11 18:30:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 18:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unspiritualnessz
+[2024-05-11 18:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chess-utils
+[2024-05-11 18:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: simple-bgpfuzz-rpc
+[2024-05-11 18:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: qslite3
+[2024-05-11 18:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: AmaProductReviews
+[2024-05-11 18:30:25] WARNING root fetch - processPackages [simple-bgpfuzz-rpc]: Skipping, unable to determine old version
+[2024-05-11 18:30:25] INFO root fetch - main [MainThread]: End processing [simple-bgpfuzz-rpc] error
+[2024-05-11 18:30:25] INFO root fetch - processPackages [chess-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 18:30:25] INFO root fetch - processPackages [AmaProductReviews]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 18:30:25] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/5a/8d/34b2debb5f9702657993ffe2c60a0cad5db6836c8c747601ead2b61405b1/amaproductreviews-0.0.8.tar.gz
+[2024-05-11 18:30:25] WARNING root fetch - processPackages [qslite3]: Skipping, unable to determine old version
+[2024-05-11 18:30:25] INFO root fetch - main [MainThread]: End processing [qslite3] error
+[2024-05-11 18:30:25] WARNING root fetch - processPackages [unspiritualnessz]: Skipping, unable to determine old version
+[2024-05-11 18:30:25] INFO root fetch - main [MainThread]: End processing [unspiritualnessz] error
+[2024-05-11 18:30:25] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/a3/dc/1afe218e54667934bab5660e347ffb7cefed78c6dfddc717fb5f962ae659/chess_utils-0.1.8.tar.gz
+[2024-05-11 18:30:25] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/c2/7f/9a5fb9b5fe8d20aa9558f560fd1f5e54d7b1829049a8a979f5d5c5a33d91/amaproductreviews-0.0.9.tar.gz
+[2024-05-11 18:30:25] INFO root fetch - processPackages [AmaProductReviews]: executing diffoscope
+[2024-05-11 18:30:25] INFO root fetch - processPackages [AmaProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amaproductreviews-0.0.8.tar.gz tmp/amaproductreviews-0.0.9.tar.gz --markdown 20240511/A/AmaProductReviews/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:30:25] INFO root fetch - processPackages [chess-utils]: Downloading https://files.pythonhosted.org/packages/91/10/67dd0bbf7400db91ed6e38e5428df297885a142cb6307e0a05c302654e5e/chess_utils-0.1.9.tar.gz
+[2024-05-11 18:30:26] INFO root fetch - processPackages [chess-utils]: executing diffoscope
+[2024-05-11 18:30:26] INFO root fetch - processPackages [chess-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chess_utils-0.1.8.tar.gz tmp/chess_utils-0.1.9.tar.gz --markdown 20240511/c/chess-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 18:30:26] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.8.tar.gz]
+[2024-05-11 18:30:26] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.9.tar.gz]
+[2024-05-11 18:30:26] INFO root fetch - main [MainThread]: End processing [AmaProductReviews]: success
+[2024-05-11 18:30:26] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.8.tar.gz]
+[2024-05-11 18:30:26] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
+[2024-05-11 18:30:26] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
+[2024-05-11 18:30:26] INFO root fetch - main [MainThread]: Store serial: [23162682]
