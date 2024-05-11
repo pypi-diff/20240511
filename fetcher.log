@@ -19047,3 +19047,45 @@
 [2024-05-11 17:41:57] INFO root fetch - processPackages [rockai-cli-app]: Remove: archive file [/home/abi/fetcher/tmp/rockai_cli_app-0.2.1.tar.gz]
 [2024-05-11 17:41:57] INFO root fetch - main [MainThread]: End processing [rockai-cli-app]: success
 [2024-05-11 17:41:57] INFO root fetch - main [MainThread]: Store serial: [23162353]
+[2024-05-11 17:44:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162353]
+[2024-05-11 17:44:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 17:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: getawayz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monteprediction
+[2024-05-11 17:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 17:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pisa-ssh
+[2024-05-11 17:44:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: glue-utils
+[2024-05-11 17:44:06] INFO root fetch - processPackages [monteprediction]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 17:44:06] INFO root fetch - processPackages [monteprediction]: Downloading https://files.pythonhosted.org/packages/72/65/0e5db0bfdfa9d9120cb64c4ae011c2e39a8cc051ac9b195c658f6e06093f/monteprediction-1.0.8.tar.gz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [pisa-ssh]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 17:44:06] WARNING root fetch - processPackages [getawayz]: Skipping, unable to determine old version
+[2024-05-11 17:44:06] INFO root fetch - main [MainThread]: End processing [getawayz] error
+[2024-05-11 17:44:06] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 17:44:06] INFO root fetch - processPackages [glue-utils]: New version: [0.3.0rc2] Old Version: [0.3.0rc1]
+[2024-05-11 17:44:06] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [monteprediction]: Downloading https://files.pythonhosted.org/packages/5f/93/f758156e7f6a3b1a4a13dc1a8bc6997757cf1b8852b1198ef946ead5ab2d/monteprediction-1.0.9.tar.gz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [pisa-ssh]: Downloading https://files.pythonhosted.org/packages/47/66/b51cfa25172bb5708cfcdd0498a7b9970f4d1b77826f04eaf7b730daa89e/pisa_ssh-0.1.2.tar.gz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/06/c6/d28a2bd66cd1b8b6c571437bfb6f7f32a5567144354d1ca4c05b769944dc/glue_utils-0.3.0rc1.tar.gz
+[2024-05-11 17:44:06] INFO root fetch - processPackages [monteprediction]: executing diffoscope
+[2024-05-11 17:44:06] INFO root fetch - processPackages [monteprediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monteprediction-1.0.8.tar.gz tmp/monteprediction-1.0.9.tar.gz --markdown 20240511/m/monteprediction/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 17:44:06] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 17:44:07] INFO root fetch - processPackages [pisa-ssh]: Downloading https://files.pythonhosted.org/packages/cc/c4/4d361705a6d2a1e5ffddcfca29b2f976e8e6338d45d8959739566b82c95c/pisa_ssh-0.1.3.tar.gz
+[2024-05-11 17:44:07] INFO root fetch - processPackages [pisa-ssh]: executing diffoscope
+[2024-05-11 17:44:07] INFO root fetch - processPackages [pisa-ssh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pisa_ssh-0.1.2.tar.gz tmp/pisa_ssh-0.1.3.tar.gz --markdown 20240511/p/pisa-ssh/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 17:44:07] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 17:44:07] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 17:44:07] INFO root fetch - processPackages [glue-utils]: Downloading https://files.pythonhosted.org/packages/f6/2e/5c82f974a960fcb3d36ad3786d448d77b1a92d6edaa89e4e4c0a57a32898/glue_utils-0.3.0rc2.tar.gz
+[2024-05-11 17:44:07] INFO root fetch - processPackages [glue-utils]: executing diffoscope
+[2024-05-11 17:44:07] INFO root fetch - processPackages [glue-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glue_utils-0.3.0rc1.tar.gz tmp/glue_utils-0.3.0rc2.tar.gz --markdown 20240511/g/glue-utils/0.3.0rc1-0.3.0rc2/README.md --exclude *.pyd
+[2024-05-11 17:44:07] INFO root fetch - processPackages [monteprediction]: Remove: archive file [/home/abi/fetcher/tmp/monteprediction-1.0.8.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - processPackages [monteprediction]: Remove: archive file [/home/abi/fetcher/tmp/monteprediction-1.0.9.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - main [MainThread]: End processing [monteprediction]: success
+[2024-05-11 17:44:07] INFO root fetch - processPackages [pisa-ssh]: Remove: archive file [/home/abi/fetcher/tmp/pisa_ssh-0.1.2.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - processPackages [pisa-ssh]: Remove: archive file [/home/abi/fetcher/tmp/pisa_ssh-0.1.3.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - main [MainThread]: End processing [pisa-ssh]: success
+[2024-05-11 17:44:07] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.3.0rc1.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - processPackages [glue-utils]: Remove: archive file [/home/abi/fetcher/tmp/glue_utils-0.3.0rc2.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - main [MainThread]: End processing [glue-utils]: success
+[2024-05-11 17:44:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 17:44:07] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 17:44:07] INFO root fetch - main [MainThread]: Store serial: [23162369]
