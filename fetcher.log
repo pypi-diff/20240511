@@ -2426,3 +2426,95 @@
 [2024-05-11 02:14:57] INFO root fetch - processPackages [nmdc-schema]: Remove: archive file [/home/abi/fetcher/tmp/nmdc_schema-9.3.2.tar.gz]
 [2024-05-11 02:14:57] INFO root fetch - main [MainThread]: End processing [nmdc-schema]: success
 [2024-05-11 02:14:57] INFO root fetch - main [MainThread]: Store serial: [23154488]
+[2024-05-11 02:17:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154488]
+[2024-05-11 02:17:09] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: colossalai-nightly
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nn-parts
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: auscultatez
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: innuendoedz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: airtestProject
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: nn-parts
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: byfron
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: byfron
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cdklabs.cdk-hyperledger-fabric-network
+[2024-05-11 02:17:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sharemyai-utils
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: New version: [2024.0.1] Old Version: [2024.0.0]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [airtestProject]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [sharemyai-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: New version: [2024.0.1] Old Version: [2024.0.0]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [innuendoedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: New version: [0.8.99] Old Version: [0.8.98]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [colossalai-nightly]: New version: [2024.5.4] Old Version: [2024.5.11]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [byfron]: New version: [0.0.13] Old Version: [0.0.1]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [byfron]: New version: [0.0.13] Old Version: [0.0.1]
+[2024-05-11 02:17:09] WARNING root fetch - processPackages [auscultatez]: Skipping, unable to determine old version
+[2024-05-11 02:17:09] INFO root fetch - processPackages [auscultatez]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-11 02:17:09] INFO root fetch - main [MainThread]: End processing [auscultatez] error
+[2024-05-11 02:17:09] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/fd/ad/46504d748fc6a9dd7ab1dfa798bc82f905d5a1843574d26d836fe48bc415/airtestproject-0.1.3.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/f9/85/4d1a239d5b2310753e3641b585d5e4ca024697cf417a14227d8f78c0763c/sharemyai_utils-0.1.8.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/9b/c8/ddb4d2575b42b36bf1ebf5daccec9c3c53a9ac9cadaeffb66bed93dc3bab/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: Downloading https://files.pythonhosted.org/packages/6a/2a/f3c20d587ee6ccab5176c3f02975e0bc292ffec308f990508f6faab0470a/nn_parts-2024.0.0.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: Downloading https://files.pythonhosted.org/packages/6a/2a/f3c20d587ee6ccab5176c3f02975e0bc292ffec308f990508f6faab0470a/nn_parts-2024.0.0.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-11 02:17:09] INFO root fetch - processPackages [innuendoedz]: Downloading https://files.pythonhosted.org/packages/b8/27/397df41382b0e06fc66dcc58378943bdeae3b611bfbff25a8662a41251a4/innuendoedz-1.1.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/09/a0/771292ded93d3253a90243e8fd8346b508c0ac5a5ea81c8c89620a694a19/colossalai-nightly-2024.5.11.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [byfron]: Downloading https://files.pythonhosted.org/packages/a5/93/d72edc430e172f36d9c5a6ad68d2c1db372b856eaf4b969b5042d886b0ac/byfron-0.0.1.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [byfron]: Downloading https://files.pythonhosted.org/packages/a5/93/d72edc430e172f36d9c5a6ad68d2c1db372b856eaf4b969b5042d886b0ac/byfron-0.0.1.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [sharemyai-utils]: Downloading https://files.pythonhosted.org/packages/9b/8a/3c94dcbf0855c714ac43b9bfa2461fc9c88133f4787553d6fd263b38cfc6/sharemyai_utils-0.1.9.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Downloading https://files.pythonhosted.org/packages/56/40/cbf52f4213018f2d82f0aad0f2fa90e69c2923704c1905bd7e090d3accf2/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/c6/c2/4027d12fc7bf77ffe823f9727fbfab04a8756c013f44918b7cd27ac31ac1/airtestproject-0.1.4.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [sharemyai-utils]: executing diffoscope
+[2024-05-11 02:17:09] INFO root fetch - processPackages [sharemyai-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharemyai_utils-0.1.8.tar.gz tmp/sharemyai_utils-0.1.9.tar.gz --markdown 20240511/s/sharemyai-utils/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: Downloading https://files.pythonhosted.org/packages/ca/59/68347a693afbede80194ebf45ff02877df3978647669a023e2ec3d844148/nn_parts-2024.0.1.tar.gz
+[2024-05-11 02:17:09] INFO root fetch - processPackages [nn-parts]: Downloading https://files.pythonhosted.org/packages/ca/59/68347a693afbede80194ebf45ff02877df3978647669a023e2ec3d844148/nn_parts-2024.0.1.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz --markdown 20240511/c/cdklabs.cdk-hyperledger-fabric-network/0.8.98-0.8.99/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [innuendoedz]: Downloading https://files.pythonhosted.org/packages/d9/bf/3698d0d8874b9d5b58e86b3b961aa46523dd8a5d953207fa55db51570b45/innuendoedz-2.1.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: Downloading https://files.pythonhosted.org/packages/f3/07/f8146498787d5ea8eaa1004c955d8f8dc5be7919aa12030b8f60a555cccb/byfron-0.0.13.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: Downloading https://files.pythonhosted.org/packages/f3/07/f8146498787d5ea8eaa1004c955d8f8dc5be7919aa12030b8f60a555cccb/byfron-0.0.13.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [airtestProject]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [airtestProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airtestproject-0.1.3.tar.gz tmp/airtestproject-0.1.4.tar.gz --markdown 20240511/a/airtestProject/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nn_parts-2024.0.0.tar.gz tmp/nn_parts-2024.0.1.tar.gz --markdown 20240511/n/nn-parts/2024.0.0-2024.0.1/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nn_parts-2024.0.0.tar.gz tmp/nn_parts-2024.0.1.tar.gz --markdown 20240511/n/nn-parts/2024.0.0-2024.0.1/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byfron-0.0.1.tar.gz tmp/byfron-0.0.13.tar.gz --markdown 20240511/b/byfron/0.0.1-0.0.13/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [innuendoedz]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [innuendoedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innuendoedz-1.1.tar.gz tmp/innuendoedz-2.1.tar.gz --markdown 20240511/i/innuendoedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [byfron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/byfron-0.0.1.tar.gz tmp/byfron-0.0.13.tar.gz --markdown 20240511/b/byfron/0.0.1-0.0.13/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240511/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [colossalai-nightly]: Downloading https://files.pythonhosted.org/packages/e6/44/486fd79264aea07659649b19981068e182adb8d2d334acb004f686b0dc55/colossalai-nightly-2024.5.4.tar.gz
+[2024-05-11 02:17:10] INFO root fetch - processPackages [colossalai-nightly]: executing diffoscope
+[2024-05-11 02:17:10] INFO root fetch - processPackages [colossalai-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colossalai-nightly-2024.5.11.tar.gz tmp/colossalai-nightly-2024.5.4.tar.gz --markdown 20240511/c/colossalai-nightly/2024.5.11-2024.5.4/README.md --exclude *.pyd
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.98.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - processPackages [cdklabs.cdk-hyperledger-fabric-network]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-hyperledger-fabric-network-0.8.99.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-hyperledger-fabric-network]: success
+[2024-05-11 02:17:10] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.8.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - processPackages [sharemyai-utils]: Remove: archive file [/home/abi/fetcher/tmp/sharemyai_utils-0.1.9.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - main [MainThread]: End processing [sharemyai-utils]: success
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: Remove: archive file [/home/abi/fetcher/tmp/nn_parts-2024.0.0.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - processPackages [nn-parts]: Remove: archive file [/home/abi/fetcher/tmp/nn_parts-2024.0.1.tar.gz]
+[2024-05-11 02:17:10] INFO root fetch - main [MainThread]: End processing [nn-parts]: success
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [nn-parts]: success
+[2024-05-11 02:17:11] INFO root fetch - processPackages [byfron]: Remove: archive file [/home/abi/fetcher/tmp/byfron-0.0.1.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - processPackages [byfron]: Remove: archive file [/home/abi/fetcher/tmp/byfron-0.0.13.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [byfron]: success
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [byfron]: success
+[2024-05-11 02:17:11] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.3.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - processPackages [innuendoedz]: Remove: archive file [/home/abi/fetcher/tmp/innuendoedz-1.1.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - processPackages [innuendoedz]: Remove: archive file [/home/abi/fetcher/tmp/innuendoedz-2.1.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.4.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [innuendoedz]: success
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [airtestProject]: success
+[2024-05-11 02:17:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-11 02:17:11] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-11 02:17:14] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.11.tar.gz]
+[2024-05-11 02:17:14] INFO root fetch - processPackages [colossalai-nightly]: Remove: archive file [/home/abi/fetcher/tmp/colossalai-nightly-2024.5.4.tar.gz]
+[2024-05-11 02:17:14] INFO root fetch - main [MainThread]: End processing [colossalai-nightly]: success
+[2024-05-11 02:17:14] INFO root fetch - main [MainThread]: Store serial: [23154528]
