@@ -19630,3 +19630,39 @@
 [2024-05-11 18:15:14] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.1.tar.gz]
 [2024-05-11 18:15:14] INFO root fetch - main [MainThread]: End processing [accesskit]: success
 [2024-05-11 18:15:14] INFO root fetch - main [MainThread]: Store serial: [23162578]
+[2024-05-11 18:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162578]
+[2024-05-11 18:17:22] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 18:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ubuntu-postinstall
+[2024-05-11 18:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dune-rivals
+[2024-05-11 18:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Bigsansar
+[2024-05-11 18:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigcode
+[2024-05-11 18:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: arikaim-service-server
+[2024-05-11 18:17:23] INFO root fetch - processPackages [Bigsansar]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-05-11 18:17:23] INFO root fetch - processPackages [arikaim-service-server]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-11 18:17:23] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/5e/3c/6242264d29ae96e03f975c81644ce7dc1c5b46bf6848719ac0456eea3d8a/bigsansar-2.5.8.tar.gz
+[2024-05-11 18:17:23] WARNING root fetch - processPackages [ubuntu-postinstall]: Skipping, unable to determine old version
+[2024-05-11 18:17:23] INFO root fetch - main [MainThread]: End processing [ubuntu-postinstall] error
+[2024-05-11 18:17:23] INFO root fetch - processPackages [dune-rivals]: New version: [0.6.0b0] Old Version: [0.6.0]
+[2024-05-11 18:17:23] WARNING root fetch - processPackages [bigcode]: Skipping, unable to determine old version
+[2024-05-11 18:17:23] INFO root fetch - main [MainThread]: End processing [bigcode] error
+[2024-05-11 18:17:23] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/39/2b/a390c60613dcbe6359cc0de65c52d29d4f74475424454154992cadfe9b2b/arikaim_service_server-0.5.3-py3-none-any.whl
+[2024-05-11 18:17:23] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/94/90/ec4f62d37e47d8f92688ca51bbe9007ff977786a526fcb098d5288357d59/dune_rivals-0.6.0.tar.gz
+[2024-05-11 18:17:23] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/15/7c/be93bba2071610341c6d77ee21abd3d405ad47fd20d77d96e3fd7fe83f44/bigsansar-2.5.9.tar.gz
+[2024-05-11 18:17:23] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-11 18:17:23] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigsansar-2.5.8.tar.gz tmp/bigsansar-2.5.9.tar.gz --markdown 20240511/B/Bigsansar/2.5.8-2.5.9/README.md --exclude *.pyd
+[2024-05-11 18:17:23] INFO root fetch - processPackages [arikaim-service-server]: Downloading https://files.pythonhosted.org/packages/7b/58/c21e825e7039702b44c1248c2e5da107d8e09e196e58e58aec588684580d/arikaim_service_server-0.5.4.tar.gz
+[2024-05-11 18:17:23] INFO root fetch - processPackages [dune-rivals]: Downloading https://files.pythonhosted.org/packages/5f/4d/4cebb741a8701090c8c89a349f4d7ed23f34680f2c7606a915ee85b4c2d0/dune_rivals-0.6.0b0.tar.gz
+[2024-05-11 18:17:23] INFO root fetch - processPackages [dune-rivals]: executing diffoscope
+[2024-05-11 18:17:23] INFO root fetch - processPackages [dune-rivals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dune_rivals-0.6.0.tar.gz tmp/dune_rivals-0.6.0b0.tar.gz --markdown 20240511/d/dune-rivals/0.6.0-0.6.0b0/README.md --exclude *.pyd
+[2024-05-11 18:17:23] INFO root fetch - processPackages [arikaim-service-server]: executing diffoscope
+[2024-05-11 18:17:23] INFO root fetch - processPackages [arikaim-service-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arikaim_service_server-0.5.3-py3-none-any.whl.zip tmp/arikaim_service_server-0.5.4.tar.gz --markdown 20240511/a/arikaim-service-server/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-11 18:17:24] INFO root fetch - processPackages [arikaim-service-server]: Remove: archive file [/home/abi/fetcher/tmp/arikaim_service_server-0.5.3-py3-none-any.whl.zip]
+[2024-05-11 18:17:24] INFO root fetch - processPackages [arikaim-service-server]: Remove: archive file [/home/abi/fetcher/tmp/arikaim_service_server-0.5.4.tar.gz]
+[2024-05-11 18:17:24] INFO root fetch - main [MainThread]: End processing [arikaim-service-server]: success
+[2024-05-11 18:17:24] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.5.8.tar.gz]
+[2024-05-11 18:17:24] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.5.9.tar.gz]
+[2024-05-11 18:17:24] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-11 18:17:24] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.6.0.tar.gz]
+[2024-05-11 18:17:24] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.6.0b0.tar.gz]
+[2024-05-11 18:17:24] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
+[2024-05-11 18:17:24] INFO root fetch - main [MainThread]: Store serial: [23162596]
