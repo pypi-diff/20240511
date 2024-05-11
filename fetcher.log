@@ -22836,3 +22836,18 @@
 [2024-05-11 21:57:28] INFO root fetch - processPackages [layrz-sdk]: Remove: archive file [/home/abi/fetcher/tmp/layrz_sdk-3.0.1.tar.gz]
 [2024-05-11 21:57:28] INFO root fetch - main [MainThread]: End processing [layrz-sdk]: success
 [2024-05-11 21:57:28] INFO root fetch - main [MainThread]: Store serial: [23164140]
+[2024-05-11 21:59:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164140]
+[2024-05-11 21:59:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 21:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: trowelingz
+[2024-05-11 21:59:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tribophosphoroscopez
+[2024-05-11 21:59:36] INFO root fetch - processPackages [trowelingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:59:36] WARNING root fetch - processPackages [tribophosphoroscopez]: Skipping, unable to determine old version
+[2024-05-11 21:59:36] INFO root fetch - main [MainThread]: End processing [tribophosphoroscopez] error
+[2024-05-11 21:59:36] INFO root fetch - processPackages [trowelingz]: Downloading https://files.pythonhosted.org/packages/c2/50/585a9b4961044d3f1aaab49028f89f676633d9c488b1ca86b2287fe4320a/trowelingz-1.1.tar.gz
+[2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: Downloading https://files.pythonhosted.org/packages/5a/20/934fe5eda68ce8cdb1031d75999a5525498645592cfbcc76acee74155ee1/trowelingz-2.1.tar.gz
+[2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: executing diffoscope
+[2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trowelingz-1.1.tar.gz tmp/trowelingz-2.1.tar.gz --markdown 20240511/t/trowelingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: Remove: archive file [/home/abi/fetcher/tmp/trowelingz-1.1.tar.gz]
+[2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: Remove: archive file [/home/abi/fetcher/tmp/trowelingz-2.1.tar.gz]
+[2024-05-11 21:59:37] INFO root fetch - main [MainThread]: End processing [trowelingz]: success
+[2024-05-11 21:59:37] INFO root fetch - main [MainThread]: Store serial: [23164146]
