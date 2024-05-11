@@ -16505,3 +16505,15 @@
 [2024-05-11 14:44:03] INFO root fetch - processPackages [rapturouslyz]: Remove: archive file [/home/abi/fetcher/tmp/rapturouslyz-2.1.tar.gz]
 [2024-05-11 14:44:03] INFO root fetch - main [MainThread]: End processing [rapturouslyz]: success
 [2024-05-11 14:44:03] INFO root fetch - main [MainThread]: Store serial: [23161133]
+[2024-05-11 14:46:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161133]
+[2024-05-11 14:46:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 14:46:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygeoif
+[2024-05-11 14:46:12] INFO root fetch - processPackages [pygeoif]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-11 14:46:13] INFO root fetch - processPackages [pygeoif]: Downloading https://files.pythonhosted.org/packages/f5/9b/32cb4a1381986fc193939f02c020b6eececf9a0a1171e33c0a48f9015683/pygeoif-1.4.0.tar.gz
+[2024-05-11 14:46:13] INFO root fetch - processPackages [pygeoif]: Downloading https://files.pythonhosted.org/packages/91/c6/12557ff83a1184478c4630b20678a24e535d75a7eb6c6c0f59e6266ac6e7/pygeoif-1.5.0.tar.gz
+[2024-05-11 14:46:13] INFO root fetch - processPackages [pygeoif]: executing diffoscope
+[2024-05-11 14:46:13] INFO root fetch - processPackages [pygeoif]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygeoif-1.4.0.tar.gz tmp/pygeoif-1.5.0.tar.gz --markdown 20240511/p/pygeoif/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-11 14:46:14] INFO root fetch - processPackages [pygeoif]: Remove: archive file [/home/abi/fetcher/tmp/pygeoif-1.4.0.tar.gz]
+[2024-05-11 14:46:14] INFO root fetch - processPackages [pygeoif]: Remove: archive file [/home/abi/fetcher/tmp/pygeoif-1.5.0.tar.gz]
+[2024-05-11 14:46:14] INFO root fetch - main [MainThread]: End processing [pygeoif]: success
+[2024-05-11 14:46:14] INFO root fetch - main [MainThread]: Store serial: [23161137]
