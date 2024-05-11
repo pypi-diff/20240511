@@ -8936,3 +8936,36 @@
 [2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl.zip]
 [2024-05-11 05:26:15] INFO root fetch - main [MainThread]: End processing [ovos-audio-plugin-simple]: success
 [2024-05-11 05:26:15] INFO root fetch - main [MainThread]: Store serial: [23156974]
+[2024-05-11 05:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156974]
+[2024-05-11 05:28:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyopenhc
+[2024-05-11 05:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: konfuzio-sdk
+[2024-05-11 05:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: maharishiz
+[2024-05-11 05:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: blaze-ai-diagnosis
+[2024-05-11 05:28:23] INFO root fetch - processPackages [pyopenhc]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 05:28:24] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/65/83/b443f018038fada27f16afe12569f0dc43dcb3b22eef2c4b7c5f3386c743/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl
+[2024-05-11 05:28:24] INFO root fetch - processPackages [maharishiz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:28:24] WARNING root fetch - processPackages [blaze-ai-diagnosis]: Skipping, unable to determine old version
+[2024-05-11 05:28:24] INFO root fetch - main [MainThread]: End processing [blaze-ai-diagnosis] error
+[2024-05-11 05:28:24] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.3.4.dev20240510100753] Old Version: [0.3.4.dev20240503144208]
+[2024-05-11 05:28:24] INFO root fetch - processPackages [maharishiz]: Downloading https://files.pythonhosted.org/packages/d4/a7/1196e1f70b5970060d2e969701f10b660491a6904eb553731caf987f82f6/maharishiz-1.1.tar.gz
+[2024-05-11 05:28:24] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/71/c3/abd2d2eb2132f69361f61dea0fe3c522f7b8d6e2da95b5f0bb175ea2af95/konfuzio_sdk-0.3.4.dev20240503144208.tar.gz
+[2024-05-11 05:28:24] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/91/dd/fc969dc03ce7c72a588082558a6278db40ed9093e2ea6ca307df9a6c8177/pyopenhc-0.0.8-py3-none-win_amd64.whl
+[2024-05-11 05:28:24] INFO root fetch - processPackages [maharishiz]: Downloading https://files.pythonhosted.org/packages/be/c7/b26d0079cdcef971edb39b62c91c23903ac692ac0757434fca6c058951fa/maharishiz-2.1.tar.gz
+[2024-05-11 05:28:24] INFO root fetch - processPackages [konfuzio-sdk]: Downloading https://files.pythonhosted.org/packages/57/ff/f2e9f33774c0ec675dd0c49c4ce1ab69ff1bf1ac7ac1fd12062ee9fc5c21/konfuzio_sdk-0.3.4.dev20240510100753.tar.gz
+[2024-05-11 05:28:24] INFO root fetch - processPackages [pyopenhc]: executing diffoscope
+[2024-05-11 05:28:24] INFO root fetch - processPackages [pyopenhc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl.zip tmp/pyopenhc-0.0.8-py3-none-win_amd64.whl.zip --markdown 20240511/p/pyopenhc/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 05:28:24] INFO root fetch - processPackages [maharishiz]: executing diffoscope
+[2024-05-11 05:28:24] INFO root fetch - processPackages [maharishiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maharishiz-1.1.tar.gz tmp/maharishiz-2.1.tar.gz --markdown 20240511/m/maharishiz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:28:24] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2024-05-11 05:28:24] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.3.4.dev20240503144208.tar.gz tmp/konfuzio_sdk-0.3.4.dev20240510100753.tar.gz --markdown 20240511/k/konfuzio-sdk/0.3.4.dev20240503144208-0.3.4.dev20240510100753/README.md --exclude *.pyd
+[2024-05-11 05:28:25] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-11 05:28:25] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.8-py3-none-win_amd64.whl.zip]
+[2024-05-11 05:28:25] INFO root fetch - main [MainThread]: End processing [pyopenhc]: success
+[2024-05-11 05:28:25] INFO root fetch - processPackages [maharishiz]: Remove: archive file [/home/abi/fetcher/tmp/maharishiz-1.1.tar.gz]
+[2024-05-11 05:28:25] INFO root fetch - processPackages [maharishiz]: Remove: archive file [/home/abi/fetcher/tmp/maharishiz-2.1.tar.gz]
+[2024-05-11 05:28:25] INFO root fetch - main [MainThread]: End processing [maharishiz]: success
+[2024-05-11 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.4.dev20240503144208.tar.gz]
+[2024-05-11 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.4.dev20240510100753.tar.gz]
+[2024-05-11 05:28:25] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2024-05-11 05:28:25] INFO root fetch - main [MainThread]: Store serial: [23156987]
