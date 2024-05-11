@@ -11449,3 +11449,18 @@
 [2024-05-11 08:54:23] INFO root fetch - processPackages [lcbuilder]: Remove: archive file [/home/abi/fetcher/tmp/lcbuilder-0.9.9.tar.gz]
 [2024-05-11 08:54:23] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
 [2024-05-11 08:54:23] INFO root fetch - main [MainThread]: Store serial: [23158449]
+[2024-05-11 08:56:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158449]
+[2024-05-11 08:56:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 08:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oversusceptiblez
+[2024-05-11 08:56:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: omphalospinousz
+[2024-05-11 08:56:31] WARNING root fetch - processPackages [oversusceptiblez]: Skipping, unable to determine old version
+[2024-05-11 08:56:31] INFO root fetch - main [MainThread]: End processing [oversusceptiblez] error
+[2024-05-11 08:56:31] INFO root fetch - processPackages [omphalospinousz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:56:32] INFO root fetch - processPackages [omphalospinousz]: Downloading https://files.pythonhosted.org/packages/0c/ac/033d5fc249e4e2bd0f1a226431ccbebc2768781ff5c0a3bcf8b84ea2ca6f/omphalospinousz-1.1.tar.gz
+[2024-05-11 08:56:32] INFO root fetch - processPackages [omphalospinousz]: Downloading https://files.pythonhosted.org/packages/3d/1a/784e3656b9b6e8ba79c6e9cd52aaddcff899a3bae5d59c447ac80caf926f/omphalospinousz-2.1.tar.gz
+[2024-05-11 08:56:32] INFO root fetch - processPackages [omphalospinousz]: executing diffoscope
+[2024-05-11 08:56:32] INFO root fetch - processPackages [omphalospinousz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omphalospinousz-1.1.tar.gz tmp/omphalospinousz-2.1.tar.gz --markdown 20240511/o/omphalospinousz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:56:33] INFO root fetch - processPackages [omphalospinousz]: Remove: archive file [/home/abi/fetcher/tmp/omphalospinousz-1.1.tar.gz]
+[2024-05-11 08:56:33] INFO root fetch - processPackages [omphalospinousz]: Remove: archive file [/home/abi/fetcher/tmp/omphalospinousz-2.1.tar.gz]
+[2024-05-11 08:56:33] INFO root fetch - main [MainThread]: End processing [omphalospinousz]: success
+[2024-05-11 08:56:33] INFO root fetch - main [MainThread]: Store serial: [23158461]
