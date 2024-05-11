@@ -2090,3 +2090,27 @@
 [2024-05-11 01:59:33] INFO root fetch - processPackages [elia-chat]: Remove: archive file [/home/abi/fetcher/tmp/elia_chat-1.2.0.tar.gz]
 [2024-05-11 01:59:33] INFO root fetch - main [MainThread]: End processing [elia-chat]: success
 [2024-05-11 01:59:33] INFO root fetch - main [MainThread]: Store serial: [23154326]
+[2024-05-11 02:01:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154326]
+[2024-05-11 02:01:41] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 02:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dyff-client
+[2024-05-11 02:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: incultivatedz
+[2024-05-11 02:01:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unliquescentz
+[2024-05-11 02:01:42] INFO root fetch - processPackages [incultivatedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 02:01:42] WARNING root fetch - processPackages [unliquescentz]: Skipping, unable to determine old version
+[2024-05-11 02:01:42] INFO root fetch - main [MainThread]: End processing [unliquescentz] error
+[2024-05-11 02:01:42] INFO root fetch - processPackages [dyff-client]: New version: [0.5.0] Old Version: [0.4.2]
+[2024-05-11 02:01:42] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/48/32/2eaeb98aad67e0ca88914d42f70879b72f48b0d25f307a0378e302f46d10/dyff_client-0.4.2.tar.gz
+[2024-05-11 02:01:42] INFO root fetch - processPackages [incultivatedz]: Downloading https://files.pythonhosted.org/packages/fe/bd/774af976e226f90e2203a6720100a84aec03b4fb6280417131e5e8d2e87d/incultivatedz-1.1.tar.gz
+[2024-05-11 02:01:42] INFO root fetch - processPackages [incultivatedz]: Downloading https://files.pythonhosted.org/packages/1e/c8/034cf6d4263d87b70278c18ded136e262f40030b7c22c18e04e1a07014ee/incultivatedz-2.1.tar.gz
+[2024-05-11 02:01:42] INFO root fetch - processPackages [dyff-client]: Downloading https://files.pythonhosted.org/packages/3a/8c/fcd0e83600161284913b46bd98b297e0e4d92ac8ba3dc9a8923a77fb22d9/dyff_client-0.5.0.tar.gz
+[2024-05-11 02:01:42] INFO root fetch - processPackages [incultivatedz]: executing diffoscope
+[2024-05-11 02:01:42] INFO root fetch - processPackages [incultivatedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/incultivatedz-1.1.tar.gz tmp/incultivatedz-2.1.tar.gz --markdown 20240511/i/incultivatedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 02:01:42] INFO root fetch - processPackages [dyff-client]: executing diffoscope
+[2024-05-11 02:01:42] INFO root fetch - processPackages [dyff-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dyff_client-0.4.2.tar.gz tmp/dyff_client-0.5.0.tar.gz --markdown 20240511/d/dyff-client/0.4.2-0.5.0/README.md --exclude *.pyd
+[2024-05-11 02:01:43] INFO root fetch - processPackages [incultivatedz]: Remove: archive file [/home/abi/fetcher/tmp/incultivatedz-1.1.tar.gz]
+[2024-05-11 02:01:43] INFO root fetch - processPackages [incultivatedz]: Remove: archive file [/home/abi/fetcher/tmp/incultivatedz-2.1.tar.gz]
+[2024-05-11 02:01:43] INFO root fetch - main [MainThread]: End processing [incultivatedz]: success
+[2024-05-11 02:01:43] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.4.2.tar.gz]
+[2024-05-11 02:01:43] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.5.0.tar.gz]
+[2024-05-11 02:01:43] INFO root fetch - main [MainThread]: End processing [dyff-client]: success
+[2024-05-11 02:01:43] INFO root fetch - main [MainThread]: Store serial: [23154341]
