@@ -11125,3 +11125,18 @@
 [2024-05-11 08:26:10] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.4.1.tar.gz]
 [2024-05-11 08:26:10] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
 [2024-05-11 08:26:10] INFO root fetch - main [MainThread]: Store serial: [23158226]
+[2024-05-11 08:28:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158226]
+[2024-05-11 08:28:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 08:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyDonate-Py
+[2024-05-11 08:28:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: layerswise
+[2024-05-11 08:28:19] INFO root fetch - processPackages [EasyDonate-Py]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 08:28:19] WARNING root fetch - processPackages [layerswise]: Skipping, unable to determine old version
+[2024-05-11 08:28:19] INFO root fetch - main [MainThread]: End processing [layerswise] error
+[2024-05-11 08:28:19] INFO root fetch - processPackages [EasyDonate-Py]: Downloading https://files.pythonhosted.org/packages/fd/cc/c9b312c0a8929e4224cebd1e2752a2448fa92b8c48324320ddbbbfd2a189/easydonate_py-0.0.1.tar.gz
+[2024-05-11 08:28:19] INFO root fetch - processPackages [EasyDonate-Py]: Downloading https://files.pythonhosted.org/packages/0f/ad/18c6fec9ae76457ba9c28dca7284bf92683a8dd21e36e2a6269b01961166/easydonate_py-0.0.2.tar.gz
+[2024-05-11 08:28:19] INFO root fetch - processPackages [EasyDonate-Py]: executing diffoscope
+[2024-05-11 08:28:19] INFO root fetch - processPackages [EasyDonate-Py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydonate_py-0.0.1.tar.gz tmp/easydonate_py-0.0.2.tar.gz --markdown 20240511/E/EasyDonate-Py/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 08:28:20] INFO root fetch - processPackages [EasyDonate-Py]: Remove: archive file [/home/abi/fetcher/tmp/easydonate_py-0.0.1.tar.gz]
+[2024-05-11 08:28:20] INFO root fetch - processPackages [EasyDonate-Py]: Remove: archive file [/home/abi/fetcher/tmp/easydonate_py-0.0.2.tar.gz]
+[2024-05-11 08:28:20] INFO root fetch - main [MainThread]: End processing [EasyDonate-Py]: success
+[2024-05-11 08:28:20] INFO root fetch - main [MainThread]: Store serial: [23158246]
