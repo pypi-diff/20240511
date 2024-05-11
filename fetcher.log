@@ -18980,3 +18980,33 @@
 [2024-05-11 17:37:33] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
 [2024-05-11 17:37:33] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
 [2024-05-11 17:37:33] INFO root fetch - main [MainThread]: Store serial: [23162332]
+[2024-05-11 17:39:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162332]
+[2024-05-11 17:39:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:39:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jeedomdaemon
+[2024-05-11 17:39:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solaar
+[2024-05-11 17:39:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: soundlesslyz
+[2024-05-11 17:39:42] INFO root fetch - processPackages [jeedomdaemon]: New version: [0.8.4] Old Version: [0.7.5]
+[2024-05-11 17:39:43] INFO root fetch - processPackages [soundlesslyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:39:43] INFO root fetch - processPackages [solaar]: New version: [1.1.9] Old Version: [1.1.8rc2]
+[2024-05-11 17:39:43] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/46/41/afb2d08a2fecfadbec6704997465e3bab279b0a3f6e5ebeeeeb52fcfed83/jeedomdaemon-0.7.5.tar.gz
+[2024-05-11 17:39:43] INFO root fetch - processPackages [soundlesslyz]: Downloading https://files.pythonhosted.org/packages/b9/6d/84254fa3d8ccb872d5706fb72c2539d320a529b6224ecdaeb5d45b66afef/soundlesslyz-1.1.tar.gz
+[2024-05-11 17:39:43] INFO root fetch - processPackages [solaar]: Downloading https://files.pythonhosted.org/packages/87/1a/808ac42a90c1945ae7d2c26202f6579aa5ba91052bb2972d04a332aa2287/solaar-1.1.8rc2-py3-none-any.whl
+[2024-05-11 17:39:43] INFO root fetch - processPackages [jeedomdaemon]: Downloading https://files.pythonhosted.org/packages/d9/1e/7bd1bc1a4c49ae84ab6cb34a851f16e44f43d05ba5034c1fb6396629be60/jeedomdaemon-0.8.4.tar.gz
+[2024-05-11 17:39:43] INFO root fetch - processPackages [soundlesslyz]: Downloading https://files.pythonhosted.org/packages/7a/ac/5b8a598cee2f827f91390bdbe94826e1d1e3d69acdb0dae7f4a1c7ad6c84/soundlesslyz-2.1.tar.gz
+[2024-05-11 17:39:43] INFO root fetch - processPackages [jeedomdaemon]: executing diffoscope
+[2024-05-11 17:39:43] INFO root fetch - processPackages [jeedomdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jeedomdaemon-0.7.5.tar.gz tmp/jeedomdaemon-0.8.4.tar.gz --markdown 20240511/j/jeedomdaemon/0.7.5-0.8.4/README.md --exclude *.pyd
+[2024-05-11 17:39:43] INFO root fetch - processPackages [soundlesslyz]: executing diffoscope
+[2024-05-11 17:39:43] INFO root fetch - processPackages [soundlesslyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundlesslyz-1.1.tar.gz tmp/soundlesslyz-2.1.tar.gz --markdown 20240511/s/soundlesslyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:39:43] INFO root fetch - processPackages [solaar]: Downloading https://files.pythonhosted.org/packages/a6/c4/b4ed890faa2fef43dcae6378930290e16e3efa392d069309ee7752b225b3/solaar-1.1.9.tar.gz
+[2024-05-11 17:39:44] INFO root fetch - processPackages [solaar]: executing diffoscope
+[2024-05-11 17:39:44] INFO root fetch - processPackages [solaar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaar-1.1.8rc2-py3-none-any.whl.zip tmp/solaar-1.1.9.tar.gz --markdown 20240511/s/solaar/1.1.8rc2-1.1.9/README.md --exclude *.pyd
+[2024-05-11 17:39:44] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.7.5.tar.gz]
+[2024-05-11 17:39:44] INFO root fetch - processPackages [jeedomdaemon]: Remove: archive file [/home/abi/fetcher/tmp/jeedomdaemon-0.8.4.tar.gz]
+[2024-05-11 17:39:44] INFO root fetch - main [MainThread]: End processing [jeedomdaemon]: success
+[2024-05-11 17:39:44] INFO root fetch - processPackages [soundlesslyz]: Remove: archive file [/home/abi/fetcher/tmp/soundlesslyz-1.1.tar.gz]
+[2024-05-11 17:39:44] INFO root fetch - processPackages [soundlesslyz]: Remove: archive file [/home/abi/fetcher/tmp/soundlesslyz-2.1.tar.gz]
+[2024-05-11 17:39:44] INFO root fetch - main [MainThread]: End processing [soundlesslyz]: success
+[2024-05-11 17:39:45] INFO root fetch - processPackages [solaar]: Remove: archive file [/home/abi/fetcher/tmp/solaar-1.1.8rc2-py3-none-any.whl.zip]
+[2024-05-11 17:39:45] INFO root fetch - processPackages [solaar]: Remove: archive file [/home/abi/fetcher/tmp/solaar-1.1.9.tar.gz]
+[2024-05-11 17:39:45] INFO root fetch - main [MainThread]: End processing [solaar]: success
+[2024-05-11 17:39:45] INFO root fetch - main [MainThread]: Store serial: [23162340]
