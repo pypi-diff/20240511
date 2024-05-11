@@ -21474,3 +21474,39 @@
 [2024-05-11 20:21:28] INFO root fetch - processPackages [folioflex]: Remove: archive file [/home/abi/fetcher/tmp/folioflex-1.2.1.tar.gz]
 [2024-05-11 20:21:28] INFO root fetch - main [MainThread]: End processing [folioflex]: success
 [2024-05-11 20:21:28] INFO root fetch - main [MainThread]: Store serial: [23163460]
+[2024-05-11 20:23:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163460]
+[2024-05-11 20:23:37] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 20:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flops-utils
+[2024-05-11 20:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-kepler-component
+[2024-05-11 20:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: openadapt
+[2024-05-11 20:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydrate-minio-weaviate
+[2024-05-11 20:23:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sievedata
+[2024-05-11 20:23:37] INFO root fetch - processPackages [flops-utils]: New version: [0.4.0] Old Version: [0.3.7]
+[2024-05-11 20:23:37] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/5f/28/23ef2e708c201f6d1e94c98daf2e3c0f08069048153cc72cac6346a72271/flops_utils-0.3.7.tar.gz
+[2024-05-11 20:23:37] INFO root fetch - processPackages [openadapt]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-11 20:23:37] WARNING root fetch - processPackages [hydrate-minio-weaviate]: Skipping, unable to determine old version
+[2024-05-11 20:23:37] INFO root fetch - main [MainThread]: End processing [hydrate-minio-weaviate] error
+[2024-05-11 20:23:37] WARNING root fetch - processPackages [streamlit-kepler-component]: Skipping, unable to determine old version
+[2024-05-11 20:23:37] INFO root fetch - main [MainThread]: End processing [streamlit-kepler-component] error
+[2024-05-11 20:23:37] INFO root fetch - processPackages [sievedata]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 20:23:37] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/79/02/9909659ccbba301efcb1ca065eb1d9413e5e760d2cefd4a01ba5e723511b/openadapt-0.8.1.tar.gz
+[2024-05-11 20:23:37] INFO root fetch - processPackages [sievedata]: Downloading https://files.pythonhosted.org/packages/77/95/81d873c48eab504969a2f4a4f592d75ea9d000bd3befca5ad2ca00168f0c/sievedata-1.0.8-py3-none-any.whl
+[2024-05-11 20:23:37] INFO root fetch - processPackages [openadapt]: Downloading https://files.pythonhosted.org/packages/b7/9c/6198cbb491bbd32347e3741b41ee70e6ad1916e573ef76ae3aeb9e0fc8ef/openadapt-0.9.0.tar.gz
+[2024-05-11 20:23:37] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/42/51/1f54c65d65adf76e11b85db8b1cca4c62246d71dfacf945af5cdcf64ad57/flops_utils-0.4.0.tar.gz
+[2024-05-11 20:23:37] INFO root fetch - processPackages [openadapt]: executing diffoscope
+[2024-05-11 20:23:37] INFO root fetch - processPackages [openadapt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openadapt-0.8.1.tar.gz tmp/openadapt-0.9.0.tar.gz --markdown 20240511/o/openadapt/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-11 20:23:37] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-11 20:23:37] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.3.7.tar.gz tmp/flops_utils-0.4.0.tar.gz --markdown 20240511/f/flops-utils/0.3.7-0.4.0/README.md --exclude *.pyd
+[2024-05-11 20:23:38] INFO root fetch - processPackages [sievedata]: Downloading https://files.pythonhosted.org/packages/8a/81/20861347ef8b1783e03c20206a281854cb818fc401a040f544a1fe0b6f35/sievedata-1.0.9-py3-none-any.whl
+[2024-05-11 20:23:38] INFO root fetch - processPackages [sievedata]: executing diffoscope
+[2024-05-11 20:23:38] INFO root fetch - processPackages [sievedata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sievedata-1.0.8-py3-none-any.whl.zip tmp/sievedata-1.0.9-py3-none-any.whl.zip --markdown 20240511/s/sievedata/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 20:23:38] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.7.tar.gz]
+[2024-05-11 20:23:38] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.0.tar.gz]
+[2024-05-11 20:23:38] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-11 20:23:38] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.8.1.tar.gz]
+[2024-05-11 20:23:38] INFO root fetch - processPackages [openadapt]: Remove: archive file [/home/abi/fetcher/tmp/openadapt-0.9.0.tar.gz]
+[2024-05-11 20:23:38] INFO root fetch - main [MainThread]: End processing [openadapt]: success
+[2024-05-11 20:23:39] INFO root fetch - processPackages [sievedata]: Remove: archive file [/home/abi/fetcher/tmp/sievedata-1.0.8-py3-none-any.whl.zip]
+[2024-05-11 20:23:39] INFO root fetch - processPackages [sievedata]: Remove: archive file [/home/abi/fetcher/tmp/sievedata-1.0.9-py3-none-any.whl.zip]
+[2024-05-11 20:23:39] INFO root fetch - main [MainThread]: End processing [sievedata]: success
+[2024-05-11 20:23:39] INFO root fetch - main [MainThread]: Store serial: [23163476]
