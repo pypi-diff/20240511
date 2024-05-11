@@ -21018,3 +21018,27 @@
 [2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: Remove: archive file [/home/abi/fetcher/tmp/lrcup-0.3.2.tar.gz]
 [2024-05-11 19:55:18] INFO root fetch - main [MainThread]: End processing [lrcup]: success
 [2024-05-11 19:55:18] INFO root fetch - main [MainThread]: Store serial: [23163211]
+[2024-05-11 19:57:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163211]
+[2024-05-11 19:57:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 19:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skipplez
+[2024-05-11 19:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproject-fmt-rust
+[2024-05-11 19:57:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DEODR
+[2024-05-11 19:57:28] INFO root fetch - processPackages [pyproject-fmt-rust]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 19:57:28] WARNING root fetch - processPackages [skipplez]: Skipping, unable to determine old version
+[2024-05-11 19:57:28] INFO root fetch - main [MainThread]: End processing [skipplez] error
+[2024-05-11 19:57:28] INFO root fetch - processPackages [DEODR]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 19:57:28] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/3e/60/0943f9c036ff28e7ad118d8d12492062c52358897b250cd19a898db5d9ce/pyproject_fmt_rust-1.0.2.tar.gz
+[2024-05-11 19:57:28] INFO root fetch - processPackages [DEODR]: Downloading https://files.pythonhosted.org/packages/17/03/46379aa3ee500490e6915f3e278fd1944f3929e783b97c1c757157eec3b6/DEODR-0.2.1.tar.gz
+[2024-05-11 19:57:28] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/e2/62/1da3fbd6dc9b63baae712494aa216195b6f957254b96c1ed84a3970999dd/pyproject_fmt_rust-1.0.3.tar.gz
+[2024-05-11 19:57:28] INFO root fetch - processPackages [pyproject-fmt-rust]: executing diffoscope
+[2024-05-11 19:57:28] INFO root fetch - processPackages [pyproject-fmt-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt_rust-1.0.2.tar.gz tmp/pyproject_fmt_rust-1.0.3.tar.gz --markdown 20240511/p/pyproject-fmt-rust/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 19:57:28] INFO root fetch - processPackages [DEODR]: Downloading https://files.pythonhosted.org/packages/d0/24/b5c1ed4085cb30109f342f1e5498df618d07d18373da737768e10a2c7dcb/DEODR-0.2.2-cp312-cp312-musllinux_1_1_i686.whl
+[2024-05-11 19:57:29] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.2.tar.gz]
+[2024-05-11 19:57:29] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.3.tar.gz]
+[2024-05-11 19:57:29] INFO root fetch - main [MainThread]: End processing [pyproject-fmt-rust]: success
+[2024-05-11 19:57:31] INFO root fetch - processPackages [DEODR]: executing diffoscope
+[2024-05-11 19:57:31] INFO root fetch - processPackages [DEODR]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DEODR-0.2.1.tar.gz tmp/DEODR-0.2.2-cp312-cp312-musllinux_1_1_i686.whl.zip --markdown 20240511/D/DEODR/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 19:57:32] INFO root fetch - processPackages [DEODR]: Remove: archive file [/home/abi/fetcher/tmp/DEODR-0.2.1.tar.gz]
+[2024-05-11 19:57:32] INFO root fetch - processPackages [DEODR]: Remove: archive file [/home/abi/fetcher/tmp/DEODR-0.2.2-cp312-cp312-musllinux_1_1_i686.whl.zip]
+[2024-05-11 19:57:32] INFO root fetch - main [MainThread]: End processing [DEODR]: success
+[2024-05-11 19:57:32] INFO root fetch - main [MainThread]: Store serial: [23163255]
