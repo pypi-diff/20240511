@@ -20200,3 +20200,24 @@
 [2024-05-11 18:56:15] INFO root fetch - processPackages [subendorsez]: Remove: archive file [/home/abi/fetcher/tmp/subendorsez-2.1.tar.gz]
 [2024-05-11 18:56:15] INFO root fetch - main [MainThread]: End processing [subendorsez]: success
 [2024-05-11 18:56:15] INFO root fetch - main [MainThread]: Store serial: [23162853]
+[2024-05-11 18:58:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162853]
+[2024-05-11 18:58:24] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 18:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: experiment-lab
+[2024-05-11 18:58:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo14-addon-delivery-carrier-return-barcode-pattern
+[2024-05-11 18:58:24] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: New version: [14.0.1.0.1.dev6] Old Version: [14.0.1.0.1.dev4]
+[2024-05-11 18:58:24] INFO root fetch - processPackages [experiment-lab]: New version: [1.1.8] Old Version: [1.1.7]
+[2024-05-11 18:58:24] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: Downloading https://files.pythonhosted.org/packages/3d/10/1c332f2bc9244ab1371a09240adb50bc56d48d1a58c54504dc855ee3672c/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev4-py3-none-any.whl
+[2024-05-11 18:58:24] INFO root fetch - processPackages [experiment-lab]: Downloading https://files.pythonhosted.org/packages/89/b9/e547170170090eace40a29e7daf162bbe03a4fc93685fe90d0ba2b883aab/experiment_lab-1.1.7.tar.gz
+[2024-05-11 18:58:24] INFO root fetch - processPackages [experiment-lab]: Downloading https://files.pythonhosted.org/packages/2d/05/bddc6e6171a4d55af6c84ef98cd900bd1c142ec30b6fc13bd7b2e7daab29/experiment_lab-1.1.8.tar.gz
+[2024-05-11 18:58:25] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: Downloading https://files.pythonhosted.org/packages/df/aa/4c0a08875c7345da2d1c34a5639b422f2902f72925f62a7d65acfbe9d04f/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev6-py3-none-any.whl
+[2024-05-11 18:58:25] INFO root fetch - processPackages [experiment-lab]: executing diffoscope
+[2024-05-11 18:58:25] INFO root fetch - processPackages [experiment-lab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experiment_lab-1.1.7.tar.gz tmp/experiment_lab-1.1.8.tar.gz --markdown 20240511/e/experiment-lab/1.1.7-1.1.8/README.md --exclude *.pyd
+[2024-05-11 18:58:25] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: executing diffoscope
+[2024-05-11 18:58:25] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev4-py3-none-any.whl.zip tmp/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev6-py3-none-any.whl.zip --markdown 20240511/o/odoo14-addon-delivery-carrier-return-barcode-pattern/14.0.1.0.1.dev4-14.0.1.0.1.dev6/README.md --exclude *.pyd
+[2024-05-11 18:58:25] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev4-py3-none-any.whl.zip]
+[2024-05-11 18:58:25] INFO root fetch - processPackages [odoo14-addon-delivery-carrier-return-barcode-pattern]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_delivery_carrier_return_barcode_pattern-14.0.1.0.1.dev6-py3-none-any.whl.zip]
+[2024-05-11 18:58:25] INFO root fetch - main [MainThread]: End processing [odoo14-addon-delivery-carrier-return-barcode-pattern]: success
+[2024-05-11 18:58:25] INFO root fetch - processPackages [experiment-lab]: Remove: archive file [/home/abi/fetcher/tmp/experiment_lab-1.1.7.tar.gz]
+[2024-05-11 18:58:25] INFO root fetch - processPackages [experiment-lab]: Remove: archive file [/home/abi/fetcher/tmp/experiment_lab-1.1.8.tar.gz]
+[2024-05-11 18:58:25] INFO root fetch - main [MainThread]: End processing [experiment-lab]: success
+[2024-05-11 18:58:25] INFO root fetch - main [MainThread]: Store serial: [23162858]
