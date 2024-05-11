@@ -21916,3 +21916,30 @@
 [2024-05-11 20:51:54] INFO root fetch - processPackages [Dosepy]: Remove: archive file [/home/abi/fetcher/tmp/dosepy-0.6.2.tar.gz]
 [2024-05-11 20:51:54] INFO root fetch - main [MainThread]: End processing [Dosepy]: success
 [2024-05-11 20:51:54] INFO root fetch - main [MainThread]: Store serial: [23163755]
+[2024-05-11 20:53:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163755]
+[2024-05-11 20:54:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 20:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dektools
+[2024-05-11 20:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liteium
+[2024-05-11 20:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: camera-ui-python-types
+[2024-05-11 20:54:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mongologger
+[2024-05-11 20:54:03] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 20:54:03] WARNING root fetch - processPackages [liteium]: Skipping, unable to determine old version
+[2024-05-11 20:54:03] INFO root fetch - main [MainThread]: End processing [liteium] error
+[2024-05-11 20:54:03] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-11 20:54:03] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-11 20:54:03] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-05-11 20:54:03] WARNING root fetch - processPackages [mongologger]: Skipping, unable to determine old version
+[2024-05-11 20:54:03] INFO root fetch - main [MainThread]: End processing [mongologger] error
+[2024-05-11 20:54:03] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-11 20:54:03] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-05-11 20:54:03] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-11 20:54:03] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240511/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 20:54:03] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-11 20:54:03] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240511/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-11 20:54:04] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-11 20:54:04] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-11 20:54:04] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-11 20:54:04] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-05-11 20:54:04] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-05-11 20:54:04] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-11 20:54:04] INFO root fetch - main [MainThread]: Store serial: [23163771]
