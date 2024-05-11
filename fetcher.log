@@ -10384,3 +10384,24 @@
 [2024-05-11 07:24:08] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
 [2024-05-11 07:24:08] INFO root fetch - main [MainThread]: End processing [django-restit]: success
 [2024-05-11 07:24:08] INFO root fetch - main [MainThread]: Store serial: [23157762]
+[2024-05-11 07:26:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157762]
+[2024-05-11 07:26:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osw
+[2024-05-11 07:26:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyuilder
+[2024-05-11 07:26:16] INFO root fetch - processPackages [pyuilder]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 07:26:16] INFO root fetch - processPackages [pyuilder]: Downloading https://files.pythonhosted.org/packages/73/26/f65c506243e94cc369a9aaa58ba10f33a8984a21dbd7b0f225f7d24d6b75/pyuilder-0.0.5.tar.gz
+[2024-05-11 07:26:16] INFO root fetch - processPackages [osw]: New version: [0.9.0] Old Version: [0.8.1]
+[2024-05-11 07:26:17] INFO root fetch - processPackages [osw]: Downloading https://files.pythonhosted.org/packages/26/a8/326700e2a6461b1445964baa8f725eaa49b86e7d01b90acfe28e9cd8dd9c/osw-0.8.1.tar.gz
+[2024-05-11 07:26:17] INFO root fetch - processPackages [pyuilder]: Downloading https://files.pythonhosted.org/packages/15/4f/1fa98d65d3d848912259c618198c34397ec990600c7166302e6ad5efe5d5/pyuilder-0.0.6.tar.gz
+[2024-05-11 07:26:17] INFO root fetch - processPackages [pyuilder]: executing diffoscope
+[2024-05-11 07:26:17] INFO root fetch - processPackages [pyuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuilder-0.0.5.tar.gz tmp/pyuilder-0.0.6.tar.gz --markdown 20240511/p/pyuilder/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-11 07:26:17] INFO root fetch - processPackages [osw]: Downloading https://files.pythonhosted.org/packages/13/cc/74dd2c87432fecad0abe454330808f96c0eb0589faea2daeb46dd621947a/osw-0.9.0.tar.gz
+[2024-05-11 07:26:17] INFO root fetch - processPackages [osw]: executing diffoscope
+[2024-05-11 07:26:17] INFO root fetch - processPackages [osw]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osw-0.8.1.tar.gz tmp/osw-0.9.0.tar.gz --markdown 20240511/o/osw/0.8.1-0.9.0/README.md --exclude *.pyd
+[2024-05-11 07:26:17] INFO root fetch - processPackages [pyuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyuilder-0.0.5.tar.gz]
+[2024-05-11 07:26:17] INFO root fetch - processPackages [pyuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyuilder-0.0.6.tar.gz]
+[2024-05-11 07:26:17] INFO root fetch - main [MainThread]: End processing [pyuilder]: success
+[2024-05-11 07:26:18] INFO root fetch - processPackages [osw]: Remove: archive file [/home/abi/fetcher/tmp/osw-0.8.1.tar.gz]
+[2024-05-11 07:26:18] INFO root fetch - processPackages [osw]: Remove: archive file [/home/abi/fetcher/tmp/osw-0.9.0.tar.gz]
+[2024-05-11 07:26:18] INFO root fetch - main [MainThread]: End processing [osw]: success
+[2024-05-11 07:26:18] INFO root fetch - main [MainThread]: Store serial: [23157775]
