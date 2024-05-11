@@ -17013,3 +17013,15 @@
 [2024-05-11 15:20:02] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a3.tar.gz]
 [2024-05-11 15:20:02] INFO root fetch - main [MainThread]: End processing [vak]: success
 [2024-05-11 15:20:02] INFO root fetch - main [MainThread]: Store serial: [23161334]
+[2024-05-11 15:22:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161334]
+[2024-05-11 15:22:11] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 15:22:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hstream
+[2024-05-11 15:22:11] INFO root fetch - processPackages [hstream]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 15:22:11] INFO root fetch - processPackages [hstream]: Downloading https://files.pythonhosted.org/packages/fc/8f/5c2f9aada5f9dff69dd41b77a1f1ee7aeb44958c1d2d2da7da13181cc9a6/hstream-0.1.1.tar.gz
+[2024-05-11 15:22:11] INFO root fetch - processPackages [hstream]: Downloading https://files.pythonhosted.org/packages/64/2b/8e1cabe5268b7c5baacbd6005d0102635183d9a470be5ac6e0b7852a07c6/hstream-0.1.2.tar.gz
+[2024-05-11 15:22:11] INFO root fetch - processPackages [hstream]: executing diffoscope
+[2024-05-11 15:22:11] INFO root fetch - processPackages [hstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hstream-0.1.1.tar.gz tmp/hstream-0.1.2.tar.gz --markdown 20240511/h/hstream/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 15:22:12] INFO root fetch - processPackages [hstream]: Remove: archive file [/home/abi/fetcher/tmp/hstream-0.1.1.tar.gz]
+[2024-05-11 15:22:12] INFO root fetch - processPackages [hstream]: Remove: archive file [/home/abi/fetcher/tmp/hstream-0.1.2.tar.gz]
+[2024-05-11 15:22:12] INFO root fetch - main [MainThread]: End processing [hstream]: success
+[2024-05-11 15:22:12] INFO root fetch - main [MainThread]: Store serial: [23161339]
