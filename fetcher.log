@@ -22219,3 +22219,48 @@
 [2024-05-11 21:15:47] INFO root fetch - processPackages [kk-plugins]: Remove: archive file [/home/abi/fetcher/tmp/kk_plugins-0.1.240512.1.tar.gz]
 [2024-05-11 21:15:47] INFO root fetch - main [MainThread]: End processing [kk-plugins]: success
 [2024-05-11 21:15:47] INFO root fetch - main [MainThread]: Store serial: [23163895]
+[2024-05-11 21:17:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163895]
+[2024-05-11 21:17:56] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyCompGeomAlgorithms
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pomodorable
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tipisz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rocketchat-async
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: subdepartmentsz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-easy-schedule
+[2024-05-11 21:17:56] INFO root fetch - processPackages [PyCompGeomAlgorithms]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 21:17:56] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/30/8b/6e606d2d9e9edf6afe4106b9fc0602f260f70fefce85a767acd72ddd9ce0/PyCompGeomAlgorithms-1.0.8.tar.gz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [tipisz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:17:56] WARNING root fetch - processPackages [subdepartmentsz]: Skipping, unable to determine old version
+[2024-05-11 21:17:56] INFO root fetch - main [MainThread]: End processing [subdepartmentsz] error
+[2024-05-11 21:17:56] INFO root fetch - processPackages [rocketchat-async]: New version: [4.1.0] Old Version: [4.0.0]
+[2024-05-11 21:17:56] WARNING root fetch - processPackages [django-easy-schedule]: Skipping, unable to determine old version
+[2024-05-11 21:17:56] INFO root fetch - main [MainThread]: End processing [django-easy-schedule] error
+[2024-05-11 21:17:56] INFO root fetch - processPackages [pomodorable]: New version: [0.1.dev9] Old Version: [0.1.dev8]
+[2024-05-11 21:17:56] INFO root fetch - processPackages [tipisz]: Downloading https://files.pythonhosted.org/packages/75/ca/7b5276de264df6e93be3cc4ff817234d361a50b087c4ab299103c5dfd0b9/tipisz-1.1.tar.gz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/d0/1b/e234c6881824a409fad78e30a10c197a21e5e573aa247b66bbc6153e9ca0/PyCompGeomAlgorithms-1.0.9.tar.gz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/d3/ad/517479bdc5c62854d59457c9cf5b4e6c6e9cf861d961bdbafb55857f6a86/pomodorable-0.1.dev8.tar.gz
+[2024-05-11 21:17:56] INFO root fetch - processPackages [rocketchat-async]: Downloading https://files.pythonhosted.org/packages/24/31/b8ae2631439427147fe17082bd59084a3f92eb4221cf23b3835b40d757fc/rocketchat_async-4.0.0.tar.gz
+[2024-05-11 21:17:57] INFO root fetch - processPackages [PyCompGeomAlgorithms]: executing diffoscope
+[2024-05-11 21:17:57] INFO root fetch - processPackages [PyCompGeomAlgorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCompGeomAlgorithms-1.0.8.tar.gz tmp/PyCompGeomAlgorithms-1.0.9.tar.gz --markdown 20240511/P/PyCompGeomAlgorithms/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 21:17:57] INFO root fetch - processPackages [tipisz]: Downloading https://files.pythonhosted.org/packages/ea/56/efea517e5e05d171be71a23b4c838cafd5eea06598c395e4cfeb268b3fdc/tipisz-2.1.tar.gz
+[2024-05-11 21:17:57] INFO root fetch - processPackages [pomodorable]: Downloading https://files.pythonhosted.org/packages/92/5d/b91c67f6c7dae00041e39f7688d01b87851bf8d8d273efb1a25cc434849e/pomodorable-0.1.dev9.tar.gz
+[2024-05-11 21:17:57] INFO root fetch - processPackages [rocketchat-async]: Downloading https://files.pythonhosted.org/packages/3d/5c/aabed3546d8e31dc0baca9db03fc2ca519eaf30844de8b2fbf21e5ca6f40/rocketchat_async-4.1.0.tar.gz
+[2024-05-11 21:17:57] INFO root fetch - processPackages [tipisz]: executing diffoscope
+[2024-05-11 21:17:57] INFO root fetch - processPackages [tipisz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tipisz-1.1.tar.gz tmp/tipisz-2.1.tar.gz --markdown 20240511/t/tipisz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:17:57] INFO root fetch - processPackages [pomodorable]: executing diffoscope
+[2024-05-11 21:17:57] INFO root fetch - processPackages [pomodorable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pomodorable-0.1.dev8.tar.gz tmp/pomodorable-0.1.dev9.tar.gz --markdown 20240511/p/pomodorable/0.1.dev8-0.1.dev9/README.md --exclude *.pyd
+[2024-05-11 21:17:57] INFO root fetch - processPackages [rocketchat-async]: executing diffoscope
+[2024-05-11 21:17:57] INFO root fetch - processPackages [rocketchat-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rocketchat_async-4.0.0.tar.gz tmp/rocketchat_async-4.1.0.tar.gz --markdown 20240511/r/rocketchat-async/4.0.0-4.1.0/README.md --exclude *.pyd
+[2024-05-11 21:17:57] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.8.tar.gz]
+[2024-05-11 21:17:57] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.9.tar.gz]
+[2024-05-11 21:17:57] INFO root fetch - main [MainThread]: End processing [PyCompGeomAlgorithms]: success
+[2024-05-11 21:17:57] INFO root fetch - processPackages [tipisz]: Remove: archive file [/home/abi/fetcher/tmp/tipisz-1.1.tar.gz]
+[2024-05-11 21:17:57] INFO root fetch - processPackages [tipisz]: Remove: archive file [/home/abi/fetcher/tmp/tipisz-2.1.tar.gz]
+[2024-05-11 21:17:57] INFO root fetch - main [MainThread]: End processing [tipisz]: success
+[2024-05-11 21:17:58] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev8.tar.gz]
+[2024-05-11 21:17:58] INFO root fetch - processPackages [pomodorable]: Remove: archive file [/home/abi/fetcher/tmp/pomodorable-0.1.dev9.tar.gz]
+[2024-05-11 21:17:58] INFO root fetch - main [MainThread]: End processing [pomodorable]: success
+[2024-05-11 21:17:58] INFO root fetch - processPackages [rocketchat-async]: Remove: archive file [/home/abi/fetcher/tmp/rocketchat_async-4.0.0.tar.gz]
+[2024-05-11 21:17:58] INFO root fetch - processPackages [rocketchat-async]: Remove: archive file [/home/abi/fetcher/tmp/rocketchat_async-4.1.0.tar.gz]
+[2024-05-11 21:17:58] INFO root fetch - main [MainThread]: End processing [rocketchat-async]: success
+[2024-05-11 21:17:58] INFO root fetch - main [MainThread]: Store serial: [23163913]
