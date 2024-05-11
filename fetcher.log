@@ -14577,3 +14577,60 @@
 [2024-05-11 12:37:08] INFO root fetch - processPackages [scrapy-scraper]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_scraper-1.7.tar.gz]
 [2024-05-11 12:37:08] INFO root fetch - main [MainThread]: End processing [scrapy-scraper]: success
 [2024-05-11 12:37:08] INFO root fetch - main [MainThread]: Store serial: [23160133]
+[2024-05-11 12:39:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160133]
+[2024-05-11 12:39:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: preconizedz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fabric-orchestrator-client
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skypilot-nightly
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spatium
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fabrictestbed
+[2024-05-11 12:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pymemgpt-nightly
+[2024-05-11 12:39:17] INFO root fetch - processPackages [fabrictestbed]: New version: [1.7.0b4] Old Version: [1.7.0b3]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [skypilot-nightly]: New version: [1.0.0.dev20240510] Old Version: [1.0.0.dev20240509]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [pymemgpt-nightly]: New version: [0.3.9.dev20240412103904] Old Version: [0.3.9.dev20240411103902]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [fabric-orchestrator-client]: New version: [1.7.0b5] Old Version: [1.7.0b4]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [preconizedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/64/21/353e98e0aed41caa06013ea65a61c7b88419ea3cdea050ccdfa5e77e9ea7/skypilot_nightly-1.0.0.dev20240509.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [spatium]: New version: [1.5.5] Old Version: [1.5.4]
+[2024-05-11 12:39:17] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/a5/1a/a80c225d3b8645462dcd9cb4993befdfdd102639e7c3ac6922c4c6e1226b/fabrictestbed-1.7.0b3.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/28/e7/e8c0c970c21e3670e810627cef085bbbbac1f9e994540354838d7781a0ac/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [fabric-orchestrator-client]: Downloading https://files.pythonhosted.org/packages/73/18/097fe1b323a48786b7f4edaac445e9cc46038347f6ff9e88ae9a421f4266/fabric-orchestrator-client-1.7.0b4.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [preconizedz]: Downloading https://files.pythonhosted.org/packages/d6/fb/ecc8be54fb6b9269a9410285a18d8207a35a1344d430f1d095fccece6f28/preconizedz-1.1.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [spatium]: Downloading https://files.pythonhosted.org/packages/f1/ad/6bbb2cfeacb8e11d33b82ca70d4cfe9273347c8d81266f875de3c6e3370d/spatium-1.5.4.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [skypilot-nightly]: Downloading https://files.pythonhosted.org/packages/6f/88/ba39303914df6680a8ac96361282fe139d5bba2326a52e860b4d72191827/skypilot_nightly-1.0.0.dev20240510.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [pymemgpt-nightly]: Downloading https://files.pythonhosted.org/packages/50/4a/4c9c1fb70a7ee971f3c8697cc6dedb251e3b10cafdd23be4d035ece0f2ec/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [fabrictestbed]: Downloading https://files.pythonhosted.org/packages/12/6d/583ffb5edb6666f5bd4c5f2f810287fe135ad3add08a1c5a0f2293605c2f/fabrictestbed-1.7.0b4.tar.gz
+[2024-05-11 12:39:17] INFO root fetch - processPackages [skypilot-nightly]: executing diffoscope
+[2024-05-11 12:39:17] INFO root fetch - processPackages [skypilot-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skypilot_nightly-1.0.0.dev20240509.tar.gz tmp/skypilot_nightly-1.0.0.dev20240510.tar.gz --markdown 20240511/s/skypilot-nightly/1.0.0.dev20240509-1.0.0.dev20240510/README.md --exclude *.pyd
+[2024-05-11 12:39:18] INFO root fetch - processPackages [preconizedz]: Downloading https://files.pythonhosted.org/packages/21/bc/6312e6a2ecf19630f7d6d9767d71b13da149d4abeb778e1518e8bdef45f8/preconizedz-2.1.tar.gz
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabrictestbed]: executing diffoscope
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabrictestbed]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabrictestbed-1.7.0b3.tar.gz tmp/fabrictestbed-1.7.0b4.tar.gz --markdown 20240511/f/fabrictestbed/1.7.0b3-1.7.0b4/README.md --exclude *.pyd
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabric-orchestrator-client]: Downloading https://files.pythonhosted.org/packages/6a/23/fc28b6ceb3e8c32600a63c8498e7b510aa24e449cc86d312ba1b69344fcd/fabric-orchestrator-client-1.7.0b5.tar.gz
+[2024-05-11 12:39:18] INFO root fetch - processPackages [pymemgpt-nightly]: executing diffoscope
+[2024-05-11 12:39:18] INFO root fetch - processPackages [pymemgpt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz --markdown 20240511/p/pymemgpt-nightly/0.3.9.dev20240411103902-0.3.9.dev20240412103904/README.md --exclude *.pyd
+[2024-05-11 12:39:18] INFO root fetch - processPackages [preconizedz]: executing diffoscope
+[2024-05-11 12:39:18] INFO root fetch - processPackages [preconizedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/preconizedz-1.1.tar.gz tmp/preconizedz-2.1.tar.gz --markdown 20240511/p/preconizedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:39:18] INFO root fetch - processPackages [spatium]: Downloading https://files.pythonhosted.org/packages/cc/3a/9d208bcec1d48e806cc7f102f936f8f0032e0f57b15035f4136a89c11b82/spatium-1.5.5-cp310-cp310-musllinux_1_1_x86_64.whl
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabric-orchestrator-client]: executing diffoscope
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabric-orchestrator-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fabric-orchestrator-client-1.7.0b4.tar.gz tmp/fabric-orchestrator-client-1.7.0b5.tar.gz --markdown 20240511/f/fabric-orchestrator-client/1.7.0b4-1.7.0b5/README.md --exclude *.pyd
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabrictestbed]: Remove: archive file [/home/abi/fetcher/tmp/fabrictestbed-1.7.0b3.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabrictestbed]: Remove: archive file [/home/abi/fetcher/tmp/fabrictestbed-1.7.0b4.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - main [MainThread]: End processing [fabrictestbed]: success
+[2024-05-11 12:39:18] INFO root fetch - processPackages [preconizedz]: Remove: archive file [/home/abi/fetcher/tmp/preconizedz-1.1.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - processPackages [preconizedz]: Remove: archive file [/home/abi/fetcher/tmp/preconizedz-2.1.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - main [MainThread]: End processing [preconizedz]: success
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabric-orchestrator-client]: Remove: archive file [/home/abi/fetcher/tmp/fabric-orchestrator-client-1.7.0b4.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - processPackages [fabric-orchestrator-client]: Remove: archive file [/home/abi/fetcher/tmp/fabric-orchestrator-client-1.7.0b5.tar.gz]
+[2024-05-11 12:39:18] INFO root fetch - main [MainThread]: End processing [fabric-orchestrator-client]: success
+[2024-05-11 12:39:19] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240411103902.tar.gz]
+[2024-05-11 12:39:19] INFO root fetch - processPackages [pymemgpt-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pymemgpt_nightly-0.3.9.dev20240412103904.tar.gz]
+[2024-05-11 12:39:19] INFO root fetch - main [MainThread]: End processing [pymemgpt-nightly]: success
+[2024-05-11 12:39:19] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240509.tar.gz]
+[2024-05-11 12:39:19] INFO root fetch - processPackages [skypilot-nightly]: Remove: archive file [/home/abi/fetcher/tmp/skypilot_nightly-1.0.0.dev20240510.tar.gz]
+[2024-05-11 12:39:19] INFO root fetch - main [MainThread]: End processing [skypilot-nightly]: success
+[2024-05-11 12:39:20] INFO root fetch - processPackages [spatium]: executing diffoscope
+[2024-05-11 12:39:20] INFO root fetch - processPackages [spatium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatium-1.5.4.tar.gz tmp/spatium-1.5.5-cp310-cp310-musllinux_1_1_x86_64.whl.zip --markdown 20240511/s/spatium/1.5.4-1.5.5/README.md --exclude *.pyd
+[2024-05-11 12:39:21] INFO root fetch - processPackages [spatium]: Remove: archive file [/home/abi/fetcher/tmp/spatium-1.5.4.tar.gz]
+[2024-05-11 12:39:21] INFO root fetch - processPackages [spatium]: Remove: archive file [/home/abi/fetcher/tmp/spatium-1.5.5-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
+[2024-05-11 12:39:21] INFO root fetch - main [MainThread]: End processing [spatium]: success
+[2024-05-11 12:39:21] INFO root fetch - main [MainThread]: Store serial: [23160149]
