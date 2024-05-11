@@ -9672,3 +9672,45 @@
 [2024-05-11 06:29:30] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.3.0.tar.gz]
 [2024-05-11 06:29:30] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
 [2024-05-11 06:29:30] INFO root fetch - main [MainThread]: Store serial: [23157251]
+[2024-05-11 06:31:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157251]
+[2024-05-11 06:31:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 06:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyRSMQ
+[2024-05-11 06:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Pynapse
+[2024-05-11 06:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micropuncturez
+[2024-05-11 06:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flowmancer
+[2024-05-11 06:31:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: spriestz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [Pynapse]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-11 06:31:39] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/ee/d6/b0caf8e27b4ec196bffd70ea21aac277c84f49c462939ce3729ae2929fa5/pynapse-0.3.0.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [PyRSMQ]: New version: [0.5.1] Old Version: [0.5.0]
+[2024-05-11 06:31:39] INFO root fetch - processPackages [flowmancer]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-11 06:31:39] INFO root fetch - processPackages [micropuncturez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:31:39] WARNING root fetch - processPackages [spriestz]: Skipping, unable to determine old version
+[2024-05-11 06:31:39] INFO root fetch - main [MainThread]: End processing [spriestz] error
+[2024-05-11 06:31:39] INFO root fetch - processPackages [PyRSMQ]: Downloading https://files.pythonhosted.org/packages/f8/cd/0bd6ad8caa28eba8033c168d923507af11aca02adbe3c1c3721270029505/PyRSMQ-0.5.0.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [micropuncturez]: Downloading https://files.pythonhosted.org/packages/b2/3f/a3147f2d434a72c90022c138829c09c42df4879518f59071743681925521/micropuncturez-1.1.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/16/67/dc7e0f71395efdfa833d75db9c3cea1581c7472b0d0486c81d58b8a867af/flowmancer-0.9.4.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/8f/aa/763d7ef1b58ba5d103f60f4f86ff642c83b68b300daa39c3f2535372d9b0/pynapse-0.4.0.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [Pynapse]: executing diffoscope
+[2024-05-11 06:31:39] INFO root fetch - processPackages [Pynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynapse-0.3.0.tar.gz tmp/pynapse-0.4.0.tar.gz --markdown 20240511/P/Pynapse/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-11 06:31:39] INFO root fetch - processPackages [PyRSMQ]: Downloading https://files.pythonhosted.org/packages/0c/ab/f7ffbbaa691209f2a48bfdd79e827eb3de5305f03c121a931ce40fcaf5df/pyrsmq-0.5.1.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [micropuncturez]: Downloading https://files.pythonhosted.org/packages/2c/60/1ace8ebb5dd09e267587f507d33cbe8931e2c5d5fad37c403fb431e21ca6/micropuncturez-2.1.tar.gz
+[2024-05-11 06:31:39] INFO root fetch - processPackages [flowmancer]: Downloading https://files.pythonhosted.org/packages/6c/70/08dbb431bf20c50c0cc8980f264315b9ee83779e5be507e72b668ea0d341/flowmancer-0.9.5.tar.gz
+[2024-05-11 06:31:40] INFO root fetch - processPackages [PyRSMQ]: executing diffoscope
+[2024-05-11 06:31:40] INFO root fetch - processPackages [PyRSMQ]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyRSMQ-0.5.0.tar.gz tmp/pyrsmq-0.5.1.tar.gz --markdown 20240511/P/PyRSMQ/0.5.0-0.5.1/README.md --exclude *.pyd
+[2024-05-11 06:31:40] INFO root fetch - processPackages [micropuncturez]: executing diffoscope
+[2024-05-11 06:31:40] INFO root fetch - processPackages [micropuncturez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micropuncturez-1.1.tar.gz tmp/micropuncturez-2.1.tar.gz --markdown 20240511/m/micropuncturez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:31:40] INFO root fetch - processPackages [flowmancer]: executing diffoscope
+[2024-05-11 06:31:40] INFO root fetch - processPackages [flowmancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flowmancer-0.9.4.tar.gz tmp/flowmancer-0.9.5.tar.gz --markdown 20240511/f/flowmancer/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-11 06:31:40] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.3.0.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.4.0.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
+[2024-05-11 06:31:40] INFO root fetch - processPackages [micropuncturez]: Remove: archive file [/home/abi/fetcher/tmp/micropuncturez-1.1.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - processPackages [micropuncturez]: Remove: archive file [/home/abi/fetcher/tmp/micropuncturez-2.1.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - main [MainThread]: End processing [micropuncturez]: success
+[2024-05-11 06:31:40] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.4.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - processPackages [flowmancer]: Remove: archive file [/home/abi/fetcher/tmp/flowmancer-0.9.5.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - main [MainThread]: End processing [flowmancer]: success
+[2024-05-11 06:31:40] INFO root fetch - processPackages [PyRSMQ]: Remove: archive file [/home/abi/fetcher/tmp/PyRSMQ-0.5.0.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - processPackages [PyRSMQ]: Remove: archive file [/home/abi/fetcher/tmp/pyrsmq-0.5.1.tar.gz]
+[2024-05-11 06:31:40] INFO root fetch - main [MainThread]: End processing [PyRSMQ]: success
+[2024-05-11 06:31:40] INFO root fetch - main [MainThread]: Store serial: [23157266]
