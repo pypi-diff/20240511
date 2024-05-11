@@ -13653,3 +13653,42 @@
 [2024-05-11 11:40:07] INFO root fetch - processPackages [mpl-ascii]: Remove: archive file [/home/abi/fetcher/tmp/mpl_ascii-0.6.0.tar.gz]
 [2024-05-11 11:40:07] INFO root fetch - main [MainThread]: End processing [mpl-ascii]: success
 [2024-05-11 11:40:07] INFO root fetch - main [MainThread]: Store serial: [23159670]
+[2024-05-11 11:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159670]
+[2024-05-11 11:42:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mentabotix
+[2024-05-11 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rest-client-micro
+[2024-05-11 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: plectridiumz
+[2024-05-11 11:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: movie-barcodes
+[2024-05-11 11:42:16] INFO root fetch - processPackages [mentabotix]: New version: [0.1.3a1] Old Version: [0.1.2]
+[2024-05-11 11:42:16] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/9d/25/74239c8b9565b52d740c3f1b388daff500945aae77d908d5eff096c8697e/mentabotix-0.1.2.tar.gz
+[2024-05-11 11:42:16] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-11 11:42:16] INFO root fetch - processPackages [movie-barcodes]: New version: [0.1.1] Old Version: [0.0.6]
+[2024-05-11 11:42:16] INFO root fetch - processPackages [plectridiumz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:42:16] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/10/fb/f40db3c7b79b10ed3c815cfe5bbe556c901d05ea7610104749d0d64a43be/rest_client_micro-0.3.3.tar.gz
+[2024-05-11 11:42:16] INFO root fetch - processPackages [plectridiumz]: Downloading https://files.pythonhosted.org/packages/b8/b5/f63ed669c68180568e733a65df40f13d8e615b86b3cdcea3c5f73b56d145/plectridiumz-1.1.tar.gz
+[2024-05-11 11:42:16] INFO root fetch - processPackages [mentabotix]: Downloading https://files.pythonhosted.org/packages/e7/f5/b1e0bf49f74f8840add444a56d2b99acc9765489505eeca8d98026d23968/mentabotix-0.1.3a1.tar.gz
+[2024-05-11 11:42:16] INFO root fetch - processPackages [movie-barcodes]: Downloading https://files.pythonhosted.org/packages/5a/45/2811f51966a7160cadd66e81d3af7304c669bdfceed96348bc05f8db582d/movie-barcodes-0.0.6.tar.gz
+[2024-05-11 11:42:17] INFO root fetch - processPackages [mentabotix]: executing diffoscope
+[2024-05-11 11:42:17] INFO root fetch - processPackages [mentabotix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mentabotix-0.1.2.tar.gz tmp/mentabotix-0.1.3a1.tar.gz --markdown 20240511/m/mentabotix/0.1.2-0.1.3a1/README.md --exclude *.pyd
+[2024-05-11 11:42:17] INFO root fetch - processPackages [plectridiumz]: Downloading https://files.pythonhosted.org/packages/9d/e7/cdb3f4d9b73098b163ad9142f93ec30ccb1b57ad954604ab43c748d29f06/plectridiumz-2.1.tar.gz
+[2024-05-11 11:42:17] INFO root fetch - processPackages [movie-barcodes]: Downloading https://files.pythonhosted.org/packages/fd/aa/397b826389b34937a63c5ba56d59ff6b40d648f794b0da2fe7f9386b39a5/movie-barcodes-0.1.1.tar.gz
+[2024-05-11 11:42:17] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/d5/4f/b3f8d0fea1df15045fca3d134b22d39487a8a59ee9c691c2e29d4d0b2d15/rest_client_micro-0.3.4.tar.gz
+[2024-05-11 11:42:17] INFO root fetch - processPackages [plectridiumz]: executing diffoscope
+[2024-05-11 11:42:17] INFO root fetch - processPackages [plectridiumz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plectridiumz-1.1.tar.gz tmp/plectridiumz-2.1.tar.gz --markdown 20240511/p/plectridiumz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:42:17] INFO root fetch - processPackages [movie-barcodes]: executing diffoscope
+[2024-05-11 11:42:17] INFO root fetch - processPackages [movie-barcodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movie-barcodes-0.0.6.tar.gz tmp/movie-barcodes-0.1.1.tar.gz --markdown 20240511/m/movie-barcodes/0.0.6-0.1.1/README.md --exclude *.pyd
+[2024-05-11 11:42:17] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 11:42:17] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.3.tar.gz tmp/rest_client_micro-0.3.4.tar.gz --markdown 20240511/r/rest-client-micro/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-11 11:42:17] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.2.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - processPackages [mentabotix]: Remove: archive file [/home/abi/fetcher/tmp/mentabotix-0.1.3a1.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - main [MainThread]: End processing [mentabotix]: success
+[2024-05-11 11:42:17] INFO root fetch - processPackages [plectridiumz]: Remove: archive file [/home/abi/fetcher/tmp/plectridiumz-1.1.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - processPackages [plectridiumz]: Remove: archive file [/home/abi/fetcher/tmp/plectridiumz-2.1.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - main [MainThread]: End processing [plectridiumz]: success
+[2024-05-11 11:42:17] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.3.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.4.tar.gz]
+[2024-05-11 11:42:17] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 11:42:18] INFO root fetch - processPackages [movie-barcodes]: Remove: archive file [/home/abi/fetcher/tmp/movie-barcodes-0.0.6.tar.gz]
+[2024-05-11 11:42:18] INFO root fetch - processPackages [movie-barcodes]: Remove: archive file [/home/abi/fetcher/tmp/movie-barcodes-0.1.1.tar.gz]
+[2024-05-11 11:42:18] INFO root fetch - main [MainThread]: End processing [movie-barcodes]: success
+[2024-05-11 11:42:18] INFO root fetch - main [MainThread]: Store serial: [23159681]
