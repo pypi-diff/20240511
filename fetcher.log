@@ -10506,3 +10506,33 @@
 [2024-05-11 07:35:49] INFO root fetch - processPackages [python-spartan]: Remove: archive file [/home/abi/fetcher/tmp/python_spartan-0.2.6.tar.gz]
 [2024-05-11 07:35:49] INFO root fetch - main [MainThread]: End processing [python-spartan]: success
 [2024-05-11 07:35:49] INFO root fetch - main [MainThread]: Store serial: [23157847]
+[2024-05-11 07:37:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157847]
+[2024-05-11 07:37:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vbimagetotext
+[2024-05-11 07:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meds-etl-cpp
+[2024-05-11 07:37:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: neallotypez
+[2024-05-11 07:37:57] INFO root fetch - processPackages [vbimagetotext]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 07:37:57] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/52/25/b7a358be0660e7fcc8fe251103fdedaa06a4d9e5dd6f187d24a5fd4cf69f/vbimagetotext-0.1.8.tar.gz
+[2024-05-11 07:37:57] INFO root fetch - processPackages [neallotypez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:37:57] INFO root fetch - processPackages [meds-etl-cpp]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-11 07:37:57] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/ca/ab/d04b9565c08e65166ef59f04608945a4f32a943cc2e38d220d87b781eff7/vbimagetotext-0.1.9.tar.gz
+[2024-05-11 07:37:57] INFO root fetch - processPackages [meds-etl-cpp]: Downloading https://files.pythonhosted.org/packages/a1/7f/9826cfd4ab4dbbaf679b13bec369bffcfca72a44c41e0a45d372ff0da77c/meds_etl_cpp-0.2.0.tar.gz
+[2024-05-11 07:37:57] INFO root fetch - processPackages [neallotypez]: Downloading https://files.pythonhosted.org/packages/1d/f5/72e250ace4a880f5d472c98de13e4371f5b4dd0d38fcd7a545a34e7aa1b5/neallotypez-1.1.tar.gz
+[2024-05-11 07:37:57] INFO root fetch - processPackages [vbimagetotext]: executing diffoscope
+[2024-05-11 07:37:57] INFO root fetch - processPackages [vbimagetotext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimagetotext-0.1.8.tar.gz tmp/vbimagetotext-0.1.9.tar.gz --markdown 20240511/v/vbimagetotext/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 07:37:58] INFO root fetch - processPackages [neallotypez]: Downloading https://files.pythonhosted.org/packages/6e/80/47603fffb6d0b779dd60a61205a8cb0a2b35aba4cb83e399e029dbb7c8e3/neallotypez-2.1.tar.gz
+[2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: Downloading https://files.pythonhosted.org/packages/c2/79/f699fb31b9e2b706d2589058812756f028f457fd4b24662f2ed881c4441c/meds_etl_cpp-0.2.1.tar.gz
+[2024-05-11 07:37:58] INFO root fetch - processPackages [neallotypez]: executing diffoscope
+[2024-05-11 07:37:58] INFO root fetch - processPackages [neallotypez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neallotypez-1.1.tar.gz tmp/neallotypez-2.1.tar.gz --markdown 20240511/n/neallotypez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: executing diffoscope
+[2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meds_etl_cpp-0.2.0.tar.gz tmp/meds_etl_cpp-0.2.1.tar.gz --markdown 20240511/m/meds-etl-cpp/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 07:37:58] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.8.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.9.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - main [MainThread]: End processing [vbimagetotext]: success
+[2024-05-11 07:37:58] INFO root fetch - processPackages [neallotypez]: Remove: archive file [/home/abi/fetcher/tmp/neallotypez-1.1.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - processPackages [neallotypez]: Remove: archive file [/home/abi/fetcher/tmp/neallotypez-2.1.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - main [MainThread]: End processing [neallotypez]: success
+[2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl_cpp-0.2.0.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl_cpp-0.2.1.tar.gz]
+[2024-05-11 07:37:58] INFO root fetch - main [MainThread]: End processing [meds-etl-cpp]: success
+[2024-05-11 07:37:58] INFO root fetch - main [MainThread]: Store serial: [23157858]
