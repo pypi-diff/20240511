@@ -16212,3 +16212,51 @@
 [2024-05-11 14:20:09] INFO root fetch - processPackages [python-roborock]: Remove: archive file [/home/abi/fetcher/tmp/python_roborock-2.2.1.tar.gz]
 [2024-05-11 14:20:09] INFO root fetch - main [MainThread]: End processing [python-roborock]: success
 [2024-05-11 14:20:09] INFO root fetch - main [MainThread]: Store serial: [23160936]
+[2024-05-11 14:22:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160936]
+[2024-05-11 14:22:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 14:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aparat-crawler
+[2024-05-11 14:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: team-14-lib-version
+[2024-05-11 14:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unitradeapi
+[2024-05-11 14:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyralidiformz
+[2024-05-11 14:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rAPIdy
+[2024-05-11 14:22:18] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b3] Old Version: [0.6.0b2]
+[2024-05-11 14:22:18] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/1b/86/634437a0636735faeaddb60c627ac2e58468f56eb59b33ed1be925240ae9/team_14_lib_version-0.6.0b2.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [pyralidiformz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:22:18] INFO root fetch - processPackages [aparat-crawler]: New version: [0.9.1.5] Old Version: [0.9.1.4]
+[2024-05-11 14:22:18] INFO root fetch - processPackages [rAPIdy]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 14:22:18] INFO root fetch - processPackages [unitradeapi]: New version: [0.121] Old Version: [0.120]
+[2024-05-11 14:22:18] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/93/c7/685775753b88413a721714af30a31806112ed91bb1618d0ef086bd44d2fa/team_14_lib_version-0.6.0b3.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/8e/01/ba09738352cc9effdd16adb0fe81f51db326418d0e3eb028f212b9e83dad/aparat_crawler-0.9.1.4.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [pyralidiformz]: Downloading https://files.pythonhosted.org/packages/9b/c5/d0ee9b1b31b685b2d677fc47414f0876fb3775bce79e50331dc6f954c4a5/pyralidiformz-1.1.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/36/27/780783971b90227716811bb6ae5fc901c85dd5e56e662a0d0f41a0723888/unitradeapi-0.120.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [rAPIdy]: Downloading https://files.pythonhosted.org/packages/0c/40/f4f0ad092826b5fabd77ee9bc31a60a452737a77f9c88f9c8c604fecd2b2/rapidy-0.2.1.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 14:22:18] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.6.0b2.tar.gz tmp/team_14_lib_version-0.6.0b3.tar.gz --markdown 20240511/t/team-14-lib-version/0.6.0b2-0.6.0b3/README.md --exclude *.pyd
+[2024-05-11 14:22:18] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/82/97/0063104213953935e81b0853dab1a04fc4bfb2e695a772f3d800ad16b554/aparat_crawler-0.9.1.5.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [pyralidiformz]: Downloading https://files.pythonhosted.org/packages/6c/ea/ca9650e2d44d098700bddbfa3e049209cbb5eb58d116746610ef791194a8/pyralidiformz-2.1.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/a9/9c/89e93c5a2b8eba51e9fad8c6be2182606fc2205177a07b644d161120a9b7/unitradeapi-0.121.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [rAPIdy]: Downloading https://files.pythonhosted.org/packages/52/12/25c465d6d5bef6ab2c19d57760929f448e69ecb35a4b0b12fa2e98594e90/rapidy-0.2.2.tar.gz
+[2024-05-11 14:22:18] INFO root fetch - processPackages [aparat-crawler]: executing diffoscope
+[2024-05-11 14:22:18] INFO root fetch - processPackages [aparat-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aparat_crawler-0.9.1.4.tar.gz tmp/aparat_crawler-0.9.1.5.tar.gz --markdown 20240511/a/aparat-crawler/0.9.1.4-0.9.1.5/README.md --exclude *.pyd
+[2024-05-11 14:22:18] INFO root fetch - processPackages [unitradeapi]: executing diffoscope
+[2024-05-11 14:22:18] INFO root fetch - processPackages [unitradeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitradeapi-0.120.tar.gz tmp/unitradeapi-0.121.tar.gz --markdown 20240511/u/unitradeapi/0.120-0.121/README.md --exclude *.pyd
+[2024-05-11 14:22:18] INFO root fetch - processPackages [pyralidiformz]: executing diffoscope
+[2024-05-11 14:22:18] INFO root fetch - processPackages [pyralidiformz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyralidiformz-1.1.tar.gz tmp/pyralidiformz-2.1.tar.gz --markdown 20240511/p/pyralidiformz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:22:18] INFO root fetch - processPackages [rAPIdy]: executing diffoscope
+[2024-05-11 14:22:18] INFO root fetch - processPackages [rAPIdy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidy-0.2.1.tar.gz tmp/rapidy-0.2.2.tar.gz --markdown 20240511/r/rAPIdy/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 14:22:19] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b2.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b3.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 14:22:19] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.4.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.5.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
+[2024-05-11 14:22:19] INFO root fetch - processPackages [pyralidiformz]: Remove: archive file [/home/abi/fetcher/tmp/pyralidiformz-1.1.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - processPackages [pyralidiformz]: Remove: archive file [/home/abi/fetcher/tmp/pyralidiformz-2.1.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [pyralidiformz]: success
+[2024-05-11 14:22:19] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.120.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.121.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [unitradeapi]: success
+[2024-05-11 14:22:19] INFO root fetch - processPackages [rAPIdy]: Remove: archive file [/home/abi/fetcher/tmp/rapidy-0.2.1.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - processPackages [rAPIdy]: Remove: archive file [/home/abi/fetcher/tmp/rapidy-0.2.2.tar.gz]
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: End processing [rAPIdy]: success
+[2024-05-11 14:22:19] INFO root fetch - main [MainThread]: Store serial: [23160992]
