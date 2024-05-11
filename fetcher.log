@@ -13587,3 +13587,33 @@
 [2024-05-11 11:35:46] INFO root fetch - processPackages [nse]: Remove: archive file [/home/abi/fetcher/tmp/nse-0.2.9.tar.gz]
 [2024-05-11 11:35:46] INFO root fetch - main [MainThread]: End processing [nse]: success
 [2024-05-11 11:35:46] INFO root fetch - main [MainThread]: Store serial: [23159646]
+[2024-05-11 11:37:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159646]
+[2024-05-11 11:37:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: playablez
+[2024-05-11 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: prem-utils
+[2024-05-11 11:37:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 11:37:55] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 11:37:55] INFO root fetch - processPackages [playablez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:37:55] INFO root fetch - processPackages [prem-utils]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 11:37:55] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 11:37:55] INFO root fetch - processPackages [playablez]: Downloading https://files.pythonhosted.org/packages/b7/5e/761853a144fbba40745f003ddc1daa7f0bc12dcb94e33ddafbf2775caf4e/playablez-1.1.tar.gz
+[2024-05-11 11:37:55] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/0b/c2/ef6412c36b4879b14a69ad4cafc10a7cc7f017db696d2d8e7e978238aaa9/prem-utils-0.0.7.tar.gz
+[2024-05-11 11:37:56] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 11:37:56] INFO root fetch - processPackages [playablez]: Downloading https://files.pythonhosted.org/packages/bc/47/4ee0a6dfe4b14e378e7c894aa925aaea4475bcd0b4eec7b01ba989ec6808/playablez-2.1.tar.gz
+[2024-05-11 11:37:56] INFO root fetch - processPackages [prem-utils]: Downloading https://files.pythonhosted.org/packages/33/0f/fc806fe5db50f59926c6cd92925e6ccc6665f01f20e6ba25faabe2d2211d/prem-utils-0.0.8.tar.gz
+[2024-05-11 11:37:56] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 11:37:56] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 11:37:56] INFO root fetch - processPackages [playablez]: executing diffoscope
+[2024-05-11 11:37:56] INFO root fetch - processPackages [playablez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/playablez-1.1.tar.gz tmp/playablez-2.1.tar.gz --markdown 20240511/p/playablez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:37:56] INFO root fetch - processPackages [prem-utils]: executing diffoscope
+[2024-05-11 11:37:56] INFO root fetch - processPackages [prem-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prem-utils-0.0.7.tar.gz tmp/prem-utils-0.0.8.tar.gz --markdown 20240511/p/prem-utils/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 11:37:57] INFO root fetch - processPackages [playablez]: Remove: archive file [/home/abi/fetcher/tmp/playablez-1.1.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - processPackages [playablez]: Remove: archive file [/home/abi/fetcher/tmp/playablez-2.1.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - main [MainThread]: End processing [playablez]: success
+[2024-05-11 11:37:57] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 11:37:57] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.7.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - processPackages [prem-utils]: Remove: archive file [/home/abi/fetcher/tmp/prem-utils-0.0.8.tar.gz]
+[2024-05-11 11:37:57] INFO root fetch - main [MainThread]: End processing [prem-utils]: success
+[2024-05-11 11:37:57] INFO root fetch - main [MainThread]: Store serial: [23159654]
