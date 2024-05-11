@@ -18647,3 +18647,42 @@
 [2024-05-11 17:12:48] INFO root fetch - processPackages [helpers-ai]: Remove: archive file [/home/abi/fetcher/tmp/helpers_ai-0.0.3.tar.gz]
 [2024-05-11 17:12:48] INFO root fetch - main [MainThread]: End processing [helpers-ai]: success
 [2024-05-11 17:12:48] INFO root fetch - main [MainThread]: Store serial: [23162196]
+[2024-05-11 17:14:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162196]
+[2024-05-11 17:14:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 17:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: protein-design-tools
+[2024-05-11 17:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: silverfinz
+[2024-05-11 17:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: athina
+[2024-05-11 17:14:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-ssi-inventory-closing-queue
+[2024-05-11 17:14:57] INFO root fetch - processPackages [protein-design-tools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 17:14:57] INFO root fetch - processPackages [protein-design-tools]: Downloading https://files.pythonhosted.org/packages/14/24/a1d06b818f3d46d7318b86f0334181bb8b9134f71856b2a0ca69ea24d040/protein_design_tools-0.1.8.tar.gz
+[2024-05-11 17:14:57] INFO root fetch - processPackages [athina]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-11 17:14:57] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: New version: [14.0.2.0.0] Old Version: [14.0.1.1.0]
+[2024-05-11 17:14:57] INFO root fetch - processPackages [silverfinz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:14:57] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/ef/47/9b2ef0f7dd09092fd1f7473c8a302f1fa6450ca51d82832c78a6378d2975/athina-1.2.8.tar.gz
+[2024-05-11 17:14:57] INFO root fetch - processPackages [protein-design-tools]: Downloading https://files.pythonhosted.org/packages/9c/73/da486d6ea5db2b79ee4188d258d6b13734e412cf0c16cc9d40d09900699d/protein_design_tools-0.1.9.tar.gz
+[2024-05-11 17:14:57] INFO root fetch - processPackages [silverfinz]: Downloading https://files.pythonhosted.org/packages/78/bd/721c79f69e391c5d0eb615484ea9b71bf14b29df2b856cbd15015ddbe429/silverfinz-1.1.tar.gz
+[2024-05-11 17:14:58] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: Downloading https://files.pythonhosted.org/packages/50/44/89bda2f9efd14a07d31f371154e232362013a94d5d5b45bfa9373a610bed/odoo14_addon_ssi_inventory_closing_queue-14.0.1.1.0-py3-none-any.whl
+[2024-05-11 17:14:58] INFO root fetch - processPackages [protein-design-tools]: executing diffoscope
+[2024-05-11 17:14:58] INFO root fetch - processPackages [protein-design-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/protein_design_tools-0.1.8.tar.gz tmp/protein_design_tools-0.1.9.tar.gz --markdown 20240511/p/protein-design-tools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 17:14:58] INFO root fetch - processPackages [athina]: Downloading https://files.pythonhosted.org/packages/8c/7a/9ca31aae0240dac1dcb9ff13ab77af41aabbad7fe4fb02cf9f625581c8cc/athina-1.2.9.tar.gz
+[2024-05-11 17:14:58] INFO root fetch - processPackages [silverfinz]: Downloading https://files.pythonhosted.org/packages/2f/97/8f0729c9b000605512b9437ceef278b19426ff181a60c6e95ff44943c478/silverfinz-2.1.tar.gz
+[2024-05-11 17:14:58] INFO root fetch - processPackages [athina]: executing diffoscope
+[2024-05-11 17:14:58] INFO root fetch - processPackages [athina]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athina-1.2.8.tar.gz tmp/athina-1.2.9.tar.gz --markdown 20240511/a/athina/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-11 17:14:58] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: Downloading https://files.pythonhosted.org/packages/5c/19/de94ebb9efc9867347a06c472edf7985e997b9f86be05150af7e1097e0d8/odoo14_addon_ssi_inventory_closing_queue-14.0.2.0.0-py3-none-any.whl
+[2024-05-11 17:14:58] INFO root fetch - processPackages [silverfinz]: executing diffoscope
+[2024-05-11 17:14:58] INFO root fetch - processPackages [silverfinz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/silverfinz-1.1.tar.gz tmp/silverfinz-2.1.tar.gz --markdown 20240511/s/silverfinz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:14:58] INFO root fetch - processPackages [protein-design-tools]: Remove: archive file [/home/abi/fetcher/tmp/protein_design_tools-0.1.8.tar.gz]
+[2024-05-11 17:14:58] INFO root fetch - processPackages [protein-design-tools]: Remove: archive file [/home/abi/fetcher/tmp/protein_design_tools-0.1.9.tar.gz]
+[2024-05-11 17:14:58] INFO root fetch - main [MainThread]: End processing [protein-design-tools]: success
+[2024-05-11 17:14:58] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: executing diffoscope
+[2024-05-11 17:14:58] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_inventory_closing_queue-14.0.1.1.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_inventory_closing_queue-14.0.2.0.0-py3-none-any.whl.zip --markdown 20240511/o/odoo14-addon-ssi-inventory-closing-queue/14.0.1.1.0-14.0.2.0.0/README.md --exclude *.pyd
+[2024-05-11 17:14:58] INFO root fetch - processPackages [silverfinz]: Remove: archive file [/home/abi/fetcher/tmp/silverfinz-1.1.tar.gz]
+[2024-05-11 17:14:58] INFO root fetch - processPackages [silverfinz]: Remove: archive file [/home/abi/fetcher/tmp/silverfinz-2.1.tar.gz]
+[2024-05-11 17:14:58] INFO root fetch - main [MainThread]: End processing [silverfinz]: success
+[2024-05-11 17:14:59] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.2.8.tar.gz]
+[2024-05-11 17:14:59] INFO root fetch - processPackages [athina]: Remove: archive file [/home/abi/fetcher/tmp/athina-1.2.9.tar.gz]
+[2024-05-11 17:14:59] INFO root fetch - main [MainThread]: End processing [athina]: success
+[2024-05-11 17:14:59] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_inventory_closing_queue-14.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-11 17:14:59] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_inventory_closing_queue-14.0.2.0.0-py3-none-any.whl.zip]
+[2024-05-11 17:14:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-inventory-closing-queue]: success
+[2024-05-11 17:14:59] INFO root fetch - main [MainThread]: Store serial: [23162206]
