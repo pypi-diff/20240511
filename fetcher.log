@@ -12186,3 +12186,18 @@
 [2024-05-11 09:49:13] INFO root fetch - main [MainThread]: End processing [dalpha]: success
 [2024-05-11 09:49:13] INFO root fetch - main [MainThread]: End processing [beanhub-import]: success
 [2024-05-11 09:49:13] INFO root fetch - main [MainThread]: Store serial: [23158790]
+[2024-05-11 09:51:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158790]
+[2024-05-11 09:51:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 09:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: misleep
+[2024-05-11 09:51:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outwallz
+[2024-05-11 09:51:21] INFO root fetch - processPackages [misleep]: New version: [0.2.6b0] Old Version: [0.2.5b0]
+[2024-05-11 09:51:21] WARNING root fetch - processPackages [outwallz]: Skipping, unable to determine old version
+[2024-05-11 09:51:21] INFO root fetch - main [MainThread]: End processing [outwallz] error
+[2024-05-11 09:51:22] INFO root fetch - processPackages [misleep]: Downloading https://files.pythonhosted.org/packages/f3/47/f653d75352f8c2ee8dfc5526703d449c533fbf7f783118be11f1f61f9309/misleep-0.2.5b0.tar.gz
+[2024-05-11 09:51:22] INFO root fetch - processPackages [misleep]: Downloading https://files.pythonhosted.org/packages/15/74/908df3421875552e1a579da2fe610ab716dd725c3f58da4a4001fe0c4282/misleep-0.2.6b0.tar.gz
+[2024-05-11 09:51:22] INFO root fetch - processPackages [misleep]: executing diffoscope
+[2024-05-11 09:51:22] INFO root fetch - processPackages [misleep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misleep-0.2.5b0.tar.gz tmp/misleep-0.2.6b0.tar.gz --markdown 20240511/m/misleep/0.2.5b0-0.2.6b0/README.md --exclude *.pyd
+[2024-05-11 09:51:23] INFO root fetch - processPackages [misleep]: Remove: archive file [/home/abi/fetcher/tmp/misleep-0.2.5b0.tar.gz]
+[2024-05-11 09:51:23] INFO root fetch - processPackages [misleep]: Remove: archive file [/home/abi/fetcher/tmp/misleep-0.2.6b0.tar.gz]
+[2024-05-11 09:51:23] INFO root fetch - main [MainThread]: End processing [misleep]: success
+[2024-05-11 09:51:23] INFO root fetch - main [MainThread]: Store serial: [23158799]
