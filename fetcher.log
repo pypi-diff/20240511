@@ -11590,3 +11590,36 @@
 [2024-05-11 09:03:04] INFO root fetch - processPackages [seqio-nightly]: Remove: archive file [/home/abi/fetcher/tmp/seqio-nightly-0.0.8.dev20220907.tar.gz]
 [2024-05-11 09:03:04] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
 [2024-05-11 09:03:04] INFO root fetch - main [MainThread]: Store serial: [23158518]
+[2024-05-11 09:05:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158518]
+[2024-05-11 09:05:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 09:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvidia-dali-tf-plugin-nightly-cuda110
+[2024-05-11 09:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databend-driver
+[2024-05-11 09:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fissionablez
+[2024-05-11 09:05:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvidia-dali-nightly-cuda110
+[2024-05-11 09:05:13] WARNING root fetch - processPackages [fissionablez]: Skipping, unable to determine old version
+[2024-05-11 09:05:13] INFO root fetch - main [MainThread]: End processing [fissionablez] error
+[2024-05-11 09:05:13] INFO root fetch - processPackages [databend-driver]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: New version: [1.38.0.dev20240507] Old Version: [1.38.0.dev20240506]
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: New version: [1.38.0.dev20240507] Old Version: [1.38.0.dev20240506]
+[2024-05-11 09:05:13] INFO root fetch - processPackages [databend-driver]: Downloading https://files.pythonhosted.org/packages/9e/d2/0bd5410dd972dbb678b40872c610f4f48032a9640df408af5feea4cb50b1/databend_driver-0.9.4-cp37-abi3-win_amd64.whl
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/cc/c2/4b52de75a3d3ca851d31566a3d641718ab70e34df3c9123c3509767a19a8/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240506.tar.gz
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/b9/61/34b5196a3bcec01cfec2cb423b600b6e926eba3a6991ac7af195fab6843e/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/76/70/52a044a9d5657e6ca899c1e1f0f387a16a40e07b8aba1544fdf355e368c3/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: executing diffoscope
+[2024-05-11 09:05:13] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240506.tar.gz tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz --markdown 20240511/n/nvidia-dali-tf-plugin-nightly-cuda110/1.38.0.dev20240506-1.38.0.dev20240507/README.md --exclude *.pyd
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/95/bf/58fd4b364b1db28993819037acf99704d4fa25f882cab0c898a11a6ff055/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: executing diffoscope
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz --markdown 20240511/n/nvidia-dali-nightly-cuda110/1.38.0.dev20240506-1.38.0.dev20240507/README.md --exclude *.pyd
+[2024-05-11 09:05:14] INFO root fetch - processPackages [databend-driver]: Downloading https://files.pythonhosted.org/packages/b7/e3/195c2e775c9ea50822c2431f0a00f48ae03a7a10be4d3e583cce489052ee/databend_driver-0.9.5-cp37-abi3-win_amd64.whl
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240506.tar.gz]
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-tf-plugin-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_tf_plugin_nightly_cuda110-1.38.0.dev20240507.tar.gz]
+[2024-05-11 09:05:14] INFO root fetch - main [MainThread]: End processing [nvidia-dali-tf-plugin-nightly-cuda110]: success
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz]
+[2024-05-11 09:05:14] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz]
+[2024-05-11 09:05:14] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda110]: success
+[2024-05-11 09:05:14] INFO root fetch - processPackages [databend-driver]: executing diffoscope
+[2024-05-11 09:05:14] INFO root fetch - processPackages [databend-driver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databend_driver-0.9.4-cp37-abi3-win_amd64.whl.zip tmp/databend_driver-0.9.5-cp37-abi3-win_amd64.whl.zip --markdown 20240511/d/databend-driver/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-11 09:05:15] INFO root fetch - processPackages [databend-driver]: Remove: archive file [/home/abi/fetcher/tmp/databend_driver-0.9.4-cp37-abi3-win_amd64.whl.zip]
+[2024-05-11 09:05:15] INFO root fetch - processPackages [databend-driver]: Remove: archive file [/home/abi/fetcher/tmp/databend_driver-0.9.5-cp37-abi3-win_amd64.whl.zip]
+[2024-05-11 09:05:15] INFO root fetch - main [MainThread]: End processing [databend-driver]: success
+[2024-05-11 09:05:15] INFO root fetch - main [MainThread]: Store serial: [23158531]
