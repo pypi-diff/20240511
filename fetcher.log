@@ -7512,3 +7512,38 @@
 [2024-05-11 03:44:15] INFO root fetch - processPackages [lamebrainedz]: Remove: archive file [/home/abi/fetcher/tmp/lamebrainedz-2.1.tar.gz]
 [2024-05-11 03:44:15] INFO root fetch - main [MainThread]: End processing [lamebrainedz]: success
 [2024-05-11 03:44:15] INFO root fetch - main [MainThread]: Store serial: [23156420]
+[2024-05-11 03:46:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156420]
+[2024-05-11 03:46:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aspose-cells-python
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: function-sampler
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ragdaemon
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: migration-db
+[2024-05-11 03:46:24] INFO root fetch - processPackages [migration-db]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 03:46:24] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/7f/ed/1d35592a8041b6e70f3af7408af064fcea50ebc84c2e08def0f09107c7ce/migration_db-1.0.8.tar.gz
+[2024-05-11 03:46:24] INFO root fetch - processPackages [aspose-cells-python]: New version: [24.5.0] Old Version: [24.4.0]
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ragdaemon]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-11 03:46:24] INFO root fetch - processPackages [function-sampler]: New version: [0.1.8] Old Version: [0.1.6]
+[2024-05-11 03:46:24] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/21/4d/a05ab9a9bb48f79223952469dbca6b72d5dd7b36d9ecafec42abe2033706/migration_db-1.0.9.tar.gz
+[2024-05-11 03:46:24] INFO root fetch - processPackages [aspose-cells-python]: Downloading https://files.pythonhosted.org/packages/f3/a8/64abb8bfcc2b0da4769eacf383b4a45b7e84d7679f945f8088055316e8c0/aspose_cells_python-24.4.0-py3-none-win_amd64.whl
+[2024-05-11 03:46:24] INFO root fetch - processPackages [function-sampler]: Downloading https://files.pythonhosted.org/packages/d9/19/2bae0300e29839905d81c8a6b5743789dcaf56b1b22c12c638f57237747f/function_sampler-0.1.6.tar.gz
+[2024-05-11 03:46:24] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/5d/18/7d98c1bb39869c30d45d36578eddfd1ec954ca5c5c1cbbcbd89badae5563/ragdaemon-0.4.5.tar.gz
+[2024-05-11 03:46:25] WARNING root fetch - processPackages [aspose-cells-python]: Skipping package: exceeds size limit 55522309>=10485760
+[2024-05-11 03:46:25] INFO root fetch - main [MainThread]: End processing [aspose-cells-python] error
+[2024-05-11 03:46:25] INFO root fetch - processPackages [migration-db]: executing diffoscope
+[2024-05-11 03:46:25] INFO root fetch - processPackages [migration-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migration_db-1.0.8.tar.gz tmp/migration_db-1.0.9.tar.gz --markdown 20240511/m/migration-db/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 03:46:25] INFO root fetch - processPackages [function-sampler]: Downloading https://files.pythonhosted.org/packages/35/1c/91d49c1b704baca5a3a265c6be41d0f3d005729e744e4be5dd7c6fc6c743/function_sampler-0.1.8-cp311-cp311-manylinux_2_28_x86_64.whl
+[2024-05-11 03:46:25] INFO root fetch - processPackages [ragdaemon]: Downloading https://files.pythonhosted.org/packages/6d/96/06a7ffb5bbab1dd0f168d3940c2be3240a4842e3d40af28ff13b9387f987/ragdaemon-0.4.6.tar.gz
+[2024-05-11 03:46:25] INFO root fetch - processPackages [function-sampler]: executing diffoscope
+[2024-05-11 03:46:25] INFO root fetch - processPackages [function-sampler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/function_sampler-0.1.6.tar.gz tmp/function_sampler-0.1.8-cp311-cp311-manylinux_2_28_x86_64.whl.zip --markdown 20240511/f/function-sampler/0.1.6-0.1.8/README.md --exclude *.pyd
+[2024-05-11 03:46:25] INFO root fetch - processPackages [ragdaemon]: executing diffoscope
+[2024-05-11 03:46:25] INFO root fetch - processPackages [ragdaemon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragdaemon-0.4.5.tar.gz tmp/ragdaemon-0.4.6.tar.gz --markdown 20240511/r/ragdaemon/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-11 03:46:25] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.8.tar.gz]
+[2024-05-11 03:46:25] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
+[2024-05-11 03:46:25] INFO root fetch - main [MainThread]: End processing [migration-db]: success
+[2024-05-11 03:46:25] INFO root fetch - processPackages [function-sampler]: Remove: archive file [/home/abi/fetcher/tmp/function_sampler-0.1.6.tar.gz]
+[2024-05-11 03:46:25] INFO root fetch - processPackages [function-sampler]: Remove: archive file [/home/abi/fetcher/tmp/function_sampler-0.1.8-cp311-cp311-manylinux_2_28_x86_64.whl.zip]
+[2024-05-11 03:46:25] INFO root fetch - main [MainThread]: End processing [function-sampler]: success
+[2024-05-11 03:46:26] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.4.5.tar.gz]
+[2024-05-11 03:46:26] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.4.6.tar.gz]
+[2024-05-11 03:46:26] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
+[2024-05-11 03:46:26] INFO root fetch - main [MainThread]: Store serial: [23156430]
