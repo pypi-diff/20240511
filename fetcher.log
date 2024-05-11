@@ -18686,3 +18686,27 @@
 [2024-05-11 17:14:59] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing-queue]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_inventory_closing_queue-14.0.2.0.0-py3-none-any.whl.zip]
 [2024-05-11 17:14:59] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-inventory-closing-queue]: success
 [2024-05-11 17:14:59] INFO root fetch - main [MainThread]: Store serial: [23162206]
+[2024-05-11 17:17:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162206]
+[2024-05-11 17:17:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: feffery-antd-components
+[2024-05-11 17:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Bigsansar
+[2024-05-11 17:17:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: heroinz
+[2024-05-11 17:17:08] WARNING root fetch - processPackages [heroinz]: Skipping, unable to determine old version
+[2024-05-11 17:17:08] INFO root fetch - main [MainThread]: End processing [heroinz] error
+[2024-05-11 17:17:08] INFO root fetch - processPackages [feffery-antd-components]: New version: [0.3.0rc9] Old Version: [0.3.0rc8]
+[2024-05-11 17:17:08] INFO root fetch - processPackages [Bigsansar]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-05-11 17:17:08] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/1d/bf/661a29a1f929a7fd09b496fb6709b4b26d971bdcdc5447f96708495c1759/feffery_antd_components-0.3.0rc8.tar.gz
+[2024-05-11 17:17:08] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/ef/5f/b4e2918456c843298d07abfe2e440e719e17dd6213ff1e309d04a1482700/Bigsansar-2.5.7.tar.gz
+[2024-05-11 17:17:08] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/5e/3c/6242264d29ae96e03f975c81644ce7dc1c5b46bf6848719ac0456eea3d8a/bigsansar-2.5.8.tar.gz
+[2024-05-11 17:17:08] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-11 17:17:08] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-2.5.7.tar.gz tmp/bigsansar-2.5.8.tar.gz --markdown 20240511/B/Bigsansar/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-05-11 17:17:09] INFO root fetch - processPackages [feffery-antd-components]: Downloading https://files.pythonhosted.org/packages/1e/70/5d7c32f6a10c6c051166e2371196054d403b8f5c459d3ded64975d7ab261/feffery_antd_components-0.3.0rc9.tar.gz
+[2024-05-11 17:17:09] INFO root fetch - processPackages [feffery-antd-components]: executing diffoscope
+[2024-05-11 17:17:09] INFO root fetch - processPackages [feffery-antd-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feffery_antd_components-0.3.0rc8.tar.gz tmp/feffery_antd_components-0.3.0rc9.tar.gz --markdown 20240511/f/feffery-antd-components/0.3.0rc8-0.3.0rc9/README.md --exclude *.pyd
+[2024-05-11 17:17:09] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/Bigsansar-2.5.7.tar.gz]
+[2024-05-11 17:17:09] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.5.8.tar.gz]
+[2024-05-11 17:17:09] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-11 17:17:40] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc8.tar.gz]
+[2024-05-11 17:17:40] INFO root fetch - processPackages [feffery-antd-components]: Remove: archive file [/home/abi/fetcher/tmp/feffery_antd_components-0.3.0rc9.tar.gz]
+[2024-05-11 17:17:40] INFO root fetch - main [MainThread]: End processing [feffery-antd-components]: success
+[2024-05-11 17:17:40] INFO root fetch - main [MainThread]: Store serial: [23162216]
