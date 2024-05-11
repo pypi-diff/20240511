@@ -11812,3 +11812,27 @@
 [2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.6.0.tar.gz]
 [2024-05-11 09:20:26] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
 [2024-05-11 09:20:26] INFO root fetch - main [MainThread]: Store serial: [23158626]
+[2024-05-11 09:22:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158626]
+[2024-05-11 09:22:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 09:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-aidot
+[2024-05-11 09:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outkillz
+[2024-05-11 09:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sage-lib
+[2024-05-11 09:22:35] WARNING root fetch - processPackages [python-aidot]: Skipping, unable to determine old version
+[2024-05-11 09:22:35] INFO root fetch - main [MainThread]: End processing [python-aidot] error
+[2024-05-11 09:22:35] INFO root fetch - processPackages [outkillz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:22:35] INFO root fetch - processPackages [sage-lib]: New version: [0.1.5.1] Old Version: [0.1.5.0]
+[2024-05-11 09:22:35] INFO root fetch - processPackages [outkillz]: Downloading https://files.pythonhosted.org/packages/41/62/b2b09074bba090e4959890037855c7ca27a66d9ae6b8e84460ba09b29aa9/outkillz-1.1.tar.gz
+[2024-05-11 09:22:35] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/a1/2a/5637333c78a82c89d265c4a3d64b67206403b5d48fcaf4b315663bd31a6a/sage_lib-0.1.5.0.tar.gz
+[2024-05-11 09:22:35] INFO root fetch - processPackages [outkillz]: Downloading https://files.pythonhosted.org/packages/86/b6/bfb1c7ab82c7c779b32cc7de5e3a64caaf632633e9cf60169eca742875c2/outkillz-2.1.tar.gz
+[2024-05-11 09:22:35] INFO root fetch - processPackages [sage-lib]: Downloading https://files.pythonhosted.org/packages/05/bb/84a51c1582a3a165c1acfdd04c0acce36bdaae0e1295a131c3f125830241/sage_lib-0.1.5.1.tar.gz
+[2024-05-11 09:22:35] INFO root fetch - processPackages [outkillz]: executing diffoscope
+[2024-05-11 09:22:35] INFO root fetch - processPackages [outkillz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outkillz-1.1.tar.gz tmp/outkillz-2.1.tar.gz --markdown 20240511/o/outkillz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:22:36] INFO root fetch - processPackages [sage-lib]: executing diffoscope
+[2024-05-11 09:22:36] INFO root fetch - processPackages [sage-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sage_lib-0.1.5.0.tar.gz tmp/sage_lib-0.1.5.1.tar.gz --markdown 20240511/s/sage-lib/0.1.5.0-0.1.5.1/README.md --exclude *.pyd
+[2024-05-11 09:22:36] INFO root fetch - processPackages [outkillz]: Remove: archive file [/home/abi/fetcher/tmp/outkillz-1.1.tar.gz]
+[2024-05-11 09:22:36] INFO root fetch - processPackages [outkillz]: Remove: archive file [/home/abi/fetcher/tmp/outkillz-2.1.tar.gz]
+[2024-05-11 09:22:36] INFO root fetch - main [MainThread]: End processing [outkillz]: success
+[2024-05-11 09:22:36] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.0.tar.gz]
+[2024-05-11 09:22:36] INFO root fetch - processPackages [sage-lib]: Remove: archive file [/home/abi/fetcher/tmp/sage_lib-0.1.5.1.tar.gz]
+[2024-05-11 09:22:36] INFO root fetch - main [MainThread]: End processing [sage-lib]: success
+[2024-05-11 09:22:36] INFO root fetch - main [MainThread]: Store serial: [23158634]
