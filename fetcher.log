@@ -12661,3 +12661,36 @@
 [2024-05-11 10:30:27] INFO root fetch - processPackages [rdf-doctor]: Remove: archive file [/home/abi/fetcher/tmp/rdf_doctor-1.1.5-py3-none-any.whl.zip]
 [2024-05-11 10:30:27] INFO root fetch - main [MainThread]: End processing [rdf-doctor]: success
 [2024-05-11 10:30:27] INFO root fetch - main [MainThread]: Store serial: [23159019]
+[2024-05-11 10:32:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159019]
+[2024-05-11 10:32:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 10:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lk-logger
+[2024-05-11 10:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jenkins-pysdk
+[2024-05-11 10:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zibuyu-LLM
+[2024-05-11 10:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: styrolz
+[2024-05-11 10:32:36] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 10:32:36] INFO root fetch - processPackages [jenkins-pysdk]: New version: [1.3.5] Old Version: [1.3.2]
+[2024-05-11 10:32:36] WARNING root fetch - processPackages [styrolz]: Skipping, unable to determine old version
+[2024-05-11 10:32:36] INFO root fetch - main [MainThread]: End processing [styrolz] error
+[2024-05-11 10:32:36] INFO root fetch - processPackages [lk-logger]: New version: [5.7.0] Old Version: [5.6.5]
+[2024-05-11 10:32:36] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/23/4a/cc2301bca4f4c7242f9030a3d714b0049041d08c2703cc6e30f6a4c2f48c/zibuyu_LLM-0.0.1-py3-none-any.whl
+[2024-05-11 10:32:36] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/d4/95/b7503104ab900a32d7f2580fb39220d9aed232c5db2413d5e82b8e561dfd/jenkins_pysdk-1.3.2.tar.gz
+[2024-05-11 10:32:36] INFO root fetch - processPackages [lk-logger]: Downloading https://files.pythonhosted.org/packages/ba/95/b3d8edcb808280ca819b1074f50c17faadea40a445621ba95c9e9e6de4fa/lk_logger-5.6.5-py3-none-any.whl
+[2024-05-11 10:32:36] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/e6/b8/977993505308a37f4f40cda11d8d2b327c2cbfed78f30ddfa1ef3bfdc873/zibuyu_LLM-0.0.2-py3-none-any.whl
+[2024-05-11 10:32:36] INFO root fetch - processPackages [jenkins-pysdk]: Downloading https://files.pythonhosted.org/packages/f9/2a/0f7517ee982cfb0dc4ca092fed00fd32f89643f6eb6884c1afbdedb02247/jenkins_pysdk-1.3.5.tar.gz
+[2024-05-11 10:32:36] INFO root fetch - processPackages [lk-logger]: Downloading https://files.pythonhosted.org/packages/01/7b/3a89540947945d4e263d8e3990dd92042270f0e0479249c57a711cd42993/lk_logger-5.7.0-py3-none-any.whl
+[2024-05-11 10:32:36] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-11 10:32:36] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.1-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.2-py3-none-any.whl.zip --markdown 20240511/z/zibuyu-LLM/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 10:32:36] INFO root fetch - processPackages [jenkins-pysdk]: executing diffoscope
+[2024-05-11 10:32:36] INFO root fetch - processPackages [jenkins-pysdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jenkins_pysdk-1.3.2.tar.gz tmp/jenkins_pysdk-1.3.5.tar.gz --markdown 20240511/j/jenkins-pysdk/1.3.2-1.3.5/README.md --exclude *.pyd
+[2024-05-11 10:32:36] INFO root fetch - processPackages [lk-logger]: executing diffoscope
+[2024-05-11 10:32:36] INFO root fetch - processPackages [lk-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lk_logger-5.6.5-py3-none-any.whl.zip tmp/lk_logger-5.7.0-py3-none-any.whl.zip --markdown 20240511/l/lk-logger/5.6.5-5.7.0/README.md --exclude *.pyd
+[2024-05-11 10:32:37] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.1-py3-none-any.whl.zip]
+[2024-05-11 10:32:37] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.2-py3-none-any.whl.zip]
+[2024-05-11 10:32:37] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-11 10:32:37] INFO root fetch - processPackages [lk-logger]: Remove: archive file [/home/abi/fetcher/tmp/lk_logger-5.6.5-py3-none-any.whl.zip]
+[2024-05-11 10:32:37] INFO root fetch - processPackages [lk-logger]: Remove: archive file [/home/abi/fetcher/tmp/lk_logger-5.7.0-py3-none-any.whl.zip]
+[2024-05-11 10:32:37] INFO root fetch - main [MainThread]: End processing [lk-logger]: success
+[2024-05-11 10:32:37] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-1.3.2.tar.gz]
+[2024-05-11 10:32:37] INFO root fetch - processPackages [jenkins-pysdk]: Remove: archive file [/home/abi/fetcher/tmp/jenkins_pysdk-1.3.5.tar.gz]
+[2024-05-11 10:32:37] INFO root fetch - main [MainThread]: End processing [jenkins-pysdk]: success
+[2024-05-11 10:32:37] INFO root fetch - main [MainThread]: Store serial: [23159031]
