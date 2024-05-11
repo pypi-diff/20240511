@@ -22387,3 +22387,15 @@
 [2024-05-11 21:24:30] INFO root fetch - processPackages [pyyeti]: Remove: archive file [/home/abi/fetcher/tmp/pyyeti-1.4.1.2.tar.gz]
 [2024-05-11 21:24:30] INFO root fetch - main [MainThread]: End processing [pyyeti]: success
 [2024-05-11 21:24:30] INFO root fetch - main [MainThread]: Store serial: [23163954]
+[2024-05-11 21:26:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163954]
+[2024-05-11 21:26:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 21:26:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fazah
+[2024-05-11 21:26:39] INFO root fetch - processPackages [fazah]: New version: [3.27] Old Version: [3.26]
+[2024-05-11 21:26:39] INFO root fetch - processPackages [fazah]: Downloading https://files.pythonhosted.org/packages/20/45/bfa4c31ce36032bafdab02de84aa73199f151d513a863c647cca80af67a0/fazah-3.26.tar.gz
+[2024-05-11 21:26:39] INFO root fetch - processPackages [fazah]: Downloading https://files.pythonhosted.org/packages/d8/ed/c30ee75029a0a8132bab0b99e74cb989eed230b0ede570913c965188be42/fazah-3.27.tar.gz
+[2024-05-11 21:26:39] INFO root fetch - processPackages [fazah]: executing diffoscope
+[2024-05-11 21:26:39] INFO root fetch - processPackages [fazah]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fazah-3.26.tar.gz tmp/fazah-3.27.tar.gz --markdown 20240511/f/fazah/3.26-3.27/README.md --exclude *.pyd
+[2024-05-11 21:26:40] INFO root fetch - processPackages [fazah]: Remove: archive file [/home/abi/fetcher/tmp/fazah-3.26.tar.gz]
+[2024-05-11 21:26:40] INFO root fetch - processPackages [fazah]: Remove: archive file [/home/abi/fetcher/tmp/fazah-3.27.tar.gz]
+[2024-05-11 21:26:40] INFO root fetch - main [MainThread]: End processing [fazah]: success
+[2024-05-11 21:26:40] INFO root fetch - main [MainThread]: Store serial: [23163957]
