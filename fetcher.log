@@ -10904,3 +10904,27 @@
 [2024-05-11 08:08:24] INFO root fetch - processPackages [nondiaphanousnessz]: Remove: archive file [/home/abi/fetcher/tmp/nondiaphanousnessz-2.1.tar.gz]
 [2024-05-11 08:08:24] INFO root fetch - main [MainThread]: End processing [nondiaphanousnessz]: success
 [2024-05-11 08:08:24] INFO root fetch - main [MainThread]: Store serial: [23158120]
+[2024-05-11 08:10:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158120]
+[2024-05-11 08:10:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 08:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lecturerz
+[2024-05-11 08:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fastcore
+[2024-05-11 08:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-green20220302
+[2024-05-11 08:10:33] INFO root fetch - processPackages [alibabacloud-green20220302]: New version: [2.2.5] Old Version: [2.2.4]
+[2024-05-11 08:10:33] WARNING root fetch - processPackages [lecturerz]: Skipping, unable to determine old version
+[2024-05-11 08:10:33] INFO root fetch - main [MainThread]: End processing [lecturerz] error
+[2024-05-11 08:10:33] INFO root fetch - processPackages [fastcore]: New version: [1.5.9] Old Version: [1.5.8]
+[2024-05-11 08:10:33] INFO root fetch - processPackages [fastcore]: Downloading https://files.pythonhosted.org/packages/bd/a7/11687db0e0993cf3f28cbe4f087decfde90959b1ede6fa37acbf83c875d8/fastcore-1.5.8.tar.gz
+[2024-05-11 08:10:33] INFO root fetch - processPackages [alibabacloud-green20220302]: Downloading https://files.pythonhosted.org/packages/d7/65/ac379edeecc5debee91de83745c35257979ec20fb6a5385da29eb126f322/alibabacloud_green20220302-2.2.4.tar.gz
+[2024-05-11 08:10:34] INFO root fetch - processPackages [fastcore]: Downloading https://files.pythonhosted.org/packages/e7/ca/756f70aa0a53475a198acbda3b9edb61b363c4b51ece542b7a7e3d890bcd/fastcore-1.5.9.tar.gz
+[2024-05-11 08:10:34] INFO root fetch - processPackages [alibabacloud-green20220302]: Downloading https://files.pythonhosted.org/packages/64/fa/0895a2860714ef4bc100157b684dc735ef126b002b56e3dbeeafb1d23183/alibabacloud_green20220302-2.2.5.tar.gz
+[2024-05-11 08:10:34] INFO root fetch - processPackages [fastcore]: executing diffoscope
+[2024-05-11 08:10:34] INFO root fetch - processPackages [fastcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastcore-1.5.8.tar.gz tmp/fastcore-1.5.9.tar.gz --markdown 20240511/f/fastcore/1.5.8-1.5.9/README.md --exclude *.pyd
+[2024-05-11 08:10:34] INFO root fetch - processPackages [alibabacloud-green20220302]: executing diffoscope
+[2024-05-11 08:10:34] INFO root fetch - processPackages [alibabacloud-green20220302]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_green20220302-2.2.4.tar.gz tmp/alibabacloud_green20220302-2.2.5.tar.gz --markdown 20240511/a/alibabacloud-green20220302/2.2.4-2.2.5/README.md --exclude *.pyd
+[2024-05-11 08:10:34] INFO root fetch - processPackages [fastcore]: Remove: archive file [/home/abi/fetcher/tmp/fastcore-1.5.8.tar.gz]
+[2024-05-11 08:10:34] INFO root fetch - processPackages [fastcore]: Remove: archive file [/home/abi/fetcher/tmp/fastcore-1.5.9.tar.gz]
+[2024-05-11 08:10:34] INFO root fetch - main [MainThread]: End processing [fastcore]: success
+[2024-05-11 08:10:34] INFO root fetch - processPackages [alibabacloud-green20220302]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_green20220302-2.2.4.tar.gz]
+[2024-05-11 08:10:34] INFO root fetch - processPackages [alibabacloud-green20220302]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_green20220302-2.2.5.tar.gz]
+[2024-05-11 08:10:34] INFO root fetch - main [MainThread]: End processing [alibabacloud-green20220302]: success
+[2024-05-11 08:10:34] INFO root fetch - main [MainThread]: Store serial: [23158133]
