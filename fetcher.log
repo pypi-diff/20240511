@@ -20642,3 +20642,36 @@
 [2024-05-11 19:24:38] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.6.4.tar.gz]
 [2024-05-11 19:24:38] INFO root fetch - main [MainThread]: End processing [aps-toolkit]: success
 [2024-05-11 19:24:38] INFO root fetch - main [MainThread]: Store serial: [23163060]
+[2024-05-11 19:26:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163060]
+[2024-05-11 19:26:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: agistorz
+[2024-05-11 19:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jobspec
+[2024-05-11 19:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rainbow-scheduler
+[2024-05-11 19:26:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: langsmith
+[2024-05-11 19:26:47] INFO root fetch - processPackages [jobspec]: New version: [0.1.12] Old Version: [0.1.11]
+[2024-05-11 19:26:47] INFO root fetch - processPackages [rainbow-scheduler]: New version: [0.0.16] Old Version: [0.0.14rc1]
+[2024-05-11 19:26:47] WARNING root fetch - processPackages [agistorz]: Skipping, unable to determine old version
+[2024-05-11 19:26:47] INFO root fetch - main [MainThread]: End processing [agistorz] error
+[2024-05-11 19:26:47] INFO root fetch - processPackages [langsmith]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 19:26:48] INFO root fetch - processPackages [rainbow-scheduler]: Downloading https://files.pythonhosted.org/packages/fc/60/a7b525e0dec2284c5c8097175fec1b5f486b244927aee5ba0432fa4e59fe/rainbow-scheduler-0.0.14rc1.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [jobspec]: Downloading https://files.pythonhosted.org/packages/28/74/837097d3b5ed25dc79330b5b1e05f0cd8532d547cd0fb19cd7c2efa1a3fc/jobspec-0.1.11.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [langsmith]: Downloading https://files.pythonhosted.org/packages/3f/01/93a91da2527bbaa6155f9398417eeff6507ddada0f417560a67e20801455/langsmith-0.1.8.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [jobspec]: Downloading https://files.pythonhosted.org/packages/77/d7/01b9e8737614eb90e0c477a52b5edca0f78c0a14f2654a7bf1f19ee48242/jobspec-0.1.12.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [rainbow-scheduler]: Downloading https://files.pythonhosted.org/packages/5a/75/db05abebbf9f1c2f5376cc23b612995664e3302f6c5b939852346743ec9e/rainbow-scheduler-0.0.16.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [langsmith]: Downloading https://files.pythonhosted.org/packages/2f/bd/ae357eeb7736dd31ff704bfdb05c856cd78d6ebcb126b850c2bcdb5830ae/langsmith-0.1.9.tar.gz
+[2024-05-11 19:26:48] INFO root fetch - processPackages [jobspec]: executing diffoscope
+[2024-05-11 19:26:48] INFO root fetch - processPackages [jobspec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jobspec-0.1.11.tar.gz tmp/jobspec-0.1.12.tar.gz --markdown 20240511/j/jobspec/0.1.11-0.1.12/README.md --exclude *.pyd
+[2024-05-11 19:26:48] INFO root fetch - processPackages [rainbow-scheduler]: executing diffoscope
+[2024-05-11 19:26:48] INFO root fetch - processPackages [rainbow-scheduler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rainbow-scheduler-0.0.14rc1.tar.gz tmp/rainbow-scheduler-0.0.16.tar.gz --markdown 20240511/r/rainbow-scheduler/0.0.14rc1-0.0.16/README.md --exclude *.pyd
+[2024-05-11 19:26:48] INFO root fetch - processPackages [langsmith]: executing diffoscope
+[2024-05-11 19:26:48] INFO root fetch - processPackages [langsmith]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langsmith-0.1.8.tar.gz tmp/langsmith-0.1.9.tar.gz --markdown 20240511/l/langsmith/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 19:26:49] INFO root fetch - processPackages [jobspec]: Remove: archive file [/home/abi/fetcher/tmp/jobspec-0.1.11.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - processPackages [jobspec]: Remove: archive file [/home/abi/fetcher/tmp/jobspec-0.1.12.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - main [MainThread]: End processing [jobspec]: success
+[2024-05-11 19:26:49] INFO root fetch - processPackages [rainbow-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/rainbow-scheduler-0.0.14rc1.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - processPackages [rainbow-scheduler]: Remove: archive file [/home/abi/fetcher/tmp/rainbow-scheduler-0.0.16.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - main [MainThread]: End processing [rainbow-scheduler]: success
+[2024-05-11 19:26:49] INFO root fetch - processPackages [langsmith]: Remove: archive file [/home/abi/fetcher/tmp/langsmith-0.1.8.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - processPackages [langsmith]: Remove: archive file [/home/abi/fetcher/tmp/langsmith-0.1.9.tar.gz]
+[2024-05-11 19:26:49] INFO root fetch - main [MainThread]: End processing [langsmith]: success
+[2024-05-11 19:26:49] INFO root fetch - main [MainThread]: Store serial: [23163085]
