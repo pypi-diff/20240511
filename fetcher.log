@@ -9277,3 +9277,12 @@
 [2024-05-11 05:43:39] WARNING root fetch - processPackages [marketablez]: Skipping, unable to determine old version
 [2024-05-11 05:43:39] INFO root fetch - main [MainThread]: End processing [marketablez] error
 [2024-05-11 05:43:39] INFO root fetch - main [MainThread]: Store serial: [23157101]
+[2024-05-11 05:45:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157101]
+[2024-05-11 05:45:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 05:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Consolidate-csv-files-from-gcs
+[2024-05-11 05:45:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mastoideanz
+[2024-05-11 05:45:47] WARNING root fetch - processPackages [Consolidate-csv-files-from-gcs]: Skipping, unable to determine old version
+[2024-05-11 05:45:47] INFO root fetch - main [MainThread]: End processing [Consolidate-csv-files-from-gcs] error
+[2024-05-11 05:45:47] WARNING root fetch - processPackages [mastoideanz]: Skipping, unable to determine old version
+[2024-05-11 05:45:47] INFO root fetch - main [MainThread]: End processing [mastoideanz] error
+[2024-05-11 05:45:47] INFO root fetch - main [MainThread]: Store serial: [23157111]
