@@ -22471,3 +22471,33 @@
 [2024-05-11 21:33:13] INFO root fetch - processPackages [toggelz]: Remove: archive file [/home/abi/fetcher/tmp/toggelz-2.1.tar.gz]
 [2024-05-11 21:33:13] INFO root fetch - main [MainThread]: End processing [toggelz]: success
 [2024-05-11 21:33:13] INFO root fetch - main [MainThread]: Store serial: [23163987]
+[2024-05-11 21:35:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163987]
+[2024-05-11 21:35:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:35:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aic-tools-alpaca
+[2024-05-11 21:35:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyinim
+[2024-05-11 21:35:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rest-client-micro
+[2024-05-11 21:35:22] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 21:35:22] INFO root fetch - processPackages [pyinim]: New version: [0.0.15] Old Version: [0.0.14]
+[2024-05-11 21:35:22] INFO root fetch - processPackages [aic-tools-alpaca]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 21:35:22] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/19/05/4eab92bad2e009a2a862d854ac5cc722d5b0c05c1961c961291126925dfa/rest_client_micro-0.3.8.tar.gz
+[2024-05-11 21:35:22] INFO root fetch - processPackages [pyinim]: Downloading https://files.pythonhosted.org/packages/4a/1e/bb6a459500868574277c7d9427b0f1744181ec188d06a295c41b645ec910/pyinim-0.0.14.tar.gz
+[2024-05-11 21:35:22] INFO root fetch - processPackages [aic-tools-alpaca]: Downloading https://files.pythonhosted.org/packages/9a/f8/ebdb9492a26f3a121d0850cba64fe00bfb61602300306df859f46936de2e/aic_tools_alpaca-1.0.0.tar.gz
+[2024-05-11 21:35:22] INFO root fetch - processPackages [pyinim]: Downloading https://files.pythonhosted.org/packages/11/fb/4cf395ee76a7b3a195d8ebbaa0bdb4f028fba2ab899d848742b97822fee8/pyinim-0.0.15.tar.gz
+[2024-05-11 21:35:23] INFO root fetch - processPackages [pyinim]: executing diffoscope
+[2024-05-11 21:35:23] INFO root fetch - processPackages [pyinim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyinim-0.0.14.tar.gz tmp/pyinim-0.0.15.tar.gz --markdown 20240511/p/pyinim/0.0.14-0.0.15/README.md --exclude *.pyd
+[2024-05-11 21:35:23] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/e0/15/20b0262a4b9fd514c20c5acf8bc29b1ac7f54d8d7ae2dde2acd7846b36c2/rest_client_micro-0.3.9.tar.gz
+[2024-05-11 21:35:23] INFO root fetch - processPackages [aic-tools-alpaca]: Downloading https://files.pythonhosted.org/packages/d1/9b/cb0419bc7fb56a1e481e2102ebedf7727f3a894254d1f0d7f6efb7e0e2d1/aic_tools_alpaca-1.0.1.tar.gz
+[2024-05-11 21:35:23] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 21:35:23] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.8.tar.gz tmp/rest_client_micro-0.3.9.tar.gz --markdown 20240511/r/rest-client-micro/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 21:35:23] INFO root fetch - processPackages [aic-tools-alpaca]: executing diffoscope
+[2024-05-11 21:35:23] INFO root fetch - processPackages [aic-tools-alpaca]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aic_tools_alpaca-1.0.0.tar.gz tmp/aic_tools_alpaca-1.0.1.tar.gz --markdown 20240511/a/aic-tools-alpaca/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 21:35:23] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.8.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.9.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 21:35:23] INFO root fetch - processPackages [pyinim]: Remove: archive file [/home/abi/fetcher/tmp/pyinim-0.0.14.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - processPackages [pyinim]: Remove: archive file [/home/abi/fetcher/tmp/pyinim-0.0.15.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - main [MainThread]: End processing [pyinim]: success
+[2024-05-11 21:35:23] INFO root fetch - processPackages [aic-tools-alpaca]: Remove: archive file [/home/abi/fetcher/tmp/aic_tools_alpaca-1.0.0.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - processPackages [aic-tools-alpaca]: Remove: archive file [/home/abi/fetcher/tmp/aic_tools_alpaca-1.0.1.tar.gz]
+[2024-05-11 21:35:23] INFO root fetch - main [MainThread]: End processing [aic-tools-alpaca]: success
+[2024-05-11 21:35:23] INFO root fetch - main [MainThread]: Store serial: [23163996]
