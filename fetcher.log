@@ -8237,3 +8237,27 @@
 [2024-05-11 04:40:34] INFO root fetch - processPackages [dflow-galaxy]: Remove: archive file [/home/abi/fetcher/tmp/dflow_galaxy-0.1.8.tar.gz]
 [2024-05-11 04:40:34] INFO root fetch - main [MainThread]: End processing [dflow-galaxy]: success
 [2024-05-11 04:40:34] INFO root fetch - main [MainThread]: Store serial: [23156706]
+[2024-05-11 04:42:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156706]
+[2024-05-11 04:42:42] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 04:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lirellinez
+[2024-05-11 04:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sp-lh3-constant-contact
+[2024-05-11 04:42:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: thztools
+[2024-05-11 04:42:42] WARNING root fetch - processPackages [sp-lh3-constant-contact]: Skipping, unable to determine old version
+[2024-05-11 04:42:42] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact] error
+[2024-05-11 04:42:42] INFO root fetch - processPackages [lirellinez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:42:42] INFO root fetch - processPackages [thztools]: New version: [0.4.0] Old Version: [0.3.6]
+[2024-05-11 04:42:43] INFO root fetch - processPackages [lirellinez]: Downloading https://files.pythonhosted.org/packages/fe/06/168c58322ba2a51a0d013fb8c1cf27ba1f7152e7c17bbebb28c819192471/lirellinez-1.1.tar.gz
+[2024-05-11 04:42:43] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/29/60/a44e1102d819498ad52478b6f8ab333e1ac559b07317ae7c3c1fd6a5a196/thztools-0.3.6.tar.gz
+[2024-05-11 04:42:43] INFO root fetch - processPackages [lirellinez]: Downloading https://files.pythonhosted.org/packages/72/b2/667577600e04aa48b7d4931307b5589c3260bc406b410fec550dcfcbbfc5/lirellinez-2.1.tar.gz
+[2024-05-11 04:42:43] INFO root fetch - processPackages [lirellinez]: executing diffoscope
+[2024-05-11 04:42:43] INFO root fetch - processPackages [lirellinez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lirellinez-1.1.tar.gz tmp/lirellinez-2.1.tar.gz --markdown 20240511/l/lirellinez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:42:43] INFO root fetch - processPackages [thztools]: Downloading https://files.pythonhosted.org/packages/be/e1/3dff60204da6f6f4604c4e6df58e5260e334a4b820742b6aa2913acefb98/thztools-0.4.0.tar.gz
+[2024-05-11 04:42:43] INFO root fetch - processPackages [thztools]: executing diffoscope
+[2024-05-11 04:42:43] INFO root fetch - processPackages [thztools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thztools-0.3.6.tar.gz tmp/thztools-0.4.0.tar.gz --markdown 20240511/t/thztools/0.3.6-0.4.0/README.md --exclude *.pyd
+[2024-05-11 04:42:44] INFO root fetch - processPackages [thztools]: Remove: archive file [/home/abi/fetcher/tmp/thztools-0.3.6.tar.gz]
+[2024-05-11 04:42:44] INFO root fetch - processPackages [thztools]: Remove: archive file [/home/abi/fetcher/tmp/thztools-0.4.0.tar.gz]
+[2024-05-11 04:42:44] INFO root fetch - main [MainThread]: End processing [thztools]: success
+[2024-05-11 04:42:44] INFO root fetch - processPackages [lirellinez]: Remove: archive file [/home/abi/fetcher/tmp/lirellinez-1.1.tar.gz]
+[2024-05-11 04:42:44] INFO root fetch - processPackages [lirellinez]: Remove: archive file [/home/abi/fetcher/tmp/lirellinez-2.1.tar.gz]
+[2024-05-11 04:42:44] INFO root fetch - main [MainThread]: End processing [lirellinez]: success
+[2024-05-11 04:42:44] INFO root fetch - main [MainThread]: Store serial: [23156714]
