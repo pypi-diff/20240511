@@ -21057,3 +21057,47 @@
 [2024-05-11 19:59:42] INFO root fetch - processPackages [synoviaz]: Remove: archive file [/home/abi/fetcher/tmp/synoviaz-2.1.tar.gz]
 [2024-05-11 19:59:42] INFO root fetch - main [MainThread]: End processing [synoviaz]: success
 [2024-05-11 19:59:42] INFO root fetch - main [MainThread]: Store serial: [23163279]
+[2024-05-11 20:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163279]
+[2024-05-11 20:01:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-tinywiki
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tymer
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyqflow
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unmergez
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emonk
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: moschitta-routing
+[2024-05-11 20:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: unitradeapi
+[2024-05-11 20:01:51] WARNING root fetch - processPackages [pyqflow]: Skipping, unable to determine old version
+[2024-05-11 20:01:51] INFO root fetch - main [MainThread]: End processing [pyqflow] error
+[2024-05-11 20:01:51] INFO root fetch - processPackages [tymer]: New version: [1.0.6] Old Version: [1.0.5]
+[2024-05-11 20:01:51] INFO root fetch - processPackages [unitradeapi]: New version: [0.122] Old Version: [0.121]
+[2024-05-11 20:01:51] WARNING root fetch - processPackages [unmergez]: Skipping, unable to determine old version
+[2024-05-11 20:01:51] INFO root fetch - main [MainThread]: End processing [unmergez] error
+[2024-05-11 20:01:51] INFO root fetch - processPackages [django-tinywiki]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 20:01:51] WARNING root fetch - processPackages [emonk]: Skipping, unable to determine old version
+[2024-05-11 20:01:51] INFO root fetch - main [MainThread]: End processing [emonk] error
+[2024-05-11 20:01:51] INFO root fetch - processPackages [moschitta-routing]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 20:01:51] INFO root fetch - processPackages [tymer]: Downloading https://files.pythonhosted.org/packages/e2/b6/8364238b566ad47b84ea8afc15e3c69765fd91167045f7d8bd2e1f772032/tymer-1.0.5.tar.gz
+[2024-05-11 20:01:51] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/a9/9c/89e93c5a2b8eba51e9fad8c6be2182606fc2205177a07b644d161120a9b7/unitradeapi-0.121.tar.gz
+[2024-05-11 20:01:52] INFO root fetch - processPackages [django-tinywiki]: Downloading https://files.pythonhosted.org/packages/d3/f4/5b023d7088ecba7eec3cac2eeafb3ffcc339597178b976cfd8962df21d7d/django_tinywiki-0.0.5.tar.gz
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: Downloading https://files.pythonhosted.org/packages/a6/d5/996158b0dab243d5b06cb5df06f363b9e3543904a3a057d3e35f7ee0f246/moschitta_routing-0.1.0.tar.gz
+[2024-05-11 20:01:52] WARNING root fetch - processPackages [django-tinywiki]: Skipping package: exceeds size limit 16566758>=10485760
+[2024-05-11 20:01:52] INFO root fetch - main [MainThread]: End processing [django-tinywiki] error
+[2024-05-11 20:01:52] INFO root fetch - processPackages [tymer]: Downloading https://files.pythonhosted.org/packages/d1/70/aa9526a4257de3612b0247fdffbb4570fdb5bd3431fedc2f4c51cc8431a4/tymer-1.0.6.tar.gz
+[2024-05-11 20:01:52] INFO root fetch - processPackages [tymer]: executing diffoscope
+[2024-05-11 20:01:52] INFO root fetch - processPackages [tymer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tymer-1.0.5.tar.gz tmp/tymer-1.0.6.tar.gz --markdown 20240511/t/tymer/1.0.5-1.0.6/README.md --exclude *.pyd
+[2024-05-11 20:01:52] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/52/d9/06dd39bb5f5a8e475209217f09226e409c8751e0349ae367a774a2a345eb/unitradeapi-0.122.tar.gz
+[2024-05-11 20:01:52] INFO root fetch - processPackages [unitradeapi]: executing diffoscope
+[2024-05-11 20:01:52] INFO root fetch - processPackages [unitradeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitradeapi-0.121.tar.gz tmp/unitradeapi-0.122.tar.gz --markdown 20240511/u/unitradeapi/0.121-0.122/README.md --exclude *.pyd
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: Downloading https://files.pythonhosted.org/packages/a0/53/aea08e861f92fe168c8ff37289ae107cd53f08af1480ec11138d1a2adc58/moschitta_routing-0.1.1.tar.gz
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: executing diffoscope
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moschitta_routing-0.1.0.tar.gz tmp/moschitta_routing-0.1.1.tar.gz --markdown 20240511/m/moschitta-routing/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 20:01:52] INFO root fetch - processPackages [tymer]: Remove: archive file [/home/abi/fetcher/tmp/tymer-1.0.5.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - processPackages [tymer]: Remove: archive file [/home/abi/fetcher/tmp/tymer-1.0.6.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - main [MainThread]: End processing [tymer]: success
+[2024-05-11 20:01:52] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.121.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.122.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - main [MainThread]: End processing [unitradeapi]: success
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: Remove: archive file [/home/abi/fetcher/tmp/moschitta_routing-0.1.0.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: Remove: archive file [/home/abi/fetcher/tmp/moschitta_routing-0.1.1.tar.gz]
+[2024-05-11 20:01:52] INFO root fetch - main [MainThread]: End processing [moschitta-routing]: success
+[2024-05-11 20:01:52] INFO root fetch - main [MainThread]: Store serial: [23163303]
