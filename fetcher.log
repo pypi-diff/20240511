@@ -11869,3 +11869,45 @@
 [2024-05-11 09:24:47] INFO root fetch - processPackages [sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_vec-0.0.1a8-py3-none-win_amd64.whl.zip]
 [2024-05-11 09:24:47] INFO root fetch - main [MainThread]: End processing [sqlite-vec]: success
 [2024-05-11 09:24:47] INFO root fetch - main [MainThread]: Store serial: [23158647]
+[2024-05-11 09:26:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158647]
+[2024-05-11 09:26:55] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 09:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sem-desc
+[2024-05-11 09:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subclerksz
+[2024-05-11 09:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-imm20200930
+[2024-05-11 09:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: outtrumpz
+[2024-05-11 09:26:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jcvi
+[2024-05-11 09:26:56] WARNING root fetch - processPackages [subclerksz]: Skipping, unable to determine old version
+[2024-05-11 09:26:56] INFO root fetch - main [MainThread]: End processing [subclerksz] error
+[2024-05-11 09:26:56] INFO root fetch - processPackages [outtrumpz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:26:56] INFO root fetch - processPackages [sem-desc]: New version: [6.9.0] Old Version: [6.8.0]
+[2024-05-11 09:26:56] INFO root fetch - processPackages [alibabacloud-imm20200930]: New version: [4.5.0] Old Version: [4.4.0]
+[2024-05-11 09:26:56] INFO root fetch - processPackages [jcvi]: New version: [1.4.9] Old Version: [1.4.5]
+[2024-05-11 09:26:56] INFO root fetch - processPackages [outtrumpz]: Downloading https://files.pythonhosted.org/packages/0a/f8/89771a7d3eb0391ace8af1dcf140deb0bcebe230c21e17373a04c9c2ca38/outtrumpz-1.1.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [sem-desc]: Downloading https://files.pythonhosted.org/packages/bc/c6/e36bc62f82fa408248442cb9387b3ff326a3950debc6f5c834a6d40217a7/sem_desc-6.8.0.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [alibabacloud-imm20200930]: Downloading https://files.pythonhosted.org/packages/a8/d7/ea9c922d6b2ec80820a8d86404c5528c343b67ee0300c8d66878ed1a6138/alibabacloud_imm20200930-4.4.0.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/3b/c7/8f87e09c1bc53218c88e3cbd40b736a113062e49e0ba98afc3c204ac19b0/jcvi-1.4.5.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [outtrumpz]: Downloading https://files.pythonhosted.org/packages/0e/aa/2284ce8f8fc17d8541c6c5ff8edd877c021036fab0c229758ea24f74f777/outtrumpz-2.1.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [sem-desc]: Downloading https://files.pythonhosted.org/packages/1e/ed/28419685770a49c14514639fbca1f1076f30c551e471cc44705539ad42af/sem_desc-6.9.0.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [alibabacloud-imm20200930]: Downloading https://files.pythonhosted.org/packages/c0/9d/0730674cea51945cb21709a7ef2ebd46ca7c14d1db2504ac915af4f242de/alibabacloud_imm20200930-4.5.0.tar.gz
+[2024-05-11 09:26:56] INFO root fetch - processPackages [outtrumpz]: executing diffoscope
+[2024-05-11 09:26:56] INFO root fetch - processPackages [outtrumpz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/outtrumpz-1.1.tar.gz tmp/outtrumpz-2.1.tar.gz --markdown 20240511/o/outtrumpz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:26:56] INFO root fetch - processPackages [sem-desc]: executing diffoscope
+[2024-05-11 09:26:56] INFO root fetch - processPackages [sem-desc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sem_desc-6.8.0.tar.gz tmp/sem_desc-6.9.0.tar.gz --markdown 20240511/s/sem-desc/6.8.0-6.9.0/README.md --exclude *.pyd
+[2024-05-11 09:26:56] INFO root fetch - processPackages [alibabacloud-imm20200930]: executing diffoscope
+[2024-05-11 09:26:56] INFO root fetch - processPackages [alibabacloud-imm20200930]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_imm20200930-4.4.0.tar.gz tmp/alibabacloud_imm20200930-4.5.0.tar.gz --markdown 20240511/a/alibabacloud-imm20200930/4.4.0-4.5.0/README.md --exclude *.pyd
+[2024-05-11 09:26:56] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/5d/24/5036675f79005ad20ca239e90bec15f8b40ead5317b7ed2daa5bf2021117/jcvi-1.4.9.tar.gz
+[2024-05-11 09:26:57] INFO root fetch - processPackages [jcvi]: executing diffoscope
+[2024-05-11 09:26:57] INFO root fetch - processPackages [jcvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcvi-1.4.5.tar.gz tmp/jcvi-1.4.9.tar.gz --markdown 20240511/j/jcvi/1.4.5-1.4.9/README.md --exclude *.pyd
+[2024-05-11 09:26:57] INFO root fetch - processPackages [outtrumpz]: Remove: archive file [/home/abi/fetcher/tmp/outtrumpz-1.1.tar.gz]
+[2024-05-11 09:26:57] INFO root fetch - processPackages [outtrumpz]: Remove: archive file [/home/abi/fetcher/tmp/outtrumpz-2.1.tar.gz]
+[2024-05-11 09:26:57] INFO root fetch - main [MainThread]: End processing [outtrumpz]: success
+[2024-05-11 09:26:57] INFO root fetch - processPackages [sem-desc]: Remove: archive file [/home/abi/fetcher/tmp/sem_desc-6.8.0.tar.gz]
+[2024-05-11 09:26:57] INFO root fetch - processPackages [sem-desc]: Remove: archive file [/home/abi/fetcher/tmp/sem_desc-6.9.0.tar.gz]
+[2024-05-11 09:26:57] INFO root fetch - main [MainThread]: End processing [sem-desc]: success
+[2024-05-11 09:26:58] INFO root fetch - processPackages [alibabacloud-imm20200930]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_imm20200930-4.4.0.tar.gz]
+[2024-05-11 09:26:58] INFO root fetch - processPackages [alibabacloud-imm20200930]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_imm20200930-4.5.0.tar.gz]
+[2024-05-11 09:26:58] INFO root fetch - main [MainThread]: End processing [alibabacloud-imm20200930]: success
+[2024-05-11 09:26:59] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.5.tar.gz]
+[2024-05-11 09:26:59] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.9.tar.gz]
+[2024-05-11 09:26:59] INFO root fetch - main [MainThread]: End processing [jcvi]: success
+[2024-05-11 09:26:59] INFO root fetch - main [MainThread]: Store serial: [23158659]
