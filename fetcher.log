@@ -20101,3 +20101,36 @@
 [2024-05-11 18:49:43] INFO root fetch - processPackages [wgd]: Remove: archive file [/home/abi/fetcher/tmp/wgd-2.0.38.tar.gz]
 [2024-05-11 18:49:43] INFO root fetch - main [MainThread]: End processing [wgd]: success
 [2024-05-11 18:49:43] INFO root fetch - main [MainThread]: Store serial: [23162817]
+[2024-05-11 18:51:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162817]
+[2024-05-11 18:51:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-verify
+[2024-05-11 18:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpr
+[2024-05-11 18:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: abarms
+[2024-05-11 18:51:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: subdichotomouslyz
+[2024-05-11 18:51:53] INFO root fetch - processPackages [mlpr]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 18:51:53] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/32/4b/f4e0f3fb42af5562d0a2f1b8725bd5a97cafb94c0852f5151d74fdc40038/mlpr-0.1.6.tar.gz
+[2024-05-11 18:51:53] WARNING root fetch - processPackages [fast-verify]: Skipping, unable to determine old version
+[2024-05-11 18:51:53] INFO root fetch - main [MainThread]: End processing [fast-verify] error
+[2024-05-11 18:51:53] INFO root fetch - processPackages [abarms]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 18:51:53] INFO root fetch - processPackages [subdichotomouslyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:51:53] INFO root fetch - processPackages [abarms]: Downloading https://files.pythonhosted.org/packages/bb/3d/2fc849b6194a5fc8529cf6d20a1c960ea8c95bb77a127f9d94d8b47fcdd5/abarms-1.1.1.tar.gz
+[2024-05-11 18:51:53] INFO root fetch - processPackages [subdichotomouslyz]: Downloading https://files.pythonhosted.org/packages/65/3f/d15cc7458874bc63d1d793d5fc55f1dc1ab58297c4bc6b6db0a6cc4e2c10/subdichotomouslyz-1.1.tar.gz
+[2024-05-11 18:51:53] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/9b/50/1092c5cd8bc9b8c612cad47b3db9ab4a7a35503af0f9999f1079e16ec38b/mlpr-0.1.7.tar.gz
+[2024-05-11 18:51:54] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-11 18:51:54] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.6.tar.gz tmp/mlpr-0.1.7.tar.gz --markdown 20240511/m/mlpr/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: Downloading https://files.pythonhosted.org/packages/ce/8b/934d0b551e0413ce0900568be96c6396ae928f9ed58c635d6c8e9771565b/abarms-1.1.2.tar.gz
+[2024-05-11 18:51:54] INFO root fetch - processPackages [subdichotomouslyz]: Downloading https://files.pythonhosted.org/packages/8f/dd/d735cd204a7fd7f77c5a08da34f215d2b92a5e6f2429b98c2c169ba9d779/subdichotomouslyz-2.1.tar.gz
+[2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: executing diffoscope
+[2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abarms-1.1.1.tar.gz tmp/abarms-1.1.2.tar.gz --markdown 20240511/a/abarms/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 18:51:54] INFO root fetch - processPackages [subdichotomouslyz]: executing diffoscope
+[2024-05-11 18:51:54] INFO root fetch - processPackages [subdichotomouslyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subdichotomouslyz-1.1.tar.gz tmp/subdichotomouslyz-2.1.tar.gz --markdown 20240511/s/subdichotomouslyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:51:54] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.6.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.7.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-11 18:51:54] INFO root fetch - processPackages [subdichotomouslyz]: Remove: archive file [/home/abi/fetcher/tmp/subdichotomouslyz-1.1.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - processPackages [subdichotomouslyz]: Remove: archive file [/home/abi/fetcher/tmp/subdichotomouslyz-2.1.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - main [MainThread]: End processing [subdichotomouslyz]: success
+[2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: Remove: archive file [/home/abi/fetcher/tmp/abarms-1.1.1.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - processPackages [abarms]: Remove: archive file [/home/abi/fetcher/tmp/abarms-1.1.2.tar.gz]
+[2024-05-11 18:51:54] INFO root fetch - main [MainThread]: End processing [abarms]: success
+[2024-05-11 18:51:54] INFO root fetch - main [MainThread]: Store serial: [23162830]
