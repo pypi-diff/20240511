@@ -11935,3 +11935,18 @@
 [2024-05-11 09:29:12] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.9.tar.gz]
 [2024-05-11 09:29:12] INFO root fetch - main [MainThread]: End processing [jcvi]: success
 [2024-05-11 09:29:12] INFO root fetch - main [MainThread]: Store serial: [23158669]
+[2024-05-11 09:31:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158669]
+[2024-05-11 09:31:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 09:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fulsamicz
+[2024-05-11 09:31:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peeweext
+[2024-05-11 09:31:21] WARNING root fetch - processPackages [fulsamicz]: Skipping, unable to determine old version
+[2024-05-11 09:31:21] INFO root fetch - main [MainThread]: End processing [fulsamicz] error
+[2024-05-11 09:31:21] INFO root fetch - processPackages [peeweext]: New version: [1.2.7] Old Version: [1.2.6]
+[2024-05-11 09:31:21] INFO root fetch - processPackages [peeweext]: Downloading https://files.pythonhosted.org/packages/64/87/90cd297c8f3f436e081a16bf1f1cefdfe9e315e1747e6954c2e89970e9d5/peeweext-1.2.6-py3-none-any.whl
+[2024-05-11 09:31:21] INFO root fetch - processPackages [peeweext]: Downloading https://files.pythonhosted.org/packages/11/50/749c7d8be92954d03ca91532a6dc7b3dc28dff7ec271e7b230d53a192b23/peeweext-1.2.7-py3-none-any.whl
+[2024-05-11 09:31:21] INFO root fetch - processPackages [peeweext]: executing diffoscope
+[2024-05-11 09:31:21] INFO root fetch - processPackages [peeweext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peeweext-1.2.6-py3-none-any.whl.zip tmp/peeweext-1.2.7-py3-none-any.whl.zip --markdown 20240511/p/peeweext/1.2.6-1.2.7/README.md --exclude *.pyd
+[2024-05-11 09:31:22] INFO root fetch - processPackages [peeweext]: Remove: archive file [/home/abi/fetcher/tmp/peeweext-1.2.6-py3-none-any.whl.zip]
+[2024-05-11 09:31:22] INFO root fetch - processPackages [peeweext]: Remove: archive file [/home/abi/fetcher/tmp/peeweext-1.2.7-py3-none-any.whl.zip]
+[2024-05-11 09:31:22] INFO root fetch - main [MainThread]: End processing [peeweext]: success
+[2024-05-11 09:31:22] INFO root fetch - main [MainThread]: Store serial: [23158676]
