@@ -7473,3 +7473,24 @@
 [2024-05-11 03:39:55] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.3.tar.gz]
 [2024-05-11 03:39:55] INFO root fetch - main [MainThread]: End processing [lprocess]: success
 [2024-05-11 03:39:55] INFO root fetch - main [MainThread]: Store serial: [23156403]
+[2024-05-11 03:41:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156403]
+[2024-05-11 03:42:04] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 03:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnfasta
+[2024-05-11 03:42:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clicra
+[2024-05-11 03:42:04] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 03:42:04] INFO root fetch - processPackages [clicra]: New version: [0.2.2] Old Version: [0.1.1]
+[2024-05-11 03:42:04] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-11 03:42:04] INFO root fetch - processPackages [clicra]: Downloading https://files.pythonhosted.org/packages/d8/14/e49f0dc950794eabb339236f5d9da1eed9c4e6baaf1af72e32a40c70e3ff/clicra-0.1.1.tar.gz
+[2024-05-11 03:42:04] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-11 03:42:04] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-11 03:42:04] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240511/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 03:42:04] INFO root fetch - processPackages [clicra]: Downloading https://files.pythonhosted.org/packages/4d/f6/ecef31952cb8131701b649312ebf8519bbd2c01b05f30798c502f66a54f6/clicra-0.2.2.tar.gz
+[2024-05-11 03:42:05] INFO root fetch - processPackages [clicra]: executing diffoscope
+[2024-05-11 03:42:05] INFO root fetch - processPackages [clicra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clicra-0.1.1.tar.gz tmp/clicra-0.2.2.tar.gz --markdown 20240511/c/clicra/0.1.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 03:42:05] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-11 03:42:05] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-11 03:42:05] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-11 03:42:05] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.1.1.tar.gz]
+[2024-05-11 03:42:05] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.2.2.tar.gz]
+[2024-05-11 03:42:05] INFO root fetch - main [MainThread]: End processing [clicra]: success
+[2024-05-11 03:42:05] INFO root fetch - main [MainThread]: Store serial: [23156409]
