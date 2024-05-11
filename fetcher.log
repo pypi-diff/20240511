@@ -7547,3 +7547,36 @@
 [2024-05-11 03:46:26] INFO root fetch - processPackages [ragdaemon]: Remove: archive file [/home/abi/fetcher/tmp/ragdaemon-0.4.6.tar.gz]
 [2024-05-11 03:46:26] INFO root fetch - main [MainThread]: End processing [ragdaemon]: success
 [2024-05-11 03:46:26] INFO root fetch - main [MainThread]: Store serial: [23156430]
+[2024-05-11 03:48:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156430]
+[2024-05-11 03:48:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devon-agent
+[2024-05-11 03:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lprocess
+[2024-05-11 03:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jstream
+[2024-05-11 03:48:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: surpoosez
+[2024-05-11 03:48:34] INFO root fetch - processPackages [devon-agent]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 03:48:34] INFO root fetch - processPackages [jstream]: New version: [0.3] Old Version: [0.1]
+[2024-05-11 03:48:34] INFO root fetch - processPackages [lprocess]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 03:48:34] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/5e/e4/aab1fa8636776e186069986d1159bb156964e0fc0e94cfb5e6a092277e87/devon_agent-0.1.2.tar.gz
+[2024-05-11 03:48:34] WARNING root fetch - processPackages [surpoosez]: Skipping, unable to determine old version
+[2024-05-11 03:48:34] INFO root fetch - main [MainThread]: End processing [surpoosez] error
+[2024-05-11 03:48:34] INFO root fetch - processPackages [jstream]: Downloading https://files.pythonhosted.org/packages/bf/6a/0eb552bb8c75926eabc897c18a607c5ab934088505739d2ce85c0a9430fa/jstream-0.1-py3-none-any.whl
+[2024-05-11 03:48:34] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/7b/96/e6a27ce46c5a61cccda911670c95476396c04ea04fafc6ac0f0f16ee900d/lprocess-0.0.2.tar.gz
+[2024-05-11 03:48:34] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/80/ff/f9fbf69e5cfe824e783adfb7a2d8a6824f640c995bf68ef9014da02dfa44/lprocess-0.0.3.tar.gz
+[2024-05-11 03:48:34] INFO root fetch - processPackages [jstream]: Downloading https://files.pythonhosted.org/packages/88/9c/61fff18281da31af5029454d4c7f6bf1543d0730417dcc19319c2c2c9d28/jstream-0.3.tar.gz
+[2024-05-11 03:48:35] INFO root fetch - processPackages [lprocess]: executing diffoscope
+[2024-05-11 03:48:35] INFO root fetch - processPackages [lprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lprocess-0.0.2.tar.gz tmp/lprocess-0.0.3.tar.gz --markdown 20240511/l/lprocess/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 03:48:35] INFO root fetch - processPackages [jstream]: executing diffoscope
+[2024-05-11 03:48:35] INFO root fetch - processPackages [jstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jstream-0.1-py3-none-any.whl.zip tmp/jstream-0.3.tar.gz --markdown 20240511/j/jstream/0.1-0.3/README.md --exclude *.pyd
+[2024-05-11 03:48:35] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/ba/c0/13db28c7148a5a24ecbba291f6577df65b6145c26a1216119fe61e7cd1d4/devon_agent-0.1.3.tar.gz
+[2024-05-11 03:48:35] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-11 03:48:35] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.2.tar.gz tmp/devon_agent-0.1.3.tar.gz --markdown 20240511/d/devon-agent/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 03:48:35] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.2.tar.gz]
+[2024-05-11 03:48:35] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.3.tar.gz]
+[2024-05-11 03:48:35] INFO root fetch - main [MainThread]: End processing [lprocess]: success
+[2024-05-11 03:48:35] INFO root fetch - processPackages [jstream]: Remove: archive file [/home/abi/fetcher/tmp/jstream-0.1-py3-none-any.whl.zip]
+[2024-05-11 03:48:35] INFO root fetch - processPackages [jstream]: Remove: archive file [/home/abi/fetcher/tmp/jstream-0.3.tar.gz]
+[2024-05-11 03:48:35] INFO root fetch - main [MainThread]: End processing [jstream]: success
+[2024-05-11 03:48:35] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.2.tar.gz]
+[2024-05-11 03:48:35] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.3.tar.gz]
+[2024-05-11 03:48:35] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-11 03:48:35] INFO root fetch - main [MainThread]: Store serial: [23156445]
