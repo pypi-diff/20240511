@@ -20967,3 +20967,33 @@
 [2024-05-11 19:50:58] INFO root fetch - processPackages [sonatoki]: Remove: archive file [/home/abi/fetcher/tmp/sonatoki-0.1.5.tar.gz]
 [2024-05-11 19:50:58] INFO root fetch - main [MainThread]: End processing [sonatoki]: success
 [2024-05-11 19:50:58] INFO root fetch - main [MainThread]: Store serial: [23163195]
+[2024-05-11 19:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163195]
+[2024-05-11 19:53:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tkinter-tooltip
+[2024-05-11 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beets-bpmanalyser
+[2024-05-11 19:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: anipics
+[2024-05-11 19:53:07] INFO root fetch - processPackages [beets-bpmanalyser]: New version: [1.5.7] Old Version: [1.5.6]
+[2024-05-11 19:53:07] INFO root fetch - processPackages [anipics]: New version: [1.5.4] Old Version: [1.5.3]
+[2024-05-11 19:53:07] INFO root fetch - processPackages [beets-bpmanalyser]: Downloading https://files.pythonhosted.org/packages/2c/d9/6cb059dc465b7d40cb34392dc1298fe3e27c67a99c5df844ce86d88c6579/beets-bpmanalyser-1.5.6.tar.gz
+[2024-05-11 19:53:07] INFO root fetch - processPackages [anipics]: Downloading https://files.pythonhosted.org/packages/5f/a9/94b16cac8f13df831f3790b846374f273ca356cfb58a279ccdc4215ef2de/anipics-1.5.3.tar.gz
+[2024-05-11 19:53:07] INFO root fetch - processPackages [tkinter-tooltip]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-05-11 19:53:07] INFO root fetch - processPackages [tkinter-tooltip]: Downloading https://files.pythonhosted.org/packages/44/ec/410edd2945b8bffc686b0023f044dab2dabf36b2782b39489996c43b303f/tkinter-tooltip-3.0.0.tar.gz
+[2024-05-11 19:53:07] INFO root fetch - processPackages [beets-bpmanalyser]: Downloading https://files.pythonhosted.org/packages/6f/59/63f84fe60dabd9e079f2c920f24aac3c9a66a7026ad5d7ef94fe6e64c40e/beets-bpmanalyser-1.5.7.tar.gz
+[2024-05-11 19:53:07] INFO root fetch - processPackages [beets-bpmanalyser]: executing diffoscope
+[2024-05-11 19:53:07] INFO root fetch - processPackages [beets-bpmanalyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beets-bpmanalyser-1.5.6.tar.gz tmp/beets-bpmanalyser-1.5.7.tar.gz --markdown 20240511/b/beets-bpmanalyser/1.5.6-1.5.7/README.md --exclude *.pyd
+[2024-05-11 19:53:07] INFO root fetch - processPackages [anipics]: Downloading https://files.pythonhosted.org/packages/7b/1f/a522c7e7820a213a932d994d3a6c55019fc1e9c2426692dbd1469a7e825b/anipics-1.5.4.tar.gz
+[2024-05-11 19:53:07] INFO root fetch - processPackages [anipics]: executing diffoscope
+[2024-05-11 19:53:07] INFO root fetch - processPackages [anipics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipics-1.5.3.tar.gz tmp/anipics-1.5.4.tar.gz --markdown 20240511/a/anipics/1.5.3-1.5.4/README.md --exclude *.pyd
+[2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: Downloading https://files.pythonhosted.org/packages/41/60/24684fae954af4626b4745ab6ec5b21ef421ccd1542b9260823b61f69de5/tkinter_tooltip-3.1.0.tar.gz
+[2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: executing diffoscope
+[2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tkinter-tooltip-3.0.0.tar.gz tmp/tkinter_tooltip-3.1.0.tar.gz --markdown 20240511/t/tkinter-tooltip/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-05-11 19:53:08] INFO root fetch - processPackages [beets-bpmanalyser]: Remove: archive file [/home/abi/fetcher/tmp/beets-bpmanalyser-1.5.6.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - processPackages [beets-bpmanalyser]: Remove: archive file [/home/abi/fetcher/tmp/beets-bpmanalyser-1.5.7.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - main [MainThread]: End processing [beets-bpmanalyser]: success
+[2024-05-11 19:53:08] INFO root fetch - processPackages [anipics]: Remove: archive file [/home/abi/fetcher/tmp/anipics-1.5.3.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - processPackages [anipics]: Remove: archive file [/home/abi/fetcher/tmp/anipics-1.5.4.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - main [MainThread]: End processing [anipics]: success
+[2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/tkinter-tooltip-3.0.0.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/tkinter_tooltip-3.1.0.tar.gz]
+[2024-05-11 19:53:08] INFO root fetch - main [MainThread]: End processing [tkinter-tooltip]: success
+[2024-05-11 19:53:08] INFO root fetch - main [MainThread]: Store serial: [23163206]
