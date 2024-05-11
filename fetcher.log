@@ -10429,3 +10429,31 @@
 [2024-05-11 07:28:29] INFO root fetch - processPackages [funcnodes]: Remove: archive file [/home/abi/fetcher/tmp/funcnodes-0.2.5.tar.gz]
 [2024-05-11 07:28:29] INFO root fetch - main [MainThread]: End processing [funcnodes]: success
 [2024-05-11 07:28:29] INFO root fetch - main [MainThread]: Store serial: [23157784]
+[2024-05-11 07:30:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157784]
+[2024-05-11 07:30:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cloud-files
+[2024-05-11 07:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2024-05-11 07:30:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cloudcheck
+[2024-05-11 07:30:37] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-11 07:30:37] INFO root fetch - processPackages [cloudcheck]: New version: [5.0.1.382] Old Version: [5.0.0.350]
+[2024-05-11 07:30:37] INFO root fetch - processPackages [cloud-files]: New version: [4.9.1] Old Version: [4.9.0]
+[2024-05-11 07:30:37] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-11 07:30:37] INFO root fetch - processPackages [cloud-files]: Downloading https://files.pythonhosted.org/packages/f0/c8/1670e09d59d1c4e03277e61e4bba0d8e81cfa625158c04efd19bee4c1aa8/cloud-files-4.9.0.tar.gz
+[2024-05-11 07:30:37] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-11 07:30:38] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-11 07:30:38] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240511/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloudcheck]: Downloading https://files.pythonhosted.org/packages/bd/1f/c829a49b1fe25d5186940352d59390ff4da6148272ec975109303cb20733/cloudcheck-5.0.1.382.tar.gz
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloudcheck]: executing diffoscope
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloudcheck]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudcheck-5.0.0.350.tar.gz tmp/cloudcheck-5.0.1.382.tar.gz --markdown 20240511/c/cloudcheck/5.0.0.350-5.0.1.382/README.md --exclude *.pyd
+[2024-05-11 07:30:38] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-11 07:30:38] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-11 07:30:38] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloud-files]: Downloading https://files.pythonhosted.org/packages/6c/69/68998e8e8025bf7860d9cdef6ff6c18032f8995566053e1b5e13c3e18851/cloud-files-4.9.1.tar.gz
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloud-files]: executing diffoscope
+[2024-05-11 07:30:38] INFO root fetch - processPackages [cloud-files]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloud-files-4.9.0.tar.gz tmp/cloud-files-4.9.1.tar.gz --markdown 20240511/c/cloud-files/4.9.0-4.9.1/README.md --exclude *.pyd
+[2024-05-11 07:30:39] INFO root fetch - processPackages [cloud-files]: Remove: archive file [/home/abi/fetcher/tmp/cloud-files-4.9.0.tar.gz]
+[2024-05-11 07:30:39] INFO root fetch - processPackages [cloud-files]: Remove: archive file [/home/abi/fetcher/tmp/cloud-files-4.9.1.tar.gz]
+[2024-05-11 07:30:39] INFO root fetch - main [MainThread]: End processing [cloud-files]: success
+[2024-05-11 07:33:38] ERROR root fetch - processPackages [cloudcheck]: Timeout during execution of pkgdiff
+[2024-05-11 07:33:38] INFO root fetch - main [MainThread]: End processing [cloudcheck] error
+[2024-05-11 07:33:38] INFO root fetch - main [MainThread]: Store serial: [23157794]
