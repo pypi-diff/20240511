@@ -7407,3 +7407,36 @@
 [2024-05-11 03:35:35] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.3.tar.gz]
 [2024-05-11 03:35:35] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
 [2024-05-11 03:35:35] INFO root fetch - main [MainThread]: Store serial: [23156336]
+[2024-05-11 03:37:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156336]
+[2024-05-11 03:37:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:37:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ConservedWaterSearch
+[2024-05-11 03:37:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: guava3
+[2024-05-11 03:37:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyAgrum-nightly
+[2024-05-11 03:37:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: STCAT
+[2024-05-11 03:37:43] INFO root fetch - processPackages [STCAT]: New version: [0.6] Old Version: [0.5]
+[2024-05-11 03:37:43] INFO root fetch - processPackages [ConservedWaterSearch]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 03:37:44] INFO root fetch - processPackages [pyAgrum-nightly]: New version: [1.9.0.9.dev202310191697564854] Old Version: [1.9.0.9.dev202310181697564854]
+[2024-05-11 03:37:44] WARNING root fetch - processPackages [guava3]: Skipping, unable to determine old version
+[2024-05-11 03:37:44] INFO root fetch - main [MainThread]: End processing [guava3] error
+[2024-05-11 03:37:44] INFO root fetch - processPackages [STCAT]: Downloading https://files.pythonhosted.org/packages/63/4b/4c69ba9d101bddf6c744e6b95d7dd1baf70bfdca8f35d5d3d699286c9818/STCAT-0.5.tar.gz
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: Downloading https://files.pythonhosted.org/packages/fd/94/7a24fdf56e80396fa10937526592e55d6d94963340afbbddf5ad1bd09f3e/ConservedWaterSearch-0.4.0.tar.gz
+[2024-05-11 03:37:44] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/64/23/4308469c4be3abcfc53ec2ccbd7dcca1618077035522cae4b364a9c6cc56/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: Downloading https://files.pythonhosted.org/packages/1e/42/1376bfc7a63514a848920261d3ebcab998da9d8068460643019e40dab48c/ConservedWaterSearch-0.4.1-py3-none-any.whl
+[2024-05-11 03:37:44] INFO root fetch - processPackages [STCAT]: Downloading https://files.pythonhosted.org/packages/7d/7b/87a75714b463c728a46c3327292c2d1d015c9d5bf420211e3ecffd2181fd/STCAT-0.6.tar.gz
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: executing diffoscope
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ConservedWaterSearch-0.4.0.tar.gz tmp/ConservedWaterSearch-0.4.1-py3-none-any.whl.zip --markdown 20240511/C/ConservedWaterSearch/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 03:37:44] INFO root fetch - processPackages [pyAgrum-nightly]: Downloading https://files.pythonhosted.org/packages/84/cc/6d2d3b13a2080cfbfa9792321774075d119b4fa37902c5a9d93d8eccf13d/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl
+[2024-05-11 03:37:44] INFO root fetch - processPackages [STCAT]: executing diffoscope
+[2024-05-11 03:37:44] INFO root fetch - processPackages [STCAT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/STCAT-0.5.tar.gz tmp/STCAT-0.6.tar.gz --markdown 20240511/S/STCAT/0.5-0.6/README.md --exclude *.pyd
+[2024-05-11 03:37:44] INFO root fetch - processPackages [pyAgrum-nightly]: executing diffoscope
+[2024-05-11 03:37:44] INFO root fetch - processPackages [pyAgrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip --markdown 20240511/p/pyAgrum-nightly/1.9.0.9.dev202310181697564854-1.9.0.9.dev202310191697564854/README.md --exclude *.pyd
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: Remove: archive file [/home/abi/fetcher/tmp/ConservedWaterSearch-0.4.0.tar.gz]
+[2024-05-11 03:37:44] INFO root fetch - processPackages [ConservedWaterSearch]: Remove: archive file [/home/abi/fetcher/tmp/ConservedWaterSearch-0.4.1-py3-none-any.whl.zip]
+[2024-05-11 03:37:44] INFO root fetch - main [MainThread]: End processing [ConservedWaterSearch]: success
+[2024-05-11 03:37:45] INFO root fetch - processPackages [STCAT]: Remove: archive file [/home/abi/fetcher/tmp/STCAT-0.5.tar.gz]
+[2024-05-11 03:37:45] INFO root fetch - processPackages [STCAT]: Remove: archive file [/home/abi/fetcher/tmp/STCAT-0.6.tar.gz]
+[2024-05-11 03:37:45] INFO root fetch - main [MainThread]: End processing [STCAT]: success
+[2024-05-11 03:37:45] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310181697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 03:37:45] INFO root fetch - processPackages [pyAgrum-nightly]: Remove: archive file [/home/abi/fetcher/tmp/pyAgrum_nightly-1.9.0.9.dev202310191697564854-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 03:37:45] INFO root fetch - main [MainThread]: End processing [pyAgrum-nightly]: success
+[2024-05-11 03:37:45] INFO root fetch - main [MainThread]: Store serial: [23156384]
