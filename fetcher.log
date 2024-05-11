@@ -24079,3 +24079,18 @@
 [2024-05-11 23:26:48] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
 [2024-05-11 23:26:48] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
 [2024-05-11 23:26:48] INFO root fetch - main [MainThread]: Store serial: [23164702]
+[2024-05-11 23:28:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164702]
+[2024-05-11 23:28:56] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 23:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: unquarteredz
+[2024-05-11 23:28:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyutilkit
+[2024-05-11 23:28:57] INFO root fetch - processPackages [unquarteredz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:28:57] WARNING root fetch - processPackages [pyutilkit]: Skipping, unable to determine old version
+[2024-05-11 23:28:57] INFO root fetch - main [MainThread]: End processing [pyutilkit] error
+[2024-05-11 23:28:57] INFO root fetch - processPackages [unquarteredz]: Downloading https://files.pythonhosted.org/packages/4f/5d/bfec8f95b8c0da9edd6d7e7441566bf50e582f17174928e31c2ff464394e/unquarteredz-1.1.tar.gz
+[2024-05-11 23:28:57] INFO root fetch - processPackages [unquarteredz]: Downloading https://files.pythonhosted.org/packages/f9/7d/52137a4d5207441c94a21943f988dfe6324500a1d895a1365c6c89d2a71f/unquarteredz-2.1.tar.gz
+[2024-05-11 23:28:57] INFO root fetch - processPackages [unquarteredz]: executing diffoscope
+[2024-05-11 23:28:57] INFO root fetch - processPackages [unquarteredz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unquarteredz-1.1.tar.gz tmp/unquarteredz-2.1.tar.gz --markdown 20240511/u/unquarteredz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:28:58] INFO root fetch - processPackages [unquarteredz]: Remove: archive file [/home/abi/fetcher/tmp/unquarteredz-1.1.tar.gz]
+[2024-05-11 23:28:58] INFO root fetch - processPackages [unquarteredz]: Remove: archive file [/home/abi/fetcher/tmp/unquarteredz-2.1.tar.gz]
+[2024-05-11 23:28:58] INFO root fetch - main [MainThread]: End processing [unquarteredz]: success
+[2024-05-11 23:28:58] INFO root fetch - main [MainThread]: Store serial: [23164710]
