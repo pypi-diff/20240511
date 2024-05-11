@@ -19221,3 +19221,57 @@
 [2024-05-11 17:50:58] INFO root fetch - processPackages [crud-repository]: Remove: archive file [/home/abi/fetcher/tmp/crud_repository-0.2.3.tar.gz]
 [2024-05-11 17:50:58] INFO root fetch - main [MainThread]: End processing [crud-repository]: success
 [2024-05-11 17:50:58] INFO root fetch - main [MainThread]: Store serial: [23162421]
+[2024-05-11 17:53:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162421]
+[2024-05-11 17:53:07] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eth-ape
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bio-image-unet
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sarcharts
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tavern
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: relievingz
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Bigsansar
+[2024-05-11 17:53:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: habits.txt
+[2024-05-11 17:53:07] WARNING root fetch - processPackages [habits.txt]: Skipping, unable to determine old version
+[2024-05-11 17:53:07] INFO root fetch - main [MainThread]: End processing [habits.txt] error
+[2024-05-11 17:53:07] INFO root fetch - processPackages [bio-image-unet]: New version: [1.0.0a5] Old Version: [1.0.0a4]
+[2024-05-11 17:53:07] INFO root fetch - processPackages [Bigsansar]: New version: [2.5.8] Old Version: [2.5.7]
+[2024-05-11 17:53:07] INFO root fetch - processPackages [bio-image-unet]: Downloading https://files.pythonhosted.org/packages/30/3c/57d36820b099a949794c31d358931b326226efce84c6d031e3debad55924/bio-image-unet-1.0.0a4.tar.gz
+[2024-05-11 17:53:07] INFO root fetch - processPackages [sarcharts]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-11 17:53:07] WARNING root fetch - processPackages [relievingz]: Skipping, unable to determine old version
+[2024-05-11 17:53:07] INFO root fetch - main [MainThread]: End processing [relievingz] error
+[2024-05-11 17:53:08] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/ef/5f/b4e2918456c843298d07abfe2e440e719e17dd6213ff1e309d04a1482700/Bigsansar-2.5.7.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [eth-ape]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 17:53:08] INFO root fetch - processPackages [tavern]: New version: [3.0.0a5] Old Version: [3.0.0a4]
+[2024-05-11 17:53:08] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/90/e0/3954217496f7176568bfdfeb8967f1b32a409618b8e7a90f492c3159c44d/sarcharts-0.1.7.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [eth-ape]: Downloading https://files.pythonhosted.org/packages/41/43/2ef7017d00282631fdfae2535690b3a1511edb35230759b8ee6360979f3b/eth-ape-0.7.8.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [Bigsansar]: Downloading https://files.pythonhosted.org/packages/5e/3c/6242264d29ae96e03f975c81644ce7dc1c5b46bf6848719ac0456eea3d8a/bigsansar-2.5.8.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/0a/8e/abdae3e120acd1b71650199b36e2f7916bbba974fe9ea56978f45016eab0/tavern-3.0.0a4.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [bio-image-unet]: Downloading https://files.pythonhosted.org/packages/7d/90/7114d73cf06656d7ea709261abdca60e049713e5d61536e23660fc88728b/bio-image-unet-1.0.0a5.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [Bigsansar]: executing diffoscope
+[2024-05-11 17:53:08] INFO root fetch - processPackages [Bigsansar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Bigsansar-2.5.7.tar.gz tmp/bigsansar-2.5.8.tar.gz --markdown 20240511/B/Bigsansar/2.5.7-2.5.8/README.md --exclude *.pyd
+[2024-05-11 17:53:08] INFO root fetch - processPackages [bio-image-unet]: executing diffoscope
+[2024-05-11 17:53:08] INFO root fetch - processPackages [bio-image-unet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bio-image-unet-1.0.0a4.tar.gz tmp/bio-image-unet-1.0.0a5.tar.gz --markdown 20240511/b/bio-image-unet/1.0.0a4-1.0.0a5/README.md --exclude *.pyd
+[2024-05-11 17:53:08] INFO root fetch - processPackages [sarcharts]: Downloading https://files.pythonhosted.org/packages/52/46/8bca8c642f60a5f0ed3b1de53e4507608a4df1b7a9b8ed9c98921c0d2b38/sarcharts-0.1.8.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [tavern]: Downloading https://files.pythonhosted.org/packages/80/86/70a67f008ea31b86f008d0c14638a1203e1e02a79d27ccb637e492ecde91/tavern-3.0.0a5.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [eth-ape]: Downloading https://files.pythonhosted.org/packages/0e/fc/6f069f6f3b560e4f8ba7352690a65c079a254118d7874c192ea36bd3b01e/eth-ape-0.7.9.tar.gz
+[2024-05-11 17:53:08] INFO root fetch - processPackages [sarcharts]: executing diffoscope
+[2024-05-11 17:53:08] INFO root fetch - processPackages [sarcharts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sarcharts-0.1.7.tar.gz tmp/sarcharts-0.1.8.tar.gz --markdown 20240511/s/sarcharts/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-11 17:53:08] INFO root fetch - processPackages [tavern]: executing diffoscope
+[2024-05-11 17:53:08] INFO root fetch - processPackages [tavern]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tavern-3.0.0a4.tar.gz tmp/tavern-3.0.0a5.tar.gz --markdown 20240511/t/tavern/3.0.0a4-3.0.0a5/README.md --exclude *.pyd
+[2024-05-11 17:53:08] INFO root fetch - processPackages [eth-ape]: executing diffoscope
+[2024-05-11 17:53:08] INFO root fetch - processPackages [eth-ape]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eth-ape-0.7.8.tar.gz tmp/eth-ape-0.7.9.tar.gz --markdown 20240511/e/eth-ape/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-11 17:53:09] INFO root fetch - processPackages [bio-image-unet]: Remove: archive file [/home/abi/fetcher/tmp/bio-image-unet-1.0.0a4.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - processPackages [bio-image-unet]: Remove: archive file [/home/abi/fetcher/tmp/bio-image-unet-1.0.0a5.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - main [MainThread]: End processing [bio-image-unet]: success
+[2024-05-11 17:53:09] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/Bigsansar-2.5.7.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - processPackages [Bigsansar]: Remove: archive file [/home/abi/fetcher/tmp/bigsansar-2.5.8.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - main [MainThread]: End processing [Bigsansar]: success
+[2024-05-11 17:53:09] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.1.7.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - processPackages [sarcharts]: Remove: archive file [/home/abi/fetcher/tmp/sarcharts-0.1.8.tar.gz]
+[2024-05-11 17:53:09] INFO root fetch - main [MainThread]: End processing [sarcharts]: success
+[2024-05-11 17:53:10] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a4.tar.gz]
+[2024-05-11 17:53:10] INFO root fetch - processPackages [tavern]: Remove: archive file [/home/abi/fetcher/tmp/tavern-3.0.0a5.tar.gz]
+[2024-05-11 17:53:10] INFO root fetch - main [MainThread]: End processing [tavern]: success
+[2024-05-11 17:53:10] INFO root fetch - processPackages [eth-ape]: Remove: archive file [/home/abi/fetcher/tmp/eth-ape-0.7.8.tar.gz]
+[2024-05-11 17:53:10] INFO root fetch - processPackages [eth-ape]: Remove: archive file [/home/abi/fetcher/tmp/eth-ape-0.7.9.tar.gz]
+[2024-05-11 17:53:10] INFO root fetch - main [MainThread]: End processing [eth-ape]: success
+[2024-05-11 17:53:10] INFO root fetch - main [MainThread]: Store serial: [23162440]
