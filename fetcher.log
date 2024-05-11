@@ -22018,3 +22018,39 @@
 [2024-05-11 21:00:35] INFO root fetch - processPackages [flamme]: Remove: archive file [/home/abi/fetcher/tmp/flamme-0.0.9.tar.gz]
 [2024-05-11 21:00:35] INFO root fetch - main [MainThread]: End processing [flamme]: success
 [2024-05-11 21:00:35] INFO root fetch - main [MainThread]: Store serial: [23163808]
+[2024-05-11 21:02:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163808]
+[2024-05-11 21:02:44] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 21:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: exoml
+[2024-05-11 21:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thingutz
+[2024-05-11 21:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enculturativez
+[2024-05-11 21:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: a9x-webstatistics
+[2024-05-11 21:02:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: MrSolver-Add
+[2024-05-11 21:02:44] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 21:02:44] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/53/d1/9ce7f9fdaecf898188c97902576ef3ac16e1fbacdc31a2bfa2a574c57b41/a9x_webstatistics-0.1.6.tar.gz
+[2024-05-11 21:02:44] INFO root fetch - processPackages [exoml]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 21:02:44] INFO root fetch - processPackages [thingutz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:02:44] WARNING root fetch - processPackages [enculturativez]: Skipping, unable to determine old version
+[2024-05-11 21:02:44] INFO root fetch - main [MainThread]: End processing [enculturativez] error
+[2024-05-11 21:02:44] WARNING root fetch - processPackages [MrSolver-Add]: Skipping, unable to determine old version
+[2024-05-11 21:02:44] INFO root fetch - main [MainThread]: End processing [MrSolver-Add] error
+[2024-05-11 21:02:45] INFO root fetch - processPackages [exoml]: Downloading https://files.pythonhosted.org/packages/01/c6/c69e6c3e4f7816b784360d5d0b4f0b4bc1b0b04ac8b2134f47dbba420089/exoml-0.1.8.tar.gz
+[2024-05-11 21:02:45] INFO root fetch - processPackages [thingutz]: Downloading https://files.pythonhosted.org/packages/bb/f6/c96572a213558b0b85518b30e76b8ec282f7532c5c511acb3f423ed361ee/thingutz-1.1.tar.gz
+[2024-05-11 21:02:45] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/6b/1a/6d8eb7a0eb834e882b4a32671d8f55b7058e94c1705abb39591b7e14acb4/a9x_webstatistics-0.1.7.tar.gz
+[2024-05-11 21:02:45] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-05-11 21:02:45] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.1.6.tar.gz tmp/a9x_webstatistics-0.1.7.tar.gz --markdown 20240511/a/a9x-webstatistics/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 21:02:45] INFO root fetch - processPackages [thingutz]: Downloading https://files.pythonhosted.org/packages/96/cd/21ae228a4e2145b9975d45df8e7c01494ad32975877cb2a890f1272276b1/thingutz-2.1.tar.gz
+[2024-05-11 21:02:45] INFO root fetch - processPackages [exoml]: Downloading https://files.pythonhosted.org/packages/0b/19/f1be2b6c9e89d040510ae0a0dd8508d61b4171fe02dc51c250bc2252cf05/exoml-0.1.9.tar.gz
+[2024-05-11 21:02:45] INFO root fetch - processPackages [thingutz]: executing diffoscope
+[2024-05-11 21:02:45] INFO root fetch - processPackages [thingutz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thingutz-1.1.tar.gz tmp/thingutz-2.1.tar.gz --markdown 20240511/t/thingutz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:02:45] INFO root fetch - processPackages [exoml]: executing diffoscope
+[2024-05-11 21:02:45] INFO root fetch - processPackages [exoml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exoml-0.1.8.tar.gz tmp/exoml-0.1.9.tar.gz --markdown 20240511/e/exoml/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 21:02:45] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.6.tar.gz]
+[2024-05-11 21:02:45] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.7.tar.gz]
+[2024-05-11 21:02:45] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-05-11 21:02:46] INFO root fetch - processPackages [thingutz]: Remove: archive file [/home/abi/fetcher/tmp/thingutz-1.1.tar.gz]
+[2024-05-11 21:02:46] INFO root fetch - processPackages [thingutz]: Remove: archive file [/home/abi/fetcher/tmp/thingutz-2.1.tar.gz]
+[2024-05-11 21:02:46] INFO root fetch - main [MainThread]: End processing [thingutz]: success
+[2024-05-11 21:02:46] INFO root fetch - processPackages [exoml]: Remove: archive file [/home/abi/fetcher/tmp/exoml-0.1.8.tar.gz]
+[2024-05-11 21:02:46] INFO root fetch - processPackages [exoml]: Remove: archive file [/home/abi/fetcher/tmp/exoml-0.1.9.tar.gz]
+[2024-05-11 21:02:46] INFO root fetch - main [MainThread]: End processing [exoml]: success
+[2024-05-11 21:02:46] INFO root fetch - main [MainThread]: Store serial: [23163823]
