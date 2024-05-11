@@ -23724,3 +23724,18 @@
 [2024-05-11 22:58:29] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
 [2024-05-11 22:58:29] INFO root fetch - main [MainThread]: End processing [narwhals]: success
 [2024-05-11 22:58:29] INFO root fetch - main [MainThread]: Store serial: [23164541]
+[2024-05-11 23:00:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164541]
+[2024-05-11 23:00:37] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 23:00:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytmusic-deleter
+[2024-05-11 23:00:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lisbonz
+[2024-05-11 23:00:37] WARNING root fetch - processPackages [lisbonz]: Skipping, unable to determine old version
+[2024-05-11 23:00:37] INFO root fetch - main [MainThread]: End processing [lisbonz] error
+[2024-05-11 23:00:37] INFO root fetch - processPackages [ytmusic-deleter]: New version: [2.3.1] Old Version: [2.3.0]
+[2024-05-11 23:00:38] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/d2/d1/c8f16b060f55a93368e7918435b4d97dc78c39df8fca96529e925ca93894/ytmusic_deleter-2.3.0.tar.gz
+[2024-05-11 23:00:38] INFO root fetch - processPackages [ytmusic-deleter]: Downloading https://files.pythonhosted.org/packages/46/bd/fe8143b2391559677e2a2c8b2494f5dcf8e6ad81c778f2d76fafbf73fa5a/ytmusic_deleter-2.3.1.tar.gz
+[2024-05-11 23:00:38] INFO root fetch - processPackages [ytmusic-deleter]: executing diffoscope
+[2024-05-11 23:00:38] INFO root fetch - processPackages [ytmusic-deleter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusic_deleter-2.3.0.tar.gz tmp/ytmusic_deleter-2.3.1.tar.gz --markdown 20240511/y/ytmusic-deleter/2.3.0-2.3.1/README.md --exclude *.pyd
+[2024-05-11 23:00:39] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.0.tar.gz]
+[2024-05-11 23:00:39] INFO root fetch - processPackages [ytmusic-deleter]: Remove: archive file [/home/abi/fetcher/tmp/ytmusic_deleter-2.3.1.tar.gz]
+[2024-05-11 23:00:39] INFO root fetch - main [MainThread]: End processing [ytmusic-deleter]: success
+[2024-05-11 23:00:39] INFO root fetch - main [MainThread]: Store serial: [23164548]
