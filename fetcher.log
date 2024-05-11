@@ -22600,3 +22600,53 @@
 [2024-05-11 21:42:15] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-11 21:42:15] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-11 21:42:15] INFO root fetch - main [MainThread]: Store serial: [23164037]
+[2024-05-11 21:44:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164037]
+[2024-05-11 21:44:24] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: energy-assistant
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmgtoolkit
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Files.com
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tritylz
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hemonephrosisz
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hyo2.ssm2
+[2024-05-11 21:44:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: django-tinywiki
+[2024-05-11 21:44:24] INFO root fetch - processPackages [django-tinywiki]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 21:44:25] INFO root fetch - processPackages [Files.com]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tritylz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tmgtoolkit]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 21:44:25] INFO root fetch - processPackages [django-tinywiki]: Downloading https://files.pythonhosted.org/packages/d3/f4/5b023d7088ecba7eec3cac2eeafb3ffcc339597178b976cfd8962df21d7d/django_tinywiki-0.0.5.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [energy-assistant]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 21:44:25] WARNING root fetch - processPackages [hyo2.ssm2]: Skipping, unable to determine old version
+[2024-05-11 21:44:25] INFO root fetch - main [MainThread]: End processing [hyo2.ssm2] error
+[2024-05-11 21:44:25] WARNING root fetch - processPackages [hemonephrosisz]: Skipping, unable to determine old version
+[2024-05-11 21:44:25] INFO root fetch - main [MainThread]: End processing [hemonephrosisz] error
+[2024-05-11 21:44:25] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/fe/9f/8654a34abe6ed4232708475bb6c7dd30b128ab68594cd684d58e72375385/Files.com-1.4.8.tar.gz
+[2024-05-11 21:44:25] WARNING root fetch - processPackages [django-tinywiki]: Skipping package: exceeds size limit 16566758>=10485760
+[2024-05-11 21:44:25] INFO root fetch - main [MainThread]: End processing [django-tinywiki] error
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tritylz]: Downloading https://files.pythonhosted.org/packages/11/6a/166a6679bb01d8e3f189d1a2b9fcd0d2327d8524f9292d351980b6e90183/tritylz-1.1.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [energy-assistant]: Downloading https://files.pythonhosted.org/packages/06/6e/124fdb50af13f8190c25946892a452bd0709cd626b34eed662c9b7e2b275/energy_assistant-0.1.6.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tmgtoolkit]: Downloading https://files.pythonhosted.org/packages/4a/2c/59f21298119650f9cec795eb196ec247f2b694446bdf4d20354dd71d7791/tmgtoolkit-0.1.2.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/50/2a/081bc12536110f3d42e66312b9c23d07fc87bd3eafaaa4b731c3a21d1660/Files.com-1.4.9.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2024-05-11 21:44:25] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.4.8.tar.gz tmp/Files.com-1.4.9.tar.gz --markdown 20240511/F/Files.com/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tritylz]: Downloading https://files.pythonhosted.org/packages/68/15/335e49753b9de541fafadbaf863dcc56923cff963b308b258d525be613f8/tritylz-2.1.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tmgtoolkit]: Downloading https://files.pythonhosted.org/packages/14/58/88aebff26920f8f1b616c07c788a091383cc265f50b5d7393d62c95e7f2f/tmgtoolkit-0.1.3.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [energy-assistant]: Downloading https://files.pythonhosted.org/packages/8c/1a/1ddacac8adbad71516960149d53d1e4262d3d29a07465bdff5dbaec1ca87/energy_assistant-0.1.7.tar.gz
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tritylz]: executing diffoscope
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tritylz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tritylz-1.1.tar.gz tmp/tritylz-2.1.tar.gz --markdown 20240511/t/tritylz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tmgtoolkit]: executing diffoscope
+[2024-05-11 21:44:25] INFO root fetch - processPackages [tmgtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmgtoolkit-0.1.2.tar.gz tmp/tmgtoolkit-0.1.3.tar.gz --markdown 20240511/t/tmgtoolkit/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 21:44:25] INFO root fetch - processPackages [energy-assistant]: executing diffoscope
+[2024-05-11 21:44:25] INFO root fetch - processPackages [energy-assistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/energy_assistant-0.1.6.tar.gz tmp/energy_assistant-0.1.7.tar.gz --markdown 20240511/e/energy-assistant/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 21:44:26] INFO root fetch - processPackages [tritylz]: Remove: archive file [/home/abi/fetcher/tmp/tritylz-1.1.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - processPackages [tritylz]: Remove: archive file [/home/abi/fetcher/tmp/tritylz-2.1.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - main [MainThread]: End processing [tritylz]: success
+[2024-05-11 21:44:26] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.8.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.9.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2024-05-11 21:44:26] INFO root fetch - processPackages [tmgtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tmgtoolkit-0.1.2.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - processPackages [tmgtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tmgtoolkit-0.1.3.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - main [MainThread]: End processing [tmgtoolkit]: success
+[2024-05-11 21:44:26] INFO root fetch - processPackages [energy-assistant]: Remove: archive file [/home/abi/fetcher/tmp/energy_assistant-0.1.6.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - processPackages [energy-assistant]: Remove: archive file [/home/abi/fetcher/tmp/energy_assistant-0.1.7.tar.gz]
+[2024-05-11 21:44:26] INFO root fetch - main [MainThread]: End processing [energy-assistant]: success
+[2024-05-11 21:44:26] INFO root fetch - main [MainThread]: Store serial: [23164059]
