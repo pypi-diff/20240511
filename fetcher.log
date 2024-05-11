@@ -24321,3 +24321,36 @@
 [2024-05-11 23:52:43] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.1.tar.gz]
 [2024-05-11 23:52:43] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
 [2024-05-11 23:52:43] INFO root fetch - main [MainThread]: Store serial: [23164831]
+[2024-05-11 23:54:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164831]
+[2024-05-11 23:54:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 23:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiocmcapi
+[2024-05-11 23:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unsubjugatedz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nnfasta
+[2024-05-11 23:54:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nntp
+[2024-05-11 23:54:52] INFO root fetch - processPackages [aiocmcapi]: New version: [0.3] Old Version: [0.2]
+[2024-05-11 23:54:52] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 23:54:52] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/3c/c9/e1768b119cecf178c2ebc594fd2bc10b91ee7f85644943d7e5c16a8ba642/aiocmcapi-0.2.tar.gz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-11 23:54:52] WARNING root fetch - processPackages [nntp]: Skipping, unable to determine old version
+[2024-05-11 23:54:52] INFO root fetch - main [MainThread]: End processing [nntp] error
+[2024-05-11 23:54:52] INFO root fetch - processPackages [unsubjugatedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:54:52] INFO root fetch - processPackages [unsubjugatedz]: Downloading https://files.pythonhosted.org/packages/11/d0/0781812234d747fe9270b94051cf39f5c3ffa66bb315068028ac9f69b5cb/unsubjugatedz-1.1.tar.gz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [aiocmcapi]: Downloading https://files.pythonhosted.org/packages/84/36/0c6fe37b8b3bf325503c0b002d72cbb76625ee4c33c167785d8537fcfe57/aiocmcapi-0.3.tar.gz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-11 23:54:52] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240511/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 23:54:52] INFO root fetch - processPackages [aiocmcapi]: executing diffoscope
+[2024-05-11 23:54:52] INFO root fetch - processPackages [aiocmcapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiocmcapi-0.2.tar.gz tmp/aiocmcapi-0.3.tar.gz --markdown 20240511/a/aiocmcapi/0.2-0.3/README.md --exclude *.pyd
+[2024-05-11 23:54:52] INFO root fetch - processPackages [unsubjugatedz]: Downloading https://files.pythonhosted.org/packages/b8/23/827b5f7f5a4480a8b88d8809fc96a3b85d4febcb2c2f57ca84b1e0fc7d22/unsubjugatedz-2.1.tar.gz
+[2024-05-11 23:54:52] INFO root fetch - processPackages [unsubjugatedz]: executing diffoscope
+[2024-05-11 23:54:52] INFO root fetch - processPackages [unsubjugatedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unsubjugatedz-1.1.tar.gz tmp/unsubjugatedz-2.1.tar.gz --markdown 20240511/u/unsubjugatedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:54:53] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.2.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.3.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
+[2024-05-11 23:54:53] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-11 23:54:53] INFO root fetch - processPackages [unsubjugatedz]: Remove: archive file [/home/abi/fetcher/tmp/unsubjugatedz-1.1.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - processPackages [unsubjugatedz]: Remove: archive file [/home/abi/fetcher/tmp/unsubjugatedz-2.1.tar.gz]
+[2024-05-11 23:54:53] INFO root fetch - main [MainThread]: End processing [unsubjugatedz]: success
+[2024-05-11 23:54:53] INFO root fetch - main [MainThread]: Store serial: [23164844]
