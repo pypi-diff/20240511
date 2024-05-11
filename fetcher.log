@@ -10457,3 +10457,52 @@
 [2024-05-11 07:33:38] ERROR root fetch - processPackages [cloudcheck]: Timeout during execution of pkgdiff
 [2024-05-11 07:33:38] INFO root fetch - main [MainThread]: End processing [cloudcheck] error
 [2024-05-11 07:33:38] INFO root fetch - main [MainThread]: Store serial: [23157794]
+[2024-05-11 07:35:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157794]
+[2024-05-11 07:35:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtHarmony
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vnstock3
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-spartan
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: narceinz
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: misassertionz
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyproject-fmt-rust
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyproject-fmt-rust
+[2024-05-11 07:35:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: candlestix
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 07:35:47] WARNING root fetch - processPackages [QtHarmony]: Skipping, unable to determine old version
+[2024-05-11 07:35:47] INFO root fetch - main [MainThread]: End processing [QtHarmony] error
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/c4/b7/0955691063239f68f88b1fc9b49956e91d6e67c7516220190b269e0bc7b1/pyproject_fmt_rust-1.0.0.tar.gz
+[2024-05-11 07:35:47] WARNING root fetch - processPackages [vnstock3]: Skipping, unable to determine old version
+[2024-05-11 07:35:47] INFO root fetch - main [MainThread]: End processing [vnstock3] error
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/c4/b7/0955691063239f68f88b1fc9b49956e91d6e67c7516220190b269e0bc7b1/pyproject_fmt_rust-1.0.0.tar.gz
+[2024-05-11 07:35:47] WARNING root fetch - processPackages [candlestix]: Skipping, unable to determine old version
+[2024-05-11 07:35:47] INFO root fetch - main [MainThread]: End processing [candlestix] error
+[2024-05-11 07:35:47] INFO root fetch - processPackages [narceinz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:35:47] WARNING root fetch - processPackages [misassertionz]: Skipping, unable to determine old version
+[2024-05-11 07:35:47] INFO root fetch - main [MainThread]: End processing [misassertionz] error
+[2024-05-11 07:35:47] INFO root fetch - processPackages [python-spartan]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 07:35:47] INFO root fetch - processPackages [python-spartan]: Downloading https://files.pythonhosted.org/packages/5a/72/98674e31cbfe61e12c34e6d482ec4cd4ac9e0ec339075c9a682440ce5126/python_spartan-0.2.5.tar.gz
+[2024-05-11 07:35:47] INFO root fetch - processPackages [narceinz]: Downloading https://files.pythonhosted.org/packages/13/41/25a6f8501cae74b44da985c79c477776b1375055d02daddc550e7fb2d1e9/narceinz-1.1.tar.gz
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/9a/1b/589582988956f6a7b9a7d63985781ccadedf367891c1ad3e0b538963d101/pyproject_fmt_rust-1.0.1.tar.gz
+[2024-05-11 07:35:47] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/9a/1b/589582988956f6a7b9a7d63985781ccadedf367891c1ad3e0b538963d101/pyproject_fmt_rust-1.0.1.tar.gz
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: executing diffoscope
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt_rust-1.0.0.tar.gz tmp/pyproject_fmt_rust-1.0.1.tar.gz --markdown 20240511/p/pyproject-fmt-rust/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: executing diffoscope
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt_rust-1.0.0.tar.gz tmp/pyproject_fmt_rust-1.0.1.tar.gz --markdown 20240511/p/pyproject-fmt-rust/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 07:35:48] INFO root fetch - processPackages [python-spartan]: Downloading https://files.pythonhosted.org/packages/3b/a1/42affbb931091f4c4b19ee777d8a4e4d3037ddafc63665f95e3e77a5057a/python_spartan-0.2.6.tar.gz
+[2024-05-11 07:35:48] INFO root fetch - processPackages [narceinz]: Downloading https://files.pythonhosted.org/packages/ab/89/8124da218b29ed7f5c11b0448fdab583faf5c5f0eae70770cf0c3d89b699/narceinz-2.1.tar.gz
+[2024-05-11 07:35:48] INFO root fetch - processPackages [python-spartan]: executing diffoscope
+[2024-05-11 07:35:48] INFO root fetch - processPackages [python-spartan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_spartan-0.2.5.tar.gz tmp/python_spartan-0.2.6.tar.gz --markdown 20240511/p/python-spartan/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 07:35:48] INFO root fetch - processPackages [narceinz]: executing diffoscope
+[2024-05-11 07:35:48] INFO root fetch - processPackages [narceinz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narceinz-1.1.tar.gz tmp/narceinz-2.1.tar.gz --markdown 20240511/n/narceinz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.0.tar.gz]
+[2024-05-11 07:35:48] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.1.tar.gz]
+[2024-05-11 07:35:48] INFO root fetch - main [MainThread]: End processing [pyproject-fmt-rust]: success
+[2024-05-11 07:35:48] INFO root fetch - main [MainThread]: End processing [pyproject-fmt-rust]: success
+[2024-05-11 07:35:48] INFO root fetch - processPackages [narceinz]: Remove: archive file [/home/abi/fetcher/tmp/narceinz-1.1.tar.gz]
+[2024-05-11 07:35:48] INFO root fetch - processPackages [narceinz]: Remove: archive file [/home/abi/fetcher/tmp/narceinz-2.1.tar.gz]
+[2024-05-11 07:35:48] INFO root fetch - main [MainThread]: End processing [narceinz]: success
+[2024-05-11 07:35:49] INFO root fetch - processPackages [python-spartan]: Remove: archive file [/home/abi/fetcher/tmp/python_spartan-0.2.5.tar.gz]
+[2024-05-11 07:35:49] INFO root fetch - processPackages [python-spartan]: Remove: archive file [/home/abi/fetcher/tmp/python_spartan-0.2.6.tar.gz]
+[2024-05-11 07:35:49] INFO root fetch - main [MainThread]: End processing [python-spartan]: success
+[2024-05-11 07:35:49] INFO root fetch - main [MainThread]: Store serial: [23157847]
