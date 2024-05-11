@@ -18443,3 +18443,9 @@
 [2024-05-11 16:59:20] INFO root fetch - processPackages [ai-commit-cli]: Remove: archive file [/home/abi/fetcher/tmp/ai_commit_cli-0.8.0.tar.gz]
 [2024-05-11 16:59:20] INFO root fetch - main [MainThread]: End processing [ai-commit-cli]: success
 [2024-05-11 16:59:20] INFO root fetch - main [MainThread]: Store serial: [23162120]
+[2024-05-11 17:01:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162120]
+[2024-05-11 17:01:29] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 17:01:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prologizingz
+[2024-05-11 17:01:29] WARNING root fetch - processPackages [prologizingz]: Skipping, unable to determine old version
+[2024-05-11 17:01:29] INFO root fetch - main [MainThread]: End processing [prologizingz] error
+[2024-05-11 17:01:29] INFO root fetch - main [MainThread]: Store serial: [23162124]
