@@ -15319,3 +15319,63 @@
 [2024-05-11 13:23:21] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-11 13:23:21] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-11 13:23:21] INFO root fetch - main [MainThread]: Store serial: [23160467]
+[2024-05-11 13:25:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160467]
+[2024-05-11 13:25:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wafl-llm
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torch-model-manager
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pressurizesz
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchrl-nightly
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aiotgm
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchx-nightly
+[2024-05-11 13:25:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrapeddit
+[2024-05-11 13:25:30] INFO root fetch - processPackages [torch-model-manager]: New version: [0.2.0.dev9] Old Version: [0.2.0.dev8]
+[2024-05-11 13:25:30] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 13:25:30] WARNING root fetch - processPackages [aiotgm]: Skipping, unable to determine old version
+[2024-05-11 13:25:30] INFO root fetch - main [MainThread]: End processing [aiotgm] error
+[2024-05-11 13:25:30] INFO root fetch - processPackages [torchx-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-11 13:25:30] INFO root fetch - processPackages [torchrl-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-11 13:25:31] INFO root fetch - processPackages [wafl-llm]: New version: [0.0.83] Old Version: [0.0.82]
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/52/2a/f1ee6f524ac08e001c5e946829cb5139504c9d61ce54fda6f9a90564747c/torch_model_manager-0.2.0.dev8.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [pressurizesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:25:31] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/cc/c5/81d87fa95f0ad11f5c5d412454e08a3432407555cdfcd2dba9804b07cea7/scrapeddit-0.1.2.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/4f/2c/1b1fd11c1eb29345cef72d90c551ee6ca39cb1ca91dcb13a62e39d09d3e9/torchx_nightly-2024.5.8-py3-none-any.whl
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/a5/6d/9461214af24f1d24305421c7f45896fa740108e193fceb8f3145648e07e2/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl
+[2024-05-11 13:25:31] INFO root fetch - processPackages [wafl-llm]: Downloading https://files.pythonhosted.org/packages/bb/12/421e03b6a231c1f1f0cbb6f97ead6d92c6c4d9238e1ae214dc87cbc35e25/wafl_llm-0.0.82.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [pressurizesz]: Downloading https://files.pythonhosted.org/packages/f0/19/00f39751b06fb3a3f1aca97a35a2c6b54b0de28a4672fc2ad13edc54b193/pressurizesz-1.1.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torch-model-manager]: Downloading https://files.pythonhosted.org/packages/74/72/d37fb1c20b9919d276f0f36cc47753d4cd5f9a15720240bbdb098639efdc/torch_model_manager-0.2.0.dev9.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/77/19/3475ceeec15466054f155b399d006faaf128258c35d771397c04ac9cf1e4/torchx_nightly-2024.5.9-py3-none-any.whl
+[2024-05-11 13:25:31] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/74/21/084d5b83c795173034bf8b5fc2f8e7e3d302c02d7361c8df47017b088233/scrapeddit-0.1.3.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torch-model-manager]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torch-model-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_manager-0.2.0.dev8.tar.gz tmp/torch_model_manager-0.2.0.dev9.tar.gz --markdown 20240511/t/torch-model-manager/0.2.0.dev8-0.2.0.dev9/README.md --exclude *.pyd
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip --markdown 20240511/t/torchx-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-11 13:25:31] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.2.tar.gz tmp/scrapeddit-0.1.3.tar.gz --markdown 20240511/s/scrapeddit/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 13:25:31] INFO root fetch - processPackages [wafl-llm]: Downloading https://files.pythonhosted.org/packages/77/b3/75d82b07a95d734b68c25adb421250c2fe6c13339348fbd4d950bd0341c5/wafl_llm-0.0.83-py3-none-any.whl
+[2024-05-11 13:25:31] INFO root fetch - processPackages [pressurizesz]: Downloading https://files.pythonhosted.org/packages/b1/e9/4c635f4217fa34e0ca25ca7ac7695f0eb1fb6ca4d4b9ede41e145727f39d/pressurizesz-2.1.tar.gz
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/e9/e4/1d21a71adb0d6367cd81a5f47617cabf90f99ac96a421dda991f6aeefff2/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl
+[2024-05-11 13:25:31] INFO root fetch - processPackages [wafl-llm]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [wafl-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl_llm-0.0.82.tar.gz tmp/wafl_llm-0.0.83-py3-none-any.whl.zip --markdown 20240511/w/wafl-llm/0.0.82-0.0.83/README.md --exclude *.pyd
+[2024-05-11 13:25:31] INFO root fetch - processPackages [pressurizesz]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [pressurizesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pressurizesz-1.1.tar.gz tmp/pressurizesz-2.1.tar.gz --markdown 20240511/p/pressurizesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2024-05-11 13:25:31] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20240511/t/torchrl-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-11 13:25:32] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.2.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.3.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 13:25:32] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev8.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - processPackages [torch-model-manager]: Remove: archive file [/home/abi/fetcher/tmp/torch_model_manager-0.2.0.dev9.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - main [MainThread]: End processing [torch-model-manager]: success
+[2024-05-11 13:25:32] INFO root fetch - processPackages [wafl-llm]: Remove: archive file [/home/abi/fetcher/tmp/wafl_llm-0.0.82.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - processPackages [wafl-llm]: Remove: archive file [/home/abi/fetcher/tmp/wafl_llm-0.0.83-py3-none-any.whl.zip]
+[2024-05-11 13:25:32] INFO root fetch - main [MainThread]: End processing [wafl-llm]: success
+[2024-05-11 13:25:32] INFO root fetch - processPackages [pressurizesz]: Remove: archive file [/home/abi/fetcher/tmp/pressurizesz-1.1.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - processPackages [pressurizesz]: Remove: archive file [/home/abi/fetcher/tmp/pressurizesz-2.1.tar.gz]
+[2024-05-11 13:25:32] INFO root fetch - main [MainThread]: End processing [pressurizesz]: success
+[2024-05-11 13:25:32] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.8-py3-none-any.whl.zip]
+[2024-05-11 13:25:32] INFO root fetch - processPackages [torchx-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchx_nightly-2024.5.9-py3-none-any.whl.zip]
+[2024-05-11 13:25:32] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2024-05-11 13:25:33] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.8-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 13:25:33] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 13:25:33] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2024-05-11 13:25:33] INFO root fetch - main [MainThread]: Store serial: [23160489]
