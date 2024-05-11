@@ -12979,3 +12979,25 @@
 [2024-05-11 10:52:14] INFO root fetch - processPackages [picked-group-fdr]: Remove: archive file [/home/abi/fetcher/tmp/picked_group_fdr-0.7.1-py3-none-any.whl.zip]
 [2024-05-11 10:52:14] INFO root fetch - main [MainThread]: End processing [picked-group-fdr]: success
 [2024-05-11 10:52:14] INFO root fetch - main [MainThread]: Store serial: [23159181]
+[2024-05-11 10:54:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159181]
+[2024-05-11 10:54:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: moniliasisz
+[2024-05-11 10:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wdm-wavelet
+[2024-05-11 10:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wdm-wavelet
+[2024-05-11 10:54:23] WARNING root fetch - processPackages [moniliasisz]: Skipping, unable to determine old version
+[2024-05-11 10:54:23] INFO root fetch - main [MainThread]: End processing [moniliasisz] error
+[2024-05-11 10:54:23] INFO root fetch - processPackages [wdm-wavelet]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-11 10:54:23] INFO root fetch - processPackages [wdm-wavelet]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-11 10:54:23] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/6b/2b/bb4585733531bd7009b3505b8b388efca58ee261c0e50ff06358cfc1874e/wdm_wavelet-0.1.2.tar.gz
+[2024-05-11 10:54:23] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/6b/2b/bb4585733531bd7009b3505b8b388efca58ee261c0e50ff06358cfc1874e/wdm_wavelet-0.1.2.tar.gz
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/ed/b7/21a31945bf9f50f4fb3df5a3ce8f7dfe48b67f72410d89b94da147f8208a/wdm_wavelet-0.2.0.tar.gz
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/ed/b7/21a31945bf9f50f4fb3df5a3ce8f7dfe48b67f72410d89b94da147f8208a/wdm_wavelet-0.2.0.tar.gz
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: executing diffoscope
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdm_wavelet-0.1.2.tar.gz tmp/wdm_wavelet-0.2.0.tar.gz --markdown 20240511/w/wdm-wavelet/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: executing diffoscope
+[2024-05-11 10:54:24] INFO root fetch - processPackages [wdm-wavelet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdm_wavelet-0.1.2.tar.gz tmp/wdm_wavelet-0.2.0.tar.gz --markdown 20240511/w/wdm-wavelet/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-11 10:54:25] INFO root fetch - processPackages [wdm-wavelet]: Remove: archive file [/home/abi/fetcher/tmp/wdm_wavelet-0.1.2.tar.gz]
+[2024-05-11 10:54:25] INFO root fetch - processPackages [wdm-wavelet]: Remove: archive file [/home/abi/fetcher/tmp/wdm_wavelet-0.2.0.tar.gz]
+[2024-05-11 10:54:25] INFO root fetch - main [MainThread]: End processing [wdm-wavelet]: success
+[2024-05-11 10:54:25] INFO root fetch - main [MainThread]: End processing [wdm-wavelet]: success
+[2024-05-11 10:54:25] INFO root fetch - main [MainThread]: Store serial: [23159195]
