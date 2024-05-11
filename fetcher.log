@@ -2135,3 +2135,93 @@
 [2024-05-11 02:03:53] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1715337108.tar.gz]
 [2024-05-11 02:03:53] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
 [2024-05-11 02:03:53] INFO root fetch - main [MainThread]: Store serial: [23154347]
+[2024-05-11 02:05:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154347]
+[2024-05-11 02:06:02] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sqlglot
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dem-roughness-calculator
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-databricks
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jaxkern-nightly
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: onnxscript
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cvxpy-base
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: individualizez
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tiarz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: rutificador
+[2024-05-11 02:06:02] WARNING root fetch - processPackages [individualizez]: Skipping, unable to determine old version
+[2024-05-11 02:06:02] INFO root fetch - processPackages [individualizez]: Start processing: autodynatrace
+[2024-05-11 02:06:02] INFO root fetch - main [MainThread]: End processing [individualizez] error
+[2024-05-11 02:06:02] INFO root fetch - processPackages [dem-roughness-calculator]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [pulumi-databricks]: New version: [1.9.0a1678745257] Old Version: [1.8.0a1678127428]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [onnxscript]: New version: [0.1.0.dev20240510] Old Version: [0.1.0.dev20240509]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [mct-nightly]: New version: [2.0.0.20240510.421] Old Version: [2.0.0.20240509.406]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/1f/91/a029f2344eeb56c6dee818184e323ba7e2014013c42c08396688882d5dae/pulumi_databricks-1.8.0a1678127428.tar.gz
+[2024-05-11 02:06:02] WARNING root fetch - processPackages [tiarz]: Skipping, unable to determine old version
+[2024-05-11 02:06:02] INFO root fetch - main [MainThread]: End processing [tiarz] error
+[2024-05-11 02:06:02] INFO root fetch - processPackages [rutificador]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [autodynatrace]: New version: [2.0.2] Old Version: [2.0.0]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/24/9a/2a1e48dd90227bd83c3a0ee1ced74b3a53a3cc891aab4556a47495a03fec/dem_roughness_calculator-1.2.0.tar.gz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/d7/2c/6ba9055a204b419ebfe9fff019274ec335a788977aabc6d1a53bc2a60cd5/mct-nightly-2.0.0.20240509.406.tar.gz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [cvxpy-base]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-05-11 02:06:02] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/76/55/ef13835e3e8e1570e91b3bc7235725e556f183e3222d5e7e66ac8de58ba0/jaxkern-nightly-0.dev20221221.tar.gz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/2c/76/64bccd46bc58b230ca064a7c2422b46f83d00b560723ab0bd9a9da1bb816/onnxscript-0.1.0.dev20240509.tar.gz
+[2024-05-11 02:06:02] INFO root fetch - processPackages [cvxpy-base]: Downloading https://files.pythonhosted.org/packages/06/cd/c2d7c3f4dd08221a10148d0f7402a06a4696b28f14f0464b3216c55ef2e9/cvxpy_base-1.5.0.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/c7/88/2ef11778f94b4667297b99cc8130c12efc3c858233f2b800dcbabd92161e/rutificador-0.2.8.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [autodynatrace]: Downloading https://files.pythonhosted.org/packages/60/72/03b77a0745897b21a3d41c417da15cc73d99682debe8e74239055d7ddcdc/autodynatrace-2.0.0.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [pulumi-databricks]: Downloading https://files.pythonhosted.org/packages/b1/ff/c67ee9a9d6e1f19f6530fdfef065568afe6ec72af786e3dba340b58ca4c4/pulumi_databricks-1.9.0a1678745257.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [jaxkern-nightly]: Downloading https://files.pythonhosted.org/packages/ea/b1/fbac44f07e48f8800aada2de8e9114775baf3f3d605ee80382db18a1c728/jaxkern-nightly-0.dev20221222.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [dem-roughness-calculator]: Downloading https://files.pythonhosted.org/packages/8e/76/2c8ace70efdc5193ed96ffadca816b0a724d6e17dcab6ca4eb157fb93d1c/dem_roughness_calculator-1.2.1.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [mct-nightly]: Downloading https://files.pythonhosted.org/packages/a2/94/3e2c523d36b3df41b450589a11b57ec216aed1e73e99d2e87e18503e0aa5/mct-nightly-2.0.0.20240510.421.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [pulumi-databricks]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [pulumi-databricks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_databricks-1.8.0a1678127428.tar.gz tmp/pulumi_databricks-1.9.0a1678745257.tar.gz --markdown 20240511/p/pulumi-databricks/1.8.0a1678127428-1.9.0a1678745257/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20240511/j/jaxkern-nightly/0.dev20221221-0.dev20221222/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [onnxscript]: Downloading https://files.pythonhosted.org/packages/7a/9c/723cf1b7f6ffa76c2c9e8b70f66caa9d733d11e1c9fd21d908f646bd037c/onnxscript-0.1.0.dev20240510.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [dem-roughness-calculator]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [dem-roughness-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dem_roughness_calculator-1.2.0.tar.gz tmp/dem_roughness_calculator-1.2.1.tar.gz --markdown 20240511/d/dem-roughness-calculator/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240511/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [autodynatrace]: Downloading https://files.pythonhosted.org/packages/06/4c/32d4ba15cf4b10f1d40156c2089688bba9bd6a0d3c829e86c617c80fa192/autodynatrace-2.0.2.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-2.0.0.20240509.406.tar.gz tmp/mct-nightly-2.0.0.20240510.421.tar.gz --markdown 20240511/m/mct-nightly/2.0.0.20240509.406-2.0.0.20240510.421/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [rutificador]: Downloading https://files.pythonhosted.org/packages/24/2b/416003b9a6eec30f728f1903a0d573ba330f74bad897b64bd2be8f4b1271/rutificador-0.2.9.tar.gz
+[2024-05-11 02:06:03] INFO root fetch - processPackages [onnxscript]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [cvxpy-base]: Downloading https://files.pythonhosted.org/packages/31/dd/f0cd5d53057dbb3ec80204f0873d83040364fe06cbda3735ec4282031278/cvxpy_base-1.5.1-cp39-cp39-win_amd64.whl
+[2024-05-11 02:06:03] INFO root fetch - processPackages [onnxscript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnxscript-0.1.0.dev20240509.tar.gz tmp/onnxscript-0.1.0.dev20240510.tar.gz --markdown 20240511/o/onnxscript/0.1.0.dev20240509-0.1.0.dev20240510/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [rutificador]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [rutificador]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rutificador-0.2.8.tar.gz tmp/rutificador-0.2.9.tar.gz --markdown 20240511/r/rutificador/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [autodynatrace]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [autodynatrace]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autodynatrace-2.0.0.tar.gz tmp/autodynatrace-2.0.2.tar.gz --markdown 20240511/a/autodynatrace/2.0.0-2.0.2/README.md --exclude *.pyd
+[2024-05-11 02:06:03] INFO root fetch - processPackages [cvxpy-base]: executing diffoscope
+[2024-05-11 02:06:03] INFO root fetch - processPackages [cvxpy-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpy_base-1.5.0.tar.gz tmp/cvxpy_base-1.5.1-cp39-cp39-win_amd64.whl.zip --markdown 20240511/c/cvxpy-base/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-05-11 02:06:04] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221221.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [jaxkern-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxkern-nightly-0.dev20221222.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.2.0.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [dem-roughness-calculator]: Remove: archive file [/home/abi/fetcher/tmp/dem_roughness_calculator-1.2.1.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [dem-roughness-calculator]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.8.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [rutificador]: Remove: archive file [/home/abi/fetcher/tmp/rutificador-0.2.9.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [rutificador]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [autodynatrace]: Remove: archive file [/home/abi/fetcher/tmp/autodynatrace-2.0.0.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [autodynatrace]: Remove: archive file [/home/abi/fetcher/tmp/autodynatrace-2.0.2.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [autodynatrace]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240509.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [onnxscript]: Remove: archive file [/home/abi/fetcher/tmp/onnxscript-0.1.0.dev20240510.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [onnxscript]: success
+[2024-05-11 02:06:04] INFO root fetch - processPackages [cvxpy-base]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy_base-1.5.0.tar.gz]
+[2024-05-11 02:06:04] INFO root fetch - processPackages [cvxpy-base]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy_base-1.5.1-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 02:06:04] INFO root fetch - main [MainThread]: End processing [cvxpy-base]: success
+[2024-05-11 02:06:05] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.8.0a1678127428.tar.gz]
+[2024-05-11 02:06:05] INFO root fetch - processPackages [pulumi-databricks]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_databricks-1.9.0a1678745257.tar.gz]
+[2024-05-11 02:06:05] INFO root fetch - main [MainThread]: End processing [pulumi-databricks]: success
+[2024-05-11 02:06:05] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240509.406.tar.gz]
+[2024-05-11 02:06:05] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240510.421.tar.gz]
+[2024-05-11 02:06:05] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2024-05-11 02:06:05] INFO root fetch - main [MainThread]: Store serial: [23154383]
