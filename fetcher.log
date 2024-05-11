@@ -10029,3 +10029,12 @@
 [2024-05-11 06:53:39] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-1.0.0.tar.gz]
 [2024-05-11 06:53:39] INFO root fetch - main [MainThread]: End processing [janim]: success
 [2024-05-11 06:53:39] INFO root fetch - main [MainThread]: Store serial: [23157396]
+[2024-05-11 06:55:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157396]
+[2024-05-11 06:55:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 06:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: norch
+[2024-05-11 06:55:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Compress-csv-files-gcs-bucket
+[2024-05-11 06:55:48] WARNING root fetch - processPackages [norch]: Skipping, unable to determine old version
+[2024-05-11 06:55:48] INFO root fetch - main [MainThread]: End processing [norch] error
+[2024-05-11 06:55:48] WARNING root fetch - processPackages [Compress-csv-files-gcs-bucket]: Skipping, unable to determine old version
+[2024-05-11 06:55:48] INFO root fetch - main [MainThread]: End processing [Compress-csv-files-gcs-bucket] error
+[2024-05-11 06:55:48] INFO root fetch - main [MainThread]: Store serial: [23157405]
