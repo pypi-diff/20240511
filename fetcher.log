@@ -13512,3 +13512,45 @@
 [2024-05-11 11:31:25] INFO root fetch - processPackages [pirangaz]: Remove: archive file [/home/abi/fetcher/tmp/pirangaz-2.1.tar.gz]
 [2024-05-11 11:31:25] INFO root fetch - main [MainThread]: End processing [pirangaz]: success
 [2024-05-11 11:31:25] INFO root fetch - main [MainThread]: Store serial: [23159617]
+[2024-05-11 11:33:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159617]
+[2024-05-11 11:33:33] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-11 11:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pkscreener
+[2024-05-11 11:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gnews
+[2024-05-11 11:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enwreathedz
+[2024-05-11 11:33:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pizzoo
+[2024-05-11 11:33:33] INFO root fetch - processPackages [pizzoo]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 11:33:33] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 11:33:33] INFO root fetch - processPackages [pkscreener]: New version: [0.44.20240510.358] Old Version: [0.44.20240509.357]
+[2024-05-11 11:33:34] WARNING root fetch - processPackages [enwreathedz]: Skipping, unable to determine old version
+[2024-05-11 11:33:34] INFO root fetch - main [MainThread]: End processing [enwreathedz] error
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: Downloading https://files.pythonhosted.org/packages/40/19/b39fb12df65d3591bdb1f4282f6fa63c2da665ca3dc1d8eddbebcd81f9f9/pizzoo-0.9.2.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [gnews]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-11 11:33:34] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/84/09/5cb5f7835160ea1e960f2754aab45ef69566252bd62eed8645e007d9ed22/pkscreener-0.44.20240509.357.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [gnews]: Downloading https://files.pythonhosted.org/packages/bd/6d/6c2d43b148ad02108556af85a79fac88b9fa56bcbd1084ab9afd52a2c28b/gnews-0.3.6.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: Downloading https://files.pythonhosted.org/packages/79/00/f697529af4cb9ce3c4eec53eefccfbab05e46b4f26a5aead4d92bab483fc/pizzoo-0.9.3.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pkscreener]: Downloading https://files.pythonhosted.org/packages/e9/7a/3ab5041c801147217659001aedcf12a61fdd950c2e801185e0d997b49b7e/pkscreener-0.44.20240510.358.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: executing diffoscope
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pizzoo-0.9.2.tar.gz tmp/pizzoo-0.9.3.tar.gz --markdown 20240511/p/pizzoo/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 11:33:34] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pkscreener]: executing diffoscope
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pkscreener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkscreener-0.44.20240509.357.tar.gz tmp/pkscreener-0.44.20240510.358.tar.gz --markdown 20240511/p/pkscreener/0.44.20240509.357-0.44.20240510.358/README.md --exclude *.pyd
+[2024-05-11 11:33:34] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 11:33:34] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 11:33:34] INFO root fetch - processPackages [gnews]: Downloading https://files.pythonhosted.org/packages/4a/ad/62a0e16ca53ebf8eb7ee7f71344a2aec6fdf5a7ab33c9173b6cc629a091c/gnews-0.3.7.tar.gz
+[2024-05-11 11:33:34] INFO root fetch - processPackages [gnews]: executing diffoscope
+[2024-05-11 11:33:34] INFO root fetch - processPackages [gnews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnews-0.3.6.tar.gz tmp/gnews-0.3.7.tar.gz --markdown 20240511/g/gnews/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: Remove: archive file [/home/abi/fetcher/tmp/pizzoo-0.9.2.tar.gz]
+[2024-05-11 11:33:34] INFO root fetch - processPackages [pizzoo]: Remove: archive file [/home/abi/fetcher/tmp/pizzoo-0.9.3.tar.gz]
+[2024-05-11 11:33:34] INFO root fetch - main [MainThread]: End processing [pizzoo]: success
+[2024-05-11 11:33:35] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 11:33:35] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240509.357.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - processPackages [pkscreener]: Remove: archive file [/home/abi/fetcher/tmp/pkscreener-0.44.20240510.358.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - main [MainThread]: End processing [pkscreener]: success
+[2024-05-11 11:33:35] INFO root fetch - processPackages [gnews]: Remove: archive file [/home/abi/fetcher/tmp/gnews-0.3.6.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - processPackages [gnews]: Remove: archive file [/home/abi/fetcher/tmp/gnews-0.3.7.tar.gz]
+[2024-05-11 11:33:35] INFO root fetch - main [MainThread]: End processing [gnews]: success
+[2024-05-11 11:33:35] INFO root fetch - main [MainThread]: Store serial: [23159633]
