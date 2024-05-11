@@ -20221,3 +20221,27 @@
 [2024-05-11 18:58:25] INFO root fetch - processPackages [experiment-lab]: Remove: archive file [/home/abi/fetcher/tmp/experiment_lab-1.1.8.tar.gz]
 [2024-05-11 18:58:25] INFO root fetch - main [MainThread]: End processing [experiment-lab]: success
 [2024-05-11 18:58:25] INFO root fetch - main [MainThread]: Store serial: [23162858]
+[2024-05-11 19:00:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162858]
+[2024-05-11 19:00:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 19:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: platterfulz
+[2024-05-11 19:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: seacrowd
+[2024-05-11 19:00:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rest-client-micro
+[2024-05-11 19:00:34] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.6] Old Version: [0.3.5]
+[2024-05-11 19:00:34] INFO root fetch - processPackages [seacrowd]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 19:00:34] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/43/5d/af31d2438ceb56ecc2b9b50afc38caf4fdcb4d7960db8032b381460d517b/rest_client_micro-0.3.5.tar.gz
+[2024-05-11 19:00:34] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/1f/ba/346de6683a7e18210cd836f5cfbcd169e5daa3d6a3cd013d360925353530/seacrowd-0.0.8.tar.gz
+[2024-05-11 19:00:34] WARNING root fetch - processPackages [platterfulz]: Skipping, unable to determine old version
+[2024-05-11 19:00:34] INFO root fetch - main [MainThread]: End processing [platterfulz] error
+[2024-05-11 19:00:35] INFO root fetch - processPackages [seacrowd]: Downloading https://files.pythonhosted.org/packages/db/e5/e823c1dd15f44fad1df7f17a4bc789afab1d6f35bdcec84ae1dcd8010936/seacrowd-0.0.9.tar.gz
+[2024-05-11 19:00:35] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/e5/10/a8a20d40c62e15d437cdaf235b91c05c6b7e0050d110529c068b948b9a99/rest_client_micro-0.3.6.tar.gz
+[2024-05-11 19:00:35] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 19:00:35] INFO root fetch - processPackages [seacrowd]: executing diffoscope
+[2024-05-11 19:00:35] INFO root fetch - processPackages [seacrowd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seacrowd-0.0.8.tar.gz tmp/seacrowd-0.0.9.tar.gz --markdown 20240511/s/seacrowd/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 19:00:35] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.5.tar.gz tmp/rest_client_micro-0.3.6.tar.gz --markdown 20240511/r/rest-client-micro/0.3.5-0.3.6/README.md --exclude *.pyd
+[2024-05-11 19:00:35] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.5.tar.gz]
+[2024-05-11 19:00:35] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.6.tar.gz]
+[2024-05-11 19:00:35] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 19:00:36] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.8.tar.gz]
+[2024-05-11 19:00:36] INFO root fetch - processPackages [seacrowd]: Remove: archive file [/home/abi/fetcher/tmp/seacrowd-0.0.9.tar.gz]
+[2024-05-11 19:00:36] INFO root fetch - main [MainThread]: End processing [seacrowd]: success
+[2024-05-11 19:00:36] INFO root fetch - main [MainThread]: Store serial: [23162868]
