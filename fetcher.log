@@ -21101,3 +21101,52 @@
 [2024-05-11 20:01:52] INFO root fetch - processPackages [moschitta-routing]: Remove: archive file [/home/abi/fetcher/tmp/moschitta_routing-0.1.1.tar.gz]
 [2024-05-11 20:01:52] INFO root fetch - main [MainThread]: End processing [moschitta-routing]: success
 [2024-05-11 20:01:52] INFO root fetch - main [MainThread]: Store serial: [23163303]
+[2024-05-11 20:03:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163303]
+[2024-05-11 20:04:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: brainchain
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: moschitta-auth
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbmg
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: moschitta-serialization
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dbmg
+[2024-05-11 20:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tamarindusz
+[2024-05-11 20:04:01] WARNING root fetch - processPackages [moschitta-auth]: Skipping, unable to determine old version
+[2024-05-11 20:04:01] INFO root fetch - main [MainThread]: End processing [moschitta-auth] error
+[2024-05-11 20:04:01] INFO root fetch - processPackages [dbmg]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 20:04:01] INFO root fetch - processPackages [dbmg]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 20:04:01] INFO root fetch - processPackages [moschitta-serialization]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 20:04:01] INFO root fetch - processPackages [brainchain]: New version: [0.6.6] Old Version: [0.6.5]
+[2024-05-11 20:04:01] INFO root fetch - processPackages [tamarindusz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: Downloading https://files.pythonhosted.org/packages/58/76/f980dac6b1619dc4277c370a4452d6f78ecfa551962678952486f82a587e/dbmg-0.1.0.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: Downloading https://files.pythonhosted.org/packages/58/76/f980dac6b1619dc4277c370a4452d6f78ecfa551962678952486f82a587e/dbmg-0.1.0.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [moschitta-serialization]: Downloading https://files.pythonhosted.org/packages/4e/1c/9ce48b9dc69ea26e6f7977fa1d6cb355bcdab18968aed07bee2f2e414d2b/moschitta_serialization-0.1.0.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [brainchain]: Downloading https://files.pythonhosted.org/packages/df/39/bd47e322578c38f9e1c3091887d9bc43e02c7e6393b7cb1b96d954e51f70/brainchain-0.6.5.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [tamarindusz]: Downloading https://files.pythonhosted.org/packages/b6/08/865a5eaff14e2ac768aa5b7b51f29acf7455ca231d80ca8ea4da51d16b9c/tamarindusz-1.1.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: Downloading https://files.pythonhosted.org/packages/01/6c/29a467a88931557b7ee0604333a4fb2b2c9c43a318bf21b752215e07ff52/dbmg-0.2.0.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: Downloading https://files.pythonhosted.org/packages/01/6c/29a467a88931557b7ee0604333a4fb2b2c9c43a318bf21b752215e07ff52/dbmg-0.2.0.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [moschitta-serialization]: Downloading https://files.pythonhosted.org/packages/2b/ef/4238f3f7f11069e676fa82dfc627d5a00cb6de96ccffcec53e93e0018ef0/moschitta_serialization-0.1.1.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [brainchain]: Downloading https://files.pythonhosted.org/packages/f5/7a/12041c3a72a43e0952cd511d26578da09f651189be377ef8dfceea39a991/brainchain-0.6.6.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [tamarindusz]: Downloading https://files.pythonhosted.org/packages/e6/d3/cbfacdd4cc29b129ed924a521ce8a85fe48900fd141ba3f6b5f291a23058/tamarindusz-2.1.tar.gz
+[2024-05-11 20:04:02] INFO root fetch - processPackages [moschitta-serialization]: executing diffoscope
+[2024-05-11 20:04:02] INFO root fetch - processPackages [moschitta-serialization]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moschitta_serialization-0.1.0.tar.gz tmp/moschitta_serialization-0.1.1.tar.gz --markdown 20240511/m/moschitta-serialization/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 20:04:02] INFO root fetch - processPackages [brainchain]: executing diffoscope
+[2024-05-11 20:04:02] INFO root fetch - processPackages [brainchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainchain-0.6.5.tar.gz tmp/brainchain-0.6.6.tar.gz --markdown 20240511/b/brainchain/0.6.5-0.6.6/README.md --exclude *.pyd
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: executing diffoscope
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbmg-0.1.0.tar.gz tmp/dbmg-0.2.0.tar.gz --markdown 20240511/d/dbmg/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: executing diffoscope
+[2024-05-11 20:04:02] INFO root fetch - processPackages [dbmg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbmg-0.1.0.tar.gz tmp/dbmg-0.2.0.tar.gz --markdown 20240511/d/dbmg/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 20:04:02] INFO root fetch - processPackages [tamarindusz]: executing diffoscope
+[2024-05-11 20:04:02] INFO root fetch - processPackages [tamarindusz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tamarindusz-1.1.tar.gz tmp/tamarindusz-2.1.tar.gz --markdown 20240511/t/tamarindusz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:04:03] INFO root fetch - processPackages [dbmg]: Remove: archive file [/home/abi/fetcher/tmp/dbmg-0.1.0.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - processPackages [dbmg]: Remove: archive file [/home/abi/fetcher/tmp/dbmg-0.2.0.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [dbmg]: success
+[2024-05-11 20:04:03] INFO root fetch - processPackages [brainchain]: Remove: archive file [/home/abi/fetcher/tmp/brainchain-0.6.5.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - processPackages [brainchain]: Remove: archive file [/home/abi/fetcher/tmp/brainchain-0.6.6.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [brainchain]: success
+[2024-05-11 20:04:03] INFO root fetch - processPackages [moschitta-serialization]: Remove: archive file [/home/abi/fetcher/tmp/moschitta_serialization-0.1.0.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - processPackages [moschitta-serialization]: Remove: archive file [/home/abi/fetcher/tmp/moschitta_serialization-0.1.1.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [moschitta-serialization]: success
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [dbmg]: success
+[2024-05-11 20:04:03] INFO root fetch - processPackages [tamarindusz]: Remove: archive file [/home/abi/fetcher/tmp/tamarindusz-1.1.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - processPackages [tamarindusz]: Remove: archive file [/home/abi/fetcher/tmp/tamarindusz-2.1.tar.gz]
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [tamarindusz]: success
+[2024-05-11 20:04:03] INFO root fetch - main [MainThread]: Store serial: [23163331]
