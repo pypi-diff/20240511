@@ -21360,3 +21360,63 @@
 [2024-05-11 20:14:55] INFO root fetch - processPackages [flashcam]: Remove: archive file [/home/abi/fetcher/tmp/flashcam-1.9.3.tar.gz]
 [2024-05-11 20:14:55] INFO root fetch - main [MainThread]: End processing [flashcam]: success
 [2024-05-11 20:14:55] INFO root fetch - main [MainThread]: Store serial: [23163418]
+[2024-05-11 20:16:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163418]
+[2024-05-11 20:17:04] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-client-micro
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: strawberry-graphql
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: todayishz
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.cdk-enterprise-iac
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: movingpandas
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: glook
+[2024-05-11 20:17:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyproject-fmt
+[2024-05-11 20:17:05] INFO root fetch - processPackages [glook]: New version: [1.2.0b1] Old Version: [1.1.9b1]
+[2024-05-11 20:17:05] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-11 20:17:05] INFO root fetch - processPackages [pyproject-fmt]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-11 20:17:05] INFO root fetch - processPackages [strawberry-graphql]: New version: [0.99.3] Old Version: [0.99.2]
+[2024-05-11 20:17:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-11 20:17:05] WARNING root fetch - processPackages [todayishz]: Skipping, unable to determine old version
+[2024-05-11 20:17:05] INFO root fetch - main [MainThread]: End processing [todayishz] error
+[2024-05-11 20:17:05] INFO root fetch - processPackages [movingpandas]: New version: [0.9rc3] Old Version: [0.9rc2]
+[2024-05-11 20:17:05] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/a7/f8/5129e355f51f97901d44a23a73b036bccf636092b06d6e45e86c25cf415c/pyproject_fmt-2.0.1.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/7e/13/7c3c9e34168af667284c90925f808d2d2cec474f02afc2623b2658885c5d/glook-1.1.9b1.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/e5/10/a8a20d40c62e15d437cdaf235b91c05c6b7e0050d110529c068b948b9a99/rest_client_micro-0.3.6.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/26/1b/2d98082d5a50de544ac5b0df408479fcedd8e3cbc7361e0cb0e9f362a0af/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/dd/38/4efb20ccf1f04c0901e6d5de6eb222b8a9e74692ae34f6f4618b0f0cc8b3/strawberry-graphql-0.99.2.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [movingpandas]: Downloading https://files.pythonhosted.org/packages/1d/d2/3504611926d9edf4bc48973591f0ca895e3966f904dbd158d7d2fb8b6959/movingpandas-0.9rc2.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [glook]: Downloading https://files.pythonhosted.org/packages/1a/aa/968b2341230271908b7dfea52d19e5fb4e84169c66a517b9dc728fbef3f1/glook-1.2.0b1.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [strawberry-graphql]: Downloading https://files.pythonhosted.org/packages/e8/62/3a58fe3751e9dc961f72fbe825e32f12e9cd544dafd44bc5fdddb290b881/strawberry-graphql-0.99.3.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/bd/0c/c05d41c970bef8696d99e076bc4e8d51a1bfb00200ad0bb84cc0a8bb394f/rest_client_micro-0.3.7.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/08/f9/e87871e7524420f46965192fac39e0d042522cd1e2dcb9bd8a4481051836/pyproject_fmt-2.0.2.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [glook]: executing diffoscope
+[2024-05-11 20:17:05] INFO root fetch - processPackages [glook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glook-1.1.9b1.tar.gz tmp/glook-1.2.0b1.tar.gz --markdown 20240511/g/glook/1.1.9b1-1.2.0b1/README.md --exclude *.pyd
+[2024-05-11 20:17:05] INFO root fetch - processPackages [strawberry-graphql]: executing diffoscope
+[2024-05-11 20:17:05] INFO root fetch - processPackages [strawberry-graphql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry-graphql-0.99.2.tar.gz tmp/strawberry-graphql-0.99.3.tar.gz --markdown 20240511/s/strawberry-graphql/0.99.2-0.99.3/README.md --exclude *.pyd
+[2024-05-11 20:17:05] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 20:17:05] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.6.tar.gz tmp/rest_client_micro-0.3.7.tar.gz --markdown 20240511/r/rest-client-micro/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-11 20:17:05] INFO root fetch - processPackages [pyproject-fmt]: executing diffoscope
+[2024-05-11 20:17:05] INFO root fetch - processPackages [pyproject-fmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt-2.0.1.tar.gz tmp/pyproject_fmt-2.0.2.tar.gz --markdown 20240511/p/pyproject-fmt/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-11 20:17:05] INFO root fetch - processPackages [movingpandas]: Downloading https://files.pythonhosted.org/packages/35/0b/a148f8b99efb7a95ed99aa84405bed86a3e86c30d8c889c1aa65dfb629ad/movingpandas-0.9rc3.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Downloading https://files.pythonhosted.org/packages/68/b7/1bc76974269d07601c13aaa5489dbaf5bfced52da0839a380231163281b2/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz
+[2024-05-11 20:17:05] INFO root fetch - processPackages [movingpandas]: executing diffoscope
+[2024-05-11 20:17:05] INFO root fetch - processPackages [movingpandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/movingpandas-0.9rc2.tar.gz tmp/movingpandas-0.9rc3.tar.gz --markdown 20240511/m/movingpandas/0.9rc2-0.9rc3/README.md --exclude *.pyd
+[2024-05-11 20:17:06] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2024-05-11 20:17:06] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20240511/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-11 20:17:06] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.6.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.7.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 20:17:06] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.1.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.2.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - main [MainThread]: End processing [pyproject-fmt]: success
+[2024-05-11 20:17:06] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.1.9b1.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - processPackages [glook]: Remove: archive file [/home/abi/fetcher/tmp/glook-1.2.0b1.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - main [MainThread]: End processing [glook]: success
+[2024-05-11 20:17:06] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.2.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
+[2024-05-11 20:17:06] INFO root fetch - processPackages [movingpandas]: Remove: archive file [/home/abi/fetcher/tmp/movingpandas-0.9rc2.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - processPackages [movingpandas]: Remove: archive file [/home/abi/fetcher/tmp/movingpandas-0.9rc3.tar.gz]
+[2024-05-11 20:17:06] INFO root fetch - main [MainThread]: End processing [movingpandas]: success
+[2024-05-11 20:17:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz]
+[2024-05-11 20:17:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
+[2024-05-11 20:17:07] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2024-05-11 20:17:07] INFO root fetch - main [MainThread]: Store serial: [23163439]
