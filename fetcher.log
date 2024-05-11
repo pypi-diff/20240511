@@ -7718,3 +7718,41 @@
 [2024-05-11 04:02:46] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
 [2024-05-11 04:02:46] INFO root fetch - main [MainThread]: End processing [dektools]: success
 [2024-05-11 04:02:46] INFO root fetch - main [MainThread]: Store serial: [23156493]
+[2024-05-11 04:04:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156493]
+[2024-05-11 04:04:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 04:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secretflow-doctools
+[2024-05-11 04:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anthophytez
+[2024-05-11 04:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pymycobot
+[2024-05-11 04:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: largebrainedz
+[2024-05-11 04:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cyberdrop-dl
+[2024-05-11 04:04:55] INFO root fetch - processPackages [secretflow-doctools]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 04:04:55] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.1] Old Version: [5.2.9]
+[2024-05-11 04:04:55] WARNING root fetch - processPackages [anthophytez]: Skipping, unable to determine old version
+[2024-05-11 04:04:55] INFO root fetch - main [MainThread]: End processing [anthophytez] error
+[2024-05-11 04:04:55] INFO root fetch - processPackages [largebrainedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:04:55] INFO root fetch - processPackages [secretflow-doctools]: Downloading https://files.pythonhosted.org/packages/8a/c8/e2750554992a4041610b50a35f8c903de6d7e07a271722f3a5d3c5fad667/secretflow_doctools-0.7.0.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [pymycobot]: New version: [3.4.7b1] Old Version: [3.4.6b1]
+[2024-05-11 04:04:55] WARNING root fetch - processPackages [secretflow-doctools]: Skipping package: exceeds size limit 50069976>=10485760
+[2024-05-11 04:04:55] INFO root fetch - main [MainThread]: End processing [secretflow-doctools] error
+[2024-05-11 04:04:55] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/a7/7a/092028b397178a9db79ef8faa65d75bf211ee19118810447fad4b661a628/cyberdrop_dl-5.2.9.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [largebrainedz]: Downloading https://files.pythonhosted.org/packages/b8/56/ba6649c31906e92527674562e9d176bc3e5114dc4351cf77c3a9226ce685/largebrainedz-1.1.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [pymycobot]: Downloading https://files.pythonhosted.org/packages/05/44/0c303b725d47e5582bc5678bba06d364109c7a3307c82e6c4d676db180e9/pymycobot-3.4.6b1.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/55/48/8d709dbba05d851e934f130027e017019926fc481d36ea0af47291c3619b/cyberdrop_dl-5.3.1.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [largebrainedz]: Downloading https://files.pythonhosted.org/packages/9c/dd/6aa12ac71e4b7b1f1a09f59c4aa67a947c84ea121574cb641769e35b8633/largebrainedz-2.1.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [pymycobot]: Downloading https://files.pythonhosted.org/packages/62/56/b1c82e1acf3bc99705ce9c26810578c8325f045fbf1777650d92800aee45/pymycobot-3.4.7b1.tar.gz
+[2024-05-11 04:04:55] INFO root fetch - processPackages [largebrainedz]: executing diffoscope
+[2024-05-11 04:04:55] INFO root fetch - processPackages [largebrainedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/largebrainedz-1.1.tar.gz tmp/largebrainedz-2.1.tar.gz --markdown 20240511/l/largebrainedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:04:55] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-11 04:04:55] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.2.9.tar.gz tmp/cyberdrop_dl-5.3.1.tar.gz --markdown 20240511/c/cyberdrop-dl/5.2.9-5.3.1/README.md --exclude *.pyd
+[2024-05-11 04:04:55] INFO root fetch - processPackages [pymycobot]: executing diffoscope
+[2024-05-11 04:04:55] INFO root fetch - processPackages [pymycobot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymycobot-3.4.6b1.tar.gz tmp/pymycobot-3.4.7b1.tar.gz --markdown 20240511/p/pymycobot/3.4.6b1-3.4.7b1/README.md --exclude *.pyd
+[2024-05-11 04:04:56] INFO root fetch - processPackages [largebrainedz]: Remove: archive file [/home/abi/fetcher/tmp/largebrainedz-1.1.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - processPackages [largebrainedz]: Remove: archive file [/home/abi/fetcher/tmp/largebrainedz-2.1.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - main [MainThread]: End processing [largebrainedz]: success
+[2024-05-11 04:04:56] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.2.9.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.1.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-11 04:04:56] INFO root fetch - processPackages [pymycobot]: Remove: archive file [/home/abi/fetcher/tmp/pymycobot-3.4.6b1.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - processPackages [pymycobot]: Remove: archive file [/home/abi/fetcher/tmp/pymycobot-3.4.7b1.tar.gz]
+[2024-05-11 04:04:56] INFO root fetch - main [MainThread]: End processing [pymycobot]: success
+[2024-05-11 04:04:56] INFO root fetch - main [MainThread]: Store serial: [23156511]
