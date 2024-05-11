@@ -9858,3 +9858,36 @@
 [2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: Remove: archive file [/home/abi/fetcher/tmp/mischievousnessz-2.1.tar.gz]
 [2024-05-11 06:42:46] INFO root fetch - main [MainThread]: End processing [mischievousnessz]: success
 [2024-05-11 06:42:46] INFO root fetch - main [MainThread]: Store serial: [23157320]
+[2024-05-11 06:44:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157320]
+[2024-05-11 06:44:55] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bisos.facter
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: portal-dil
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cubetools
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-audio-plugin-simple
+[2024-05-11 06:44:55] INFO root fetch - processPackages [bisos.facter]: New version: [0.5] Old Version: [0.4]
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ovos-audio-plugin-simple]: New version: [0.0.2a6] Old Version: [0.0.2a4]
+[2024-05-11 06:44:55] INFO root fetch - processPackages [cubetools]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-05-11 06:44:55] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/de/a1/619c8fc0f655a8c85cbb8dd703f76a2c580cb35b7e5e7418a5c7f4167042/bisos.facter-0.4.tar.gz
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/ff/0a/7280985fef2b5ef8deed94ccff95438c2c9575b3f16ab52affe30b330386/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl
+[2024-05-11 06:44:55] INFO root fetch - processPackages [cubetools]: Downloading https://files.pythonhosted.org/packages/fa/e7/e5529b87835ebfbfb84909a881e73f1a81cb33d652515564ba1fa8621251/cubetools-0.7.6.tar.gz
+[2024-05-11 06:44:55] WARNING root fetch - processPackages [portal-dil]: Skipping, unable to determine old version
+[2024-05-11 06:44:55] INFO root fetch - main [MainThread]: End processing [portal-dil] error
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/a6/55/4633eedad06f8d3e6df1aacedb64c3e6bf356850ee50d9bdfa18ff81f24e/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl
+[2024-05-11 06:44:55] INFO root fetch - processPackages [cubetools]: Downloading https://files.pythonhosted.org/packages/82/49/92b736a94596fb3c61e96066fcae275d661e93608ae0c549c72fc15927e2/cubetools-0.7.7.tar.gz
+[2024-05-11 06:44:55] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/22/74/12634fa95cc198155455a3496b687b818f26118257ae8d82f085c2ddbb55/bisos.facter-0.5.tar.gz
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ovos-audio-plugin-simple]: executing diffoscope
+[2024-05-11 06:44:55] INFO root fetch - processPackages [ovos-audio-plugin-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl.zip tmp/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl.zip --markdown 20240511/o/ovos-audio-plugin-simple/0.0.2a4-0.0.2a6/README.md --exclude *.pyd
+[2024-05-11 06:44:55] INFO root fetch - processPackages [cubetools]: executing diffoscope
+[2024-05-11 06:44:55] INFO root fetch - processPackages [cubetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubetools-0.7.6.tar.gz tmp/cubetools-0.7.7.tar.gz --markdown 20240511/c/cubetools/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-05-11 06:44:55] INFO root fetch - processPackages [bisos.facter]: executing diffoscope
+[2024-05-11 06:44:55] INFO root fetch - processPackages [bisos.facter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.facter-0.4.tar.gz tmp/bisos.facter-0.5.tar.gz --markdown 20240511/b/bisos.facter/0.4-0.5/README.md --exclude *.pyd
+[2024-05-11 06:44:56] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl.zip]
+[2024-05-11 06:44:56] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl.zip]
+[2024-05-11 06:44:56] INFO root fetch - main [MainThread]: End processing [ovos-audio-plugin-simple]: success
+[2024-05-11 06:44:56] INFO root fetch - processPackages [cubetools]: Remove: archive file [/home/abi/fetcher/tmp/cubetools-0.7.6.tar.gz]
+[2024-05-11 06:44:56] INFO root fetch - processPackages [cubetools]: Remove: archive file [/home/abi/fetcher/tmp/cubetools-0.7.7.tar.gz]
+[2024-05-11 06:44:56] INFO root fetch - main [MainThread]: End processing [cubetools]: success
+[2024-05-11 06:44:56] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.4.tar.gz]
+[2024-05-11 06:44:56] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.5.tar.gz]
+[2024-05-11 06:44:56] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
+[2024-05-11 06:44:56] INFO root fetch - main [MainThread]: Store serial: [23157334]
