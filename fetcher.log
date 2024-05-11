@@ -15083,3 +15083,27 @@
 [2024-05-11 13:05:43] INFO root fetch - processPackages [pddl-embeddings]: Remove: archive file [/home/abi/fetcher/tmp/pddl_embeddings-0.0.2.tar.gz]
 [2024-05-11 13:05:43] INFO root fetch - main [MainThread]: End processing [pddl-embeddings]: success
 [2024-05-11 13:05:43] INFO root fetch - main [MainThread]: Store serial: [23160372]
+[2024-05-11 13:07:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160372]
+[2024-05-11 13:07:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 13:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: maidhoodz
+[2024-05-11 13:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: textual
+[2024-05-11 13:07:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: asknews
+[2024-05-11 13:07:53] INFO root fetch - processPackages [asknews]: New version: [0.6.0] Old Version: [0.5.5]
+[2024-05-11 13:07:53] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/7f/e0/0de1bf37b4cf7053520077c02f4c49fbf14141ec2392bd1434d58fd19b29/asknews-0.5.5-py3-none-any.whl
+[2024-05-11 13:07:53] WARNING root fetch - processPackages [maidhoodz]: Skipping, unable to determine old version
+[2024-05-11 13:07:53] INFO root fetch - main [MainThread]: End processing [maidhoodz] error
+[2024-05-11 13:07:53] INFO root fetch - processPackages [textual]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-11 13:07:53] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/35/f7/bbdc64d473592b3015369cebeffc1dfb9a56ccf6a6f3ccba2c6a7313aff4/asknews-0.6.0-py3-none-any.whl
+[2024-05-11 13:07:53] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/17/d2/002affba91d339187f5699c26fecc3fa3bf966f17c5d08bb696c724b63ee/textual-0.9.0.tar.gz
+[2024-05-11 13:07:53] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-05-11 13:07:53] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.5.5-py3-none-any.whl.zip tmp/asknews-0.6.0-py3-none-any.whl.zip --markdown 20240511/a/asknews/0.5.5-0.6.0/README.md --exclude *.pyd
+[2024-05-11 13:07:53] INFO root fetch - processPackages [textual]: Downloading https://files.pythonhosted.org/packages/0e/7d/2155bf024c3bdf1dc6365e109a16bab46098e032e62666565176ebc9f84a/textual-0.9.1.tar.gz
+[2024-05-11 13:07:54] INFO root fetch - processPackages [textual]: executing diffoscope
+[2024-05-11 13:07:54] INFO root fetch - processPackages [textual]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/textual-0.9.0.tar.gz tmp/textual-0.9.1.tar.gz --markdown 20240511/t/textual/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-11 13:07:54] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.5-py3-none-any.whl.zip]
+[2024-05-11 13:07:54] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.0-py3-none-any.whl.zip]
+[2024-05-11 13:07:54] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-05-11 13:07:55] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.0.tar.gz]
+[2024-05-11 13:07:55] INFO root fetch - processPackages [textual]: Remove: archive file [/home/abi/fetcher/tmp/textual-0.9.1.tar.gz]
+[2024-05-11 13:07:55] INFO root fetch - main [MainThread]: End processing [textual]: success
+[2024-05-11 13:07:55] INFO root fetch - main [MainThread]: Store serial: [23160381]
