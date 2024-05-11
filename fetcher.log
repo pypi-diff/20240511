@@ -16541,3 +16541,15 @@
 [2024-05-11 14:48:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.3.tar.gz]
 [2024-05-11 14:48:24] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
 [2024-05-11 14:48:24] INFO root fetch - main [MainThread]: Store serial: [23161146]
+[2024-05-11 14:50:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161146]
+[2024-05-11 14:50:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 14:50:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: athigeo
+[2024-05-11 14:50:33] INFO root fetch - processPackages [athigeo]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 14:50:33] INFO root fetch - processPackages [athigeo]: Downloading https://files.pythonhosted.org/packages/46/34/156ea71f71caf5d9bdc3ab50d3298b2ede29f659ff7c36ffc0c7d60500f9/athigeo-0.0.3.tar.gz
+[2024-05-11 14:50:33] INFO root fetch - processPackages [athigeo]: Downloading https://files.pythonhosted.org/packages/14/77/e9085a21ec356ac8a79de8ef83830d4dc8e690715dcd386387d600812cdb/athigeo-0.0.4.tar.gz
+[2024-05-11 14:50:33] INFO root fetch - processPackages [athigeo]: executing diffoscope
+[2024-05-11 14:50:33] INFO root fetch - processPackages [athigeo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/athigeo-0.0.3.tar.gz tmp/athigeo-0.0.4.tar.gz --markdown 20240511/a/athigeo/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 14:50:34] INFO root fetch - processPackages [athigeo]: Remove: archive file [/home/abi/fetcher/tmp/athigeo-0.0.3.tar.gz]
+[2024-05-11 14:50:34] INFO root fetch - processPackages [athigeo]: Remove: archive file [/home/abi/fetcher/tmp/athigeo-0.0.4.tar.gz]
+[2024-05-11 14:50:34] INFO root fetch - main [MainThread]: End processing [athigeo]: success
+[2024-05-11 14:50:34] INFO root fetch - main [MainThread]: Store serial: [23161149]
