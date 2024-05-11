@@ -22207,3 +22207,15 @@
 [2024-05-11 21:13:37] INFO root fetch - processPackages [spnkr]: Remove: archive file [/home/abi/fetcher/tmp/spnkr-0.8.0.tar.gz]
 [2024-05-11 21:13:37] INFO root fetch - main [MainThread]: End processing [spnkr]: success
 [2024-05-11 21:13:37] INFO root fetch - main [MainThread]: Store serial: [23163891]
+[2024-05-11 21:15:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163891]
+[2024-05-11 21:15:46] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 21:15:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kk-plugins
+[2024-05-11 21:15:46] INFO root fetch - processPackages [kk-plugins]: New version: [0.1.240512.1] Old Version: [0.1.240322.1]
+[2024-05-11 21:15:46] INFO root fetch - processPackages [kk-plugins]: Downloading https://files.pythonhosted.org/packages/73/48/493ac68b849d274a1aa29c495bc1c79c45765b2a909382a820421369eeb5/kk-plugins-0.1.240322.1.tar.gz
+[2024-05-11 21:15:46] INFO root fetch - processPackages [kk-plugins]: Downloading https://files.pythonhosted.org/packages/5f/8f/dd479e2b0a955911f56e617d86f269bf43748f9e586130d05abdba0ee0c9/kk_plugins-0.1.240512.1.tar.gz
+[2024-05-11 21:15:47] INFO root fetch - processPackages [kk-plugins]: executing diffoscope
+[2024-05-11 21:15:47] INFO root fetch - processPackages [kk-plugins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kk-plugins-0.1.240322.1.tar.gz tmp/kk_plugins-0.1.240512.1.tar.gz --markdown 20240511/k/kk-plugins/0.1.240322.1-0.1.240512.1/README.md --exclude *.pyd
+[2024-05-11 21:15:47] INFO root fetch - processPackages [kk-plugins]: Remove: archive file [/home/abi/fetcher/tmp/kk-plugins-0.1.240322.1.tar.gz]
+[2024-05-11 21:15:47] INFO root fetch - processPackages [kk-plugins]: Remove: archive file [/home/abi/fetcher/tmp/kk_plugins-0.1.240512.1.tar.gz]
+[2024-05-11 21:15:47] INFO root fetch - main [MainThread]: End processing [kk-plugins]: success
+[2024-05-11 21:15:47] INFO root fetch - main [MainThread]: Store serial: [23163895]
