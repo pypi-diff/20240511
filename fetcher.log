@@ -9439,3 +9439,42 @@
 [2024-05-11 06:03:09] WARNING root fetch - processPackages [etherialisedz]: Skipping, unable to determine old version
 [2024-05-11 06:03:09] INFO root fetch - main [MainThread]: End processing [etherialisedz] error
 [2024-05-11 06:03:09] INFO root fetch - main [MainThread]: Store serial: [23157161]
+[2024-05-11 06:05:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157161]
+[2024-05-11 06:05:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 06:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypulp
+[2024-05-11 06:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meningocephalitisz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Pynapse
+[2024-05-11 06:05:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chromedriver-binary
+[2024-05-11 06:05:18] INFO root fetch - processPackages [Pynapse]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 06:05:18] INFO root fetch - processPackages [chromedriver-binary]: New version: [99.0.4844.51.0] Old Version: [99.0.4844.35.0]
+[2024-05-11 06:05:18] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/08/19/4e0570fbdd438c5968c707612d4b76e6672c753e6ec3971d9cf983944f77/pynapse-0.1.0.tar.gz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [mypulp]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 06:05:18] INFO root fetch - processPackages [meningocephalitisz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:05:18] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/50/a2/f36a3d2f2aa37ccc496e5f81d594f06e3965b836712da14b4b01d2f05ca8/chromedriver-binary-99.0.4844.35.0.tar.gz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [mypulp]: Downloading https://files.pythonhosted.org/packages/20/d1/e04d6e5a02a83953b16137db79d1d914fc547fbd6586c28165bda1b6eec4/mypulp-0.0.8.zip
+[2024-05-11 06:05:18] INFO root fetch - processPackages [meningocephalitisz]: Downloading https://files.pythonhosted.org/packages/86/31/49193ff1e2a321b947279b21918e57fe0bfa2f7743c1a071c0eba7986428/meningocephalitisz-1.1.tar.gz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/ac/13/86eacc58cb6b3376b332d7bfb69aad493cbff48cc918ac91beb79889ed0e/pynapse-0.2.0.tar.gz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [chromedriver-binary]: Downloading https://files.pythonhosted.org/packages/d9/eb/3bd2a308b9e6f7441fbed7b759578bddade2cb983bb4ffe7fc3777863314/chromedriver-binary-99.0.4844.51.0.tar.gz
+[2024-05-11 06:05:18] INFO root fetch - processPackages [Pynapse]: executing diffoscope
+[2024-05-11 06:05:18] INFO root fetch - processPackages [Pynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynapse-0.1.0.tar.gz tmp/pynapse-0.2.0.tar.gz --markdown 20240511/P/Pynapse/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 06:05:18] INFO root fetch - processPackages [chromedriver-binary]: executing diffoscope
+[2024-05-11 06:05:18] INFO root fetch - processPackages [chromedriver-binary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chromedriver-binary-99.0.4844.35.0.tar.gz tmp/chromedriver-binary-99.0.4844.51.0.tar.gz --markdown 20240511/c/chromedriver-binary/99.0.4844.35.0-99.0.4844.51.0/README.md --exclude *.pyd
+[2024-05-11 06:05:18] INFO root fetch - processPackages [meningocephalitisz]: Downloading https://files.pythonhosted.org/packages/7a/c3/18a70fb8a13540cfac02ab9ae59f1e276901d111299b1413c3c033eec930/meningocephalitisz-2.1.tar.gz
+[2024-05-11 06:05:19] INFO root fetch - processPackages [mypulp]: Downloading https://files.pythonhosted.org/packages/2b/0e/debda11a5dd39181428e3cb5b6d350e7838f8f72f3efdacf46093bc1cec5/mypulp-0.0.9.zip
+[2024-05-11 06:05:19] INFO root fetch - processPackages [meningocephalitisz]: executing diffoscope
+[2024-05-11 06:05:19] INFO root fetch - processPackages [meningocephalitisz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meningocephalitisz-1.1.tar.gz tmp/meningocephalitisz-2.1.tar.gz --markdown 20240511/m/meningocephalitisz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:05:19] INFO root fetch - processPackages [mypulp]: executing diffoscope
+[2024-05-11 06:05:19] INFO root fetch - processPackages [mypulp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypulp-0.0.8.zip tmp/mypulp-0.0.9.zip --markdown 20240511/m/mypulp/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 06:05:19] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.35.0.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - processPackages [chromedriver-binary]: Remove: archive file [/home/abi/fetcher/tmp/chromedriver-binary-99.0.4844.51.0.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - main [MainThread]: End processing [chromedriver-binary]: success
+[2024-05-11 06:05:19] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.1.0.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.2.0.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
+[2024-05-11 06:05:19] INFO root fetch - processPackages [meningocephalitisz]: Remove: archive file [/home/abi/fetcher/tmp/meningocephalitisz-1.1.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - processPackages [meningocephalitisz]: Remove: archive file [/home/abi/fetcher/tmp/meningocephalitisz-2.1.tar.gz]
+[2024-05-11 06:05:19] INFO root fetch - main [MainThread]: End processing [meningocephalitisz]: success
+[2024-05-11 06:05:19] INFO root fetch - processPackages [mypulp]: Remove: archive file [/home/abi/fetcher/tmp/mypulp-0.0.8.zip]
+[2024-05-11 06:05:19] INFO root fetch - processPackages [mypulp]: Remove: archive file [/home/abi/fetcher/tmp/mypulp-0.0.9.zip]
+[2024-05-11 06:05:19] INFO root fetch - main [MainThread]: End processing [mypulp]: success
+[2024-05-11 06:05:19] INFO root fetch - main [MainThread]: Store serial: [23157170]
