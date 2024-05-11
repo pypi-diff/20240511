@@ -2766,3 +2766,33 @@
 [2024-05-11 02:28:01] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
 [2024-05-11 02:28:01] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
 [2024-05-11 02:28:01] INFO root fetch - main [MainThread]: Store serial: [23154648]
+[2024-05-11 02:30:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154648]
+[2024-05-11 02:30:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 02:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-aurora-globaldatabase
+[2024-05-11 02:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlexecutorx
+[2024-05-11 02:30:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aeppl-nightly
+[2024-05-11 02:30:11] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.5.dev20240510] Old Version: [0.1.5.dev20240509]
+[2024-05-11 02:30:11] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2024-05-11 02:30:11] INFO root fetch - processPackages [sqlexecutorx]: New version: [1.0.0] Old Version: [0.9.0]
+[2024-05-11 02:30:11] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/72/89/c9645eeed502750536fc4c68143bf6be0afafcbf4a32a1589138edce71e7/aeppl_nightly-0.1.5.dev20240509.tar.gz
+[2024-05-11 02:30:11] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/e4/39/e997b5acac972df8d777c4a4ad6dfd9f51e03e75fc8e23c973a7772267d5/cdk-aurora-globaldatabase-2.3.98.tar.gz
+[2024-05-11 02:30:11] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/67/26/d7653b6f24bb617d0b4af5b311fae2e24d1a0c68c8deecf9f9f9a7328373/sqlexecutorx-0.9.0.tar.gz
+[2024-05-11 02:30:11] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Downloading https://files.pythonhosted.org/packages/51/53/0158facaec2becec86707148eb931de78a7ad1c2b63f80b9911a53e4c17b/cdk-aurora-globaldatabase-2.3.99.tar.gz
+[2024-05-11 02:30:11] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/6f/ec/c95c876fc0a289384467d45e80098a4493a1d4d751dddf79e33858ba7aad/aeppl_nightly-0.1.5.dev20240510.tar.gz
+[2024-05-11 02:30:11] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2024-05-11 02:30:11] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20240511/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/README.md --exclude *.pyd
+[2024-05-11 02:30:11] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2024-05-11 02:30:11] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl_nightly-0.1.5.dev20240509.tar.gz tmp/aeppl_nightly-0.1.5.dev20240510.tar.gz --markdown 20240511/a/aeppl-nightly/0.1.5.dev20240509-0.1.5.dev20240510/README.md --exclude *.pyd
+[2024-05-11 02:30:11] INFO root fetch - processPackages [sqlexecutorx]: Downloading https://files.pythonhosted.org/packages/85/78/f5cca810ded783a2b8090f5ffa0ed75efd4b4ecedd89d4b39368a7c27a4b/sqlexecutorx-1.0.0.tar.gz
+[2024-05-11 02:30:12] INFO root fetch - processPackages [sqlexecutorx]: executing diffoscope
+[2024-05-11 02:30:12] INFO root fetch - processPackages [sqlexecutorx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlexecutorx-0.9.0.tar.gz tmp/sqlexecutorx-1.0.0.tar.gz --markdown 20240511/s/sqlexecutorx/0.9.0-1.0.0/README.md --exclude *.pyd
+[2024-05-11 02:30:12] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: Remove: archive file [/home/abi/fetcher/tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2024-05-11 02:30:12] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240509.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - processPackages [aeppl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/aeppl_nightly-0.1.5.dev20240510.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2024-05-11 02:30:12] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-0.9.0.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - processPackages [sqlexecutorx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecutorx-1.0.0.tar.gz]
+[2024-05-11 02:30:12] INFO root fetch - main [MainThread]: End processing [sqlexecutorx]: success
+[2024-05-11 02:30:12] INFO root fetch - main [MainThread]: Store serial: [23154671]
