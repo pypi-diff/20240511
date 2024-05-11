@@ -15900,3 +15900,42 @@
 [2024-05-11 14:02:37] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.15.0.tar.gz]
 [2024-05-11 14:02:37] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-11 14:02:37] INFO root fetch - main [MainThread]: Store serial: [23160768]
+[2024-05-11 14:04:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160768]
+[2024-05-11 14:04:46] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythreadserver
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ctsf
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aparat-crawler
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lib-ml-group3
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ctsf]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 14:04:46] INFO root fetch - processPackages [pythreadserver]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 14:04:46] INFO root fetch - processPackages [aparat-crawler]: New version: [0.9.1.2] Old Version: [0.9.1.1]
+[2024-05-11 14:04:46] INFO root fetch - processPackages [lib-ml-group3]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/11/3c/7f7540234e78ffefca406a446b03694ff554587dc848a4cb89a4e20d1e71/ctsf-1.0.1.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/2c/97/afa92da5efc125e978672f75c5ff716bed94d5849793b47336b2a5723d5a/aparat_crawler-0.9.1.1.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/2f/a3/3d066a7f6c69649c83e0e2c30db856b5c6ab59f9f0d223879c45ad9503d2/pythreadserver-0.1.2.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [lib-ml-group3]: Downloading https://files.pythonhosted.org/packages/66/06/c3fbcb387cde4d308b863af116c410e2032aa709ffcc81efaed939e62964/lib_ml_group3-0.1.0.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/92/26/70662aa7fa65de444b90761d03dc3523c33da8c3705cbcc4077dd40aa36e/ctsf-1.0.2.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/37/b2/1c1130777bdc7c108e35695d6d1411dfaa25d4ee4882056bf9e988e0f575/pythreadserver-0.1.3.tar.gz
+[2024-05-11 14:04:46] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/19/3d/58031ec7904fc9502934c8fe3f944266099e8844ce560acd241ae3275a9f/aparat_crawler-0.9.1.2.tar.gz
+[2024-05-11 14:04:47] INFO root fetch - processPackages [pythreadserver]: executing diffoscope
+[2024-05-11 14:04:47] INFO root fetch - processPackages [pythreadserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreadserver-0.1.2.tar.gz tmp/pythreadserver-0.1.3.tar.gz --markdown 20240511/p/pythreadserver/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 14:04:47] INFO root fetch - processPackages [ctsf]: executing diffoscope
+[2024-05-11 14:04:47] INFO root fetch - processPackages [ctsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctsf-1.0.1.tar.gz tmp/ctsf-1.0.2.tar.gz --markdown 20240511/c/ctsf/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-11 14:04:47] INFO root fetch - processPackages [aparat-crawler]: executing diffoscope
+[2024-05-11 14:04:47] INFO root fetch - processPackages [aparat-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aparat_crawler-0.9.1.1.tar.gz tmp/aparat_crawler-0.9.1.2.tar.gz --markdown 20240511/a/aparat-crawler/0.9.1.1-0.9.1.2/README.md --exclude *.pyd
+[2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: Downloading https://files.pythonhosted.org/packages/45/b8/3309558b227ac0e92efdf75a9cdb78273f2cf976ae931554731e91519fb1/lib_ml_group3-0.2.0.tar.gz
+[2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: executing diffoscope
+[2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lib_ml_group3-0.1.0.tar.gz tmp/lib_ml_group3-0.2.0.tar.gz --markdown 20240511/l/lib-ml-group3/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 14:04:47] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.2.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.3.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - main [MainThread]: End processing [pythreadserver]: success
+[2024-05-11 14:04:47] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.1.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.2.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
+[2024-05-11 14:04:47] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.1.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.2.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - main [MainThread]: End processing [ctsf]: success
+[2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: Remove: archive file [/home/abi/fetcher/tmp/lib_ml_group3-0.1.0.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: Remove: archive file [/home/abi/fetcher/tmp/lib_ml_group3-0.2.0.tar.gz]
+[2024-05-11 14:04:47] INFO root fetch - main [MainThread]: End processing [lib-ml-group3]: success
+[2024-05-11 14:04:47] INFO root fetch - main [MainThread]: Store serial: [23160781]
