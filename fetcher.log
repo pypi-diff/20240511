@@ -18098,3 +18098,18 @@
 [2024-05-11 16:35:19] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
 [2024-05-11 16:35:19] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
 [2024-05-11 16:35:19] INFO root fetch - main [MainThread]: Store serial: [23161973]
+[2024-05-11 16:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161973]
+[2024-05-11 16:37:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 16:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: patroclinyz
+[2024-05-11 16:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scolopendridz
+[2024-05-11 16:37:28] WARNING root fetch - processPackages [patroclinyz]: Skipping, unable to determine old version
+[2024-05-11 16:37:28] INFO root fetch - main [MainThread]: End processing [patroclinyz] error
+[2024-05-11 16:37:28] INFO root fetch - processPackages [scolopendridz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:37:29] INFO root fetch - processPackages [scolopendridz]: Downloading https://files.pythonhosted.org/packages/cd/c8/2837c6269315352d2cdfe67de73aa99fa1357b3915df5c17ee3e1d7902b6/scolopendridz-1.1.tar.gz
+[2024-05-11 16:37:29] INFO root fetch - processPackages [scolopendridz]: Downloading https://files.pythonhosted.org/packages/a3/5b/68842b8bc40123767c19a66d104f642989c74d1148d7480e5bfe2849b1f8/scolopendridz-2.1.tar.gz
+[2024-05-11 16:37:29] INFO root fetch - processPackages [scolopendridz]: executing diffoscope
+[2024-05-11 16:37:29] INFO root fetch - processPackages [scolopendridz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scolopendridz-1.1.tar.gz tmp/scolopendridz-2.1.tar.gz --markdown 20240511/s/scolopendridz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:37:30] INFO root fetch - processPackages [scolopendridz]: Remove: archive file [/home/abi/fetcher/tmp/scolopendridz-1.1.tar.gz]
+[2024-05-11 16:37:30] INFO root fetch - processPackages [scolopendridz]: Remove: archive file [/home/abi/fetcher/tmp/scolopendridz-2.1.tar.gz]
+[2024-05-11 16:37:30] INFO root fetch - main [MainThread]: End processing [scolopendridz]: success
+[2024-05-11 16:37:30] INFO root fetch - main [MainThread]: Store serial: [23161985]
