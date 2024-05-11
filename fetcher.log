@@ -20603,3 +20603,42 @@
 [2024-05-11 19:22:28] INFO root fetch - processPackages [suckerfishesz]: Remove: archive file [/home/abi/fetcher/tmp/suckerfishesz-2.1.tar.gz]
 [2024-05-11 19:22:28] INFO root fetch - main [MainThread]: End processing [suckerfishesz]: success
 [2024-05-11 19:22:28] INFO root fetch - main [MainThread]: Store serial: [23163037]
+[2024-05-11 19:24:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163037]
+[2024-05-11 19:24:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: makolator
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyqflow
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sweet-logs
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TsAssure
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aps-toolkit
+[2024-05-11 19:24:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ctrip-app-ui
+[2024-05-11 19:24:37] WARNING root fetch - processPackages [TsAssure]: Skipping, unable to determine old version
+[2024-05-11 19:24:37] INFO root fetch - main [MainThread]: End processing [TsAssure] error
+[2024-05-11 19:24:37] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 19:24:37] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-05-11 19:24:37] WARNING root fetch - processPackages [sweet-logs]: Skipping, unable to determine old version
+[2024-05-11 19:24:37] INFO root fetch - main [MainThread]: End processing [sweet-logs] error
+[2024-05-11 19:24:37] WARNING root fetch - processPackages [pyqflow]: Skipping, unable to determine old version
+[2024-05-11 19:24:37] INFO root fetch - main [MainThread]: End processing [pyqflow] error
+[2024-05-11 19:24:37] INFO root fetch - processPackages [makolator]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-05-11 19:24:37] INFO root fetch - processPackages [aps-toolkit]: New version: [0.6.4] Old Version: [0.6.3]
+[2024-05-11 19:24:37] INFO root fetch - processPackages [makolator]: Downloading https://files.pythonhosted.org/packages/3b/47/bcc14b2920128b986834c03948e4a21633b719d04ca3b14907cec7d774e7/makolator-2.4.0.tar.gz
+[2024-05-11 19:24:37] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-05-11 19:24:37] INFO root fetch - processPackages [aps-toolkit]: Downloading https://files.pythonhosted.org/packages/2d/e8/7cede2effca33956d08f3bea5370d5ef2b398298b64012c5f1fcd90022f7/aps-toolkit-0.6.3.tar.gz
+[2024-05-11 19:24:37] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-11 19:24:37] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240511/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 19:24:37] INFO root fetch - processPackages [makolator]: Downloading https://files.pythonhosted.org/packages/d2/0b/f9689116200fabc5c248ce46ebe55805b23f009822820f5ad7e7a10091f9/makolator-2.5.0.tar.gz
+[2024-05-11 19:24:37] INFO root fetch - processPackages [aps-toolkit]: Downloading https://files.pythonhosted.org/packages/4b/e5/c9dcc3cacb07acb5b83b6a86600f6be76f032b270ffb98fce48bc4a0980e/aps-toolkit-0.6.4.tar.gz
+[2024-05-11 19:24:37] INFO root fetch - processPackages [makolator]: executing diffoscope
+[2024-05-11 19:24:37] INFO root fetch - processPackages [makolator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/makolator-2.4.0.tar.gz tmp/makolator-2.5.0.tar.gz --markdown 20240511/m/makolator/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-05-11 19:24:37] INFO root fetch - processPackages [aps-toolkit]: executing diffoscope
+[2024-05-11 19:24:37] INFO root fetch - processPackages [aps-toolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aps-toolkit-0.6.3.tar.gz tmp/aps-toolkit-0.6.4.tar.gz --markdown 20240511/a/aps-toolkit/0.6.3-0.6.4/README.md --exclude *.pyd
+[2024-05-11 19:24:38] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-11 19:24:38] INFO root fetch - processPackages [makolator]: Remove: archive file [/home/abi/fetcher/tmp/makolator-2.4.0.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - processPackages [makolator]: Remove: archive file [/home/abi/fetcher/tmp/makolator-2.5.0.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - main [MainThread]: End processing [makolator]: success
+[2024-05-11 19:24:38] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.6.3.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - processPackages [aps-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/aps-toolkit-0.6.4.tar.gz]
+[2024-05-11 19:24:38] INFO root fetch - main [MainThread]: End processing [aps-toolkit]: success
+[2024-05-11 19:24:38] INFO root fetch - main [MainThread]: Store serial: [23163060]
