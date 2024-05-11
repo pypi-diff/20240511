@@ -22102,3 +22102,54 @@
 [2024-05-11 21:07:05] INFO root fetch - processPackages [tiemakerz]: Remove: archive file [/home/abi/fetcher/tmp/tiemakerz-2.1.tar.gz]
 [2024-05-11 21:07:05] INFO root fetch - main [MainThread]: End processing [tiemakerz]: success
 [2024-05-11 21:07:05] INFO root fetch - main [MainThread]: Store serial: [23163845]
+[2024-05-11 21:09:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163845]
+[2024-05-11 21:09:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: archivefile
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysparkler
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mrsolver-additon
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: strawberry-graphql-django
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: singularity-compose
+[2024-05-11 21:09:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gen3-tracker
+[2024-05-11 21:09:14] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.4rc3] Old Version: [0.0.4rc2]
+[2024-05-11 21:09:14] INFO root fetch - processPackages [pysparkler]: New version: [0.9.dev1715454332] Old Version: [0.9.dev1715453058]
+[2024-05-11 21:09:14] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/ce/70/a77cd1c57753e589ea1377b730fc4f2d5e4dd603dff6fa7030d4c22557e4/gen3_tracker-0.0.4rc2.tar.gz
+[2024-05-11 21:09:14] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/80/f6/38ed156ac4bf5f92bf51073598fc9ac6371e395290043e4b4e84e08bd858/pysparkler-0.9.dev1715453058.tar.gz
+[2024-05-11 21:09:14] INFO root fetch - processPackages [strawberry-graphql-django]: New version: [0.9.5] Old Version: [0.9.4]
+[2024-05-11 21:09:14] WARNING root fetch - processPackages [mrsolver-additon]: Skipping, unable to determine old version
+[2024-05-11 21:09:14] INFO root fetch - main [MainThread]: End processing [mrsolver-additon] error
+[2024-05-11 21:09:14] INFO root fetch - processPackages [archivefile]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-11 21:09:14] INFO root fetch - processPackages [singularity-compose]: New version: [0.1.19] Old Version: [0.1.18]
+[2024-05-11 21:09:15] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/84/8d/02584438b57b9d8c0141a779dd091b2f10126fe1f369ea1852d45afa3eec/strawberry_graphql_django-0.9.4.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [archivefile]: Downloading https://files.pythonhosted.org/packages/2b/2e/43e47d8cecf7c492df2e1dd1628c3a95fa97acacaa7ff7a39ea288c95dcf/archivefile-0.3.0.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [singularity-compose]: Downloading https://files.pythonhosted.org/packages/f1/cb/129cd67a01ce149f648d6c90ef24ece56f796eff27351d6926e6970eb469/singularity-compose-0.1.18.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/c5/1a/68d31bcb918c43e6ec0b2c79bd088068e6002b76b93d994075c32fe7218f/pysparkler-0.9.dev1715454332.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/8d/f3/39a446db23a1b9e59f67d2fdae571a93905b0693fcccb05cc64a77bc4e50/gen3_tracker-0.0.4rc3.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2024-05-11 21:09:15] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.9.dev1715453058.tar.gz tmp/pysparkler-0.9.dev1715454332.tar.gz --markdown 20240511/p/pysparkler/0.9.dev1715453058-0.9.dev1715454332/README.md --exclude *.pyd
+[2024-05-11 21:09:15] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-05-11 21:09:15] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.4rc2.tar.gz tmp/gen3_tracker-0.0.4rc3.tar.gz --markdown 20240511/g/gen3-tracker/0.0.4rc2-0.0.4rc3/README.md --exclude *.pyd
+[2024-05-11 21:09:15] INFO root fetch - processPackages [archivefile]: Downloading https://files.pythonhosted.org/packages/9a/9c/e6537b367daee3b1bcf64de162a1b28049d38b1eb005b142b904214b482e/archivefile-0.3.1.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [singularity-compose]: Downloading https://files.pythonhosted.org/packages/c5/20/93dea5bbfee464cc1fc2881ac2ddad45184882beb597aa1009ca994e4479/singularity-compose-0.1.19.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [archivefile]: executing diffoscope
+[2024-05-11 21:09:15] INFO root fetch - processPackages [archivefile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/archivefile-0.3.0.tar.gz tmp/archivefile-0.3.1.tar.gz --markdown 20240511/a/archivefile/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-11 21:09:15] INFO root fetch - processPackages [strawberry-graphql-django]: Downloading https://files.pythonhosted.org/packages/34/c7/6761d3816f5a7cf02928b5d035b4ed20b4e6d2a12ec6a4cf9400ce4d7cbb/strawberry_graphql_django-0.9.5.tar.gz
+[2024-05-11 21:09:15] INFO root fetch - processPackages [singularity-compose]: executing diffoscope
+[2024-05-11 21:09:15] INFO root fetch - processPackages [singularity-compose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/singularity-compose-0.1.18.tar.gz tmp/singularity-compose-0.1.19.tar.gz --markdown 20240511/s/singularity-compose/0.1.18-0.1.19/README.md --exclude *.pyd
+[2024-05-11 21:09:15] INFO root fetch - processPackages [strawberry-graphql-django]: executing diffoscope
+[2024-05-11 21:09:15] INFO root fetch - processPackages [strawberry-graphql-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/strawberry_graphql_django-0.9.4.tar.gz tmp/strawberry_graphql_django-0.9.5.tar.gz --markdown 20240511/s/strawberry-graphql-django/0.9.4-0.9.5/README.md --exclude *.pyd
+[2024-05-11 21:09:16] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1715453058.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1715454332.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2024-05-11 21:09:16] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc2.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc3.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-05-11 21:09:16] INFO root fetch - processPackages [archivefile]: Remove: archive file [/home/abi/fetcher/tmp/archivefile-0.3.0.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - processPackages [archivefile]: Remove: archive file [/home/abi/fetcher/tmp/archivefile-0.3.1.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: End processing [archivefile]: success
+[2024-05-11 21:09:16] INFO root fetch - processPackages [singularity-compose]: Remove: archive file [/home/abi/fetcher/tmp/singularity-compose-0.1.18.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - processPackages [singularity-compose]: Remove: archive file [/home/abi/fetcher/tmp/singularity-compose-0.1.19.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: End processing [singularity-compose]: success
+[2024-05-11 21:09:16] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.4.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - processPackages [strawberry-graphql-django]: Remove: archive file [/home/abi/fetcher/tmp/strawberry_graphql_django-0.9.5.tar.gz]
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: End processing [strawberry-graphql-django]: success
+[2024-05-11 21:09:16] INFO root fetch - main [MainThread]: Store serial: [23163865]
