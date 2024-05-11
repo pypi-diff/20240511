@@ -14080,3 +14080,15 @@
 [2024-05-11 12:04:14] INFO root fetch - processPackages [citation-utils]: Remove: archive file [/home/abi/fetcher/tmp/citation_utils-0.4.9.tar.gz]
 [2024-05-11 12:04:14] INFO root fetch - main [MainThread]: End processing [citation-utils]: success
 [2024-05-11 12:04:14] INFO root fetch - main [MainThread]: Store serial: [23159823]
+[2024-05-11 12:06:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159823]
+[2024-05-11 12:06:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 12:06:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clicra
+[2024-05-11 12:06:23] INFO root fetch - processPackages [clicra]: New version: [0.2.2] Old Version: [0.1.1]
+[2024-05-11 12:06:23] INFO root fetch - processPackages [clicra]: Downloading https://files.pythonhosted.org/packages/d8/14/e49f0dc950794eabb339236f5d9da1eed9c4e6baaf1af72e32a40c70e3ff/clicra-0.1.1.tar.gz
+[2024-05-11 12:06:23] INFO root fetch - processPackages [clicra]: Downloading https://files.pythonhosted.org/packages/4d/f6/ecef31952cb8131701b649312ebf8519bbd2c01b05f30798c502f66a54f6/clicra-0.2.2.tar.gz
+[2024-05-11 12:06:23] INFO root fetch - processPackages [clicra]: executing diffoscope
+[2024-05-11 12:06:23] INFO root fetch - processPackages [clicra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clicra-0.1.1.tar.gz tmp/clicra-0.2.2.tar.gz --markdown 20240511/c/clicra/0.1.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 12:06:24] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.1.1.tar.gz]
+[2024-05-11 12:06:24] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.2.2.tar.gz]
+[2024-05-11 12:06:24] INFO root fetch - main [MainThread]: End processing [clicra]: success
+[2024-05-11 12:06:24] INFO root fetch - main [MainThread]: Store serial: [23159826]
