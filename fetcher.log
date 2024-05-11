@@ -2255,3 +2255,66 @@
 [2024-05-11 02:08:19] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.2.tar.gz]
 [2024-05-11 02:08:19] INFO root fetch - main [MainThread]: End processing [tomtoolkit]: success
 [2024-05-11 02:08:19] INFO root fetch - main [MainThread]: Store serial: [23154397]
+[2024-05-11 02:10:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154397]
+[2024-05-11 02:10:29] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-common
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: evalsone
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlglot
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runtime-generics
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dusted
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: openbb-nightly
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: possiblerz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: inframaxillaryz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [runtime-generics]: New version: [3.3.0] Old Version: [3.2.0]
+[2024-05-11 02:10:29] INFO root fetch - processPackages [openbb-nightly]: New version: [4.1.7.dev202405100010] Old Version: [4.1.7.dev202405090009]
+[2024-05-11 02:10:29] INFO root fetch - processPackages [cdk-common]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-11 02:10:29] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-11 02:10:29] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/9c/70/3e06af549a158c6a7cd07cb0c3804a6f5247b3248e82bf61666c38f2ec34/runtime_generics-3.2.0.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [dusted]: New version: [1.3.0] Old Version: [1.2.0]
+[2024-05-11 02:10:29] WARNING root fetch - processPackages [evalsone]: Skipping, unable to determine old version
+[2024-05-11 02:10:29] INFO root fetch - main [MainThread]: End processing [evalsone] error
+[2024-05-11 02:10:29] INFO root fetch - processPackages [inframaxillaryz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 02:10:29] WARNING root fetch - processPackages [possiblerz]: Skipping, unable to determine old version
+[2024-05-11 02:10:29] INFO root fetch - main [MainThread]: End processing [possiblerz] error
+[2024-05-11 02:10:29] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/f3/30/796e7080e9a9b293ccf386b0d95f40dde8e214e0415d2c59be9c661105a9/cdk-common-2.0.98.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/a8/da/2f7248edf4147d73649e66090cb050a0d001607e056ef9128cee781095d5/openbb_nightly-4.1.7.dev202405090009.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [runtime-generics]: Downloading https://files.pythonhosted.org/packages/05/d1/087c1bf715b583890bf7f785ff44e6a424d96a9c4ab45ade8b763a70af72/runtime_generics-3.3.0.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [dusted]: Downloading https://files.pythonhosted.org/packages/67/18/16965a99d343bc338b871c8c13ef99f516d3c8c8e7c74a5f65ed13112dde/dusted-1.2.0.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [inframaxillaryz]: Downloading https://files.pythonhosted.org/packages/83/7e/7983d457efc85029d97ae38c943d9044c119edad167a5caec0e95891872f/inframaxillaryz-1.1.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-11 02:10:29] INFO root fetch - processPackages [runtime-generics]: executing diffoscope
+[2024-05-11 02:10:29] INFO root fetch - processPackages [runtime-generics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runtime_generics-3.2.0.tar.gz tmp/runtime_generics-3.3.0.tar.gz --markdown 20240511/r/runtime-generics/3.2.0-3.3.0/README.md --exclude *.pyd
+[2024-05-11 02:10:29] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-11 02:10:29] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240511/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-11 02:10:29] INFO root fetch - processPackages [cdk-common]: Downloading https://files.pythonhosted.org/packages/11/10/ca183f281275ec945ede082d9491c0bb5bfb9152c437124c86e37cba7079/cdk-common-2.0.99.tar.gz
+[2024-05-11 02:10:30] INFO root fetch - processPackages [dusted]: Downloading https://files.pythonhosted.org/packages/dd/6b/866f5cdddb74c4bdd28d576b2b2ecfd4e43cc18b808628b2467c7b489506/dusted-1.3.0.tar.gz
+[2024-05-11 02:10:30] INFO root fetch - processPackages [openbb-nightly]: Downloading https://files.pythonhosted.org/packages/7b/10/9ed4aeb9462296537c9afc27a28305eb3fc25645c2601131b44dc9205c70/openbb_nightly-4.1.7.dev202405100010.tar.gz
+[2024-05-11 02:10:30] INFO root fetch - processPackages [inframaxillaryz]: Downloading https://files.pythonhosted.org/packages/b9/44/5a1345a073c54a4c7287fef6949193a31e61c1fa6c9ad58667734bb608a8/inframaxillaryz-2.1.tar.gz
+[2024-05-11 02:10:30] INFO root fetch - processPackages [dusted]: executing diffoscope
+[2024-05-11 02:10:30] INFO root fetch - processPackages [dusted]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dusted-1.2.0.tar.gz tmp/dusted-1.3.0.tar.gz --markdown 20240511/d/dusted/1.2.0-1.3.0/README.md --exclude *.pyd
+[2024-05-11 02:10:30] INFO root fetch - processPackages [cdk-common]: executing diffoscope
+[2024-05-11 02:10:30] INFO root fetch - processPackages [cdk-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-common-2.0.98.tar.gz tmp/cdk-common-2.0.99.tar.gz --markdown 20240511/c/cdk-common/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-11 02:10:30] INFO root fetch - processPackages [openbb-nightly]: executing diffoscope
+[2024-05-11 02:10:30] INFO root fetch - processPackages [openbb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openbb_nightly-4.1.7.dev202405090009.tar.gz tmp/openbb_nightly-4.1.7.dev202405100010.tar.gz --markdown 20240511/o/openbb-nightly/4.1.7.dev202405090009-4.1.7.dev202405100010/README.md --exclude *.pyd
+[2024-05-11 02:10:30] INFO root fetch - processPackages [inframaxillaryz]: executing diffoscope
+[2024-05-11 02:10:30] INFO root fetch - processPackages [inframaxillaryz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/inframaxillaryz-1.1.tar.gz tmp/inframaxillaryz-2.1.tar.gz --markdown 20240511/i/inframaxillaryz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 02:10:30] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.2.0.tar.gz]
+[2024-05-11 02:10:30] INFO root fetch - processPackages [runtime-generics]: Remove: archive file [/home/abi/fetcher/tmp/runtime_generics-3.3.0.tar.gz]
+[2024-05-11 02:10:30] INFO root fetch - main [MainThread]: End processing [runtime-generics]: success
+[2024-05-11 02:10:31] INFO root fetch - processPackages [inframaxillaryz]: Remove: archive file [/home/abi/fetcher/tmp/inframaxillaryz-1.1.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - processPackages [inframaxillaryz]: Remove: archive file [/home/abi/fetcher/tmp/inframaxillaryz-2.1.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - main [MainThread]: End processing [inframaxillaryz]: success
+[2024-05-11 02:10:31] INFO root fetch - processPackages [dusted]: Remove: archive file [/home/abi/fetcher/tmp/dusted-1.2.0.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - processPackages [dusted]: Remove: archive file [/home/abi/fetcher/tmp/dusted-1.3.0.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - main [MainThread]: End processing [dusted]: success
+[2024-05-11 02:10:31] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-11 02:10:31] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.98.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - processPackages [cdk-common]: Remove: archive file [/home/abi/fetcher/tmp/cdk-common-2.0.99.tar.gz]
+[2024-05-11 02:10:31] INFO root fetch - main [MainThread]: End processing [cdk-common]: success
+[2024-05-11 02:10:34] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405090009.tar.gz]
+[2024-05-11 02:10:34] INFO root fetch - processPackages [openbb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/openbb_nightly-4.1.7.dev202405100010.tar.gz]
+[2024-05-11 02:10:34] INFO root fetch - main [MainThread]: End processing [openbb-nightly]: success
+[2024-05-11 02:10:34] INFO root fetch - main [MainThread]: Store serial: [23154440]
