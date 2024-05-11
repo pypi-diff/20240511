@@ -20810,3 +20810,36 @@
 [2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: Remove: archive file [/home/abi/fetcher/tmp/ezomero-3.0.0.tar.gz]
 [2024-05-11 19:39:48] INFO root fetch - main [MainThread]: End processing [ezomero]: success
 [2024-05-11 19:39:48] INFO root fetch - main [MainThread]: Store serial: [23163139]
+[2024-05-11 19:41:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163139]
+[2024-05-11 19:41:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:41:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snaffledz
+[2024-05-11 19:41:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: laia-gen-lib
+[2024-05-11 19:41:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-sale-by-packaging
+[2024-05-11 19:41:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: music-assistant-frontend
+[2024-05-11 19:41:57] INFO root fetch - processPackages [music-assistant-frontend]: New version: [2.5.7] Old Version: [2.5.6]
+[2024-05-11 19:41:57] INFO root fetch - processPackages [laia-gen-lib]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 19:41:57] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: New version: [14.0.2.1.0] Old Version: [14.0.2.0.1.dev9]
+[2024-05-11 19:41:57] WARNING root fetch - processPackages [snaffledz]: Skipping, unable to determine old version
+[2024-05-11 19:41:57] INFO root fetch - main [MainThread]: End processing [snaffledz] error
+[2024-05-11 19:41:57] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/cf/9d/df25741f3199a178d6bebb43c6f39eeaaa924cb41510466057c7e68ad259/laia-gen-lib-0.1.8.tar.gz
+[2024-05-11 19:41:57] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/b1/d4/39562118ca48727f0e9bc86dcb8408f9262e65111bb59e0366df8f9e87a4/music-assistant-frontend-2.5.6.tar.gz
+[2024-05-11 19:41:57] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: Downloading https://files.pythonhosted.org/packages/64/a6/431daa3ec766a02ae23d66890e52e58a832dc3eef46ad06dc6ab25ba1e19/odoo14_addon_sale_by_packaging-14.0.2.0.1.dev9-py3-none-any.whl
+[2024-05-11 19:41:57] INFO root fetch - processPackages [laia-gen-lib]: Downloading https://files.pythonhosted.org/packages/be/61/f1135da258191b7a80992064d66519b24c5cf4c05de8b99ccfa7ad90d9bf/laia-gen-lib-0.1.9.tar.gz
+[2024-05-11 19:41:57] INFO root fetch - processPackages [laia-gen-lib]: executing diffoscope
+[2024-05-11 19:41:57] INFO root fetch - processPackages [laia-gen-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laia-gen-lib-0.1.8.tar.gz tmp/laia-gen-lib-0.1.9.tar.gz --markdown 20240511/l/laia-gen-lib/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 19:41:58] INFO root fetch - processPackages [music-assistant-frontend]: Downloading https://files.pythonhosted.org/packages/bf/20/29387e1dd049d21139991b99f1e60a0408047a70cfaafe28a04703df666d/music-assistant-frontend-2.5.7.tar.gz
+[2024-05-11 19:41:58] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: Downloading https://files.pythonhosted.org/packages/07/17/02aa735dc4d15fbff6cb783b1970e6c0f97ae629491906b331308a73d03b/odoo14_addon_sale_by_packaging-14.0.2.1.0-py3-none-any.whl
+[2024-05-11 19:41:58] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: executing diffoscope
+[2024-05-11 19:41:58] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_sale_by_packaging-14.0.2.0.1.dev9-py3-none-any.whl.zip tmp/odoo14_addon_sale_by_packaging-14.0.2.1.0-py3-none-any.whl.zip --markdown 20240511/o/odoo14-addon-sale-by-packaging/14.0.2.0.1.dev9-14.0.2.1.0/README.md --exclude *.pyd
+[2024-05-11 19:41:58] INFO root fetch - processPackages [music-assistant-frontend]: executing diffoscope
+[2024-05-11 19:41:58] INFO root fetch - processPackages [music-assistant-frontend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/music-assistant-frontend-2.5.6.tar.gz tmp/music-assistant-frontend-2.5.7.tar.gz --markdown 20240511/m/music-assistant-frontend/2.5.6-2.5.7/README.md --exclude *.pyd
+[2024-05-11 19:41:58] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.8.tar.gz]
+[2024-05-11 19:41:58] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
+[2024-05-11 19:41:58] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
+[2024-05-11 19:41:58] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_by_packaging-14.0.2.0.1.dev9-py3-none-any.whl.zip]
+[2024-05-11 19:41:58] INFO root fetch - processPackages [odoo14-addon-sale-by-packaging]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_sale_by_packaging-14.0.2.1.0-py3-none-any.whl.zip]
+[2024-05-11 19:41:58] INFO root fetch - main [MainThread]: End processing [odoo14-addon-sale-by-packaging]: success
+[2024-05-11 19:42:16] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.6.tar.gz]
+[2024-05-11 19:42:16] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.7.tar.gz]
+[2024-05-11 19:42:16] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
+[2024-05-11 19:42:16] INFO root fetch - main [MainThread]: Store serial: [23163150]
