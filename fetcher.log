@@ -13760,3 +13760,41 @@
 [2024-05-11 11:48:49] INFO root fetch - processPackages [sqlexecx]: Remove: archive file [/home/abi/fetcher/tmp/sqlexecx-0.6.0.tar.gz]
 [2024-05-11 11:48:49] INFO root fetch - main [MainThread]: End processing [sqlexecx]: success
 [2024-05-11 11:48:49] INFO root fetch - main [MainThread]: Store serial: [23159710]
+[2024-05-11 11:50:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159710]
+[2024-05-11 11:50:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: uitestrunner-syberos
+[2024-05-11 11:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pybunch
+[2024-05-11 11:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zpdatafetch
+[2024-05-11 11:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: DrissionPagePlus
+[2024-05-11 11:50:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xtuner
+[2024-05-11 11:50:58] WARNING root fetch - processPackages [DrissionPagePlus]: Skipping, unable to determine old version
+[2024-05-11 11:50:58] INFO root fetch - main [MainThread]: End processing [DrissionPagePlus] error
+[2024-05-11 11:50:58] INFO root fetch - processPackages [uitestrunner-syberos]: New version: [2.4.0] Old Version: [2.3.5]
+[2024-05-11 11:50:58] INFO root fetch - processPackages [uitestrunner-syberos]: Downloading https://files.pythonhosted.org/packages/48/fe/91538a9f10608de22b1e8094614772eede1de077ee223b4a57aea7141793/uitestrunner_syberos-2.3.5.tar.gz
+[2024-05-11 11:50:58] INFO root fetch - processPackages [pybunch]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 11:50:58] INFO root fetch - processPackages [zpdatafetch]: New version: [1.1.0] Old Version: [1.0.1]
+[2024-05-11 11:50:58] INFO root fetch - processPackages [xtuner]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 11:50:58] WARNING root fetch - processPackages [uitestrunner-syberos]: Skipping package: exceeds size limit 61923947>=10485760
+[2024-05-11 11:50:58] INFO root fetch - main [MainThread]: End processing [uitestrunner-syberos] error
+[2024-05-11 11:50:58] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/9f/4d/d8467f26bb1a59cf0a4536dd3d787df5754ea90b590e2b263aa4dd96978c/pybunch-1.0.8.tar.gz
+[2024-05-11 11:50:58] INFO root fetch - processPackages [xtuner]: Downloading https://files.pythonhosted.org/packages/c6/10/2f97ae0d02c3082613c8da4a17b235558248f6d108c215225b27416c9ce0/xtuner-0.1.8.tar.gz
+[2024-05-11 11:50:58] INFO root fetch - processPackages [zpdatafetch]: Downloading https://files.pythonhosted.org/packages/d3/c1/bae6eded0b689bbcd3cc6ed50aa5739ba7f6ea9eabfb8d7d12275c500a9f/zpdatafetch-1.0.1.tar.gz
+[2024-05-11 11:50:58] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/f2/5d/c7ff16c5a81312e4d3c036afbe76b917bd7afad965ca06e3279374dca049/pybunch-1.0.9.tar.gz
+[2024-05-11 11:50:59] INFO root fetch - processPackages [pybunch]: executing diffoscope
+[2024-05-11 11:50:59] INFO root fetch - processPackages [pybunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybunch-1.0.8.tar.gz tmp/pybunch-1.0.9.tar.gz --markdown 20240511/p/pybunch/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 11:50:59] INFO root fetch - processPackages [zpdatafetch]: Downloading https://files.pythonhosted.org/packages/9d/1c/ed9eb1864b95a03231e561fc48f82b2ddb8c6a6a0006d19a328b9d191b9c/zpdatafetch-1.1.0.tar.gz
+[2024-05-11 11:50:59] INFO root fetch - processPackages [zpdatafetch]: executing diffoscope
+[2024-05-11 11:50:59] INFO root fetch - processPackages [zpdatafetch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zpdatafetch-1.0.1.tar.gz tmp/zpdatafetch-1.1.0.tar.gz --markdown 20240511/z/zpdatafetch/1.0.1-1.1.0/README.md --exclude *.pyd
+[2024-05-11 11:50:59] INFO root fetch - processPackages [xtuner]: Downloading https://files.pythonhosted.org/packages/93/b5/551c4955f58e3e118a1bbb5ef107ff05d96e8c355a4502722257495e4ac1/xtuner-0.1.9.tar.gz
+[2024-05-11 11:50:59] INFO root fetch - processPackages [xtuner]: executing diffoscope
+[2024-05-11 11:50:59] INFO root fetch - processPackages [xtuner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtuner-0.1.8.tar.gz tmp/xtuner-0.1.9.tar.gz --markdown 20240511/x/xtuner/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 11:50:59] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.0.8.tar.gz]
+[2024-05-11 11:50:59] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.0.9.tar.gz]
+[2024-05-11 11:50:59] INFO root fetch - main [MainThread]: End processing [pybunch]: success
+[2024-05-11 11:50:59] INFO root fetch - processPackages [zpdatafetch]: Remove: archive file [/home/abi/fetcher/tmp/zpdatafetch-1.0.1.tar.gz]
+[2024-05-11 11:50:59] INFO root fetch - processPackages [zpdatafetch]: Remove: archive file [/home/abi/fetcher/tmp/zpdatafetch-1.1.0.tar.gz]
+[2024-05-11 11:50:59] INFO root fetch - main [MainThread]: End processing [zpdatafetch]: success
+[2024-05-11 11:51:01] INFO root fetch - processPackages [xtuner]: Remove: archive file [/home/abi/fetcher/tmp/xtuner-0.1.8.tar.gz]
+[2024-05-11 11:51:01] INFO root fetch - processPackages [xtuner]: Remove: archive file [/home/abi/fetcher/tmp/xtuner-0.1.9.tar.gz]
+[2024-05-11 11:51:01] INFO root fetch - main [MainThread]: End processing [xtuner]: success
+[2024-05-11 11:51:01] INFO root fetch - main [MainThread]: Store serial: [23159726]
