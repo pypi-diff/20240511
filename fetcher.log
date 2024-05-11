@@ -12904,3 +12904,18 @@
 [2024-05-11 10:45:43] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
 [2024-05-11 10:45:43] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2024-05-11 10:45:43] INFO root fetch - main [MainThread]: Store serial: [23159131]
+[2024-05-11 10:47:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159131]
+[2024-05-11 10:47:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 10:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PlexTraktSync
+[2024-05-11 10:47:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: timorouslyz
+[2024-05-11 10:47:52] INFO root fetch - processPackages [PlexTraktSync]: New version: [0.30.5] Old Version: [0.30.4]
+[2024-05-11 10:47:52] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/c3/a8/f32816883825201e1676592e914f2a87a82bd00ba76f6ca2e28279f00fab/plextraktsync-0.30.4.tar.gz
+[2024-05-11 10:47:52] WARNING root fetch - processPackages [timorouslyz]: Skipping, unable to determine old version
+[2024-05-11 10:47:52] INFO root fetch - main [MainThread]: End processing [timorouslyz] error
+[2024-05-11 10:47:52] INFO root fetch - processPackages [PlexTraktSync]: Downloading https://files.pythonhosted.org/packages/c8/e1/c1236c8e5fa1b67970d835784dc5647a127865a9ecd1cdac6d4880c08fdd/plextraktsync-0.30.5.tar.gz
+[2024-05-11 10:47:53] INFO root fetch - processPackages [PlexTraktSync]: executing diffoscope
+[2024-05-11 10:47:53] INFO root fetch - processPackages [PlexTraktSync]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plextraktsync-0.30.4.tar.gz tmp/plextraktsync-0.30.5.tar.gz --markdown 20240511/P/PlexTraktSync/0.30.4-0.30.5/README.md --exclude *.pyd
+[2024-05-11 10:47:54] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.4.tar.gz]
+[2024-05-11 10:47:54] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.5.tar.gz]
+[2024-05-11 10:47:54] INFO root fetch - main [MainThread]: End processing [PlexTraktSync]: success
+[2024-05-11 10:47:54] INFO root fetch - main [MainThread]: Store serial: [23159144]
