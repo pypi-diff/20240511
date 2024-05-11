@@ -10109,3 +10109,38 @@
 [2024-05-11 07:00:11] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip]
 [2024-05-11 07:00:11] INFO root fetch - main [MainThread]: End processing [lightnovel-crawler]: success
 [2024-05-11 07:00:11] INFO root fetch - main [MainThread]: Store serial: [23157434]
+[2024-05-11 07:02:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157434]
+[2024-05-11 07:02:20] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightnovel-crawler
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monoestrousz
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: duwi-smart-sdk
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opendp
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: liteium
+[2024-05-11 07:02:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: exindusiatez
+[2024-05-11 07:02:20] INFO root fetch - processPackages [duwi-smart-sdk]: New version: [0.2.8] Old Version: [0.2.7]
+[2024-05-11 07:02:20] WARNING root fetch - processPackages [monoestrousz]: Skipping, unable to determine old version
+[2024-05-11 07:02:20] INFO root fetch - main [MainThread]: End processing [monoestrousz] error
+[2024-05-11 07:02:20] INFO root fetch - processPackages [lightnovel-crawler]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-05-11 07:02:20] INFO root fetch - processPackages [opendp]: New version: [0.9.2b20240207001] Old Version: [0.9.2a20240509001]
+[2024-05-11 07:02:20] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/e3/d0/c645f28ab7879c8fea388de98649fd033b127d2721585560ac2943e31f0b/duwi_smart_sdk-0.2.7.tar.gz
+[2024-05-11 07:02:20] WARNING root fetch - processPackages [liteium]: Skipping, unable to determine old version
+[2024-05-11 07:02:20] INFO root fetch - main [MainThread]: End processing [liteium] error
+[2024-05-11 07:02:21] WARNING root fetch - processPackages [exindusiatez]: Skipping, unable to determine old version
+[2024-05-11 07:02:21] INFO root fetch - main [MainThread]: End processing [exindusiatez] error
+[2024-05-11 07:02:21] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/6c/f8/c0641d6b959392fed195eb8a0a8b48d8036afc584634ee10aff308e8c177/lightnovel_crawler-3.6.0-py3-none-any.whl
+[2024-05-11 07:02:21] INFO root fetch - processPackages [opendp]: Downloading https://files.pythonhosted.org/packages/85/6c/b343f02569a02102fd61d7a89f66fb699dbdbf7903119928f4cc3ce8516d/opendp-0.9.2b20240207001-py3-none-any.whl
+[2024-05-11 07:02:21] WARNING root fetch - processPackages [opendp]: Skipping package: exceeds size limit 36048210>=10485760
+[2024-05-11 07:02:21] INFO root fetch - main [MainThread]: End processing [opendp] error
+[2024-05-11 07:02:21] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/8c/94/79dd251a6dcce63453a6941da2b1f569aaf7bd141ac27716d55e85de1ae9/duwi_smart_sdk-0.2.8.tar.gz
+[2024-05-11 07:02:21] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/ee/2b/181065107ebf4b312c373dbda8038da512cc84020f0952aacdaa2d6346ac/lightnovel_crawler-3.7.0-py3-none-any.whl
+[2024-05-11 07:02:21] INFO root fetch - processPackages [duwi-smart-sdk]: executing diffoscope
+[2024-05-11 07:02:21] INFO root fetch - processPackages [duwi-smart-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duwi_smart_sdk-0.2.7.tar.gz tmp/duwi_smart_sdk-0.2.8.tar.gz --markdown 20240511/d/duwi-smart-sdk/0.2.7-0.2.8/README.md --exclude *.pyd
+[2024-05-11 07:02:21] INFO root fetch - processPackages [lightnovel-crawler]: executing diffoscope
+[2024-05-11 07:02:21] INFO root fetch - processPackages [lightnovel-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightnovel_crawler-3.6.0-py3-none-any.whl.zip tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip --markdown 20240511/l/lightnovel-crawler/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-05-11 07:02:21] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.7.tar.gz]
+[2024-05-11 07:02:21] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.8.tar.gz]
+[2024-05-11 07:02:21] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
+[2024-05-11 07:02:23] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.6.0-py3-none-any.whl.zip]
+[2024-05-11 07:02:23] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip]
+[2024-05-11 07:02:23] INFO root fetch - main [MainThread]: End processing [lightnovel-crawler]: success
+[2024-05-11 07:02:23] INFO root fetch - main [MainThread]: Store serial: [23157460]
