@@ -12378,3 +12378,27 @@
 [2024-05-11 10:04:28] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240510.tar.gz]
 [2024-05-11 10:04:28] INFO root fetch - main [MainThread]: End processing [langfun]: success
 [2024-05-11 10:04:28] INFO root fetch - main [MainThread]: Store serial: [23158870]
+[2024-05-11 10:06:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158870]
+[2024-05-11 10:06:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gmsofttest
+[2024-05-11 10:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-11 10:06:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prickingz
+[2024-05-11 10:06:36] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 10:06:36] WARNING root fetch - processPackages [prickingz]: Skipping, unable to determine old version
+[2024-05-11 10:06:36] INFO root fetch - main [MainThread]: End processing [prickingz] error
+[2024-05-11 10:06:36] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 10:06:36] INFO root fetch - processPackages [gmsofttest]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 10:06:36] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/eb/c9/80a2e9566b35349b1eb8378e20b5a4ed2e0f534992281be6f39de2183dfc/gmsofttest-0.0.8.tar.gz
+[2024-05-11 10:06:37] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 10:06:37] INFO root fetch - processPackages [gmsofttest]: Downloading https://files.pythonhosted.org/packages/ed/9f/122493f4e3bf0b258a259a6fe55e73fbee9bdfc4fad41c41616c86d64327/gmsofttest-0.0.9.tar.gz
+[2024-05-11 10:06:37] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 10:06:37] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 10:06:37] INFO root fetch - processPackages [gmsofttest]: executing diffoscope
+[2024-05-11 10:06:37] INFO root fetch - processPackages [gmsofttest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmsofttest-0.0.8.tar.gz tmp/gmsofttest-0.0.9.tar.gz --markdown 20240511/g/gmsofttest/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 10:06:38] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 10:06:38] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 10:06:38] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 10:06:38] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.8.tar.gz]
+[2024-05-11 10:06:38] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.9.tar.gz]
+[2024-05-11 10:06:38] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
+[2024-05-11 10:06:38] INFO root fetch - main [MainThread]: Store serial: [23158880]
