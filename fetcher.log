@@ -7993,3 +7993,24 @@
 [2024-05-11 04:21:00] INFO root fetch - processPackages [iam-actions]: Remove: archive file [/home/abi/fetcher/tmp/iam_actions-1.2.20240511.tar.gz]
 [2024-05-11 04:21:00] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2024-05-11 04:21:00] INFO root fetch - main [MainThread]: Store serial: [23156612]
+[2024-05-11 04:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156612]
+[2024-05-11 04:23:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 04:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: linkml
+[2024-05-11 04:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vanguard-api
+[2024-05-11 04:23:08] INFO root fetch - processPackages [vanguard-api]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 04:23:08] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/da/01/6eb8bdd54d622528cd1b218f49258a97b1600e04dc8831875d8e9551ba1b/vanguard_api-0.0.3.tar.gz
+[2024-05-11 04:23:09] INFO root fetch - processPackages [linkml]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-11 04:23:09] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/b2/c6/cc6a0de33cf24e1a108eba8baf07bebe6ed0fd4283a615b511fd88539001/vanguard_api-0.0.4.tar.gz
+[2024-05-11 04:23:09] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/4a/c3/231c6d74db97c219fbfd523419bd7c82bbeee6ea9e6d055f8ca0cd945923/linkml-1.7.8.tar.gz
+[2024-05-11 04:23:09] INFO root fetch - processPackages [vanguard-api]: executing diffoscope
+[2024-05-11 04:23:09] INFO root fetch - processPackages [vanguard-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanguard_api-0.0.3.tar.gz tmp/vanguard_api-0.0.4.tar.gz --markdown 20240511/v/vanguard-api/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 04:23:09] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/82/57/65f9c60d84553b1eeedc0f4d4f4bd8a3cfdfa56e78696c848a5a59a05b99/linkml-1.7.9.tar.gz
+[2024-05-11 04:23:09] INFO root fetch - processPackages [linkml]: executing diffoscope
+[2024-05-11 04:23:09] INFO root fetch - processPackages [linkml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml-1.7.8.tar.gz tmp/linkml-1.7.9.tar.gz --markdown 20240511/l/linkml/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-11 04:23:10] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.3.tar.gz]
+[2024-05-11 04:23:10] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.4.tar.gz]
+[2024-05-11 04:23:10] INFO root fetch - main [MainThread]: End processing [vanguard-api]: success
+[2024-05-11 04:23:10] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.8.tar.gz]
+[2024-05-11 04:23:10] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.9.tar.gz]
+[2024-05-11 04:23:10] INFO root fetch - main [MainThread]: End processing [linkml]: success
+[2024-05-11 04:23:10] INFO root fetch - main [MainThread]: Store serial: [23156618]
