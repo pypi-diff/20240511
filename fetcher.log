@@ -14694,3 +14694,42 @@
 [2024-05-11 12:41:41] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17154240.tar.gz]
 [2024-05-11 12:41:41] INFO root fetch - main [MainThread]: End processing [utilmy]: success
 [2024-05-11 12:41:41] INFO root fetch - main [MainThread]: Store serial: [23160210]
+[2024-05-11 12:43:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160210]
+[2024-05-11 12:43:51] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prediscriminatez
+[2024-05-11 12:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapeddit
+[2024-05-11 12:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: FreeBack
+[2024-05-11 12:43:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webscout
+[2024-05-11 12:43:51] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.0] Old Version: [0.0.5]
+[2024-05-11 12:43:51] INFO root fetch - processPackages [FreeBack]: New version: [4.6.3] Old Version: [4.6.1b0]
+[2024-05-11 12:43:51] INFO root fetch - processPackages [webscout]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-11 12:43:51] INFO root fetch - processPackages [prediscriminatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:43:51] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/62/e0/aa74981b4b1aa7bdef602378198d5fcd25175aed8edb84d1efa29b50c44c/FreeBack-4.6.1b0.tar.gz
+[2024-05-11 12:43:51] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/4b/b1/a8ec693ac3388446ecab450d34e795eeeec6c9d50ed9f1ea2e4d2851835b/scrapeddit-0.0.5.tar.gz
+[2024-05-11 12:43:51] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/14/e2/8a9ca30c1e7adb84775cf9b509a03ae9a8e9542a06c5f0057c3308710537/webscout-1.4.5.tar.gz
+[2024-05-11 12:43:51] INFO root fetch - processPackages [prediscriminatez]: Downloading https://files.pythonhosted.org/packages/ab/96/9e14ceb2140551651c3f769479e366b5aabab41bb41a136735e333945a6c/prediscriminatez-1.1.tar.gz
+[2024-05-11 12:43:51] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/8b/d3/37dd0dac7ca9d18816db995e166abc641892d8454f50fae14a4d2f4062aa/FreeBack-4.6.3.tar.gz
+[2024-05-11 12:43:52] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/29/50/b1af7c04c72b8084f83551a78d5d620f6901e5fcaff562f9ff63e5cfc704/scrapeddit-0.1.0.tar.gz
+[2024-05-11 12:43:52] INFO root fetch - processPackages [FreeBack]: executing diffoscope
+[2024-05-11 12:43:52] INFO root fetch - processPackages [FreeBack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeBack-4.6.1b0.tar.gz tmp/FreeBack-4.6.3.tar.gz --markdown 20240511/F/FreeBack/4.6.1b0-4.6.3/README.md --exclude *.pyd
+[2024-05-11 12:43:52] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/14/f8/df00fdd29de986d2a7e596adb0e5f070284334234919e5a679dbcf9a21a7/webscout-1.4.6.tar.gz
+[2024-05-11 12:43:52] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 12:43:52] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.0.5.tar.gz tmp/scrapeddit-0.1.0.tar.gz --markdown 20240511/s/scrapeddit/0.0.5-0.1.0/README.md --exclude *.pyd
+[2024-05-11 12:43:52] INFO root fetch - processPackages [prediscriminatez]: Downloading https://files.pythonhosted.org/packages/b1/6a/29b085f8586dbaf2a6373aa705252e49d0a5f42305f196013e03c7cbf4a4/prediscriminatez-2.1.tar.gz
+[2024-05-11 12:43:52] INFO root fetch - processPackages [webscout]: executing diffoscope
+[2024-05-11 12:43:52] INFO root fetch - processPackages [webscout]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webscout-1.4.5.tar.gz tmp/webscout-1.4.6.tar.gz --markdown 20240511/w/webscout/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-11 12:43:52] INFO root fetch - processPackages [prediscriminatez]: executing diffoscope
+[2024-05-11 12:43:52] INFO root fetch - processPackages [prediscriminatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prediscriminatez-1.1.tar.gz tmp/prediscriminatez-2.1.tar.gz --markdown 20240511/p/prediscriminatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:43:52] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.6.1b0.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.6.3.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
+[2024-05-11 12:43:52] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.0.5.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.0.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 12:43:52] INFO root fetch - processPackages [prediscriminatez]: Remove: archive file [/home/abi/fetcher/tmp/prediscriminatez-1.1.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - processPackages [prediscriminatez]: Remove: archive file [/home/abi/fetcher/tmp/prediscriminatez-2.1.tar.gz]
+[2024-05-11 12:43:52] INFO root fetch - main [MainThread]: End processing [prediscriminatez]: success
+[2024-05-11 12:43:53] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-1.4.5.tar.gz]
+[2024-05-11 12:43:53] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-1.4.6.tar.gz]
+[2024-05-11 12:43:53] INFO root fetch - main [MainThread]: End processing [webscout]: success
+[2024-05-11 12:43:53] INFO root fetch - main [MainThread]: Store serial: [23160221]
