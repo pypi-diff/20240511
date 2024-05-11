@@ -17767,3 +17767,15 @@
 [2024-05-11 16:15:40] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.9.tar.gz]
 [2024-05-11 16:15:40] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
 [2024-05-11 16:15:40] INFO root fetch - main [MainThread]: Store serial: [23161807]
+[2024-05-11 16:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161807]
+[2024-05-11 16:17:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 16:17:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aipkgs-firebase
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/60/e0/69dc666392bdade23f817a0bf986a0c5515505750a48b475b318e9e8083c/aipkgs_firebase-0.0.8.tar.gz
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/99/79/af6dbbe811fe0a12d668e3665e1b2d00dfe2c6ce4cad2d9bf55436b29a70/aipkgs_firebase-0.0.9.tar.gz
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-0.0.8.tar.gz tmp/aipkgs_firebase-0.0.9.tar.gz --markdown 20240511/a/aipkgs-firebase/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.8.tar.gz]
+[2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.9.tar.gz]
+[2024-05-11 16:17:49] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 16:17:49] INFO root fetch - main [MainThread]: Store serial: [23161812]
