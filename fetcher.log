@@ -12120,3 +12120,48 @@
 [2024-05-11 09:44:52] INFO root fetch - processPackages [REVHubInterface]: Remove: archive file [/home/abi/fetcher/tmp/revhubinterface-1.3.3.dev1.tar.gz]
 [2024-05-11 09:44:52] INFO root fetch - main [MainThread]: End processing [REVHubInterface]: success
 [2024-05-11 09:44:52] INFO root fetch - main [MainThread]: Store serial: [23158766]
+[2024-05-11 09:46:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158766]
+[2024-05-11 09:47:01] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: create-django-sundar12
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: NetHyTech-Battery
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pseudonymalz
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cctrusted-vm
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: overthrustz
+[2024-05-11 09:47:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: beanhub-import
+[2024-05-11 09:47:01] INFO root fetch - processPackages [NetHyTech-Battery]: New version: [1.1] Old Version: [1.0]
+[2024-05-11 09:47:01] INFO root fetch - processPackages [cctrusted-vm]: New version: [0.4.0] Old Version: [0.0.3]
+[2024-05-11 09:47:01] WARNING root fetch - processPackages [pseudonymalz]: Skipping, unable to determine old version
+[2024-05-11 09:47:01] INFO root fetch - main [MainThread]: End processing [pseudonymalz] error
+[2024-05-11 09:47:01] INFO root fetch - processPackages [overthrustz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:47:01] WARNING root fetch - processPackages [create-django-sundar12]: Skipping, unable to determine old version
+[2024-05-11 09:47:01] INFO root fetch - main [MainThread]: End processing [create-django-sundar12] error
+[2024-05-11 09:47:01] INFO root fetch - processPackages [beanhub-import]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 09:47:01] INFO root fetch - processPackages [NetHyTech-Battery]: Downloading https://files.pythonhosted.org/packages/ca/d7/0d24cbac9236ff7ebb7e8218049a3ed1cf453e6bf1c7d060fdf663241119/NetHyTech_Battery-1.0-py3-none-any.whl
+[2024-05-11 09:47:01] INFO root fetch - processPackages [cctrusted-vm]: Downloading https://files.pythonhosted.org/packages/05/bb/37f06b0693548cff679a5b62a965e9dc19fa14138e346323350e79f8750e/cctrusted_vm-0.0.3.tar.gz
+[2024-05-11 09:47:01] INFO root fetch - processPackages [overthrustz]: Downloading https://files.pythonhosted.org/packages/21/dc/fa2898bcbb7a852de9ed9eb88d5ab408b98d34267f02f7b9fb7fc9acd4a9/overthrustz-1.1.tar.gz
+[2024-05-11 09:47:01] INFO root fetch - processPackages [beanhub-import]: Downloading https://files.pythonhosted.org/packages/65/6f/217249a668114ebc6cd64c3e93ec415fd3fe0547a22cae84b04ef141a615/beanhub_import-0.1.5.tar.gz
+[2024-05-11 09:47:01] INFO root fetch - processPackages [NetHyTech-Battery]: Downloading https://files.pythonhosted.org/packages/62/56/210700cc242b2920a4ee37283c842321cc37ae543c9384dd3dd4cd157aa4/NetHyTech_Battery-1.1-py3-none-any.whl
+[2024-05-11 09:47:01] INFO root fetch - processPackages [cctrusted-vm]: Downloading https://files.pythonhosted.org/packages/00/2c/d0c74931932f18eeb3edf1358d889e6a874e1d7c13ad72182c6e4a881d5c/cctrusted_vm-0.4.0.tar.gz
+[2024-05-11 09:47:02] INFO root fetch - processPackages [NetHyTech-Battery]: executing diffoscope
+[2024-05-11 09:47:02] INFO root fetch - processPackages [NetHyTech-Battery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NetHyTech_Battery-1.0-py3-none-any.whl.zip tmp/NetHyTech_Battery-1.1-py3-none-any.whl.zip --markdown 20240511/N/NetHyTech-Battery/1.0-1.1/README.md --exclude *.pyd
+[2024-05-11 09:47:02] INFO root fetch - processPackages [overthrustz]: Downloading https://files.pythonhosted.org/packages/52/77/a13b3a3a70d256761578bcae49e70999a3903f1cf86aa9634f8c8b2b60c0/overthrustz-2.1.tar.gz
+[2024-05-11 09:47:02] INFO root fetch - processPackages [cctrusted-vm]: executing diffoscope
+[2024-05-11 09:47:02] INFO root fetch - processPackages [cctrusted-vm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cctrusted_vm-0.0.3.tar.gz tmp/cctrusted_vm-0.4.0.tar.gz --markdown 20240511/c/cctrusted-vm/0.0.3-0.4.0/README.md --exclude *.pyd
+[2024-05-11 09:47:02] INFO root fetch - processPackages [beanhub-import]: Downloading https://files.pythonhosted.org/packages/ff/22/f3f4fb24e8b218ffbd278b58829d0e05ba9a03e0f3655bdf44ab2b04ac6d/beanhub_import-0.1.6.tar.gz
+[2024-05-11 09:47:02] INFO root fetch - processPackages [overthrustz]: executing diffoscope
+[2024-05-11 09:47:02] INFO root fetch - processPackages [overthrustz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overthrustz-1.1.tar.gz tmp/overthrustz-2.1.tar.gz --markdown 20240511/o/overthrustz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:47:02] INFO root fetch - processPackages [cctrusted-vm]: Remove: archive file [/home/abi/fetcher/tmp/cctrusted_vm-0.0.3.tar.gz]
+[2024-05-11 09:47:02] INFO root fetch - processPackages [cctrusted-vm]: Remove: archive file [/home/abi/fetcher/tmp/cctrusted_vm-0.4.0.tar.gz]
+[2024-05-11 09:47:02] INFO root fetch - main [MainThread]: End processing [cctrusted-vm]: success
+[2024-05-11 09:47:02] INFO root fetch - processPackages [NetHyTech-Battery]: Remove: archive file [/home/abi/fetcher/tmp/NetHyTech_Battery-1.0-py3-none-any.whl.zip]
+[2024-05-11 09:47:02] INFO root fetch - processPackages [NetHyTech-Battery]: Remove: archive file [/home/abi/fetcher/tmp/NetHyTech_Battery-1.1-py3-none-any.whl.zip]
+[2024-05-11 09:47:02] INFO root fetch - main [MainThread]: End processing [NetHyTech-Battery]: success
+[2024-05-11 09:47:02] INFO root fetch - processPackages [overthrustz]: Remove: archive file [/home/abi/fetcher/tmp/overthrustz-1.1.tar.gz]
+[2024-05-11 09:47:02] INFO root fetch - processPackages [overthrustz]: Remove: archive file [/home/abi/fetcher/tmp/overthrustz-2.1.tar.gz]
+[2024-05-11 09:47:02] INFO root fetch - main [MainThread]: End processing [overthrustz]: success
+[2024-05-11 09:47:02] INFO root fetch - processPackages [beanhub-import]: executing diffoscope
+[2024-05-11 09:47:02] INFO root fetch - processPackages [beanhub-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanhub_import-0.1.5.tar.gz tmp/beanhub_import-0.1.6.tar.gz --markdown 20240511/b/beanhub-import/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 09:47:03] INFO root fetch - processPackages [beanhub-import]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_import-0.1.5.tar.gz]
+[2024-05-11 09:47:03] INFO root fetch - processPackages [beanhub-import]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_import-0.1.6.tar.gz]
+[2024-05-11 09:47:03] INFO root fetch - main [MainThread]: End processing [beanhub-import]: success
+[2024-05-11 09:47:03] INFO root fetch - main [MainThread]: Store serial: [23158783]
