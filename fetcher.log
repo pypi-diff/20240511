@@ -8032,3 +8032,36 @@
 [2024-05-11 04:27:30] INFO root fetch - processPackages [laudanidinez]: Remove: archive file [/home/abi/fetcher/tmp/laudanidinez-2.1.tar.gz]
 [2024-05-11 04:27:30] INFO root fetch - main [MainThread]: End processing [laudanidinez]: success
 [2024-05-11 04:27:30] INFO root fetch - main [MainThread]: Store serial: [23156626]
+[2024-05-11 04:29:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156626]
+[2024-05-11 04:29:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 04:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ork.build
+[2024-05-11 04:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mislikinglyz
+[2024-05-11 04:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: biobrary
+[2024-05-11 04:29:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: linkml
+[2024-05-11 04:29:39] INFO root fetch - processPackages [ork.build]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-11 04:29:39] WARNING root fetch - processPackages [mislikinglyz]: Skipping, unable to determine old version
+[2024-05-11 04:29:39] INFO root fetch - main [MainThread]: End processing [mislikinglyz] error
+[2024-05-11 04:29:39] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/3d/f4/8ad5f3e93d32785fbcc2c448d2821991024fbf7a8add8d1ce6def33a2c89/ork.build-0.0.98.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [biobrary]: New version: [0.1.5] Old Version: [0.1.3]
+[2024-05-11 04:29:39] INFO root fetch - processPackages [linkml]: New version: [1.7.9] Old Version: [1.7.8]
+[2024-05-11 04:29:39] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/4a/c3/231c6d74db97c219fbfd523419bd7c82bbeee6ea9e6d055f8ca0cd945923/linkml-1.7.8.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [biobrary]: Downloading https://files.pythonhosted.org/packages/e2/5c/7b794c2dcaa00fd99359e28b66279ade65aa414c48d07290af5d7560617e/biobrary-0.1.3.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [ork.build]: Downloading https://files.pythonhosted.org/packages/57/6c/cdc688ee4714601fa2294fce5ed69c29405197d09e82485271d2ba7a76c2/ork.build-0.0.99.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [linkml]: Downloading https://files.pythonhosted.org/packages/82/57/65f9c60d84553b1eeedc0f4d4f4bd8a3cfdfa56e78696c848a5a59a05b99/linkml-1.7.9.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [ork.build]: executing diffoscope
+[2024-05-11 04:29:39] INFO root fetch - processPackages [ork.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ork.build-0.0.98.tar.gz tmp/ork.build-0.0.99.tar.gz --markdown 20240511/o/ork.build/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-11 04:29:39] INFO root fetch - processPackages [linkml]: executing diffoscope
+[2024-05-11 04:29:39] INFO root fetch - processPackages [linkml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkml-1.7.8.tar.gz tmp/linkml-1.7.9.tar.gz --markdown 20240511/l/linkml/1.7.8-1.7.9/README.md --exclude *.pyd
+[2024-05-11 04:29:39] INFO root fetch - processPackages [biobrary]: Downloading https://files.pythonhosted.org/packages/fe/cf/dc855c258a1e89d3d636c640f0b7dfd3579a09c5d2d95ddaaca4f31392e7/biobrary-0.1.5.tar.gz
+[2024-05-11 04:29:39] INFO root fetch - processPackages [biobrary]: executing diffoscope
+[2024-05-11 04:29:39] INFO root fetch - processPackages [biobrary]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/biobrary-0.1.3.tar.gz tmp/biobrary-0.1.5.tar.gz --markdown 20240511/b/biobrary/0.1.3-0.1.5/README.md --exclude *.pyd
+[2024-05-11 04:29:40] INFO root fetch - processPackages [biobrary]: Remove: archive file [/home/abi/fetcher/tmp/biobrary-0.1.3.tar.gz]
+[2024-05-11 04:29:40] INFO root fetch - processPackages [biobrary]: Remove: archive file [/home/abi/fetcher/tmp/biobrary-0.1.5.tar.gz]
+[2024-05-11 04:29:40] INFO root fetch - main [MainThread]: End processing [biobrary]: success
+[2024-05-11 04:29:40] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.8.tar.gz]
+[2024-05-11 04:29:40] INFO root fetch - processPackages [linkml]: Remove: archive file [/home/abi/fetcher/tmp/linkml-1.7.9.tar.gz]
+[2024-05-11 04:29:40] INFO root fetch - main [MainThread]: End processing [linkml]: success
+[2024-05-11 04:29:41] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.98.tar.gz]
+[2024-05-11 04:29:41] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
+[2024-05-11 04:29:41] INFO root fetch - main [MainThread]: End processing [ork.build]: success
+[2024-05-11 04:29:41] INFO root fetch - main [MainThread]: Store serial: [23156642]
