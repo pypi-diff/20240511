@@ -17912,3 +17912,41 @@
 [2024-05-11 16:24:21] INFO root fetch - processPackages [zensols.mimic]: Remove: archive file [/home/abi/fetcher/tmp/zensols.mimic-1.7.1-py3-none-any.whl.zip]
 [2024-05-11 16:24:21] INFO root fetch - main [MainThread]: End processing [zensols.mimic]: success
 [2024-05-11 16:24:21] INFO root fetch - main [MainThread]: Store serial: [23161884]
+[2024-05-11 16:26:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161884]
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tf-nightly-intel
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: exllamav2
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynnacle-uno
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: path-reducer
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pregenerationz
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sanctimonyz
+[2024-05-11 16:26:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llm-bench
+[2024-05-11 16:26:30] WARNING root fetch - processPackages [path-reducer]: Skipping, unable to determine old version
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: End processing [path-reducer] error
+[2024-05-11 16:26:30] WARNING root fetch - processPackages [llm-bench]: Skipping, unable to determine old version
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: End processing [llm-bench] error
+[2024-05-11 16:26:30] INFO root fetch - processPackages [sanctimonyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:26:30] WARNING root fetch - processPackages [pregenerationz]: Skipping, unable to determine old version
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: End processing [pregenerationz] error
+[2024-05-11 16:26:30] WARNING root fetch - processPackages [pynnacle-uno]: Skipping, unable to determine old version
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: End processing [pynnacle-uno] error
+[2024-05-11 16:26:30] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.17.0.dev20240511] Old Version: [2.17.0.dev20240510]
+[2024-05-11 16:26:30] INFO root fetch - processPackages [exllamav2]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 16:26:30] INFO root fetch - processPackages [sanctimonyz]: Downloading https://files.pythonhosted.org/packages/eb/5d/e37bc85ece74c711e3bb29d18b39b9d0eb7d1e9cf4d78644e7a2576ed1dd/sanctimonyz-1.1.tar.gz
+[2024-05-11 16:26:30] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/a0/6c/bb8613bcf4288ed911d39f136486cef750a7ba5c05892052ef83422ccfa7/exllamav2-0.0.8-py3-none-any.whl
+[2024-05-11 16:26:30] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/8e/0e/243406a244baccaeb0ca20c4442c76d2d1a901f2bb3c00521c4b5eba08f4/tf_nightly_intel-2.17.0.dev20240510-cp39-cp39-win_amd64.whl
+[2024-05-11 16:26:30] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 214706291>=10485760
+[2024-05-11 16:26:30] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2024-05-11 16:26:30] INFO root fetch - processPackages [sanctimonyz]: Downloading https://files.pythonhosted.org/packages/cd/f1/9b980a0864cc6d79267980ffe2df9dc279c14e57c7c1ed95bd5411b9e7c7/sanctimonyz-2.1.tar.gz
+[2024-05-11 16:26:30] INFO root fetch - processPackages [exllamav2]: Downloading https://files.pythonhosted.org/packages/f2/79/8956771fb34831200a9ccf6ba088252e3efccd09220c6197d8fca522fd2c/exllamav2-0.0.9-py3-none-any.whl
+[2024-05-11 16:26:31] INFO root fetch - processPackages [sanctimonyz]: executing diffoscope
+[2024-05-11 16:26:31] INFO root fetch - processPackages [sanctimonyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sanctimonyz-1.1.tar.gz tmp/sanctimonyz-2.1.tar.gz --markdown 20240511/s/sanctimonyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:26:31] INFO root fetch - processPackages [exllamav2]: executing diffoscope
+[2024-05-11 16:26:31] INFO root fetch - processPackages [exllamav2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/exllamav2-0.0.8-py3-none-any.whl.zip tmp/exllamav2-0.0.9-py3-none-any.whl.zip --markdown 20240511/e/exllamav2/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 16:26:31] INFO root fetch - processPackages [sanctimonyz]: Remove: archive file [/home/abi/fetcher/tmp/sanctimonyz-1.1.tar.gz]
+[2024-05-11 16:26:31] INFO root fetch - processPackages [sanctimonyz]: Remove: archive file [/home/abi/fetcher/tmp/sanctimonyz-2.1.tar.gz]
+[2024-05-11 16:26:31] INFO root fetch - main [MainThread]: End processing [sanctimonyz]: success
+[2024-05-11 16:26:31] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.8-py3-none-any.whl.zip]
+[2024-05-11 16:26:31] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.9-py3-none-any.whl.zip]
+[2024-05-11 16:26:31] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
+[2024-05-11 16:26:31] INFO root fetch - main [MainThread]: Store serial: [23161913]
