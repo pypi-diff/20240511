@@ -7601,3 +7601,15 @@
 [2024-05-11 03:50:45] INFO root fetch - processPackages [partnero]: Remove: archive file [/home/abi/fetcher/tmp/partnero-0.2.0.tar.gz]
 [2024-05-11 03:50:45] INFO root fetch - main [MainThread]: End processing [partnero]: success
 [2024-05-11 03:50:45] INFO root fetch - main [MainThread]: Store serial: [23156450]
+[2024-05-11 03:52:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156450]
+[2024-05-11 03:52:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 03:52:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: BrazilFiscalReport
+[2024-05-11 03:52:54] INFO root fetch - processPackages [BrazilFiscalReport]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-11 03:52:54] INFO root fetch - processPackages [BrazilFiscalReport]: Downloading https://files.pythonhosted.org/packages/7d/03/c67a46f7e0fb53f52aef7bbdf1625dd49b5dcf0aab55d7eba5ee1ff6df98/brazilfiscalreport-0.3.3.tar.gz
+[2024-05-11 03:52:55] INFO root fetch - processPackages [BrazilFiscalReport]: Downloading https://files.pythonhosted.org/packages/14/cb/5d5c6f232bd5014ef6c1b88fa9f9b92ea9681dbcf2825c31d5b0b4f7b044/brazilfiscalreport-0.3.4.tar.gz
+[2024-05-11 03:52:55] INFO root fetch - processPackages [BrazilFiscalReport]: executing diffoscope
+[2024-05-11 03:52:55] INFO root fetch - processPackages [BrazilFiscalReport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brazilfiscalreport-0.3.3.tar.gz tmp/brazilfiscalreport-0.3.4.tar.gz --markdown 20240511/B/BrazilFiscalReport/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-11 03:52:56] INFO root fetch - processPackages [BrazilFiscalReport]: Remove: archive file [/home/abi/fetcher/tmp/brazilfiscalreport-0.3.3.tar.gz]
+[2024-05-11 03:52:56] INFO root fetch - processPackages [BrazilFiscalReport]: Remove: archive file [/home/abi/fetcher/tmp/brazilfiscalreport-0.3.4.tar.gz]
+[2024-05-11 03:52:56] INFO root fetch - main [MainThread]: End processing [BrazilFiscalReport]: success
+[2024-05-11 03:52:56] INFO root fetch - main [MainThread]: Store serial: [23156453]
