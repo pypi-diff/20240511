@@ -18950,3 +18950,33 @@
 [2024-05-11 17:35:15] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.4.tar.gz]
 [2024-05-11 17:35:15] INFO root fetch - main [MainThread]: End processing [poetry-moment]: success
 [2024-05-11 17:35:15] INFO root fetch - main [MainThread]: Store serial: [23162314]
+[2024-05-11 17:37:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162314]
+[2024-05-11 17:37:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 17:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: vapix-python
+[2024-05-11 17:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: remla24-team8-lib-ml
+[2024-05-11 17:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: monteprediction
+[2024-05-11 17:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TINTOlib
+[2024-05-11 17:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: biogeneticsz
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 17:37:24] INFO root fetch - processPackages [TINTOlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: Downloading https://files.pythonhosted.org/packages/72/65/0e5db0bfdfa9d9120cb64c4ae011c2e39a8cc051ac9b195c658f6e06093f/monteprediction-1.0.8.tar.gz
+[2024-05-11 17:37:24] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/88/66/5ff78a7354d96c5cb6040119eab2be915cdf9e9570f5bf18b1c2dba81c64/tintolib-0.0.8.tar.gz
+[2024-05-11 17:37:24] WARNING root fetch - processPackages [vapix-python]: Skipping, unable to determine old version
+[2024-05-11 17:37:24] INFO root fetch - main [MainThread]: End processing [vapix-python] error
+[2024-05-11 17:37:24] WARNING root fetch - processPackages [remla24-team8-lib-ml]: Skipping, unable to determine old version
+[2024-05-11 17:37:24] INFO root fetch - main [MainThread]: End processing [remla24-team8-lib-ml] error
+[2024-05-11 17:37:24] WARNING root fetch - processPackages [biogeneticsz]: Skipping, unable to determine old version
+[2024-05-11 17:37:24] INFO root fetch - main [MainThread]: End processing [biogeneticsz] error
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: Downloading https://files.pythonhosted.org/packages/5f/93/f758156e7f6a3b1a4a13dc1a8bc6997757cf1b8852b1198ef946ead5ab2d/monteprediction-1.0.9.tar.gz
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: executing diffoscope
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monteprediction-1.0.8.tar.gz tmp/monteprediction-1.0.9.tar.gz --markdown 20240511/m/monteprediction/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 17:37:24] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/c4/27/a91d5cfaf102a55a2a1c9d05c61fa9b4e7a94ef94ddb79a837edafdb6324/tintolib-0.0.9.tar.gz
+[2024-05-11 17:37:24] INFO root fetch - processPackages [TINTOlib]: executing diffoscope
+[2024-05-11 17:37:24] INFO root fetch - processPackages [TINTOlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tintolib-0.0.8.tar.gz tmp/tintolib-0.0.9.tar.gz --markdown 20240511/T/TINTOlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: Remove: archive file [/home/abi/fetcher/tmp/monteprediction-1.0.8.tar.gz]
+[2024-05-11 17:37:24] INFO root fetch - processPackages [monteprediction]: Remove: archive file [/home/abi/fetcher/tmp/monteprediction-1.0.9.tar.gz]
+[2024-05-11 17:37:24] INFO root fetch - main [MainThread]: End processing [monteprediction]: success
+[2024-05-11 17:37:33] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.8.tar.gz]
+[2024-05-11 17:37:33] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
+[2024-05-11 17:37:33] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
+[2024-05-11 17:37:33] INFO root fetch - main [MainThread]: Store serial: [23162332]
