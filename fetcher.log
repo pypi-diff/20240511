@@ -19666,3 +19666,36 @@
 [2024-05-11 18:17:24] INFO root fetch - processPackages [dune-rivals]: Remove: archive file [/home/abi/fetcher/tmp/dune_rivals-0.6.0b0.tar.gz]
 [2024-05-11 18:17:24] INFO root fetch - main [MainThread]: End processing [dune-rivals]: success
 [2024-05-11 18:17:24] INFO root fetch - main [MainThread]: Store serial: [23162596]
+[2024-05-11 18:19:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162596]
+[2024-05-11 18:19:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mke-sculib
+[2024-05-11 18:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: electrotherapeuticz
+[2024-05-11 18:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: metalarchivist
+[2024-05-11 18:19:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xnodes
+[2024-05-11 18:19:33] INFO root fetch - processPackages [xnodes]: New version: [0.1.0] Old Version: [0.0.13b0]
+[2024-05-11 18:19:33] INFO root fetch - processPackages [mke-sculib]: New version: [2.5.0] Old Version: [2.4.9]
+[2024-05-11 18:19:33] INFO root fetch - processPackages [metalarchivist]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: Downloading https://files.pythonhosted.org/packages/04/c4/f2ba61f4add05587cb65b0f8472d726194b780b33ec8a044dc14def5e25a/xnodes-0.0.13b0.tar.gz
+[2024-05-11 18:19:34] WARNING root fetch - processPackages [electrotherapeuticz]: Skipping, unable to determine old version
+[2024-05-11 18:19:34] INFO root fetch - main [MainThread]: End processing [electrotherapeuticz] error
+[2024-05-11 18:19:34] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/0b/68/247b1c631da97d2abc29625af838c0405fb3e749788a65abcc1f8b5d8094/mke_sculib-2.4.9.tar.gz
+[2024-05-11 18:19:34] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/7c/da/ecfe01db8b7ff64066420eb5dd17a37176b3408bfed21432f2d0002500dc/metalarchivist-0.2.8.tar.gz
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: Downloading https://files.pythonhosted.org/packages/83/88/8c8730e9e6641a4d2bcaf1f7d1aa07202d07d3e0d336bcaf578b9a6aad24/xnodes-0.1.0-py3-none-any.whl
+[2024-05-11 18:19:34] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/9f/99/abd55a94a4990d7a874c8a172958515f3e1b215742eb53cacebc7e77d4bc/metalarchivist-0.2.9.tar.gz
+[2024-05-11 18:19:34] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/3f/46/b55a8a7e7140ddf851152aef6c19651fe60bcb0bc7f7370b045a1338af19/mke_sculib-2.5.0.tar.gz
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: executing diffoscope
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xnodes-0.0.13b0.tar.gz tmp/xnodes-0.1.0-py3-none-any.whl.zip --markdown 20240511/x/xnodes/0.0.13b0-0.1.0/README.md --exclude *.pyd
+[2024-05-11 18:19:34] INFO root fetch - processPackages [metalarchivist]: executing diffoscope
+[2024-05-11 18:19:34] INFO root fetch - processPackages [metalarchivist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalarchivist-0.2.8.tar.gz tmp/metalarchivist-0.2.9.tar.gz --markdown 20240511/m/metalarchivist/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 18:19:34] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-05-11 18:19:34] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.4.9.tar.gz tmp/mke_sculib-2.5.0.tar.gz --markdown 20240511/m/mke-sculib/2.4.9-2.5.0/README.md --exclude *.pyd
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: Remove: archive file [/home/abi/fetcher/tmp/xnodes-0.0.13b0.tar.gz]
+[2024-05-11 18:19:34] INFO root fetch - processPackages [xnodes]: Remove: archive file [/home/abi/fetcher/tmp/xnodes-0.1.0-py3-none-any.whl.zip]
+[2024-05-11 18:19:34] INFO root fetch - main [MainThread]: End processing [xnodes]: success
+[2024-05-11 18:19:35] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.4.9.tar.gz]
+[2024-05-11 18:19:35] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.0.tar.gz]
+[2024-05-11 18:19:35] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-05-11 18:19:35] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.2.8.tar.gz]
+[2024-05-11 18:19:35] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.2.9.tar.gz]
+[2024-05-11 18:19:35] INFO root fetch - main [MainThread]: End processing [metalarchivist]: success
+[2024-05-11 18:19:35] INFO root fetch - main [MainThread]: Store serial: [23162607]
