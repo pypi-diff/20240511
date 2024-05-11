@@ -8903,3 +8903,36 @@
 [2024-05-11 05:24:05] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.5.tar.gz]
 [2024-05-11 05:24:05] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
 [2024-05-11 05:24:05] INFO root fetch - main [MainThread]: Store serial: [23156961]
+[2024-05-11 05:26:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156961]
+[2024-05-11 05:26:14] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: copydesksz
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio-plugin-simple
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-plugin-vlc
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ricciardi
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ricciardi]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ricciardi]: Downloading https://files.pythonhosted.org/packages/62/a1/614df84845a0f3e8f6f9dc9417b21c88e106dbf13af411adae144f3b1d4a/ricciardi-0.1.2.tar.gz
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-plugin-vlc]: New version: [0.0.2a6] Old Version: [0.0.2a5]
+[2024-05-11 05:26:14] WARNING root fetch - processPackages [copydesksz]: Skipping, unable to determine old version
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-audio-plugin-simple]: New version: [0.0.2a6] Old Version: [0.0.2a4]
+[2024-05-11 05:26:14] INFO root fetch - main [MainThread]: End processing [copydesksz] error
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ricciardi]: Downloading https://files.pythonhosted.org/packages/c9/67/e0f9940891524e580ea2d055efff99876948e2f70870611da3a660502819/ricciardi-0.1.3.tar.gz
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/f5/6a/c55a3a7810bd8a20580ca5861e87cef38f5465501421ae74f73602b0512f/ovos_plugin_vlc-0.0.2a5-py3-none-any.whl
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/ff/0a/7280985fef2b5ef8deed94ccff95438c2c9575b3f16ab52affe30b330386/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ricciardi]: executing diffoscope
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ricciardi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ricciardi-0.1.2.tar.gz tmp/ricciardi-0.1.3.tar.gz --markdown 20240511/r/ricciardi/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-plugin-vlc]: Downloading https://files.pythonhosted.org/packages/c8/26/718cc0374843881b2b5dcd2798016001e8aa480360853548d2d2207d8149/ovos_plugin_vlc-0.0.2a6-py3-none-any.whl
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Downloading https://files.pythonhosted.org/packages/a6/55/4633eedad06f8d3e6df1aacedb64c3e6bf356850ee50d9bdfa18ff81f24e/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-plugin-vlc]: executing diffoscope
+[2024-05-11 05:26:14] INFO root fetch - processPackages [ovos-plugin-vlc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_vlc-0.0.2a5-py3-none-any.whl.zip tmp/ovos_plugin_vlc-0.0.2a6-py3-none-any.whl.zip --markdown 20240511/o/ovos-plugin-vlc/0.0.2a5-0.0.2a6/README.md --exclude *.pyd
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-audio-plugin-simple]: executing diffoscope
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-audio-plugin-simple]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl.zip tmp/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl.zip --markdown 20240511/o/ovos-audio-plugin-simple/0.0.2a4-0.0.2a6/README.md --exclude *.pyd
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ricciardi]: Remove: archive file [/home/abi/fetcher/tmp/ricciardi-0.1.2.tar.gz]
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ricciardi]: Remove: archive file [/home/abi/fetcher/tmp/ricciardi-0.1.3.tar.gz]
+[2024-05-11 05:26:15] INFO root fetch - main [MainThread]: End processing [ricciardi]: success
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a5-py3-none-any.whl.zip]
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-plugin-vlc]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_vlc-0.0.2a6-py3-none-any.whl.zip]
+[2024-05-11 05:26:15] INFO root fetch - main [MainThread]: End processing [ovos-plugin-vlc]: success
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio_plugin_simple-0.0.2a4-py3-none-any.whl.zip]
+[2024-05-11 05:26:15] INFO root fetch - processPackages [ovos-audio-plugin-simple]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio_plugin_simple-0.0.2a6-py3-none-any.whl.zip]
+[2024-05-11 05:26:15] INFO root fetch - main [MainThread]: End processing [ovos-audio-plugin-simple]: success
+[2024-05-11 05:26:15] INFO root fetch - main [MainThread]: Store serial: [23156974]
