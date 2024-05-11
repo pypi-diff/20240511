@@ -16517,3 +16517,27 @@
 [2024-05-11 14:46:14] INFO root fetch - processPackages [pygeoif]: Remove: archive file [/home/abi/fetcher/tmp/pygeoif-1.5.0.tar.gz]
 [2024-05-11 14:46:14] INFO root fetch - main [MainThread]: End processing [pygeoif]: success
 [2024-05-11 14:46:14] INFO root fetch - main [MainThread]: Store serial: [23161137]
+[2024-05-11 14:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161137]
+[2024-05-11 14:48:22] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 14:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ratatatsz
+[2024-05-11 14:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapeddit
+[2024-05-11 14:48:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: salpingectomyz
+[2024-05-11 14:48:22] INFO root fetch - processPackages [scrapeddit]: New version: [0.2.3] Old Version: [0.2.2]
+[2024-05-11 14:48:22] INFO root fetch - processPackages [ratatatsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:48:22] WARNING root fetch - processPackages [salpingectomyz]: Skipping, unable to determine old version
+[2024-05-11 14:48:22] INFO root fetch - main [MainThread]: End processing [salpingectomyz] error
+[2024-05-11 14:48:23] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/e8/1f/54625ae13754dfa30f9b2acaa6607419311b1693cab1806ac2612f9b28a5/scrapeddit-0.2.2.tar.gz
+[2024-05-11 14:48:23] INFO root fetch - processPackages [ratatatsz]: Downloading https://files.pythonhosted.org/packages/50/41/82c36b38da937b50663654957d964c7d1cd85bdc8116c19e4266f9ed56e1/ratatatsz-1.1.tar.gz
+[2024-05-11 14:48:23] INFO root fetch - processPackages [ratatatsz]: Downloading https://files.pythonhosted.org/packages/bf/01/c12b55f25db85413925507d7925662d03f50a3da13c321461c86f253a865/ratatatsz-2.1.tar.gz
+[2024-05-11 14:48:23] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/bf/05/b0175e92aca23e7112911d6ec5529d097c6485ae98230bb905445413d97b/scrapeddit-0.2.3.tar.gz
+[2024-05-11 14:48:23] INFO root fetch - processPackages [ratatatsz]: executing diffoscope
+[2024-05-11 14:48:23] INFO root fetch - processPackages [ratatatsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ratatatsz-1.1.tar.gz tmp/ratatatsz-2.1.tar.gz --markdown 20240511/r/ratatatsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:48:23] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 14:48:23] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.2.2.tar.gz tmp/scrapeddit-0.2.3.tar.gz --markdown 20240511/s/scrapeddit/0.2.2-0.2.3/README.md --exclude *.pyd
+[2024-05-11 14:48:24] INFO root fetch - processPackages [ratatatsz]: Remove: archive file [/home/abi/fetcher/tmp/ratatatsz-1.1.tar.gz]
+[2024-05-11 14:48:24] INFO root fetch - processPackages [ratatatsz]: Remove: archive file [/home/abi/fetcher/tmp/ratatatsz-2.1.tar.gz]
+[2024-05-11 14:48:24] INFO root fetch - main [MainThread]: End processing [ratatatsz]: success
+[2024-05-11 14:48:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.2.tar.gz]
+[2024-05-11 14:48:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.3.tar.gz]
+[2024-05-11 14:48:24] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 14:48:24] INFO root fetch - main [MainThread]: Store serial: [23161146]
