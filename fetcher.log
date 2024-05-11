@@ -8409,3 +8409,36 @@
 [2024-05-11 04:53:38] INFO root fetch - processPackages [shroudstone]: Remove: archive file [/home/abi/fetcher/tmp/shroudstone-0.1.0a8.tar.gz]
 [2024-05-11 04:53:38] INFO root fetch - main [MainThread]: End processing [shroudstone]: success
 [2024-05-11 04:53:38] INFO root fetch - main [MainThread]: Store serial: [23156767]
+[2024-05-11 04:55:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156767]
+[2024-05-11 04:55:47] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 04:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dsnamesz
+[2024-05-11 04:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fim-utils
+[2024-05-11 04:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: migration-db
+[2024-05-11 04:55:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: muti.basic
+[2024-05-11 04:55:47] INFO root fetch - processPackages [migration-db]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 04:55:47] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/7f/ed/1d35592a8041b6e70f3af7408af064fcea50ebc84c2e08def0f09107c7ce/migration_db-1.0.8.tar.gz
+[2024-05-11 04:55:47] WARNING root fetch - processPackages [dsnamesz]: Skipping, unable to determine old version
+[2024-05-11 04:55:47] INFO root fetch - main [MainThread]: End processing [dsnamesz] error
+[2024-05-11 04:55:47] INFO root fetch - processPackages [muti.basic]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 04:55:47] INFO root fetch - processPackages [fim-utils]: New version: [1.7.0b1] Old Version: [1.6.4]
+[2024-05-11 04:55:47] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/21/4d/a05ab9a9bb48f79223952469dbca6b72d5dd7b36d9ecafec42abe2033706/migration_db-1.0.9.tar.gz
+[2024-05-11 04:55:47] INFO root fetch - processPackages [muti.basic]: Downloading https://files.pythonhosted.org/packages/de/e7/f00679853bdcc651b862cfc92cee53d338f8c9827c82533831c25f9795a5/muti.basic-0.0.7.tar.gz
+[2024-05-11 04:55:47] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/a1/97/cfaf99de66c5e606a306094686f483a636dee7c501122c0d96d5d2153e99/fim-utils-1.6.4.tar.gz
+[2024-05-11 04:55:47] INFO root fetch - processPackages [migration-db]: executing diffoscope
+[2024-05-11 04:55:47] INFO root fetch - processPackages [migration-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migration_db-1.0.8.tar.gz tmp/migration_db-1.0.9.tar.gz --markdown 20240511/m/migration-db/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 04:55:47] INFO root fetch - processPackages [fim-utils]: Downloading https://files.pythonhosted.org/packages/5a/cf/ac0dc98a717b1f0335de4bec34b23da985eb8b9dd67d69b42c239c59fbea/fim-utils-1.7.0b1.tar.gz
+[2024-05-11 04:55:48] INFO root fetch - processPackages [muti.basic]: Downloading https://files.pythonhosted.org/packages/a5/a9/c3040a968c1890f8270a9b82f12d882f92d5b16f80e229424863ed8bb7ca/muti_basic-0.0.8.tar.gz
+[2024-05-11 04:55:48] INFO root fetch - processPackages [fim-utils]: executing diffoscope
+[2024-05-11 04:55:48] INFO root fetch - processPackages [fim-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fim-utils-1.6.4.tar.gz tmp/fim-utils-1.7.0b1.tar.gz --markdown 20240511/f/fim-utils/1.6.4-1.7.0b1/README.md --exclude *.pyd
+[2024-05-11 04:55:48] INFO root fetch - processPackages [muti.basic]: executing diffoscope
+[2024-05-11 04:55:48] INFO root fetch - processPackages [muti.basic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/muti.basic-0.0.7.tar.gz tmp/muti_basic-0.0.8.tar.gz --markdown 20240511/m/muti.basic/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 04:55:48] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.8.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - main [MainThread]: End processing [migration-db]: success
+[2024-05-11 04:55:48] INFO root fetch - processPackages [fim-utils]: Remove: archive file [/home/abi/fetcher/tmp/fim-utils-1.6.4.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - processPackages [fim-utils]: Remove: archive file [/home/abi/fetcher/tmp/fim-utils-1.7.0b1.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - main [MainThread]: End processing [fim-utils]: success
+[2024-05-11 04:55:48] INFO root fetch - processPackages [muti.basic]: Remove: archive file [/home/abi/fetcher/tmp/muti.basic-0.0.7.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - processPackages [muti.basic]: Remove: archive file [/home/abi/fetcher/tmp/muti_basic-0.0.8.tar.gz]
+[2024-05-11 04:55:48] INFO root fetch - main [MainThread]: End processing [muti.basic]: success
+[2024-05-11 04:55:48] INFO root fetch - main [MainThread]: Store serial: [23156782]
