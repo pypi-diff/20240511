@@ -15277,3 +15277,45 @@
 [2024-05-11 13:20:59] INFO root fetch - processPackages [prerogativityz]: Remove: archive file [/home/abi/fetcher/tmp/prerogativityz-2.1.tar.gz]
 [2024-05-11 13:20:59] INFO root fetch - main [MainThread]: End processing [prerogativityz]: success
 [2024-05-11 13:20:59] INFO root fetch - main [MainThread]: Store serial: [23160448]
+[2024-05-11 13:23:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160448]
+[2024-05-11 13:23:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lama2923
+[2024-05-11 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sequencingz
+[2024-05-11 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: moto
+[2024-05-11 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: wafl
+[2024-05-11 13:23:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: radiacode
+[2024-05-11 13:23:08] INFO root fetch - processPackages [moto]: New version: [5.0.7.dev9] Old Version: [5.0.7.dev8]
+[2024-05-11 13:23:08] INFO root fetch - processPackages [radiacode]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-11 13:23:08] WARNING root fetch - processPackages [sequencingz]: Skipping, unable to determine old version
+[2024-05-11 13:23:08] INFO root fetch - processPackages [lama2923]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 13:23:08] INFO root fetch - main [MainThread]: End processing [sequencingz] error
+[2024-05-11 13:23:08] INFO root fetch - processPackages [wafl]: New version: [0.0.9] Old Version: [0.0.83]
+[2024-05-11 13:23:09] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/91/d6/6faf251c731db13619210fd71fe41ad43985f2754d26108f1011d234680e/moto-5.0.7.dev8.tar.gz
+[2024-05-11 13:23:09] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/35/59/959e1b6a5a7187b4a8d7fafb12b9fd45d9b66ea1c53d4de3b2f194ae1e06/lama2923-1.0.2.tar.gz
+[2024-05-11 13:23:09] INFO root fetch - processPackages [wafl]: Downloading https://files.pythonhosted.org/packages/05/5a/db81293c5baa31994b2d5a3ece06864682a104d850ca826b2448e80d7549/wafl-0.0.83-py3-none-any.whl
+[2024-05-11 13:23:09] INFO root fetch - processPackages [radiacode]: Downloading https://files.pythonhosted.org/packages/de/69/138bc867dec4de6590cdd2dcfc4ddedf27d6abd1d699bcdb7b46c53d03c1/radiacode-0.3.2.tar.gz
+[2024-05-11 13:23:09] INFO root fetch - processPackages [lama2923]: Downloading https://files.pythonhosted.org/packages/06/32/c97b8e90d61a7705600dec5123eee4755d735c1aa5a24707a092b6acef15/lama2923-1.0.3.tar.gz
+[2024-05-11 13:23:09] INFO root fetch - processPackages [wafl]: Downloading https://files.pythonhosted.org/packages/e8/ba/a479c38e7318eb06392b407915b72a861eda434ae4f577eacb094e5f8d4a/wafl-0.0.9-py3-none-any.whl
+[2024-05-11 13:23:09] INFO root fetch - processPackages [radiacode]: Downloading https://files.pythonhosted.org/packages/75/bf/aa3d77957af3367792a225621b6093409615513b4bc3795f80bfe0863e2d/radiacode-0.3.3.tar.gz
+[2024-05-11 13:23:09] INFO root fetch - processPackages [lama2923]: executing diffoscope
+[2024-05-11 13:23:09] INFO root fetch - processPackages [lama2923]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lama2923-1.0.2.tar.gz tmp/lama2923-1.0.3.tar.gz --markdown 20240511/l/lama2923/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 13:23:09] INFO root fetch - processPackages [radiacode]: executing diffoscope
+[2024-05-11 13:23:09] INFO root fetch - processPackages [radiacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/radiacode-0.3.2.tar.gz tmp/radiacode-0.3.3.tar.gz --markdown 20240511/r/radiacode/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-11 13:23:09] INFO root fetch - processPackages [wafl]: executing diffoscope
+[2024-05-11 13:23:09] INFO root fetch - processPackages [wafl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wafl-0.0.83-py3-none-any.whl.zip tmp/wafl-0.0.9-py3-none-any.whl.zip --markdown 20240511/w/wafl/0.0.83-0.0.9/README.md --exclude *.pyd
+[2024-05-11 13:23:10] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-1.0.2.tar.gz]
+[2024-05-11 13:23:10] INFO root fetch - processPackages [lama2923]: Remove: archive file [/home/abi/fetcher/tmp/lama2923-1.0.3.tar.gz]
+[2024-05-11 13:23:10] INFO root fetch - main [MainThread]: End processing [lama2923]: success
+[2024-05-11 13:23:10] INFO root fetch - processPackages [moto]: Downloading https://files.pythonhosted.org/packages/50/64/cafb1dd7f7151ece615191e8b7df798c093a4905ff18ffdcc0f5ec6c6e76/moto-5.0.7.dev9.tar.gz
+[2024-05-11 13:23:10] INFO root fetch - processPackages [radiacode]: Remove: archive file [/home/abi/fetcher/tmp/radiacode-0.3.2.tar.gz]
+[2024-05-11 13:23:10] INFO root fetch - processPackages [radiacode]: Remove: archive file [/home/abi/fetcher/tmp/radiacode-0.3.3.tar.gz]
+[2024-05-11 13:23:10] INFO root fetch - main [MainThread]: End processing [radiacode]: success
+[2024-05-11 13:23:10] INFO root fetch - processPackages [moto]: executing diffoscope
+[2024-05-11 13:23:10] INFO root fetch - processPackages [moto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moto-5.0.7.dev8.tar.gz tmp/moto-5.0.7.dev9.tar.gz --markdown 20240511/m/moto/5.0.7.dev8-5.0.7.dev9/README.md --exclude *.pyd
+[2024-05-11 13:23:10] INFO root fetch - processPackages [wafl]: Remove: archive file [/home/abi/fetcher/tmp/wafl-0.0.83-py3-none-any.whl.zip]
+[2024-05-11 13:23:10] INFO root fetch - processPackages [wafl]: Remove: archive file [/home/abi/fetcher/tmp/wafl-0.0.9-py3-none-any.whl.zip]
+[2024-05-11 13:23:10] INFO root fetch - main [MainThread]: End processing [wafl]: success
+[2024-05-11 13:23:21] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev8.tar.gz]
+[2024-05-11 13:23:21] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
+[2024-05-11 13:23:21] INFO root fetch - main [MainThread]: End processing [moto]: success
+[2024-05-11 13:23:21] INFO root fetch - main [MainThread]: Store serial: [23160467]
