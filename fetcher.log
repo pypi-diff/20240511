@@ -15635,3 +15635,24 @@
 [2024-05-11 13:42:54] INFO root fetch - processPackages [shipper-shippy]: Remove: archive file [/home/abi/fetcher/tmp/shipper_shippy-2.37.0.tar.gz]
 [2024-05-11 13:42:54] INFO root fetch - main [MainThread]: End processing [shipper-shippy]: success
 [2024-05-11 13:42:54] INFO root fetch - main [MainThread]: Store serial: [23160667]
+[2024-05-11 13:44:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160667]
+[2024-05-11 13:45:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:45:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aparat-crawler
+[2024-05-11 13:45:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: terminaltexteffects
+[2024-05-11 13:45:03] INFO root fetch - processPackages [aparat-crawler]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-05-11 13:45:03] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/15/8b/c0c33bc4dad19f107a7ccbb55c21eea23d56a66fc5bfacdeda5d8152ed81/aparat_crawler-0.8.9.tar.gz
+[2024-05-11 13:45:03] INFO root fetch - processPackages [terminaltexteffects]: New version: [0.9.1] Old Version: [0.9.0]
+[2024-05-11 13:45:04] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/bb/19/9caec9e1496f432552ace9ca2e1c5c8e80c30cd3978681561fad19ea4f00/terminaltexteffects-0.9.0.tar.gz
+[2024-05-11 13:45:04] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/e0/7f/01414077c3451d3792564790b26a0fb2b2843b6f003175dd53400bc816b6/aparat_crawler-0.9.0.tar.gz
+[2024-05-11 13:45:04] INFO root fetch - processPackages [aparat-crawler]: executing diffoscope
+[2024-05-11 13:45:04] INFO root fetch - processPackages [aparat-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aparat_crawler-0.8.9.tar.gz tmp/aparat_crawler-0.9.0.tar.gz --markdown 20240511/a/aparat-crawler/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-05-11 13:45:04] INFO root fetch - processPackages [terminaltexteffects]: Downloading https://files.pythonhosted.org/packages/f3/e7/3b3768325e3d3bd4a46dd2224ce093c109b8659969dc92f0c3b964f50ffe/terminaltexteffects-0.9.1.tar.gz
+[2024-05-11 13:45:04] INFO root fetch - processPackages [terminaltexteffects]: executing diffoscope
+[2024-05-11 13:45:04] INFO root fetch - processPackages [terminaltexteffects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terminaltexteffects-0.9.0.tar.gz tmp/terminaltexteffects-0.9.1.tar.gz --markdown 20240511/t/terminaltexteffects/0.9.0-0.9.1/README.md --exclude *.pyd
+[2024-05-11 13:45:04] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.8.9.tar.gz]
+[2024-05-11 13:45:04] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.0.tar.gz]
+[2024-05-11 13:45:04] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
+[2024-05-11 13:45:05] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.0.tar.gz]
+[2024-05-11 13:45:05] INFO root fetch - processPackages [terminaltexteffects]: Remove: archive file [/home/abi/fetcher/tmp/terminaltexteffects-0.9.1.tar.gz]
+[2024-05-11 13:45:05] INFO root fetch - main [MainThread]: End processing [terminaltexteffects]: success
+[2024-05-11 13:45:05] INFO root fetch - main [MainThread]: Store serial: [23160673]
