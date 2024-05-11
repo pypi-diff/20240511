@@ -19591,3 +19591,42 @@
 [2024-05-11 18:13:02] INFO root fetch - processPackages [nodify]: Remove: archive file [/home/abi/fetcher/tmp/nodify-0.0.6.tar.gz]
 [2024-05-11 18:13:02] INFO root fetch - main [MainThread]: End processing [nodify]: success
 [2024-05-11 18:13:02] INFO root fetch - main [MainThread]: Store serial: [23162562]
+[2024-05-11 18:15:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162562]
+[2024-05-11 18:15:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:15:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zensols.propbankdb
+[2024-05-11 18:15:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: name-that-fucking-film
+[2024-05-11 18:15:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: accesskit
+[2024-05-11 18:15:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: staticalz
+[2024-05-11 18:15:11] INFO root fetch - processPackages [zensols.propbankdb]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-11 18:15:11] INFO root fetch - processPackages [accesskit]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-11 18:15:11] INFO root fetch - processPackages [name-that-fucking-film]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-11 18:15:11] INFO root fetch - processPackages [staticalz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:15:11] INFO root fetch - processPackages [name-that-fucking-film]: Downloading https://files.pythonhosted.org/packages/9d/24/3413d3cc52e42785539fa589d3bb7e00fe22244bbf596a192e81c98934d4/name_that_fucking_film-0.2.0.tar.gz
+[2024-05-11 18:15:11] INFO root fetch - processPackages [staticalz]: Downloading https://files.pythonhosted.org/packages/47/1d/618af663a47c31e8cf6eae67b67eb8bce006d00e0719983777c4e179c47e/staticalz-1.1.tar.gz
+[2024-05-11 18:15:11] INFO root fetch - processPackages [zensols.propbankdb]: Downloading https://files.pythonhosted.org/packages/ef/01/ecd6a1b857ad121539278d9b6699aba2570d3d90bfc8354e729e7c7c87b4/zensols.propbankdb-0.0.2-py3-none-any.whl
+[2024-05-11 18:15:11] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/58/54/b927361f7b252a6a521d52d17cff3e979fd2a8046818468cea25f8aa3134/accesskit-0.3.0.tar.gz
+[2024-05-11 18:15:11] INFO root fetch - processPackages [staticalz]: Downloading https://files.pythonhosted.org/packages/03/7a/85d805eeb92481dbf21c994acfc29b8ab9032f891c6f9552f49370c27540/staticalz-2.1.tar.gz
+[2024-05-11 18:15:11] INFO root fetch - processPackages [name-that-fucking-film]: Downloading https://files.pythonhosted.org/packages/0d/6e/2b6d20f9e93ff93f5084615e5bec7c5f2dd93ba702dfde0fa3ccd4cb023f/name_that_fucking_film-0.3.0.tar.gz
+[2024-05-11 18:15:12] INFO root fetch - processPackages [zensols.propbankdb]: Downloading https://files.pythonhosted.org/packages/7d/66/2ae6ba4aff0dcd92d709d4d110f64e79d1fefca93654b7bb033cd21fd780/zensols.propbankdb-0.1.0-py3-none-any.whl
+[2024-05-11 18:15:12] INFO root fetch - processPackages [name-that-fucking-film]: executing diffoscope
+[2024-05-11 18:15:12] INFO root fetch - processPackages [name-that-fucking-film]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/name_that_fucking_film-0.2.0.tar.gz tmp/name_that_fucking_film-0.3.0.tar.gz --markdown 20240511/n/name-that-fucking-film/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-11 18:15:12] INFO root fetch - processPackages [accesskit]: Downloading https://files.pythonhosted.org/packages/45/59/75b2a4f343ece354121d52588630a7aa5f65727c15392d8b2f9b5b07aec4/accesskit-0.3.1.tar.gz
+[2024-05-11 18:15:12] INFO root fetch - processPackages [zensols.propbankdb]: executing diffoscope
+[2024-05-11 18:15:12] INFO root fetch - processPackages [zensols.propbankdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.propbankdb-0.0.2-py3-none-any.whl.zip tmp/zensols.propbankdb-0.1.0-py3-none-any.whl.zip --markdown 20240511/z/zensols.propbankdb/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-11 18:15:12] INFO root fetch - processPackages [staticalz]: executing diffoscope
+[2024-05-11 18:15:12] INFO root fetch - processPackages [staticalz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/staticalz-1.1.tar.gz tmp/staticalz-2.1.tar.gz --markdown 20240511/s/staticalz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:15:12] INFO root fetch - processPackages [name-that-fucking-film]: Remove: archive file [/home/abi/fetcher/tmp/name_that_fucking_film-0.2.0.tar.gz]
+[2024-05-11 18:15:12] INFO root fetch - processPackages [name-that-fucking-film]: Remove: archive file [/home/abi/fetcher/tmp/name_that_fucking_film-0.3.0.tar.gz]
+[2024-05-11 18:15:12] INFO root fetch - main [MainThread]: End processing [name-that-fucking-film]: success
+[2024-05-11 18:15:12] INFO root fetch - processPackages [zensols.propbankdb]: Remove: archive file [/home/abi/fetcher/tmp/zensols.propbankdb-0.0.2-py3-none-any.whl.zip]
+[2024-05-11 18:15:12] INFO root fetch - processPackages [zensols.propbankdb]: Remove: archive file [/home/abi/fetcher/tmp/zensols.propbankdb-0.1.0-py3-none-any.whl.zip]
+[2024-05-11 18:15:12] INFO root fetch - main [MainThread]: End processing [zensols.propbankdb]: success
+[2024-05-11 18:15:12] INFO root fetch - processPackages [staticalz]: Remove: archive file [/home/abi/fetcher/tmp/staticalz-1.1.tar.gz]
+[2024-05-11 18:15:12] INFO root fetch - processPackages [staticalz]: Remove: archive file [/home/abi/fetcher/tmp/staticalz-2.1.tar.gz]
+[2024-05-11 18:15:12] INFO root fetch - main [MainThread]: End processing [staticalz]: success
+[2024-05-11 18:15:12] INFO root fetch - processPackages [accesskit]: executing diffoscope
+[2024-05-11 18:15:12] INFO root fetch - processPackages [accesskit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accesskit-0.3.0.tar.gz tmp/accesskit-0.3.1.tar.gz --markdown 20240511/a/accesskit/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-11 18:15:14] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.0.tar.gz]
+[2024-05-11 18:15:14] INFO root fetch - processPackages [accesskit]: Remove: archive file [/home/abi/fetcher/tmp/accesskit-0.3.1.tar.gz]
+[2024-05-11 18:15:14] INFO root fetch - main [MainThread]: End processing [accesskit]: success
+[2024-05-11 18:15:14] INFO root fetch - main [MainThread]: Store serial: [23162578]
