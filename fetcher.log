@@ -21832,3 +21832,18 @@
 [2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: Remove: archive file [/home/abi/fetcher/tmp/thaumantiasz-2.1.tar.gz]
 [2024-05-11 20:45:23] INFO root fetch - main [MainThread]: End processing [thaumantiasz]: success
 [2024-05-11 20:45:23] INFO root fetch - main [MainThread]: Store serial: [23163675]
+[2024-05-11 20:47:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163675]
+[2024-05-11 20:47:32] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: project-arrakis
+[2024-05-11 20:47:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: vallotaz
+[2024-05-11 20:47:32] INFO root fetch - processPackages [project-arrakis]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-11 20:47:32] INFO root fetch - processPackages [project-arrakis]: Downloading https://files.pythonhosted.org/packages/5d/86/3981b45b4fce5340aeef619f25a8bcfdbf51829178b643be99df07fd2c45/project-arrakis-0.1.tar.gz
+[2024-05-11 20:47:32] WARNING root fetch - processPackages [vallotaz]: Skipping, unable to determine old version
+[2024-05-11 20:47:32] INFO root fetch - main [MainThread]: End processing [vallotaz] error
+[2024-05-11 20:47:32] INFO root fetch - processPackages [project-arrakis]: Downloading https://files.pythonhosted.org/packages/fc/04/1d990e5a0a45b8a04affffe44c86413ce2695a3e929059c13f4cb05fd1d1/project_arrakis-0.1.1.tar.gz
+[2024-05-11 20:47:33] INFO root fetch - processPackages [project-arrakis]: executing diffoscope
+[2024-05-11 20:47:33] INFO root fetch - processPackages [project-arrakis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project-arrakis-0.1.tar.gz tmp/project_arrakis-0.1.1.tar.gz --markdown 20240511/p/project-arrakis/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-11 20:47:33] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project-arrakis-0.1.tar.gz]
+[2024-05-11 20:47:33] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project_arrakis-0.1.1.tar.gz]
+[2024-05-11 20:47:33] INFO root fetch - main [MainThread]: End processing [project-arrakis]: success
+[2024-05-11 20:47:33] INFO root fetch - main [MainThread]: Store serial: [23163698]
