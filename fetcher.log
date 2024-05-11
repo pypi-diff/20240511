@@ -2114,3 +2114,24 @@
 [2024-05-11 02:01:43] INFO root fetch - processPackages [dyff-client]: Remove: archive file [/home/abi/fetcher/tmp/dyff_client-0.5.0.tar.gz]
 [2024-05-11 02:01:43] INFO root fetch - main [MainThread]: End processing [dyff-client]: success
 [2024-05-11 02:01:43] INFO root fetch - main [MainThread]: Store serial: [23154341]
+[2024-05-11 02:03:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154341]
+[2024-05-11 02:03:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 02:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ical
+[2024-05-11 02:03:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-github
+[2024-05-11 02:03:52] INFO root fetch - processPackages [pulumi-github]: New version: [6.3.0a1715337108] Old Version: [6.3.0a1715233350]
+[2024-05-11 02:03:52] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/90/3d/04470488f07a6cfd795b8ee1cd0a92580d2ac29eaf28909af7edb32ba934/pulumi_github-6.3.0a1715233350.tar.gz
+[2024-05-11 02:03:52] INFO root fetch - processPackages [ical]: New version: [8.0.1] Old Version: [8.0.0]
+[2024-05-11 02:03:52] INFO root fetch - processPackages [ical]: Downloading https://files.pythonhosted.org/packages/79/a4/7170b1c3144833e2168e412cac5bc9c88882551d3a9052d8641b8259eb10/ical-8.0.0.tar.gz
+[2024-05-11 02:03:52] INFO root fetch - processPackages [pulumi-github]: Downloading https://files.pythonhosted.org/packages/3a/be/60ad1fb5426686f401a7580375607f8492c6ba208410f533750374fe61b4/pulumi_github-6.3.0a1715337108.tar.gz
+[2024-05-11 02:03:52] INFO root fetch - processPackages [pulumi-github]: executing diffoscope
+[2024-05-11 02:03:52] INFO root fetch - processPackages [pulumi-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_github-6.3.0a1715233350.tar.gz tmp/pulumi_github-6.3.0a1715337108.tar.gz --markdown 20240511/p/pulumi-github/6.3.0a1715233350-6.3.0a1715337108/README.md --exclude *.pyd
+[2024-05-11 02:03:53] INFO root fetch - processPackages [ical]: Downloading https://files.pythonhosted.org/packages/53/32/ddf3ad3617bdd37b29e5db3cb01257193879bf44aa4513a5799e3881049c/ical-8.0.1.tar.gz
+[2024-05-11 02:03:53] INFO root fetch - processPackages [ical]: executing diffoscope
+[2024-05-11 02:03:53] INFO root fetch - processPackages [ical]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ical-8.0.0.tar.gz tmp/ical-8.0.1.tar.gz --markdown 20240511/i/ical/8.0.0-8.0.1/README.md --exclude *.pyd
+[2024-05-11 02:03:53] INFO root fetch - processPackages [ical]: Remove: archive file [/home/abi/fetcher/tmp/ical-8.0.0.tar.gz]
+[2024-05-11 02:03:53] INFO root fetch - processPackages [ical]: Remove: archive file [/home/abi/fetcher/tmp/ical-8.0.1.tar.gz]
+[2024-05-11 02:03:53] INFO root fetch - main [MainThread]: End processing [ical]: success
+[2024-05-11 02:03:53] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1715233350.tar.gz]
+[2024-05-11 02:03:53] INFO root fetch - processPackages [pulumi-github]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_github-6.3.0a1715337108.tar.gz]
+[2024-05-11 02:03:53] INFO root fetch - main [MainThread]: End processing [pulumi-github]: success
+[2024-05-11 02:03:53] INFO root fetch - main [MainThread]: Store serial: [23154347]
