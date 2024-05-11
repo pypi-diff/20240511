@@ -23898,3 +23898,36 @@
 [2024-05-11 23:09:21] INFO root fetch - processPackages [pygmc]: Remove: archive file [/home/abi/fetcher/tmp/pygmc-0.9.1.tar.gz]
 [2024-05-11 23:09:21] INFO root fetch - main [MainThread]: End processing [pygmc]: success
 [2024-05-11 23:09:21] INFO root fetch - main [MainThread]: Store serial: [23164608]
+[2024-05-11 23:11:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164608]
+[2024-05-11 23:11:30] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 23:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: philosophunculistz
+[2024-05-11 23:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ikctl
+[2024-05-11 23:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cyberdrop-dl
+[2024-05-11 23:11:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uninvigorativelyz
+[2024-05-11 23:11:30] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.5] Old Version: [5.3.4]
+[2024-05-11 23:11:30] INFO root fetch - processPackages [ikctl]: New version: [0.2.11] Old Version: [0.1.9]
+[2024-05-11 23:11:30] WARNING root fetch - processPackages [philosophunculistz]: Skipping, unable to determine old version
+[2024-05-11 23:11:30] INFO root fetch - main [MainThread]: End processing [philosophunculistz] error
+[2024-05-11 23:11:30] INFO root fetch - processPackages [uninvigorativelyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:11:30] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/57/83/a463141819f3b3a62db1d41b4eaf5d00469378bb1f64ff2e921885dfb713/cyberdrop_dl-5.3.4.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/73/40/80c65de299046f68dfe0f3da04f491efe0cfd4baf9daa77d411c213eda83/ikctl-0.1.9.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [uninvigorativelyz]: Downloading https://files.pythonhosted.org/packages/b0/f7/a0e469ccc23c37fe27b16fbcf69275977f39ab42681644433eeef3056785/uninvigorativelyz-1.1.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/bb/3d/9ae4085eb3d70d7f2463eeb4aec9ee65b4627e9fe852c0f65e5e0744c4d0/cyberdrop_dl-5.3.5.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-11 23:11:31] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.3.4.tar.gz tmp/cyberdrop_dl-5.3.5.tar.gz --markdown 20240511/c/cyberdrop-dl/5.3.4-5.3.5/README.md --exclude *.pyd
+[2024-05-11 23:11:31] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/02/2d/c46d432530cb65bf1c508fecea5431e4df5e1fc94b55e76ee50c0c5ab714/ikctl-0.2.11.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [uninvigorativelyz]: Downloading https://files.pythonhosted.org/packages/09/d6/913871bd4f304942498e578006a1b807c770d2b438ff900eb563ea764f38/uninvigorativelyz-2.1.tar.gz
+[2024-05-11 23:11:31] INFO root fetch - processPackages [ikctl]: executing diffoscope
+[2024-05-11 23:11:31] INFO root fetch - processPackages [ikctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikctl-0.1.9.tar.gz tmp/ikctl-0.2.11.tar.gz --markdown 20240511/i/ikctl/0.1.9-0.2.11/README.md --exclude *.pyd
+[2024-05-11 23:11:31] INFO root fetch - processPackages [uninvigorativelyz]: executing diffoscope
+[2024-05-11 23:11:31] INFO root fetch - processPackages [uninvigorativelyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uninvigorativelyz-1.1.tar.gz tmp/uninvigorativelyz-2.1.tar.gz --markdown 20240511/u/uninvigorativelyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:11:32] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.1.9.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.2.11.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - main [MainThread]: End processing [ikctl]: success
+[2024-05-11 23:11:32] INFO root fetch - processPackages [uninvigorativelyz]: Remove: archive file [/home/abi/fetcher/tmp/uninvigorativelyz-1.1.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - processPackages [uninvigorativelyz]: Remove: archive file [/home/abi/fetcher/tmp/uninvigorativelyz-2.1.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - main [MainThread]: End processing [uninvigorativelyz]: success
+[2024-05-11 23:11:32] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.4.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.5.tar.gz]
+[2024-05-11 23:11:32] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-11 23:11:32] INFO root fetch - main [MainThread]: Store serial: [23164626]
