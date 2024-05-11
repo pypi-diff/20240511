@@ -17544,3 +17544,20 @@
 [2024-05-11 16:01:19] INFO root fetch - processPackages [datapools]: Remove: archive file [/home/abi/fetcher/tmp/datapools-1.0.49.tar.gz]
 [2024-05-11 16:01:19] INFO root fetch - main [MainThread]: End processing [datapools]: success
 [2024-05-11 16:01:19] INFO root fetch - main [MainThread]: Store serial: [23161702]
+[2024-05-11 16:03:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161702]
+[2024-05-11 16:03:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 16:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autowsgr
+[2024-05-11 16:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensols.deepnlp
+[2024-05-11 16:03:28] INFO root fetch - processPackages [autowsgr]: New version: [0.2.2.9] Old Version: [0.2.2.8]
+[2024-05-11 16:03:28] INFO root fetch - processPackages [zensols.deepnlp]: New version: [1.9.1] Old Version: [1.9.0]
+[2024-05-11 16:03:28] INFO root fetch - processPackages [autowsgr]: Downloading https://files.pythonhosted.org/packages/20/db/bb4942509a54b1f01fa10e10e3dca250f9cf92488729f8292657988ac8e2/autowsgr-0.2.2.8.tar.gz
+[2024-05-11 16:03:28] INFO root fetch - processPackages [zensols.deepnlp]: Downloading https://files.pythonhosted.org/packages/9c/21/10603475fcaf940813c167dd29516101971491a1ba9e103291465af693eb/zensols.deepnlp-1.9.0-py3-none-any.whl
+[2024-05-11 16:03:28] WARNING root fetch - processPackages [autowsgr]: Skipping package: exceeds size limit 18156638>=10485760
+[2024-05-11 16:03:28] INFO root fetch - main [MainThread]: End processing [autowsgr] error
+[2024-05-11 16:03:29] INFO root fetch - processPackages [zensols.deepnlp]: Downloading https://files.pythonhosted.org/packages/7b/fe/0efb9441f1db7bd4e0b349e13fa4e0d887c3dc29811c54faa57d2d57e19d/zensols.deepnlp-1.9.1-py3-none-any.whl
+[2024-05-11 16:03:29] INFO root fetch - processPackages [zensols.deepnlp]: executing diffoscope
+[2024-05-11 16:03:29] INFO root fetch - processPackages [zensols.deepnlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.deepnlp-1.9.0-py3-none-any.whl.zip tmp/zensols.deepnlp-1.9.1-py3-none-any.whl.zip --markdown 20240511/z/zensols.deepnlp/1.9.0-1.9.1/README.md --exclude *.pyd
+[2024-05-11 16:03:30] INFO root fetch - processPackages [zensols.deepnlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deepnlp-1.9.0-py3-none-any.whl.zip]
+[2024-05-11 16:03:30] INFO root fetch - processPackages [zensols.deepnlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deepnlp-1.9.1-py3-none-any.whl.zip]
+[2024-05-11 16:03:30] INFO root fetch - main [MainThread]: End processing [zensols.deepnlp]: success
+[2024-05-11 16:03:30] INFO root fetch - main [MainThread]: Store serial: [23161708]
