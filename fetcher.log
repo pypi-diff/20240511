@@ -22982,3 +22982,27 @@
 [2024-05-11 22:08:23] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
 [2024-05-11 22:08:23] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2024-05-11 22:08:23] INFO root fetch - main [MainThread]: Store serial: [23164191]
+[2024-05-11 22:10:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164191]
+[2024-05-11 22:10:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 22:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: typhomaniaz
+[2024-05-11 22:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: compleatz
+[2024-05-11 22:10:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ShellUtilities
+[2024-05-11 22:10:32] INFO root fetch - processPackages [typhomaniaz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:10:32] INFO root fetch - processPackages [ShellUtilities]: New version: [2.1.9] Old Version: [2.1.8]
+[2024-05-11 22:10:32] WARNING root fetch - processPackages [compleatz]: Skipping, unable to determine old version
+[2024-05-11 22:10:32] INFO root fetch - main [MainThread]: End processing [compleatz] error
+[2024-05-11 22:10:33] INFO root fetch - processPackages [typhomaniaz]: Downloading https://files.pythonhosted.org/packages/9d/09/b9e2b43e10de144ad8664e97f973e26e2bdf490f1a8cf94f8019e6eb3262/typhomaniaz-1.1.tar.gz
+[2024-05-11 22:10:33] INFO root fetch - processPackages [ShellUtilities]: Downloading https://files.pythonhosted.org/packages/5c/17/0e90185fcc2908738f2444c7afed4fa0ad8fa303bc69f10fc7a514cdf79d/ShellUtilities-2.1.8.tar.gz
+[2024-05-11 22:10:33] INFO root fetch - processPackages [typhomaniaz]: Downloading https://files.pythonhosted.org/packages/31/c1/5201a5ae7aa890c85c1334403cb6134b72c018b42e62a4c488b8ef564a2d/typhomaniaz-2.1.tar.gz
+[2024-05-11 22:10:33] INFO root fetch - processPackages [ShellUtilities]: Downloading https://files.pythonhosted.org/packages/bc/2b/4c5e2e3befae9ee4a974047f21a3177c887747dd7ceffd6b5abe625c65ff/ShellUtilities-2.1.9.tar.gz
+[2024-05-11 22:10:33] INFO root fetch - processPackages [typhomaniaz]: executing diffoscope
+[2024-05-11 22:10:33] INFO root fetch - processPackages [typhomaniaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/typhomaniaz-1.1.tar.gz tmp/typhomaniaz-2.1.tar.gz --markdown 20240511/t/typhomaniaz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:10:33] INFO root fetch - processPackages [ShellUtilities]: executing diffoscope
+[2024-05-11 22:10:33] INFO root fetch - processPackages [ShellUtilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ShellUtilities-2.1.8.tar.gz tmp/ShellUtilities-2.1.9.tar.gz --markdown 20240511/S/ShellUtilities/2.1.8-2.1.9/README.md --exclude *.pyd
+[2024-05-11 22:10:34] INFO root fetch - processPackages [typhomaniaz]: Remove: archive file [/home/abi/fetcher/tmp/typhomaniaz-1.1.tar.gz]
+[2024-05-11 22:10:34] INFO root fetch - processPackages [typhomaniaz]: Remove: archive file [/home/abi/fetcher/tmp/typhomaniaz-2.1.tar.gz]
+[2024-05-11 22:10:34] INFO root fetch - main [MainThread]: End processing [typhomaniaz]: success
+[2024-05-11 22:10:34] INFO root fetch - processPackages [ShellUtilities]: Remove: archive file [/home/abi/fetcher/tmp/ShellUtilities-2.1.8.tar.gz]
+[2024-05-11 22:10:34] INFO root fetch - processPackages [ShellUtilities]: Remove: archive file [/home/abi/fetcher/tmp/ShellUtilities-2.1.9.tar.gz]
+[2024-05-11 22:10:34] INFO root fetch - main [MainThread]: End processing [ShellUtilities]: success
+[2024-05-11 22:10:34] INFO root fetch - main [MainThread]: Store serial: [23164203]
