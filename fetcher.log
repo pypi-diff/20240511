@@ -16856,3 +16856,24 @@
 [2024-05-11 15:06:12] INFO root fetch - processPackages [adpipsvcfuncs]: Remove: archive file [/home/abi/fetcher/tmp/adpipsvcfuncs-0.1.9.tar.gz]
 [2024-05-11 15:06:12] INFO root fetch - main [MainThread]: End processing [adpipsvcfuncs]: success
 [2024-05-11 15:06:12] INFO root fetch - main [MainThread]: Store serial: [23161262]
+[2024-05-11 15:08:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161262]
+[2024-05-11 15:08:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 15:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bellek
+[2024-05-11 15:08:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: recarryz
+[2024-05-11 15:08:21] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-11 15:08:21] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-11 15:08:21] INFO root fetch - processPackages [recarryz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:08:21] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-11 15:08:21] INFO root fetch - processPackages [recarryz]: Downloading https://files.pythonhosted.org/packages/40/04/83ef7f0171196b2574a1725239690bdb61c0adb367753bfd05840624d43d/recarryz-1.1.tar.gz
+[2024-05-11 15:08:21] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-11 15:08:21] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240511/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: Downloading https://files.pythonhosted.org/packages/c1/1a/c95171d57d8490c47684d0a71de18a52013377315265e06bf503b6b36b9c/recarryz-2.1.tar.gz
+[2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: executing diffoscope
+[2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recarryz-1.1.tar.gz tmp/recarryz-2.1.tar.gz --markdown 20240511/r/recarryz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:08:22] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-11 15:08:22] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-11 15:08:22] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: Remove: archive file [/home/abi/fetcher/tmp/recarryz-1.1.tar.gz]
+[2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: Remove: archive file [/home/abi/fetcher/tmp/recarryz-2.1.tar.gz]
+[2024-05-11 15:08:22] INFO root fetch - main [MainThread]: End processing [recarryz]: success
+[2024-05-11 15:08:22] INFO root fetch - main [MainThread]: Store serial: [23161268]
