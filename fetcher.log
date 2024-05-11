@@ -18025,3 +18025,42 @@
 [2024-05-11 16:30:54] INFO root fetch - processPackages [sumologic-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sumologic-sdk-0.1.9.tar.gz]
 [2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [sumologic-sdk]: success
 [2024-05-11 16:30:54] INFO root fetch - main [MainThread]: Store serial: [23161942]
+[2024-05-11 16:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161942]
+[2024-05-11 16:33:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 16:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scarcerz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sumologic-appclient-sdk
+[2024-05-11 16:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eli-hello
+[2024-05-11 16:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: akshare
+[2024-05-11 16:33:03] INFO root fetch - processPackages [scarcerz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:33:03] INFO root fetch - processPackages [eli-hello]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 16:33:03] INFO root fetch - processPackages [sumologic-appclient-sdk]: New version: [2.0.9] Old Version: [2.0.8]
+[2024-05-11 16:33:03] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-11 16:33:03] INFO root fetch - processPackages [scarcerz]: Downloading https://files.pythonhosted.org/packages/8d/7f/52e058b4d49a1f586538199c131406c34882d2f45117f0a239bb8a751746/scarcerz-1.1.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [eli-hello]: Downloading https://files.pythonhosted.org/packages/e6/62/ef4737edec11f324c280a4b290fcefc9b2eb97939ab5187ab08ee46ae3ac/eli_hello-0.0.1.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [sumologic-appclient-sdk]: Downloading https://files.pythonhosted.org/packages/ef/41/76b471ea17e190de8f5cca6d5376d5d4d02377f416afb24c03cb372476bc/sumologic-appclient-sdk-2.0.8.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [scarcerz]: Downloading https://files.pythonhosted.org/packages/36/ef/6d586f48b395b4e027a4aa64738bc0b7d55e5366de101b7859b56c3963a9/scarcerz-2.1.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [eli-hello]: Downloading https://files.pythonhosted.org/packages/97/53/5b2e79b979e8c0df6cec6370181f5b753aca548b6fa56507aa23de8039c7/eli_hello-0.0.2.tar.gz
+[2024-05-11 16:33:03] INFO root fetch - processPackages [scarcerz]: executing diffoscope
+[2024-05-11 16:33:03] INFO root fetch - processPackages [scarcerz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scarcerz-1.1.tar.gz tmp/scarcerz-2.1.tar.gz --markdown 20240511/s/scarcerz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:33:04] INFO root fetch - processPackages [sumologic-appclient-sdk]: Downloading https://files.pythonhosted.org/packages/50/f6/25aef25589bd247890911fc309eb11271bb7574412f18a572c6762bcf770/sumologic-appclient-sdk-2.0.9.tar.gz
+[2024-05-11 16:33:04] INFO root fetch - processPackages [eli-hello]: executing diffoscope
+[2024-05-11 16:33:04] INFO root fetch - processPackages [eli-hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eli_hello-0.0.1.tar.gz tmp/eli_hello-0.0.2.tar.gz --markdown 20240511/e/eli-hello/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 16:33:04] INFO root fetch - processPackages [sumologic-appclient-sdk]: executing diffoscope
+[2024-05-11 16:33:04] INFO root fetch - processPackages [sumologic-appclient-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sumologic-appclient-sdk-2.0.8.tar.gz tmp/sumologic-appclient-sdk-2.0.9.tar.gz --markdown 20240511/s/sumologic-appclient-sdk/2.0.8-2.0.9/README.md --exclude *.pyd
+[2024-05-11 16:33:04] INFO root fetch - processPackages [scarcerz]: Remove: archive file [/home/abi/fetcher/tmp/scarcerz-1.1.tar.gz]
+[2024-05-11 16:33:04] INFO root fetch - processPackages [scarcerz]: Remove: archive file [/home/abi/fetcher/tmp/scarcerz-2.1.tar.gz]
+[2024-05-11 16:33:04] INFO root fetch - main [MainThread]: End processing [scarcerz]: success
+[2024-05-11 16:33:04] INFO root fetch - processPackages [eli-hello]: Remove: archive file [/home/abi/fetcher/tmp/eli_hello-0.0.1.tar.gz]
+[2024-05-11 16:33:04] INFO root fetch - processPackages [eli-hello]: Remove: archive file [/home/abi/fetcher/tmp/eli_hello-0.0.2.tar.gz]
+[2024-05-11 16:33:04] INFO root fetch - main [MainThread]: End processing [eli-hello]: success
+[2024-05-11 16:33:04] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-11 16:33:05] INFO root fetch - processPackages [sumologic-appclient-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sumologic-appclient-sdk-2.0.8.tar.gz]
+[2024-05-11 16:33:05] INFO root fetch - processPackages [sumologic-appclient-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sumologic-appclient-sdk-2.0.9.tar.gz]
+[2024-05-11 16:33:05] INFO root fetch - main [MainThread]: End processing [sumologic-appclient-sdk]: success
+[2024-05-11 16:33:05] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-11 16:33:05] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240511/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-11 16:33:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-11 16:33:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-11 16:33:07] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-11 16:33:07] INFO root fetch - main [MainThread]: Store serial: [23161954]
