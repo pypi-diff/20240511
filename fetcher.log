@@ -8261,3 +8261,36 @@
 [2024-05-11 04:42:44] INFO root fetch - processPackages [lirellinez]: Remove: archive file [/home/abi/fetcher/tmp/lirellinez-2.1.tar.gz]
 [2024-05-11 04:42:44] INFO root fetch - main [MainThread]: End processing [lirellinez]: success
 [2024-05-11 04:42:44] INFO root fetch - main [MainThread]: Store serial: [23156714]
+[2024-05-11 04:44:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156714]
+[2024-05-11 04:44:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 04:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GazooResearchUtils
+[2024-05-11 04:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: guava3
+[2024-05-11 04:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: not1mm
+[2024-05-11 04:44:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mythopoeticalz
+[2024-05-11 04:44:52] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-11 04:44:52] INFO root fetch - processPackages [guava3]: New version: [0.2] Old Version: [0.1]
+[2024-05-11 04:44:53] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/81/00/93be6884af8959643b8fc1401275ceedd9af9e688dd7fcf5e63ac3edfac6/GazooResearchUtils-1.4.1.tar.gz
+[2024-05-11 04:44:53] WARNING root fetch - processPackages [mythopoeticalz]: Skipping, unable to determine old version
+[2024-05-11 04:44:53] INFO root fetch - main [MainThread]: End processing [mythopoeticalz] error
+[2024-05-11 04:44:53] INFO root fetch - processPackages [not1mm]: New version: [24.5.9] Old Version: [24.5.10]
+[2024-05-11 04:44:53] INFO root fetch - processPackages [guava3]: Downloading https://files.pythonhosted.org/packages/6e/2d/8467bf3d865757750375e3e37132251efdc6c174a796b4e72d6c5775c783/guava3-0.1.tar.gz
+[2024-05-11 04:44:53] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/89/a5/c6e7e9bddd1d9ec40585517d4dab4b3b1ff815e2ad9eda3547a37d0c3c3b/not1mm-24.5.10.tar.gz
+[2024-05-11 04:44:53] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/5a/1c/93e48a7bde9a8ec4ea079c7ac065362084c9b981c7250b1cb25bef892cfa/GazooResearchUtils-1.4.2.tar.gz
+[2024-05-11 04:44:53] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 04:44:53] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.4.1.tar.gz tmp/GazooResearchUtils-1.4.2.tar.gz --markdown 20240511/G/GazooResearchUtils/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-11 04:44:53] INFO root fetch - processPackages [guava3]: Downloading https://files.pythonhosted.org/packages/03/e0/261b1f0be5f9b347246be6fb916780dc680d2b7925d69e596ef08568d82e/guava3-0.2.tar.gz
+[2024-05-11 04:44:53] INFO root fetch - processPackages [guava3]: executing diffoscope
+[2024-05-11 04:44:53] INFO root fetch - processPackages [guava3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guava3-0.1.tar.gz tmp/guava3-0.2.tar.gz --markdown 20240511/g/guava3/0.1-0.2/README.md --exclude *.pyd
+[2024-05-11 04:44:53] INFO root fetch - processPackages [not1mm]: Downloading https://files.pythonhosted.org/packages/37/b2/33b1f03f668a23e65c50c7fbd144613c5d6da4b25a40e4309666dd8f91e8/not1mm-24.5.9.tar.gz
+[2024-05-11 04:44:54] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.1.tar.gz]
+[2024-05-11 04:44:54] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.2.tar.gz]
+[2024-05-11 04:44:54] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 04:44:54] INFO root fetch - processPackages [not1mm]: executing diffoscope
+[2024-05-11 04:44:54] INFO root fetch - processPackages [not1mm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/not1mm-24.5.10.tar.gz tmp/not1mm-24.5.9.tar.gz --markdown 20240511/n/not1mm/24.5.10-24.5.9/README.md --exclude *.pyd
+[2024-05-11 04:44:54] INFO root fetch - processPackages [guava3]: Remove: archive file [/home/abi/fetcher/tmp/guava3-0.1.tar.gz]
+[2024-05-11 04:44:54] INFO root fetch - processPackages [guava3]: Remove: archive file [/home/abi/fetcher/tmp/guava3-0.2.tar.gz]
+[2024-05-11 04:44:54] INFO root fetch - main [MainThread]: End processing [guava3]: success
+[2024-05-11 04:44:55] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.10.tar.gz]
+[2024-05-11 04:44:55] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.9.tar.gz]
+[2024-05-11 04:44:55] INFO root fetch - main [MainThread]: End processing [not1mm]: success
+[2024-05-11 04:44:55] INFO root fetch - main [MainThread]: Store serial: [23156726]
