@@ -12270,3 +12270,42 @@
 [2024-05-11 09:55:46] INFO root fetch - processPackages [streamlit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/streamlit_nightly-1.34.1.dev20240509.tar.gz]
 [2024-05-11 09:55:46] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2024-05-11 09:55:46] INFO root fetch - main [MainThread]: Store serial: [23158821]
+[2024-05-11 09:57:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158821]
+[2024-05-11 09:57:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spillsz
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mydatepackage
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automate-django-project
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctsf
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly
+[2024-05-11 09:57:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pamphletizedz
+[2024-05-11 09:57:56] WARNING root fetch - processPackages [spillsz]: Skipping, unable to determine old version
+[2024-05-11 09:57:56] INFO root fetch - main [MainThread]: End processing [spillsz] error
+[2024-05-11 09:57:56] INFO root fetch - processPackages [ctsf]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 09:57:56] WARNING root fetch - processPackages [mydatepackage]: Skipping, unable to determine old version
+[2024-05-11 09:57:56] INFO root fetch - main [MainThread]: End processing [mydatepackage] error
+[2024-05-11 09:57:56] INFO root fetch - processPackages [pamphletizedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:57:56] WARNING root fetch - processPackages [automate-django-project]: Skipping, unable to determine old version
+[2024-05-11 09:57:56] INFO root fetch - main [MainThread]: End processing [automate-django-project] error
+[2024-05-11 09:57:56] INFO root fetch - processPackages [tf-nightly]: New version: [2.17.0.dev20240511] Old Version: [2.17.0.dev20240510]
+[2024-05-11 09:57:56] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/11/3c/7f7540234e78ffefca406a446b03694ff554587dc848a4cb89a4e20d1e71/ctsf-1.0.1.tar.gz
+[2024-05-11 09:57:56] INFO root fetch - processPackages [pamphletizedz]: Downloading https://files.pythonhosted.org/packages/06/05/27658e7d44ff05ecb88bfdb1ad9e427698c9131e6273e4ec52ee0b01bdeb/pamphletizedz-1.1.tar.gz
+[2024-05-11 09:57:56] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/b1/da/7079f650c322f215b09cf8fb648f25d1dec2d01e08e7b8a726086bbdb32c/tf_nightly-2.17.0.dev20240510-cp39-cp39-win_amd64.whl
+[2024-05-11 09:57:56] INFO root fetch - processPackages [ctsf]: Downloading https://files.pythonhosted.org/packages/92/26/70662aa7fa65de444b90761d03dc3523c33da8c3705cbcc4077dd40aa36e/ctsf-1.0.2.tar.gz
+[2024-05-11 09:57:56] INFO root fetch - processPackages [pamphletizedz]: Downloading https://files.pythonhosted.org/packages/15/13/4bd44acfd92f27b69006ff254043fe8067ee763ea619aea7461b2c81675f/pamphletizedz-2.1.tar.gz
+[2024-05-11 09:57:56] INFO root fetch - processPackages [tf-nightly]: Downloading https://files.pythonhosted.org/packages/7d/0d/97fbcfbe6ad20a6ba85a2cc4102aed44a25b45161a20098f47553609cecc/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl
+[2024-05-11 09:57:56] INFO root fetch - processPackages [ctsf]: executing diffoscope
+[2024-05-11 09:57:56] INFO root fetch - processPackages [ctsf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctsf-1.0.1.tar.gz tmp/ctsf-1.0.2.tar.gz --markdown 20240511/c/ctsf/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-11 09:57:56] INFO root fetch - processPackages [pamphletizedz]: executing diffoscope
+[2024-05-11 09:57:56] INFO root fetch - processPackages [pamphletizedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pamphletizedz-1.1.tar.gz tmp/pamphletizedz-2.1.tar.gz --markdown 20240511/p/pamphletizedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:57:56] INFO root fetch - processPackages [tf-nightly]: executing diffoscope
+[2024-05-11 09:57:56] INFO root fetch - processPackages [tf-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly-2.17.0.dev20240510-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip --markdown 20240511/t/tf-nightly/2.17.0.dev20240510-2.17.0.dev20240511/README.md --exclude *.pyd
+[2024-05-11 09:57:57] INFO root fetch - processPackages [pamphletizedz]: Remove: archive file [/home/abi/fetcher/tmp/pamphletizedz-1.1.tar.gz]
+[2024-05-11 09:57:57] INFO root fetch - processPackages [pamphletizedz]: Remove: archive file [/home/abi/fetcher/tmp/pamphletizedz-2.1.tar.gz]
+[2024-05-11 09:57:57] INFO root fetch - main [MainThread]: End processing [pamphletizedz]: success
+[2024-05-11 09:57:57] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.1.tar.gz]
+[2024-05-11 09:57:57] INFO root fetch - processPackages [ctsf]: Remove: archive file [/home/abi/fetcher/tmp/ctsf-1.0.2.tar.gz]
+[2024-05-11 09:57:57] INFO root fetch - main [MainThread]: End processing [ctsf]: success
+[2024-05-11 09:57:57] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240510-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 09:57:57] INFO root fetch - processPackages [tf-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 09:57:57] INFO root fetch - main [MainThread]: End processing [tf-nightly]: success
+[2024-05-11 09:57:57] INFO root fetch - main [MainThread]: Store serial: [23158845]
