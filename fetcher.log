@@ -15212,3 +15212,23 @@
 [2024-05-11 13:14:29] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
 [2024-05-11 13:14:29] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2024-05-11 13:14:29] INFO root fetch - main [MainThread]: Store serial: [23160419]
+[2024-05-11 13:16:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160419]
+[2024-05-11 13:16:38] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 13:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tezapi
+[2024-05-11 13:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aa-gdpr
+[2024-05-11 13:16:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tankertz
+[2024-05-11 13:16:38] INFO root fetch - processPackages [tezapi]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 13:16:38] WARNING root fetch - processPackages [tankertz]: Skipping, unable to determine old version
+[2024-05-11 13:16:38] INFO root fetch - main [MainThread]: End processing [tankertz] error
+[2024-05-11 13:16:38] INFO root fetch - processPackages [aa-gdpr]: New version: [0.4.1] Old Version: [0.3.3]
+[2024-05-11 13:16:38] INFO root fetch - processPackages [tezapi]: Downloading https://files.pythonhosted.org/packages/eb/56/e0208b179932508fa49d20156a33004bfc53db8d3f35d91b1809df3edd26/tezapi-0.0.4.tar.gz
+[2024-05-11 13:16:38] INFO root fetch - processPackages [aa-gdpr]: Downloading https://files.pythonhosted.org/packages/f4/4a/636f1cd563e35847fd817087bb32bd70750d57d4c0fce72c4f6a81def4ab/aa-gdpr-0.3.3.tar.gz
+[2024-05-11 13:16:38] WARNING root fetch - processPackages [aa-gdpr]: Skipping package: exceeds size limit 11366819>=10485760
+[2024-05-11 13:16:38] INFO root fetch - main [MainThread]: End processing [aa-gdpr] error
+[2024-05-11 13:16:38] INFO root fetch - processPackages [tezapi]: Downloading https://files.pythonhosted.org/packages/d5/9f/cfb100abbfd50154bf6aad6c7a2861533ff58a9d55de367064451db72a85/tezapi-0.0.5.tar.gz
+[2024-05-11 13:16:38] INFO root fetch - processPackages [tezapi]: executing diffoscope
+[2024-05-11 13:16:38] INFO root fetch - processPackages [tezapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tezapi-0.0.4.tar.gz tmp/tezapi-0.0.5.tar.gz --markdown 20240511/t/tezapi/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 13:16:39] INFO root fetch - processPackages [tezapi]: Remove: archive file [/home/abi/fetcher/tmp/tezapi-0.0.4.tar.gz]
+[2024-05-11 13:16:39] INFO root fetch - processPackages [tezapi]: Remove: archive file [/home/abi/fetcher/tmp/tezapi-0.0.5.tar.gz]
+[2024-05-11 13:16:39] INFO root fetch - main [MainThread]: End processing [tezapi]: success
+[2024-05-11 13:16:39] INFO root fetch - main [MainThread]: Store serial: [23160432]
