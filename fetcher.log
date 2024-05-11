@@ -21567,3 +21567,42 @@
 [2024-05-11 20:27:59] INFO root fetch - processPackages [python-artnet]: Remove: archive file [/home/abi/fetcher/tmp/python_artnet-1.1.0.tar.gz]
 [2024-05-11 20:27:59] INFO root fetch - main [MainThread]: End processing [python-artnet]: success
 [2024-05-11 20:27:59] INFO root fetch - main [MainThread]: Store serial: [23163501]
+[2024-05-11 20:30:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163501]
+[2024-05-11 20:30:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: peaqevcore
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fast-tradier-client
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ALLM
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: teratomasz
+[2024-05-11 20:30:08] INFO root fetch - processPackages [fast-tradier-client]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-11 20:30:08] INFO root fetch - processPackages [fast-tradier-client]: Downloading https://files.pythonhosted.org/packages/bb/ad/a40d03074e798904d7e13dc8a632de52a409fd8488ea24675db4f8b8c348/fast_tradier_client-1.0.4.tar.gz
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ALLM]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 20:30:08] INFO root fetch - processPackages [teratomasz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:30:08] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-11 20:30:08] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/ed/76/e3611015a89f11f8e3d2220f796c79f163cc1cf57f7df0b237eaea03a70e/ALLM-1.0.3-py3-none-any.whl
+[2024-05-11 20:30:08] INFO root fetch - processPackages [teratomasz]: Downloading https://files.pythonhosted.org/packages/fc/cf/553dbc0423953f080ae34733e9f1ef6db9a9ef50064890a83664623d965e/teratomasz-1.1.tar.gz
+[2024-05-11 20:30:08] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-11 20:30:08] INFO root fetch - processPackages [fast-tradier-client]: Downloading https://files.pythonhosted.org/packages/82/0c/48932b922a3a72b5a6d0dbc9f22fa9e1e3b8c1a941ba464dfa2e247500eb/fast_tradier_client-1.0.5.tar.gz
+[2024-05-11 20:30:08] INFO root fetch - processPackages [fast-tradier-client]: executing diffoscope
+[2024-05-11 20:30:08] INFO root fetch - processPackages [fast-tradier-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_tradier_client-1.0.4.tar.gz tmp/fast_tradier_client-1.0.5.tar.gz --markdown 20240511/f/fast-tradier-client/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-11 20:30:09] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/e6/75/a51a0015a0d486d2650588a5ec0822b42eebad362de6c6410efe8ef80f84/ALLM-1.0.4-py3-none-any.whl
+[2024-05-11 20:30:09] INFO root fetch - processPackages [teratomasz]: Downloading https://files.pythonhosted.org/packages/1c/2a/cb56e9d14307345d838f9c329400f4a2a3b3f3d134f26eb8fa64d087ee6d/teratomasz-2.1.tar.gz
+[2024-05-11 20:30:09] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-11 20:30:09] INFO root fetch - processPackages [ALLM]: executing diffoscope
+[2024-05-11 20:30:09] INFO root fetch - processPackages [ALLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLM-1.0.3-py3-none-any.whl.zip tmp/ALLM-1.0.4-py3-none-any.whl.zip --markdown 20240511/A/ALLM/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 20:30:09] INFO root fetch - processPackages [teratomasz]: executing diffoscope
+[2024-05-11 20:30:09] INFO root fetch - processPackages [teratomasz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teratomasz-1.1.tar.gz tmp/teratomasz-2.1.tar.gz --markdown 20240511/t/teratomasz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:30:09] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-11 20:30:09] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240511/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-11 20:30:09] INFO root fetch - processPackages [fast-tradier-client]: Remove: archive file [/home/abi/fetcher/tmp/fast_tradier_client-1.0.4.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - processPackages [fast-tradier-client]: Remove: archive file [/home/abi/fetcher/tmp/fast_tradier_client-1.0.5.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - main [MainThread]: End processing [fast-tradier-client]: success
+[2024-05-11 20:30:09] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.3-py3-none-any.whl.zip]
+[2024-05-11 20:30:09] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.4-py3-none-any.whl.zip]
+[2024-05-11 20:30:09] INFO root fetch - main [MainThread]: End processing [ALLM]: success
+[2024-05-11 20:30:09] INFO root fetch - processPackages [teratomasz]: Remove: archive file [/home/abi/fetcher/tmp/teratomasz-1.1.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - processPackages [teratomasz]: Remove: archive file [/home/abi/fetcher/tmp/teratomasz-2.1.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - main [MainThread]: End processing [teratomasz]: success
+[2024-05-11 20:30:09] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-11 20:30:09] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-11 20:30:09] INFO root fetch - main [MainThread]: Store serial: [23163510]
