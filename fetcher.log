@@ -7273,3 +7273,54 @@
 [2024-05-11 03:26:45] INFO root fetch - processPackages [monteprediction]: Remove: archive file [/home/abi/fetcher/tmp/monteprediction-1.0.9.tar.gz]
 [2024-05-11 03:26:45] INFO root fetch - main [MainThread]: End processing [monteprediction]: success
 [2024-05-11 03:26:45] INFO root fetch - main [MainThread]: Store serial: [23156069]
+[2024-05-11 03:28:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156069]
+[2024-05-11 03:28:54] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: onediff
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onediffx
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: allocutez
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: neon-utils
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: knackiestz
+[2024-05-11 03:28:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jacksung
+[2024-05-11 03:28:54] INFO root fetch - processPackages [onediffx]: New version: [1.0.0.dev202405100127] Old Version: [1.0.0.dev202405090127]
+[2024-05-11 03:28:54] INFO root fetch - processPackages [onediff]: New version: [1.0.0.dev202405100127] Old Version: [1.0.0.dev202405090127]
+[2024-05-11 03:28:54] INFO root fetch - processPackages [neon-utils]: New version: [1.9.2a5] Old Version: [1.9.2a4]
+[2024-05-11 03:28:54] INFO root fetch - processPackages [jacksung]: New version: [0.0.2.99] Old Version: [0.0.2.98]
+[2024-05-11 03:28:54] INFO root fetch - processPackages [knackiestz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 03:28:54] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/93/b2/7d33903dd13096f184f1e18ee5e0242811913573946ce3f2ab9e34697765/onediffx-1.0.0.dev202405090127.tar.gz
+[2024-05-11 03:28:54] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/24/da/8de6ab07869ed3a8a4f024ba0b497766563b1fb72e5d6360102387d6a020/onediff-1.0.0.dev202405090127.tar.gz
+[2024-05-11 03:28:54] WARNING root fetch - processPackages [allocutez]: Skipping, unable to determine old version
+[2024-05-11 03:28:54] INFO root fetch - main [MainThread]: End processing [allocutez] error
+[2024-05-11 03:28:54] INFO root fetch - processPackages [neon-utils]: Downloading https://files.pythonhosted.org/packages/40/2d/fb1887f565e889964657dd1ffc5eca79ea8e671fe20620d2659c16798ce4/neon-utils-1.9.2a4.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [jacksung]: Downloading https://files.pythonhosted.org/packages/53/49/29d6064a8fb6ccc0f6823e713582dc73298157d8802aa60a65240347ef14/jacksung-0.0.2.98.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [knackiestz]: Downloading https://files.pythonhosted.org/packages/cb/e9/1ae743fa499da1f5eb818104fb324cb42745c7bd78240bc874e3d730f8b5/knackiestz-1.1.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediff]: Downloading https://files.pythonhosted.org/packages/d2/76/b63ece6ba455a088f2f05effe20742fe6253be3320234322e6c43f3f2360/onediff-1.0.0.dev202405100127.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [neon-utils]: Downloading https://files.pythonhosted.org/packages/4b/7e/d169b05a82bb414b9aaef0aca31a8f1752c08f9ca655cca6a681584a2c23/neon-utils-1.9.2a5.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediffx]: Downloading https://files.pythonhosted.org/packages/29/be/7413050344863fc4e76bf78102c007d4fc3b551ebc05eac69310199434fa/onediffx-1.0.0.dev202405100127.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediff]: executing diffoscope
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediff-1.0.0.dev202405090127.tar.gz tmp/onediff-1.0.0.dev202405100127.tar.gz --markdown 20240511/o/onediff/1.0.0.dev202405090127-1.0.0.dev202405100127/README.md --exclude *.pyd
+[2024-05-11 03:28:55] INFO root fetch - processPackages [knackiestz]: Downloading https://files.pythonhosted.org/packages/d1/a9/e61d1d40050194ce873aa7047ed3b78c4fc9c9585e3a78ee14a2b951d771/knackiestz-2.1.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediffx]: executing diffoscope
+[2024-05-11 03:28:55] INFO root fetch - processPackages [onediffx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onediffx-1.0.0.dev202405090127.tar.gz tmp/onediffx-1.0.0.dev202405100127.tar.gz --markdown 20240511/o/onediffx/1.0.0.dev202405090127-1.0.0.dev202405100127/README.md --exclude *.pyd
+[2024-05-11 03:28:55] INFO root fetch - processPackages [neon-utils]: executing diffoscope
+[2024-05-11 03:28:55] INFO root fetch - processPackages [neon-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neon-utils-1.9.2a4.tar.gz tmp/neon-utils-1.9.2a5.tar.gz --markdown 20240511/n/neon-utils/1.9.2a4-1.9.2a5/README.md --exclude *.pyd
+[2024-05-11 03:28:55] INFO root fetch - processPackages [jacksung]: Downloading https://files.pythonhosted.org/packages/b5/22/0dfab66df22ada378e333e97f6287eef4c68d06fd84d4bc9a8d76c3ba65e/jacksung-0.0.2.99.tar.gz
+[2024-05-11 03:28:55] INFO root fetch - processPackages [knackiestz]: executing diffoscope
+[2024-05-11 03:28:55] INFO root fetch - processPackages [knackiestz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knackiestz-1.1.tar.gz tmp/knackiestz-2.1.tar.gz --markdown 20240511/k/knackiestz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 03:28:55] INFO root fetch - processPackages [jacksung]: executing diffoscope
+[2024-05-11 03:28:55] INFO root fetch - processPackages [jacksung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jacksung-0.0.2.98.tar.gz tmp/jacksung-0.0.2.99.tar.gz --markdown 20240511/j/jacksung/0.0.2.98-0.0.2.99/README.md --exclude *.pyd
+[2024-05-11 03:28:56] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405090127.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - processPackages [onediffx]: Remove: archive file [/home/abi/fetcher/tmp/onediffx-1.0.0.dev202405100127.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [onediffx]: success
+[2024-05-11 03:28:56] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405090127.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - processPackages [onediff]: Remove: archive file [/home/abi/fetcher/tmp/onediff-1.0.0.dev202405100127.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [onediff]: success
+[2024-05-11 03:28:56] INFO root fetch - processPackages [knackiestz]: Remove: archive file [/home/abi/fetcher/tmp/knackiestz-1.1.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - processPackages [knackiestz]: Remove: archive file [/home/abi/fetcher/tmp/knackiestz-2.1.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [knackiestz]: success
+[2024-05-11 03:28:56] INFO root fetch - processPackages [jacksung]: Remove: archive file [/home/abi/fetcher/tmp/jacksung-0.0.2.98.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - processPackages [jacksung]: Remove: archive file [/home/abi/fetcher/tmp/jacksung-0.0.2.99.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [jacksung]: success
+[2024-05-11 03:28:56] INFO root fetch - processPackages [neon-utils]: Remove: archive file [/home/abi/fetcher/tmp/neon-utils-1.9.2a4.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - processPackages [neon-utils]: Remove: archive file [/home/abi/fetcher/tmp/neon-utils-1.9.2a5.tar.gz]
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
+[2024-05-11 03:28:56] INFO root fetch - main [MainThread]: Store serial: [23156143]
