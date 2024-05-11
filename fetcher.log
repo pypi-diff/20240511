@@ -12919,3 +12919,42 @@
 [2024-05-11 10:47:54] INFO root fetch - processPackages [PlexTraktSync]: Remove: archive file [/home/abi/fetcher/tmp/plextraktsync-0.30.5.tar.gz]
 [2024-05-11 10:47:54] INFO root fetch - main [MainThread]: End processing [PlexTraktSync]: success
 [2024-05-11 10:47:54] INFO root fetch - main [MainThread]: Store serial: [23159144]
+[2024-05-11 10:49:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159144]
+[2024-05-11 10:50:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 10:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jetson-examples
+[2024-05-11 10:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: create-app-fastapi
+[2024-05-11 10:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paradance
+[2024-05-11 10:50:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pessulusz
+[2024-05-11 10:50:02] INFO root fetch - processPackages [pessulusz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:50:02] INFO root fetch - processPackages [jetson-examples]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 10:50:02] INFO root fetch - processPackages [create-app-fastapi]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 10:50:02] INFO root fetch - processPackages [paradance]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-11 10:50:02] INFO root fetch - processPackages [pessulusz]: Downloading https://files.pythonhosted.org/packages/09/f9/0f557fa3bef99bc223148c830d9a4ce4d8c67f4006040e2a8445580fa311/pessulusz-1.1.tar.gz
+[2024-05-11 10:50:02] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/cd/6e/240f3f18aadc3b07f6b23654a435e55d75f6b727bfd5b2d23ae600f77106/create-app-fastapi-0.0.6.tar.gz
+[2024-05-11 10:50:02] INFO root fetch - processPackages [jetson-examples]: Downloading https://files.pythonhosted.org/packages/b6/eb/5255986dfbc0aca8fce9dcff44a32114d41f710111dcfb9e10e1d4436a69/jetson_examples-0.0.7.tar.gz
+[2024-05-11 10:50:02] INFO root fetch - processPackages [paradance]: Downloading https://files.pythonhosted.org/packages/8f/4c/6a3c7d4731f17fd3b3e4130274d7bbae13be34f848072567de4b0ab61969/paradance-0.4.8.tar.gz
+[2024-05-11 10:50:03] INFO root fetch - processPackages [create-app-fastapi]: Downloading https://files.pythonhosted.org/packages/f7/65/ed1fbfcdd5b3405bccc60b1e8663638220ae5ed8cb3f6a3a999de256489f/create-app-fastapi-0.0.7.tar.gz
+[2024-05-11 10:50:03] INFO root fetch - processPackages [pessulusz]: Downloading https://files.pythonhosted.org/packages/70/a8/66201830817a1b6153c5bcfa0b927e26376b31a85dbd42bbd836085458d9/pessulusz-2.1.tar.gz
+[2024-05-11 10:50:03] INFO root fetch - processPackages [jetson-examples]: Downloading https://files.pythonhosted.org/packages/80/1b/9087a6adbe184451bc7624cac746d119d027178a54edbd6c66bada61d212/jetson_examples-0.0.8.tar.gz
+[2024-05-11 10:50:03] INFO root fetch - processPackages [paradance]: Downloading https://files.pythonhosted.org/packages/ab/20/cc427c1600f67ef9036e4f225cc6bcdac42746ca6db329d2d1029be4c84e/paradance-0.4.9.tar.gz
+[2024-05-11 10:50:03] INFO root fetch - processPackages [create-app-fastapi]: executing diffoscope
+[2024-05-11 10:50:03] INFO root fetch - processPackages [create-app-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/create-app-fastapi-0.0.6.tar.gz tmp/create-app-fastapi-0.0.7.tar.gz --markdown 20240511/c/create-app-fastapi/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 10:50:03] INFO root fetch - processPackages [pessulusz]: executing diffoscope
+[2024-05-11 10:50:03] INFO root fetch - processPackages [pessulusz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pessulusz-1.1.tar.gz tmp/pessulusz-2.1.tar.gz --markdown 20240511/p/pessulusz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:50:03] INFO root fetch - processPackages [jetson-examples]: executing diffoscope
+[2024-05-11 10:50:03] INFO root fetch - processPackages [jetson-examples]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jetson_examples-0.0.7.tar.gz tmp/jetson_examples-0.0.8.tar.gz --markdown 20240511/j/jetson-examples/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 10:50:03] INFO root fetch - processPackages [paradance]: executing diffoscope
+[2024-05-11 10:50:03] INFO root fetch - processPackages [paradance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paradance-0.4.8.tar.gz tmp/paradance-0.4.9.tar.gz --markdown 20240511/p/paradance/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-11 10:50:03] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.6.tar.gz]
+[2024-05-11 10:50:03] INFO root fetch - processPackages [create-app-fastapi]: Remove: archive file [/home/abi/fetcher/tmp/create-app-fastapi-0.0.7.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - main [MainThread]: End processing [create-app-fastapi]: success
+[2024-05-11 10:50:04] INFO root fetch - processPackages [pessulusz]: Remove: archive file [/home/abi/fetcher/tmp/pessulusz-1.1.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - processPackages [pessulusz]: Remove: archive file [/home/abi/fetcher/tmp/pessulusz-2.1.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - main [MainThread]: End processing [pessulusz]: success
+[2024-05-11 10:50:04] INFO root fetch - processPackages [jetson-examples]: Remove: archive file [/home/abi/fetcher/tmp/jetson_examples-0.0.7.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - processPackages [jetson-examples]: Remove: archive file [/home/abi/fetcher/tmp/jetson_examples-0.0.8.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - main [MainThread]: End processing [jetson-examples]: success
+[2024-05-11 10:50:04] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.8.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.9.tar.gz]
+[2024-05-11 10:50:04] INFO root fetch - main [MainThread]: End processing [paradance]: success
+[2024-05-11 10:50:04] INFO root fetch - main [MainThread]: Store serial: [23159165]
