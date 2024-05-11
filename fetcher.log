@@ -17194,3 +17194,51 @@
 [2024-05-11 15:35:15] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a3.tar.gz]
 [2024-05-11 15:35:15] INFO root fetch - main [MainThread]: End processing [vak]: success
 [2024-05-11 15:35:15] INFO root fetch - main [MainThread]: Store serial: [23161431]
+[2024-05-11 15:37:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161431]
+[2024-05-11 15:37:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 15:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datargs
+[2024-05-11 15:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: otpcr
+[2024-05-11 15:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapeddit
+[2024-05-11 15:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zensols.util
+[2024-05-11 15:37:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dycw-utilities
+[2024-05-11 15:37:23] INFO root fetch - processPackages [otpcr]: New version: [9] Old Version: [8]
+[2024-05-11 15:37:23] INFO root fetch - processPackages [scrapeddit]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-11 15:37:23] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/37/0b/8bd06d4112258b1b2c7a9453b3a01eae742c0312cd1f9fdac10d84e634b6/otpcr-8.tar.gz
+[2024-05-11 15:37:23] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/1b/ff/cd2fb9380c7e7b1ce6cfee745f3753813950ef1d3b5740ce5071f9821c21/scrapeddit-0.3.0.tar.gz
+[2024-05-11 15:37:23] INFO root fetch - processPackages [zensols.util]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-11 15:37:23] INFO root fetch - processPackages [datargs]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-11 15:37:23] INFO root fetch - processPackages [dycw-utilities]: New version: [0.9.0] Old Version: [0.8.8]
+[2024-05-11 15:37:24] INFO root fetch - processPackages [datargs]: Downloading https://files.pythonhosted.org/packages/9b/d5/1632cf9d3e2847d75d976a038c486cce741ceea6acaad014b1d7c495bbcb/datargs-1.0.0.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [zensols.util]: Downloading https://files.pythonhosted.org/packages/f3/80/d67998efee33306413bf0cd2a8f6321de1e2428abb70166f4a6a7eae565b/zensols.util-1.8.0-py3-none-any.whl
+[2024-05-11 15:37:24] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/51/2f/ca83f6d9168294a581e6e71033a5175c1a45f8031512e3653fffc760fdbe/scrapeddit-0.3.1.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/54/7e/af8cf1cb765a2f3cb2416931b8e932571cea62c675981c5a5ae52fc76702/otpcr-9.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/a5/a4/993374a162ca6d880ff284c54df5acfb25a9f3347426746bb1aeeae915b9/dycw_utilities-0.8.8.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 15:37:24] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.3.0.tar.gz tmp/scrapeddit-0.3.1.tar.gz --markdown 20240511/s/scrapeddit/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-11 15:37:24] INFO root fetch - processPackages [datargs]: Downloading https://files.pythonhosted.org/packages/b4/45/774220466879035eda65c7a4c0f62ce805b5df32e5e3c93dbf8a543a15ab/datargs-1.1.0.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [otpcr]: executing diffoscope
+[2024-05-11 15:37:24] INFO root fetch - processPackages [otpcr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpcr-8.tar.gz tmp/otpcr-9.tar.gz --markdown 20240511/o/otpcr/8-9/README.md --exclude *.pyd
+[2024-05-11 15:37:24] INFO root fetch - processPackages [zensols.util]: Downloading https://files.pythonhosted.org/packages/0e/52/b6d0f45dd0486a73d132f1b7ab40d110f352476c57e20b88a8c57d8cfba0/zensols.util-1.9.0-py3-none-any.whl
+[2024-05-11 15:37:24] INFO root fetch - processPackages [datargs]: executing diffoscope
+[2024-05-11 15:37:24] INFO root fetch - processPackages [datargs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datargs-1.0.0.tar.gz tmp/datargs-1.1.0.tar.gz --markdown 20240511/d/datargs/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-11 15:37:24] INFO root fetch - processPackages [dycw-utilities]: Downloading https://files.pythonhosted.org/packages/18/5f/14fd12b36288c6f50f412854105898b537e348c0c10e7cedb0b54a05a56e/dycw_utilities-0.9.0.tar.gz
+[2024-05-11 15:37:24] INFO root fetch - processPackages [dycw-utilities]: executing diffoscope
+[2024-05-11 15:37:24] INFO root fetch - processPackages [dycw-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dycw_utilities-0.8.8.tar.gz tmp/dycw_utilities-0.9.0.tar.gz --markdown 20240511/d/dycw-utilities/0.8.8-0.9.0/README.md --exclude *.pyd
+[2024-05-11 15:37:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.3.0.tar.gz]
+[2024-05-11 15:37:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.3.1.tar.gz]
+[2024-05-11 15:37:24] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 15:37:25] INFO root fetch - processPackages [datargs]: Remove: archive file [/home/abi/fetcher/tmp/datargs-1.0.0.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - processPackages [datargs]: Remove: archive file [/home/abi/fetcher/tmp/datargs-1.1.0.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - main [MainThread]: End processing [datargs]: success
+[2024-05-11 15:37:25] INFO root fetch - processPackages [zensols.util]: executing diffoscope
+[2024-05-11 15:37:25] INFO root fetch - processPackages [zensols.util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.util-1.8.0-py3-none-any.whl.zip tmp/zensols.util-1.9.0-py3-none-any.whl.zip --markdown 20240511/z/zensols.util/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-11 15:37:25] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-8.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-9.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - main [MainThread]: End processing [otpcr]: success
+[2024-05-11 15:37:25] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.8.8.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - processPackages [dycw-utilities]: Remove: archive file [/home/abi/fetcher/tmp/dycw_utilities-0.9.0.tar.gz]
+[2024-05-11 15:37:25] INFO root fetch - main [MainThread]: End processing [dycw-utilities]: success
+[2024-05-11 15:37:25] INFO root fetch - processPackages [zensols.util]: Remove: archive file [/home/abi/fetcher/tmp/zensols.util-1.8.0-py3-none-any.whl.zip]
+[2024-05-11 15:37:25] INFO root fetch - processPackages [zensols.util]: Remove: archive file [/home/abi/fetcher/tmp/zensols.util-1.9.0-py3-none-any.whl.zip]
+[2024-05-11 15:37:25] INFO root fetch - main [MainThread]: End processing [zensols.util]: success
+[2024-05-11 15:37:25] INFO root fetch - main [MainThread]: Store serial: [23161444]
