@@ -17146,3 +17146,24 @@
 [2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
 [2024-05-11 15:30:53] INFO root fetch - main [MainThread]: End processing [bellek]: success
 [2024-05-11 15:30:53] INFO root fetch - main [MainThread]: Store serial: [23161411]
+[2024-05-11 15:32:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161411]
+[2024-05-11 15:33:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 15:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: scrapeddit
+[2024-05-11 15:33:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyCubes
+[2024-05-11 15:33:02] INFO root fetch - processPackages [scrapeddit]: New version: [0.3.0] Old Version: [0.2.7]
+[2024-05-11 15:33:02] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/01/2e/de41f84070fe4b7b033b55a12677f3e0d5d3a9926f1134c3bfede5654ceb/scrapeddit-0.2.7.tar.gz
+[2024-05-11 15:33:02] INFO root fetch - processPackages [pyCubes]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-11 15:33:02] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/1b/ff/cd2fb9380c7e7b1ce6cfee745f3753813950ef1d3b5740ce5071f9821c21/scrapeddit-0.3.0.tar.gz
+[2024-05-11 15:33:02] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 15:33:02] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.2.7.tar.gz tmp/scrapeddit-0.3.0.tar.gz --markdown 20240511/s/scrapeddit/0.2.7-0.3.0/README.md --exclude *.pyd
+[2024-05-11 15:33:02] INFO root fetch - processPackages [pyCubes]: Downloading https://files.pythonhosted.org/packages/4e/13/b865c38a4147bb83ff917cd4199077ba1235d8f97e7443243abfe5009b42/pyCubes-0.4.1.tar.gz
+[2024-05-11 15:33:03] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.7.tar.gz]
+[2024-05-11 15:33:03] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.3.0.tar.gz]
+[2024-05-11 15:33:03] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 15:33:03] INFO root fetch - processPackages [pyCubes]: Downloading https://files.pythonhosted.org/packages/f2/9e/9f15ab69b72d500abe4ed14050ba0841b93cbb32b024ae50136b5663e209/pycubes-0.4.2.tar.gz
+[2024-05-11 15:33:03] INFO root fetch - processPackages [pyCubes]: executing diffoscope
+[2024-05-11 15:33:03] INFO root fetch - processPackages [pyCubes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyCubes-0.4.1.tar.gz tmp/pycubes-0.4.2.tar.gz --markdown 20240511/p/pyCubes/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-11 15:33:04] INFO root fetch - processPackages [pyCubes]: Remove: archive file [/home/abi/fetcher/tmp/pyCubes-0.4.1.tar.gz]
+[2024-05-11 15:33:04] INFO root fetch - processPackages [pyCubes]: Remove: archive file [/home/abi/fetcher/tmp/pycubes-0.4.2.tar.gz]
+[2024-05-11 15:33:04] INFO root fetch - main [MainThread]: End processing [pyCubes]: success
+[2024-05-11 15:33:04] INFO root fetch - main [MainThread]: Store serial: [23161416]
