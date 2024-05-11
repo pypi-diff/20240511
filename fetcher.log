@@ -17779,3 +17779,46 @@
 [2024-05-11 16:17:49] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.9.tar.gz]
 [2024-05-11 16:17:49] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
 [2024-05-11 16:17:49] INFO root fetch - main [MainThread]: Store serial: [23161812]
+[2024-05-11 16:19:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161812]
+[2024-05-11 16:19:58] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oc-core-django
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cheb3
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tm_parser
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tm_parser
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fc-pruning
+[2024-05-11 16:19:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eli-hello
+[2024-05-11 16:19:58] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 16:19:58] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 16:19:58] WARNING root fetch - processPackages [eli-hello]: Skipping, unable to determine old version
+[2024-05-11 16:19:58] INFO root fetch - main [MainThread]: End processing [eli-hello] error
+[2024-05-11 16:19:58] INFO root fetch - processPackages [cheb3]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 16:19:58] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 16:19:58] INFO root fetch - processPackages [fc-pruning]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 16:19:58] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 16:19:58] WARNING root fetch - processPackages [oc-core-django]: Skipping, unable to determine old version
+[2024-05-11 16:19:58] INFO root fetch - main [MainThread]: End processing [oc-core-django] error
+[2024-05-11 16:19:59] INFO root fetch - processPackages [cheb3]: Downloading https://files.pythonhosted.org/packages/19/2a/1514eabc8e289fba9707548fb60ca6b4e6b75c5c80c58013047cd345d90d/cheb3-0.8.0.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/49/2d/dfd3567ac2b0b2060f3a442ddb44017370c3c85a8a4535e77b86d9ebaeed/fc_pruning-0.0.5.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 16:19:59] INFO root fetch - processPackages [fc-pruning]: Downloading https://files.pythonhosted.org/packages/cd/4f/3b67a9606d45d3eecf6a40aea284cb9429b027c98f38d2ab910b9266517c/fc_pruning-0.0.6.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [cheb3]: Downloading https://files.pythonhosted.org/packages/98/e6/eb8134e58adf9fb3d8cb1038eb0c149c2aa7962feff3ec9719215bc3c267/cheb3-0.9.0.tar.gz
+[2024-05-11 16:19:59] INFO root fetch - processPackages [fc-pruning]: executing diffoscope
+[2024-05-11 16:19:59] INFO root fetch - processPackages [fc-pruning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fc_pruning-0.0.5.tar.gz tmp/fc_pruning-0.0.6.tar.gz --markdown 20240511/f/fc-pruning/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-11 16:19:59] INFO root fetch - processPackages [cheb3]: executing diffoscope
+[2024-05-11 16:19:59] INFO root fetch - processPackages [cheb3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheb3-0.8.0.tar.gz tmp/cheb3-0.9.0.tar.gz --markdown 20240511/c/cheb3/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 16:19:59] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 16:19:59] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 16:19:59] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 16:20:00] INFO root fetch - processPackages [cheb3]: Remove: archive file [/home/abi/fetcher/tmp/cheb3-0.8.0.tar.gz]
+[2024-05-11 16:20:00] INFO root fetch - processPackages [cheb3]: Remove: archive file [/home/abi/fetcher/tmp/cheb3-0.9.0.tar.gz]
+[2024-05-11 16:20:00] INFO root fetch - main [MainThread]: End processing [cheb3]: success
+[2024-05-11 16:20:00] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.5.tar.gz]
+[2024-05-11 16:20:00] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.6.tar.gz]
+[2024-05-11 16:20:00] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
+[2024-05-11 16:20:00] INFO root fetch - main [MainThread]: Store serial: [23161854]
