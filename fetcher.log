@@ -19783,3 +19783,33 @@
 [2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: Remove: archive file [/home/abi/fetcher/tmp/stercoricolousz-2.1.tar.gz]
 [2024-05-11 18:26:06] INFO root fetch - main [MainThread]: End processing [stercoricolousz]: success
 [2024-05-11 18:26:06] INFO root fetch - main [MainThread]: Store serial: [23162650]
+[2024-05-11 18:28:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162650]
+[2024-05-11 18:28:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 18:28:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tm_parser
+[2024-05-11 18:28:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AmaProductReviews
+[2024-05-11 18:28:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ofnodes
+[2024-05-11 18:28:15] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 18:28:15] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 18:28:15] INFO root fetch - processPackages [AmaProductReviews]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 18:28:15] INFO root fetch - processPackages [ofnodes]: New version: [2.0] Old Version: [1.9.0]
+[2024-05-11 18:28:15] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/5a/8d/34b2debb5f9702657993ffe2c60a0cad5db6836c8c747601ead2b61405b1/amaproductreviews-0.0.8.tar.gz
+[2024-05-11 18:28:15] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 18:28:15] INFO root fetch - processPackages [ofnodes]: Downloading https://files.pythonhosted.org/packages/86/a1/c15dafb2ecbf588469c6cf4c084c2de049abb490817529d50889765125ea/ofnodes-1.9.0.tar.gz
+[2024-05-11 18:28:15] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 18:28:15] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 18:28:16] INFO root fetch - processPackages [AmaProductReviews]: Downloading https://files.pythonhosted.org/packages/c2/7f/9a5fb9b5fe8d20aa9558f560fd1f5e54d7b1829049a8a979f5d5c5a33d91/amaproductreviews-0.0.9.tar.gz
+[2024-05-11 18:28:16] INFO root fetch - processPackages [AmaProductReviews]: executing diffoscope
+[2024-05-11 18:28:16] INFO root fetch - processPackages [AmaProductReviews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amaproductreviews-0.0.8.tar.gz tmp/amaproductreviews-0.0.9.tar.gz --markdown 20240511/A/AmaProductReviews/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: Downloading https://files.pythonhosted.org/packages/41/e9/a30f3a99f62c59f2ed095471acc8029808976aef20ccddcdcd8aae0d183a/ofnodes-2.0.tar.gz
+[2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: executing diffoscope
+[2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ofnodes-1.9.0.tar.gz tmp/ofnodes-2.0.tar.gz --markdown 20240511/o/ofnodes/1.9.0-2.0/README.md --exclude *.pyd
+[2024-05-11 18:28:16] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 18:28:16] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.8.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - processPackages [AmaProductReviews]: Remove: archive file [/home/abi/fetcher/tmp/amaproductreviews-0.0.9.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - main [MainThread]: End processing [AmaProductReviews]: success
+[2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: Remove: archive file [/home/abi/fetcher/tmp/ofnodes-1.9.0.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - processPackages [ofnodes]: Remove: archive file [/home/abi/fetcher/tmp/ofnodes-2.0.tar.gz]
+[2024-05-11 18:28:16] INFO root fetch - main [MainThread]: End processing [ofnodes]: success
+[2024-05-11 18:28:16] INFO root fetch - main [MainThread]: Store serial: [23162659]
