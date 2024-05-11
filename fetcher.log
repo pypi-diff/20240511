@@ -8822,3 +8822,45 @@
 [2024-05-11 05:19:43] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl.zip]
 [2024-05-11 05:19:43] INFO root fetch - main [MainThread]: End processing [pyopenhc]: success
 [2024-05-11 05:19:43] INFO root fetch - main [MainThread]: Store serial: [23156935]
+[2024-05-11 05:21:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156935]
+[2024-05-11 05:21:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 05:21:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devon-agent
+[2024-05-11 05:21:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spalaxz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keras-nightly
+[2024-05-11 05:21:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sindapi
+[2024-05-11 05:21:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vr180-convert
+[2024-05-11 05:21:52] INFO root fetch - processPackages [devon-agent]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 05:21:52] INFO root fetch - processPackages [sindapi]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 05:21:52] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/ba/c0/13db28c7148a5a24ecbba291f6577df65b6145c26a1216119fe61e7cd1d4/devon_agent-0.1.3.tar.gz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/a3/64/9be9eae342d536ab1b036d4a2f1c1e5f96a0572ca5355387627d208ab1d1/sindapi-0.0.8.tar.gz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [vr180-convert]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-11 05:21:52] WARNING root fetch - processPackages [spalaxz]: Skipping, unable to determine old version
+[2024-05-11 05:21:52] INFO root fetch - main [MainThread]: End processing [spalaxz] error
+[2024-05-11 05:21:52] INFO root fetch - processPackages [keras-nightly]: New version: [3.3.3.dev2024051103] Old Version: [3.3.3.dev2024050903]
+[2024-05-11 05:21:52] INFO root fetch - processPackages [sindapi]: Downloading https://files.pythonhosted.org/packages/7d/a7/a389d78c747399fa425e39d89ba9fa6d384de97b624ca2e380160a06716f/sindapi-0.0.9.tar.gz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/70/8b/6d5ed0d343538a31c4c2588a7c0a494563c84dbc3366c48dc803b4e37f2f/vr180_convert-0.2.0.tar.gz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/3e/8b/681febf1744d3d3de78af9f4f8e0b481b4409627340db6f5005e270fd633/keras_nightly-3.3.3.dev2024050903.tar.gz
+[2024-05-11 05:21:52] INFO root fetch - processPackages [sindapi]: executing diffoscope
+[2024-05-11 05:21:52] INFO root fetch - processPackages [sindapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sindapi-0.0.8.tar.gz tmp/sindapi-0.0.9.tar.gz --markdown 20240511/s/sindapi/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 05:21:53] INFO root fetch - processPackages [vr180-convert]: Downloading https://files.pythonhosted.org/packages/1f/a7/ff4550ae3ac6e215b95c992be4b1322605015b7811f21c1dc3842ba34e92/vr180_convert-0.2.1.tar.gz
+[2024-05-11 05:21:53] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/09/97/54507c4e3111cbe2d5e0fc8baff5a1220404d0ba164fa99c751ab76d39b5/keras_nightly-3.3.3.dev2024051103.tar.gz
+[2024-05-11 05:21:53] INFO root fetch - processPackages [vr180-convert]: executing diffoscope
+[2024-05-11 05:21:53] INFO root fetch - processPackages [vr180-convert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vr180_convert-0.2.0.tar.gz tmp/vr180_convert-0.2.1.tar.gz --markdown 20240511/v/vr180-convert/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 05:21:53] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/2d/43/7a6392f76ec97571e8aa61096f5ca360fa7c74170cd771bceaa7b5880d88/devon_agent-0.1.4.tar.gz
+[2024-05-11 05:21:53] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2024-05-11 05:21:53] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-3.3.3.dev2024050903.tar.gz tmp/keras_nightly-3.3.3.dev2024051103.tar.gz --markdown 20240511/k/keras-nightly/3.3.3.dev2024050903-3.3.3.dev2024051103/README.md --exclude *.pyd
+[2024-05-11 05:21:53] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-11 05:21:53] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.3.tar.gz tmp/devon_agent-0.1.4.tar.gz --markdown 20240511/d/devon-agent/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 05:21:53] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.8.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - processPackages [sindapi]: Remove: archive file [/home/abi/fetcher/tmp/sindapi-0.0.9.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - main [MainThread]: End processing [sindapi]: success
+[2024-05-11 05:21:53] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.2.0.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - processPackages [vr180-convert]: Remove: archive file [/home/abi/fetcher/tmp/vr180_convert-0.2.1.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - main [MainThread]: End processing [vr180-convert]: success
+[2024-05-11 05:21:53] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.3.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.4.tar.gz]
+[2024-05-11 05:21:53] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-11 05:21:55] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024050903.tar.gz]
+[2024-05-11 05:21:55] INFO root fetch - processPackages [keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_nightly-3.3.3.dev2024051103.tar.gz]
+[2024-05-11 05:21:55] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2024-05-11 05:21:55] INFO root fetch - main [MainThread]: Store serial: [23156951]
