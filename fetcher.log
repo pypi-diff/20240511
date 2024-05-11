@@ -12733,3 +12733,36 @@
 [2024-05-11 10:34:47] INFO root fetch - processPackages [runtime-keypath]: Remove: archive file [/home/abi/fetcher/tmp/runtime_keypath-0.1.4.tar.gz]
 [2024-05-11 10:34:47] INFO root fetch - main [MainThread]: End processing [runtime-keypath]: success
 [2024-05-11 10:34:47] INFO root fetch - main [MainThread]: Store serial: [23159042]
+[2024-05-11 10:36:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159042]
+[2024-05-11 10:36:56] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 10:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-feed-reader
+[2024-05-11 10:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: applyx
+[2024-05-11 10:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mkdocs-github-admonitions-plugin
+[2024-05-11 10:36:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-11 10:36:56] WARNING root fetch - processPackages [mkdocs-github-admonitions-plugin]: Skipping, unable to determine old version
+[2024-05-11 10:36:56] INFO root fetch - main [MainThread]: End processing [mkdocs-github-admonitions-plugin] error
+[2024-05-11 10:36:56] INFO root fetch - processPackages [applyx]: New version: [0.2.9] Old Version: [0.2.7]
+[2024-05-11 10:36:56] INFO root fetch - processPackages [django-feed-reader]: New version: [2.0.1b2] Old Version: [2.0.1b1]
+[2024-05-11 10:36:56] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 10:36:56] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 10:36:57] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/30/96/bf00ea1d25d2d488fbefc1ff443a118a6c42de1422b84c2c517bf582d16c/applyx-0.2.7-py3-none-any.whl
+[2024-05-11 10:36:57] INFO root fetch - processPackages [django-feed-reader]: Downloading https://files.pythonhosted.org/packages/21/ec/5d4ea46e2fc4b6ca6a4b5b25fc874bc8524d70d89ee3d11d0493a087e7e4/django_feed_reader-2.0.1b1.tar.gz
+[2024-05-11 10:36:57] INFO root fetch - processPackages [applyx]: Downloading https://files.pythonhosted.org/packages/55/82/e3be3f202f0a3163a1550c0b5b78be1aea8301a9ac6459c4ad6c5d2f7499/applyx-0.2.9-py3-none-any.whl
+[2024-05-11 10:36:57] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 10:36:57] INFO root fetch - processPackages [django-feed-reader]: Downloading https://files.pythonhosted.org/packages/e8/ca/9221f2fd960f175ad575740ef8d789ba47ccb5bed7bd62af944f908e841d/django_feed_reader-2.0.1b2.tar.gz
+[2024-05-11 10:36:57] INFO root fetch - processPackages [applyx]: executing diffoscope
+[2024-05-11 10:36:57] INFO root fetch - processPackages [applyx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applyx-0.2.7-py3-none-any.whl.zip tmp/applyx-0.2.9-py3-none-any.whl.zip --markdown 20240511/a/applyx/0.2.7-0.2.9/README.md --exclude *.pyd
+[2024-05-11 10:36:57] INFO root fetch - processPackages [django-feed-reader]: executing diffoscope
+[2024-05-11 10:36:57] INFO root fetch - processPackages [django-feed-reader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_feed_reader-2.0.1b1.tar.gz tmp/django_feed_reader-2.0.1b2.tar.gz --markdown 20240511/d/django-feed-reader/2.0.1b1-2.0.1b2/README.md --exclude *.pyd
+[2024-05-11 10:36:57] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 10:36:57] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 10:36:58] INFO root fetch - processPackages [django-feed-reader]: Remove: archive file [/home/abi/fetcher/tmp/django_feed_reader-2.0.1b1.tar.gz]
+[2024-05-11 10:36:58] INFO root fetch - processPackages [django-feed-reader]: Remove: archive file [/home/abi/fetcher/tmp/django_feed_reader-2.0.1b2.tar.gz]
+[2024-05-11 10:36:58] INFO root fetch - main [MainThread]: End processing [django-feed-reader]: success
+[2024-05-11 10:36:58] INFO root fetch - processPackages [applyx]: Remove: archive file [/home/abi/fetcher/tmp/applyx-0.2.7-py3-none-any.whl.zip]
+[2024-05-11 10:36:58] INFO root fetch - processPackages [applyx]: Remove: archive file [/home/abi/fetcher/tmp/applyx-0.2.9-py3-none-any.whl.zip]
+[2024-05-11 10:36:58] INFO root fetch - main [MainThread]: End processing [applyx]: success
+[2024-05-11 10:36:58] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 10:36:58] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 10:36:58] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 10:36:58] INFO root fetch - main [MainThread]: Store serial: [23159052]
