@@ -18195,3 +18195,42 @@
 [2024-05-11 16:44:05] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.7.tar.gz]
 [2024-05-11 16:44:05] INFO root fetch - main [MainThread]: End processing [joulescope-ui]: success
 [2024-05-11 16:44:05] INFO root fetch - main [MainThread]: Store serial: [23162013]
+[2024-05-11 16:46:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162013]
+[2024-05-11 16:46:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: team-14-lib-version
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: codefly-cli
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: akshare
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: x-transformers
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: llm-bench
+[2024-05-11 16:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hypobenthonicz
+[2024-05-11 16:46:14] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b6] Old Version: [0.6.0b5]
+[2024-05-11 16:46:14] WARNING root fetch - processPackages [llm-bench]: Skipping, unable to determine old version
+[2024-05-11 16:46:14] INFO root fetch - main [MainThread]: End processing [llm-bench] error
+[2024-05-11 16:46:14] INFO root fetch - processPackages [x-transformers]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-11 16:46:14] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/28/7f/9a0104aa34453383c5a3deeee5a2f83dc8e815f64373719c5197e1442710/team_14_lib_version-0.6.0b5.tar.gz
+[2024-05-11 16:46:14] WARNING root fetch - processPackages [codefly-cli]: Skipping, unable to determine old version
+[2024-05-11 16:46:14] INFO root fetch - main [MainThread]: End processing [codefly-cli] error
+[2024-05-11 16:46:14] WARNING root fetch - processPackages [hypobenthonicz]: Skipping, unable to determine old version
+[2024-05-11 16:46:14] INFO root fetch - main [MainThread]: End processing [hypobenthonicz] error
+[2024-05-11 16:46:14] INFO root fetch - processPackages [x-transformers]: Downloading https://files.pythonhosted.org/packages/4c/e4/1f4432d217a1facf7a79aa2e2a08ffdbcf411f13bef9bd9bd3307a99a1af/x-transformers-1.9.1.tar.gz
+[2024-05-11 16:46:14] INFO root fetch - processPackages [akshare]: New version: [1.9.99] Old Version: [1.9.98]
+[2024-05-11 16:46:14] INFO root fetch - processPackages [x-transformers]: Downloading https://files.pythonhosted.org/packages/ce/c4/a338a8fcfd77c21d7b28960180987b186017522eb0ad53cfdce2ad6c59f5/x-transformers-1.9.2.tar.gz
+[2024-05-11 16:46:14] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/ec/a4/f1c21d8fbb349e15f0bf76d32a496003bcff9b66215f81b940337a510e36/akshare-1.9.98.tar.gz
+[2024-05-11 16:46:14] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/3b/95/80b66ed4875726d563cda1c1f5569be6cf97c92da32171fe586f5d9fbfb4/team_14_lib_version-0.6.0b6.tar.gz
+[2024-05-11 16:46:14] INFO root fetch - processPackages [x-transformers]: executing diffoscope
+[2024-05-11 16:46:14] INFO root fetch - processPackages [x-transformers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/x-transformers-1.9.1.tar.gz tmp/x-transformers-1.9.2.tar.gz --markdown 20240511/x/x-transformers/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-11 16:46:14] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 16:46:14] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.6.0b5.tar.gz tmp/team_14_lib_version-0.6.0b6.tar.gz --markdown 20240511/t/team-14-lib-version/0.6.0b5-0.6.0b6/README.md --exclude *.pyd
+[2024-05-11 16:46:15] INFO root fetch - processPackages [akshare]: Downloading https://files.pythonhosted.org/packages/53/e8/f58e96016752567ca09f3f67abdc7e935d0afa919aded528d50590ed9170/akshare-1.9.99.tar.gz
+[2024-05-11 16:46:15] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b5.tar.gz]
+[2024-05-11 16:46:15] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b6.tar.gz]
+[2024-05-11 16:46:15] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 16:46:15] INFO root fetch - processPackages [akshare]: executing diffoscope
+[2024-05-11 16:46:15] INFO root fetch - processPackages [akshare]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/akshare-1.9.98.tar.gz tmp/akshare-1.9.99.tar.gz --markdown 20240511/a/akshare/1.9.98-1.9.99/README.md --exclude *.pyd
+[2024-05-11 16:46:15] INFO root fetch - processPackages [x-transformers]: Remove: archive file [/home/abi/fetcher/tmp/x-transformers-1.9.1.tar.gz]
+[2024-05-11 16:46:15] INFO root fetch - processPackages [x-transformers]: Remove: archive file [/home/abi/fetcher/tmp/x-transformers-1.9.2.tar.gz]
+[2024-05-11 16:46:15] INFO root fetch - main [MainThread]: End processing [x-transformers]: success
+[2024-05-11 16:46:17] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.98.tar.gz]
+[2024-05-11 16:46:17] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
+[2024-05-11 16:46:17] INFO root fetch - main [MainThread]: End processing [akshare]: success
+[2024-05-11 16:46:17] INFO root fetch - main [MainThread]: Store serial: [23162034]
