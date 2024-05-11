@@ -9035,3 +9035,15 @@
 [2024-05-11 05:30:37] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.0a2.tar.gz]
 [2024-05-11 05:30:37] INFO root fetch - main [MainThread]: End processing [reflex]: success
 [2024-05-11 05:30:37] INFO root fetch - main [MainThread]: Store serial: [23157017]
+[2024-05-11 05:32:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157017]
+[2024-05-11 05:32:45] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 05:32:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pkg-inspect
+[2024-05-11 05:32:45] INFO root fetch - processPackages [pkg-inspect]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-11 05:32:45] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/a2/d8/c69936e7e912ebc290b2b12178fbb58d919b1d5d2b09de6812282091f0f2/pkg_inspect-0.2.0.tar.gz
+[2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/00/f3/f9da92caf83aa9570c73a8c9619e24736ece8fff1ee73c42a540f1778a23/pkg_inspect-0.2.1.tar.gz
+[2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: executing diffoscope
+[2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkg_inspect-0.2.0.tar.gz tmp/pkg_inspect-0.2.1.tar.gz --markdown 20240511/p/pkg-inspect/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.0.tar.gz]
+[2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.1.tar.gz]
+[2024-05-11 05:32:46] INFO root fetch - main [MainThread]: End processing [pkg-inspect]: success
+[2024-05-11 05:32:46] INFO root fetch - main [MainThread]: Store serial: [23157020]
