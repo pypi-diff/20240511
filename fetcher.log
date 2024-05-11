@@ -12799,3 +12799,27 @@
 [2024-05-11 10:39:08] INFO root fetch - processPackages [perindez]: Remove: archive file [/home/abi/fetcher/tmp/perindez-2.1.tar.gz]
 [2024-05-11 10:39:08] INFO root fetch - main [MainThread]: End processing [perindez]: success
 [2024-05-11 10:39:08] INFO root fetch - main [MainThread]: Store serial: [23159065]
+[2024-05-11 10:41:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159065]
+[2024-05-11 10:41:17] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-11 10:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: openagents-grpc-proto
+[2024-05-11 10:41:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fedfold
+[2024-05-11 10:41:17] WARNING root fetch - processPackages [fedfold]: Skipping, unable to determine old version
+[2024-05-11 10:41:17] INFO root fetch - main [MainThread]: End processing [fedfold] error
+[2024-05-11 10:41:17] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 10:41:17] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 10:41:17] INFO root fetch - processPackages [openagents-grpc-proto]: New version: [0.8.3] Old Version: [0.8.2]
+[2024-05-11 10:41:17] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/76/28/bf5bbce8b00d83a3db48cdc5ecba1c7e69cb23db56ab67c69e13e2ef699d/openagents_grpc_proto-0.8.2.tar.gz
+[2024-05-11 10:41:17] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 10:41:17] INFO root fetch - processPackages [openagents-grpc-proto]: Downloading https://files.pythonhosted.org/packages/73/c2/8ead0b40de99712b10cd11eb239bef1ff888d76bf51d6b2787a9fd465848/openagents_grpc_proto-0.8.3.tar.gz
+[2024-05-11 10:41:17] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 10:41:17] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 10:41:18] INFO root fetch - processPackages [openagents-grpc-proto]: executing diffoscope
+[2024-05-11 10:41:18] INFO root fetch - processPackages [openagents-grpc-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openagents_grpc_proto-0.8.2.tar.gz tmp/openagents_grpc_proto-0.8.3.tar.gz --markdown 20240511/o/openagents-grpc-proto/0.8.2-0.8.3/README.md --exclude *.pyd
+[2024-05-11 10:41:18] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.8.2.tar.gz]
+[2024-05-11 10:41:18] INFO root fetch - processPackages [openagents-grpc-proto]: Remove: archive file [/home/abi/fetcher/tmp/openagents_grpc_proto-0.8.3.tar.gz]
+[2024-05-11 10:41:18] INFO root fetch - main [MainThread]: End processing [openagents-grpc-proto]: success
+[2024-05-11 10:41:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 10:41:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 10:41:18] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 10:41:18] INFO root fetch - main [MainThread]: Store serial: [23159076]
