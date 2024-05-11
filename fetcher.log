@@ -2225,3 +2225,33 @@
 [2024-05-11 02:06:05] INFO root fetch - processPackages [mct-nightly]: Remove: archive file [/home/abi/fetcher/tmp/mct-nightly-2.0.0.20240510.421.tar.gz]
 [2024-05-11 02:06:05] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2024-05-11 02:06:05] INFO root fetch - main [MainThread]: Store serial: [23154383]
+[2024-05-11 02:08:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154383]
+[2024-05-11 02:08:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 02:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cvxpy
+[2024-05-11 02:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2024-05-11 02:08:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tomtoolkit
+[2024-05-11 02:08:14] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20240510] Old Version: [0.0.8.dev20240509]
+[2024-05-11 02:08:14] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/67/09/5ddf3ef154b935102c14d16852e825be5edbe4ffc69ab877777d36ecb3d4/jaxutils-nightly-0.0.8.dev20240509.tar.gz
+[2024-05-11 02:08:14] INFO root fetch - processPackages [tomtoolkit]: New version: [2.9.2] Old Version: [2.9.1]
+[2024-05-11 02:08:14] INFO root fetch - processPackages [cvxpy]: New version: [1.5.1] Old Version: [1.5.0]
+[2024-05-11 02:08:14] INFO root fetch - processPackages [tomtoolkit]: Downloading https://files.pythonhosted.org/packages/2e/18/d0f42d8924abcb6ee5a727ed833a1e2b25892c0e27ca84d362e7025c6066/tomtoolkit-2.9.1.tar.gz
+[2024-05-11 02:08:14] INFO root fetch - processPackages [cvxpy]: Downloading https://files.pythonhosted.org/packages/e3/ef/3e2eee09c922bbb1c6b40dcc5d8e7892b6416913eab59850036ada16acf1/cvxpy-1.5.0.tar.gz
+[2024-05-11 02:08:14] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/a6/3f/03bd25f683d753cc57312dc62c107873b094fb2e72bb2153e6cd7b9a8ef8/jaxutils-nightly-0.0.8.dev20240510.tar.gz
+[2024-05-11 02:08:14] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2024-05-11 02:08:14] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20240509.tar.gz tmp/jaxutils-nightly-0.0.8.dev20240510.tar.gz --markdown 20240511/j/jaxutils-nightly/0.0.8.dev20240509-0.0.8.dev20240510/README.md --exclude *.pyd
+[2024-05-11 02:08:15] INFO root fetch - processPackages [cvxpy]: Downloading https://files.pythonhosted.org/packages/7b/e3/cbaa9acfca9f390f31490ff695e65a79527bb66827d5e89ccc366b9bc992/cvxpy-1.5.1-cp38-cp38-win_amd64.whl
+[2024-05-11 02:08:15] INFO root fetch - processPackages [tomtoolkit]: Downloading https://files.pythonhosted.org/packages/b4/d6/06d7b659b2225273b399ed75420195b3c428a784f7b84284c6348f096284/tomtoolkit-2.9.2.tar.gz
+[2024-05-11 02:08:15] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240509.tar.gz]
+[2024-05-11 02:08:15] INFO root fetch - processPackages [jaxutils-nightly]: Remove: archive file [/home/abi/fetcher/tmp/jaxutils-nightly-0.0.8.dev20240510.tar.gz]
+[2024-05-11 02:08:15] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2024-05-11 02:08:15] INFO root fetch - processPackages [cvxpy]: executing diffoscope
+[2024-05-11 02:08:15] INFO root fetch - processPackages [cvxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvxpy-1.5.0.tar.gz tmp/cvxpy-1.5.1-cp38-cp38-win_amd64.whl.zip --markdown 20240511/c/cvxpy/1.5.0-1.5.1/README.md --exclude *.pyd
+[2024-05-11 02:08:16] INFO root fetch - processPackages [cvxpy]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy-1.5.0.tar.gz]
+[2024-05-11 02:08:16] INFO root fetch - processPackages [cvxpy]: Remove: archive file [/home/abi/fetcher/tmp/cvxpy-1.5.1-cp38-cp38-win_amd64.whl.zip]
+[2024-05-11 02:08:16] INFO root fetch - main [MainThread]: End processing [cvxpy]: success
+[2024-05-11 02:08:17] INFO root fetch - processPackages [tomtoolkit]: executing diffoscope
+[2024-05-11 02:08:17] INFO root fetch - processPackages [tomtoolkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tomtoolkit-2.9.1.tar.gz tmp/tomtoolkit-2.9.2.tar.gz --markdown 20240511/t/tomtoolkit/2.9.1-2.9.2/README.md --exclude *.pyd
+[2024-05-11 02:08:19] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.1.tar.gz]
+[2024-05-11 02:08:19] INFO root fetch - processPackages [tomtoolkit]: Remove: archive file [/home/abi/fetcher/tmp/tomtoolkit-2.9.2.tar.gz]
+[2024-05-11 02:08:19] INFO root fetch - main [MainThread]: End processing [tomtoolkit]: success
+[2024-05-11 02:08:19] INFO root fetch - main [MainThread]: Store serial: [23154397]
