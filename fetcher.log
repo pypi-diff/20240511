@@ -13070,3 +13070,36 @@
 [2024-05-11 11:00:56] INFO root fetch - processPackages [petulantlyz]: Remove: archive file [/home/abi/fetcher/tmp/petulantlyz-2.1.tar.gz]
 [2024-05-11 11:00:56] INFO root fetch - main [MainThread]: End processing [petulantlyz]: success
 [2024-05-11 11:00:56] INFO root fetch - main [MainThread]: Store serial: [23159235]
+[2024-05-11 11:02:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159235]
+[2024-05-11 11:03:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 11:03:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: orbitkit
+[2024-05-11 11:03:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-biz-flow
+[2024-05-11 11:03:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 11:03:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: corkwoodz
+[2024-05-11 11:03:04] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 11:03:05] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [orbitkit]: New version: [0.6.7] Old Version: [0.6.6]
+[2024-05-11 11:03:05] INFO root fetch - processPackages [django-biz-flow]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-11 11:03:05] WARNING root fetch - processPackages [corkwoodz]: Skipping, unable to determine old version
+[2024-05-11 11:03:05] INFO root fetch - main [MainThread]: End processing [corkwoodz] error
+[2024-05-11 11:03:05] INFO root fetch - processPackages [orbitkit]: Downloading https://files.pythonhosted.org/packages/ec/42/bd8a65b046ad95cb69e2ec06eb3d8efb451642b3c445f9a853ff891928dd/orbitkit-0.6.6.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [django-biz-flow]: Downloading https://files.pythonhosted.org/packages/f9/07/0f8c66ce76cd2fa60e05a76bd592768ae8b4b88c5821286ea48dd1de07cd/django-biz-flow-0.1.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [orbitkit]: Downloading https://files.pythonhosted.org/packages/e2/3a/b6e1d801d2b80ac78fef3281ff00acdae70365034cc9d03fb15846c87072/orbitkit-0.6.7.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [django-biz-flow]: Downloading https://files.pythonhosted.org/packages/1a/7d/694c6d534bc7d0d246f6a06e1b4a67d6312e20af24740c943a1900553431/django-biz-flow-0.1.1.tar.gz
+[2024-05-11 11:03:05] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 11:03:05] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 11:03:05] INFO root fetch - processPackages [orbitkit]: executing diffoscope
+[2024-05-11 11:03:05] INFO root fetch - processPackages [django-biz-flow]: executing diffoscope
+[2024-05-11 11:03:05] INFO root fetch - processPackages [django-biz-flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-biz-flow-0.1.tar.gz tmp/django-biz-flow-0.1.1.tar.gz --markdown 20240511/d/django-biz-flow/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-11 11:03:05] INFO root fetch - processPackages [orbitkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orbitkit-0.6.6.tar.gz tmp/orbitkit-0.6.7.tar.gz --markdown 20240511/o/orbitkit/0.6.6-0.6.7/README.md --exclude *.pyd
+[2024-05-11 11:03:06] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 11:03:06] INFO root fetch - processPackages [django-biz-flow]: Remove: archive file [/home/abi/fetcher/tmp/django-biz-flow-0.1.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - processPackages [django-biz-flow]: Remove: archive file [/home/abi/fetcher/tmp/django-biz-flow-0.1.1.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - main [MainThread]: End processing [django-biz-flow]: success
+[2024-05-11 11:03:06] INFO root fetch - processPackages [orbitkit]: Remove: archive file [/home/abi/fetcher/tmp/orbitkit-0.6.6.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - processPackages [orbitkit]: Remove: archive file [/home/abi/fetcher/tmp/orbitkit-0.6.7.tar.gz]
+[2024-05-11 11:03:06] INFO root fetch - main [MainThread]: End processing [orbitkit]: success
+[2024-05-11 11:03:06] INFO root fetch - main [MainThread]: Store serial: [23159246]
