@@ -17111,3 +17111,15 @@
 [2024-05-11 15:26:33] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.1.tar.gz]
 [2024-05-11 15:26:33] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
 [2024-05-11 15:26:33] INFO root fetch - main [MainThread]: Store serial: [23161382]
+[2024-05-11 15:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161382]
+[2024-05-11 15:28:42] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 15:28:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: refusingz
+[2024-05-11 15:28:42] INFO root fetch - processPackages [refusingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:28:42] INFO root fetch - processPackages [refusingz]: Downloading https://files.pythonhosted.org/packages/2d/89/a209fc99afec5286b6a94aaafbc369cf35470d326298dc38186c3224debd/refusingz-1.1.tar.gz
+[2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: Downloading https://files.pythonhosted.org/packages/26/09/e7ca48fe4e40200db8888e2807588154af66b6177dc158099ea1b2b44a88/refusingz-2.1.tar.gz
+[2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: executing diffoscope
+[2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/refusingz-1.1.tar.gz tmp/refusingz-2.1.tar.gz --markdown 20240511/r/refusingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: Remove: archive file [/home/abi/fetcher/tmp/refusingz-1.1.tar.gz]
+[2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: Remove: archive file [/home/abi/fetcher/tmp/refusingz-2.1.tar.gz]
+[2024-05-11 15:28:43] INFO root fetch - main [MainThread]: End processing [refusingz]: success
+[2024-05-11 15:28:43] INFO root fetch - main [MainThread]: Store serial: [23161397]
