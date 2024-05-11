@@ -8729,3 +8729,51 @@
 [2024-05-11 05:15:22] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.2.tar.gz]
 [2024-05-11 05:15:22] INFO root fetch - main [MainThread]: End processing [hc-log-tools]: success
 [2024-05-11 05:15:22] INFO root fetch - main [MainThread]: Store serial: [23156904]
+[2024-05-11 05:17:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156904]
+[2024-05-11 05:17:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 05:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bittrade-binance-websocket
+[2024-05-11 05:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xcltk
+[2024-05-11 05:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ctrip-app-ui
+[2024-05-11 05:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: keras-cv-nightly
+[2024-05-11 05:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: janim
+[2024-05-11 05:17:31] INFO root fetch - processPackages [ctrip-app-ui]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 05:17:31] INFO root fetch - processPackages [keras-cv-nightly]: New version: [0.9.0.dev2024043000] Old Version: [0.9.0.dev2024042919]
+[2024-05-11 05:17:31] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/5d/99/e8664bc414b9b6e94e8dcc22c43abf61e51e33e21700080dd11ace5eda78/ctrip-app-ui-0.3.8.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [janim]: New version: [1.0.0] Old Version: [0.5.2]
+[2024-05-11 05:17:31] INFO root fetch - processPackages [xcltk]: New version: [0.3.0] Old Version: [0.1.9]
+[2024-05-11 05:17:31] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/bd/17/3faa9e969f58abadca2ff3a4053bed558afb777bae344f994feeeaf1cfd3/keras_cv_nightly-0.9.0.dev2024042919.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [bittrade-binance-websocket]: New version: [0.4.6] Old Version: [0.4.5]
+[2024-05-11 05:17:31] INFO root fetch - processPackages [ctrip-app-ui]: Downloading https://files.pythonhosted.org/packages/39/fa/02e78ae42456c969e0180ec619563c793ea5f9306347abbe61b594fc4569/ctrip-app-ui-0.3.9.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [xcltk]: Downloading https://files.pythonhosted.org/packages/61/d9/aaadb437a8ee291454bd1276baf4459f3b8a172e354bce24db615ae23f49/xcltk-0.1.9.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [janim]: Downloading https://files.pythonhosted.org/packages/71/1f/b762b508c161e5bb5f0bf748b15a6fb2aebf856b1bf17a14ad2b72a5dcdd/janim-0.5.2.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/63/ec/cd8e209d47c220a92d9b9e869f7f3ed8d975411865f44d134d90fac863c5/bittrade_binance_websocket-0.4.5.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [keras-cv-nightly]: Downloading https://files.pythonhosted.org/packages/81/e8/990891e08c4d6686000132786b783a9e72d0cf684f6f44245f2949fd0e57/keras_cv_nightly-0.9.0.dev2024043000.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [ctrip-app-ui]: executing diffoscope
+[2024-05-11 05:17:31] INFO root fetch - processPackages [ctrip-app-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctrip-app-ui-0.3.8.tar.gz tmp/ctrip-app-ui-0.3.9.tar.gz --markdown 20240511/c/ctrip-app-ui/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 05:17:31] INFO root fetch - processPackages [keras-cv-nightly]: executing diffoscope
+[2024-05-11 05:17:31] INFO root fetch - processPackages [keras-cv-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz --markdown 20240511/k/keras-cv-nightly/0.9.0.dev2024042919-0.9.0.dev2024043000/README.md --exclude *.pyd
+[2024-05-11 05:17:31] INFO root fetch - processPackages [xcltk]: Downloading https://files.pythonhosted.org/packages/4e/1d/01a92e4574731b1d72b93b4f7421c9e2c68382ed925be13cd9c8c7f67b9e/xcltk-0.3.0.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [bittrade-binance-websocket]: Downloading https://files.pythonhosted.org/packages/2e/3e/752d707582b6c430b81092c77e2e765379faca6a64644c5b5f2d7c19baef/bittrade_binance_websocket-0.4.6.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [janim]: Downloading https://files.pythonhosted.org/packages/58/dd/42d24e7bdf35149c0cf5570bca91d53dd6d9938b99e79120444218abf8d1/janim-1.0.0.tar.gz
+[2024-05-11 05:17:31] INFO root fetch - processPackages [xcltk]: executing diffoscope
+[2024-05-11 05:17:31] INFO root fetch - processPackages [xcltk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xcltk-0.1.9.tar.gz tmp/xcltk-0.3.0.tar.gz --markdown 20240511/x/xcltk/0.1.9-0.3.0/README.md --exclude *.pyd
+[2024-05-11 05:17:31] INFO root fetch - processPackages [bittrade-binance-websocket]: executing diffoscope
+[2024-05-11 05:17:31] INFO root fetch - processPackages [bittrade-binance-websocket]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bittrade_binance_websocket-0.4.5.tar.gz tmp/bittrade_binance_websocket-0.4.6.tar.gz --markdown 20240511/b/bittrade-binance-websocket/0.4.5-0.4.6/README.md --exclude *.pyd
+[2024-05-11 05:17:31] INFO root fetch - processPackages [janim]: executing diffoscope
+[2024-05-11 05:17:31] INFO root fetch - processPackages [janim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/janim-0.5.2.tar.gz tmp/janim-1.0.0.tar.gz --markdown 20240511/j/janim/0.5.2-1.0.0/README.md --exclude *.pyd
+[2024-05-11 05:17:32] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.8.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - processPackages [ctrip-app-ui]: Remove: archive file [/home/abi/fetcher/tmp/ctrip-app-ui-0.3.9.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - main [MainThread]: End processing [ctrip-app-ui]: success
+[2024-05-11 05:17:32] INFO root fetch - processPackages [xcltk]: Remove: archive file [/home/abi/fetcher/tmp/xcltk-0.1.9.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - processPackages [xcltk]: Remove: archive file [/home/abi/fetcher/tmp/xcltk-0.3.0.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - main [MainThread]: End processing [xcltk]: success
+[2024-05-11 05:17:32] INFO root fetch - processPackages [bittrade-binance-websocket]: Remove: archive file [/home/abi/fetcher/tmp/bittrade_binance_websocket-0.4.5.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - processPackages [bittrade-binance-websocket]: Remove: archive file [/home/abi/fetcher/tmp/bittrade_binance_websocket-0.4.6.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - main [MainThread]: End processing [bittrade-binance-websocket]: success
+[2024-05-11 05:17:32] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-0.5.2.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - processPackages [janim]: Remove: archive file [/home/abi/fetcher/tmp/janim-1.0.0.tar.gz]
+[2024-05-11 05:17:32] INFO root fetch - main [MainThread]: End processing [janim]: success
+[2024-05-11 05:17:33] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024042919.tar.gz]
+[2024-05-11 05:17:33] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
+[2024-05-11 05:17:33] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
+[2024-05-11 05:17:33] INFO root fetch - main [MainThread]: Store serial: [23156917]
