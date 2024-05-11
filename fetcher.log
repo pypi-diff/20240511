@@ -23530,3 +23530,12 @@
 [2024-05-11 22:47:38] INFO root fetch - processPackages [openav]: Remove: archive file [/home/abi/fetcher/tmp/openav-1.0.0a9.tar.gz]
 [2024-05-11 22:47:38] INFO root fetch - main [MainThread]: End processing [openav]: success
 [2024-05-11 22:47:38] INFO root fetch - main [MainThread]: Store serial: [23164455]
+[2024-05-11 22:49:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164455]
+[2024-05-11 22:49:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 22:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tuberculatedlyz
+[2024-05-11 22:49:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nchuchain
+[2024-05-11 22:49:47] WARNING root fetch - processPackages [tuberculatedlyz]: Skipping, unable to determine old version
+[2024-05-11 22:49:47] INFO root fetch - main [MainThread]: End processing [tuberculatedlyz] error
+[2024-05-11 22:49:47] ERROR root fetch - processPackages [nchuchain]: Unable to get metadata: No such project 'nchuchain'
+[2024-05-11 22:49:47] INFO root fetch - main [MainThread]: End processing [nchuchain] error
+[2024-05-11 22:49:47] INFO root fetch - main [MainThread]: Store serial: [23164469]
