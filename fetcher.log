@@ -17242,3 +17242,36 @@
 [2024-05-11 15:37:25] INFO root fetch - processPackages [zensols.util]: Remove: archive file [/home/abi/fetcher/tmp/zensols.util-1.9.0-py3-none-any.whl.zip]
 [2024-05-11 15:37:25] INFO root fetch - main [MainThread]: End processing [zensols.util]: success
 [2024-05-11 15:37:25] INFO root fetch - main [MainThread]: Store serial: [23161444]
+[2024-05-11 15:39:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161444]
+[2024-05-11 15:39:34] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 15:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 15:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensols.nlp
+[2024-05-11 15:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: removez
+[2024-05-11 15:39:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: truncatorotundz
+[2024-05-11 15:39:34] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.3.3] Old Version: [1.0.3.2]
+[2024-05-11 15:39:34] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/df/bd/4aabe0bedfbcc85028da8227e7c14f37ac05bb43bbbda4908110f3d809a9/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz
+[2024-05-11 15:39:34] INFO root fetch - processPackages [removez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:39:34] WARNING root fetch - processPackages [truncatorotundz]: Skipping, unable to determine old version
+[2024-05-11 15:39:34] INFO root fetch - main [MainThread]: End processing [truncatorotundz] error
+[2024-05-11 15:39:34] INFO root fetch - processPackages [zensols.nlp]: New version: [1.9.2] Old Version: [1.9.1]
+[2024-05-11 15:39:35] INFO root fetch - processPackages [removez]: Downloading https://files.pythonhosted.org/packages/e1/4f/5b67d3d8f4767d00af145978a59920ddb0934069dcf43afb2901631de9c6/removez-1.1.tar.gz
+[2024-05-11 15:39:35] INFO root fetch - processPackages [zensols.nlp]: Downloading https://files.pythonhosted.org/packages/62/93/c4cab4ec13599e26d2e5294f7741f8c364b6e6362a05da8c0394a8df46c8/zensols.nlp-1.9.1-py3-none-any.whl
+[2024-05-11 15:39:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/fe/f8/c966289db829f546b034ace4be2a3334a8052052469e99bacad86af25d4e/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz
+[2024-05-11 15:39:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 15:39:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.3.2-1.0.3.3/README.md --exclude *.pyd
+[2024-05-11 15:39:35] INFO root fetch - processPackages [removez]: Downloading https://files.pythonhosted.org/packages/30/c4/518696c4860348dfe328e5cc62f646ef5fe983821f8f003db863e3b17a5d/removez-2.1.tar.gz
+[2024-05-11 15:39:35] INFO root fetch - processPackages [zensols.nlp]: Downloading https://files.pythonhosted.org/packages/b3/74/b4ab72da8068e306ac2b5ece7d6f1efd379efa70442d44a5bd4f7f1cdb8b/zensols.nlp-1.9.2-py3-none-any.whl
+[2024-05-11 15:39:35] INFO root fetch - processPackages [zensols.nlp]: executing diffoscope
+[2024-05-11 15:39:35] INFO root fetch - processPackages [zensols.nlp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.nlp-1.9.1-py3-none-any.whl.zip tmp/zensols.nlp-1.9.2-py3-none-any.whl.zip --markdown 20240511/z/zensols.nlp/1.9.1-1.9.2/README.md --exclude *.pyd
+[2024-05-11 15:39:35] INFO root fetch - processPackages [removez]: executing diffoscope
+[2024-05-11 15:39:35] INFO root fetch - processPackages [removez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/removez-1.1.tar.gz tmp/removez-2.1.tar.gz --markdown 20240511/r/removez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:39:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz]
+[2024-05-11 15:39:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz]
+[2024-05-11 15:39:35] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 15:39:36] INFO root fetch - processPackages [removez]: Remove: archive file [/home/abi/fetcher/tmp/removez-1.1.tar.gz]
+[2024-05-11 15:39:36] INFO root fetch - processPackages [removez]: Remove: archive file [/home/abi/fetcher/tmp/removez-2.1.tar.gz]
+[2024-05-11 15:39:36] INFO root fetch - main [MainThread]: End processing [removez]: success
+[2024-05-11 15:39:36] INFO root fetch - processPackages [zensols.nlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.nlp-1.9.1-py3-none-any.whl.zip]
+[2024-05-11 15:39:36] INFO root fetch - processPackages [zensols.nlp]: Remove: archive file [/home/abi/fetcher/tmp/zensols.nlp-1.9.2-py3-none-any.whl.zip]
+[2024-05-11 15:39:36] INFO root fetch - main [MainThread]: End processing [zensols.nlp]: success
+[2024-05-11 15:39:36] INFO root fetch - main [MainThread]: Store serial: [23161455]
