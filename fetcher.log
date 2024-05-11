@@ -14230,3 +14230,36 @@
 [2024-05-11 12:15:17] INFO root fetch - processPackages [cloudtower-sdk]: Remove: archive file [/home/abi/fetcher/tmp/cloudtower-sdk-2.9.1.tar.gz]
 [2024-05-11 12:15:17] INFO root fetch - main [MainThread]: End processing [cloudtower-sdk]: success
 [2024-05-11 12:15:17] INFO root fetch - main [MainThread]: Store serial: [23159881]
+[2024-05-11 12:17:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159881]
+[2024-05-11 12:17:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: operagents
+[2024-05-11 12:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: epyt
+[2024-05-11 12:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: postlueticz
+[2024-05-11 12:17:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vdg
+[2024-05-11 12:17:26] WARNING root fetch - processPackages [vdg]: Skipping, unable to determine old version
+[2024-05-11 12:17:26] INFO root fetch - main [MainThread]: End processing [vdg] error
+[2024-05-11 12:17:26] INFO root fetch - processPackages [postlueticz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:17:26] INFO root fetch - processPackages [operagents]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 12:17:26] INFO root fetch - processPackages [epyt]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-11 12:17:27] INFO root fetch - processPackages [operagents]: Downloading https://files.pythonhosted.org/packages/05/56/78ea07d413113cabe7ca03337446a069d6894d1d0e3324dc11d914d269bd/operagents-0.0.8.tar.gz
+[2024-05-11 12:17:27] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/2e/d9/206a921b25e81eee483468f78928e74a4f379094135e551f472c9c7e71f2/epyt-1.1.3-py3-none-any.whl
+[2024-05-11 12:17:27] INFO root fetch - processPackages [postlueticz]: Downloading https://files.pythonhosted.org/packages/c4/e7/46949013a5eaa7fa4acabae938ea9e1413eca39b68f55048ae000e69caff/postlueticz-1.1.tar.gz
+[2024-05-11 12:17:27] INFO root fetch - processPackages [postlueticz]: Downloading https://files.pythonhosted.org/packages/a8/dc/10f28032fd95546ca6c774e97b805f912f44be5dd7020f25510f255f17b8/postlueticz-2.1.tar.gz
+[2024-05-11 12:17:27] INFO root fetch - processPackages [operagents]: Downloading https://files.pythonhosted.org/packages/b0/71/c6353e5f4f5875136783ea669333955fd7e91b22f4f9be4b5567ed1c97c5/operagents-0.0.9.tar.gz
+[2024-05-11 12:17:27] INFO root fetch - processPackages [postlueticz]: executing diffoscope
+[2024-05-11 12:17:27] INFO root fetch - processPackages [postlueticz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postlueticz-1.1.tar.gz tmp/postlueticz-2.1.tar.gz --markdown 20240511/p/postlueticz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:17:27] INFO root fetch - processPackages [operagents]: executing diffoscope
+[2024-05-11 12:17:27] INFO root fetch - processPackages [operagents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/operagents-0.0.8.tar.gz tmp/operagents-0.0.9.tar.gz --markdown 20240511/o/operagents/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 12:17:27] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/ff/03/3fa30897c9ae97f5d6f855becf5f18a25529ced721a9de1f67aa98129519/epyt-1.1.4-py3-none-any.whl
+[2024-05-11 12:17:28] INFO root fetch - processPackages [postlueticz]: Remove: archive file [/home/abi/fetcher/tmp/postlueticz-1.1.tar.gz]
+[2024-05-11 12:17:28] INFO root fetch - processPackages [postlueticz]: Remove: archive file [/home/abi/fetcher/tmp/postlueticz-2.1.tar.gz]
+[2024-05-11 12:17:28] INFO root fetch - main [MainThread]: End processing [postlueticz]: success
+[2024-05-11 12:17:28] INFO root fetch - processPackages [operagents]: Remove: archive file [/home/abi/fetcher/tmp/operagents-0.0.8.tar.gz]
+[2024-05-11 12:17:28] INFO root fetch - processPackages [operagents]: Remove: archive file [/home/abi/fetcher/tmp/operagents-0.0.9.tar.gz]
+[2024-05-11 12:17:28] INFO root fetch - main [MainThread]: End processing [operagents]: success
+[2024-05-11 12:17:29] INFO root fetch - processPackages [epyt]: executing diffoscope
+[2024-05-11 12:17:29] INFO root fetch - processPackages [epyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt-1.1.3-py3-none-any.whl.zip tmp/epyt-1.1.4-py3-none-any.whl.zip --markdown 20240511/e/epyt/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-11 12:17:32] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.3-py3-none-any.whl.zip]
+[2024-05-11 12:17:32] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.4-py3-none-any.whl.zip]
+[2024-05-11 12:17:32] INFO root fetch - main [MainThread]: End processing [epyt]: success
+[2024-05-11 12:17:32] INFO root fetch - main [MainThread]: Store serial: [23159894]
