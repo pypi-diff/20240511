@@ -22285,3 +22285,54 @@
 [2024-05-11 21:20:08] INFO root fetch - processPackages [pyinim]: Remove: archive file [/home/abi/fetcher/tmp/pyinim-0.0.15.tar.gz]
 [2024-05-11 21:20:08] INFO root fetch - main [MainThread]: End processing [pyinim]: success
 [2024-05-11 21:20:08] INFO root fetch - main [MainThread]: Store serial: [23163919]
+[2024-05-11 21:22:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163919]
+[2024-05-11 21:22:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dreamlog25-calc-project
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hapiclient
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapeddit
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aipkgs-firebase
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tirez
+[2024-05-11 21:22:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: codex-engine-pyqt
+[2024-05-11 21:22:17] INFO root fetch - processPackages [aipkgs-firebase]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-11 21:22:17] INFO root fetch - processPackages [scrapeddit]: New version: [0.3.2] Old Version: [0.3.1]
+[2024-05-11 21:22:17] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/fd/79/1e52f8f09c91248e57ac8b46125d4d569d4420f9fa408d253a9d76610ae5/aipkgs_firebase-1.0.6.tar.gz
+[2024-05-11 21:22:17] INFO root fetch - processPackages [codex-engine-pyqt]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 21:22:17] INFO root fetch - processPackages [hapiclient]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 21:22:17] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/51/2f/ca83f6d9168294a581e6e71033a5175c1a45f8031512e3653fffc760fdbe/scrapeddit-0.3.1.tar.gz
+[2024-05-11 21:22:17] WARNING root fetch - processPackages [dreamlog25-calc-project]: Skipping, unable to determine old version
+[2024-05-11 21:22:17] INFO root fetch - processPackages [tirez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:22:17] INFO root fetch - main [MainThread]: End processing [dreamlog25-calc-project] error
+[2024-05-11 21:22:17] INFO root fetch - processPackages [hapiclient]: Downloading https://files.pythonhosted.org/packages/44/6d/3bf01d8d4c077c799ccdac5ca3e18aeb1c7fd71907de09cf6b8f8a9c39de/hapiclient-0.2.5.tar.gz
+[2024-05-11 21:22:17] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/76/fc/d85842594fd331887550d96886353c151b3f6cd38c94296c6d942978b341/aipkgs_firebase-1.0.7.tar.gz
+[2024-05-11 21:22:17] INFO root fetch - processPackages [codex-engine-pyqt]: Downloading https://files.pythonhosted.org/packages/ce/c6/c68ce5a1fdd67a309a23b4010861e546f810a1cbd3bf23438e7758ec790b/codex-engine-pyqt-0.1.0.tar.gz
+[2024-05-11 21:22:17] INFO root fetch - processPackages [tirez]: Downloading https://files.pythonhosted.org/packages/f1/a8/a3625812c548d5b4fe5e7bb197b1c7adde0db4901339b0de4ee072622cdf/tirez-1.1.tar.gz
+[2024-05-11 21:22:18] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/96/e1/93f4bb828ae90cdbc053c028934e4aece21107983efae5a294eb03e9adfd/scrapeddit-0.3.2.tar.gz
+[2024-05-11 21:22:18] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 21:22:18] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-1.0.6.tar.gz tmp/aipkgs_firebase-1.0.7.tar.gz --markdown 20240511/a/aipkgs-firebase/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-11 21:22:18] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 21:22:18] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.3.1.tar.gz tmp/scrapeddit-0.3.2.tar.gz --markdown 20240511/s/scrapeddit/0.3.1-0.3.2/README.md --exclude *.pyd
+[2024-05-11 21:22:18] INFO root fetch - processPackages [hapiclient]: Downloading https://files.pythonhosted.org/packages/33/28/aa511c97a5495f7554a8df5d9b37ec8736f804c9f3fd9f298a96b963995e/hapiclient-0.2.6.tar.gz
+[2024-05-11 21:22:18] INFO root fetch - processPackages [tirez]: Downloading https://files.pythonhosted.org/packages/1f/78/38c7ee1492eaa2b23ac3b4dca4b78b602c464b167a6d0cb04659c3b9c5a7/tirez-2.1.tar.gz
+[2024-05-11 21:22:18] INFO root fetch - processPackages [codex-engine-pyqt]: Downloading https://files.pythonhosted.org/packages/2b/1d/e96fbbdeb65141256147195bb2d6619ddb468ea9ad81927e352d75a9ae51/codex_engine_pyqt-0.1.1.tar.gz
+[2024-05-11 21:22:18] INFO root fetch - processPackages [hapiclient]: executing diffoscope
+[2024-05-11 21:22:18] INFO root fetch - processPackages [hapiclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hapiclient-0.2.5.tar.gz tmp/hapiclient-0.2.6.tar.gz --markdown 20240511/h/hapiclient/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 21:22:18] INFO root fetch - processPackages [tirez]: executing diffoscope
+[2024-05-11 21:22:18] INFO root fetch - processPackages [tirez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tirez-1.1.tar.gz tmp/tirez-2.1.tar.gz --markdown 20240511/t/tirez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:22:18] INFO root fetch - processPackages [codex-engine-pyqt]: executing diffoscope
+[2024-05-11 21:22:18] INFO root fetch - processPackages [codex-engine-pyqt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codex-engine-pyqt-0.1.0.tar.gz tmp/codex_engine_pyqt-0.1.1.tar.gz --markdown 20240511/c/codex-engine-pyqt/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 21:22:18] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.3.1.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.3.2.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 21:22:18] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.6.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.7.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 21:22:18] INFO root fetch - processPackages [tirez]: Remove: archive file [/home/abi/fetcher/tmp/tirez-1.1.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - processPackages [tirez]: Remove: archive file [/home/abi/fetcher/tmp/tirez-2.1.tar.gz]
+[2024-05-11 21:22:18] INFO root fetch - main [MainThread]: End processing [tirez]: success
+[2024-05-11 21:22:19] INFO root fetch - processPackages [hapiclient]: Remove: archive file [/home/abi/fetcher/tmp/hapiclient-0.2.5.tar.gz]
+[2024-05-11 21:22:19] INFO root fetch - processPackages [hapiclient]: Remove: archive file [/home/abi/fetcher/tmp/hapiclient-0.2.6.tar.gz]
+[2024-05-11 21:22:19] INFO root fetch - main [MainThread]: End processing [hapiclient]: success
+[2024-05-11 21:22:19] INFO root fetch - processPackages [codex-engine-pyqt]: Remove: archive file [/home/abi/fetcher/tmp/codex-engine-pyqt-0.1.0.tar.gz]
+[2024-05-11 21:22:19] INFO root fetch - processPackages [codex-engine-pyqt]: Remove: archive file [/home/abi/fetcher/tmp/codex_engine_pyqt-0.1.1.tar.gz]
+[2024-05-11 21:22:19] INFO root fetch - main [MainThread]: End processing [codex-engine-pyqt]: success
+[2024-05-11 21:22:19] INFO root fetch - main [MainThread]: Store serial: [23163936]
