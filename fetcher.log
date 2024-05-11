@@ -11263,3 +11263,34 @@
 [2024-05-11 08:39:09] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.4.tar.gz]
 [2024-05-11 08:39:09] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
 [2024-05-11 08:39:09] INFO root fetch - main [MainThread]: Store serial: [23158312]
+[2024-05-11 08:41:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158312]
+[2024-05-11 08:41:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: partial-json-parser
+[2024-05-11 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odiblez
+[2024-05-11 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: psychologianz
+[2024-05-11 08:41:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: partial-json-parser
+[2024-05-11 08:41:18] INFO root fetch - processPackages [partial-json-parser]: New version: [0.2.1] Old Version: [0.2.0.1]
+[2024-05-11 08:41:18] INFO root fetch - processPackages [partial-json-parser]: New version: [0.2.1] Old Version: [0.2.0.1]
+[2024-05-11 08:41:18] INFO root fetch - processPackages [partial-json-parser]: Downloading https://files.pythonhosted.org/packages/53/a8/a4098ed2d730a70bafaaba27d3b91da25f09c45ff9e8f9d3ab4f445ab7cb/partial_json_parser-0.2.0.1.tar.gz
+[2024-05-11 08:41:18] INFO root fetch - processPackages [partial-json-parser]: Downloading https://files.pythonhosted.org/packages/53/a8/a4098ed2d730a70bafaaba27d3b91da25f09c45ff9e8f9d3ab4f445ab7cb/partial_json_parser-0.2.0.1.tar.gz
+[2024-05-11 08:41:18] WARNING root fetch - processPackages [psychologianz]: Skipping, unable to determine old version
+[2024-05-11 08:41:18] INFO root fetch - main [MainThread]: End processing [psychologianz] error
+[2024-05-11 08:41:18] INFO root fetch - processPackages [odiblez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:41:18] INFO root fetch - processPackages [odiblez]: Downloading https://files.pythonhosted.org/packages/2f/50/ba19610e161dc373dac4898c007e40377af1d0d639065921244d59a7fdfc/odiblez-1.1.tar.gz
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: Downloading https://files.pythonhosted.org/packages/4b/d3/099dc250331c019472de42224c5e8b7df678e8c463a77bb8960004b32ca8/partial_json_parser-0.2.1.tar.gz
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: Downloading https://files.pythonhosted.org/packages/4b/d3/099dc250331c019472de42224c5e8b7df678e8c463a77bb8960004b32ca8/partial_json_parser-0.2.1.tar.gz
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: executing diffoscope
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/partial_json_parser-0.2.0.1.tar.gz tmp/partial_json_parser-0.2.1.tar.gz --markdown 20240511/p/partial-json-parser/0.2.0.1-0.2.1/README.md --exclude *.pyd
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: executing diffoscope
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/partial_json_parser-0.2.0.1.tar.gz tmp/partial_json_parser-0.2.1.tar.gz --markdown 20240511/p/partial-json-parser/0.2.0.1-0.2.1/README.md --exclude *.pyd
+[2024-05-11 08:41:19] INFO root fetch - processPackages [odiblez]: Downloading https://files.pythonhosted.org/packages/c3/c9/397cffecc9183bdc819370d7b45583144a24fec079ac66f533fd43fe4b61/odiblez-2.1.tar.gz
+[2024-05-11 08:41:19] INFO root fetch - processPackages [odiblez]: executing diffoscope
+[2024-05-11 08:41:19] INFO root fetch - processPackages [odiblez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odiblez-1.1.tar.gz tmp/odiblez-2.1.tar.gz --markdown 20240511/o/odiblez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: Remove: archive file [/home/abi/fetcher/tmp/partial_json_parser-0.2.0.1.tar.gz]
+[2024-05-11 08:41:19] INFO root fetch - processPackages [partial-json-parser]: Remove: archive file [/home/abi/fetcher/tmp/partial_json_parser-0.2.1.tar.gz]
+[2024-05-11 08:41:19] INFO root fetch - main [MainThread]: End processing [partial-json-parser]: success
+[2024-05-11 08:41:19] INFO root fetch - processPackages [odiblez]: Remove: archive file [/home/abi/fetcher/tmp/odiblez-1.1.tar.gz]
+[2024-05-11 08:41:19] INFO root fetch - processPackages [odiblez]: Remove: archive file [/home/abi/fetcher/tmp/odiblez-2.1.tar.gz]
+[2024-05-11 08:41:19] INFO root fetch - main [MainThread]: End processing [odiblez]: success
+[2024-05-11 08:41:19] INFO root fetch - main [MainThread]: End processing [partial-json-parser]: success
+[2024-05-11 08:41:19] INFO root fetch - main [MainThread]: Store serial: [23158324]
