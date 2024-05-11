@@ -11950,3 +11950,42 @@
 [2024-05-11 09:31:22] INFO root fetch - processPackages [peeweext]: Remove: archive file [/home/abi/fetcher/tmp/peeweext-1.2.7-py3-none-any.whl.zip]
 [2024-05-11 09:31:22] INFO root fetch - main [MainThread]: End processing [peeweext]: success
 [2024-05-11 09:31:22] INFO root fetch - main [MainThread]: Store serial: [23158676]
+[2024-05-11 09:33:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158676]
+[2024-05-11 09:33:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overaccentuationz
+[2024-05-11 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: offlinesec-client
+[2024-05-11 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: evorbf
+[2024-05-11 09:33:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xyz-util
+[2024-05-11 09:33:31] INFO root fetch - processPackages [evorbf]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 09:33:31] INFO root fetch - processPackages [evorbf]: Downloading https://files.pythonhosted.org/packages/be/cc/fb8c7ee742111ef75aa121dcbee36a22c2cbd0d5a623452c694d26bcb23e/evorbf-0.1.0.tar.gz
+[2024-05-11 09:33:31] INFO root fetch - processPackages [overaccentuationz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:33:31] INFO root fetch - processPackages [offlinesec-client]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-11 09:33:31] INFO root fetch - processPackages [xyz-util]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-05-11 09:33:31] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/5c/c4/55cde6be58115658bbeb8f199332c013b629dd444b39893c610eddfe78de/offlinesec_client-1.1.3.tar.gz
+[2024-05-11 09:33:31] INFO root fetch - processPackages [overaccentuationz]: Downloading https://files.pythonhosted.org/packages/7c/11/e18a19e629bb5abfd6a6b35c4a03f6ac20fadfb6be7e1b14f67a3d2a82a4/overaccentuationz-1.1.tar.gz
+[2024-05-11 09:33:31] INFO root fetch - processPackages [xyz-util]: Downloading https://files.pythonhosted.org/packages/c9/40/2900a9b4bbb4ade11e07e8fd9691c17cfa58a053218b967b35f1806345e1/xyz_util-0.9.7-py3-none-any.whl
+[2024-05-11 09:33:31] INFO root fetch - processPackages [evorbf]: Downloading https://files.pythonhosted.org/packages/6b/5b/b35c309ab9ec12a6365c11fc355821c2c1313ec94db25ad29917ab5bfedf/evorbf-0.2.0.tar.gz
+[2024-05-11 09:33:32] INFO root fetch - processPackages [evorbf]: executing diffoscope
+[2024-05-11 09:33:32] INFO root fetch - processPackages [evorbf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evorbf-0.1.0.tar.gz tmp/evorbf-0.2.0.tar.gz --markdown 20240511/e/evorbf/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 09:33:32] INFO root fetch - processPackages [overaccentuationz]: Downloading https://files.pythonhosted.org/packages/05/e4/900a7b8bf570ca39db28be28c13eda49379dd1d2319d6eaede95eb60a358/overaccentuationz-2.1.tar.gz
+[2024-05-11 09:33:32] INFO root fetch - processPackages [offlinesec-client]: Downloading https://files.pythonhosted.org/packages/37/9c/876353531c0ddd919f25dfa6149e4318024ad9c4bcba9613781f0ef04e19/offlinesec_client-1.1.4.tar.gz
+[2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: Downloading https://files.pythonhosted.org/packages/7a/7a/62fa2bc45855aa4b2b799dad723890775d6952b470a7d9ea27e52bdcb86d/xyz_util-0.9.9-py3-none-any.whl
+[2024-05-11 09:33:32] INFO root fetch - processPackages [overaccentuationz]: executing diffoscope
+[2024-05-11 09:33:32] INFO root fetch - processPackages [overaccentuationz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overaccentuationz-1.1.tar.gz tmp/overaccentuationz-2.1.tar.gz --markdown 20240511/o/overaccentuationz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:33:32] INFO root fetch - processPackages [offlinesec-client]: executing diffoscope
+[2024-05-11 09:33:32] INFO root fetch - processPackages [offlinesec-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/offlinesec_client-1.1.3.tar.gz tmp/offlinesec_client-1.1.4.tar.gz --markdown 20240511/o/offlinesec-client/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: executing diffoscope
+[2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xyz_util-0.9.7-py3-none-any.whl.zip tmp/xyz_util-0.9.9-py3-none-any.whl.zip --markdown 20240511/x/xyz-util/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-05-11 09:33:32] INFO root fetch - processPackages [evorbf]: Remove: archive file [/home/abi/fetcher/tmp/evorbf-0.1.0.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - processPackages [evorbf]: Remove: archive file [/home/abi/fetcher/tmp/evorbf-0.2.0.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - main [MainThread]: End processing [evorbf]: success
+[2024-05-11 09:33:32] INFO root fetch - processPackages [overaccentuationz]: Remove: archive file [/home/abi/fetcher/tmp/overaccentuationz-1.1.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - processPackages [overaccentuationz]: Remove: archive file [/home/abi/fetcher/tmp/overaccentuationz-2.1.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - main [MainThread]: End processing [overaccentuationz]: success
+[2024-05-11 09:33:32] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.3.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - processPackages [offlinesec-client]: Remove: archive file [/home/abi/fetcher/tmp/offlinesec_client-1.1.4.tar.gz]
+[2024-05-11 09:33:32] INFO root fetch - main [MainThread]: End processing [offlinesec-client]: success
+[2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: Remove: archive file [/home/abi/fetcher/tmp/xyz_util-0.9.7-py3-none-any.whl.zip]
+[2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: Remove: archive file [/home/abi/fetcher/tmp/xyz_util-0.9.9-py3-none-any.whl.zip]
+[2024-05-11 09:33:32] INFO root fetch - main [MainThread]: End processing [xyz-util]: success
+[2024-05-11 09:33:32] INFO root fetch - main [MainThread]: Store serial: [23158686]
