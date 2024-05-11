@@ -7359,3 +7359,51 @@
 [2024-05-11 03:33:12] INFO root fetch - processPackages [pikaur]: Remove: archive file [/home/abi/fetcher/tmp/pikaur-1.9.tar.gz]
 [2024-05-11 03:33:12] INFO root fetch - main [MainThread]: End processing [pikaur]: success
 [2024-05-11 03:33:12] INFO root fetch - main [MainThread]: Store serial: [23156269]
+[2024-05-11 03:35:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156269]
+[2024-05-11 03:35:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qbraid-core
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kolkkaz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant-stubs
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: notionaut
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ConservedWaterSearch
+[2024-05-11 03:35:21] INFO root fetch - processPackages [qbraid-core]: New version: [0.1.5a0] Old Version: [0.1.5]
+[2024-05-11 03:35:21] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/f8/68/f95abd1be355a758abff849a2e1e62ea6587b68e452166345439c7c11d45/qbraid_core-0.1.5.tar.gz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [notionaut]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 03:35:21] INFO root fetch - processPackages [kolkkaz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 03:35:21] INFO root fetch - processPackages [homeassistant-stubs]: New version: [2024.5.3] Old Version: [2024.5.2]
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ConservedWaterSearch]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 03:35:21] INFO root fetch - processPackages [notionaut]: Downloading https://files.pythonhosted.org/packages/d9/85/56b3d219bf4e21b09b82c8afce3613c131db18ef493fe757efa19142d43d/notionaut-0.2.1.tar.gz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [kolkkaz]: Downloading https://files.pythonhosted.org/packages/87/d6/0118ff7452680044a601fe56148e11862063839b543af426d86813123ea3/kolkkaz-1.1.tar.gz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [qbraid-core]: Downloading https://files.pythonhosted.org/packages/93/22/8833e7f1d6c685bf4a7d212060d60a399fe8e514772915370fd9a181e643/qbraid_core-0.1.5a0.tar.gz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/c3/68/7c08b2e0e0891015576e2e60957d4897ff06294ef75b0f73fabd45279584/homeassistant_stubs-2024.5.2.tar.gz
+[2024-05-11 03:35:21] INFO root fetch - processPackages [ConservedWaterSearch]: Downloading https://files.pythonhosted.org/packages/fd/94/7a24fdf56e80396fa10937526592e55d6d94963340afbbddf5ad1bd09f3e/ConservedWaterSearch-0.4.0.tar.gz
+[2024-05-11 03:35:22] INFO root fetch - processPackages [qbraid-core]: executing diffoscope
+[2024-05-11 03:35:22] INFO root fetch - processPackages [qbraid-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qbraid_core-0.1.5.tar.gz tmp/qbraid_core-0.1.5a0.tar.gz --markdown 20240511/q/qbraid-core/0.1.5-0.1.5a0/README.md --exclude *.pyd
+[2024-05-11 03:35:22] INFO root fetch - processPackages [kolkkaz]: Downloading https://files.pythonhosted.org/packages/e5/7b/85d1010fb9fdabfde3a189ac834ca1fc4d260f23d426327a84d4bb666c97/kolkkaz-2.1.tar.gz
+[2024-05-11 03:35:22] INFO root fetch - processPackages [homeassistant-stubs]: Downloading https://files.pythonhosted.org/packages/7c/7b/8b9071acacd21f4302bf53118025e3641eb32ddea3e8ff02a51e3794306b/homeassistant_stubs-2024.5.3.tar.gz
+[2024-05-11 03:35:22] INFO root fetch - processPackages [notionaut]: Downloading https://files.pythonhosted.org/packages/de/60/becdb4a8ddf0b1a4e7d6472d9b793d456e93ff3cddc8f4f9d7c6976e9408/notionaut-0.2.2.tar.gz
+[2024-05-11 03:35:22] INFO root fetch - processPackages [ConservedWaterSearch]: Downloading https://files.pythonhosted.org/packages/1e/42/1376bfc7a63514a848920261d3ebcab998da9d8068460643019e40dab48c/ConservedWaterSearch-0.4.1-py3-none-any.whl
+[2024-05-11 03:35:22] INFO root fetch - processPackages [kolkkaz]: executing diffoscope
+[2024-05-11 03:35:22] INFO root fetch - processPackages [kolkkaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kolkkaz-1.1.tar.gz tmp/kolkkaz-2.1.tar.gz --markdown 20240511/k/kolkkaz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 03:35:22] INFO root fetch - processPackages [notionaut]: executing diffoscope
+[2024-05-11 03:35:22] INFO root fetch - processPackages [notionaut]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notionaut-0.2.1.tar.gz tmp/notionaut-0.2.2.tar.gz --markdown 20240511/n/notionaut/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 03:35:22] INFO root fetch - processPackages [homeassistant-stubs]: executing diffoscope
+[2024-05-11 03:35:22] INFO root fetch - processPackages [homeassistant-stubs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/homeassistant_stubs-2024.5.2.tar.gz tmp/homeassistant_stubs-2024.5.3.tar.gz --markdown 20240511/h/homeassistant-stubs/2024.5.2-2024.5.3/README.md --exclude *.pyd
+[2024-05-11 03:35:22] INFO root fetch - processPackages [kolkkaz]: Remove: archive file [/home/abi/fetcher/tmp/kolkkaz-1.1.tar.gz]
+[2024-05-11 03:35:22] INFO root fetch - processPackages [kolkkaz]: Remove: archive file [/home/abi/fetcher/tmp/kolkkaz-2.1.tar.gz]
+[2024-05-11 03:35:22] INFO root fetch - main [MainThread]: End processing [kolkkaz]: success
+[2024-05-11 03:35:22] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_core-0.1.5.tar.gz]
+[2024-05-11 03:35:22] INFO root fetch - processPackages [qbraid-core]: Remove: archive file [/home/abi/fetcher/tmp/qbraid_core-0.1.5a0.tar.gz]
+[2024-05-11 03:35:22] INFO root fetch - main [MainThread]: End processing [qbraid-core]: success
+[2024-05-11 03:35:22] INFO root fetch - processPackages [ConservedWaterSearch]: executing diffoscope
+[2024-05-11 03:35:22] INFO root fetch - processPackages [ConservedWaterSearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ConservedWaterSearch-0.4.0.tar.gz tmp/ConservedWaterSearch-0.4.1-py3-none-any.whl.zip --markdown 20240511/C/ConservedWaterSearch/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 03:35:23] INFO root fetch - processPackages [notionaut]: Remove: archive file [/home/abi/fetcher/tmp/notionaut-0.2.1.tar.gz]
+[2024-05-11 03:35:23] INFO root fetch - processPackages [notionaut]: Remove: archive file [/home/abi/fetcher/tmp/notionaut-0.2.2.tar.gz]
+[2024-05-11 03:35:23] INFO root fetch - main [MainThread]: End processing [notionaut]: success
+[2024-05-11 03:35:23] INFO root fetch - processPackages [ConservedWaterSearch]: Remove: archive file [/home/abi/fetcher/tmp/ConservedWaterSearch-0.4.0.tar.gz]
+[2024-05-11 03:35:23] INFO root fetch - processPackages [ConservedWaterSearch]: Remove: archive file [/home/abi/fetcher/tmp/ConservedWaterSearch-0.4.1-py3-none-any.whl.zip]
+[2024-05-11 03:35:23] INFO root fetch - main [MainThread]: End processing [ConservedWaterSearch]: success
+[2024-05-11 03:35:35] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.2.tar.gz]
+[2024-05-11 03:35:35] INFO root fetch - processPackages [homeassistant-stubs]: Remove: archive file [/home/abi/fetcher/tmp/homeassistant_stubs-2024.5.3.tar.gz]
+[2024-05-11 03:35:35] INFO root fetch - main [MainThread]: End processing [homeassistant-stubs]: success
+[2024-05-11 03:35:35] INFO root fetch - main [MainThread]: Store serial: [23156336]
