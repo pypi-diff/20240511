@@ -18836,3 +18836,30 @@
 [2024-05-11 17:26:33] INFO root fetch - processPackages [strawberry-graphql]: Remove: archive file [/home/abi/fetcher/tmp/strawberry-graphql-0.99.3.tar.gz]
 [2024-05-11 17:26:33] INFO root fetch - main [MainThread]: End processing [strawberry-graphql]: success
 [2024-05-11 17:26:33] INFO root fetch - main [MainThread]: Store serial: [23162262]
+[2024-05-11 17:28:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162262]
+[2024-05-11 17:28:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 17:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pgwarehouse
+[2024-05-11 17:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: batherz
+[2024-05-11 17:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bltzr
+[2024-05-11 17:28:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: antibacterial-model
+[2024-05-11 17:28:41] WARNING root fetch - processPackages [bltzr]: Skipping, unable to determine old version
+[2024-05-11 17:28:41] INFO root fetch - main [MainThread]: End processing [bltzr] error
+[2024-05-11 17:28:41] WARNING root fetch - processPackages [batherz]: Skipping, unable to determine old version
+[2024-05-11 17:28:41] INFO root fetch - main [MainThread]: End processing [batherz] error
+[2024-05-11 17:28:42] INFO root fetch - processPackages [pgwarehouse]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 17:28:42] INFO root fetch - processPackages [antibacterial-model]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-11 17:28:42] INFO root fetch - processPackages [antibacterial-model]: Downloading https://files.pythonhosted.org/packages/e4/9e/7941187dc33d972aeee786e2bd7d61466202de8accf86f9fad695cd66334/antibacterial-model-1.0.6.tar.gz
+[2024-05-11 17:28:42] INFO root fetch - processPackages [pgwarehouse]: Downloading https://files.pythonhosted.org/packages/cb/ed/aca74fb61e56ae8247fa75620643922d9fd662062f8e6f3df6d2419bf97c/pgwarehouse-0.1.3.tar.gz
+[2024-05-11 17:28:42] INFO root fetch - processPackages [pgwarehouse]: Downloading https://files.pythonhosted.org/packages/73/c4/5d13d4eb00036fe288e82f547ce2e1ebdaf3f9f74a4136bc46731515f1ae/pgwarehouse-0.1.4.tar.gz
+[2024-05-11 17:28:42] INFO root fetch - processPackages [pgwarehouse]: executing diffoscope
+[2024-05-11 17:28:42] INFO root fetch - processPackages [pgwarehouse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pgwarehouse-0.1.3.tar.gz tmp/pgwarehouse-0.1.4.tar.gz --markdown 20240511/p/pgwarehouse/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 17:28:42] INFO root fetch - processPackages [antibacterial-model]: Downloading https://files.pythonhosted.org/packages/82/64/8fe10bf300ac20825a471dfa6746c1965d7c5c006e647acfdec93fcccea9/antibacterial-model-1.0.7.tar.gz
+[2024-05-11 17:28:42] INFO root fetch - processPackages [antibacterial-model]: executing diffoscope
+[2024-05-11 17:28:42] INFO root fetch - processPackages [antibacterial-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antibacterial-model-1.0.6.tar.gz tmp/antibacterial-model-1.0.7.tar.gz --markdown 20240511/a/antibacterial-model/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-11 17:28:43] INFO root fetch - processPackages [pgwarehouse]: Remove: archive file [/home/abi/fetcher/tmp/pgwarehouse-0.1.3.tar.gz]
+[2024-05-11 17:28:43] INFO root fetch - processPackages [pgwarehouse]: Remove: archive file [/home/abi/fetcher/tmp/pgwarehouse-0.1.4.tar.gz]
+[2024-05-11 17:28:43] INFO root fetch - main [MainThread]: End processing [pgwarehouse]: success
+[2024-05-11 17:28:44] INFO root fetch - processPackages [antibacterial-model]: Remove: archive file [/home/abi/fetcher/tmp/antibacterial-model-1.0.6.tar.gz]
+[2024-05-11 17:28:44] INFO root fetch - processPackages [antibacterial-model]: Remove: archive file [/home/abi/fetcher/tmp/antibacterial-model-1.0.7.tar.gz]
+[2024-05-11 17:28:44] INFO root fetch - main [MainThread]: End processing [antibacterial-model]: success
+[2024-05-11 17:28:44] INFO root fetch - main [MainThread]: Store serial: [23162276]
