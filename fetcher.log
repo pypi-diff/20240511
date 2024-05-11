@@ -20926,3 +20926,44 @@
 [2024-05-11 19:48:48] INFO root fetch - processPackages [nbforager]: Remove: archive file [/home/abi/fetcher/tmp/nbforager-0.2.2.tar.gz]
 [2024-05-11 19:48:48] INFO root fetch - main [MainThread]: End processing [nbforager]: success
 [2024-05-11 19:48:48] INFO root fetch - main [MainThread]: Store serial: [23163174]
+[2024-05-11 19:50:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163174]
+[2024-05-11 19:50:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: music-assistant
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sonatoki
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrotel
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: overarchedz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: moschitta-auth
+[2024-05-11 19:50:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: schemathesis
+[2024-05-11 19:50:57] INFO root fetch - processPackages [music-assistant]: New version: [2.0.1] Old Version: [2.0.0rc1]
+[2024-05-11 19:50:57] INFO root fetch - processPackages [schemathesis]: New version: [3.9.7] Old Version: [3.9.6]
+[2024-05-11 19:50:57] INFO root fetch - processPackages [pyrotel]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 19:50:57] INFO root fetch - processPackages [schemathesis]: Downloading https://files.pythonhosted.org/packages/8b/ae/800bafd763c2c4b5c0f366a9bf84f7f1eb955e0b2fc7de12e30acfad31cd/schemathesis-3.9.6.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [music-assistant]: Downloading https://files.pythonhosted.org/packages/77/66/c2a19335cc6966085ea893c6f452937e8873db6b794797710c8bc80d3df8/music_assistant-2.0.0rc1.tar.gz
+[2024-05-11 19:50:57] WARNING root fetch - processPackages [moschitta-auth]: Skipping, unable to determine old version
+[2024-05-11 19:50:57] INFO root fetch - main [MainThread]: End processing [moschitta-auth] error
+[2024-05-11 19:50:57] INFO root fetch - processPackages [sonatoki]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 19:50:57] WARNING root fetch - processPackages [overarchedz]: Skipping, unable to determine old version
+[2024-05-11 19:50:57] INFO root fetch - main [MainThread]: End processing [overarchedz] error
+[2024-05-11 19:50:57] WARNING root fetch - processPackages [music-assistant]: Skipping package: exceeds size limit 13982792>=10485760
+[2024-05-11 19:50:57] INFO root fetch - main [MainThread]: End processing [music-assistant] error
+[2024-05-11 19:50:57] INFO root fetch - processPackages [sonatoki]: Downloading https://files.pythonhosted.org/packages/9d/b4/e736aef8b0ec41321fcd062edcb8786a645c147e14e6774b7c9a6a806c7c/sonatoki-0.1.4.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [pyrotel]: Downloading https://files.pythonhosted.org/packages/1f/62/35a614760db706a27008977c3c567190edb93712a124317df1313d0be6b7/pyrotel-0.9.2.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [schemathesis]: Downloading https://files.pythonhosted.org/packages/71/a0/2eac6b3aecc24c5d8a119a30b2adff05f2453ae9dacec1aa5f8cdbbf0668/schemathesis-3.9.7.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [schemathesis]: executing diffoscope
+[2024-05-11 19:50:57] INFO root fetch - processPackages [schemathesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/schemathesis-3.9.6.tar.gz tmp/schemathesis-3.9.7.tar.gz --markdown 20240511/s/schemathesis/3.9.6-3.9.7/README.md --exclude *.pyd
+[2024-05-11 19:50:57] INFO root fetch - processPackages [sonatoki]: Downloading https://files.pythonhosted.org/packages/5f/0c/380448d15eba9b5ffc232272e851ec71022897b17179b0177f071c51be71/sonatoki-0.1.5.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [pyrotel]: Downloading https://files.pythonhosted.org/packages/98/bc/fef61d52653bb5f199ff4daa194e73da30a6301f7320ac0788520966845f/pyrotel-0.9.3.tar.gz
+[2024-05-11 19:50:57] INFO root fetch - processPackages [pyrotel]: executing diffoscope
+[2024-05-11 19:50:57] INFO root fetch - processPackages [pyrotel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrotel-0.9.2.tar.gz tmp/pyrotel-0.9.3.tar.gz --markdown 20240511/p/pyrotel/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 19:50:57] INFO root fetch - processPackages [sonatoki]: executing diffoscope
+[2024-05-11 19:50:57] INFO root fetch - processPackages [sonatoki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sonatoki-0.1.4.tar.gz tmp/sonatoki-0.1.5.tar.gz --markdown 20240511/s/sonatoki/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 19:50:58] INFO root fetch - processPackages [pyrotel]: Remove: archive file [/home/abi/fetcher/tmp/pyrotel-0.9.2.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - processPackages [pyrotel]: Remove: archive file [/home/abi/fetcher/tmp/pyrotel-0.9.3.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - main [MainThread]: End processing [pyrotel]: success
+[2024-05-11 19:50:58] INFO root fetch - processPackages [schemathesis]: Remove: archive file [/home/abi/fetcher/tmp/schemathesis-3.9.6.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - processPackages [schemathesis]: Remove: archive file [/home/abi/fetcher/tmp/schemathesis-3.9.7.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - main [MainThread]: End processing [schemathesis]: success
+[2024-05-11 19:50:58] INFO root fetch - processPackages [sonatoki]: Remove: archive file [/home/abi/fetcher/tmp/sonatoki-0.1.4.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - processPackages [sonatoki]: Remove: archive file [/home/abi/fetcher/tmp/sonatoki-0.1.5.tar.gz]
+[2024-05-11 19:50:58] INFO root fetch - main [MainThread]: End processing [sonatoki]: success
+[2024-05-11 19:50:58] INFO root fetch - main [MainThread]: Store serial: [23163195]
