@@ -7613,3 +7613,36 @@
 [2024-05-11 03:52:56] INFO root fetch - processPackages [BrazilFiscalReport]: Remove: archive file [/home/abi/fetcher/tmp/brazilfiscalreport-0.3.4.tar.gz]
 [2024-05-11 03:52:56] INFO root fetch - main [MainThread]: End processing [BrazilFiscalReport]: success
 [2024-05-11 03:52:56] INFO root fetch - main [MainThread]: Store serial: [23156453]
+[2024-05-11 03:54:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156453]
+[2024-05-11 03:55:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: occasivez
+[2024-05-11 03:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lappz
+[2024-05-11 03:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioregistry
+[2024-05-11 03:55:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlglot
+[2024-05-11 03:55:04] INFO root fetch - processPackages [sqlglot]: New version: [9.0.6] Old Version: [9.0.5]
+[2024-05-11 03:55:04] INFO root fetch - processPackages [bioregistry]: New version: [0.9.97] Old Version: [0.9.96]
+[2024-05-11 03:55:04] WARNING root fetch - processPackages [occasivez]: Skipping, unable to determine old version
+[2024-05-11 03:55:04] INFO root fetch - main [MainThread]: End processing [occasivez] error
+[2024-05-11 03:55:04] INFO root fetch - processPackages [lappz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 03:55:04] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/20/6b/5034324cd2ac42831b5103037f6a14e518172128c4196b8d01b93dcc76c8/sqlglot-9.0.5.tar.gz
+[2024-05-11 03:55:04] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/48/3a/7ab0975f6c89bea709b279c9e39ef3be5439cfec168dbf3a614dac397663/bioregistry-0.9.96.tar.gz
+[2024-05-11 03:55:04] INFO root fetch - processPackages [sqlglot]: Downloading https://files.pythonhosted.org/packages/36/2a/e7389a112e1a7cfd1fcc7c7209a0f8f5ffe905ce8aad03f447367dc9b209/sqlglot-9.0.6.tar.gz
+[2024-05-11 03:55:04] INFO root fetch - processPackages [lappz]: Downloading https://files.pythonhosted.org/packages/f8/87/400908019a0ef4a75895f086f54b6ba268e3043f45242da6a122464d105f/lappz-1.1.tar.gz
+[2024-05-11 03:55:05] INFO root fetch - processPackages [sqlglot]: executing diffoscope
+[2024-05-11 03:55:05] INFO root fetch - processPackages [sqlglot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlglot-9.0.5.tar.gz tmp/sqlglot-9.0.6.tar.gz --markdown 20240511/s/sqlglot/9.0.5-9.0.6/README.md --exclude *.pyd
+[2024-05-11 03:55:05] INFO root fetch - processPackages [lappz]: Downloading https://files.pythonhosted.org/packages/69/c9/d6160eb9e278bd656932d9900d296ccf29599b572bcd102d00dc79fe1ac7/lappz-2.1.tar.gz
+[2024-05-11 03:55:05] INFO root fetch - processPackages [lappz]: executing diffoscope
+[2024-05-11 03:55:05] INFO root fetch - processPackages [lappz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lappz-1.1.tar.gz tmp/lappz-2.1.tar.gz --markdown 20240511/l/lappz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 03:55:05] INFO root fetch - processPackages [bioregistry]: Downloading https://files.pythonhosted.org/packages/57/7b/30897578f436658ac1f334eb6e9f96ad0bacb0a54846670620df53a5a374/bioregistry-0.9.97.tar.gz
+[2024-05-11 03:55:05] INFO root fetch - processPackages [lappz]: Remove: archive file [/home/abi/fetcher/tmp/lappz-1.1.tar.gz]
+[2024-05-11 03:55:05] INFO root fetch - processPackages [lappz]: Remove: archive file [/home/abi/fetcher/tmp/lappz-2.1.tar.gz]
+[2024-05-11 03:55:05] INFO root fetch - main [MainThread]: End processing [lappz]: success
+[2024-05-11 03:55:05] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.5.tar.gz]
+[2024-05-11 03:55:05] INFO root fetch - processPackages [sqlglot]: Remove: archive file [/home/abi/fetcher/tmp/sqlglot-9.0.6.tar.gz]
+[2024-05-11 03:55:05] INFO root fetch - main [MainThread]: End processing [sqlglot]: success
+[2024-05-11 03:55:05] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2024-05-11 03:55:05] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.96.tar.gz tmp/bioregistry-0.9.97.tar.gz --markdown 20240511/b/bioregistry/0.9.96-0.9.97/README.md --exclude *.pyd
+[2024-05-11 03:56:12] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.96.tar.gz]
+[2024-05-11 03:56:12] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
+[2024-05-11 03:56:12] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2024-05-11 03:56:12] INFO root fetch - main [MainThread]: Store serial: [23156465]
