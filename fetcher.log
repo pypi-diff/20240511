@@ -23006,3 +23006,56 @@
 [2024-05-11 22:10:34] INFO root fetch - processPackages [ShellUtilities]: Remove: archive file [/home/abi/fetcher/tmp/ShellUtilities-2.1.9.tar.gz]
 [2024-05-11 22:10:34] INFO root fetch - main [MainThread]: End processing [ShellUtilities]: success
 [2024-05-11 22:10:34] INFO root fetch - main [MainThread]: Store serial: [23164203]
+[2024-05-11 22:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164203]
+[2024-05-11 22:12:43] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 22:14:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164205]
+[2024-05-11 22:14:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hatch-gradle-version
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ultz
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: repressorz
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: anabih-python-test
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fed-net-liquidity
+[2024-05-11 22:14:48] INFO root fetch - processPackages [hatch-gradle-version]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-11 22:14:48] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-11 22:14:48] INFO root fetch - processPackages [ultz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:14:48] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/94/11/bfe5fdaf1d8a2f6f65da40bc82a57f268b5b3ae55a1708b49fb2e065d347/hatch_gradle_version-0.9.6.tar.gz
+[2024-05-11 22:14:48] INFO root fetch - processPackages [fed-net-liquidity]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 22:14:48] INFO root fetch - processPackages [anabih-python-test]: New version: [7.0.0] Old Version: [6.0.0]
+[2024-05-11 22:14:48] WARNING root fetch - processPackages [repressorz]: Skipping, unable to determine old version
+[2024-05-11 22:14:48] INFO root fetch - main [MainThread]: End processing [repressorz] error
+[2024-05-11 22:14:48] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [ultz]: Downloading https://files.pythonhosted.org/packages/2d/bc/5cc800b00f31951dbf8eda1d0f080e690190133ebba8dd2a4a69d970e7e1/ultz-1.1.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/6e/96/1eaa0d8b36ff00f9963c4a4cae89e86d60f0c3e084d9022ec6b420fac37e/hatch_gradle_version-0.9.7.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/fe/59/3ee30a3988ad24152dbd1b0a8e7a65938f78196c60635fe4061602de3152/anabih_python_test-6.0.0.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [fed-net-liquidity]: Downloading https://files.pythonhosted.org/packages/00/c6/d4d713a640fad15c021a2b9c9fbe77922b98ab3527be929745b9e43104b5/fed_net_liquidity-0.0.2.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [hatch-gradle-version]: executing diffoscope
+[2024-05-11 22:14:49] INFO root fetch - processPackages [hatch-gradle-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_gradle_version-0.9.6.tar.gz tmp/hatch_gradle_version-0.9.7.tar.gz --markdown 20240511/h/hatch-gradle-version/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-11 22:14:49] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-11 22:14:49] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240511/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-11 22:14:49] INFO root fetch - processPackages [ultz]: Downloading https://files.pythonhosted.org/packages/de/06/8880c934e04d03364f4c1c09a06a1451c6d888945ea908d1adb8c73da439/ultz-2.1.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [anabih-python-test]: Downloading https://files.pythonhosted.org/packages/56/32/b41dd88cf4696ae73b7088c3bb9b26eb476dc0382545b7067144ef3db813/anabih_python_test-7.0.0.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [fed-net-liquidity]: Downloading https://files.pythonhosted.org/packages/96/7d/e747d975a81ac331a0f2ff5ec9ff34c0087947c409b0472829a951b7976c/fed_net_liquidity-0.0.3.tar.gz
+[2024-05-11 22:14:49] INFO root fetch - processPackages [ultz]: executing diffoscope
+[2024-05-11 22:14:49] INFO root fetch - processPackages [ultz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultz-1.1.tar.gz tmp/ultz-2.1.tar.gz --markdown 20240511/u/ultz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:14:49] INFO root fetch - processPackages [anabih-python-test]: executing diffoscope
+[2024-05-11 22:14:49] INFO root fetch - processPackages [anabih-python-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anabih_python_test-6.0.0.tar.gz tmp/anabih_python_test-7.0.0.tar.gz --markdown 20240511/a/anabih-python-test/6.0.0-7.0.0/README.md --exclude *.pyd
+[2024-05-11 22:14:49] INFO root fetch - processPackages [fed-net-liquidity]: executing diffoscope
+[2024-05-11 22:14:49] INFO root fetch - processPackages [fed-net-liquidity]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fed_net_liquidity-0.0.2.tar.gz tmp/fed_net_liquidity-0.0.3.tar.gz --markdown 20240511/f/fed-net-liquidity/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 22:14:49] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.6.tar.gz]
+[2024-05-11 22:14:49] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.7.tar.gz]
+[2024-05-11 22:14:49] INFO root fetch - main [MainThread]: End processing [hatch-gradle-version]: success
+[2024-05-11 22:14:49] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-11 22:14:49] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-11 22:14:50] INFO root fetch - processPackages [ultz]: Remove: archive file [/home/abi/fetcher/tmp/ultz-1.1.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - processPackages [ultz]: Remove: archive file [/home/abi/fetcher/tmp/ultz-2.1.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - main [MainThread]: End processing [ultz]: success
+[2024-05-11 22:14:50] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-6.0.0.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - processPackages [anabih-python-test]: Remove: archive file [/home/abi/fetcher/tmp/anabih_python_test-7.0.0.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - main [MainThread]: End processing [anabih-python-test]: success
+[2024-05-11 22:14:50] INFO root fetch - processPackages [fed-net-liquidity]: Remove: archive file [/home/abi/fetcher/tmp/fed_net_liquidity-0.0.2.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - processPackages [fed-net-liquidity]: Remove: archive file [/home/abi/fetcher/tmp/fed_net_liquidity-0.0.3.tar.gz]
+[2024-05-11 22:14:50] INFO root fetch - main [MainThread]: End processing [fed-net-liquidity]: success
+[2024-05-11 22:14:50] INFO root fetch - main [MainThread]: Store serial: [23164225]
