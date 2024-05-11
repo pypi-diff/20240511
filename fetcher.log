@@ -13554,3 +13554,36 @@
 [2024-05-11 11:33:35] INFO root fetch - processPackages [gnews]: Remove: archive file [/home/abi/fetcher/tmp/gnews-0.3.7.tar.gz]
 [2024-05-11 11:33:35] INFO root fetch - main [MainThread]: End processing [gnews]: success
 [2024-05-11 11:33:35] INFO root fetch - main [MainThread]: Store serial: [23159633]
+[2024-05-11 11:35:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159633]
+[2024-05-11 11:35:45] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pizzoo
+[2024-05-11 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nse
+[2024-05-11 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: splicon
+[2024-05-11 11:35:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-project-task-tag
+[2024-05-11 11:35:45] INFO root fetch - processPackages [pizzoo]: New version: [0.9.4] Old Version: [0.9.3]
+[2024-05-11 11:35:45] INFO root fetch - processPackages [pizzoo]: Downloading https://files.pythonhosted.org/packages/79/00/f697529af4cb9ce3c4eec53eefccfbab05e46b4f26a5aead4d92bab483fc/pizzoo-0.9.3.tar.gz
+[2024-05-11 11:35:45] WARNING root fetch - processPackages [odoo-addon-project-task-tag]: Skipping, unable to determine old version
+[2024-05-11 11:35:45] INFO root fetch - main [MainThread]: End processing [odoo-addon-project-task-tag] error
+[2024-05-11 11:35:45] INFO root fetch - processPackages [nse]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 11:35:45] INFO root fetch - processPackages [splicon]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 11:35:45] INFO root fetch - processPackages [splicon]: Downloading https://files.pythonhosted.org/packages/01/2f/08c66797e6a23b6c4b15d1394dd75742a7e70ca4b03d59690bfafab9f8f3/splicon-1.0.1.tar.gz
+[2024-05-11 11:35:45] INFO root fetch - processPackages [nse]: Downloading https://files.pythonhosted.org/packages/8f/64/ed83583f404e9d6f19c6f85d1d9f625f6820f2eeb4b2451e5aed0cf10492/nse-0.2.8.tar.gz
+[2024-05-11 11:35:45] INFO root fetch - processPackages [pizzoo]: Downloading https://files.pythonhosted.org/packages/c7/b8/975a501a63a310fcfc6ffc1b762bdfc618f870888c42de1ec26cff5b88ca/pizzoo-0.9.4.tar.gz
+[2024-05-11 11:35:45] INFO root fetch - processPackages [pizzoo]: executing diffoscope
+[2024-05-11 11:35:45] INFO root fetch - processPackages [pizzoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pizzoo-0.9.3.tar.gz tmp/pizzoo-0.9.4.tar.gz --markdown 20240511/p/pizzoo/0.9.3-0.9.4/README.md --exclude *.pyd
+[2024-05-11 11:35:45] INFO root fetch - processPackages [splicon]: Downloading https://files.pythonhosted.org/packages/87/fe/6aab6fd4b9e2abc7d83e12bee1f4495d1fb2338573e134f05b846b9a7894/splicon-1.0.2.tar.gz
+[2024-05-11 11:35:45] INFO root fetch - processPackages [nse]: Downloading https://files.pythonhosted.org/packages/4c/95/d8c3344ef747bc517c92e0c912e330fad79cc5ce89b8135c43a52a76b66e/nse-0.2.9.tar.gz
+[2024-05-11 11:35:45] INFO root fetch - processPackages [splicon]: executing diffoscope
+[2024-05-11 11:35:45] INFO root fetch - processPackages [splicon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splicon-1.0.1.tar.gz tmp/splicon-1.0.2.tar.gz --markdown 20240511/s/splicon/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-11 11:35:46] INFO root fetch - processPackages [nse]: executing diffoscope
+[2024-05-11 11:35:46] INFO root fetch - processPackages [nse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nse-0.2.8.tar.gz tmp/nse-0.2.9.tar.gz --markdown 20240511/n/nse/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 11:35:46] INFO root fetch - processPackages [pizzoo]: Remove: archive file [/home/abi/fetcher/tmp/pizzoo-0.9.3.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - processPackages [pizzoo]: Remove: archive file [/home/abi/fetcher/tmp/pizzoo-0.9.4.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - main [MainThread]: End processing [pizzoo]: success
+[2024-05-11 11:35:46] INFO root fetch - processPackages [splicon]: Remove: archive file [/home/abi/fetcher/tmp/splicon-1.0.1.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - processPackages [splicon]: Remove: archive file [/home/abi/fetcher/tmp/splicon-1.0.2.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - main [MainThread]: End processing [splicon]: success
+[2024-05-11 11:35:46] INFO root fetch - processPackages [nse]: Remove: archive file [/home/abi/fetcher/tmp/nse-0.2.8.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - processPackages [nse]: Remove: archive file [/home/abi/fetcher/tmp/nse-0.2.9.tar.gz]
+[2024-05-11 11:35:46] INFO root fetch - main [MainThread]: End processing [nse]: success
+[2024-05-11 11:35:46] INFO root fetch - main [MainThread]: Store serial: [23159646]
