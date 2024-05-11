@@ -13265,3 +13265,27 @@
 [2024-05-11 11:11:48] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.0-py3-none-any.whl.zip]
 [2024-05-11 11:11:48] INFO root fetch - main [MainThread]: End processing [asknews]: success
 [2024-05-11 11:11:48] INFO root fetch - main [MainThread]: Store serial: [23159362]
+[2024-05-11 11:13:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159362]
+[2024-05-11 11:13:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: applang
+[2024-05-11 11:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: instaurationz
+[2024-05-11 11:13:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: narwhals
+[2024-05-11 11:13:57] INFO root fetch - processPackages [applang]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2024-05-11 11:13:57] INFO root fetch - processPackages [narwhals]: New version: [0.8.9] Old Version: [0.8.8]
+[2024-05-11 11:13:57] WARNING root fetch - processPackages [instaurationz]: Skipping, unable to determine old version
+[2024-05-11 11:13:57] INFO root fetch - processPackages [applang]: Downloading https://files.pythonhosted.org/packages/1f/65/bb5192734da9d8ba012c3124f4c4fe4d65a0132cabdc101011d1184099f6/applang-0.0.1a3.tar.gz
+[2024-05-11 11:13:57] INFO root fetch - main [MainThread]: End processing [instaurationz] error
+[2024-05-11 11:13:57] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/99/36/0f3088813b6d212058ea6dd92fc930c913ec6d5c01f08a24de71755552f5/narwhals-0.8.8.tar.gz
+[2024-05-11 11:13:58] INFO root fetch - processPackages [applang]: Downloading https://files.pythonhosted.org/packages/10/96/6c403487586845f3bc3496134cdaac4c3fb545defcef9baa128ebb21f0cf/applang-0.0.1a4.tar.gz
+[2024-05-11 11:13:58] INFO root fetch - processPackages [applang]: executing diffoscope
+[2024-05-11 11:13:58] INFO root fetch - processPackages [applang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applang-0.0.1a3.tar.gz tmp/applang-0.0.1a4.tar.gz --markdown 20240511/a/applang/0.0.1a3-0.0.1a4/README.md --exclude *.pyd
+[2024-05-11 11:13:58] INFO root fetch - processPackages [narwhals]: Downloading https://files.pythonhosted.org/packages/46/f0/986c81bda5e2f1c1e4caf23f199c81fe58077e01a7d513474c90bc191876/narwhals-0.8.9.tar.gz
+[2024-05-11 11:13:58] INFO root fetch - processPackages [narwhals]: executing diffoscope
+[2024-05-11 11:13:58] INFO root fetch - processPackages [narwhals]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/narwhals-0.8.8.tar.gz tmp/narwhals-0.8.9.tar.gz --markdown 20240511/n/narwhals/0.8.8-0.8.9/README.md --exclude *.pyd
+[2024-05-11 11:13:58] INFO root fetch - processPackages [applang]: Remove: archive file [/home/abi/fetcher/tmp/applang-0.0.1a3.tar.gz]
+[2024-05-11 11:13:58] INFO root fetch - processPackages [applang]: Remove: archive file [/home/abi/fetcher/tmp/applang-0.0.1a4.tar.gz]
+[2024-05-11 11:13:58] INFO root fetch - main [MainThread]: End processing [applang]: success
+[2024-05-11 11:13:59] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.8.tar.gz]
+[2024-05-11 11:13:59] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
+[2024-05-11 11:13:59] INFO root fetch - main [MainThread]: End processing [narwhals]: success
+[2024-05-11 11:13:59] INFO root fetch - main [MainThread]: Store serial: [23159375]
