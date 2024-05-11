@@ -14038,3 +14038,45 @@
 [2024-05-11 12:02:02] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.0.tar.gz]
 [2024-05-11 12:02:02] INFO root fetch - main [MainThread]: End processing [abses]: success
 [2024-05-11 12:02:02] INFO root fetch - main [MainThread]: Store serial: [23159806]
+[2024-05-11 12:04:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159806]
+[2024-05-11 12:04:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 12:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cap-tools
+[2024-05-11 12:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: citation-utils
+[2024-05-11 12:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PlumedToHTML
+[2024-05-11 12:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: drf-recaptcha
+[2024-05-11 12:04:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: stratalz
+[2024-05-11 12:04:12] INFO root fetch - processPackages [cap-tools]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-11 12:04:12] INFO root fetch - processPackages [PlumedToHTML]: New version: [0.9] Old Version: [0.8]
+[2024-05-11 12:04:12] WARNING root fetch - processPackages [stratalz]: Skipping, unable to determine old version
+[2024-05-11 12:04:12] INFO root fetch - main [MainThread]: End processing [stratalz] error
+[2024-05-11 12:04:12] INFO root fetch - processPackages [drf-recaptcha]: New version: [3.1.0] Old Version: [3.0.0]
+[2024-05-11 12:04:12] INFO root fetch - processPackages [cap-tools]: Downloading https://files.pythonhosted.org/packages/91/31/14f4f1e68338cfb114e2f52b57c95f2e1f0f6a20aac77eae96af31bf9855/cap_tools-1.0.0.tar.gz
+[2024-05-11 12:04:12] INFO root fetch - processPackages [citation-utils]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-11 12:04:12] INFO root fetch - processPackages [PlumedToHTML]: Downloading https://files.pythonhosted.org/packages/81/95/5ed2d773d95e4fcba932cfdf67091abff694ff6ee4f10462588473535c97/PlumedToHTML-0.8.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [drf-recaptcha]: Downloading https://files.pythonhosted.org/packages/1c/76/79d58c1846e5858ac5c7ffa4b447f20705fcd392187a494770dbe5b4de91/drf-recaptcha-3.0.0.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [cap-tools]: Downloading https://files.pythonhosted.org/packages/d0/18/abbbfc4a2a2498e95fc77e590f2deda47d2b6a483b7c95d395654141ff4f/cap_tools-1.1.0.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [PlumedToHTML]: Downloading https://files.pythonhosted.org/packages/d0/90/42341120e8c5d44ef5413125d4ea0ec3c0e2ca685bfe6358a3c5aa6fc7f9/PlumedToHTML-0.9.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [citation-utils]: Downloading https://files.pythonhosted.org/packages/7e/8a/b9a82ff880eb7d5f5fdce917559e3f80939c2797a7cf2c389fb4e8bacd1a/citation_utils-0.4.8.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [cap-tools]: executing diffoscope
+[2024-05-11 12:04:13] INFO root fetch - processPackages [cap-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cap_tools-1.0.0.tar.gz tmp/cap_tools-1.1.0.tar.gz --markdown 20240511/c/cap-tools/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-11 12:04:13] INFO root fetch - processPackages [PlumedToHTML]: executing diffoscope
+[2024-05-11 12:04:13] INFO root fetch - processPackages [PlumedToHTML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlumedToHTML-0.8.tar.gz tmp/PlumedToHTML-0.9.tar.gz --markdown 20240511/P/PlumedToHTML/0.8-0.9/README.md --exclude *.pyd
+[2024-05-11 12:04:13] INFO root fetch - processPackages [citation-utils]: Downloading https://files.pythonhosted.org/packages/f2/01/844d402bafffbc84bee679fff3cccc6cc3dad5d81ebd39e719e8220bb290/citation_utils-0.4.9.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [drf-recaptcha]: Downloading https://files.pythonhosted.org/packages/ee/6a/6443c6c8563c6315045366a4b8ff7d67c410a84fee4ee2725c77c884b85f/drf_recaptcha-3.1.0.tar.gz
+[2024-05-11 12:04:13] INFO root fetch - processPackages [drf-recaptcha]: executing diffoscope
+[2024-05-11 12:04:13] INFO root fetch - processPackages [drf-recaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/drf-recaptcha-3.0.0.tar.gz tmp/drf_recaptcha-3.1.0.tar.gz --markdown 20240511/d/drf-recaptcha/3.0.0-3.1.0/README.md --exclude *.pyd
+[2024-05-11 12:04:13] INFO root fetch - processPackages [citation-utils]: executing diffoscope
+[2024-05-11 12:04:13] INFO root fetch - processPackages [citation-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/citation_utils-0.4.8.tar.gz tmp/citation_utils-0.4.9.tar.gz --markdown 20240511/c/citation-utils/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-11 12:04:13] INFO root fetch - processPackages [PlumedToHTML]: Remove: archive file [/home/abi/fetcher/tmp/PlumedToHTML-0.8.tar.gz]
+[2024-05-11 12:04:13] INFO root fetch - processPackages [PlumedToHTML]: Remove: archive file [/home/abi/fetcher/tmp/PlumedToHTML-0.9.tar.gz]
+[2024-05-11 12:04:13] INFO root fetch - main [MainThread]: End processing [PlumedToHTML]: success
+[2024-05-11 12:04:13] INFO root fetch - processPackages [cap-tools]: Remove: archive file [/home/abi/fetcher/tmp/cap_tools-1.0.0.tar.gz]
+[2024-05-11 12:04:13] INFO root fetch - processPackages [cap-tools]: Remove: archive file [/home/abi/fetcher/tmp/cap_tools-1.1.0.tar.gz]
+[2024-05-11 12:04:13] INFO root fetch - main [MainThread]: End processing [cap-tools]: success
+[2024-05-11 12:04:14] INFO root fetch - processPackages [drf-recaptcha]: Remove: archive file [/home/abi/fetcher/tmp/drf-recaptcha-3.0.0.tar.gz]
+[2024-05-11 12:04:14] INFO root fetch - processPackages [drf-recaptcha]: Remove: archive file [/home/abi/fetcher/tmp/drf_recaptcha-3.1.0.tar.gz]
+[2024-05-11 12:04:14] INFO root fetch - main [MainThread]: End processing [drf-recaptcha]: success
+[2024-05-11 12:04:14] INFO root fetch - processPackages [citation-utils]: Remove: archive file [/home/abi/fetcher/tmp/citation_utils-0.4.8.tar.gz]
+[2024-05-11 12:04:14] INFO root fetch - processPackages [citation-utils]: Remove: archive file [/home/abi/fetcher/tmp/citation_utils-0.4.9.tar.gz]
+[2024-05-11 12:04:14] INFO root fetch - main [MainThread]: End processing [citation-utils]: success
+[2024-05-11 12:04:14] INFO root fetch - main [MainThread]: Store serial: [23159823]
