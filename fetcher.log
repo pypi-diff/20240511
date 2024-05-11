@@ -9247,3 +9247,27 @@
 [2024-05-11 05:39:20] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.3.tar.gz]
 [2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
 [2024-05-11 05:39:20] INFO root fetch - main [MainThread]: Store serial: [23157088]
+[2024-05-11 05:41:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157088]
+[2024-05-11 05:41:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 05:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: GazooResearchUtils
+[2024-05-11 05:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: semicirclez
+[2024-05-11 05:41:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prodiapy
+[2024-05-11 05:41:29] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.4.5] Old Version: [1.4.4]
+[2024-05-11 05:41:29] INFO root fetch - processPackages [prodiapy]: New version: [5.1.4] Old Version: [5.1.3]
+[2024-05-11 05:41:29] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/d0/54/086a6512400ebfbc243acd22070c7ad00a2fa923a1d35b5693d748d81ef2/GazooResearchUtils-1.4.4.tar.gz
+[2024-05-11 05:41:29] WARNING root fetch - processPackages [semicirclez]: Skipping, unable to determine old version
+[2024-05-11 05:41:29] INFO root fetch - main [MainThread]: End processing [semicirclez] error
+[2024-05-11 05:41:29] INFO root fetch - processPackages [prodiapy]: Downloading https://files.pythonhosted.org/packages/2e/2f/40cad6cd9922db35d6d30116526932805394e0d482122986838fc068c7ae/prodiapy-5.1.3.tar.gz
+[2024-05-11 05:41:29] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/f5/97/70ad8b22c858251a0596a685e642384a828fa43ac4c38314dd4873757a71/GazooResearchUtils-1.4.5.tar.gz
+[2024-05-11 05:41:29] INFO root fetch - processPackages [prodiapy]: Downloading https://files.pythonhosted.org/packages/dd/3f/07768709a2089729b28e6c3382a6b614d415c006a52ec2435ca1f71edb3e/prodiapy-5.1.4.tar.gz
+[2024-05-11 05:41:29] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 05:41:29] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.4.4.tar.gz tmp/GazooResearchUtils-1.4.5.tar.gz --markdown 20240511/G/GazooResearchUtils/1.4.4-1.4.5/README.md --exclude *.pyd
+[2024-05-11 05:41:29] INFO root fetch - processPackages [prodiapy]: executing diffoscope
+[2024-05-11 05:41:29] INFO root fetch - processPackages [prodiapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodiapy-5.1.3.tar.gz tmp/prodiapy-5.1.4.tar.gz --markdown 20240511/p/prodiapy/5.1.3-5.1.4/README.md --exclude *.pyd
+[2024-05-11 05:41:30] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.4.tar.gz]
+[2024-05-11 05:41:30] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.5.tar.gz]
+[2024-05-11 05:41:30] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 05:41:30] INFO root fetch - processPackages [prodiapy]: Remove: archive file [/home/abi/fetcher/tmp/prodiapy-5.1.3.tar.gz]
+[2024-05-11 05:41:30] INFO root fetch - processPackages [prodiapy]: Remove: archive file [/home/abi/fetcher/tmp/prodiapy-5.1.4.tar.gz]
+[2024-05-11 05:41:30] INFO root fetch - main [MainThread]: End processing [prodiapy]: success
+[2024-05-11 05:41:30] INFO root fetch - main [MainThread]: Store serial: [23157097]
