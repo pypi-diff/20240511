@@ -23080,3 +23080,21 @@
 [2024-05-11 22:17:00] INFO root fetch - processPackages [launchflow]: Remove: archive file [/home/abi/fetcher/tmp/launchflow-0.3.9.dev8.tar.gz]
 [2024-05-11 22:17:00] INFO root fetch - main [MainThread]: End processing [launchflow]: success
 [2024-05-11 22:17:00] INFO root fetch - main [MainThread]: Store serial: [23164243]
+[2024-05-11 22:19:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164243]
+[2024-05-11 22:19:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 22:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: commercialismz
+[2024-05-11 22:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unballastingz
+[2024-05-11 22:19:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mov-cli-ms
+[2024-05-11 22:19:09] WARNING root fetch - processPackages [commercialismz]: Skipping, unable to determine old version
+[2024-05-11 22:19:09] INFO root fetch - main [MainThread]: End processing [commercialismz] error
+[2024-05-11 22:19:09] WARNING root fetch - processPackages [mov-cli-ms]: Skipping, unable to determine old version
+[2024-05-11 22:19:09] INFO root fetch - main [MainThread]: End processing [mov-cli-ms] error
+[2024-05-11 22:19:09] INFO root fetch - processPackages [unballastingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:19:10] INFO root fetch - processPackages [unballastingz]: Downloading https://files.pythonhosted.org/packages/2e/ed/107717891310a63796a3a34a0388e71bb2cc0d47a5a14ba6845b4b56faa5/unballastingz-1.1.tar.gz
+[2024-05-11 22:19:10] INFO root fetch - processPackages [unballastingz]: Downloading https://files.pythonhosted.org/packages/85/7d/502b099a120b450463b8d42215f73351ef23ef43bb668943f8a0b1b8a9fb/unballastingz-2.1.tar.gz
+[2024-05-11 22:19:10] INFO root fetch - processPackages [unballastingz]: executing diffoscope
+[2024-05-11 22:19:10] INFO root fetch - processPackages [unballastingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unballastingz-1.1.tar.gz tmp/unballastingz-2.1.tar.gz --markdown 20240511/u/unballastingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:19:11] INFO root fetch - processPackages [unballastingz]: Remove: archive file [/home/abi/fetcher/tmp/unballastingz-1.1.tar.gz]
+[2024-05-11 22:19:11] INFO root fetch - processPackages [unballastingz]: Remove: archive file [/home/abi/fetcher/tmp/unballastingz-2.1.tar.gz]
+[2024-05-11 22:19:11] INFO root fetch - main [MainThread]: End processing [unballastingz]: success
+[2024-05-11 22:19:11] INFO root fetch - main [MainThread]: Store serial: [23164259]
