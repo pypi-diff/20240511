@@ -14161,3 +14161,36 @@
 [2024-05-11 12:10:48] INFO root fetch - processPackages [everai]: Remove: archive file [/home/abi/fetcher/tmp/everai-0.1.51-py3-none-any.whl.zip]
 [2024-05-11 12:10:48] INFO root fetch - main [MainThread]: End processing [everai]: success
 [2024-05-11 12:10:48] INFO root fetch - main [MainThread]: Store serial: [23159852]
+[2024-05-11 12:12:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159852]
+[2024-05-11 12:12:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: romt
+[2024-05-11 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: postbranchialz
+[2024-05-11 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapeddit
+[2024-05-11 12:12:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: splupy2check
+[2024-05-11 12:12:58] WARNING root fetch - processPackages [scrapeddit]: Skipping, unable to determine old version
+[2024-05-11 12:12:58] INFO root fetch - main [MainThread]: End processing [scrapeddit] error
+[2024-05-11 12:12:58] INFO root fetch - processPackages [splupy2check]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 12:12:58] INFO root fetch - processPackages [postbranchialz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:12:58] INFO root fetch - processPackages [romt]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 12:12:58] INFO root fetch - processPackages [splupy2check]: Downloading https://files.pythonhosted.org/packages/d2/26/9e1642a9da8ca7c0554d2407a89b55673b76c6ee0a50c287ea50dd3901cf/splupy2check-1.0.0.tar.gz
+[2024-05-11 12:12:58] INFO root fetch - processPackages [postbranchialz]: Downloading https://files.pythonhosted.org/packages/fd/aa/d776b7202578655d99cb49c559d9d02853fed1d462d71f7e4d8f09923f36/postbranchialz-1.1.tar.gz
+[2024-05-11 12:12:58] INFO root fetch - processPackages [romt]: Downloading https://files.pythonhosted.org/packages/6c/d0/7ad1ce47b087e53db00b9c09dee7b518340151ad642b4e332445b84423e2/romt-0.6.0.tar.gz
+[2024-05-11 12:12:58] INFO root fetch - processPackages [postbranchialz]: Downloading https://files.pythonhosted.org/packages/47/fa/743673c967baca6927c366e31a9e6df3f2f4d20d85002928349d98dc4af1/postbranchialz-2.1.tar.gz
+[2024-05-11 12:12:58] INFO root fetch - processPackages [splupy2check]: Downloading https://files.pythonhosted.org/packages/41/3a/c9a0175024f20f0e5210d7e6f2a405f3903690a256a461b68fc37422f06b/splupy2check-1.0.1.tar.gz
+[2024-05-11 12:12:59] INFO root fetch - processPackages [splupy2check]: executing diffoscope
+[2024-05-11 12:12:59] INFO root fetch - processPackages [postbranchialz]: executing diffoscope
+[2024-05-11 12:12:59] INFO root fetch - processPackages [postbranchialz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/postbranchialz-1.1.tar.gz tmp/postbranchialz-2.1.tar.gz --markdown 20240511/p/postbranchialz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:12:59] INFO root fetch - processPackages [splupy2check]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/splupy2check-1.0.0.tar.gz tmp/splupy2check-1.0.1.tar.gz --markdown 20240511/s/splupy2check/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 12:12:59] INFO root fetch - processPackages [romt]: Downloading https://files.pythonhosted.org/packages/6d/f5/82dae66bdb8f764824570346344c99be2928f2d5321198d80f19588addd1/romt-0.6.1.tar.gz
+[2024-05-11 12:12:59] INFO root fetch - processPackages [romt]: executing diffoscope
+[2024-05-11 12:12:59] INFO root fetch - processPackages [romt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/romt-0.6.0.tar.gz tmp/romt-0.6.1.tar.gz --markdown 20240511/r/romt/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-11 12:12:59] INFO root fetch - processPackages [postbranchialz]: Remove: archive file [/home/abi/fetcher/tmp/postbranchialz-1.1.tar.gz]
+[2024-05-11 12:12:59] INFO root fetch - processPackages [postbranchialz]: Remove: archive file [/home/abi/fetcher/tmp/postbranchialz-2.1.tar.gz]
+[2024-05-11 12:12:59] INFO root fetch - main [MainThread]: End processing [postbranchialz]: success
+[2024-05-11 12:12:59] INFO root fetch - processPackages [splupy2check]: Remove: archive file [/home/abi/fetcher/tmp/splupy2check-1.0.0.tar.gz]
+[2024-05-11 12:12:59] INFO root fetch - processPackages [splupy2check]: Remove: archive file [/home/abi/fetcher/tmp/splupy2check-1.0.1.tar.gz]
+[2024-05-11 12:12:59] INFO root fetch - main [MainThread]: End processing [splupy2check]: success
+[2024-05-11 12:13:00] INFO root fetch - processPackages [romt]: Remove: archive file [/home/abi/fetcher/tmp/romt-0.6.0.tar.gz]
+[2024-05-11 12:13:00] INFO root fetch - processPackages [romt]: Remove: archive file [/home/abi/fetcher/tmp/romt-0.6.1.tar.gz]
+[2024-05-11 12:13:00] INFO root fetch - main [MainThread]: End processing [romt]: success
+[2024-05-11 12:13:00] INFO root fetch - main [MainThread]: Store serial: [23159863]
