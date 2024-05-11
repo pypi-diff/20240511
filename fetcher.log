@@ -17950,3 +17950,27 @@
 [2024-05-11 16:26:31] INFO root fetch - processPackages [exllamav2]: Remove: archive file [/home/abi/fetcher/tmp/exllamav2-0.0.9-py3-none-any.whl.zip]
 [2024-05-11 16:26:31] INFO root fetch - main [MainThread]: End processing [exllamav2]: success
 [2024-05-11 16:26:31] INFO root fetch - main [MainThread]: Store serial: [23161913]
+[2024-05-11 16:28:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161913]
+[2024-05-11 16:28:40] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: alfworld
+[2024-05-11 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-fastoche
+[2024-05-11 16:28:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-telegram-broadcast
+[2024-05-11 16:28:40] WARNING root fetch - processPackages [django-fastoche]: Skipping, unable to determine old version
+[2024-05-11 16:28:40] INFO root fetch - main [MainThread]: End processing [django-fastoche] error
+[2024-05-11 16:28:40] INFO root fetch - processPackages [alfworld]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-11 16:28:40] INFO root fetch - processPackages [python-telegram-broadcast]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-11 16:28:40] INFO root fetch - processPackages [python-telegram-broadcast]: Downloading https://files.pythonhosted.org/packages/8c/96/87d90aa1c711af2ef679d82cb2563c37f50265e01c0fbcc0f73f094409b4/python_telegram_broadcast-0.9.6.tar.gz
+[2024-05-11 16:28:40] INFO root fetch - processPackages [alfworld]: Downloading https://files.pythonhosted.org/packages/02/39/cd27e203442ef04b1c7b975ac63efa7e863e7d9b3edff6be197d1eeef845/alfworld-0.3.3.tar.gz
+[2024-05-11 16:28:41] INFO root fetch - processPackages [python-telegram-broadcast]: Downloading https://files.pythonhosted.org/packages/da/52/cc8c77102aee737a177ad4ebf739f5557841ed54fd492ccf0427ddfe4106/python_telegram_broadcast-0.9.7.tar.gz
+[2024-05-11 16:28:41] INFO root fetch - processPackages [alfworld]: Downloading https://files.pythonhosted.org/packages/6c/d5/ea18e6b97fd938840b0109f434056ef9f3bb46f4b51f3ec11e985c37512e/alfworld-0.3.4.tar.gz
+[2024-05-11 16:28:41] INFO root fetch - processPackages [python-telegram-broadcast]: executing diffoscope
+[2024-05-11 16:28:41] INFO root fetch - processPackages [python-telegram-broadcast]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_telegram_broadcast-0.9.6.tar.gz tmp/python_telegram_broadcast-0.9.7.tar.gz --markdown 20240511/p/python-telegram-broadcast/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-11 16:28:41] INFO root fetch - processPackages [alfworld]: executing diffoscope
+[2024-05-11 16:28:41] INFO root fetch - processPackages [alfworld]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alfworld-0.3.3.tar.gz tmp/alfworld-0.3.4.tar.gz --markdown 20240511/a/alfworld/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-11 16:28:41] INFO root fetch - processPackages [python-telegram-broadcast]: Remove: archive file [/home/abi/fetcher/tmp/python_telegram_broadcast-0.9.6.tar.gz]
+[2024-05-11 16:28:41] INFO root fetch - processPackages [python-telegram-broadcast]: Remove: archive file [/home/abi/fetcher/tmp/python_telegram_broadcast-0.9.7.tar.gz]
+[2024-05-11 16:28:41] INFO root fetch - main [MainThread]: End processing [python-telegram-broadcast]: success
+[2024-05-11 16:28:42] INFO root fetch - processPackages [alfworld]: Remove: archive file [/home/abi/fetcher/tmp/alfworld-0.3.3.tar.gz]
+[2024-05-11 16:28:42] INFO root fetch - processPackages [alfworld]: Remove: archive file [/home/abi/fetcher/tmp/alfworld-0.3.4.tar.gz]
+[2024-05-11 16:28:42] INFO root fetch - main [MainThread]: End processing [alfworld]: success
+[2024-05-11 16:28:42] INFO root fetch - main [MainThread]: Store serial: [23161923]
