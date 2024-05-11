@@ -8333,3 +8333,18 @@
 [2024-05-11 04:47:06] INFO root fetch - processPackages [proxynt]: Remove: archive file [/home/abi/fetcher/tmp/proxynt-1.1.9.tar.gz]
 [2024-05-11 04:47:06] INFO root fetch - main [MainThread]: End processing [proxynt]: success
 [2024-05-11 04:47:06] INFO root fetch - main [MainThread]: Store serial: [23156737]
+[2024-05-11 04:49:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156737]
+[2024-05-11 04:49:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 04:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Trapezoidal-Fuzzy-Number
+[2024-05-11 04:49:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meshgpt-pytorch
+[2024-05-11 04:49:16] INFO root fetch - processPackages [meshgpt-pytorch]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-11 04:49:16] WARNING root fetch - processPackages [Trapezoidal-Fuzzy-Number]: Skipping, unable to determine old version
+[2024-05-11 04:49:16] INFO root fetch - main [MainThread]: End processing [Trapezoidal-Fuzzy-Number] error
+[2024-05-11 04:49:16] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/73/d3/df41b4c443b501ea52e2e49a98fb00ec78f1fbbf27636467847178decf2e/meshgpt_pytorch-1.2.2.tar.gz
+[2024-05-11 04:49:16] INFO root fetch - processPackages [meshgpt-pytorch]: Downloading https://files.pythonhosted.org/packages/98/b2/ceaf54804d46c9228f20124ce54246451da8e2bfd1906f7873b43c95eb0c/meshgpt_pytorch-1.2.3.tar.gz
+[2024-05-11 04:49:16] INFO root fetch - processPackages [meshgpt-pytorch]: executing diffoscope
+[2024-05-11 04:49:16] INFO root fetch - processPackages [meshgpt-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meshgpt_pytorch-1.2.2.tar.gz tmp/meshgpt_pytorch-1.2.3.tar.gz --markdown 20240511/m/meshgpt-pytorch/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-11 04:49:17] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.2.tar.gz]
+[2024-05-11 04:49:17] INFO root fetch - processPackages [meshgpt-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/meshgpt_pytorch-1.2.3.tar.gz]
+[2024-05-11 04:49:17] INFO root fetch - main [MainThread]: End processing [meshgpt-pytorch]: success
+[2024-05-11 04:49:17] INFO root fetch - main [MainThread]: Store serial: [23156745]
