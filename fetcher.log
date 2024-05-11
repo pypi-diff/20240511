@@ -7773,3 +7773,27 @@
 [2024-05-11 04:07:07] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.2.tar.gz]
 [2024-05-11 04:07:07] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-05-11 04:07:07] INFO root fetch - main [MainThread]: Store serial: [23156518]
+[2024-05-11 04:09:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156518]
+[2024-05-11 04:09:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 04:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Fr1997v011
+[2024-05-11 04:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rebuildsz
+[2024-05-11 04:09:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: migration-db
+[2024-05-11 04:09:16] INFO root fetch - processPackages [Fr1997v011]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-05-11 04:09:16] INFO root fetch - processPackages [migration-db]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 04:09:16] INFO root fetch - processPackages [Fr1997v011]: Downloading https://files.pythonhosted.org/packages/60/af/18f86dd82cdd66c3deaaab74cdd06746a69a0c02265a2ef9249f270139e6/Fr1997v011-1.4.7.tar.gz
+[2024-05-11 04:09:16] WARNING root fetch - processPackages [rebuildsz]: Skipping, unable to determine old version
+[2024-05-11 04:09:16] INFO root fetch - main [MainThread]: End processing [rebuildsz] error
+[2024-05-11 04:09:16] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/7f/ed/1d35592a8041b6e70f3af7408af064fcea50ebc84c2e08def0f09107c7ce/migration_db-1.0.8.tar.gz
+[2024-05-11 04:09:16] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/21/4d/a05ab9a9bb48f79223952469dbca6b72d5dd7b36d9ecafec42abe2033706/migration_db-1.0.9.tar.gz
+[2024-05-11 04:09:16] INFO root fetch - processPackages [migration-db]: executing diffoscope
+[2024-05-11 04:09:16] INFO root fetch - processPackages [migration-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migration_db-1.0.8.tar.gz tmp/migration_db-1.0.9.tar.gz --markdown 20240511/m/migration-db/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 04:09:16] INFO root fetch - processPackages [Fr1997v011]: Downloading https://files.pythonhosted.org/packages/77/ab/ccdba6b334a7c0f05e16cf8debd5d240a974f6f33b896c24daef932169cc/Fr1997v011-1.4.8.tar.gz
+[2024-05-11 04:09:16] INFO root fetch - processPackages [Fr1997v011]: executing diffoscope
+[2024-05-11 04:09:16] INFO root fetch - processPackages [Fr1997v011]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Fr1997v011-1.4.7.tar.gz tmp/Fr1997v011-1.4.8.tar.gz --markdown 20240511/F/Fr1997v011/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-05-11 04:09:17] INFO root fetch - processPackages [Fr1997v011]: Remove: archive file [/home/abi/fetcher/tmp/Fr1997v011-1.4.7.tar.gz]
+[2024-05-11 04:09:17] INFO root fetch - processPackages [Fr1997v011]: Remove: archive file [/home/abi/fetcher/tmp/Fr1997v011-1.4.8.tar.gz]
+[2024-05-11 04:09:17] INFO root fetch - main [MainThread]: End processing [Fr1997v011]: success
+[2024-05-11 04:09:17] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.8.tar.gz]
+[2024-05-11 04:09:17] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
+[2024-05-11 04:09:17] INFO root fetch - main [MainThread]: End processing [migration-db]: success
+[2024-05-11 04:09:17] INFO root fetch - main [MainThread]: Store serial: [23156530]
