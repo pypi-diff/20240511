@@ -17332,3 +17332,15 @@
 [2024-05-11 15:46:06] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
 [2024-05-11 15:46:06] INFO root fetch - main [MainThread]: End processing [marcel]: success
 [2024-05-11 15:46:06] INFO root fetch - main [MainThread]: Store serial: [23161482]
+[2024-05-11 15:48:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161482]
+[2024-05-11 15:48:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 15:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysqa
+[2024-05-11 15:48:14] INFO root fetch - processPackages [pysqa]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 15:48:15] INFO root fetch - processPackages [pysqa]: Downloading https://files.pythonhosted.org/packages/cb/9f/30e07cda63616b67c720bac2e44d9a53f5663753ff0a594cc964f802f8a7/pysqa-0.1.8.tar.gz
+[2024-05-11 15:48:15] INFO root fetch - processPackages [pysqa]: Downloading https://files.pythonhosted.org/packages/47/9c/66bef32ad9b9f2e8f332a1e7fe30b26f1fc550b146bbe13dd8d30ecb3235/pysqa-0.1.9.tar.gz
+[2024-05-11 15:48:15] INFO root fetch - processPackages [pysqa]: executing diffoscope
+[2024-05-11 15:48:15] INFO root fetch - processPackages [pysqa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqa-0.1.8.tar.gz tmp/pysqa-0.1.9.tar.gz --markdown 20240511/p/pysqa/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 15:48:16] INFO root fetch - processPackages [pysqa]: Remove: archive file [/home/abi/fetcher/tmp/pysqa-0.1.8.tar.gz]
+[2024-05-11 15:48:16] INFO root fetch - processPackages [pysqa]: Remove: archive file [/home/abi/fetcher/tmp/pysqa-0.1.9.tar.gz]
+[2024-05-11 15:48:16] INFO root fetch - main [MainThread]: End processing [pysqa]: success
+[2024-05-11 15:48:16] INFO root fetch - main [MainThread]: Store serial: [23161485]
