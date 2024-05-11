@@ -17822,3 +17822,72 @@
 [2024-05-11 16:20:00] INFO root fetch - processPackages [fc-pruning]: Remove: archive file [/home/abi/fetcher/tmp/fc_pruning-0.0.6.tar.gz]
 [2024-05-11 16:20:00] INFO root fetch - main [MainThread]: End processing [fc-pruning]: success
 [2024-05-11 16:20:00] INFO root fetch - main [MainThread]: Store serial: [23161854]
+[2024-05-11 16:22:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161854]
+[2024-05-11 16:22:08] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: consulatingz
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: russez
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odxtools
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: codefly-sdk
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smartboiler
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: docugenr8
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chlorophyll
+[2024-05-11 16:22:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: fastapi-mctools
+[2024-05-11 16:22:09] INFO root fetch - processPackages [docugenr8]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [smartboiler]: New version: [0.0.3.0.0.7.4] Old Version: [0.0.3.0.0.7.3]
+[2024-05-11 16:22:09] WARNING root fetch - processPackages [consulatingz]: Skipping, unable to determine old version
+[2024-05-11 16:22:09] INFO root fetch - main [MainThread]: End processing [consulatingz] error
+[2024-05-11 16:22:09] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9f/50/fe4f65ff20d647d7239fd34a817008c0844e02a3024735c45db78b4c5f00/docugenr8-0.0.6.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [codefly-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [russez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [chlorophyll]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [fastapi-mctools]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [odxtools]: New version: [7.1.1] Old Version: [7.1.0]
+[2024-05-11 16:22:09] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/d8/fd/7f6cccbae87634144766b0c12eff09cddf94ab2e8a80f2c3a2b51bac01e1/smartboiler-0.0.3.0.0.7.3.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/d4/9e/20275acefb6235e97d4d366511900d6a5efe46eac73b4f2e695e663d7a8d/codefly_sdk-0.0.8.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [chlorophyll]: Downloading https://files.pythonhosted.org/packages/46/cf/d901d56da8d8b6220000ec8d21c325bee4b2e098c16e1780bb8d6547fa44/chlorophyll-0.4.1.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [russez]: Downloading https://files.pythonhosted.org/packages/01/81/c9ceff05d8c442e9695fcd564a9974dbef21fd8b8d69ac85bf894a47ec34/russez-1.1.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [odxtools]: Downloading https://files.pythonhosted.org/packages/49/8a/e863b27781eeef00078cc1204aa31c75b1a4719529680491c2cf7e5e591b/odxtools-7.1.0-py3-none-any.whl
+[2024-05-11 16:22:09] INFO root fetch - processPackages [smartboiler]: Downloading https://files.pythonhosted.org/packages/1d/49/8151f609795c3229575ae120f6665c1088719cebbc906e434c7f52dcedbf/smartboiler-0.0.3.0.0.7.4.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [fastapi-mctools]: Downloading https://files.pythonhosted.org/packages/4a/fe/095b2f66b1c491a68de0fa25a18933b9a2aefe9acea799e85530104f3047/fastapi_mctools-0.4.0.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/d4/27/c67a11645ee3d09ed446269f550d25febbf19eff97845eb792e56a92a78c/docugenr8-0.0.7.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [smartboiler]: executing diffoscope
+[2024-05-11 16:22:09] INFO root fetch - processPackages [smartboiler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartboiler-0.0.3.0.0.7.3.tar.gz tmp/smartboiler-0.0.3.0.0.7.4.tar.gz --markdown 20240511/s/smartboiler/0.0.3.0.0.7.3-0.0.3.0.0.7.4/README.md --exclude *.pyd
+[2024-05-11 16:22:09] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-11 16:22:09] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.6.tar.gz tmp/docugenr8-0.0.7.tar.gz --markdown 20240511/d/docugenr8/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 16:22:09] INFO root fetch - processPackages [russez]: Downloading https://files.pythonhosted.org/packages/af/0c/b213c7f84f6d59482640970948f115965adad54ae9837144429fc84e7983/russez-2.1.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [chlorophyll]: Downloading https://files.pythonhosted.org/packages/dc/a7/65ca60d3df76cffb4e83595cb8b47c4c2996204b65755c21ea0054f14bdc/chlorophyll-0.4.2.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [odxtools]: Downloading https://files.pythonhosted.org/packages/54/43/18f247dfe7a715adbb85c151b70bce4a3a4c05fd07bd6c705c42d0197420/odxtools-7.1.1-py3-none-any.whl
+[2024-05-11 16:22:09] INFO root fetch - processPackages [russez]: executing diffoscope
+[2024-05-11 16:22:09] INFO root fetch - processPackages [russez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/russez-1.1.tar.gz tmp/russez-2.1.tar.gz --markdown 20240511/r/russez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:22:09] INFO root fetch - processPackages [fastapi-mctools]: Downloading https://files.pythonhosted.org/packages/0e/b1/e4cd2e41996f98ca242a3d0cf306d3c67b9e45d7e1b8732870591bdf097b/fastapi_mctools-0.4.1.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [codefly-sdk]: Downloading https://files.pythonhosted.org/packages/c4/ff/1ff9eaa91de9207a7b791f46eda51160915435817eda5eacc4eae231a8c1/codefly_sdk-0.0.9.tar.gz
+[2024-05-11 16:22:09] INFO root fetch - processPackages [odxtools]: executing diffoscope
+[2024-05-11 16:22:09] INFO root fetch - processPackages [odxtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odxtools-7.1.0-py3-none-any.whl.zip tmp/odxtools-7.1.1-py3-none-any.whl.zip --markdown 20240511/o/odxtools/7.1.0-7.1.1/README.md --exclude *.pyd
+[2024-05-11 16:22:10] INFO root fetch - processPackages [chlorophyll]: executing diffoscope
+[2024-05-11 16:22:10] INFO root fetch - processPackages [chlorophyll]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chlorophyll-0.4.1.tar.gz tmp/chlorophyll-0.4.2.tar.gz --markdown 20240511/c/chlorophyll/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-11 16:22:10] INFO root fetch - processPackages [codefly-sdk]: executing diffoscope
+[2024-05-11 16:22:10] INFO root fetch - processPackages [codefly-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/codefly_sdk-0.0.8.tar.gz tmp/codefly_sdk-0.0.9.tar.gz --markdown 20240511/c/codefly-sdk/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 16:22:10] INFO root fetch - processPackages [fastapi-mctools]: executing diffoscope
+[2024-05-11 16:22:10] INFO root fetch - processPackages [fastapi-mctools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_mctools-0.4.0.tar.gz tmp/fastapi_mctools-0.4.1.tar.gz --markdown 20240511/f/fastapi-mctools/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 16:22:10] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.6.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.7.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-11 16:22:10] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.3.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [smartboiler]: Remove: archive file [/home/abi/fetcher/tmp/smartboiler-0.0.3.0.0.7.4.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [smartboiler]: success
+[2024-05-11 16:22:10] INFO root fetch - processPackages [russez]: Remove: archive file [/home/abi/fetcher/tmp/russez-1.1.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [russez]: Remove: archive file [/home/abi/fetcher/tmp/russez-2.1.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [russez]: success
+[2024-05-11 16:22:10] INFO root fetch - processPackages [chlorophyll]: Remove: archive file [/home/abi/fetcher/tmp/chlorophyll-0.4.1.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [chlorophyll]: Remove: archive file [/home/abi/fetcher/tmp/chlorophyll-0.4.2.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [chlorophyll]: success
+[2024-05-11 16:22:10] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.8.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [codefly-sdk]: Remove: archive file [/home/abi/fetcher/tmp/codefly_sdk-0.0.9.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [codefly-sdk]: success
+[2024-05-11 16:22:10] INFO root fetch - processPackages [fastapi-mctools]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_mctools-0.4.0.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - processPackages [fastapi-mctools]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_mctools-0.4.1.tar.gz]
+[2024-05-11 16:22:10] INFO root fetch - main [MainThread]: End processing [fastapi-mctools]: success
+[2024-05-11 16:22:11] INFO root fetch - processPackages [odxtools]: Remove: archive file [/home/abi/fetcher/tmp/odxtools-7.1.0-py3-none-any.whl.zip]
+[2024-05-11 16:22:11] INFO root fetch - processPackages [odxtools]: Remove: archive file [/home/abi/fetcher/tmp/odxtools-7.1.1-py3-none-any.whl.zip]
+[2024-05-11 16:22:11] INFO root fetch - main [MainThread]: End processing [odxtools]: success
+[2024-05-11 16:22:11] INFO root fetch - main [MainThread]: Store serial: [23161876]
