@@ -21177,3 +21177,54 @@
 [2024-05-11 20:06:14] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project_arrakis-0.1.1.tar.gz]
 [2024-05-11 20:06:14] INFO root fetch - main [MainThread]: End processing [project-arrakis]: success
 [2024-05-11 20:06:14] INFO root fetch - main [MainThread]: Store serial: [23163346]
+[2024-05-11 20:08:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163346]
+[2024-05-11 20:08:22] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cocoon-data
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geotify
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flops-utils
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cyberdrop-dl
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ALLMDEV
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: py3grads
+[2024-05-11 20:08:22] WARNING root fetch - processPackages [py3grads]: Skipping, unable to determine old version
+[2024-05-11 20:08:22] INFO root fetch - main [MainThread]: End processing [py3grads] error
+[2024-05-11 20:08:22] INFO root fetch - processPackages [flops-utils]: New version: [0.3.7] Old Version: [0.3.6]
+[2024-05-11 20:08:22] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.3] Old Version: [5.3.2]
+[2024-05-11 20:08:22] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/ee/7f/64305cf3a93da0bbd00d0ba2b9f94ea2965b8ea625abe3208c3cb71bad04/flops_utils-0.3.6.tar.gz
+[2024-05-11 20:08:22] INFO root fetch - processPackages [cocoon-data]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 20:08:22] INFO root fetch - processPackages [ALLMDEV]: New version: [1.3.2] Old Version: [1.3.1]
+[2024-05-11 20:08:22] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/74/6a/1ead810b5c6f571c2fb1976eae7bf04edc55effe8f1183a6dddb2db2d559/cyberdrop_dl-5.3.2.tar.gz
+[2024-05-11 20:08:22] INFO root fetch - processPackages [geotify]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/ac/3c/a1a6c95be4d731fc0db8d40b132730891186370f3cd304837773aa0dcce9/cocoon_data-0.1.8.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [geotify]: Downloading https://files.pythonhosted.org/packages/d0/ae/34f584521c2f72020883bddd07346aabe746ac007157bfd4313ca5505142/geotify-0.1.0.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/5f/28/23ef2e708c201f6d1e94c98daf2e3c0f08069048153cc72cac6346a72271/flops_utils-0.3.7.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d8/29/3c6bab6f011f7c5c45093f513d2d62808a6f2aaf24abf416b20d44f9c636/cyberdrop_dl-5.3.3.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/e5/5a/d50a20d92bed24a6abe470f6e5cdf255da43c972cab6cee2f74d870766f8/ALLMDEV-1.3.1-py3-none-any.whl
+[2024-05-11 20:08:23] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-11 20:08:23] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.3.6.tar.gz tmp/flops_utils-0.3.7.tar.gz --markdown 20240511/f/flops-utils/0.3.6-0.3.7/README.md --exclude *.pyd
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.3.2.tar.gz tmp/cyberdrop_dl-5.3.3.tar.gz --markdown 20240511/c/cyberdrop-dl/5.3.2-5.3.3/README.md --exclude *.pyd
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cocoon-data]: Downloading https://files.pythonhosted.org/packages/0b/b9/048ffb4abe066854ebc4d24ca277250c5668844b84d602ff0be9adf8b231/cocoon_data-0.1.9.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [geotify]: Downloading https://files.pythonhosted.org/packages/0b/d0/fa724b7f6f2ad7622ad5de88e90a5da52129785142d99d231a49e4c80998/geotify-0.2.0.tar.gz
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cocoon-data]: executing diffoscope
+[2024-05-11 20:08:23] INFO root fetch - processPackages [cocoon-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cocoon_data-0.1.8.tar.gz tmp/cocoon_data-0.1.9.tar.gz --markdown 20240511/c/cocoon-data/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 20:08:23] INFO root fetch - processPackages [ALLMDEV]: Downloading https://files.pythonhosted.org/packages/5c/3b/193f023d0807297362f3da6b28285e1386d5051afe39ef990b94e131efbd/ALLMDEV-1.3.2-py3-none-any.whl
+[2024-05-11 20:08:23] INFO root fetch - processPackages [geotify]: executing diffoscope
+[2024-05-11 20:08:23] INFO root fetch - processPackages [geotify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geotify-0.1.0.tar.gz tmp/geotify-0.2.0.tar.gz --markdown 20240511/g/geotify/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 20:08:23] INFO root fetch - processPackages [ALLMDEV]: executing diffoscope
+[2024-05-11 20:08:23] INFO root fetch - processPackages [ALLMDEV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLMDEV-1.3.1-py3-none-any.whl.zip tmp/ALLMDEV-1.3.2-py3-none-any.whl.zip --markdown 20240511/A/ALLMDEV/1.3.1-1.3.2/README.md --exclude *.pyd
+[2024-05-11 20:08:23] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.6.tar.gz]
+[2024-05-11 20:08:23] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.3.7.tar.gz]
+[2024-05-11 20:08:23] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-11 20:08:24] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.2.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.3.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-11 20:08:24] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.8.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - processPackages [cocoon-data]: Remove: archive file [/home/abi/fetcher/tmp/cocoon_data-0.1.9.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - main [MainThread]: End processing [cocoon-data]: success
+[2024-05-11 20:08:24] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.1-py3-none-any.whl.zip]
+[2024-05-11 20:08:24] INFO root fetch - processPackages [ALLMDEV]: Remove: archive file [/home/abi/fetcher/tmp/ALLMDEV-1.3.2-py3-none-any.whl.zip]
+[2024-05-11 20:08:24] INFO root fetch - main [MainThread]: End processing [ALLMDEV]: success
+[2024-05-11 20:08:24] INFO root fetch - processPackages [geotify]: Remove: archive file [/home/abi/fetcher/tmp/geotify-0.1.0.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - processPackages [geotify]: Remove: archive file [/home/abi/fetcher/tmp/geotify-0.2.0.tar.gz]
+[2024-05-11 20:08:24] INFO root fetch - main [MainThread]: End processing [geotify]: success
+[2024-05-11 20:08:24] INFO root fetch - main [MainThread]: Store serial: [23163363]
