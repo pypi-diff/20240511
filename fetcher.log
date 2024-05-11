@@ -17395,3 +17395,27 @@
 [2024-05-11 15:50:26] INFO root fetch - processPackages [zensols.deeplearn]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deeplearn-1.9.0-py3-none-any.whl.zip]
 [2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [zensols.deeplearn]: success
 [2024-05-11 15:50:26] INFO root fetch - main [MainThread]: Store serial: [23161501]
+[2024-05-11 15:52:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161501]
+[2024-05-11 15:52:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 15:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: akipy
+[2024-05-11 15:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: chickenstats
+[2024-05-11 15:52:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 15:52:35] WARNING root fetch - processPackages [akipy]: Skipping, unable to determine old version
+[2024-05-11 15:52:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.3.4] Old Version: [1.0.3.3]
+[2024-05-11 15:52:35] INFO root fetch - main [MainThread]: End processing [akipy] error
+[2024-05-11 15:52:35] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/fe/f8/c966289db829f546b034ace4be2a3334a8052052469e99bacad86af25d4e/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz
+[2024-05-11 15:52:35] INFO root fetch - processPackages [chickenstats]: New version: [1.7.9.2] Old Version: [1.7.9.1]
+[2024-05-11 15:52:35] INFO root fetch - processPackages [chickenstats]: Downloading https://files.pythonhosted.org/packages/26/0c/5b098eff79874b9b699a862fad67d872943d2fa50df2e1c0acd12ec292cb/chickenstats-1.7.9.1.tar.gz
+[2024-05-11 15:52:36] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/39/e2/ff3d3937ea932ed35564569edca0b2480f7673b7ab995a6195513b33ceff/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz
+[2024-05-11 15:52:36] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 15:52:36] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.3.3-1.0.3.4/README.md --exclude *.pyd
+[2024-05-11 15:52:36] INFO root fetch - processPackages [chickenstats]: Downloading https://files.pythonhosted.org/packages/2e/21/8b2ad1539d8a3a8397f0191aef931aed99c63b9cdb6bd267e908ef44cac8/chickenstats-1.7.9.2.tar.gz
+[2024-05-11 15:52:36] INFO root fetch - processPackages [chickenstats]: executing diffoscope
+[2024-05-11 15:52:36] INFO root fetch - processPackages [chickenstats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chickenstats-1.7.9.1.tar.gz tmp/chickenstats-1.7.9.2.tar.gz --markdown 20240511/c/chickenstats/1.7.9.1-1.7.9.2/README.md --exclude *.pyd
+[2024-05-11 15:52:36] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.3.tar.gz]
+[2024-05-11 15:52:36] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.4.tar.gz]
+[2024-05-11 15:52:36] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 15:52:37] INFO root fetch - processPackages [chickenstats]: Remove: archive file [/home/abi/fetcher/tmp/chickenstats-1.7.9.1.tar.gz]
+[2024-05-11 15:52:37] INFO root fetch - processPackages [chickenstats]: Remove: archive file [/home/abi/fetcher/tmp/chickenstats-1.7.9.2.tar.gz]
+[2024-05-11 15:52:37] INFO root fetch - main [MainThread]: End processing [chickenstats]: success
+[2024-05-11 15:52:37] INFO root fetch - main [MainThread]: Store serial: [23161519]
