@@ -14851,3 +14851,53 @@
 [2024-05-11 12:52:35] INFO root fetch - processPackages [mongo-objects]: Remove: archive file [/home/abi/fetcher/tmp/mongo_objects-1.2.0.tar.gz]
 [2024-05-11 12:52:35] INFO root fetch - main [MainThread]: End processing [mongo-objects]: success
 [2024-05-11 12:52:35] INFO root fetch - main [MainThread]: Store serial: [23160284]
+[2024-05-11 12:54:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160284]
+[2024-05-11 12:54:44] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: prefatorialz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dingodb
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cift
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyFairylandFuture
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: google-chad
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: webscout
+[2024-05-11 12:54:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sy-ofb-python-sdk
+[2024-05-11 12:54:44] INFO root fetch - processPackages [dingodb]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 12:54:44] WARNING root fetch - processPackages [cift]: Skipping, unable to determine old version
+[2024-05-11 12:54:44] INFO root fetch - main [MainThread]: End processing [cift] error
+[2024-05-11 12:54:44] WARNING root fetch - processPackages [sy-ofb-python-sdk]: Skipping, unable to determine old version
+[2024-05-11 12:54:44] INFO root fetch - main [MainThread]: End processing [sy-ofb-python-sdk] error
+[2024-05-11 12:54:44] INFO root fetch - processPackages [webscout]: New version: [2.0] Old Version: [1.4.6]
+[2024-05-11 12:54:44] INFO root fetch - processPackages [prefatorialz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:54:44] INFO root fetch - processPackages [dingodb]: Downloading https://files.pythonhosted.org/packages/fd/67/a310b9a572631d0e4a94dcdc0dcb431716f7f40b19d3f1a54bf09bda260d/dingodb-0.0.8.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [google-chad]: New version: [5.7] Old Version: [5.6]
+[2024-05-11 12:54:44] INFO root fetch - processPackages [PyFairylandFuture]: New version: [1.0.0a30.post20240511] Old Version: [1.0.0a10.post20240510]
+[2024-05-11 12:54:44] INFO root fetch - processPackages [webscout]: Downloading https://files.pythonhosted.org/packages/14/f8/df00fdd29de986d2a7e596adb0e5f070284334234919e5a679dbcf9a21a7/webscout-1.4.6.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [prefatorialz]: Downloading https://files.pythonhosted.org/packages/f1/96/dfe0752cc15c5c8a4babfe2f10e7fb75076e81d3ca13298e553456ec348b/prefatorialz-1.1.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [PyFairylandFuture]: Downloading https://files.pythonhosted.org/packages/5f/d4/7a69872fbc31c48cd1ace40e7587076ea94c88299b866e2ca672db256e3c/pyfairylandfuture-1.0.0a10.post20240510.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [dingodb]: Downloading https://files.pythonhosted.org/packages/06/6f/82ec6e6f7f768612dc9ef020e2dd42524a3971b282fea6b746ddd2f7aef0/dingodb-0.0.9.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [google-chad]: Downloading https://files.pythonhosted.org/packages/d9/66/ac88c67a46dcb3766a97a6b80e4f5ee600c5441db8ab43b39e0f9e511aa9/google-chad-5.6.tar.gz
+[2024-05-11 12:54:44] INFO root fetch - processPackages [dingodb]: executing diffoscope
+[2024-05-11 12:54:44] INFO root fetch - processPackages [dingodb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dingodb-0.0.8.tar.gz tmp/dingodb-0.0.9.tar.gz --markdown 20240511/d/dingodb/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 12:54:44] ERROR root fetch - processPackages [webscout]: Unable to fetch info: No such project/version 'webscout' 2.0
+[2024-05-11 12:54:44] INFO root fetch - main [MainThread]: End processing [webscout] error
+[2024-05-11 12:54:45] INFO root fetch - processPackages [prefatorialz]: Downloading https://files.pythonhosted.org/packages/ea/5b/d09ef34aec960292fd8e20bbc2c8201ee7d79342022f54073d15d6361a4d/prefatorialz-2.1.tar.gz
+[2024-05-11 12:54:45] INFO root fetch - processPackages [PyFairylandFuture]: Downloading https://files.pythonhosted.org/packages/40/50/5cb61ca7f45c60948f7703e6953fa9c9787dd02522e1b02b159530bca94a/pyfairylandfuture-1.0.0a30.post20240511.tar.gz
+[2024-05-11 12:54:45] INFO root fetch - processPackages [prefatorialz]: executing diffoscope
+[2024-05-11 12:54:45] INFO root fetch - processPackages [prefatorialz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefatorialz-1.1.tar.gz tmp/prefatorialz-2.1.tar.gz --markdown 20240511/p/prefatorialz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:54:45] INFO root fetch - processPackages [PyFairylandFuture]: executing diffoscope
+[2024-05-11 12:54:45] INFO root fetch - processPackages [PyFairylandFuture]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfairylandfuture-1.0.0a10.post20240510.tar.gz tmp/pyfairylandfuture-1.0.0a30.post20240511.tar.gz --markdown 20240511/P/PyFairylandFuture/1.0.0a10.post20240510-1.0.0a30.post20240511/README.md --exclude *.pyd
+[2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: Downloading https://files.pythonhosted.org/packages/52/38/c83eb44730b5a65f90199be0a9681b886e6080abe3da48b6f6996a685df1/google_chad-5.7.tar.gz
+[2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: executing diffoscope
+[2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/google-chad-5.6.tar.gz tmp/google_chad-5.7.tar.gz --markdown 20240511/g/google-chad/5.6-5.7/README.md --exclude *.pyd
+[2024-05-11 12:54:45] INFO root fetch - processPackages [dingodb]: Remove: archive file [/home/abi/fetcher/tmp/dingodb-0.0.8.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - processPackages [dingodb]: Remove: archive file [/home/abi/fetcher/tmp/dingodb-0.0.9.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - main [MainThread]: End processing [dingodb]: success
+[2024-05-11 12:54:45] INFO root fetch - processPackages [prefatorialz]: Remove: archive file [/home/abi/fetcher/tmp/prefatorialz-1.1.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - processPackages [prefatorialz]: Remove: archive file [/home/abi/fetcher/tmp/prefatorialz-2.1.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - main [MainThread]: End processing [prefatorialz]: success
+[2024-05-11 12:54:45] INFO root fetch - processPackages [PyFairylandFuture]: Remove: archive file [/home/abi/fetcher/tmp/pyfairylandfuture-1.0.0a10.post20240510.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - processPackages [PyFairylandFuture]: Remove: archive file [/home/abi/fetcher/tmp/pyfairylandfuture-1.0.0a30.post20240511.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - main [MainThread]: End processing [PyFairylandFuture]: success
+[2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: Remove: archive file [/home/abi/fetcher/tmp/google-chad-5.6.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: Remove: archive file [/home/abi/fetcher/tmp/google_chad-5.7.tar.gz]
+[2024-05-11 12:54:45] INFO root fetch - main [MainThread]: End processing [google-chad]: success
+[2024-05-11 12:54:45] INFO root fetch - main [MainThread]: Store serial: [23160308]
