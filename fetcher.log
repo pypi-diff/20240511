@@ -15433,3 +15433,36 @@
 [2024-05-11 13:29:53] INFO root fetch - processPackages [plex-fuse]: Remove: archive file [/home/abi/fetcher/tmp/plex_fuse-0.8.0.tar.gz]
 [2024-05-11 13:29:53] INFO root fetch - main [MainThread]: End processing [plex-fuse]: success
 [2024-05-11 13:29:53] INFO root fetch - main [MainThread]: Store serial: [23160585]
+[2024-05-11 13:31:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160585]
+[2024-05-11 13:32:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 13:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pg-sync-roles
+[2024-05-11 13:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sydney-py
+[2024-05-11 13:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: attaccoz
+[2024-05-11 13:32:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scrapeddit
+[2024-05-11 13:32:02] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 13:32:02] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 13:32:02] INFO root fetch - processPackages [sydney-py]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 13:32:02] WARNING root fetch - processPackages [attaccoz]: Skipping, unable to determine old version
+[2024-05-11 13:32:02] INFO root fetch - main [MainThread]: End processing [attaccoz] error
+[2024-05-11 13:32:02] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/cf/65/5a6b58dace9e18392712a22fb2fe5f7aeb64f4afa5595f91cc29df70d9ff/scrapeddit-0.1.4.tar.gz
+[2024-05-11 13:32:02] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-11 13:32:02] INFO root fetch - processPackages [sydney-py]: Downloading https://files.pythonhosted.org/packages/41/59/a01e40de0b79cb9e5b9753aff2023c3bc23107a4bff38286eebbd3e6c14a/sydney_py-0.8.0.tar.gz
+[2024-05-11 13:32:02] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-11 13:32:02] INFO root fetch - processPackages [sydney-py]: Downloading https://files.pythonhosted.org/packages/02/41/7735e426c92193839cadff24522495dba9bc888c317f6013433a4fa188c7/sydney_py-0.9.0.tar.gz
+[2024-05-11 13:32:03] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-11 13:32:03] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240511/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 13:32:03] INFO root fetch - processPackages [sydney-py]: executing diffoscope
+[2024-05-11 13:32:03] INFO root fetch - processPackages [sydney-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sydney_py-0.8.0.tar.gz tmp/sydney_py-0.9.0.tar.gz --markdown 20240511/s/sydney-py/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 13:32:03] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/93/78/b584d29a579341262f86cc0d9038871db5165f322da63d060dc65566b126/scrapeddit-0.1.5.tar.gz
+[2024-05-11 13:32:03] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 13:32:03] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.4.tar.gz tmp/scrapeddit-0.1.5.tar.gz --markdown 20240511/s/scrapeddit/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 13:32:03] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-11 13:32:03] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.4.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.5.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 13:32:03] INFO root fetch - processPackages [sydney-py]: Remove: archive file [/home/abi/fetcher/tmp/sydney_py-0.8.0.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - processPackages [sydney-py]: Remove: archive file [/home/abi/fetcher/tmp/sydney_py-0.9.0.tar.gz]
+[2024-05-11 13:32:03] INFO root fetch - main [MainThread]: End processing [sydney-py]: success
+[2024-05-11 13:32:03] INFO root fetch - main [MainThread]: Store serial: [23160599]
