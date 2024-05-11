@@ -2630,3 +2630,24 @@
 [2024-05-11 02:21:34] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
 [2024-05-11 02:21:34] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
 [2024-05-11 02:21:34] INFO root fetch - main [MainThread]: Store serial: [23154578]
+[2024-05-11 02:23:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154578]
+[2024-05-11 02:23:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 02:23:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: NMODL-nightly
+[2024-05-11 02:23:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore-workflow-builder
+[2024-05-11 02:23:43] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 02:23:43] INFO root fetch - processPackages [NMODL-nightly]: New version: [0.6.98] Old Version: [0.6.93]
+[2024-05-11 02:23:43] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 02:23:43] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/94/bf/65d51cf0f3bd818482bc6d015444c6fa5effd03ea78ae4a494c1f1a2d189/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-11 02:23:43] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 02:23:44] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 02:23:44] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 02:23:44] INFO root fetch - processPackages [NMODL-nightly]: Downloading https://files.pythonhosted.org/packages/e7/74/0082eac701e2e33195753774345536580724cd74e073c135ec8f5e9fd1a9/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2024-05-11 02:23:44] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 02:23:44] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 02:23:44] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 02:23:44] INFO root fetch - processPackages [NMODL-nightly]: executing diffoscope
+[2024-05-11 02:23:44] INFO root fetch - processPackages [NMODL-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20240511/N/NMODL-nightly/0.6.93-0.6.98/README.md --exclude *.pyd
+[2024-05-11 02:25:36] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.93-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-11 02:25:36] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
+[2024-05-11 02:25:36] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
+[2024-05-11 02:25:36] INFO root fetch - main [MainThread]: Store serial: [23154595]
