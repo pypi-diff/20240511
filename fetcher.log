@@ -20789,3 +20789,24 @@
 [2024-05-11 19:37:38] INFO root fetch - processPackages [poaurk]: Remove: archive file [/home/abi/fetcher/tmp/poaurk-0.4.0.tar.gz]
 [2024-05-11 19:37:38] INFO root fetch - main [MainThread]: End processing [poaurk]: success
 [2024-05-11 19:37:38] INFO root fetch - main [MainThread]: Store serial: [23163134]
+[2024-05-11 19:39:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163134]
+[2024-05-11 19:39:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: supervisuallyz
+[2024-05-11 19:39:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezomero
+[2024-05-11 19:39:47] INFO root fetch - processPackages [ezomero]: New version: [3.0.0] Old Version: [2.1.0]
+[2024-05-11 19:39:47] INFO root fetch - processPackages [supervisuallyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:39:47] INFO root fetch - processPackages [ezomero]: Downloading https://files.pythonhosted.org/packages/4e/0d/99a111e684c886795f85ba4a2d3fa063c1687372aa53284f7ca92bc40864/ezomero-2.1.0.tar.gz
+[2024-05-11 19:39:47] INFO root fetch - processPackages [supervisuallyz]: Downloading https://files.pythonhosted.org/packages/77/d6/64b82335905aa0fbb37c70892ea2735cdb24e53fa9d6e0463710ed463cf9/supervisuallyz-1.1.tar.gz
+[2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: Downloading https://files.pythonhosted.org/packages/8a/2b/3b0c3dd046b7f95651ccb31e8dd50b8f6939e6715b0c2cd8945b091d45eb/ezomero-3.0.0.tar.gz
+[2024-05-11 19:39:48] INFO root fetch - processPackages [supervisuallyz]: Downloading https://files.pythonhosted.org/packages/5a/70/38a4794a2e23a2fdac27e4e8df05c101d65b4e1bb05377ae3a093f677dbc/supervisuallyz-2.1.tar.gz
+[2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: executing diffoscope
+[2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezomero-2.1.0.tar.gz tmp/ezomero-3.0.0.tar.gz --markdown 20240511/e/ezomero/2.1.0-3.0.0/README.md --exclude *.pyd
+[2024-05-11 19:39:48] INFO root fetch - processPackages [supervisuallyz]: executing diffoscope
+[2024-05-11 19:39:48] INFO root fetch - processPackages [supervisuallyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supervisuallyz-1.1.tar.gz tmp/supervisuallyz-2.1.tar.gz --markdown 20240511/s/supervisuallyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:39:48] INFO root fetch - processPackages [supervisuallyz]: Remove: archive file [/home/abi/fetcher/tmp/supervisuallyz-1.1.tar.gz]
+[2024-05-11 19:39:48] INFO root fetch - processPackages [supervisuallyz]: Remove: archive file [/home/abi/fetcher/tmp/supervisuallyz-2.1.tar.gz]
+[2024-05-11 19:39:48] INFO root fetch - main [MainThread]: End processing [supervisuallyz]: success
+[2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: Remove: archive file [/home/abi/fetcher/tmp/ezomero-2.1.0.tar.gz]
+[2024-05-11 19:39:48] INFO root fetch - processPackages [ezomero]: Remove: archive file [/home/abi/fetcher/tmp/ezomero-3.0.0.tar.gz]
+[2024-05-11 19:39:48] INFO root fetch - main [MainThread]: End processing [ezomero]: success
+[2024-05-11 19:39:48] INFO root fetch - main [MainThread]: Store serial: [23163139]
