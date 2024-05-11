@@ -18758,3 +18758,12 @@
 [2024-05-11 17:19:54] INFO root fetch - processPackages [hotsos]: Remove: archive file [/home/abi/fetcher/tmp/hotsos-1.17.0.post9.tar.gz]
 [2024-05-11 17:19:54] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2024-05-11 17:19:54] INFO root fetch - main [MainThread]: Store serial: [23162230]
+[2024-05-11 17:21:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162230]
+[2024-05-11 17:22:03] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: habits.txt
+[2024-05-11 17:22:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: catastasisz
+[2024-05-11 17:22:03] WARNING root fetch - processPackages [habits.txt]: Skipping, unable to determine old version
+[2024-05-11 17:22:03] INFO root fetch - main [MainThread]: End processing [habits.txt] error
+[2024-05-11 17:22:03] WARNING root fetch - processPackages [catastasisz]: Skipping, unable to determine old version
+[2024-05-11 17:22:03] INFO root fetch - main [MainThread]: End processing [catastasisz] error
+[2024-05-11 17:22:03] INFO root fetch - main [MainThread]: Store serial: [23162240]
