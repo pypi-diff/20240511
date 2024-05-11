@@ -9891,3 +9891,66 @@
 [2024-05-11 06:44:56] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.5.tar.gz]
 [2024-05-11 06:44:56] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
 [2024-05-11 06:44:56] INFO root fetch - main [MainThread]: Store serial: [23157334]
+[2024-05-11 06:47:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157334]
+[2024-05-11 06:47:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nnfasta
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unipark
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: niwatoko
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ovos-plugin-manager
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bisos.facter
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pagination-sorting
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mistimez
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tswanaz
+[2024-05-11 06:47:05] INFO root fetch - processPackages [bisos.facter]: New version: [0.6] Old Version: [0.5]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [niwatoko]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [nnfasta]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [unipark]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/22/74/12634fa95cc198155455a3496b687b818f26118257ae8d82f085c2ddbb55/bisos.facter-0.5.tar.gz
+[2024-05-11 06:47:05] WARNING root fetch - processPackages [pagination-sorting]: Skipping, unable to determine old version
+[2024-05-11 06:47:05] WARNING root fetch - processPackages [tswanaz]: Skipping, unable to determine old version
+[2024-05-11 06:47:05] INFO root fetch - main [MainThread]: End processing [pagination-sorting] error
+[2024-05-11 06:47:05] INFO root fetch - main [MainThread]: End processing [tswanaz] error
+[2024-05-11 06:47:05] INFO root fetch - processPackages [mistimez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:47:05] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/4e/c3/1c7ed4f26b1b9cc648b71504527f94c7079a5e291de6426719031a060ef2/nnfasta-0.1.8.tar.gz
+[2024-05-11 06:47:05] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/4a/87/7cc3161b41e9d822ce03d7dafc6b787dfaef37dbf9191fd2e8a59eae013d/niwatoko-1.1.0.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/b2/37/1a222e9f15849fb1ebcafce5a7ba00f48fc94ba80438f3c9e243ce6b66c3/ovos_plugin_manager-0.0.8a3-py3-none-any.whl
+[2024-05-11 06:47:06] INFO root fetch - processPackages [mistimez]: Downloading https://files.pythonhosted.org/packages/72/5c/edce30c394173a1ea3dd9ff46ab748dd2930517136a7e7ecc10f9c4db3a7/mistimez-1.1.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [unipark]: Downloading https://files.pythonhosted.org/packages/fd/61/21b37f988acb0d512b163b77ac1081271cf540b6ba94591b93e35ff6ec85/unipark-0.0.4.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/0a/e4/23b21ef3877aed7008b99cbb63b8408d5d909cf6612653cede145257e2fb/niwatoko-1.1.1.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [nnfasta]: Downloading https://files.pythonhosted.org/packages/a8/4d/85bc07885211c7241d77234746e352e8814e59375b5f333c82680206268b/nnfasta-0.1.9.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/44/1e/e949b75b8d4affc54b6574603a26df2268ddd5074d921b8d9ae7ece8d5ab/bisos.facter-0.6.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/52/e2/f57129caaddb3c7ec480ea84cd54a36c5f47dec4dff4add3d7d3eea6e6a8/ovos_plugin_manager-0.0.9-py3-none-any.whl
+[2024-05-11 06:47:06] INFO root fetch - processPackages [niwatoko]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [niwatoko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niwatoko-1.1.0.tar.gz tmp/niwatoko-1.1.1.tar.gz --markdown 20240511/n/niwatoko/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [nnfasta]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [nnfasta]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nnfasta-0.1.8.tar.gz tmp/nnfasta-0.1.9.tar.gz --markdown 20240511/n/nnfasta/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [mistimez]: Downloading https://files.pythonhosted.org/packages/43/b2/7ddef6f9611e74a075dff8f794af4b18413ef54c99e8e51f1bb273cbb96a/mistimez-2.1.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [bisos.facter]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [bisos.facter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.facter-0.5.tar.gz tmp/bisos.facter-0.6.tar.gz --markdown 20240511/b/bisos.facter/0.5-0.6/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20240511/o/ovos-plugin-manager/0.0.8a3-0.0.9/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [unipark]: Downloading https://files.pythonhosted.org/packages/f3/00/a9f90baac1bab25f54eb4894668b1df110099d0bf8d52dd1eb54513da7d7/unipark-0.0.5.tar.gz
+[2024-05-11 06:47:06] INFO root fetch - processPackages [unipark]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [unipark]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unipark-0.0.4.tar.gz tmp/unipark-0.0.5.tar.gz --markdown 20240511/u/unipark/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [mistimez]: executing diffoscope
+[2024-05-11 06:47:06] INFO root fetch - processPackages [mistimez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mistimez-1.1.tar.gz tmp/mistimez-2.1.tar.gz --markdown 20240511/m/mistimez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:47:06] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.8.tar.gz]
+[2024-05-11 06:47:06] INFO root fetch - processPackages [nnfasta]: Remove: archive file [/home/abi/fetcher/tmp/nnfasta-0.1.9.tar.gz]
+[2024-05-11 06:47:06] INFO root fetch - main [MainThread]: End processing [nnfasta]: success
+[2024-05-11 06:47:07] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.5.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.6.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
+[2024-05-11 06:47:07] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.0.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.1.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
+[2024-05-11 06:47:07] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip]
+[2024-05-11 06:47:07] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip]
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2024-05-11 06:47:07] INFO root fetch - processPackages [mistimez]: Remove: archive file [/home/abi/fetcher/tmp/mistimez-1.1.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - processPackages [mistimez]: Remove: archive file [/home/abi/fetcher/tmp/mistimez-2.1.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: End processing [mistimez]: success
+[2024-05-11 06:47:07] INFO root fetch - processPackages [unipark]: Remove: archive file [/home/abi/fetcher/tmp/unipark-0.0.4.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - processPackages [unipark]: Remove: archive file [/home/abi/fetcher/tmp/unipark-0.0.5.tar.gz]
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: End processing [unipark]: success
+[2024-05-11 06:47:07] INFO root fetch - main [MainThread]: Store serial: [23157363]
