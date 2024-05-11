@@ -8777,3 +8777,48 @@
 [2024-05-11 05:17:33] INFO root fetch - processPackages [keras-cv-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras_cv_nightly-0.9.0.dev2024043000.tar.gz]
 [2024-05-11 05:17:33] INFO root fetch - main [MainThread]: End processing [keras-cv-nightly]: success
 [2024-05-11 05:17:33] INFO root fetch - main [MainThread]: Store serial: [23156917]
+[2024-05-11 05:19:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156917]
+[2024-05-11 05:19:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mlpr
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: machinz
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyopenhc
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sofa-score-data
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dp-launching-app
+[2024-05-11 05:19:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: evorbf
+[2024-05-11 05:19:42] WARNING root fetch - processPackages [machinz]: Skipping, unable to determine old version
+[2024-05-11 05:19:42] INFO root fetch - main [MainThread]: End processing [machinz] error
+[2024-05-11 05:19:42] INFO root fetch - processPackages [dp-launching-app]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 05:19:42] INFO root fetch - processPackages [evorbf]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 05:19:42] WARNING root fetch - processPackages [mlpr]: Skipping, unable to determine old version
+[2024-05-11 05:19:42] INFO root fetch - main [MainThread]: End processing [mlpr] error
+[2024-05-11 05:19:42] INFO root fetch - processPackages [sofa-score-data]: New version: [0.4.0] Old Version: [0.1.0]
+[2024-05-11 05:19:42] INFO root fetch - processPackages [pyopenhc]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 05:19:42] INFO root fetch - processPackages [sofa-score-data]: Downloading https://files.pythonhosted.org/packages/46/1a/25020ceae9be84ba2b483fb610de5879afa2bc0aa5e5b9ab6568a052b095/sofa_score_data-0.1.0.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [dp-launching-app]: Downloading https://files.pythonhosted.org/packages/ca/30/d76024d2c596bf28608a43cbadf383ec4effd53422d0ec3e887feffdd216/dp-launching-app-0.0.1.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [evorbf]: Downloading https://files.pythonhosted.org/packages/be/cc/fb8c7ee742111ef75aa121dcbee36a22c2cbd0d5a623452c694d26bcb23e/evorbf-0.1.0.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/96/f0/07ee50ed749c5a136b77248d4073f94685a1b4fe4462b3215c095e163fbf/pyopenhc-0.0.6-py3-none-win_amd64.whl
+[2024-05-11 05:19:42] INFO root fetch - processPackages [evorbf]: Downloading https://files.pythonhosted.org/packages/6b/5b/b35c309ab9ec12a6365c11fc355821c2c1313ec94db25ad29917ab5bfedf/evorbf-0.2.0.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [sofa-score-data]: Downloading https://files.pythonhosted.org/packages/d9/5c/db47a6347ce2da25468da8e84749fe462fa8ca7a21ce36322c5c33d0ea2b/sofa_score_data-0.4.0.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [dp-launching-app]: Downloading https://files.pythonhosted.org/packages/47/81/9dc0ad346f68043fc884a5c4bbaef7664f0f2f0feb2f79459878479eded6/dp-launching-app-0.0.2.tar.gz
+[2024-05-11 05:19:42] INFO root fetch - processPackages [pyopenhc]: Downloading https://files.pythonhosted.org/packages/65/83/b443f018038fada27f16afe12569f0dc43dcb3b22eef2c4b7c5f3386c743/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl
+[2024-05-11 05:19:42] INFO root fetch - processPackages [evorbf]: executing diffoscope
+[2024-05-11 05:19:42] INFO root fetch - processPackages [evorbf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evorbf-0.1.0.tar.gz tmp/evorbf-0.2.0.tar.gz --markdown 20240511/e/evorbf/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 05:19:42] INFO root fetch - processPackages [dp-launching-app]: executing diffoscope
+[2024-05-11 05:19:42] INFO root fetch - processPackages [dp-launching-app]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dp-launching-app-0.0.1.tar.gz tmp/dp-launching-app-0.0.2.tar.gz --markdown 20240511/d/dp-launching-app/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 05:19:42] INFO root fetch - processPackages [sofa-score-data]: executing diffoscope
+[2024-05-11 05:19:42] INFO root fetch - processPackages [sofa-score-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sofa_score_data-0.1.0.tar.gz tmp/sofa_score_data-0.4.0.tar.gz --markdown 20240511/s/sofa-score-data/0.1.0-0.4.0/README.md --exclude *.pyd
+[2024-05-11 05:19:43] INFO root fetch - processPackages [pyopenhc]: executing diffoscope
+[2024-05-11 05:19:43] INFO root fetch - processPackages [pyopenhc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyopenhc-0.0.6-py3-none-win_amd64.whl.zip tmp/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl.zip --markdown 20240511/p/pyopenhc/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 05:19:43] INFO root fetch - processPackages [dp-launching-app]: Remove: archive file [/home/abi/fetcher/tmp/dp-launching-app-0.0.1.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - processPackages [dp-launching-app]: Remove: archive file [/home/abi/fetcher/tmp/dp-launching-app-0.0.2.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - main [MainThread]: End processing [dp-launching-app]: success
+[2024-05-11 05:19:43] INFO root fetch - processPackages [sofa-score-data]: Remove: archive file [/home/abi/fetcher/tmp/sofa_score_data-0.1.0.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - processPackages [sofa-score-data]: Remove: archive file [/home/abi/fetcher/tmp/sofa_score_data-0.4.0.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - main [MainThread]: End processing [sofa-score-data]: success
+[2024-05-11 05:19:43] INFO root fetch - processPackages [evorbf]: Remove: archive file [/home/abi/fetcher/tmp/evorbf-0.1.0.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - processPackages [evorbf]: Remove: archive file [/home/abi/fetcher/tmp/evorbf-0.2.0.tar.gz]
+[2024-05-11 05:19:43] INFO root fetch - main [MainThread]: End processing [evorbf]: success
+[2024-05-11 05:19:43] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.6-py3-none-win_amd64.whl.zip]
+[2024-05-11 05:19:43] INFO root fetch - processPackages [pyopenhc]: Remove: archive file [/home/abi/fetcher/tmp/pyopenhc-0.0.7-py3-none-manylinux1_x86_64.whl.zip]
+[2024-05-11 05:19:43] INFO root fetch - main [MainThread]: End processing [pyopenhc]: success
+[2024-05-11 05:19:43] INFO root fetch - main [MainThread]: Store serial: [23156935]
