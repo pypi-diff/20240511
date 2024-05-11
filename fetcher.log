@@ -8484,3 +8484,30 @@
 [2024-05-11 04:57:59] INFO root fetch - processPackages [loessicz]: Remove: archive file [/home/abi/fetcher/tmp/loessicz-2.1.tar.gz]
 [2024-05-11 04:57:59] INFO root fetch - main [MainThread]: End processing [loessicz]: success
 [2024-05-11 04:57:59] INFO root fetch - main [MainThread]: Store serial: [23156798]
+[2024-05-11 05:00:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156798]
+[2024-05-11 05:00:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytdl-sub
+[2024-05-11 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beancount-data
+[2024-05-11 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: register-transfer
+[2024-05-11 05:00:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: urethroplasticz
+[2024-05-11 05:00:07] INFO root fetch - processPackages [beancount-data]: New version: [2.0.3] Old Version: [0.1.5]
+[2024-05-11 05:00:08] WARNING root fetch - processPackages [register-transfer]: Skipping, unable to determine old version
+[2024-05-11 05:00:08] INFO root fetch - main [MainThread]: End processing [register-transfer] error
+[2024-05-11 05:00:08] WARNING root fetch - processPackages [urethroplasticz]: Skipping, unable to determine old version
+[2024-05-11 05:00:08] INFO root fetch - main [MainThread]: End processing [urethroplasticz] error
+[2024-05-11 05:00:08] INFO root fetch - processPackages [ytdl-sub]: New version: [2024.5.11] Old Version: [2024.4.3]
+[2024-05-11 05:00:08] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/a5/b5/553f12abb26f5cfcf10da70f5645505ef3287819ecbf3e1a23e2b2906ae4/beancount-data-0.1.5.tar.gz
+[2024-05-11 05:00:08] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/c7/a2/efe49bb16ad663f2e5b793c3c3952dc89417938444d33d6f8c86f1889c3a/ytdl-sub-2024.4.3.tar.gz
+[2024-05-11 05:00:08] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/ed/d4/56114464fa432d95ac58b07c476eedbb9bdd83d00f1a5efd96ec89468adc/beancount_data-2.0.3.tar.gz
+[2024-05-11 05:00:08] INFO root fetch - processPackages [beancount-data]: executing diffoscope
+[2024-05-11 05:00:08] INFO root fetch - processPackages [beancount-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount-data-0.1.5.tar.gz tmp/beancount_data-2.0.3.tar.gz --markdown 20240511/b/beancount-data/0.1.5-2.0.3/README.md --exclude *.pyd
+[2024-05-11 05:00:08] INFO root fetch - processPackages [ytdl-sub]: Downloading https://files.pythonhosted.org/packages/e9/f4/93caecadfdc3c95b7feb85447cb26e19a27a0e6c1f3abe1f82c42b2949ee/ytdl_sub-2024.5.11.tar.gz
+[2024-05-11 05:00:08] INFO root fetch - processPackages [ytdl-sub]: executing diffoscope
+[2024-05-11 05:00:08] INFO root fetch - processPackages [ytdl-sub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytdl-sub-2024.4.3.tar.gz tmp/ytdl_sub-2024.5.11.tar.gz --markdown 20240511/y/ytdl-sub/2024.4.3-2024.5.11/README.md --exclude *.pyd
+[2024-05-11 05:00:09] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount-data-0.1.5.tar.gz]
+[2024-05-11 05:00:09] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount_data-2.0.3.tar.gz]
+[2024-05-11 05:00:09] INFO root fetch - main [MainThread]: End processing [beancount-data]: success
+[2024-05-11 05:00:09] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl-sub-2024.4.3.tar.gz]
+[2024-05-11 05:00:09] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.5.11.tar.gz]
+[2024-05-11 05:00:09] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
+[2024-05-11 05:00:09] INFO root fetch - main [MainThread]: Store serial: [23156812]
