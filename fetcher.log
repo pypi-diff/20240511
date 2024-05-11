@@ -21681,3 +21681,27 @@
 [2024-05-11 20:36:40] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.4.tar.gz]
 [2024-05-11 20:36:40] INFO root fetch - main [MainThread]: End processing [musical_games]: success
 [2024-05-11 20:36:40] INFO root fetch - main [MainThread]: Store serial: [23163542]
+[2024-05-11 20:38:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163542]
+[2024-05-11 20:38:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 20:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyplejd
+[2024-05-11 20:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-restit
+[2024-05-11 20:38:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ehfuweufh
+[2024-05-11 20:38:49] INFO root fetch - processPackages [pyplejd]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 20:38:49] WARNING root fetch - processPackages [ehfuweufh]: Skipping, unable to determine old version
+[2024-05-11 20:38:49] INFO root fetch - main [MainThread]: End processing [ehfuweufh] error
+[2024-05-11 20:38:49] INFO root fetch - processPackages [django-restit]: New version: [4.2.9] Old Version: [4.2.8]
+[2024-05-11 20:38:49] INFO root fetch - processPackages [pyplejd]: Downloading https://files.pythonhosted.org/packages/f9/4a/9bace7f1d131c43be9a25a51a28a8f2cd3b999691a75964616c936142828/pyplejd-0.8.0.tar.gz
+[2024-05-11 20:38:49] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/c2/a7/9a624d19b03f5a2774d34ae27fa11ab51ecdc59b679adabd04219cc8b435/django_restit-4.2.8.tar.gz
+[2024-05-11 20:38:49] INFO root fetch - processPackages [pyplejd]: Downloading https://files.pythonhosted.org/packages/e1/5d/5ea26422e69a83fd59239471f9ecda80c72b950697fe8a6eeb8ec5396331/pyplejd-0.9.0.tar.gz
+[2024-05-11 20:38:49] INFO root fetch - processPackages [pyplejd]: executing diffoscope
+[2024-05-11 20:38:49] INFO root fetch - processPackages [pyplejd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplejd-0.8.0.tar.gz tmp/pyplejd-0.9.0.tar.gz --markdown 20240511/p/pyplejd/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 20:38:49] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/04/6a/4a0798142c60a6490ec67b5805d087bb35d3e9fc4b5da82c2af6c231a3d8/django_restit-4.2.9.tar.gz
+[2024-05-11 20:38:50] INFO root fetch - processPackages [django-restit]: executing diffoscope
+[2024-05-11 20:38:50] INFO root fetch - processPackages [django-restit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_restit-4.2.8.tar.gz tmp/django_restit-4.2.9.tar.gz --markdown 20240511/d/django-restit/4.2.8-4.2.9/README.md --exclude *.pyd
+[2024-05-11 20:38:50] INFO root fetch - processPackages [pyplejd]: Remove: archive file [/home/abi/fetcher/tmp/pyplejd-0.8.0.tar.gz]
+[2024-05-11 20:38:50] INFO root fetch - processPackages [pyplejd]: Remove: archive file [/home/abi/fetcher/tmp/pyplejd-0.9.0.tar.gz]
+[2024-05-11 20:38:50] INFO root fetch - main [MainThread]: End processing [pyplejd]: success
+[2024-05-11 20:38:51] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.8.tar.gz]
+[2024-05-11 20:38:51] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
+[2024-05-11 20:38:51] INFO root fetch - main [MainThread]: End processing [django-restit]: success
+[2024-05-11 20:38:51] INFO root fetch - main [MainThread]: Store serial: [23163553]
