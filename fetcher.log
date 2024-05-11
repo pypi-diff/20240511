@@ -16615,3 +16615,48 @@
 [2024-05-11 14:52:46] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b3.tar.gz]
 [2024-05-11 14:52:46] INFO root fetch - main [MainThread]: End processing [notolog]: success
 [2024-05-11 14:52:46] INFO root fetch - main [MainThread]: Store serial: [23161169]
+[2024-05-11 14:54:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161169]
+[2024-05-11 14:54:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easyDataverse
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backtest-pro
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: chokeysz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dynaddrmgr
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scrapeddit
+[2024-05-11 14:54:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: semantic-chunkers
+[2024-05-11 14:54:55] WARNING root fetch - processPackages [backtest-pro]: Skipping, unable to determine old version
+[2024-05-11 14:54:55] INFO root fetch - main [MainThread]: End processing [backtest-pro] error
+[2024-05-11 14:54:55] INFO root fetch - processPackages [scrapeddit]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-11 14:54:55] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/bf/05/b0175e92aca23e7112911d6ec5529d097c6485ae98230bb905445413d97b/scrapeddit-0.2.3.tar.gz
+[2024-05-11 14:54:55] WARNING root fetch - processPackages [chokeysz]: Skipping, unable to determine old version
+[2024-05-11 14:54:55] INFO root fetch - main [MainThread]: End processing [chokeysz] error
+[2024-05-11 14:54:55] INFO root fetch - processPackages [dynaddrmgr]: New version: [0.5.6] Old Version: [0.5.5]
+[2024-05-11 14:54:55] INFO root fetch - processPackages [semantic-chunkers]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 14:54:55] INFO root fetch - processPackages [easyDataverse]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 14:54:55] INFO root fetch - processPackages [easyDataverse]: Downloading https://files.pythonhosted.org/packages/a7/fe/f4d804d46efef11de7caf1c1f259929e04639c6eaaa9e70b7504a0164e01/easydataverse-0.4.0.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [dynaddrmgr]: Downloading https://files.pythonhosted.org/packages/4f/4c/1e566bae75cd77f3f9277fe103489eb5154f77bd60ec43462921176c3f19/dynaddrmgr-0.5.5.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [semantic-chunkers]: Downloading https://files.pythonhosted.org/packages/c9/f2/6a27ef4db77a09af3565bde8a2d18f4083c15b244effc69736df98a9a172/semantic_chunkers-0.0.1.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/d8/f3/8b2a3dd535936a2f31fe0a26ffa9c5c479e0e98139e33caa51694b6603b8/scrapeddit-0.2.4.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 14:54:55] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.2.3.tar.gz tmp/scrapeddit-0.2.4.tar.gz --markdown 20240511/s/scrapeddit/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-11 14:54:55] INFO root fetch - processPackages [easyDataverse]: Downloading https://files.pythonhosted.org/packages/ca/93/41018ed25aa47ed005ad569a488cc60083376457483f3fbc59f707bb732a/easydataverse-0.4.1.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [semantic-chunkers]: Downloading https://files.pythonhosted.org/packages/5d/35/b3540743953dd79fe6d5858414a062cd2d98d5b9c377dc30fb82205c4f0f/semantic_chunkers-0.0.2.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [dynaddrmgr]: Downloading https://files.pythonhosted.org/packages/34/cb/8c78ec31e04d0bd7f60f5597c0b6bcb34dc97216fd12573c5e33306a562f/dynaddrmgr-0.5.6.tar.gz
+[2024-05-11 14:54:55] INFO root fetch - processPackages [semantic-chunkers]: executing diffoscope
+[2024-05-11 14:54:55] INFO root fetch - processPackages [semantic-chunkers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/semantic_chunkers-0.0.1.tar.gz tmp/semantic_chunkers-0.0.2.tar.gz --markdown 20240511/s/semantic-chunkers/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 14:54:55] INFO root fetch - processPackages [easyDataverse]: executing diffoscope
+[2024-05-11 14:54:55] INFO root fetch - processPackages [easyDataverse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydataverse-0.4.0.tar.gz tmp/easydataverse-0.4.1.tar.gz --markdown 20240511/e/easyDataverse/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 14:54:55] INFO root fetch - processPackages [dynaddrmgr]: executing diffoscope
+[2024-05-11 14:54:55] INFO root fetch - processPackages [dynaddrmgr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dynaddrmgr-0.5.5.tar.gz tmp/dynaddrmgr-0.5.6.tar.gz --markdown 20240511/d/dynaddrmgr/0.5.5-0.5.6/README.md --exclude *.pyd
+[2024-05-11 14:54:56] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.3.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.4.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 14:54:56] INFO root fetch - processPackages [easyDataverse]: Remove: archive file [/home/abi/fetcher/tmp/easydataverse-0.4.0.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - processPackages [easyDataverse]: Remove: archive file [/home/abi/fetcher/tmp/easydataverse-0.4.1.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - main [MainThread]: End processing [easyDataverse]: success
+[2024-05-11 14:54:56] INFO root fetch - processPackages [dynaddrmgr]: Remove: archive file [/home/abi/fetcher/tmp/dynaddrmgr-0.5.5.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - processPackages [dynaddrmgr]: Remove: archive file [/home/abi/fetcher/tmp/dynaddrmgr-0.5.6.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - main [MainThread]: End processing [dynaddrmgr]: success
+[2024-05-11 14:54:56] INFO root fetch - processPackages [semantic-chunkers]: Remove: archive file [/home/abi/fetcher/tmp/semantic_chunkers-0.0.1.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - processPackages [semantic-chunkers]: Remove: archive file [/home/abi/fetcher/tmp/semantic_chunkers-0.0.2.tar.gz]
+[2024-05-11 14:54:56] INFO root fetch - main [MainThread]: End processing [semantic-chunkers]: success
+[2024-05-11 14:54:56] INFO root fetch - main [MainThread]: Store serial: [23161187]
