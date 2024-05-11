@@ -8020,3 +8020,15 @@
 [2024-05-11 04:25:20] WARNING root fetch - processPackages [septicaemiaz]: Skipping, unable to determine old version
 [2024-05-11 04:25:20] INFO root fetch - main [MainThread]: End processing [septicaemiaz] error
 [2024-05-11 04:25:20] INFO root fetch - main [MainThread]: Store serial: [23156622]
+[2024-05-11 04:27:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156622]
+[2024-05-11 04:27:28] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 04:27:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laudanidinez
+[2024-05-11 04:27:28] INFO root fetch - processPackages [laudanidinez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:27:29] INFO root fetch - processPackages [laudanidinez]: Downloading https://files.pythonhosted.org/packages/1e/03/fe4586938945836a1cf1b39221d95487bdcb3b2688032b67bcdf97d67d0d/laudanidinez-1.1.tar.gz
+[2024-05-11 04:27:29] INFO root fetch - processPackages [laudanidinez]: Downloading https://files.pythonhosted.org/packages/29/a3/c843f258e4219a794bc5f217afa89c9ff7e7dcef61481812b3039a2e1682/laudanidinez-2.1.tar.gz
+[2024-05-11 04:27:29] INFO root fetch - processPackages [laudanidinez]: executing diffoscope
+[2024-05-11 04:27:29] INFO root fetch - processPackages [laudanidinez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laudanidinez-1.1.tar.gz tmp/laudanidinez-2.1.tar.gz --markdown 20240511/l/laudanidinez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:27:30] INFO root fetch - processPackages [laudanidinez]: Remove: archive file [/home/abi/fetcher/tmp/laudanidinez-1.1.tar.gz]
+[2024-05-11 04:27:30] INFO root fetch - processPackages [laudanidinez]: Remove: archive file [/home/abi/fetcher/tmp/laudanidinez-2.1.tar.gz]
+[2024-05-11 04:27:30] INFO root fetch - main [MainThread]: End processing [laudanidinez]: success
+[2024-05-11 04:27:30] INFO root fetch - main [MainThread]: Store serial: [23156626]
