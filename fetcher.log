@@ -8535,3 +8535,36 @@
 [2024-05-11 05:02:20] INFO root fetch - processPackages [sphinxcontrib.asciinema]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib.asciinema-0.4.2.tar.gz]
 [2024-05-11 05:02:20] INFO root fetch - main [MainThread]: End processing [sphinxcontrib.asciinema]: success
 [2024-05-11 05:02:20] INFO root fetch - main [MainThread]: Store serial: [23156822]
+[2024-05-11 05:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156822]
+[2024-05-11 05:04:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: logotypiesz
+[2024-05-11 05:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: geotify
+[2024-05-11 05:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: translate-util
+[2024-05-11 05:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cycling-dynamics
+[2024-05-11 05:04:29] INFO root fetch - processPackages [cycling-dynamics]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 05:04:29] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/f8/3d/25a96d320177dcfed4f6f41558ddc08b83177bc7114e9e7fe89d6a6a1c71/cycling_dynamics-0.0.7.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [logotypiesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:04:29] INFO root fetch - processPackages [translate-util]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 05:04:29] WARNING root fetch - processPackages [geotify]: Skipping, unable to determine old version
+[2024-05-11 05:04:29] INFO root fetch - main [MainThread]: End processing [geotify] error
+[2024-05-11 05:04:29] INFO root fetch - processPackages [translate-util]: Downloading https://files.pythonhosted.org/packages/0c/f4/156d0ca1681d73d7e19b2cda5941458f4bdc26e7356ba1e176389be9417a/translate_util-1.1.1.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/64/2f/00e4212d68730aacdf9d6cbcbd10e7b37e08cbee91b5bf9e960f0ce2a043/cycling_dynamics-0.0.8.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [logotypiesz]: Downloading https://files.pythonhosted.org/packages/2b/11/b8f90e48db4e16a15d0b45ef3f4d0e4c5768b8ac5b83e871333e18492446/logotypiesz-1.1.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [translate-util]: Downloading https://files.pythonhosted.org/packages/23/62/f9d7beec045ae4ecfee610f8f92d49486b0cf42f84347299583c49d6177c/translate_util-1.1.2.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [cycling-dynamics]: executing diffoscope
+[2024-05-11 05:04:29] INFO root fetch - processPackages [cycling-dynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_dynamics-0.0.7.tar.gz tmp/cycling_dynamics-0.0.8.tar.gz --markdown 20240511/c/cycling-dynamics/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 05:04:29] INFO root fetch - processPackages [logotypiesz]: Downloading https://files.pythonhosted.org/packages/36/c5/9ce3c23f10dd310372933eed3cc7b1338c3056d7e22860b527a01973e0f6/logotypiesz-2.1.tar.gz
+[2024-05-11 05:04:29] INFO root fetch - processPackages [translate-util]: executing diffoscope
+[2024-05-11 05:04:29] INFO root fetch - processPackages [translate-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translate_util-1.1.1.tar.gz tmp/translate_util-1.1.2.tar.gz --markdown 20240511/t/translate-util/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 05:04:30] INFO root fetch - processPackages [logotypiesz]: executing diffoscope
+[2024-05-11 05:04:30] INFO root fetch - processPackages [logotypiesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logotypiesz-1.1.tar.gz tmp/logotypiesz-2.1.tar.gz --markdown 20240511/l/logotypiesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:04:30] INFO root fetch - processPackages [translate-util]: Remove: archive file [/home/abi/fetcher/tmp/translate_util-1.1.1.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - processPackages [translate-util]: Remove: archive file [/home/abi/fetcher/tmp/translate_util-1.1.2.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - main [MainThread]: End processing [translate-util]: success
+[2024-05-11 05:04:30] INFO root fetch - processPackages [logotypiesz]: Remove: archive file [/home/abi/fetcher/tmp/logotypiesz-1.1.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - processPackages [logotypiesz]: Remove: archive file [/home/abi/fetcher/tmp/logotypiesz-2.1.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - main [MainThread]: End processing [logotypiesz]: success
+[2024-05-11 05:04:30] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.7.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.8.tar.gz]
+[2024-05-11 05:04:30] INFO root fetch - main [MainThread]: End processing [cycling-dynamics]: success
+[2024-05-11 05:04:30] INFO root fetch - main [MainThread]: Store serial: [23156836]
