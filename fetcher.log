@@ -9756,3 +9756,51 @@
 [2024-05-11 06:34:04] INFO root fetch - processPackages [lusid-sdk-preview]: Remove: archive file [/home/abi/fetcher/tmp/lusid-sdk-preview-1.1.98.tar.gz]
 [2024-05-11 06:34:04] INFO root fetch - main [MainThread]: End processing [lusid-sdk-preview]: success
 [2024-05-11 06:34:04] INFO root fetch - main [MainThread]: Store serial: [23157279]
+[2024-05-11 06:36:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157279]
+[2024-05-11 06:36:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 06:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sherpa-onnx
+[2024-05-11 06:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlite-vec
+[2024-05-11 06:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datasette-sqlite-vec
+[2024-05-11 06:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sqlite-utils-sqlite-vec
+[2024-05-11 06:36:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: misadaptsz
+[2024-05-11 06:36:13] INFO root fetch - processPackages [misadaptsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 06:36:13] INFO root fetch - processPackages [datasette-sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sherpa-onnx]: New version: [1.9.24] Old Version: [1.9.23]
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/b4/a1/0ae425f4d3770c4f4ff42d7b3a36d781bd817c3afa0f80f2f7d321aa5a1e/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sqlite-vec]: Downloading https://files.pythonhosted.org/packages/1a/28/4602b5a8e159f374dbfae0d527615c9b51abe4ae6e851d29d4f15f2f390f/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl
+[2024-05-11 06:36:13] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/3e/76/fef2d789cfc77dad27da7bb0b71c8b97130403dc4146321285dab2da051a/sherpa-onnx-1.9.23.tar.gz
+[2024-05-11 06:36:13] INFO root fetch - processPackages [datasette-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/ad/5c/98cdcaca0d9a59f46a02b7a7b40f335b577153e301659de85ae1511c60eb/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl
+[2024-05-11 06:36:13] INFO root fetch - processPackages [misadaptsz]: Downloading https://files.pythonhosted.org/packages/d8/8f/defae93594a12bcd8a110643c0eabfb7e200c90978142ad3a359d22038e9/misadaptsz-1.1.tar.gz
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/28/b6/73e340a2b1ac711b9e797c2fa5791bf4258cb119dfc9f07fc12d032c02bb/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl
+[2024-05-11 06:36:14] INFO root fetch - processPackages [datasette-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/85/92/f6bf383acc8cedd5787e0fdae1544f13e5cd79735bec9de8ccf44450dde1/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-vec]: Downloading https://files.pythonhosted.org/packages/f0/25/0711b407aaae86022ef03d37e218d67740ba6258a9a421466e3c5cd8a442/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl
+[2024-05-11 06:36:14] INFO root fetch - processPackages [misadaptsz]: Downloading https://files.pythonhosted.org/packages/c9/b7/1df3923c17418fdcb74cdc55f8c6a109e6f3b0a940696f4fe3e31c2ea253/misadaptsz-2.1.tar.gz
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sherpa-onnx]: Downloading https://files.pythonhosted.org/packages/86/bd/4d28b893c72bd818c9dfa9b7a7d371f4f7f99e450b3a148aaf7800122285/sherpa-onnx-1.9.24.tar.gz
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: executing diffoscope
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl.zip tmp/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl.zip --markdown 20240511/s/sqlite-utils-sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 06:36:14] INFO root fetch - processPackages [datasette-sqlite-vec]: executing diffoscope
+[2024-05-11 06:36:14] INFO root fetch - processPackages [datasette-sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl.zip tmp/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl.zip --markdown 20240511/d/datasette-sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-vec]: executing diffoscope
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl.zip tmp/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl.zip --markdown 20240511/s/sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 06:36:14] INFO root fetch - processPackages [misadaptsz]: executing diffoscope
+[2024-05-11 06:36:14] INFO root fetch - processPackages [misadaptsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/misadaptsz-1.1.tar.gz tmp/misadaptsz-2.1.tar.gz --markdown 20240511/m/misadaptsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sherpa-onnx]: executing diffoscope
+[2024-05-11 06:36:14] INFO root fetch - processPackages [sherpa-onnx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sherpa-onnx-1.9.23.tar.gz tmp/sherpa-onnx-1.9.24.tar.gz --markdown 20240511/s/sherpa-onnx/1.9.23-1.9.24/README.md --exclude *.pyd
+[2024-05-11 06:36:15] INFO root fetch - processPackages [datasette-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - processPackages [datasette-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vec]: success
+[2024-05-11 06:36:15] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - main [MainThread]: End processing [sqlite-utils-sqlite-vec]: success
+[2024-05-11 06:36:15] INFO root fetch - processPackages [misadaptsz]: Remove: archive file [/home/abi/fetcher/tmp/misadaptsz-1.1.tar.gz]
+[2024-05-11 06:36:15] INFO root fetch - processPackages [misadaptsz]: Remove: archive file [/home/abi/fetcher/tmp/misadaptsz-2.1.tar.gz]
+[2024-05-11 06:36:15] INFO root fetch - main [MainThread]: End processing [misadaptsz]: success
+[2024-05-11 06:36:15] INFO root fetch - processPackages [sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - processPackages [sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl.zip]
+[2024-05-11 06:36:15] INFO root fetch - main [MainThread]: End processing [sqlite-vec]: success
+[2024-05-11 06:36:16] INFO root fetch - processPackages [sherpa-onnx]: Remove: archive file [/home/abi/fetcher/tmp/sherpa-onnx-1.9.23.tar.gz]
+[2024-05-11 06:36:16] INFO root fetch - processPackages [sherpa-onnx]: Remove: archive file [/home/abi/fetcher/tmp/sherpa-onnx-1.9.24.tar.gz]
+[2024-05-11 06:36:16] INFO root fetch - main [MainThread]: End processing [sherpa-onnx]: success
+[2024-05-11 06:36:16] INFO root fetch - main [MainThread]: Store serial: [23157298]
