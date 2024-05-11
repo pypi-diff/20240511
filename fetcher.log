@@ -9433,3 +9433,9 @@
 [2024-05-11 06:01:00] INFO root fetch - processPackages [memoriterz]: Remove: archive file [/home/abi/fetcher/tmp/memoriterz-2.1.tar.gz]
 [2024-05-11 06:01:00] INFO root fetch - main [MainThread]: End processing [memoriterz]: success
 [2024-05-11 06:01:00] INFO root fetch - main [MainThread]: Store serial: [23157157]
+[2024-05-11 06:03:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157157]
+[2024-05-11 06:03:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:03:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: etherialisedz
+[2024-05-11 06:03:09] WARNING root fetch - processPackages [etherialisedz]: Skipping, unable to determine old version
+[2024-05-11 06:03:09] INFO root fetch - main [MainThread]: End processing [etherialisedz] error
+[2024-05-11 06:03:09] INFO root fetch - main [MainThread]: Store serial: [23157161]
