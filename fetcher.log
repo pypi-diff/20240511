@@ -17293,3 +17293,42 @@
 [2024-05-11 15:43:55] WARNING root fetch - processPackages [lib-ml-REMLA10-2024]: Skipping, unable to determine old version
 [2024-05-11 15:43:55] INFO root fetch - main [MainThread]: End processing [lib-ml-REMLA10-2024] error
 [2024-05-11 15:43:55] INFO root fetch - main [MainThread]: Store serial: [23161463]
+[2024-05-11 15:45:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161463]
+[2024-05-11 15:46:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gekito
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nlp-interpreter
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: retranscribez
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hopcalitez
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marcel
+[2024-05-11 15:46:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: entity-recognition-lib
+[2024-05-11 15:46:04] INFO root fetch - processPackages [entity-recognition-lib]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 15:46:04] WARNING root fetch - processPackages [gekito]: Skipping, unable to determine old version
+[2024-05-11 15:46:04] INFO root fetch - main [MainThread]: End processing [gekito] error
+[2024-05-11 15:46:04] INFO root fetch - processPackages [retranscribez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:46:04] INFO root fetch - processPackages [entity-recognition-lib]: Downloading https://files.pythonhosted.org/packages/e7/1e/3141ba15abfe8a5fb3cd95d14a4190046ae11465810900430e5c97f50df8/entity_recognition_lib-0.1.2.tar.gz
+[2024-05-11 15:46:04] WARNING root fetch - processPackages [hopcalitez]: Skipping, unable to determine old version
+[2024-05-11 15:46:04] INFO root fetch - main [MainThread]: End processing [hopcalitez] error
+[2024-05-11 15:46:04] WARNING root fetch - processPackages [nlp-interpreter]: Skipping, unable to determine old version
+[2024-05-11 15:46:04] INFO root fetch - main [MainThread]: End processing [nlp-interpreter] error
+[2024-05-11 15:46:04] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-11 15:46:04] INFO root fetch - processPackages [retranscribez]: Downloading https://files.pythonhosted.org/packages/a7/b8/16d5f39d887de8e53f535cdf01c54f4f02f11acfaf6cf958f55a8447741e/retranscribez-1.1.tar.gz
+[2024-05-11 15:46:04] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2024-05-11 15:46:04] INFO root fetch - processPackages [entity-recognition-lib]: Downloading https://files.pythonhosted.org/packages/c8/73/480612d6739cb6e735529ec4064a3f1a1b51e5e1cc1221d2490522e0784e/entity_recognition_lib-0.1.3.tar.gz
+[2024-05-11 15:46:04] INFO root fetch - processPackages [retranscribez]: Downloading https://files.pythonhosted.org/packages/d1/0d/3de6eefa6ea7de615a18f0426c83e063ed7a5faf083ce259ea1db8ddd5e4/retranscribez-2.1.tar.gz
+[2024-05-11 15:46:04] INFO root fetch - processPackages [entity-recognition-lib]: executing diffoscope
+[2024-05-11 15:46:04] INFO root fetch - processPackages [entity-recognition-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/entity_recognition_lib-0.1.2.tar.gz tmp/entity_recognition_lib-0.1.3.tar.gz --markdown 20240511/e/entity-recognition-lib/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 15:46:04] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2024-05-11 15:46:05] INFO root fetch - processPackages [retranscribez]: executing diffoscope
+[2024-05-11 15:46:05] INFO root fetch - processPackages [retranscribez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retranscribez-1.1.tar.gz tmp/retranscribez-2.1.tar.gz --markdown 20240511/r/retranscribez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:46:05] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2024-05-11 15:46:05] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20240511/m/marcel/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-11 15:46:05] INFO root fetch - processPackages [entity-recognition-lib]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_lib-0.1.2.tar.gz]
+[2024-05-11 15:46:05] INFO root fetch - processPackages [entity-recognition-lib]: Remove: archive file [/home/abi/fetcher/tmp/entity_recognition_lib-0.1.3.tar.gz]
+[2024-05-11 15:46:05] INFO root fetch - main [MainThread]: End processing [entity-recognition-lib]: success
+[2024-05-11 15:46:05] INFO root fetch - processPackages [retranscribez]: Remove: archive file [/home/abi/fetcher/tmp/retranscribez-1.1.tar.gz]
+[2024-05-11 15:46:05] INFO root fetch - processPackages [retranscribez]: Remove: archive file [/home/abi/fetcher/tmp/retranscribez-2.1.tar.gz]
+[2024-05-11 15:46:05] INFO root fetch - main [MainThread]: End processing [retranscribez]: success
+[2024-05-11 15:46:06] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.8-py3-none-any.whl.zip]
+[2024-05-11 15:46:06] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
+[2024-05-11 15:46:06] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2024-05-11 15:46:06] INFO root fetch - main [MainThread]: Store serial: [23161482]
