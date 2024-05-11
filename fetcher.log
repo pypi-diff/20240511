@@ -14092,3 +14092,45 @@
 [2024-05-11 12:06:24] INFO root fetch - processPackages [clicra]: Remove: archive file [/home/abi/fetcher/tmp/clicra-0.2.2.tar.gz]
 [2024-05-11 12:06:24] INFO root fetch - main [MainThread]: End processing [clicra]: success
 [2024-05-11 12:06:24] INFO root fetch - main [MainThread]: Store serial: [23159826]
+[2024-05-11 12:08:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159826]
+[2024-05-11 12:08:34] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 12:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AdroitFisherman
+[2024-05-11 12:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: porphyriaz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wxhelper
+[2024-05-11 12:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-keras-nightly
+[2024-05-11 12:08:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: toycv
+[2024-05-11 12:08:34] INFO root fetch - processPackages [toycv]: New version: [0.3.4] Old Version: [0.3.2]
+[2024-05-11 12:08:34] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/10/28/83def78ee538d26e1efa062db59230d7e7632d5d19508381b9711f6fdc0f/toycv-0.3.2.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [AdroitFisherman]: New version: [0.0.27] Old Version: [0.0.26]
+[2024-05-11 12:08:34] WARNING root fetch - processPackages [wxhelper]: Skipping, unable to determine old version
+[2024-05-11 12:08:34] INFO root fetch - main [MainThread]: End processing [wxhelper] error
+[2024-05-11 12:08:34] INFO root fetch - processPackages [porphyriaz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:08:34] INFO root fetch - processPackages [tf-keras-nightly]: New version: [2.17.0.dev2024051109] Old Version: [2.17.0.dev2024051009]
+[2024-05-11 12:08:34] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/11/86/f1044958d1decaba03674eed38d5c7c16eaed2d642144c1f2af7fe6a7d66/AdroitFisherman-0.0.26.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [porphyriaz]: Downloading https://files.pythonhosted.org/packages/50/06/6f04930a775d0209d337a6f0c12a3b8be207d02151d12beb02fb8a7f4e3d/porphyriaz-1.1.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/36/bc/be2236a09fa99efdb3676bcd704f14b6b7237e87b946a7faf18abe1ab8be/toycv-0.3.4.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/7b/f7/fb62596ced8d9352a6bed2a3d09dee42042ad359971b5c95bd1d2e794d8a/tf_keras_nightly-2.17.0.dev2024051009.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [toycv]: executing diffoscope
+[2024-05-11 12:08:34] INFO root fetch - processPackages [toycv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toycv-0.3.2.tar.gz tmp/toycv-0.3.4.tar.gz --markdown 20240511/t/toycv/0.3.2-0.3.4/README.md --exclude *.pyd
+[2024-05-11 12:08:34] INFO root fetch - processPackages [AdroitFisherman]: Downloading https://files.pythonhosted.org/packages/cf/c5/d6596cf8084a4ab3683515f29c9401410b57916eb64e05f4dee9540d46f1/AdroitFisherman-0.0.27.tar.gz
+[2024-05-11 12:08:34] INFO root fetch - processPackages [porphyriaz]: Downloading https://files.pythonhosted.org/packages/dd/42/9ab0bff2dd5decc1874743bdb535bff6afa0a6f04011f592fa17a7854ab4/porphyriaz-2.1.tar.gz
+[2024-05-11 12:08:35] INFO root fetch - processPackages [tf-keras-nightly]: Downloading https://files.pythonhosted.org/packages/51/45/0021c3b2132fd3558280468b4d478fcef600bdb393fb28d4a022a7f609b7/tf_keras_nightly-2.17.0.dev2024051109.tar.gz
+[2024-05-11 12:08:35] INFO root fetch - processPackages [AdroitFisherman]: executing diffoscope
+[2024-05-11 12:08:35] INFO root fetch - processPackages [porphyriaz]: executing diffoscope
+[2024-05-11 12:08:35] INFO root fetch - processPackages [AdroitFisherman]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AdroitFisherman-0.0.26.tar.gz tmp/AdroitFisherman-0.0.27.tar.gz --markdown 20240511/A/AdroitFisherman/0.0.26-0.0.27/README.md --exclude *.pyd
+[2024-05-11 12:08:35] INFO root fetch - processPackages [porphyriaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/porphyriaz-1.1.tar.gz tmp/porphyriaz-2.1.tar.gz --markdown 20240511/p/porphyriaz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:08:35] INFO root fetch - processPackages [tf-keras-nightly]: executing diffoscope
+[2024-05-11 12:08:35] INFO root fetch - processPackages [tf-keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_keras_nightly-2.17.0.dev2024051009.tar.gz tmp/tf_keras_nightly-2.17.0.dev2024051109.tar.gz --markdown 20240511/t/tf-keras-nightly/2.17.0.dev2024051009-2.17.0.dev2024051109/README.md --exclude *.pyd
+[2024-05-11 12:08:35] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.2.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.4.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - main [MainThread]: End processing [toycv]: success
+[2024-05-11 12:08:35] INFO root fetch - processPackages [porphyriaz]: Remove: archive file [/home/abi/fetcher/tmp/porphyriaz-1.1.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - processPackages [porphyriaz]: Remove: archive file [/home/abi/fetcher/tmp/porphyriaz-2.1.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - main [MainThread]: End processing [porphyriaz]: success
+[2024-05-11 12:08:35] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.26.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - processPackages [AdroitFisherman]: Remove: archive file [/home/abi/fetcher/tmp/AdroitFisherman-0.0.27.tar.gz]
+[2024-05-11 12:08:35] INFO root fetch - main [MainThread]: End processing [AdroitFisherman]: success
+[2024-05-11 12:08:37] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051009.tar.gz]
+[2024-05-11 12:08:37] INFO root fetch - processPackages [tf-keras-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tf_keras_nightly-2.17.0.dev2024051109.tar.gz]
+[2024-05-11 12:08:37] INFO root fetch - main [MainThread]: End processing [tf-keras-nightly]: success
+[2024-05-11 12:08:37] INFO root fetch - main [MainThread]: Store serial: [23159839]
