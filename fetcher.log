@@ -22336,3 +22336,54 @@
 [2024-05-11 21:22:19] INFO root fetch - processPackages [codex-engine-pyqt]: Remove: archive file [/home/abi/fetcher/tmp/codex_engine_pyqt-0.1.1.tar.gz]
 [2024-05-11 21:22:19] INFO root fetch - main [MainThread]: End processing [codex-engine-pyqt]: success
 [2024-05-11 21:22:19] INFO root fetch - main [MainThread]: Store serial: [23163936]
+[2024-05-11 21:24:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163936]
+[2024-05-11 21:24:28] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pupiparousz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyyeti
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dearwatson
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hatch-gradle-version
+[2024-05-11 21:24:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: QuackOSM
+[2024-05-11 21:24:28] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-11 21:24:28] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [QuackOSM]: New version: [0.8.1] Old Version: [0.8.0]
+[2024-05-11 21:24:28] WARNING root fetch - processPackages [pupiparousz]: Skipping, unable to determine old version
+[2024-05-11 21:24:28] INFO root fetch - main [MainThread]: End processing [pupiparousz] error
+[2024-05-11 21:24:28] INFO root fetch - processPackages [hatch-gradle-version]: New version: [0.9.7] Old Version: [0.9.6]
+[2024-05-11 21:24:28] INFO root fetch - processPackages [pyyeti]: New version: [1.4.1.2] Old Version: [1.4.1.1]
+[2024-05-11 21:24:28] INFO root fetch - processPackages [dearwatson]: New version: [0.9.9] Old Version: [0.9.7]
+[2024-05-11 21:24:28] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/00/e1/cc3ec6218708a567eed9a51e4adcdba4723c3362d61eddc704bc6504df79/pyyeti-1.4.1.1.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [QuackOSM]: Downloading https://files.pythonhosted.org/packages/46/49/545ca92e12f5f758996b70dc567e0ee792785e16c94dffb6b794705773eb/quackosm-0.8.0.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/94/11/bfe5fdaf1d8a2f6f65da40bc82a57f268b5b3ae55a1708b49fb2e065d347/hatch_gradle_version-0.9.6.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/0f/ba/b35bd970c84ce962034af18fa9204693d404680e78cdfb8927d1c8166e80/dearwatson-0.9.7.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-11 21:24:28] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240511/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-11 21:24:28] INFO root fetch - processPackages [pyyeti]: Downloading https://files.pythonhosted.org/packages/3f/b9/a8132e269fd49885ae884048df7f5bc13dbc7b3e9ddaa3a691362e888157/pyyeti-1.4.1.2.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [QuackOSM]: Downloading https://files.pythonhosted.org/packages/ad/88/fb0e6c8aca674287c784188d72b1c37d3258e8a6f8373699d52b05863217/quackosm-0.8.1.tar.gz
+[2024-05-11 21:24:28] INFO root fetch - processPackages [hatch-gradle-version]: Downloading https://files.pythonhosted.org/packages/6e/96/1eaa0d8b36ff00f9963c4a4cae89e86d60f0c3e084d9022ec6b420fac37e/hatch_gradle_version-0.9.7.tar.gz
+[2024-05-11 21:24:29] INFO root fetch - processPackages [dearwatson]: Downloading https://files.pythonhosted.org/packages/51/ef/a9231ae823323fefdd6b2c48396a26841d854f32c634d25ea73af29197dc/dearwatson-0.9.9.tar.gz
+[2024-05-11 21:24:29] INFO root fetch - processPackages [hatch-gradle-version]: executing diffoscope
+[2024-05-11 21:24:29] INFO root fetch - processPackages [hatch-gradle-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hatch_gradle_version-0.9.6.tar.gz tmp/hatch_gradle_version-0.9.7.tar.gz --markdown 20240511/h/hatch-gradle-version/0.9.6-0.9.7/README.md --exclude *.pyd
+[2024-05-11 21:24:29] INFO root fetch - processPackages [QuackOSM]: executing diffoscope
+[2024-05-11 21:24:29] INFO root fetch - processPackages [QuackOSM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quackosm-0.8.0.tar.gz tmp/quackosm-0.8.1.tar.gz --markdown 20240511/Q/QuackOSM/0.8.0-0.8.1/README.md --exclude *.pyd
+[2024-05-11 21:24:29] INFO root fetch - processPackages [pyyeti]: executing diffoscope
+[2024-05-11 21:24:29] INFO root fetch - processPackages [pyyeti]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyyeti-1.4.1.1.tar.gz tmp/pyyeti-1.4.1.2.tar.gz --markdown 20240511/p/pyyeti/1.4.1.1-1.4.1.2/README.md --exclude *.pyd
+[2024-05-11 21:24:29] INFO root fetch - processPackages [dearwatson]: executing diffoscope
+[2024-05-11 21:24:29] INFO root fetch - processPackages [dearwatson]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dearwatson-0.9.7.tar.gz tmp/dearwatson-0.9.9.tar.gz --markdown 20240511/d/dearwatson/0.9.7-0.9.9/README.md --exclude *.pyd
+[2024-05-11 21:24:29] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-11 21:24:29] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-11 21:24:29] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-11 21:24:29] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.6.tar.gz]
+[2024-05-11 21:24:29] INFO root fetch - processPackages [hatch-gradle-version]: Remove: archive file [/home/abi/fetcher/tmp/hatch_gradle_version-0.9.7.tar.gz]
+[2024-05-11 21:24:29] INFO root fetch - main [MainThread]: End processing [hatch-gradle-version]: success
+[2024-05-11 21:24:30] INFO root fetch - processPackages [dearwatson]: Remove: archive file [/home/abi/fetcher/tmp/dearwatson-0.9.7.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - processPackages [dearwatson]: Remove: archive file [/home/abi/fetcher/tmp/dearwatson-0.9.9.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - main [MainThread]: End processing [dearwatson]: success
+[2024-05-11 21:24:30] INFO root fetch - processPackages [QuackOSM]: Remove: archive file [/home/abi/fetcher/tmp/quackosm-0.8.0.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - processPackages [QuackOSM]: Remove: archive file [/home/abi/fetcher/tmp/quackosm-0.8.1.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - main [MainThread]: End processing [QuackOSM]: success
+[2024-05-11 21:24:30] INFO root fetch - processPackages [pyyeti]: Remove: archive file [/home/abi/fetcher/tmp/pyyeti-1.4.1.1.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - processPackages [pyyeti]: Remove: archive file [/home/abi/fetcher/tmp/pyyeti-1.4.1.2.tar.gz]
+[2024-05-11 21:24:30] INFO root fetch - main [MainThread]: End processing [pyyeti]: success
+[2024-05-11 21:24:30] INFO root fetch - main [MainThread]: Store serial: [23163954]
