@@ -9589,3 +9589,18 @@
 [2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.7.tar.gz]
 [2024-05-11 06:18:39] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
 [2024-05-11 06:18:39] INFO root fetch - main [MainThread]: Store serial: [23157210]
+[2024-05-11 06:20:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157210]
+[2024-05-11 06:20:48] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 06:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gh_copilot_chat
+[2024-05-11 06:20:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metonymicallyz
+[2024-05-11 06:20:48] WARNING root fetch - processPackages [gh_copilot_chat]: Skipping, unable to determine old version
+[2024-05-11 06:20:48] INFO root fetch - main [MainThread]: End processing [gh_copilot_chat] error
+[2024-05-11 06:20:48] INFO root fetch - processPackages [metonymicallyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:20:48] INFO root fetch - processPackages [metonymicallyz]: Downloading https://files.pythonhosted.org/packages/81/e3/0dafd92e9a092e4a87a84267289cd5d275fa862cc5e3f42c972b618cee32/metonymicallyz-1.1.tar.gz
+[2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: Downloading https://files.pythonhosted.org/packages/0a/53/3457c606e2a20e0103a7078c1f2dbc695e66fe92404f23eae5b7e20691ef/metonymicallyz-2.1.tar.gz
+[2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: executing diffoscope
+[2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metonymicallyz-1.1.tar.gz tmp/metonymicallyz-2.1.tar.gz --markdown 20240511/m/metonymicallyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: Remove: archive file [/home/abi/fetcher/tmp/metonymicallyz-1.1.tar.gz]
+[2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: Remove: archive file [/home/abi/fetcher/tmp/metonymicallyz-2.1.tar.gz]
+[2024-05-11 06:20:49] INFO root fetch - main [MainThread]: End processing [metonymicallyz]: success
+[2024-05-11 06:20:49] INFO root fetch - main [MainThread]: Store serial: [23157217]
