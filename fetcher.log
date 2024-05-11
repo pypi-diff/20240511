@@ -2897,3 +2897,51 @@
 [2024-05-11 02:36:50] INFO root fetch - processPackages [hyperdrivepy]: Remove: archive file [/home/abi/fetcher/tmp/hyperdrivepy-0.9.2.tar.gz]
 [2024-05-11 02:36:50] INFO root fetch - main [MainThread]: End processing [hyperdrivepy]: success
 [2024-05-11 02:36:50] INFO root fetch - main [MainThread]: Store serial: [23154712]
+[2024-05-11 02:38:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154712]
+[2024-05-11 02:38:59] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 02:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pygformula
+[2024-05-11 02:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: altscore-workflow-builder
+[2024-05-11 02:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: graphix
+[2024-05-11 02:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: devon-agent
+[2024-05-11 02:38:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: connected-components-3d
+[2024-05-11 02:39:00] INFO root fetch - processPackages [devon-agent]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 02:39:00] INFO root fetch - processPackages [altscore-workflow-builder]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 02:39:00] INFO root fetch - processPackages [connected-components-3d]: New version: [3.9.1] Old Version: [3.9.0]
+[2024-05-11 02:39:00] INFO root fetch - processPackages [pygformula]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-11 02:39:00] INFO root fetch - processPackages [graphix]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 02:39:00] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/54/13/ae864c0a7d9753f4b1072a3d9773a6fa11f58a0766fe6acc1cd36d6dddb5/devon_agent-0.1.0.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/f0/fa/89cca82209a4c117e11fbf9e81a7731baafe7d98942d787c62e02ca375da/altscore_workflow_builder-0.0.8.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [connected-components-3d]: Downloading https://files.pythonhosted.org/packages/51/f7/273086ac8fbe360bd2595ef0d4dd153890299f2197dacb752a43441f87cf/connected-components-3d-3.9.0.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/16/64/653ef1880d9b9d5ce80df4cd6f194f1e39c8ecd14906dd6a940971308a93/devon_agent-0.1.1.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [altscore-workflow-builder]: Downloading https://files.pythonhosted.org/packages/68/8d/c9a42a6d012c1a9fb9ef55b57e3251bfa8d248169a64513b839c30038528/altscore_workflow_builder-0.0.9.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [pygformula]: Downloading https://files.pythonhosted.org/packages/b1/63/b23ea20ddd8ac3a7a85b7cfdb32428c1cee055222d8f0607dce0569afd17/pygformula-1.1.0.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [graphix]: Downloading https://files.pythonhosted.org/packages/55/56/2ee7cee01a55d8fb6b242b51621302df1334a910dacbd81b70bdaea7cebf/graphix-0.2.8.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [altscore-workflow-builder]: executing diffoscope
+[2024-05-11 02:39:00] INFO root fetch - processPackages [altscore-workflow-builder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/altscore_workflow_builder-0.0.8.tar.gz tmp/altscore_workflow_builder-0.0.9.tar.gz --markdown 20240511/a/altscore-workflow-builder/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 02:39:00] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-11 02:39:00] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.0.tar.gz tmp/devon_agent-0.1.1.tar.gz --markdown 20240511/d/devon-agent/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 02:39:00] INFO root fetch - processPackages [pygformula]: Downloading https://files.pythonhosted.org/packages/33/eb/9bb4b9a97eb1293e3aa727b14442543ffcff83e2f88505590dc5a9cf6707/pygformula-1.1.1.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [connected-components-3d]: Downloading https://files.pythonhosted.org/packages/14/97/5d0d6bde68a8f6a4eca89d60116c7e6c1761f7d410f586fecde73d7d67dc/connected-components-3d-3.9.1.tar.gz
+[2024-05-11 02:39:00] INFO root fetch - processPackages [pygformula]: executing diffoscope
+[2024-05-11 02:39:00] INFO root fetch - processPackages [pygformula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygformula-1.1.0.tar.gz tmp/pygformula-1.1.1.tar.gz --markdown 20240511/p/pygformula/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-11 02:39:01] INFO root fetch - processPackages [graphix]: Downloading https://files.pythonhosted.org/packages/37/b9/c4c062194517a8c3a51adecc3a9190ef521598491834da0d031eb713e30e/graphix-0.2.9.tar.gz
+[2024-05-11 02:39:01] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.8.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - processPackages [altscore-workflow-builder]: Remove: archive file [/home/abi/fetcher/tmp/altscore_workflow_builder-0.0.9.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - main [MainThread]: End processing [altscore-workflow-builder]: success
+[2024-05-11 02:39:01] INFO root fetch - processPackages [connected-components-3d]: executing diffoscope
+[2024-05-11 02:39:01] INFO root fetch - processPackages [connected-components-3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connected-components-3d-3.9.0.tar.gz tmp/connected-components-3d-3.9.1.tar.gz --markdown 20240511/c/connected-components-3d/3.9.0-3.9.1/README.md --exclude *.pyd
+[2024-05-11 02:39:01] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.0.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.1.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-11 02:39:01] INFO root fetch - processPackages [graphix]: executing diffoscope
+[2024-05-11 02:39:01] INFO root fetch - processPackages [graphix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphix-0.2.8.tar.gz tmp/graphix-0.2.9.tar.gz --markdown 20240511/g/graphix/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 02:39:01] INFO root fetch - processPackages [pygformula]: Remove: archive file [/home/abi/fetcher/tmp/pygformula-1.1.0.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - processPackages [pygformula]: Remove: archive file [/home/abi/fetcher/tmp/pygformula-1.1.1.tar.gz]
+[2024-05-11 02:39:01] INFO root fetch - main [MainThread]: End processing [pygformula]: success
+[2024-05-11 02:39:02] INFO root fetch - processPackages [graphix]: Remove: archive file [/home/abi/fetcher/tmp/graphix-0.2.8.tar.gz]
+[2024-05-11 02:39:02] INFO root fetch - processPackages [graphix]: Remove: archive file [/home/abi/fetcher/tmp/graphix-0.2.9.tar.gz]
+[2024-05-11 02:39:02] INFO root fetch - main [MainThread]: End processing [graphix]: success
+[2024-05-11 02:39:02] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.0.tar.gz]
+[2024-05-11 02:39:02] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.1.tar.gz]
+[2024-05-11 02:39:02] INFO root fetch - main [MainThread]: End processing [connected-components-3d]: success
+[2024-05-11 02:39:02] INFO root fetch - main [MainThread]: Store serial: [23154725]
