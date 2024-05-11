@@ -23396,3 +23396,54 @@
 [2024-05-11 22:38:56] INFO root fetch - processPackages [pyutplugins]: Remove: archive file [/home/abi/fetcher/tmp/pyutplugins-2.4.0.tar.gz]
 [2024-05-11 22:38:56] INFO root fetch - main [MainThread]: End processing [pyutplugins]: success
 [2024-05-11 22:38:56] INFO root fetch - main [MainThread]: Store serial: [23164407]
+[2024-05-11 22:41:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164407]
+[2024-05-11 22:41:05] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epiglotz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: uncranniedz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aipkgs-firebase
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AlgoGrade
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: connectome-interpreter
+[2024-05-11 22:41:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: llm-workflow
+[2024-05-11 22:41:05] INFO root fetch - processPackages [AlgoGrade]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 22:41:05] INFO root fetch - processPackages [aipkgs-firebase]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 22:41:05] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/33/90/206b7f28a7e746ae76657cb69afe50035d6aff011258781e2ece9766581b/AlgoGrade-1.0.8.tar.gz
+[2024-05-11 22:41:05] WARNING root fetch - processPackages [epiglotz]: Skipping, unable to determine old version
+[2024-05-11 22:41:05] INFO root fetch - main [MainThread]: End processing [epiglotz] error
+[2024-05-11 22:41:05] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/1a/d4/6c4f3e872c2147eb80fd6b4de119d764bb171be47edb4deea6ef436b7cd2/aipkgs_firebase-1.0.8.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [connectome-interpreter]: New version: [1.8.0] Old Version: [1.7.2]
+[2024-05-11 22:41:05] INFO root fetch - processPackages [uncranniedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:41:05] INFO root fetch - processPackages [llm-workflow]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-05-11 22:41:05] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [uncranniedz]: Downloading https://files.pythonhosted.org/packages/2c/89/56ba21288ea127db9469e32911b38adecd84457bcdb3bec6969a97f890bb/uncranniedz-1.1.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/15/7e/cf022a81cffe3d252ae794251f3263fe96aeedeeb6fe0fcca6a22a68658d/connectome_interpreter-1.7.2.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [llm-workflow]: Downloading https://files.pythonhosted.org/packages/a5/1e/ce70dd1923eb1eefb481e5da0a61a7d5df8a9c584cf418cf96489e8245c3/llm-workflow-0.0.6.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-11 22:41:05] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.8.tar.gz tmp/AlgoGrade-1.0.9.tar.gz --markdown 20240511/A/AlgoGrade/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 22:41:05] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/0b/8f/79aa4f49b126e07ecfc5de22c65081be588bc57ad24a2cebb390785e81e5/aipkgs_firebase-1.0.9.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 22:41:05] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-1.0.8.tar.gz tmp/aipkgs_firebase-1.0.9.tar.gz --markdown 20240511/a/aipkgs-firebase/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 22:41:05] INFO root fetch - processPackages [uncranniedz]: Downloading https://files.pythonhosted.org/packages/ce/e0/051a7927a4ac101b3bd729b892d011d55473f26fec86493a8e8f62d1604a/uncranniedz-2.1.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [connectome-interpreter]: Downloading https://files.pythonhosted.org/packages/7b/9b/62f2857f5b5750cdbb7db80c21354247fdfc19c7a6f85fa9cfe1caefb567/connectome_interpreter-1.8.0.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [llm-workflow]: Downloading https://files.pythonhosted.org/packages/e2/65/e64e1c9dd97197ed428e930e5de50c4a06925fb44744ab65e480a2163058/llm-workflow-0.0.8.tar.gz
+[2024-05-11 22:41:05] INFO root fetch - processPackages [uncranniedz]: executing diffoscope
+[2024-05-11 22:41:05] INFO root fetch - processPackages [uncranniedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uncranniedz-1.1.tar.gz tmp/uncranniedz-2.1.tar.gz --markdown 20240511/u/uncranniedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:41:05] INFO root fetch - processPackages [connectome-interpreter]: executing diffoscope
+[2024-05-11 22:41:05] INFO root fetch - processPackages [connectome-interpreter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/connectome_interpreter-1.7.2.tar.gz tmp/connectome_interpreter-1.8.0.tar.gz --markdown 20240511/c/connectome-interpreter/1.7.2-1.8.0/README.md --exclude *.pyd
+[2024-05-11 22:41:06] INFO root fetch - processPackages [llm-workflow]: executing diffoscope
+[2024-05-11 22:41:06] INFO root fetch - processPackages [llm-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm-workflow-0.0.6.tar.gz tmp/llm-workflow-0.0.8.tar.gz --markdown 20240511/l/llm-workflow/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-05-11 22:41:06] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.8.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.9.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 22:41:06] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.8.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-11 22:41:06] INFO root fetch - processPackages [uncranniedz]: Remove: archive file [/home/abi/fetcher/tmp/uncranniedz-1.1.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - processPackages [uncranniedz]: Remove: archive file [/home/abi/fetcher/tmp/uncranniedz-2.1.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [uncranniedz]: success
+[2024-05-11 22:41:06] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.7.2.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - processPackages [connectome-interpreter]: Remove: archive file [/home/abi/fetcher/tmp/connectome_interpreter-1.8.0.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [connectome-interpreter]: success
+[2024-05-11 22:41:06] INFO root fetch - processPackages [llm-workflow]: Remove: archive file [/home/abi/fetcher/tmp/llm-workflow-0.0.6.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - processPackages [llm-workflow]: Remove: archive file [/home/abi/fetcher/tmp/llm-workflow-0.0.8.tar.gz]
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [llm-workflow]: success
+[2024-05-11 22:41:06] INFO root fetch - main [MainThread]: Store serial: [23164425]
