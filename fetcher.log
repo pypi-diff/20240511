@@ -16269,3 +16269,15 @@
 [2024-05-11 14:24:28] WARNING root fetch - processPackages [backtest-pro]: Skipping, unable to determine old version
 [2024-05-11 14:24:28] INFO root fetch - main [MainThread]: End processing [backtest-pro] error
 [2024-05-11 14:24:28] INFO root fetch - main [MainThread]: Store serial: [23161028]
+[2024-05-11 14:26:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161028]
+[2024-05-11 14:26:37] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 14:26:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: graphysio
+[2024-05-11 14:26:37] INFO root fetch - processPackages [graphysio]: New version: [2024.5.8] Old Version: [2024.5.7]
+[2024-05-11 14:26:37] INFO root fetch - processPackages [graphysio]: Downloading https://files.pythonhosted.org/packages/11/7d/756f133f09b87d182983a4bde4d2359d823760511927fd1d877ae80f8a5d/graphysio-2024.5.7.tar.gz
+[2024-05-11 14:26:37] INFO root fetch - processPackages [graphysio]: Downloading https://files.pythonhosted.org/packages/a5/01/d68e81516c1869855531987ec4447029a55104964ea8265cc616daf04765/graphysio-2024.5.8.tar.gz
+[2024-05-11 14:26:37] INFO root fetch - processPackages [graphysio]: executing diffoscope
+[2024-05-11 14:26:37] INFO root fetch - processPackages [graphysio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphysio-2024.5.7.tar.gz tmp/graphysio-2024.5.8.tar.gz --markdown 20240511/g/graphysio/2024.5.7-2024.5.8/README.md --exclude *.pyd
+[2024-05-11 14:26:38] INFO root fetch - processPackages [graphysio]: Remove: archive file [/home/abi/fetcher/tmp/graphysio-2024.5.7.tar.gz]
+[2024-05-11 14:26:38] INFO root fetch - processPackages [graphysio]: Remove: archive file [/home/abi/fetcher/tmp/graphysio-2024.5.8.tar.gz]
+[2024-05-11 14:26:38] INFO root fetch - main [MainThread]: End processing [graphysio]: success
+[2024-05-11 14:26:38] INFO root fetch - main [MainThread]: Store serial: [23161049]
