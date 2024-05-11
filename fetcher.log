@@ -13359,3 +13359,45 @@
 [2024-05-11 11:18:23] INFO root fetch - processPackages [clipp]: Remove: archive file [/home/abi/fetcher/tmp/clipp-1.0.4.tar.gz]
 [2024-05-11 11:18:23] INFO root fetch - main [MainThread]: End processing [clipp]: success
 [2024-05-11 11:18:23] INFO root fetch - main [MainThread]: Store serial: [23159522]
+[2024-05-11 11:20:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159522]
+[2024-05-11 11:20:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pluto-client
+[2024-05-11 11:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonecorn
+[2024-05-11 11:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wdm-wavelet
+[2024-05-11 11:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: team-14-lib-version
+[2024-05-11 11:20:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: phyllophagousz
+[2024-05-11 11:20:32] INFO root fetch - processPackages [wdm-wavelet]: New version: [0.2.0] Old Version: [0.1.2]
+[2024-05-11 11:20:32] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/6b/2b/bb4585733531bd7009b3505b8b388efca58ee261c0e50ff06358cfc1874e/wdm_wavelet-0.1.2.tar.gz
+[2024-05-11 11:20:32] INFO root fetch - processPackages [pluto-client]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 11:20:32] INFO root fetch - processPackages [nonecorn]: New version: [0.16.0.dev7] Old Version: [0.16.0.dev6]
+[2024-05-11 11:20:32] INFO root fetch - processPackages [phyllophagousz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:20:32] WARNING root fetch - processPackages [team-14-lib-version]: Skipping, unable to determine old version
+[2024-05-11 11:20:32] INFO root fetch - main [MainThread]: End processing [team-14-lib-version] error
+[2024-05-11 11:20:32] INFO root fetch - processPackages [pluto-client]: Downloading https://files.pythonhosted.org/packages/9a/b4/fc3db6c9de530a5bd7b27a8409d47f89cce89495dc6684d7439b79411b44/pluto_client-0.0.8.tar.gz
+[2024-05-11 11:20:32] INFO root fetch - processPackages [wdm-wavelet]: Downloading https://files.pythonhosted.org/packages/ed/b7/21a31945bf9f50f4fb3df5a3ce8f7dfe48b67f72410d89b94da147f8208a/wdm_wavelet-0.2.0.tar.gz
+[2024-05-11 11:20:32] INFO root fetch - processPackages [phyllophagousz]: Downloading https://files.pythonhosted.org/packages/41/f1/efcc3567ba7e83ef17587f0a51769cfd310fd6e9a6c9038d2d3749740da4/phyllophagousz-1.1.tar.gz
+[2024-05-11 11:20:32] INFO root fetch - processPackages [nonecorn]: Downloading https://files.pythonhosted.org/packages/a1/dd/247a0b161005fac988f4aeacc0302abf856ecfa011b6c74ea0d2cfbccbf2/nonecorn-0.16.0.dev6.tar.gz
+[2024-05-11 11:20:33] INFO root fetch - processPackages [wdm-wavelet]: executing diffoscope
+[2024-05-11 11:20:33] INFO root fetch - processPackages [wdm-wavelet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wdm_wavelet-0.1.2.tar.gz tmp/wdm_wavelet-0.2.0.tar.gz --markdown 20240511/w/wdm-wavelet/0.1.2-0.2.0/README.md --exclude *.pyd
+[2024-05-11 11:20:33] INFO root fetch - processPackages [phyllophagousz]: Downloading https://files.pythonhosted.org/packages/18/c8/6c2d900b10913a46cd8ea2547cb594d4d30c48aafe1b6485b48b4a06b4e5/phyllophagousz-2.1.tar.gz
+[2024-05-11 11:20:33] INFO root fetch - processPackages [pluto-client]: Downloading https://files.pythonhosted.org/packages/56/38/7b25b598a400edb65031f93b6b67d415a4a09d7af536c684551beb2e61f1/pluto_client-0.0.9.tar.gz
+[2024-05-11 11:20:33] INFO root fetch - processPackages [nonecorn]: Downloading https://files.pythonhosted.org/packages/6b/cf/2dd296af9e50b982b2fb1544ea826a4766838f033bc398d0d1e8693cd9fa/nonecorn-0.16.0.dev7.tar.gz
+[2024-05-11 11:20:33] INFO root fetch - processPackages [phyllophagousz]: executing diffoscope
+[2024-05-11 11:20:33] INFO root fetch - processPackages [phyllophagousz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phyllophagousz-1.1.tar.gz tmp/phyllophagousz-2.1.tar.gz --markdown 20240511/p/phyllophagousz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:20:33] INFO root fetch - processPackages [pluto-client]: executing diffoscope
+[2024-05-11 11:20:33] INFO root fetch - processPackages [pluto-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pluto_client-0.0.8.tar.gz tmp/pluto_client-0.0.9.tar.gz --markdown 20240511/p/pluto-client/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 11:20:33] INFO root fetch - processPackages [nonecorn]: executing diffoscope
+[2024-05-11 11:20:33] INFO root fetch - processPackages [nonecorn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonecorn-0.16.0.dev6.tar.gz tmp/nonecorn-0.16.0.dev7.tar.gz --markdown 20240511/n/nonecorn/0.16.0.dev6-0.16.0.dev7/README.md --exclude *.pyd
+[2024-05-11 11:20:33] INFO root fetch - processPackages [wdm-wavelet]: Remove: archive file [/home/abi/fetcher/tmp/wdm_wavelet-0.1.2.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - processPackages [wdm-wavelet]: Remove: archive file [/home/abi/fetcher/tmp/wdm_wavelet-0.2.0.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - main [MainThread]: End processing [wdm-wavelet]: success
+[2024-05-11 11:20:33] INFO root fetch - processPackages [phyllophagousz]: Remove: archive file [/home/abi/fetcher/tmp/phyllophagousz-1.1.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - processPackages [phyllophagousz]: Remove: archive file [/home/abi/fetcher/tmp/phyllophagousz-2.1.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - main [MainThread]: End processing [phyllophagousz]: success
+[2024-05-11 11:20:33] INFO root fetch - processPackages [pluto-client]: Remove: archive file [/home/abi/fetcher/tmp/pluto_client-0.0.8.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - processPackages [pluto-client]: Remove: archive file [/home/abi/fetcher/tmp/pluto_client-0.0.9.tar.gz]
+[2024-05-11 11:20:33] INFO root fetch - main [MainThread]: End processing [pluto-client]: success
+[2024-05-11 11:20:34] INFO root fetch - processPackages [nonecorn]: Remove: archive file [/home/abi/fetcher/tmp/nonecorn-0.16.0.dev6.tar.gz]
+[2024-05-11 11:20:34] INFO root fetch - processPackages [nonecorn]: Remove: archive file [/home/abi/fetcher/tmp/nonecorn-0.16.0.dev7.tar.gz]
+[2024-05-11 11:20:34] INFO root fetch - main [MainThread]: End processing [nonecorn]: success
+[2024-05-11 11:20:34] INFO root fetch - main [MainThread]: Store serial: [23159562]
