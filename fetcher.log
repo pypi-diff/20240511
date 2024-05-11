@@ -3380,3 +3380,135 @@
 [2024-05-11 03:01:19] INFO root fetch - processPackages [matchcode-toolkit]: Remove: archive file [/home/abi/fetcher/tmp/matchcode_toolkit-5.1.0.tar.gz]
 [2024-05-11 03:01:19] INFO root fetch - main [MainThread]: End processing [matchcode-toolkit]: success
 [2024-05-11 03:01:19] INFO root fetch - main [MainThread]: Store serial: [23155005]
+[2024-05-11 03:03:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23155005]
+[2024-05-11 03:03:28] INFO root fetch - main [MainThread]: Found 15 changed packages
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hackmenz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jigginessz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zerofun
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: botocore-a-la-carte-sagemaker-edge
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: middleware-help-python
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: botocore-a-la-carte-mediapackagev2
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: botocore-a-la-carte-neptune-graph
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: botocore-a-la-carte-iot-jobs-data
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: botocore-a-la-carte-codedeploy
+[2024-05-11 03:03:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: mypdns
+[2024-05-11 03:03:28] INFO root fetch - processPackages [middleware-help-python]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [zerofun]: New version: [2.0.5] Old Version: [2.0.4]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [jigginessz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] WARNING root fetch - processPackages [hackmenz]: Skipping, unable to determine old version
+[2024-05-11 03:03:28] INFO root fetch - processPackages [hackmenz]: Start processing: botocore-a-la-carte-workspaces
+[2024-05-11 03:03:28] INFO root fetch - main [MainThread]: End processing [hackmenz] error
+[2024-05-11 03:03:28] INFO root fetch - processPackages [mypdns]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [middleware-help-python]: Downloading https://files.pythonhosted.org/packages/9c/84/81f1df591133d3e8791cccd1853e5a9a1068c07b28ff58ae7822cdeeb716/middleware-help-python-0.1.0.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/41/80/0faeb4df906738c97abae7d0c7ae87c055fcf940e4a9fbae9468366ddd6b/zerofun-2.0.4.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: Downloading https://files.pythonhosted.org/packages/49/b2/8ae979b516df0c32378a92d2cc4d90d05f3c9f051931bd2fda285ad8dc78/botocore-a-la-carte-sagemaker-edge-1.34.98.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: Downloading https://files.pythonhosted.org/packages/9b/8f/6d499550b4296e811900337e823ca13c16981171be042eccee9e74f7771b/botocore-a-la-carte-neptune-graph-1.34.98.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [jigginessz]: Downloading https://files.pythonhosted.org/packages/a5/1f/981fae5bfa6bf2d1a76d71c642f6e90d05b848ece152e6dd600bed1b7337/jigginessz-1.1.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: Downloading https://files.pythonhosted.org/packages/cc/18/349b56a4c04798d31f8f27c06ffae685a1e74843f375d6239c14de8e6067/botocore-a-la-carte-mediapackagev2-1.34.98.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: Downloading https://files.pythonhosted.org/packages/48/ff/4eee4fcd21808c92d38a4bc3d8f55049e542761318cf3aaab2ac1e952961/botocore-a-la-carte-codedeploy-1.34.98.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: Downloading https://files.pythonhosted.org/packages/7c/9c/9bfacb2ab8b740e4c9df2e97f2ca76b2f38d51e2121e929a0a4444edf444/botocore-a-la-carte-iot-jobs-data-1.34.98.tar.gz
+[2024-05-11 03:03:28] INFO root fetch - processPackages [mypdns]: Downloading https://files.pythonhosted.org/packages/2b/74/d958ecd291ba1300764c669ed4ffec641431db4621eff5142f39d74eaef1/mypdns-1.0.3.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [middleware-help-python]: Downloading https://files.pythonhosted.org/packages/1e/e3/1e620e758067a6219a1e1025e01d3addc02ac5531d9592e034fbf24c4123/middleware-help-python-0.1.1.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [zerofun]: Downloading https://files.pythonhosted.org/packages/78/89/2d248bdc879812478167ebf76038f536fec87732c8853fdb368ca54e4b30/zerofun-2.0.5.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: Downloading https://files.pythonhosted.org/packages/e7/f7/0656b2eab34250b61f83deb97effd0133e15b4f35271f7f20bda57aab19f/botocore-a-la-carte-workspaces-1.34.98.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [middleware-help-python]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [middleware-help-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/middleware-help-python-0.1.0.tar.gz tmp/middleware-help-python-0.1.1.tar.gz --markdown 20240511/m/middleware-help-python/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [jigginessz]: Downloading https://files.pythonhosted.org/packages/c1/49/7c26ca9a6897ceb4f004f2d25123b272882c446fb0d314136183ecc5f436/jigginessz-2.1.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [zerofun]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [zerofun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zerofun-2.0.4.tar.gz tmp/zerofun-2.0.5.tar.gz --markdown 20240511/z/zerofun/2.0.4-2.0.5/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: Downloading https://files.pythonhosted.org/packages/61/d2/0aba5972fed74853abb6848607eb90f0d16c8639b4cac06070f50bedd5c9/botocore-a-la-carte-neptune-graph-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: Downloading https://files.pythonhosted.org/packages/aa/1d/3d9f03774f6de9af410c69dc30ba1c29dcb972196b6857e402451fe84b84/botocore-a-la-carte-sagemaker-edge-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: Downloading https://files.pythonhosted.org/packages/10/d3/e9184f68a9d535a5cdafbff7f89e5d7a623df538e371761cd54a49c634ba/botocore-a-la-carte-mediapackagev2-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: Downloading https://files.pythonhosted.org/packages/1e/16/11b0221d5ac256f3552b3fd62597a69f4bc383c20f3f35e2f24a6139d430/botocore-a-la-carte-codedeploy-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: Downloading https://files.pythonhosted.org/packages/c2/4b/487f19c7bfcaf743bb1eefb244abace5ce6ada46a1f4d96fe147ad0b965d/botocore-a-la-carte-iot-jobs-data-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [jigginessz]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [jigginessz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jigginessz-1.1.tar.gz tmp/jigginessz-2.1.tar.gz --markdown 20240511/j/jigginessz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [mypdns]: Downloading https://files.pythonhosted.org/packages/9b/44/07fbe0157c13d7225a7e4773470adcd96f183b0ac8d03f45909e589543ae/mypdns-1.0.4.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-neptune-graph-1.34.98.tar.gz tmp/botocore-a-la-carte-neptune-graph-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-neptune-graph/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-mediapackagev2-1.34.98.tar.gz tmp/botocore-a-la-carte-mediapackagev2-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-mediapackagev2/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-sagemaker-edge-1.34.98.tar.gz tmp/botocore-a-la-carte-sagemaker-edge-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-sagemaker-edge/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-codedeploy-1.34.98.tar.gz tmp/botocore-a-la-carte-codedeploy-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-codedeploy/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-iot-jobs-data-1.34.98.tar.gz tmp/botocore-a-la-carte-iot-jobs-data-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-iot-jobs-data/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [mypdns]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [mypdns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypdns-1.0.3.tar.gz tmp/mypdns-1.0.4.tar.gz --markdown 20240511/m/mypdns/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: Downloading https://files.pythonhosted.org/packages/df/66/d4c7ac072ca940f9119fd90832dc513dd5e0af53b1cd587acf644c671cd8/botocore-a-la-carte-workspaces-1.34.99.tar.gz
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: executing diffoscope
+[2024-05-11 03:03:29] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-workspaces-1.34.98.tar.gz tmp/botocore-a-la-carte-workspaces-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-workspaces/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:30] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.4.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [zerofun]: Remove: archive file [/home/abi/fetcher/tmp/zerofun-2.0.5.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [zerofun]: Start processing: botocore-a-la-carte-codeguru-security
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [zerofun]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [middleware-help-python]: Remove: archive file [/home/abi/fetcher/tmp/middleware-help-python-0.1.0.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [middleware-help-python]: Remove: archive file [/home/abi/fetcher/tmp/middleware-help-python-0.1.1.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [middleware-help-python]: Start processing: botocore-a-la-carte-connectparticipant
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [middleware-help-python]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [jigginessz]: Remove: archive file [/home/abi/fetcher/tmp/jigginessz-1.1.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [jigginessz]: Remove: archive file [/home/abi/fetcher/tmp/jigginessz-2.1.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [jigginessz]: Start processing: addemongo
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [jigginessz]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: Downloading https://files.pythonhosted.org/packages/3f/2e/2150880a971dab2ffbbef562a0bd7b680a3ae2be1afb86f13fe40dd42a0c/botocore-a-la-carte-codeguru-security-1.34.98.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-neptune-graph-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-neptune-graph-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-neptune-graph]: Start processing: botocore-a-la-carte-ram
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-neptune-graph]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [addemongo]: New version: [0.0.7] Old Version: [0.0.4]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-ram]: New version: [1.34.99] Old Version: [1.34.98]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-mediapackagev2-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-mediapackagev2]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-mediapackagev2-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-mediapackagev2]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: Downloading https://files.pythonhosted.org/packages/86/38/ed1982ff87a9c50b1f800dc44e7b0446786e7e1b397c58db36ae86286840/botocore-a-la-carte-connectparticipant-1.34.98.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-sagemaker-edge-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-sagemaker-edge]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-sagemaker-edge-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-sagemaker-edge]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-iot-jobs-data-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-iot-jobs-data]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-iot-jobs-data-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-iot-jobs-data]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [addemongo]: Downloading https://files.pythonhosted.org/packages/ed/c6/5ed8eaf4d8a6c33a9bd17ca78e9282f73a9d167624eae1932696ee144018/addemongo-0.0.4.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-workspaces-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-workspaces]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-workspaces-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-workspaces]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [mypdns]: Remove: archive file [/home/abi/fetcher/tmp/mypdns-1.0.3.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [mypdns]: Remove: archive file [/home/abi/fetcher/tmp/mypdns-1.0.4.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [mypdns]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-codedeploy-1.34.98.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codedeploy]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-codedeploy-1.34.99.tar.gz]
+[2024-05-11 03:03:30] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-codedeploy]: success
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-ram]: Downloading https://files.pythonhosted.org/packages/96/51/413f4654c626e76d188b8f01d03101b0264276e29ad5854745680dff5e45/botocore-a-la-carte-ram-1.34.98.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: Downloading https://files.pythonhosted.org/packages/9f/d4/6d827a1529cf0556b54eb327855bbe13b9e0c86c13863f3561d14b56c55d/botocore-a-la-carte-codeguru-security-1.34.99.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [addemongo]: Downloading https://files.pythonhosted.org/packages/66/c1/3ade713195d2d1515589054feb95ac941084c7a9b7179d9895b63cfc1922/addemongo-0.0.7.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: Downloading https://files.pythonhosted.org/packages/9e/06/4b291ed16c35d85036f59efa6efbcf53f721a026d25a900fad6cd5925d68/botocore-a-la-carte-connectparticipant-1.34.99.tar.gz
+[2024-05-11 03:03:30] INFO root fetch - processPackages [addemongo]: executing diffoscope
+[2024-05-11 03:03:30] INFO root fetch - processPackages [addemongo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/addemongo-0.0.4.tar.gz tmp/addemongo-0.0.7.tar.gz --markdown 20240511/a/addemongo/0.0.4-0.0.7/README.md --exclude *.pyd
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: executing diffoscope
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-codeguru-security-1.34.98.tar.gz tmp/botocore-a-la-carte-codeguru-security-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-codeguru-security/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: executing diffoscope
+[2024-05-11 03:03:30] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-connectparticipant-1.34.98.tar.gz tmp/botocore-a-la-carte-connectparticipant-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-connectparticipant/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-ram]: Downloading https://files.pythonhosted.org/packages/34/bb/f7b123211b44e02cf00aa3ae398813cea42fba9c6eec8d76b1da00dcf418/botocore-a-la-carte-ram-1.34.99.tar.gz
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-ram]: executing diffoscope
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-ram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botocore-a-la-carte-ram-1.34.98.tar.gz tmp/botocore-a-la-carte-ram-1.34.99.tar.gz --markdown 20240511/b/botocore-a-la-carte-ram/1.34.98-1.34.99/README.md --exclude *.pyd
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-connectparticipant-1.34.98.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-connectparticipant]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-connectparticipant-1.34.99.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-connectparticipant]: success
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-codeguru-security-1.34.98.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-codeguru-security]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-codeguru-security-1.34.99.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-codeguru-security]: success
+[2024-05-11 03:03:31] INFO root fetch - processPackages [addemongo]: Remove: archive file [/home/abi/fetcher/tmp/addemongo-0.0.4.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - processPackages [addemongo]: Remove: archive file [/home/abi/fetcher/tmp/addemongo-0.0.7.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - main [MainThread]: End processing [addemongo]: success
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-ram]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-ram-1.34.98.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - processPackages [botocore-a-la-carte-ram]: Remove: archive file [/home/abi/fetcher/tmp/botocore-a-la-carte-ram-1.34.99.tar.gz]
+[2024-05-11 03:03:31] INFO root fetch - main [MainThread]: End processing [botocore-a-la-carte-ram]: success
+[2024-05-11 03:03:31] INFO root fetch - main [MainThread]: Store serial: [23155039]
