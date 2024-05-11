@@ -24006,3 +24006,39 @@
 [2024-05-11 23:20:18] WARNING root fetch - processPackages [decisionz]: Skipping, unable to determine old version
 [2024-05-11 23:20:18] INFO root fetch - main [MainThread]: End processing [decisionz] error
 [2024-05-11 23:20:18] INFO root fetch - main [MainThread]: Store serial: [23164663]
+[2024-05-11 23:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164663]
+[2024-05-11 23:22:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ikctl
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aiocmcapi
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: setuptools-gettext
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mock-call-where
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unlapsingz
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ikctl]: New version: [0.2.11] Old Version: [0.1.9]
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/73/40/80c65de299046f68dfe0f3da04f491efe0cfd4baf9daa77d411c213eda83/ikctl-0.1.9.tar.gz
+[2024-05-11 23:22:27] INFO root fetch - processPackages [setuptools-gettext]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 23:22:27] WARNING root fetch - processPackages [mock-call-where]: Skipping, unable to determine old version
+[2024-05-11 23:22:27] INFO root fetch - processPackages [unlapsingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:22:27] INFO root fetch - main [MainThread]: End processing [mock-call-where] error
+[2024-05-11 23:22:27] WARNING root fetch - processPackages [aiocmcapi]: Skipping, unable to determine old version
+[2024-05-11 23:22:27] INFO root fetch - main [MainThread]: End processing [aiocmcapi] error
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ikctl]: Downloading https://files.pythonhosted.org/packages/02/2d/c46d432530cb65bf1c508fecea5431e4df5e1fc94b55e76ee50c0c5ab714/ikctl-0.2.11.tar.gz
+[2024-05-11 23:22:27] INFO root fetch - processPackages [setuptools-gettext]: Downloading https://files.pythonhosted.org/packages/81/e3/e11522141e7ebca27d0f422ccd05ce29fb36250f44f93b17e4ba1b7022ab/setuptools-gettext-0.1.8.tar.gz
+[2024-05-11 23:22:27] INFO root fetch - processPackages [unlapsingz]: Downloading https://files.pythonhosted.org/packages/14/a2/e2aaebf06661ebea7de0470aeeacd8d0a8ced39abb34897ea98ad59be4bd/unlapsingz-1.1.tar.gz
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ikctl]: executing diffoscope
+[2024-05-11 23:22:27] INFO root fetch - processPackages [ikctl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ikctl-0.1.9.tar.gz tmp/ikctl-0.2.11.tar.gz --markdown 20240511/i/ikctl/0.1.9-0.2.11/README.md --exclude *.pyd
+[2024-05-11 23:22:28] INFO root fetch - processPackages [unlapsingz]: Downloading https://files.pythonhosted.org/packages/15/f8/9cd80fb5aacaa492436e3b07d7e69e0ef46119b90212f319f34a29ccf4c3/unlapsingz-2.1.tar.gz
+[2024-05-11 23:22:28] INFO root fetch - processPackages [setuptools-gettext]: Downloading https://files.pythonhosted.org/packages/94/a0/1f3de2b200f395c32cfa54339cb91c29e111c0e6877b8408a8fdb3dc9aee/setuptools-gettext-0.1.9.tar.gz
+[2024-05-11 23:22:28] INFO root fetch - processPackages [unlapsingz]: executing diffoscope
+[2024-05-11 23:22:28] INFO root fetch - processPackages [unlapsingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unlapsingz-1.1.tar.gz tmp/unlapsingz-2.1.tar.gz --markdown 20240511/u/unlapsingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:22:28] INFO root fetch - processPackages [setuptools-gettext]: executing diffoscope
+[2024-05-11 23:22:28] INFO root fetch - processPackages [setuptools-gettext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/setuptools-gettext-0.1.8.tar.gz tmp/setuptools-gettext-0.1.9.tar.gz --markdown 20240511/s/setuptools-gettext/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 23:22:28] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.1.9.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - processPackages [ikctl]: Remove: archive file [/home/abi/fetcher/tmp/ikctl-0.2.11.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - main [MainThread]: End processing [ikctl]: success
+[2024-05-11 23:22:28] INFO root fetch - processPackages [unlapsingz]: Remove: archive file [/home/abi/fetcher/tmp/unlapsingz-1.1.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - processPackages [unlapsingz]: Remove: archive file [/home/abi/fetcher/tmp/unlapsingz-2.1.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - main [MainThread]: End processing [unlapsingz]: success
+[2024-05-11 23:22:28] INFO root fetch - processPackages [setuptools-gettext]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-gettext-0.1.8.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - processPackages [setuptools-gettext]: Remove: archive file [/home/abi/fetcher/tmp/setuptools-gettext-0.1.9.tar.gz]
+[2024-05-11 23:22:28] INFO root fetch - main [MainThread]: End processing [setuptools-gettext]: success
+[2024-05-11 23:22:28] INFO root fetch - main [MainThread]: Store serial: [23164686]
