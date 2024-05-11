@@ -14533,3 +14533,20 @@
 [2024-05-11 12:32:48] INFO root fetch - processPackages [precollegez]: Remove: archive file [/home/abi/fetcher/tmp/precollegez-2.1.tar.gz]
 [2024-05-11 12:32:48] INFO root fetch - main [MainThread]: End processing [precollegez]: success
 [2024-05-11 12:32:48] INFO root fetch - main [MainThread]: Store serial: [23160108]
+[2024-05-11 12:34:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160108]
+[2024-05-11 12:34:57] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 12:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sydney-py
+[2024-05-11 12:34:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pygamepal
+[2024-05-11 12:34:57] INFO root fetch - processPackages [sydney-py]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 12:34:57] INFO root fetch - processPackages [pygamepal]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 12:34:57] INFO root fetch - processPackages [sydney-py]: Downloading https://files.pythonhosted.org/packages/41/59/a01e40de0b79cb9e5b9753aff2023c3bc23107a4bff38286eebbd3e6c14a/sydney_py-0.8.0.tar.gz
+[2024-05-11 12:34:57] INFO root fetch - processPackages [pygamepal]: Downloading https://files.pythonhosted.org/packages/da/b4/c78efe007b8997375bed182cd632ae660140bad357ace1c6e5fdd4a6fe9e/pygamepal-0.6.0.tar.gz
+[2024-05-11 12:34:57] WARNING root fetch - processPackages [pygamepal]: Skipping package: exceeds size limit 20274133>=10485760
+[2024-05-11 12:34:57] INFO root fetch - main [MainThread]: End processing [pygamepal] error
+[2024-05-11 12:34:57] INFO root fetch - processPackages [sydney-py]: Downloading https://files.pythonhosted.org/packages/02/41/7735e426c92193839cadff24522495dba9bc888c317f6013433a4fa188c7/sydney_py-0.9.0.tar.gz
+[2024-05-11 12:34:58] INFO root fetch - processPackages [sydney-py]: executing diffoscope
+[2024-05-11 12:34:58] INFO root fetch - processPackages [sydney-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sydney_py-0.8.0.tar.gz tmp/sydney_py-0.9.0.tar.gz --markdown 20240511/s/sydney-py/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 12:34:58] INFO root fetch - processPackages [sydney-py]: Remove: archive file [/home/abi/fetcher/tmp/sydney_py-0.8.0.tar.gz]
+[2024-05-11 12:34:58] INFO root fetch - processPackages [sydney-py]: Remove: archive file [/home/abi/fetcher/tmp/sydney_py-0.9.0.tar.gz]
+[2024-05-11 12:34:58] INFO root fetch - main [MainThread]: End processing [sydney-py]: success
+[2024-05-11 12:34:58] INFO root fetch - main [MainThread]: Store serial: [23160117]
