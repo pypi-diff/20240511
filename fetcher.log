@@ -22426,3 +22426,33 @@
 [2024-05-11 21:28:52] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
 [2024-05-11 21:28:52] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
 [2024-05-11 21:28:52] INFO root fetch - main [MainThread]: Store serial: [23163970]
+[2024-05-11 21:30:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163970]
+[2024-05-11 21:31:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-05-11 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyiron-base
+[2024-05-11 21:31:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: smartplug-energy-controller
+[2024-05-11 21:31:01] INFO root fetch - processPackages [musical_games]: New version: [0.8.5] Old Version: [0.8.4]
+[2024-05-11 21:31:01] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/9a/64/3acb78c0c34a00a5d2fb50213ab227ace8395a0868f1df71371a940dd356/musical_games-0.8.4.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [pyiron-base]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-11 21:31:02] INFO root fetch - processPackages [smartplug-energy-controller]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 21:31:02] INFO root fetch - processPackages [pyiron-base]: Downloading https://files.pythonhosted.org/packages/21/75/2f6ac247eacac9e2189f25a162fd610ac0a98ef744bad97bb8ea4c6be47f/pyiron_base-0.8.3.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [smartplug-energy-controller]: Downloading https://files.pythonhosted.org/packages/83/e0/e92584ed8730c769e7a7fb597cf72a057cb7ba55bf6025a6212158ac694e/smartplug_energy_controller-0.0.3.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/6f/fe/c9d6a1d2454733abd37e6a30bd69a17b4644d6eb108fa03b7009868751d4/musical_games-0.8.5.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-05-11 21:31:02] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.8.4.tar.gz tmp/musical_games-0.8.5.tar.gz --markdown 20240511/m/musical_games/0.8.4-0.8.5/README.md --exclude *.pyd
+[2024-05-11 21:31:02] INFO root fetch - processPackages [pyiron-base]: Downloading https://files.pythonhosted.org/packages/04/99/3077d949f2359f079b8d07de19ad3b1df9ce777f47c10327cab5a96c6c73/pyiron_base-0.8.4.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [smartplug-energy-controller]: Downloading https://files.pythonhosted.org/packages/84/96/91a4e2f87a203e1e63a41d59d13af4528acba8dc231ebcd375bb2af90df3/smartplug_energy_controller-0.0.4.tar.gz
+[2024-05-11 21:31:02] INFO root fetch - processPackages [smartplug-energy-controller]: executing diffoscope
+[2024-05-11 21:31:02] INFO root fetch - processPackages [smartplug-energy-controller]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smartplug_energy_controller-0.0.3.tar.gz tmp/smartplug_energy_controller-0.0.4.tar.gz --markdown 20240511/s/smartplug-energy-controller/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 21:31:02] INFO root fetch - processPackages [pyiron-base]: executing diffoscope
+[2024-05-11 21:31:02] INFO root fetch - processPackages [pyiron-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyiron_base-0.8.3.tar.gz tmp/pyiron_base-0.8.4.tar.gz --markdown 20240511/p/pyiron-base/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-11 21:31:03] INFO root fetch - processPackages [smartplug-energy-controller]: Remove: archive file [/home/abi/fetcher/tmp/smartplug_energy_controller-0.0.3.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - processPackages [smartplug-energy-controller]: Remove: archive file [/home/abi/fetcher/tmp/smartplug_energy_controller-0.0.4.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - main [MainThread]: End processing [smartplug-energy-controller]: success
+[2024-05-11 21:31:03] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.4.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.5.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-05-11 21:31:03] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.3.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.4.tar.gz]
+[2024-05-11 21:31:03] INFO root fetch - main [MainThread]: End processing [pyiron-base]: success
+[2024-05-11 21:31:03] INFO root fetch - main [MainThread]: Store serial: [23163979]
