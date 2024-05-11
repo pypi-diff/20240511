@@ -20858,3 +20858,18 @@
 [2024-05-11 19:44:27] INFO root fetch - processPackages [sussz]: Remove: archive file [/home/abi/fetcher/tmp/sussz-2.1.tar.gz]
 [2024-05-11 19:44:27] INFO root fetch - main [MainThread]: End processing [sussz]: success
 [2024-05-11 19:44:27] INFO root fetch - main [MainThread]: Store serial: [23163152]
+[2024-05-11 19:46:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163152]
+[2024-05-11 19:46:36] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 19:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jsoncgx
+[2024-05-11 19:46:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pochez
+[2024-05-11 19:46:36] INFO root fetch - processPackages [jsoncgx]: New version: [1.1] Old Version: [1.0]
+[2024-05-11 19:46:36] WARNING root fetch - processPackages [pochez]: Skipping, unable to determine old version
+[2024-05-11 19:46:36] INFO root fetch - main [MainThread]: End processing [pochez] error
+[2024-05-11 19:46:36] INFO root fetch - processPackages [jsoncgx]: Downloading https://files.pythonhosted.org/packages/23/21/7d491db15ea612e0d933fa2f7aaa3771b76ef2a4651494ad1bb38a234cc3/jsoncgx-1.0.tar.gz
+[2024-05-11 19:46:36] INFO root fetch - processPackages [jsoncgx]: Downloading https://files.pythonhosted.org/packages/9d/74/fd5c51ff08120e8ec8b55cf4ce57bef8774e04746524314308582f9046ab/jsoncgx-1.1.tar.gz
+[2024-05-11 19:46:36] INFO root fetch - processPackages [jsoncgx]: executing diffoscope
+[2024-05-11 19:46:36] INFO root fetch - processPackages [jsoncgx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jsoncgx-1.0.tar.gz tmp/jsoncgx-1.1.tar.gz --markdown 20240511/j/jsoncgx/1.0-1.1/README.md --exclude *.pyd
+[2024-05-11 19:46:37] INFO root fetch - processPackages [jsoncgx]: Remove: archive file [/home/abi/fetcher/tmp/jsoncgx-1.0.tar.gz]
+[2024-05-11 19:46:37] INFO root fetch - processPackages [jsoncgx]: Remove: archive file [/home/abi/fetcher/tmp/jsoncgx-1.1.tar.gz]
+[2024-05-11 19:46:37] INFO root fetch - main [MainThread]: End processing [jsoncgx]: success
+[2024-05-11 19:46:37] INFO root fetch - main [MainThread]: Store serial: [23163159]
