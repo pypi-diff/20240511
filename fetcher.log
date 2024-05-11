@@ -16981,3 +16981,35 @@
 [2024-05-11 15:17:51] INFO root fetch - processPackages [yumemi]: Remove: archive file [/home/abi/fetcher/tmp/yumemi-2.1.0.tar.gz]
 [2024-05-11 15:17:51] INFO root fetch - main [MainThread]: End processing [yumemi]: success
 [2024-05-11 15:17:51] INFO root fetch - main [MainThread]: Store serial: [23161313]
+[2024-05-11 15:19:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161313]
+[2024-05-11 15:20:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: recountablez
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ciscoconfparse2
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gopherz
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gkj-homeautomation
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vak
+[2024-05-11 15:20:00] INFO root fetch - processPackages [vak]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 15:20:00] WARNING root fetch - processPackages [gkj-homeautomation]: Skipping, unable to determine old version
+[2024-05-11 15:20:00] INFO root fetch - main [MainThread]: End processing [gkj-homeautomation] error
+[2024-05-11 15:20:00] WARNING root fetch - processPackages [gopherz]: Skipping, unable to determine old version
+[2024-05-11 15:20:00] INFO root fetch - main [MainThread]: End processing [gopherz] error
+[2024-05-11 15:20:00] INFO root fetch - processPackages [recountablez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:20:00] INFO root fetch - processPackages [vak]: Downloading https://files.pythonhosted.org/packages/79/56/df143e0c4c5a150faba3340e8141849f89c1232ba6715aeebec1c8872d81/vak-1.0.0a2.tar.gz
+[2024-05-11 15:20:00] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-05-11 15:20:00] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-05-11 15:20:00] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-05-11 15:20:00] INFO root fetch - processPackages [recountablez]: Downloading https://files.pythonhosted.org/packages/9a/bf/0fbb89317475ced3aba1df0d9d87a2cc6e35edc8971f578d295dc7db4b1c/recountablez-1.1.tar.gz
+[2024-05-11 15:20:00] INFO root fetch - processPackages [vak]: Downloading https://files.pythonhosted.org/packages/74/36/aedb4456b965c02f98a0c27f6f9c7d8ba896de0cd07b626a738b3c0a188d/vak-1.0.0a3.tar.gz
+[2024-05-11 15:20:00] INFO root fetch - processPackages [recountablez]: Downloading https://files.pythonhosted.org/packages/d0/0c/9748e3bbddd7724f35e68291a043821b032551cc6f93179cba6b965094c4/recountablez-2.1.tar.gz
+[2024-05-11 15:20:00] INFO root fetch - processPackages [recountablez]: executing diffoscope
+[2024-05-11 15:20:00] INFO root fetch - processPackages [recountablez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recountablez-1.1.tar.gz tmp/recountablez-2.1.tar.gz --markdown 20240511/r/recountablez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:20:00] INFO root fetch - processPackages [vak]: executing diffoscope
+[2024-05-11 15:20:00] INFO root fetch - processPackages [vak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vak-1.0.0a2.tar.gz tmp/vak-1.0.0a3.tar.gz --markdown 20240511/v/vak/1.0.0a2-1.0.0a3/README.md --exclude *.pyd
+[2024-05-11 15:20:01] INFO root fetch - processPackages [recountablez]: Remove: archive file [/home/abi/fetcher/tmp/recountablez-1.1.tar.gz]
+[2024-05-11 15:20:01] INFO root fetch - processPackages [recountablez]: Remove: archive file [/home/abi/fetcher/tmp/recountablez-2.1.tar.gz]
+[2024-05-11 15:20:01] INFO root fetch - main [MainThread]: End processing [recountablez]: success
+[2024-05-11 15:20:02] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a2.tar.gz]
+[2024-05-11 15:20:02] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a3.tar.gz]
+[2024-05-11 15:20:02] INFO root fetch - main [MainThread]: End processing [vak]: success
+[2024-05-11 15:20:02] INFO root fetch - main [MainThread]: Store serial: [23161334]
