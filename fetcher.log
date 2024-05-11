@@ -22054,3 +22054,27 @@
 [2024-05-11 21:02:46] INFO root fetch - processPackages [exoml]: Remove: archive file [/home/abi/fetcher/tmp/exoml-0.1.9.tar.gz]
 [2024-05-11 21:02:46] INFO root fetch - main [MainThread]: End processing [exoml]: success
 [2024-05-11 21:02:46] INFO root fetch - main [MainThread]: Store serial: [23163823]
+[2024-05-11 21:04:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163823]
+[2024-05-11 21:04:54] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MrSolver-Add
+[2024-05-11 21:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: niwatoko
+[2024-05-11 21:04:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gen3-tracker
+[2024-05-11 21:04:54] WARNING root fetch - processPackages [MrSolver-Add]: Skipping, unable to determine old version
+[2024-05-11 21:04:54] INFO root fetch - main [MainThread]: End processing [MrSolver-Add] error
+[2024-05-11 21:04:54] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.4rc2] Old Version: [0.0.3rc9]
+[2024-05-11 21:04:54] INFO root fetch - processPackages [niwatoko]: New version: [1.1.3] Old Version: [1.1.2]
+[2024-05-11 21:04:54] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/37/13/d98b35020ac2a56b6b8d930600dd64c0349f7f09dccb0a291775d9d0b397/gen3_tracker-0.0.3rc9.tar.gz
+[2024-05-11 21:04:54] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/c0/a5/07fc51e9f2d81643780246b2ca2ce34b4016fc3e1a1a6bafa1bea41f1b48/niwatoko-1.1.2.tar.gz
+[2024-05-11 21:04:55] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/ce/70/a77cd1c57753e589ea1377b730fc4f2d5e4dd603dff6fa7030d4c22557e4/gen3_tracker-0.0.4rc2.tar.gz
+[2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/62/83/c067eb2d8929a2cdc6f99b2f9ebaeabc05e7851568678305222c4050a229/niwatoko-1.1.3.tar.gz
+[2024-05-11 21:04:55] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-05-11 21:04:55] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.3rc9.tar.gz tmp/gen3_tracker-0.0.4rc2.tar.gz --markdown 20240511/g/gen3-tracker/0.0.3rc9-0.0.4rc2/README.md --exclude *.pyd
+[2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: executing diffoscope
+[2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niwatoko-1.1.2.tar.gz tmp/niwatoko-1.1.3.tar.gz --markdown 20240511/n/niwatoko/1.1.2-1.1.3/README.md --exclude *.pyd
+[2024-05-11 21:04:55] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc9.tar.gz]
+[2024-05-11 21:04:55] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc2.tar.gz]
+[2024-05-11 21:04:55] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.2.tar.gz]
+[2024-05-11 21:04:55] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.3.tar.gz]
+[2024-05-11 21:04:55] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
+[2024-05-11 21:04:55] INFO root fetch - main [MainThread]: Store serial: [23163836]
