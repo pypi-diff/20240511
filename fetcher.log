@@ -9493,3 +9493,9 @@
 [2024-05-11 06:07:30] INFO root fetch - processPackages [labcodes]: Remove: archive file [/home/abi/fetcher/tmp/labcodes-1.0.2.tar.gz]
 [2024-05-11 06:07:30] INFO root fetch - main [MainThread]: End processing [labcodes]: success
 [2024-05-11 06:07:30] INFO root fetch - main [MainThread]: Store serial: [23157177]
+[2024-05-11 06:09:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157177]
+[2024-05-11 06:09:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:09:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: langchain-prompty
+[2024-05-11 06:09:38] WARNING root fetch - processPackages [langchain-prompty]: Skipping, unable to determine old version
+[2024-05-11 06:09:38] INFO root fetch - main [MainThread]: End processing [langchain-prompty] error
+[2024-05-11 06:09:38] INFO root fetch - main [MainThread]: Store serial: [23157182]
