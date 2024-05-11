@@ -13500,3 +13500,15 @@
 [2024-05-11 11:29:15] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 11:29:15] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 11:29:15] INFO root fetch - main [MainThread]: Store serial: [23159615]
+[2024-05-11 11:31:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159615]
+[2024-05-11 11:31:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 11:31:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pirangaz
+[2024-05-11 11:31:24] INFO root fetch - processPackages [pirangaz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:31:24] INFO root fetch - processPackages [pirangaz]: Downloading https://files.pythonhosted.org/packages/02/85/4f58987c7caea38ef557839d02ae1acd609556d89b36d5f5e3ec1d233731/pirangaz-1.1.tar.gz
+[2024-05-11 11:31:24] INFO root fetch - processPackages [pirangaz]: Downloading https://files.pythonhosted.org/packages/71/ca/d1b9bc64f204c1f1fc3ff3e54dc66c6264f1f4d023b4873da9f063cbb022/pirangaz-2.1.tar.gz
+[2024-05-11 11:31:24] INFO root fetch - processPackages [pirangaz]: executing diffoscope
+[2024-05-11 11:31:24] INFO root fetch - processPackages [pirangaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pirangaz-1.1.tar.gz tmp/pirangaz-2.1.tar.gz --markdown 20240511/p/pirangaz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:31:25] INFO root fetch - processPackages [pirangaz]: Remove: archive file [/home/abi/fetcher/tmp/pirangaz-1.1.tar.gz]
+[2024-05-11 11:31:25] INFO root fetch - processPackages [pirangaz]: Remove: archive file [/home/abi/fetcher/tmp/pirangaz-2.1.tar.gz]
+[2024-05-11 11:31:25] INFO root fetch - main [MainThread]: End processing [pirangaz]: success
+[2024-05-11 11:31:25] INFO root fetch - main [MainThread]: Store serial: [23159617]
