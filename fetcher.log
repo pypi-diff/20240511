@@ -24270,3 +24270,9 @@
 [2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: Remove: archive file [/home/abi/fetcher/tmp/aiochris-0.5.0a6.tar.gz]
 [2024-05-11 23:44:05] INFO root fetch - main [MainThread]: End processing [aiochris]: success
 [2024-05-11 23:44:05] INFO root fetch - main [MainThread]: Store serial: [23164804]
+[2024-05-11 23:46:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164804]
+[2024-05-11 23:46:14] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 23:46:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decipheredz
+[2024-05-11 23:46:14] WARNING root fetch - processPackages [decipheredz]: Skipping, unable to determine old version
+[2024-05-11 23:46:14] INFO root fetch - main [MainThread]: End processing [decipheredz] error
+[2024-05-11 23:46:14] INFO root fetch - main [MainThread]: Store serial: [23164808]
