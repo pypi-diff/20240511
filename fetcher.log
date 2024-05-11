@@ -11164,3 +11164,21 @@
 [2024-05-11 08:30:30] INFO root fetch - processPackages [expr-codegen]: Remove: archive file [/home/abi/fetcher/tmp/expr_codegen-0.6.3.tar.gz]
 [2024-05-11 08:30:30] INFO root fetch - main [MainThread]: End processing [expr-codegen]: success
 [2024-05-11 08:30:30] INFO root fetch - main [MainThread]: Store serial: [23158255]
+[2024-05-11 08:32:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158255]
+[2024-05-11 08:32:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 08:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carbon-registry-indexer
+[2024-05-11 08:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: layersfusion
+[2024-05-11 08:32:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sp-lh3-constant-contact
+[2024-05-11 08:32:39] WARNING root fetch - processPackages [carbon-registry-indexer]: Skipping, unable to determine old version
+[2024-05-11 08:32:39] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer] error
+[2024-05-11 08:32:39] INFO root fetch - processPackages [sp-lh3-constant-contact]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 08:32:39] WARNING root fetch - processPackages [layersfusion]: Skipping, unable to determine old version
+[2024-05-11 08:32:39] INFO root fetch - main [MainThread]: End processing [layersfusion] error
+[2024-05-11 08:32:39] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/c0/03/e0b358a59a68f7d130702ddc1ecbf470ea7db53958694adea85c0b7723a2/sp_lh3_constant_contact-0.1.5.tar.gz
+[2024-05-11 08:32:39] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/c0/f0/4b7b96c06e59070776e7edad6e8ce274ca33d156bb6de705011d1730126e/sp_lh3_constant_contact-0.1.6.tar.gz
+[2024-05-11 08:32:39] INFO root fetch - processPackages [sp-lh3-constant-contact]: executing diffoscope
+[2024-05-11 08:32:39] INFO root fetch - processPackages [sp-lh3-constant-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sp_lh3_constant_contact-0.1.5.tar.gz tmp/sp_lh3_constant_contact-0.1.6.tar.gz --markdown 20240511/s/sp-lh3-constant-contact/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 08:32:40] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.5.tar.gz]
+[2024-05-11 08:32:40] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.6.tar.gz]
+[2024-05-11 08:32:40] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact]: success
+[2024-05-11 08:32:40] INFO root fetch - main [MainThread]: Store serial: [23158271]
