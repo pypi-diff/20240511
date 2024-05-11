@@ -16704,3 +16704,45 @@
 [2024-05-11 14:57:07] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.2.tar.gz]
 [2024-05-11 14:57:07] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
 [2024-05-11 14:57:07] INFO root fetch - main [MainThread]: Store serial: [23161202]
+[2024-05-11 14:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161202]
+[2024-05-11 14:59:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 14:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reallegedz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pheval-ai-marrvel
+[2024-05-11 14:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cincturedz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Furious-GUI
+[2024-05-11 14:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 14:59:16] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.3.1] Old Version: [1.0.3]
+[2024-05-11 14:59:16] INFO root fetch - processPackages [Furious-GUI]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 14:59:16] INFO root fetch - processPackages [pheval-ai-marrvel]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 14:59:16] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/95/8a/1f42e973dbb5f8bcc79e45ea6a4ae56809ed1c80de2e89fcb5791ea12ec7/nonebot_plugin_ranfurrypic-1.0.3.tar.gz
+[2024-05-11 14:59:16] WARNING root fetch - processPackages [cincturedz]: Skipping, unable to determine old version
+[2024-05-11 14:59:16] INFO root fetch - main [MainThread]: End processing [cincturedz] error
+[2024-05-11 14:59:16] INFO root fetch - processPackages [reallegedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:59:16] INFO root fetch - processPackages [Furious-GUI]: Downloading https://files.pythonhosted.org/packages/d2/a0/5abde10715924ddab948d3c48591e446bbf3464e1c95dcb8f206924d5919/Furious-GUI-0.4.0.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [pheval-ai-marrvel]: Downloading https://files.pythonhosted.org/packages/85/c6/7b561ac25b421ca7c51452babad36929bdea5f320b7e1e1099aa7682350f/pheval_ai_marrvel-0.1.0.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [reallegedz]: Downloading https://files.pythonhosted.org/packages/48/91/5895ab24646387ba4d5fa20582cbf43d8c5cc3b0a927e8b23afe3368219f/reallegedz-1.1.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/cc/24/b32d843ddd4c5f02dc82b6a04c490d807586567aa761612c93114aad1aea/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [pheval-ai-marrvel]: Downloading https://files.pythonhosted.org/packages/f9/7f/c5b7eb844aed967a61a17a1b37a1e3f9987d4129bf81799522ee0805067d/pheval_ai_marrvel-0.1.1.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 14:59:16] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.3.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.3-1.0.3.1/README.md --exclude *.pyd
+[2024-05-11 14:59:16] INFO root fetch - processPackages [reallegedz]: Downloading https://files.pythonhosted.org/packages/29/21/e2ec46f9da57055b0c2ba7fe4b1ad8887cc2981b14fc60ea0ad4cc387a4d/reallegedz-2.1.tar.gz
+[2024-05-11 14:59:16] INFO root fetch - processPackages [pheval-ai-marrvel]: executing diffoscope
+[2024-05-11 14:59:16] INFO root fetch - processPackages [pheval-ai-marrvel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheval_ai_marrvel-0.1.0.tar.gz tmp/pheval_ai_marrvel-0.1.1.tar.gz --markdown 20240511/p/pheval-ai-marrvel/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 14:59:17] INFO root fetch - processPackages [reallegedz]: executing diffoscope
+[2024-05-11 14:59:17] INFO root fetch - processPackages [reallegedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reallegedz-1.1.tar.gz tmp/reallegedz-2.1.tar.gz --markdown 20240511/r/reallegedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:59:17] INFO root fetch - processPackages [Furious-GUI]: Downloading https://files.pythonhosted.org/packages/fc/45/085a1588c0730a537d6f4263d155ed9764f0350961bbadb255736e7cb452/Furious-GUI-0.4.1.tar.gz
+[2024-05-11 14:59:17] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 14:59:17] INFO root fetch - processPackages [pheval-ai-marrvel]: Remove: archive file [/home/abi/fetcher/tmp/pheval_ai_marrvel-0.1.0.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - processPackages [pheval-ai-marrvel]: Remove: archive file [/home/abi/fetcher/tmp/pheval_ai_marrvel-0.1.1.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - main [MainThread]: End processing [pheval-ai-marrvel]: success
+[2024-05-11 14:59:17] INFO root fetch - processPackages [reallegedz]: Remove: archive file [/home/abi/fetcher/tmp/reallegedz-1.1.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - processPackages [reallegedz]: Remove: archive file [/home/abi/fetcher/tmp/reallegedz-2.1.tar.gz]
+[2024-05-11 14:59:17] INFO root fetch - main [MainThread]: End processing [reallegedz]: success
+[2024-05-11 14:59:17] INFO root fetch - processPackages [Furious-GUI]: executing diffoscope
+[2024-05-11 14:59:17] INFO root fetch - processPackages [Furious-GUI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Furious-GUI-0.4.0.tar.gz tmp/Furious-GUI-0.4.1.tar.gz --markdown 20240511/F/Furious-GUI/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 14:59:30] INFO root fetch - processPackages [Furious-GUI]: Remove: archive file [/home/abi/fetcher/tmp/Furious-GUI-0.4.0.tar.gz]
+[2024-05-11 14:59:30] INFO root fetch - processPackages [Furious-GUI]: Remove: archive file [/home/abi/fetcher/tmp/Furious-GUI-0.4.1.tar.gz]
+[2024-05-11 14:59:30] INFO root fetch - main [MainThread]: End processing [Furious-GUI]: success
+[2024-05-11 14:59:30] INFO root fetch - main [MainThread]: Store serial: [23161217]
