@@ -8065,3 +8065,50 @@
 [2024-05-11 04:29:41] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
 [2024-05-11 04:29:41] INFO root fetch - main [MainThread]: End processing [ork.build]: success
 [2024-05-11 04:29:41] INFO root fetch - main [MainThread]: Store serial: [23156642]
+[2024-05-11 04:31:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156642]
+[2024-05-11 04:31:49] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fast-tradier-client
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sp-lh3-constant-contact
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-paiabtest20240119
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: leptospirez
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aspose-cells
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: medver-pytest
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: annoread
+[2024-05-11 04:31:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cycling-dynamics
+[2024-05-11 04:31:49] INFO root fetch - processPackages [fast-tradier-client]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 04:31:49] INFO root fetch - processPackages [leptospirez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:31:49] INFO root fetch - processPackages [fast-tradier-client]: Downloading https://files.pythonhosted.org/packages/4a/38/1171b5ac5a83f2a0d1667971d9a1a3cbb9f739a54b0e1b0a5213b20b3387/fast_tradier_client-1.0.2.tar.gz
+[2024-05-11 04:31:49] WARNING root fetch - processPackages [sp-lh3-constant-contact]: Skipping, unable to determine old version
+[2024-05-11 04:31:49] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact] error
+[2024-05-11 04:31:49] WARNING root fetch - processPackages [alibabacloud-paiabtest20240119]: Skipping, unable to determine old version
+[2024-05-11 04:31:49] INFO root fetch - main [MainThread]: End processing [alibabacloud-paiabtest20240119] error
+[2024-05-11 04:31:49] WARNING root fetch - processPackages [annoread]: Skipping, unable to determine old version
+[2024-05-11 04:31:49] INFO root fetch - main [MainThread]: End processing [annoread] error
+[2024-05-11 04:31:49] INFO root fetch - processPackages [aspose-cells]: New version: [24.5.0] Old Version: [24.4.0]
+[2024-05-11 04:31:49] WARNING root fetch - processPackages [medver-pytest]: Skipping, unable to determine old version
+[2024-05-11 04:31:49] INFO root fetch - main [MainThread]: End processing [medver-pytest] error
+[2024-05-11 04:31:49] INFO root fetch - processPackages [cycling-dynamics]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: Downloading https://files.pythonhosted.org/packages/7f/02/4ca292613471ad886b0e7ecfa2409730d508252313a37da82b030233f24a/leptospirez-1.1.tar.gz
+[2024-05-11 04:31:50] INFO root fetch - processPackages [aspose-cells]: Downloading https://files.pythonhosted.org/packages/35/b4/9a214adeda0ffd828d7a18ce47f56dc2b285b6032c3ff5049cd24c143711/aspose-cells-24.4.0.tar.gz
+[2024-05-11 04:31:50] INFO root fetch - processPackages [fast-tradier-client]: Downloading https://files.pythonhosted.org/packages/0c/29/2f8a2c4e73581b2620d0934f545007d8b34765ec034bde1cd541ba44be74/fast_tradier_client-1.0.3.tar.gz
+[2024-05-11 04:31:50] WARNING root fetch - processPackages [aspose-cells]: Skipping package: exceeds size limit 14275121>=10485760
+[2024-05-11 04:31:50] INFO root fetch - main [MainThread]: End processing [aspose-cells] error
+[2024-05-11 04:31:50] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/f8/3d/25a96d320177dcfed4f6f41558ddc08b83177bc7114e9e7fe89d6a6a1c71/cycling_dynamics-0.0.7.tar.gz
+[2024-05-11 04:31:50] INFO root fetch - processPackages [fast-tradier-client]: executing diffoscope
+[2024-05-11 04:31:50] INFO root fetch - processPackages [fast-tradier-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fast_tradier_client-1.0.2.tar.gz tmp/fast_tradier_client-1.0.3.tar.gz --markdown 20240511/f/fast-tradier-client/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: Downloading https://files.pythonhosted.org/packages/6b/3a/d3d9fad63dd34c72c2ccef36088fbd133721beece22146ee00ce309127b8/leptospirez-2.1.tar.gz
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: executing diffoscope
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leptospirez-1.1.tar.gz tmp/leptospirez-2.1.tar.gz --markdown 20240511/l/leptospirez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:31:50] INFO root fetch - processPackages [cycling-dynamics]: Downloading https://files.pythonhosted.org/packages/b8/dd/084eb425004f8a08b76264bf35fcf15b17bf88ef710b1102edf0ba98d6ee/cycling_dynamics-0.0.8-py3-none-any.whl
+[2024-05-11 04:31:50] INFO root fetch - processPackages [fast-tradier-client]: Remove: archive file [/home/abi/fetcher/tmp/fast_tradier_client-1.0.2.tar.gz]
+[2024-05-11 04:31:50] INFO root fetch - processPackages [fast-tradier-client]: Remove: archive file [/home/abi/fetcher/tmp/fast_tradier_client-1.0.3.tar.gz]
+[2024-05-11 04:31:50] INFO root fetch - main [MainThread]: End processing [fast-tradier-client]: success
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: Remove: archive file [/home/abi/fetcher/tmp/leptospirez-1.1.tar.gz]
+[2024-05-11 04:31:50] INFO root fetch - processPackages [leptospirez]: Remove: archive file [/home/abi/fetcher/tmp/leptospirez-2.1.tar.gz]
+[2024-05-11 04:31:50] INFO root fetch - main [MainThread]: End processing [leptospirez]: success
+[2024-05-11 04:31:50] INFO root fetch - processPackages [cycling-dynamics]: executing diffoscope
+[2024-05-11 04:31:50] INFO root fetch - processPackages [cycling-dynamics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycling_dynamics-0.0.7.tar.gz tmp/cycling_dynamics-0.0.8-py3-none-any.whl.zip --markdown 20240511/c/cycling-dynamics/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 04:31:51] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.7.tar.gz]
+[2024-05-11 04:31:51] INFO root fetch - processPackages [cycling-dynamics]: Remove: archive file [/home/abi/fetcher/tmp/cycling_dynamics-0.0.8-py3-none-any.whl.zip]
+[2024-05-11 04:31:51] INFO root fetch - main [MainThread]: End processing [cycling-dynamics]: success
+[2024-05-11 04:31:51] INFO root fetch - main [MainThread]: Store serial: [23156665]
