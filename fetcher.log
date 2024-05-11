@@ -21862,3 +21862,57 @@
 [2024-05-11 20:49:43] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.2.tar.gz]
 [2024-05-11 20:49:43] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
 [2024-05-11 20:49:43] INFO root fetch - main [MainThread]: Store serial: [23163706]
+[2024-05-11 20:51:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163706]
+[2024-05-11 20:51:52] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyCompGeomAlgorithms
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: thierryz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rest-client-micro
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Dosepy
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finningz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: parse-llm-code
+[2024-05-11 20:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dektools
+[2024-05-11 20:51:52] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-11 20:51:52] INFO root fetch - processPackages [dektools]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-11 20:51:52] INFO root fetch - processPackages [thierryz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:51:52] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/bd/0c/c05d41c970bef8696d99e076bc4e8d51a1bfb00200ad0bb84cc0a8bb394f/rest_client_micro-0.3.7.tar.gz
+[2024-05-11 20:51:52] WARNING root fetch - processPackages [finningz]: Skipping, unable to determine old version
+[2024-05-11 20:51:52] INFO root fetch - main [MainThread]: End processing [finningz] error
+[2024-05-11 20:51:52] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/88/5a/bd6084967a50e422353476fe59bcf41bd273e85422386c1c733773bcf6bd/dektools-0.1.98.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [PyCompGeomAlgorithms]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 20:51:52] INFO root fetch - processPackages [Dosepy]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-11 20:51:52] WARNING root fetch - processPackages [parse-llm-code]: Skipping, unable to determine old version
+[2024-05-11 20:51:52] INFO root fetch - main [MainThread]: End processing [parse-llm-code] error
+[2024-05-11 20:51:52] INFO root fetch - processPackages [thierryz]: Downloading https://files.pythonhosted.org/packages/7f/e3/58500603fa7c88e896a159d871d39d74961d3856656fadf5dcc7603614eb/thierryz-1.1.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/30/8b/6e606d2d9e9edf6afe4106b9fc0602f260f70fefce85a767acd72ddd9ce0/PyCompGeomAlgorithms-1.0.8.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [dektools]: Downloading https://files.pythonhosted.org/packages/b5/37/3854bf0e9d3f36790f9c3b784892d4e833c07bd9ece57af86519bedc5e96/dektools-0.1.99.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [Dosepy]: Downloading https://files.pythonhosted.org/packages/d9/20/1ab7dca84344a29046110a9c841c5633b2f100b91ee15bf262b0f8c817a9/Dosepy-0.6.1.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/19/05/4eab92bad2e009a2a862d854ac5cc722d5b0c05c1961c961291126925dfa/rest_client_micro-0.3.8.tar.gz
+[2024-05-11 20:51:52] INFO root fetch - processPackages [dektools]: executing diffoscope
+[2024-05-11 20:51:52] INFO root fetch - processPackages [dektools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dektools-0.1.98.tar.gz tmp/dektools-0.1.99.tar.gz --markdown 20240511/d/dektools/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-11 20:51:53] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 20:51:53] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.7.tar.gz tmp/rest_client_micro-0.3.8.tar.gz --markdown 20240511/r/rest-client-micro/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-11 20:51:53] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Downloading https://files.pythonhosted.org/packages/d0/1b/e234c6881824a409fad78e30a10c197a21e5e573aa247b66bbc6153e9ca0/PyCompGeomAlgorithms-1.0.9.tar.gz
+[2024-05-11 20:51:53] INFO root fetch - processPackages [thierryz]: Downloading https://files.pythonhosted.org/packages/a0/fb/43e03d7b936f0b628aa4854e8f7a96eed840c46315d71411e75dae2465f8/thierryz-2.1.tar.gz
+[2024-05-11 20:51:53] INFO root fetch - processPackages [thierryz]: executing diffoscope
+[2024-05-11 20:51:53] INFO root fetch - processPackages [thierryz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thierryz-1.1.tar.gz tmp/thierryz-2.1.tar.gz --markdown 20240511/t/thierryz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:51:53] INFO root fetch - processPackages [PyCompGeomAlgorithms]: executing diffoscope
+[2024-05-11 20:51:53] INFO root fetch - processPackages [PyCompGeomAlgorithms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyCompGeomAlgorithms-1.0.8.tar.gz tmp/PyCompGeomAlgorithms-1.0.9.tar.gz --markdown 20240511/P/PyCompGeomAlgorithms/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 20:51:53] INFO root fetch - processPackages [Dosepy]: Downloading https://files.pythonhosted.org/packages/b4/9a/76f7f9605aef9514c6a8651981a845c9781b9b9ee0bf5825e3dc296ea527/dosepy-0.6.2.tar.gz
+[2024-05-11 20:51:53] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.7.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.8.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 20:51:53] INFO root fetch - processPackages [Dosepy]: executing diffoscope
+[2024-05-11 20:51:53] INFO root fetch - processPackages [Dosepy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Dosepy-0.6.1.tar.gz tmp/dosepy-0.6.2.tar.gz --markdown 20240511/D/Dosepy/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-11 20:51:53] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.98.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - processPackages [dektools]: Remove: archive file [/home/abi/fetcher/tmp/dektools-0.1.99.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - main [MainThread]: End processing [dektools]: success
+[2024-05-11 20:51:53] INFO root fetch - processPackages [thierryz]: Remove: archive file [/home/abi/fetcher/tmp/thierryz-1.1.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - processPackages [thierryz]: Remove: archive file [/home/abi/fetcher/tmp/thierryz-2.1.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - main [MainThread]: End processing [thierryz]: success
+[2024-05-11 20:51:53] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.8.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - processPackages [PyCompGeomAlgorithms]: Remove: archive file [/home/abi/fetcher/tmp/PyCompGeomAlgorithms-1.0.9.tar.gz]
+[2024-05-11 20:51:53] INFO root fetch - main [MainThread]: End processing [PyCompGeomAlgorithms]: success
+[2024-05-11 20:51:54] INFO root fetch - processPackages [Dosepy]: Remove: archive file [/home/abi/fetcher/tmp/Dosepy-0.6.1.tar.gz]
+[2024-05-11 20:51:54] INFO root fetch - processPackages [Dosepy]: Remove: archive file [/home/abi/fetcher/tmp/dosepy-0.6.2.tar.gz]
+[2024-05-11 20:51:54] INFO root fetch - main [MainThread]: End processing [Dosepy]: success
+[2024-05-11 20:51:54] INFO root fetch - main [MainThread]: Store serial: [23163755]
