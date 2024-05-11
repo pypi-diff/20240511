@@ -22399,3 +22399,30 @@
 [2024-05-11 21:26:40] INFO root fetch - processPackages [fazah]: Remove: archive file [/home/abi/fetcher/tmp/fazah-3.27.tar.gz]
 [2024-05-11 21:26:40] INFO root fetch - main [MainThread]: End processing [fazah]: success
 [2024-05-11 21:26:40] INFO root fetch - main [MainThread]: Store serial: [23163957]
+[2024-05-11 21:28:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163957]
+[2024-05-11 21:28:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 21:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: OctoBot-Trading
+[2024-05-11 21:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: powerlinecust-segments
+[2024-05-11 21:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: titokiz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: embreastmentz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [OctoBot-Trading]: New version: [2.4.9] Old Version: [2.4.80]
+[2024-05-11 21:28:49] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/75/6a/5857cb47eecd33561b9aa4f45184625925b1dd9105847128624aa19e2615/OctoBot-Trading-2.4.80.tar.gz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [titokiz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:28:49] WARNING root fetch - processPackages [powerlinecust-segments]: Skipping, unable to determine old version
+[2024-05-11 21:28:49] INFO root fetch - main [MainThread]: End processing [powerlinecust-segments] error
+[2024-05-11 21:28:49] WARNING root fetch - processPackages [embreastmentz]: Skipping, unable to determine old version
+[2024-05-11 21:28:49] INFO root fetch - main [MainThread]: End processing [embreastmentz] error
+[2024-05-11 21:28:49] INFO root fetch - processPackages [titokiz]: Downloading https://files.pythonhosted.org/packages/fc/be/ac24fb8cac22a2d74306b99fdf5d90496e9c5cf959ccdd9d5b3478dab65c/titokiz-1.1.tar.gz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [OctoBot-Trading]: Downloading https://files.pythonhosted.org/packages/77/bc/ecdb68086de1f382830bf4a54be7e64fdcf11183cbc9e6485fe1c829615e/OctoBot-Trading-2.4.9.tar.gz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [OctoBot-Trading]: executing diffoscope
+[2024-05-11 21:28:49] INFO root fetch - processPackages [OctoBot-Trading]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OctoBot-Trading-2.4.80.tar.gz tmp/OctoBot-Trading-2.4.9.tar.gz --markdown 20240511/O/OctoBot-Trading/2.4.80-2.4.9/README.md --exclude *.pyd
+[2024-05-11 21:28:49] INFO root fetch - processPackages [titokiz]: Downloading https://files.pythonhosted.org/packages/7d/e2/5f63b9f570a87675cdef4c8787f71e7cebb0591fe5120755bd39725cfaa4/titokiz-2.1.tar.gz
+[2024-05-11 21:28:49] INFO root fetch - processPackages [titokiz]: executing diffoscope
+[2024-05-11 21:28:49] INFO root fetch - processPackages [titokiz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/titokiz-1.1.tar.gz tmp/titokiz-2.1.tar.gz --markdown 20240511/t/titokiz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:28:50] INFO root fetch - processPackages [titokiz]: Remove: archive file [/home/abi/fetcher/tmp/titokiz-1.1.tar.gz]
+[2024-05-11 21:28:50] INFO root fetch - processPackages [titokiz]: Remove: archive file [/home/abi/fetcher/tmp/titokiz-2.1.tar.gz]
+[2024-05-11 21:28:50] INFO root fetch - main [MainThread]: End processing [titokiz]: success
+[2024-05-11 21:28:52] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.80.tar.gz]
+[2024-05-11 21:28:52] INFO root fetch - processPackages [OctoBot-Trading]: Remove: archive file [/home/abi/fetcher/tmp/OctoBot-Trading-2.4.9.tar.gz]
+[2024-05-11 21:28:52] INFO root fetch - main [MainThread]: End processing [OctoBot-Trading]: success
+[2024-05-11 21:28:52] INFO root fetch - main [MainThread]: Store serial: [23163970]
