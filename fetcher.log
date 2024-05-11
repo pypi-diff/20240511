@@ -20013,3 +20013,46 @@
 [2024-05-11 18:45:22] INFO root fetch - processPackages [paystack-cli]: Remove: archive file [/home/abi/fetcher/tmp/paystack_cli-0.2.0.tar.gz]
 [2024-05-11 18:45:22] INFO root fetch - main [MainThread]: End processing [paystack-cli]: success
 [2024-05-11 18:45:22] INFO root fetch - main [MainThread]: Store serial: [23162781]
+[2024-05-11 18:47:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162781]
+[2024-05-11 18:47:30] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 18:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ytmusicapi
+[2024-05-11 18:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nestpython
+[2024-05-11 18:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: subacademicz
+[2024-05-11 18:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pybunch
+[2024-05-11 18:47:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: citystreetview
+[2024-05-11 18:47:30] INFO root fetch - processPackages [pybunch]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 18:47:30] INFO root fetch - processPackages [citystreetview]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-05-11 18:47:30] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/9f/4d/d8467f26bb1a59cf0a4536dd3d787df5754ea90b590e2b263aa4dd96978c/pybunch-1.0.8.tar.gz
+[2024-05-11 18:47:30] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 18:47:31] INFO root fetch - processPackages [subacademicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:47:31] INFO root fetch - processPackages [ytmusicapi]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-11 18:47:31] ERROR root fetch - processPackages [citystreetview]: Unable to fetch info: No such project/version 'citystreetview' 1.2.1
+[2024-05-11 18:47:31] INFO root fetch - main [MainThread]: End processing [citystreetview] error
+[2024-05-11 18:47:31] INFO root fetch - processPackages [pybunch]: Downloading https://files.pythonhosted.org/packages/f2/5d/c7ff16c5a81312e4d3c036afbe76b917bd7afad965ca06e3279374dca049/pybunch-1.0.9.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [subacademicz]: Downloading https://files.pythonhosted.org/packages/1c/fd/9408b9f8a463e341d898e833e870591961a9058adf23f584e699df2855a9/subacademicz-1.1.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [ytmusicapi]: Downloading https://files.pythonhosted.org/packages/d5/f1/ca5f3fc9045792e65274c0b69afc4f92d526f9727f8a26e0b10e812fc7f4/ytmusicapi-1.7.0.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [pybunch]: executing diffoscope
+[2024-05-11 18:47:31] INFO root fetch - processPackages [pybunch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybunch-1.0.8.tar.gz tmp/pybunch-1.0.9.tar.gz --markdown 20240511/p/pybunch/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 18:47:31] INFO root fetch - processPackages [subacademicz]: Downloading https://files.pythonhosted.org/packages/46/b5/061a4bf2b0145533ae6469d55711deb934a5fcd367a357ffb8685501577a/subacademicz-2.1.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [ytmusicapi]: Downloading https://files.pythonhosted.org/packages/8e/50/f3d54683c60983760d699c6116a475ea3b19a68c39ecb915496ef4121ff6/ytmusicapi-1.7.1.tar.gz
+[2024-05-11 18:47:31] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-05-11 18:47:31] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240511/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 18:47:31] INFO root fetch - processPackages [subacademicz]: executing diffoscope
+[2024-05-11 18:47:31] INFO root fetch - processPackages [subacademicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subacademicz-1.1.tar.gz tmp/subacademicz-2.1.tar.gz --markdown 20240511/s/subacademicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:47:31] INFO root fetch - processPackages [ytmusicapi]: executing diffoscope
+[2024-05-11 18:47:31] INFO root fetch - processPackages [ytmusicapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytmusicapi-1.7.0.tar.gz tmp/ytmusicapi-1.7.1.tar.gz --markdown 20240511/y/ytmusicapi/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-11 18:47:31] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.0.8.tar.gz]
+[2024-05-11 18:47:31] INFO root fetch - processPackages [pybunch]: Remove: archive file [/home/abi/fetcher/tmp/pybunch-1.0.9.tar.gz]
+[2024-05-11 18:47:31] INFO root fetch - main [MainThread]: End processing [pybunch]: success
+[2024-05-11 18:47:32] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-05-11 18:47:32] INFO root fetch - processPackages [subacademicz]: Remove: archive file [/home/abi/fetcher/tmp/subacademicz-1.1.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - processPackages [subacademicz]: Remove: archive file [/home/abi/fetcher/tmp/subacademicz-2.1.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - main [MainThread]: End processing [subacademicz]: success
+[2024-05-11 18:47:32] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.7.0.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.7.1.tar.gz]
+[2024-05-11 18:47:32] INFO root fetch - main [MainThread]: End processing [ytmusicapi]: success
+[2024-05-11 18:47:32] INFO root fetch - main [MainThread]: Store serial: [23162797]
