@@ -9532,3 +9532,24 @@
 [2024-05-11 06:11:49] INFO root fetch - processPackages [metallurgistz]: Remove: archive file [/home/abi/fetcher/tmp/metallurgistz-2.1.tar.gz]
 [2024-05-11 06:11:49] INFO root fetch - main [MainThread]: End processing [metallurgistz]: success
 [2024-05-11 06:11:49] INFO root fetch - main [MainThread]: Store serial: [23157194]
+[2024-05-11 06:13:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157194]
+[2024-05-11 06:13:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duwi-smart-sdk
+[2024-05-11 06:13:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crossword-puzzle
+[2024-05-11 06:13:58] INFO root fetch - processPackages [duwi-smart-sdk]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 06:13:58] INFO root fetch - processPackages [crossword-puzzle]: New version: [1.2.66] Old Version: [1.2.65]
+[2024-05-11 06:13:58] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/d0/89/ec85477dd71d427401a28ad04081d86846e1186ac4e5246412b2f6bfcdb6/duwi_smart_sdk-0.2.5.tar.gz
+[2024-05-11 06:13:58] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/0f/d9/9c962781f20ba5c7e9a682e7780443ce7130b46292e0fafb4863ffe70a8a/crossword_puzzle-1.2.65.tar.gz
+[2024-05-11 06:13:58] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/d8/9e/4d092a645a20b2f8a7fcd85f43aed9a6d0d43ca5ce15c69d8275ed66faf0/duwi_smart_sdk-0.2.6.tar.gz
+[2024-05-11 06:13:58] INFO root fetch - processPackages [crossword-puzzle]: Downloading https://files.pythonhosted.org/packages/87/29/530456462c3b07fae6e8bcbef08a0a38b8386571ed27af1a508d5dd1a84b/crossword_puzzle-1.2.66.tar.gz
+[2024-05-11 06:13:58] INFO root fetch - processPackages [duwi-smart-sdk]: executing diffoscope
+[2024-05-11 06:13:58] INFO root fetch - processPackages [duwi-smart-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duwi_smart_sdk-0.2.5.tar.gz tmp/duwi_smart_sdk-0.2.6.tar.gz --markdown 20240511/d/duwi-smart-sdk/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 06:13:59] INFO root fetch - processPackages [crossword-puzzle]: executing diffoscope
+[2024-05-11 06:13:59] INFO root fetch - processPackages [crossword-puzzle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crossword_puzzle-1.2.65.tar.gz tmp/crossword_puzzle-1.2.66.tar.gz --markdown 20240511/c/crossword-puzzle/1.2.65-1.2.66/README.md --exclude *.pyd
+[2024-05-11 06:13:59] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.5.tar.gz]
+[2024-05-11 06:13:59] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.6.tar.gz]
+[2024-05-11 06:13:59] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
+[2024-05-11 06:14:19] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.65.tar.gz]
+[2024-05-11 06:14:19] INFO root fetch - processPackages [crossword-puzzle]: Remove: archive file [/home/abi/fetcher/tmp/crossword_puzzle-1.2.66.tar.gz]
+[2024-05-11 06:14:19] INFO root fetch - main [MainThread]: End processing [crossword-puzzle]: success
+[2024-05-11 06:14:19] INFO root fetch - main [MainThread]: Store serial: [23157199]
