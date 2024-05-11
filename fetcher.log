@@ -24276,3 +24276,27 @@
 [2024-05-11 23:46:14] WARNING root fetch - processPackages [decipheredz]: Skipping, unable to determine old version
 [2024-05-11 23:46:14] INFO root fetch - main [MainThread]: End processing [decipheredz] error
 [2024-05-11 23:46:14] INFO root fetch - main [MainThread]: Store serial: [23164808]
+[2024-05-11 23:48:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164808]
+[2024-05-11 23:48:23] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 23:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyboiler-anonoei
+[2024-05-11 23:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcesage
+[2024-05-11 23:48:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unslynessz
+[2024-05-11 23:48:23] INFO root fetch - processPackages [sourcesage]: New version: [4.2.0] Old Version: [4.1.6]
+[2024-05-11 23:48:23] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/d1/cb/873f9c7203643a503fbbc37d7e3abfeb9597fd0412f90c2faf8bd2d698c6/sourcesage-4.1.6.tar.gz
+[2024-05-11 23:48:23] WARNING root fetch - processPackages [pyboiler-anonoei]: Skipping, unable to determine old version
+[2024-05-11 23:48:23] INFO root fetch - main [MainThread]: End processing [pyboiler-anonoei] error
+[2024-05-11 23:48:23] INFO root fetch - processPackages [unslynessz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:48:23] INFO root fetch - processPackages [unslynessz]: Downloading https://files.pythonhosted.org/packages/11/11/70d2c5108b2d267fe6c3579a771d673183386abca66eb4e88f410e849d40/unslynessz-1.1.tar.gz
+[2024-05-11 23:48:23] INFO root fetch - processPackages [sourcesage]: Downloading https://files.pythonhosted.org/packages/30/58/02f31b30104f2e5f3473341944f09f65ce9876bf8785493187af45f4491d/sourcesage-4.2.0.tar.gz
+[2024-05-11 23:48:24] INFO root fetch - processPackages [sourcesage]: executing diffoscope
+[2024-05-11 23:48:24] INFO root fetch - processPackages [sourcesage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sourcesage-4.1.6.tar.gz tmp/sourcesage-4.2.0.tar.gz --markdown 20240511/s/sourcesage/4.1.6-4.2.0/README.md --exclude *.pyd
+[2024-05-11 23:48:24] INFO root fetch - processPackages [unslynessz]: Downloading https://files.pythonhosted.org/packages/4e/d3/d85da13db3f1a8949bcc772ee61771047bff949f6f3003d045e5aee2a885/unslynessz-2.1.tar.gz
+[2024-05-11 23:48:24] INFO root fetch - processPackages [unslynessz]: executing diffoscope
+[2024-05-11 23:48:24] INFO root fetch - processPackages [unslynessz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unslynessz-1.1.tar.gz tmp/unslynessz-2.1.tar.gz --markdown 20240511/u/unslynessz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:48:24] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.1.6.tar.gz]
+[2024-05-11 23:48:24] INFO root fetch - processPackages [sourcesage]: Remove: archive file [/home/abi/fetcher/tmp/sourcesage-4.2.0.tar.gz]
+[2024-05-11 23:48:24] INFO root fetch - main [MainThread]: End processing [sourcesage]: success
+[2024-05-11 23:48:24] INFO root fetch - processPackages [unslynessz]: Remove: archive file [/home/abi/fetcher/tmp/unslynessz-1.1.tar.gz]
+[2024-05-11 23:48:24] INFO root fetch - processPackages [unslynessz]: Remove: archive file [/home/abi/fetcher/tmp/unslynessz-2.1.tar.gz]
+[2024-05-11 23:48:24] INFO root fetch - main [MainThread]: End processing [unslynessz]: success
+[2024-05-11 23:48:24] INFO root fetch - main [MainThread]: Store serial: [23164819]
