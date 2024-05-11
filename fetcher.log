@@ -22534,3 +22534,36 @@
 [2024-05-11 21:37:44] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-11 21:37:44] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-11 21:37:44] INFO root fetch - main [MainThread]: Store serial: [23164009]
+[2024-05-11 21:39:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164009]
+[2024-05-11 21:39:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 21:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: flopwingz
+[2024-05-11 21:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autotrash
+[2024-05-11 21:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mke-sculib
+[2024-05-11 21:39:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eyeGestures
+[2024-05-11 21:39:53] INFO root fetch - processPackages [mke-sculib]: New version: [2.5.2] Old Version: [2.5.1]
+[2024-05-11 21:39:53] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/a8/dc/9c3ed1ee90e9b7663d95e4a330a78cd1dca89d6db8e5a9717b7283f1fb6f/mke_sculib-2.5.1.tar.gz
+[2024-05-11 21:39:53] WARNING root fetch - processPackages [flopwingz]: Skipping, unable to determine old version
+[2024-05-11 21:39:53] INFO root fetch - main [MainThread]: End processing [flopwingz] error
+[2024-05-11 21:39:53] INFO root fetch - processPackages [autotrash]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-11 21:39:53] INFO root fetch - processPackages [eyeGestures]: New version: [1.4.4] Old Version: [1.3.4]
+[2024-05-11 21:39:53] INFO root fetch - processPackages [autotrash]: Downloading https://files.pythonhosted.org/packages/02/7e/66a2f93702458b432f825b908f3e5a33187fd0d025b4a2d96689dc8f20a8/autotrash-0.4.6.tar.gz
+[2024-05-11 21:39:53] INFO root fetch - processPackages [eyeGestures]: Downloading https://files.pythonhosted.org/packages/0f/53/2fb43ae6e277c29585ee71e5b9238c75d68cacfcd69b498c50d5a5bc0241/eyegestures-1.3.4.tar.gz
+[2024-05-11 21:39:53] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/e5/36/d8f824037f85165b50b23a90d1a13bd6804213a58ce938a5f0314e284957/mke_sculib-2.5.2.tar.gz
+[2024-05-11 21:39:54] INFO root fetch - processPackages [autotrash]: Downloading https://files.pythonhosted.org/packages/ff/a5/b57d50cb841b99622abba6907e4cbd803b43b5141469972dc4597d9bc6cd/autotrash-0.4.7.tar.gz
+[2024-05-11 21:39:54] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-05-11 21:39:54] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.5.1.tar.gz tmp/mke_sculib-2.5.2.tar.gz --markdown 20240511/m/mke-sculib/2.5.1-2.5.2/README.md --exclude *.pyd
+[2024-05-11 21:39:54] INFO root fetch - processPackages [eyeGestures]: Downloading https://files.pythonhosted.org/packages/4a/a9/462d661ac6fc5c6e05ffd6cf1ff7d5e20c8efc5507f5791b94c1f6c81c2f/eyegestures-1.4.4.tar.gz
+[2024-05-11 21:39:54] INFO root fetch - processPackages [autotrash]: executing diffoscope
+[2024-05-11 21:39:54] INFO root fetch - processPackages [autotrash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotrash-0.4.6.tar.gz tmp/autotrash-0.4.7.tar.gz --markdown 20240511/a/autotrash/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-11 21:39:54] INFO root fetch - processPackages [eyeGestures]: executing diffoscope
+[2024-05-11 21:39:54] INFO root fetch - processPackages [eyeGestures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyegestures-1.3.4.tar.gz tmp/eyegestures-1.4.4.tar.gz --markdown 20240511/e/eyeGestures/1.3.4-1.4.4/README.md --exclude *.pyd
+[2024-05-11 21:39:54] INFO root fetch - processPackages [autotrash]: Remove: archive file [/home/abi/fetcher/tmp/autotrash-0.4.6.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - processPackages [autotrash]: Remove: archive file [/home/abi/fetcher/tmp/autotrash-0.4.7.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - main [MainThread]: End processing [autotrash]: success
+[2024-05-11 21:39:54] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.1.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.2.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-05-11 21:39:54] INFO root fetch - processPackages [eyeGestures]: Remove: archive file [/home/abi/fetcher/tmp/eyegestures-1.3.4.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - processPackages [eyeGestures]: Remove: archive file [/home/abi/fetcher/tmp/eyegestures-1.4.4.tar.gz]
+[2024-05-11 21:39:54] INFO root fetch - main [MainThread]: End processing [eyeGestures]: success
+[2024-05-11 21:39:54] INFO root fetch - main [MainThread]: Store serial: [23164023]
