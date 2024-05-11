@@ -18566,3 +18566,33 @@
 [2024-05-11 17:08:01] INFO root fetch - processPackages [zrcl]: Remove: archive file [/home/abi/fetcher/tmp/zrcl-0.2.1.tar.gz]
 [2024-05-11 17:08:01] INFO root fetch - main [MainThread]: End processing [zrcl]: success
 [2024-05-11 17:08:01] INFO root fetch - main [MainThread]: Store serial: [23162167]
+[2024-05-11 17:10:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162167]
+[2024-05-11 17:10:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Files.com
+[2024-05-11 17:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ipex-llm
+[2024-05-11 17:10:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rest-client-micro
+[2024-05-11 17:10:09] INFO root fetch - processPackages [ipex-llm]: New version: [2.1.0b20240510] Old Version: [2.1.0b20240509]
+[2024-05-11 17:10:09] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-11 17:10:09] INFO root fetch - processPackages [Files.com]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-11 17:10:09] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/b0/c9/617c25a8e19d4b8dc41cadcd670bc15c92c48e78ef03d5689d9e497f801e/ipex_llm-2.1.0b20240509-py3-none-win_amd64.whl
+[2024-05-11 17:10:09] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/fe/9f/8654a34abe6ed4232708475bb6c7dd30b128ab68594cd684d58e72375385/Files.com-1.4.8.tar.gz
+[2024-05-11 17:10:09] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/d5/4f/b3f8d0fea1df15045fca3d134b22d39487a8a59ee9c691c2e29d4d0b2d15/rest_client_micro-0.3.4.tar.gz
+[2024-05-11 17:10:10] INFO root fetch - processPackages [Files.com]: Downloading https://files.pythonhosted.org/packages/50/2a/081bc12536110f3d42e66312b9c23d07fc87bd3eafaaa4b731c3a21d1660/Files.com-1.4.9.tar.gz
+[2024-05-11 17:10:10] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/43/5d/af31d2438ceb56ecc2b9b50afc38caf4fdcb4d7960db8032b381460d517b/rest_client_micro-0.3.5.tar.gz
+[2024-05-11 17:10:10] INFO root fetch - processPackages [Files.com]: executing diffoscope
+[2024-05-11 17:10:10] INFO root fetch - processPackages [Files.com]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Files.com-1.4.8.tar.gz tmp/Files.com-1.4.9.tar.gz --markdown 20240511/F/Files.com/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-11 17:10:10] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 17:10:10] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.4.tar.gz tmp/rest_client_micro-0.3.5.tar.gz --markdown 20240511/r/rest-client-micro/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-11 17:10:10] INFO root fetch - processPackages [ipex-llm]: Downloading https://files.pythonhosted.org/packages/d1/59/0136616a9b0fb4ab9cb64f50a6f53b5075b581a722bcf3f6837bff63acf3/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl
+[2024-05-11 17:10:10] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.4.tar.gz]
+[2024-05-11 17:10:10] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.5.tar.gz]
+[2024-05-11 17:10:10] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 17:10:10] INFO root fetch - processPackages [ipex-llm]: executing diffoscope
+[2024-05-11 17:10:10] INFO root fetch - processPackages [ipex-llm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipex_llm-2.1.0b20240509-py3-none-win_amd64.whl.zip tmp/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl.zip --markdown 20240511/i/ipex-llm/2.1.0b20240509-2.1.0b20240510/README.md --exclude *.pyd
+[2024-05-11 17:10:11] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.8.tar.gz]
+[2024-05-11 17:10:11] INFO root fetch - processPackages [Files.com]: Remove: archive file [/home/abi/fetcher/tmp/Files.com-1.4.9.tar.gz]
+[2024-05-11 17:10:11] INFO root fetch - main [MainThread]: End processing [Files.com]: success
+[2024-05-11 17:10:38] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240509-py3-none-win_amd64.whl.zip]
+[2024-05-11 17:10:38] INFO root fetch - processPackages [ipex-llm]: Remove: archive file [/home/abi/fetcher/tmp/ipex_llm-2.1.0b20240510-py3-none-win_amd64.whl.zip]
+[2024-05-11 17:10:38] INFO root fetch - main [MainThread]: End processing [ipex-llm]: success
+[2024-05-11 17:10:38] INFO root fetch - main [MainThread]: Store serial: [23162179]
