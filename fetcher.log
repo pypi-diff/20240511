@@ -12449,3 +12449,15 @@
 [2024-05-11 10:13:03] INFO root fetch - processPackages [peltationz]: Remove: archive file [/home/abi/fetcher/tmp/peltationz-2.1.tar.gz]
 [2024-05-11 10:13:03] INFO root fetch - main [MainThread]: End processing [peltationz]: success
 [2024-05-11 10:13:03] INFO root fetch - main [MainThread]: Store serial: [23158897]
+[2024-05-11 10:15:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158897]
+[2024-05-11 10:15:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 10:15:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyLodStorage
+[2024-05-11 10:15:12] INFO root fetch - processPackages [pyLodStorage]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-11 10:15:12] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/4c/e3/15ad58c688ca9613afcfa8f73ab039cb5ee8a215b2780d306a423cdcc76a/pylodstorage-0.9.1.tar.gz
+[2024-05-11 10:15:12] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/fa/73/19116c570959e490c6e63cc4ed466cc8f943e9f123f6c0fb7c3f944ee193/pylodstorage-0.9.2.tar.gz
+[2024-05-11 10:15:13] INFO root fetch - processPackages [pyLodStorage]: executing diffoscope
+[2024-05-11 10:15:13] INFO root fetch - processPackages [pyLodStorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylodstorage-0.9.1.tar.gz tmp/pylodstorage-0.9.2.tar.gz --markdown 20240511/p/pyLodStorage/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-11 10:15:14] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.1.tar.gz]
+[2024-05-11 10:15:14] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.2.tar.gz]
+[2024-05-11 10:15:14] INFO root fetch - main [MainThread]: End processing [pyLodStorage]: success
+[2024-05-11 10:15:14] INFO root fetch - main [MainThread]: Store serial: [23158900]
