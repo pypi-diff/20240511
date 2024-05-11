@@ -15798,3 +15798,30 @@
 [2024-05-11 13:56:03] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.44-py3-none-any.whl.zip]
 [2024-05-11 13:56:03] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-11 13:56:03] INFO root fetch - main [MainThread]: Store serial: [23160724]
+[2024-05-11 13:58:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160724]
+[2024-05-11 13:58:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 13:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pseudomoralz
+[2024-05-11 13:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapeddit
+[2024-05-11 13:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: prospectorsz
+[2024-05-11 13:58:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commitlint-autorelease
+[2024-05-11 13:58:13] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 13:58:13] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/e3/94/5318c62210b4ea0757a90811047573a75efa206ea5f41cf730c6d08a1e85/scrapeddit-0.1.6.tar.gz
+[2024-05-11 13:58:13] WARNING root fetch - processPackages [prospectorsz]: Skipping, unable to determine old version
+[2024-05-11 13:58:13] INFO root fetch - main [MainThread]: End processing [prospectorsz] error
+[2024-05-11 13:58:13] INFO root fetch - processPackages [pseudomoralz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:58:13] WARNING root fetch - processPackages [commitlint-autorelease]: Skipping, unable to determine old version
+[2024-05-11 13:58:13] INFO root fetch - main [MainThread]: End processing [commitlint-autorelease] error
+[2024-05-11 13:58:13] INFO root fetch - processPackages [pseudomoralz]: Downloading https://files.pythonhosted.org/packages/8c/59/7c1bce9d6f110e0a0db909eec33151ea1b4018f8e341d91b5a8003bcb3b8/pseudomoralz-1.1.tar.gz
+[2024-05-11 13:58:13] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/64/61/b8db6fe115f8c7a7a4f0a75778bf81b53696787ef87f6f93afe95362636e/scrapeddit-0.1.7.tar.gz
+[2024-05-11 13:58:13] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 13:58:13] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.6.tar.gz tmp/scrapeddit-0.1.7.tar.gz --markdown 20240511/s/scrapeddit/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 13:58:13] INFO root fetch - processPackages [pseudomoralz]: Downloading https://files.pythonhosted.org/packages/d0/0b/ac0b181d27559a4fc0bf40d9dfb5997482368c8ade978d239249481c515d/pseudomoralz-2.1.tar.gz
+[2024-05-11 13:58:13] INFO root fetch - processPackages [pseudomoralz]: executing diffoscope
+[2024-05-11 13:58:13] INFO root fetch - processPackages [pseudomoralz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pseudomoralz-1.1.tar.gz tmp/pseudomoralz-2.1.tar.gz --markdown 20240511/p/pseudomoralz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:58:14] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.6.tar.gz]
+[2024-05-11 13:58:14] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.7.tar.gz]
+[2024-05-11 13:58:14] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 13:58:14] INFO root fetch - processPackages [pseudomoralz]: Remove: archive file [/home/abi/fetcher/tmp/pseudomoralz-1.1.tar.gz]
+[2024-05-11 13:58:14] INFO root fetch - processPackages [pseudomoralz]: Remove: archive file [/home/abi/fetcher/tmp/pseudomoralz-2.1.tar.gz]
+[2024-05-11 13:58:14] INFO root fetch - main [MainThread]: End processing [pseudomoralz]: success
+[2024-05-11 13:58:14] INFO root fetch - main [MainThread]: Store serial: [23160740]
