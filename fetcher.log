@@ -20496,3 +20496,42 @@
 [2024-05-11 19:15:56] INFO root fetch - processPackages [CustomTkinterMessagebox]: Remove: archive file [/home/abi/fetcher/tmp/customtkintermessagebox-0.0.2.tar.gz]
 [2024-05-11 19:15:56] INFO root fetch - main [MainThread]: End processing [CustomTkinterMessagebox]: success
 [2024-05-11 19:15:56] INFO root fetch - main [MainThread]: Store serial: [23162986]
+[2024-05-11 19:18:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162986]
+[2024-05-11 19:18:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyaction
+[2024-05-11 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-oflog-components
+[2024-05-11 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addon-product-state
+[2024-05-11 19:18:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: subtopicsz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [odoo-addon-product-state]: New version: [17.0.1.0.0.2] Old Version: [16.0.1.1.0]
+[2024-05-11 19:18:06] INFO root fetch - processPackages [dash-oflog-components]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 19:18:06] INFO root fetch - processPackages [odoo-addon-product-state]: Downloading https://files.pythonhosted.org/packages/94/41/1b7fc24c1eab10360c8c5d6d65dd01363f183aae46717a7a7fc0448a2ad0/odoo_addon_product_state-16.0.1.1.0-py3-none-any.whl
+[2024-05-11 19:18:06] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/87/0b/f416b5cdfcc73fcb0e1d8e73d90f0fde8fa4a3042b87eef6a6f78630737b/dash_oflog_components-0.0.8.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [pyaction]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 19:18:06] INFO root fetch - processPackages [subtopicsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:18:06] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/8b/f4/0b8659ff282e21dd91120e7b693c909d64230d30799a6ecfcf808cad6c44/dash_oflog_components-0.0.9.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [odoo-addon-product-state]: Downloading https://files.pythonhosted.org/packages/aa/db/5a9054e49aa20379bebc3533423ab3ad67b233cffcb55f2ce7c52d03610f/odoo_addon_product_state-17.0.1.0.0.2-py3-none-any.whl
+[2024-05-11 19:18:06] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/f6/70/d527fb301953b73b5dfbcc8b426c59de055f41d9bfb861b8036f9940e91f/pyaction-0.6.0.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [subtopicsz]: Downloading https://files.pythonhosted.org/packages/81/a9/c8ae5bb6b533ed1bc38f95ae893eddce850757bd8b59eb5f89fdbce3e977/subtopicsz-1.1.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [dash-oflog-components]: executing diffoscope
+[2024-05-11 19:18:06] INFO root fetch - processPackages [dash-oflog-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_oflog_components-0.0.8.tar.gz tmp/dash_oflog_components-0.0.9.tar.gz --markdown 20240511/d/dash-oflog-components/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 19:18:06] INFO root fetch - processPackages [odoo-addon-product-state]: executing diffoscope
+[2024-05-11 19:18:06] INFO root fetch - processPackages [odoo-addon-product-state]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_product_state-16.0.1.1.0-py3-none-any.whl.zip tmp/odoo_addon_product_state-17.0.1.0.0.2-py3-none-any.whl.zip --markdown 20240511/o/odoo-addon-product-state/16.0.1.1.0-17.0.1.0.0.2/README.md --exclude *.pyd
+[2024-05-11 19:18:06] INFO root fetch - processPackages [pyaction]: Downloading https://files.pythonhosted.org/packages/50/c3/23da12bcef7db7838c35eb8763e2c2e3da3ecff7d93ad4de2432eed85bd5/pyaction-0.6.1.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [subtopicsz]: Downloading https://files.pythonhosted.org/packages/9a/35/ce5ff0e7dd05780227908c0bcd8a32aef69fb7b9f35df81240f53ef9462a/subtopicsz-2.1.tar.gz
+[2024-05-11 19:18:06] INFO root fetch - processPackages [subtopicsz]: executing diffoscope
+[2024-05-11 19:18:06] INFO root fetch - processPackages [subtopicsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subtopicsz-1.1.tar.gz tmp/subtopicsz-2.1.tar.gz --markdown 20240511/s/subtopicsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:18:06] INFO root fetch - processPackages [pyaction]: executing diffoscope
+[2024-05-11 19:18:06] INFO root fetch - processPackages [pyaction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaction-0.6.0.tar.gz tmp/pyaction-0.6.1.tar.gz --markdown 20240511/p/pyaction/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-11 19:18:07] INFO root fetch - processPackages [odoo-addon-product-state]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_state-16.0.1.1.0-py3-none-any.whl.zip]
+[2024-05-11 19:18:07] INFO root fetch - processPackages [odoo-addon-product-state]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_state-17.0.1.0.0.2-py3-none-any.whl.zip]
+[2024-05-11 19:18:07] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-state]: success
+[2024-05-11 19:18:07] INFO root fetch - processPackages [subtopicsz]: Remove: archive file [/home/abi/fetcher/tmp/subtopicsz-1.1.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - processPackages [subtopicsz]: Remove: archive file [/home/abi/fetcher/tmp/subtopicsz-2.1.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - main [MainThread]: End processing [subtopicsz]: success
+[2024-05-11 19:18:07] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.8.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.9.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - main [MainThread]: End processing [dash-oflog-components]: success
+[2024-05-11 19:18:07] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.6.0.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.6.1.tar.gz]
+[2024-05-11 19:18:07] INFO root fetch - main [MainThread]: End processing [pyaction]: success
+[2024-05-11 19:18:07] INFO root fetch - main [MainThread]: Store serial: [23162996]
