@@ -11369,3 +11369,20 @@
 [2024-05-11 08:45:43] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715335295.tar.gz]
 [2024-05-11 08:45:43] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
 [2024-05-11 08:45:43] INFO root fetch - main [MainThread]: Store serial: [23158349]
+[2024-05-11 08:47:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158349]
+[2024-05-11 08:47:51] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 08:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EasyDonate-Py
+[2024-05-11 08:47:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: neqsim
+[2024-05-11 08:47:52] INFO root fetch - processPackages [EasyDonate-Py]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 08:47:52] INFO root fetch - processPackages [EasyDonate-Py]: Downloading https://files.pythonhosted.org/packages/fd/cc/c9b312c0a8929e4224cebd1e2752a2448fa92b8c48324320ddbbbfd2a189/easydonate_py-0.0.1.tar.gz
+[2024-05-11 08:47:52] INFO root fetch - processPackages [neqsim]: New version: [2.5.9] Old Version: [2.5.8]
+[2024-05-11 08:47:52] INFO root fetch - processPackages [neqsim]: Downloading https://files.pythonhosted.org/packages/1f/d7/d340087712e8d6af09461fd0c71e1c6eaa35d0eee2739edc07d874642ddd/neqsim-2.5.8.tar.gz
+[2024-05-11 08:47:52] INFO root fetch - processPackages [EasyDonate-Py]: Downloading https://files.pythonhosted.org/packages/0f/ad/18c6fec9ae76457ba9c28dca7284bf92683a8dd21e36e2a6269b01961166/easydonate_py-0.0.2.tar.gz
+[2024-05-11 08:47:52] WARNING root fetch - processPackages [neqsim]: Skipping package: exceeds size limit 28193627>=10485760
+[2024-05-11 08:47:52] INFO root fetch - main [MainThread]: End processing [neqsim] error
+[2024-05-11 08:47:52] INFO root fetch - processPackages [EasyDonate-Py]: executing diffoscope
+[2024-05-11 08:47:52] INFO root fetch - processPackages [EasyDonate-Py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easydonate_py-0.0.1.tar.gz tmp/easydonate_py-0.0.2.tar.gz --markdown 20240511/E/EasyDonate-Py/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 08:47:53] INFO root fetch - processPackages [EasyDonate-Py]: Remove: archive file [/home/abi/fetcher/tmp/easydonate_py-0.0.1.tar.gz]
+[2024-05-11 08:47:53] INFO root fetch - processPackages [EasyDonate-Py]: Remove: archive file [/home/abi/fetcher/tmp/easydonate_py-0.0.2.tar.gz]
+[2024-05-11 08:47:53] INFO root fetch - main [MainThread]: End processing [EasyDonate-Py]: success
+[2024-05-11 08:47:53] INFO root fetch - main [MainThread]: Store serial: [23158364]
