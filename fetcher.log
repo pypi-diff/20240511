@@ -21450,3 +21450,27 @@
 [2024-05-11 20:19:17] INFO root fetch - processPackages [morpholib]: Remove: archive file [/home/abi/fetcher/tmp/morpholib-0.9.0.dev1.tar.gz]
 [2024-05-11 20:19:17] INFO root fetch - main [MainThread]: End processing [morpholib]: success
 [2024-05-11 20:19:17] INFO root fetch - main [MainThread]: Store serial: [23163448]
+[2024-05-11 20:21:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163448]
+[2024-05-11 20:21:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 20:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tautsz
+[2024-05-11 20:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: folioflex
+[2024-05-11 20:21:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: resuscitativez
+[2024-05-11 20:21:26] INFO root fetch - processPackages [tautsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:21:26] WARNING root fetch - processPackages [resuscitativez]: Skipping, unable to determine old version
+[2024-05-11 20:21:26] INFO root fetch - main [MainThread]: End processing [resuscitativez] error
+[2024-05-11 20:21:26] INFO root fetch - processPackages [folioflex]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-11 20:21:27] INFO root fetch - processPackages [folioflex]: Downloading https://files.pythonhosted.org/packages/f1/f6/fe642826a66315833fa50ed4b8cf36710344242167fbbf887c4c7f18d3d2/folioflex-1.2.0.tar.gz
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: Downloading https://files.pythonhosted.org/packages/2f/79/d97533963a17f322e8f87f2b9f9003b5527fdda70c9595c3f72facfc0d34/tautsz-1.1.tar.gz
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: Downloading https://files.pythonhosted.org/packages/2a/47/e1cf85d118f3452108873ea68c775a3ee04cb70bdfe1ec318a7be56da65d/tautsz-2.1.tar.gz
+[2024-05-11 20:21:27] INFO root fetch - processPackages [folioflex]: Downloading https://files.pythonhosted.org/packages/8e/2a/ac1cf81a4de09ab600435fa5918c52b2b29ec6fde31e09510f6c28bbef32/folioflex-1.2.1.tar.gz
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: executing diffoscope
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tautsz-1.1.tar.gz tmp/tautsz-2.1.tar.gz --markdown 20240511/t/tautsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:21:27] INFO root fetch - processPackages [folioflex]: executing diffoscope
+[2024-05-11 20:21:27] INFO root fetch - processPackages [folioflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/folioflex-1.2.0.tar.gz tmp/folioflex-1.2.1.tar.gz --markdown 20240511/f/folioflex/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: Remove: archive file [/home/abi/fetcher/tmp/tautsz-1.1.tar.gz]
+[2024-05-11 20:21:27] INFO root fetch - processPackages [tautsz]: Remove: archive file [/home/abi/fetcher/tmp/tautsz-2.1.tar.gz]
+[2024-05-11 20:21:28] INFO root fetch - main [MainThread]: End processing [tautsz]: success
+[2024-05-11 20:21:28] INFO root fetch - processPackages [folioflex]: Remove: archive file [/home/abi/fetcher/tmp/folioflex-1.2.0.tar.gz]
+[2024-05-11 20:21:28] INFO root fetch - processPackages [folioflex]: Remove: archive file [/home/abi/fetcher/tmp/folioflex-1.2.1.tar.gz]
+[2024-05-11 20:21:28] INFO root fetch - main [MainThread]: End processing [folioflex]: success
+[2024-05-11 20:21:28] INFO root fetch - main [MainThread]: Store serial: [23163460]
