@@ -18064,3 +18064,37 @@
 [2024-05-11 16:33:07] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-05-11 16:33:07] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-05-11 16:33:07] INFO root fetch - main [MainThread]: Store serial: [23161954]
+[2024-05-11 16:35:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161954]
+[2024-05-11 16:35:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stela-professional
+[2024-05-11 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stela-professional
+[2024-05-11 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-bench
+[2024-05-11 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dependency999
+[2024-05-11 16:35:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: picodi
+[2024-05-11 16:35:17] WARNING root fetch - processPackages [llm-bench]: Skipping, unable to determine old version
+[2024-05-11 16:35:17] INFO root fetch - main [MainThread]: End processing [llm-bench] error
+[2024-05-11 16:35:17] INFO root fetch - processPackages [picodi]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: New version: [0.4.3] Old Version: [0.4.2]
+[2024-05-11 16:35:17] WARNING root fetch - processPackages [dependency999]: Skipping, unable to determine old version
+[2024-05-11 16:35:17] INFO root fetch - main [MainThread]: End processing [dependency999] error
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/17/0f/62eb0bb805a4d8923b0451adcdbd34746e91a4005f33ca8662354cd494aa/stela_professional-0.4.2.tar.gz
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/17/0f/62eb0bb805a4d8923b0451adcdbd34746e91a4005f33ca8662354cd494aa/stela_professional-0.4.2.tar.gz
+[2024-05-11 16:35:17] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/d5/1f/b539c14dcc59cfb8cd7a41433c89184eae013fc09262c959cc706350dee7/picodi-0.5.0.tar.gz
+[2024-05-11 16:35:17] INFO root fetch - processPackages [picodi]: Downloading https://files.pythonhosted.org/packages/a0/f4/5173e30a66392f8f4a309dbf7ab8bb7e4580e3cca5beec8778174e8f156c/picodi-0.6.0.tar.gz
+[2024-05-11 16:35:17] INFO root fetch - processPackages [picodi]: executing diffoscope
+[2024-05-11 16:35:17] INFO root fetch - processPackages [picodi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picodi-0.5.0.tar.gz tmp/picodi-0.6.0.tar.gz --markdown 20240511/p/picodi/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/29/fa/589b40b07b5ef233b5cacf805de0551c2886ca0e95c012de47133371c6e5/stela_professional-0.4.3.tar.gz
+[2024-05-11 16:35:17] INFO root fetch - processPackages [stela-professional]: Downloading https://files.pythonhosted.org/packages/29/fa/589b40b07b5ef233b5cacf805de0551c2886ca0e95c012de47133371c6e5/stela_professional-0.4.3.tar.gz
+[2024-05-11 16:35:18] INFO root fetch - processPackages [stela-professional]: executing diffoscope
+[2024-05-11 16:35:18] INFO root fetch - processPackages [stela-professional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stela_professional-0.4.2.tar.gz tmp/stela_professional-0.4.3.tar.gz --markdown 20240511/s/stela-professional/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-11 16:35:18] INFO root fetch - processPackages [stela-professional]: executing diffoscope
+[2024-05-11 16:35:18] INFO root fetch - processPackages [stela-professional]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stela_professional-0.4.2.tar.gz tmp/stela_professional-0.4.3.tar.gz --markdown 20240511/s/stela-professional/0.4.2-0.4.3/README.md --exclude *.pyd
+[2024-05-11 16:35:18] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.5.0.tar.gz]
+[2024-05-11 16:35:18] INFO root fetch - processPackages [picodi]: Remove: archive file [/home/abi/fetcher/tmp/picodi-0.6.0.tar.gz]
+[2024-05-11 16:35:18] INFO root fetch - main [MainThread]: End processing [picodi]: success
+[2024-05-11 16:35:19] INFO root fetch - processPackages [stela-professional]: Remove: archive file [/home/abi/fetcher/tmp/stela_professional-0.4.2.tar.gz]
+[2024-05-11 16:35:19] INFO root fetch - processPackages [stela-professional]: Remove: archive file [/home/abi/fetcher/tmp/stela_professional-0.4.3.tar.gz]
+[2024-05-11 16:35:19] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
+[2024-05-11 16:35:19] INFO root fetch - main [MainThread]: End processing [stela-professional]: success
+[2024-05-11 16:35:19] INFO root fetch - main [MainThread]: Store serial: [23161973]
