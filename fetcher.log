@@ -12348,3 +12348,33 @@
 [2024-05-11 10:02:17] INFO root fetch - processPackages [ork.build]: Remove: archive file [/home/abi/fetcher/tmp/ork.build-0.0.99.tar.gz]
 [2024-05-11 10:02:17] INFO root fetch - main [MainThread]: End processing [ork.build]: success
 [2024-05-11 10:02:17] INFO root fetch - main [MainThread]: Store serial: [23158862]
+[2024-05-11 10:04:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158862]
+[2024-05-11 10:04:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pina-mathlab
+[2024-05-11 10:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paridrosisz
+[2024-05-11 10:04:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: langfun
+[2024-05-11 10:04:26] INFO root fetch - processPackages [langfun]: New version: [0.0.2.dev20240510] Old Version: [0.0.2.dev20240509]
+[2024-05-11 10:04:26] INFO root fetch - processPackages [pina-mathlab]: New version: [0.1.1] Old Version: [0.1.0.post2403]
+[2024-05-11 10:04:26] INFO root fetch - processPackages [paridrosisz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:04:26] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/3e/62/fbfb1811dc976a190f3f8f248edd0da0ae761ba54bbc3c70fdf36c7f5e3a/langfun-0.0.2.dev20240509.tar.gz
+[2024-05-11 10:04:26] INFO root fetch - processPackages [pina-mathlab]: Downloading https://files.pythonhosted.org/packages/7d/ff/04f1e46b54cff697a905065f02f351e4413af28657ef01d89b5a3953993b/pina-mathlab-0.1.0.post2403.tar.gz
+[2024-05-11 10:04:26] INFO root fetch - processPackages [paridrosisz]: Downloading https://files.pythonhosted.org/packages/ef/4a/8aafd4231149d34adbd2378c86c5d5393b6711c650ca154d0d2abc00f64b/paridrosisz-1.1.tar.gz
+[2024-05-11 10:04:26] INFO root fetch - processPackages [langfun]: Downloading https://files.pythonhosted.org/packages/8a/34/3a0e85dd56a2753cdb6ba4f8e67b1d0b5975b044e7835b388613a2f408c2/langfun-0.0.2.dev20240510.tar.gz
+[2024-05-11 10:04:27] INFO root fetch - processPackages [langfun]: executing diffoscope
+[2024-05-11 10:04:27] INFO root fetch - processPackages [langfun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langfun-0.0.2.dev20240509.tar.gz tmp/langfun-0.0.2.dev20240510.tar.gz --markdown 20240511/l/langfun/0.0.2.dev20240509-0.0.2.dev20240510/README.md --exclude *.pyd
+[2024-05-11 10:04:27] INFO root fetch - processPackages [paridrosisz]: Downloading https://files.pythonhosted.org/packages/83/16/b777b9572901fb7c3922a2c39bf6132b8c03b115de654403eb6abdfd6754/paridrosisz-2.1.tar.gz
+[2024-05-11 10:04:27] INFO root fetch - processPackages [pina-mathlab]: Downloading https://files.pythonhosted.org/packages/2f/9d/aa34a71df393647adca0901955bb912f0fe783513b5699b898d11e0c0ed8/pina-mathlab-0.1.1.tar.gz
+[2024-05-11 10:04:27] INFO root fetch - processPackages [paridrosisz]: executing diffoscope
+[2024-05-11 10:04:27] INFO root fetch - processPackages [paridrosisz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paridrosisz-1.1.tar.gz tmp/paridrosisz-2.1.tar.gz --markdown 20240511/p/paridrosisz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:04:27] INFO root fetch - processPackages [pina-mathlab]: executing diffoscope
+[2024-05-11 10:04:27] INFO root fetch - processPackages [pina-mathlab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pina-mathlab-0.1.0.post2403.tar.gz tmp/pina-mathlab-0.1.1.tar.gz --markdown 20240511/p/pina-mathlab/0.1.0.post2403-0.1.1/README.md --exclude *.pyd
+[2024-05-11 10:04:27] INFO root fetch - processPackages [paridrosisz]: Remove: archive file [/home/abi/fetcher/tmp/paridrosisz-1.1.tar.gz]
+[2024-05-11 10:04:27] INFO root fetch - processPackages [paridrosisz]: Remove: archive file [/home/abi/fetcher/tmp/paridrosisz-2.1.tar.gz]
+[2024-05-11 10:04:27] INFO root fetch - main [MainThread]: End processing [paridrosisz]: success
+[2024-05-11 10:04:27] INFO root fetch - processPackages [pina-mathlab]: Remove: archive file [/home/abi/fetcher/tmp/pina-mathlab-0.1.0.post2403.tar.gz]
+[2024-05-11 10:04:27] INFO root fetch - processPackages [pina-mathlab]: Remove: archive file [/home/abi/fetcher/tmp/pina-mathlab-0.1.1.tar.gz]
+[2024-05-11 10:04:27] INFO root fetch - main [MainThread]: End processing [pina-mathlab]: success
+[2024-05-11 10:04:28] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240509.tar.gz]
+[2024-05-11 10:04:28] INFO root fetch - processPackages [langfun]: Remove: archive file [/home/abi/fetcher/tmp/langfun-0.0.2.dev20240510.tar.gz]
+[2024-05-11 10:04:28] INFO root fetch - main [MainThread]: End processing [langfun]: success
+[2024-05-11 10:04:28] INFO root fetch - main [MainThread]: Store serial: [23158870]
