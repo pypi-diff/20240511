@@ -23447,3 +23447,24 @@
 [2024-05-11 22:41:06] INFO root fetch - processPackages [llm-workflow]: Remove: archive file [/home/abi/fetcher/tmp/llm-workflow-0.0.8.tar.gz]
 [2024-05-11 22:41:06] INFO root fetch - main [MainThread]: End processing [llm-workflow]: success
 [2024-05-11 22:41:06] INFO root fetch - main [MainThread]: Store serial: [23164425]
+[2024-05-11 22:43:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164425]
+[2024-05-11 22:43:15] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 22:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: new-natnet-client
+[2024-05-11 22:43:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PolyRound
+[2024-05-11 22:43:16] INFO root fetch - processPackages [new-natnet-client]: New version: [4.1.3b0] Old Version: [4.1.2b2]
+[2024-05-11 22:43:16] INFO root fetch - processPackages [PolyRound]: New version: [0.3.0] Old Version: [0.2.9]
+[2024-05-11 22:43:16] INFO root fetch - processPackages [new-natnet-client]: Downloading https://files.pythonhosted.org/packages/8d/f1/fea1ad76be9b7aab6c6f3fa15c2546956c3da423440a1ca2acd348d36cf0/new_natnet_client-4.1.2b2.tar.gz
+[2024-05-11 22:43:16] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/06/55/45ee974757729599670fd09dda1bca1b4c2f99050afeec04282afe5db00c/PolyRound-0.2.9.tar.gz
+[2024-05-11 22:43:16] INFO root fetch - processPackages [new-natnet-client]: Downloading https://files.pythonhosted.org/packages/28/82/764a6a8da6cd087dabfbcde448fed85c31134d79d09978216d9673435497/new_natnet_client-4.1.3b0.tar.gz
+[2024-05-11 22:43:16] INFO root fetch - processPackages [PolyRound]: Downloading https://files.pythonhosted.org/packages/3c/d2/50ca7249ede6a79b18863b9631f3e403f62d0a33b54eca952584bbae974e/polyround-0.3.0.tar.gz
+[2024-05-11 22:43:16] INFO root fetch - processPackages [new-natnet-client]: executing diffoscope
+[2024-05-11 22:43:16] INFO root fetch - processPackages [new-natnet-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/new_natnet_client-4.1.2b2.tar.gz tmp/new_natnet_client-4.1.3b0.tar.gz --markdown 20240511/n/new-natnet-client/4.1.2b2-4.1.3b0/README.md --exclude *.pyd
+[2024-05-11 22:43:16] INFO root fetch - processPackages [PolyRound]: executing diffoscope
+[2024-05-11 22:43:16] INFO root fetch - processPackages [PolyRound]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PolyRound-0.2.9.tar.gz tmp/polyround-0.3.0.tar.gz --markdown 20240511/P/PolyRound/0.2.9-0.3.0/README.md --exclude *.pyd
+[2024-05-11 22:43:17] INFO root fetch - processPackages [new-natnet-client]: Remove: archive file [/home/abi/fetcher/tmp/new_natnet_client-4.1.2b2.tar.gz]
+[2024-05-11 22:43:17] INFO root fetch - processPackages [new-natnet-client]: Remove: archive file [/home/abi/fetcher/tmp/new_natnet_client-4.1.3b0.tar.gz]
+[2024-05-11 22:43:17] INFO root fetch - main [MainThread]: End processing [new-natnet-client]: success
+[2024-05-11 22:43:17] INFO root fetch - processPackages [PolyRound]: Remove: archive file [/home/abi/fetcher/tmp/PolyRound-0.2.9.tar.gz]
+[2024-05-11 22:43:17] INFO root fetch - processPackages [PolyRound]: Remove: archive file [/home/abi/fetcher/tmp/polyround-0.3.0.tar.gz]
+[2024-05-11 22:43:17] INFO root fetch - main [MainThread]: End processing [PolyRound]: success
+[2024-05-11 22:43:17] INFO root fetch - main [MainThread]: Store serial: [23164432]
