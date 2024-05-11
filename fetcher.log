@@ -10545,3 +10545,36 @@
 [2024-05-11 07:40:07] WARNING root fetch - processPackages [mydriaticz]: Skipping, unable to determine old version
 [2024-05-11 07:40:07] INFO root fetch - main [MainThread]: End processing [mydriaticz] error
 [2024-05-11 07:40:07] INFO root fetch - main [MainThread]: Store serial: [23157868]
+[2024-05-11 07:42:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157868]
+[2024-05-11 07:42:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 07:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: QtHarmony
+[2024-05-11 07:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorpc
+[2024-05-11 07:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vbimagetotext
+[2024-05-11 07:42:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dooth
+[2024-05-11 07:42:16] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 07:42:16] INFO root fetch - processPackages [vbimagetotext]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 07:42:16] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/52/25/b7a358be0660e7fcc8fe251103fdedaa06a4d9e5dd6f187d24a5fd4cf69f/vbimagetotext-0.1.8.tar.gz
+[2024-05-11 07:42:16] WARNING root fetch - processPackages [dooth]: Skipping, unable to determine old version
+[2024-05-11 07:42:16] INFO root fetch - main [MainThread]: End processing [dooth] error
+[2024-05-11 07:42:16] INFO root fetch - processPackages [tensorpc]: New version: [0.10.7] Old Version: [0.10.6]
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/4f/64/7b109f68ad712793e6bbeb921c229a090107dcc442d4ab56816fd3c55d6b/qtharmony-0.1.0.tar.gz
+[2024-05-11 07:42:17] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/53/da/3bbb95f503bb402556f9a506a929af6cd4f664927d01352c5551896b0d6a/tensorpc-0.10.6.tar.gz
+[2024-05-11 07:42:17] INFO root fetch - processPackages [vbimagetotext]: Downloading https://files.pythonhosted.org/packages/ca/ab/d04b9565c08e65166ef59f04608945a4f32a943cc2e38d220d87b781eff7/vbimagetotext-0.1.9.tar.gz
+[2024-05-11 07:42:17] INFO root fetch - processPackages [vbimagetotext]: executing diffoscope
+[2024-05-11 07:42:17] INFO root fetch - processPackages [vbimagetotext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vbimagetotext-0.1.8.tar.gz tmp/vbimagetotext-0.1.9.tar.gz --markdown 20240511/v/vbimagetotext/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/4d/fa/55f962e29073e42387c21875f0935b78fbde55b7eaf67ea49d4c5fa0c5d3/qtharmony-0.1.1.tar.gz
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.0.tar.gz tmp/qtharmony-0.1.1.tar.gz --markdown 20240511/Q/QtHarmony/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 07:42:17] INFO root fetch - processPackages [tensorpc]: Downloading https://files.pythonhosted.org/packages/f0/76/3c2905e64e5e293c1aeee0b4fe99758095cf9b0aba39f1e82eca660b8f83/tensorpc-0.10.7.tar.gz
+[2024-05-11 07:42:17] INFO root fetch - processPackages [tensorpc]: executing diffoscope
+[2024-05-11 07:42:17] INFO root fetch - processPackages [tensorpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorpc-0.10.6.tar.gz tmp/tensorpc-0.10.7.tar.gz --markdown 20240511/t/tensorpc/0.10.6-0.10.7/README.md --exclude *.pyd
+[2024-05-11 07:42:17] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.8.tar.gz]
+[2024-05-11 07:42:17] INFO root fetch - processPackages [vbimagetotext]: Remove: archive file [/home/abi/fetcher/tmp/vbimagetotext-0.1.9.tar.gz]
+[2024-05-11 07:42:17] INFO root fetch - main [MainThread]: End processing [vbimagetotext]: success
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.0.tar.gz]
+[2024-05-11 07:42:17] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.1.tar.gz]
+[2024-05-11 07:42:17] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-11 07:42:19] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.10.6.tar.gz]
+[2024-05-11 07:42:19] INFO root fetch - processPackages [tensorpc]: Remove: archive file [/home/abi/fetcher/tmp/tensorpc-0.10.7.tar.gz]
+[2024-05-11 07:42:19] INFO root fetch - main [MainThread]: End processing [tensorpc]: success
+[2024-05-11 07:42:19] INFO root fetch - main [MainThread]: Store serial: [23157882]
