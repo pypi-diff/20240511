@@ -23309,3 +23309,42 @@
 [2024-05-11 22:34:34] INFO root fetch - processPackages [moto]: Remove: archive file [/home/abi/fetcher/tmp/moto-5.0.7.dev9.tar.gz]
 [2024-05-11 22:34:34] INFO root fetch - main [MainThread]: End processing [moto]: success
 [2024-05-11 22:34:34] INFO root fetch - main [MainThread]: Store serial: [23164382]
+[2024-05-11 22:36:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164382]
+[2024-05-11 22:36:43] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: config-profile
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: innertube
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ultralytics
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysyncon
+[2024-05-11 22:36:43] INFO root fetch - processPackages [config-profile]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 22:36:43] INFO root fetch - processPackages [pysyncon]: New version: [1.5.0] Old Version: [1.4.0]
+[2024-05-11 22:36:43] INFO root fetch - processPackages [innertube]: New version: [2.1.9] Old Version: [2.1.3]
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ultralytics]: New version: [8.2.9] Old Version: [8.2.8]
+[2024-05-11 22:36:43] INFO root fetch - processPackages [config-profile]: Downloading https://files.pythonhosted.org/packages/d2/1e/ad554eaed6baceb79fae2497fef48f74d110a7571007023ad6f5d8f5c131/config_profile-0.0.1.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [innertube]: Downloading https://files.pythonhosted.org/packages/cc/e4/10d6eab6956a07f137391a26e3d595dc74bf0aa7d9bee709a872d198a0ef/innertube-2.1.3.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/2d/1f/773ce923d52559a9246fe5b3e4d86c67714d941216658acdb23bf9d46212/ultralytics-8.2.8.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [pysyncon]: Downloading https://files.pythonhosted.org/packages/36/49/fc3d69c05e77c8d760e334e6feab8677a6e162e555eff9ea39b0909125ac/pysyncon-1.4.0.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [config-profile]: Downloading https://files.pythonhosted.org/packages/84/c4/20567b34efc0830b11cf200f21b415feb46eca717605c9099c0bd924239a/config_profile-0.0.2.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [config-profile]: executing diffoscope
+[2024-05-11 22:36:43] INFO root fetch - processPackages [config-profile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/config_profile-0.0.1.tar.gz tmp/config_profile-0.0.2.tar.gz --markdown 20240511/c/config-profile/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 22:36:43] INFO root fetch - processPackages [innertube]: Downloading https://files.pythonhosted.org/packages/61/2f/8763e1830751f6e9c1ec1f2464a2868376283c367f42279871dd5368cfd8/innertube-2.1.9.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [ultralytics]: Downloading https://files.pythonhosted.org/packages/17/6e/89a05ffed4bbaae94368f45323ff75db71965c94c1259457ef61dc551645/ultralytics-8.2.9.tar.gz
+[2024-05-11 22:36:43] INFO root fetch - processPackages [pysyncon]: Downloading https://files.pythonhosted.org/packages/77/5f/2620c284e1fd721cf16d0b25a001deaa23ee45663663e50b5f31e0646e89/pysyncon-1.5.0.tar.gz
+[2024-05-11 22:36:44] INFO root fetch - processPackages [innertube]: executing diffoscope
+[2024-05-11 22:36:44] INFO root fetch - processPackages [innertube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/innertube-2.1.3.tar.gz tmp/innertube-2.1.9.tar.gz --markdown 20240511/i/innertube/2.1.3-2.1.9/README.md --exclude *.pyd
+[2024-05-11 22:36:44] INFO root fetch - processPackages [pysyncon]: executing diffoscope
+[2024-05-11 22:36:44] INFO root fetch - processPackages [pysyncon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysyncon-1.4.0.tar.gz tmp/pysyncon-1.5.0.tar.gz --markdown 20240511/p/pysyncon/1.4.0-1.5.0/README.md --exclude *.pyd
+[2024-05-11 22:36:44] INFO root fetch - processPackages [ultralytics]: executing diffoscope
+[2024-05-11 22:36:44] INFO root fetch - processPackages [ultralytics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultralytics-8.2.8.tar.gz tmp/ultralytics-8.2.9.tar.gz --markdown 20240511/u/ultralytics/8.2.8-8.2.9/README.md --exclude *.pyd
+[2024-05-11 22:36:44] INFO root fetch - processPackages [config-profile]: Remove: archive file [/home/abi/fetcher/tmp/config_profile-0.0.1.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - processPackages [config-profile]: Remove: archive file [/home/abi/fetcher/tmp/config_profile-0.0.2.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - main [MainThread]: End processing [config-profile]: success
+[2024-05-11 22:36:44] INFO root fetch - processPackages [innertube]: Remove: archive file [/home/abi/fetcher/tmp/innertube-2.1.3.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - processPackages [innertube]: Remove: archive file [/home/abi/fetcher/tmp/innertube-2.1.9.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - main [MainThread]: End processing [innertube]: success
+[2024-05-11 22:36:44] INFO root fetch - processPackages [pysyncon]: Remove: archive file [/home/abi/fetcher/tmp/pysyncon-1.4.0.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - processPackages [pysyncon]: Remove: archive file [/home/abi/fetcher/tmp/pysyncon-1.5.0.tar.gz]
+[2024-05-11 22:36:44] INFO root fetch - main [MainThread]: End processing [pysyncon]: success
+[2024-05-11 22:36:45] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.8.tar.gz]
+[2024-05-11 22:36:45] INFO root fetch - processPackages [ultralytics]: Remove: archive file [/home/abi/fetcher/tmp/ultralytics-8.2.9.tar.gz]
+[2024-05-11 22:36:45] INFO root fetch - main [MainThread]: End processing [ultralytics]: success
+[2024-05-11 22:36:45] INFO root fetch - main [MainThread]: Store serial: [23164394]
