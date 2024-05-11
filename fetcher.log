@@ -8645,3 +8645,30 @@
 [2024-05-11 05:08:52] INFO root fetch - processPackages [shroudstone]: Remove: archive file [/home/abi/fetcher/tmp/shroudstone-0.1.1.tar.gz]
 [2024-05-11 05:08:52] INFO root fetch - main [MainThread]: End processing [shroudstone]: success
 [2024-05-11 05:08:52] INFO root fetch - main [MainThread]: Store serial: [23156864]
+[2024-05-11 05:10:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156864]
+[2024-05-11 05:11:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: translate-util
+[2024-05-11 05:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rumydata
+[2024-05-11 05:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coanz
+[2024-05-11 05:11:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vvdutils
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: Downloading https://files.pythonhosted.org/packages/0c/f4/156d0ca1681d73d7e19b2cda5941458f4bdc26e7356ba1e176389be9417a/translate_util-1.1.1.tar.gz
+[2024-05-11 05:11:01] WARNING root fetch - processPackages [vvdutils]: Skipping, unable to determine old version
+[2024-05-11 05:11:01] INFO root fetch - main [MainThread]: End processing [vvdutils] error
+[2024-05-11 05:11:01] WARNING root fetch - processPackages [coanz]: Skipping, unable to determine old version
+[2024-05-11 05:11:01] INFO root fetch - main [MainThread]: End processing [coanz] error
+[2024-05-11 05:11:01] INFO root fetch - processPackages [rumydata]: New version: [1.5.0] Old Version: [1.4.3]
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: Downloading https://files.pythonhosted.org/packages/23/62/f9d7beec045ae4ecfee610f8f92d49486b0cf42f84347299583c49d6177c/translate_util-1.1.2.tar.gz
+[2024-05-11 05:11:01] INFO root fetch - processPackages [rumydata]: Downloading https://files.pythonhosted.org/packages/d1/5d/a94ba04267f56b3b5be552ff8338618fbe958b4abd54f2134e704ce1d01c/rumydata-1.4.3.tar.gz
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: executing diffoscope
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/translate_util-1.1.1.tar.gz tmp/translate_util-1.1.2.tar.gz --markdown 20240511/t/translate-util/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 05:11:01] INFO root fetch - processPackages [rumydata]: Downloading https://files.pythonhosted.org/packages/ba/59/898702654671e91de9b1538cef9441096f133eb1408bd3919b80f77727dc/rumydata-1.5.0.tar.gz
+[2024-05-11 05:11:01] INFO root fetch - processPackages [rumydata]: executing diffoscope
+[2024-05-11 05:11:01] INFO root fetch - processPackages [rumydata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rumydata-1.4.3.tar.gz tmp/rumydata-1.5.0.tar.gz --markdown 20240511/r/rumydata/1.4.3-1.5.0/README.md --exclude *.pyd
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: Remove: archive file [/home/abi/fetcher/tmp/translate_util-1.1.1.tar.gz]
+[2024-05-11 05:11:01] INFO root fetch - processPackages [translate-util]: Remove: archive file [/home/abi/fetcher/tmp/translate_util-1.1.2.tar.gz]
+[2024-05-11 05:11:01] INFO root fetch - main [MainThread]: End processing [translate-util]: success
+[2024-05-11 05:11:02] INFO root fetch - processPackages [rumydata]: Remove: archive file [/home/abi/fetcher/tmp/rumydata-1.4.3.tar.gz]
+[2024-05-11 05:11:02] INFO root fetch - processPackages [rumydata]: Remove: archive file [/home/abi/fetcher/tmp/rumydata-1.5.0.tar.gz]
+[2024-05-11 05:11:02] INFO root fetch - main [MainThread]: End processing [rumydata]: success
+[2024-05-11 05:11:02] INFO root fetch - main [MainThread]: Store serial: [23156880]
