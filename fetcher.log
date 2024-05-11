@@ -7216,3 +7216,21 @@
 [2024-05-11 03:22:25] INFO root fetch - processPackages [pyke-build]: Remove: archive file [/home/abi/fetcher/tmp/pyke_build-0.2.0.tar.gz]
 [2024-05-11 03:22:25] INFO root fetch - main [MainThread]: End processing [pyke-build]: success
 [2024-05-11 03:22:25] INFO root fetch - main [MainThread]: Store serial: [23155930]
+[2024-05-11 03:24:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23155930]
+[2024-05-11 03:24:34] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 03:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hemolz
+[2024-05-11 03:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: robin-stocks
+[2024-05-11 03:24:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: keyserlickz
+[2024-05-11 03:24:34] WARNING root fetch - processPackages [keyserlickz]: Skipping, unable to determine old version
+[2024-05-11 03:24:34] INFO root fetch - main [MainThread]: End processing [keyserlickz] error
+[2024-05-11 03:24:34] WARNING root fetch - processPackages [hemolz]: Skipping, unable to determine old version
+[2024-05-11 03:24:34] INFO root fetch - main [MainThread]: End processing [hemolz] error
+[2024-05-11 03:24:34] INFO root fetch - processPackages [robin-stocks]: New version: [3.1.0] Old Version: [3.0.6]
+[2024-05-11 03:24:34] INFO root fetch - processPackages [robin-stocks]: Downloading https://files.pythonhosted.org/packages/c1/63/83ea00b59ef19fffc3ff7d61259ec1d4a512ac4f4bc70155b128f97cb5da/robin_stocks-3.0.6.tar.gz
+[2024-05-11 03:24:34] INFO root fetch - processPackages [robin-stocks]: Downloading https://files.pythonhosted.org/packages/00/90/6f9fd92c9471fffe4ea1d8929b2573dd905cfc66e294037b49d990a7e7b5/robin_stocks-3.1.0.tar.gz
+[2024-05-11 03:24:35] INFO root fetch - processPackages [robin-stocks]: executing diffoscope
+[2024-05-11 03:24:35] INFO root fetch - processPackages [robin-stocks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/robin_stocks-3.0.6.tar.gz tmp/robin_stocks-3.1.0.tar.gz --markdown 20240511/r/robin-stocks/3.0.6-3.1.0/README.md --exclude *.pyd
+[2024-05-11 03:24:35] INFO root fetch - processPackages [robin-stocks]: Remove: archive file [/home/abi/fetcher/tmp/robin_stocks-3.0.6.tar.gz]
+[2024-05-11 03:24:35] INFO root fetch - processPackages [robin-stocks]: Remove: archive file [/home/abi/fetcher/tmp/robin_stocks-3.1.0.tar.gz]
+[2024-05-11 03:24:35] INFO root fetch - main [MainThread]: End processing [robin-stocks]: success
+[2024-05-11 03:24:35] INFO root fetch - main [MainThread]: Store serial: [23156001]
