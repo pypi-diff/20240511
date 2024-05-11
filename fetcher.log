@@ -19876,3 +19876,23 @@
 [2024-05-11 18:32:59] INFO root fetch - processPackages [solv]: Remove: archive file [/home/abi/fetcher/tmp/solv-0.7.29-cp39-cp39-manylinux_2_28_x86_64.whl.zip]
 [2024-05-11 18:32:59] INFO root fetch - main [MainThread]: End processing [solv]: success
 [2024-05-11 18:32:59] INFO root fetch - main [MainThread]: Store serial: [23162718]
+[2024-05-11 18:35:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162718]
+[2024-05-11 18:35:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 18:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: berlinerz
+[2024-05-11 18:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-oflog-components
+[2024-05-11 18:35:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mountwizzard4
+[2024-05-11 18:35:15] INFO root fetch - processPackages [dash-oflog-components]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 18:35:15] INFO root fetch - processPackages [mountwizzard4]: New version: [4.0.0a2] Old Version: [4.0.0a1]
+[2024-05-11 18:35:15] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/87/0b/f416b5cdfcc73fcb0e1d8e73d90f0fde8fa4a3042b87eef6a6f78630737b/dash_oflog_components-0.0.8.tar.gz
+[2024-05-11 18:35:15] INFO root fetch - processPackages [mountwizzard4]: Downloading https://files.pythonhosted.org/packages/48/f6/5f58a9af78111e98d44ba94b1c26c479bee13b71fca1d57b146425cf92e0/mountwizzard4-4.0.0a1.tar.gz
+[2024-05-11 18:35:15] WARNING root fetch - processPackages [berlinerz]: Skipping, unable to determine old version
+[2024-05-11 18:35:15] INFO root fetch - main [MainThread]: End processing [berlinerz] error
+[2024-05-11 18:35:15] WARNING root fetch - processPackages [mountwizzard4]: Skipping package: exceeds size limit 27764922>=10485760
+[2024-05-11 18:35:15] INFO root fetch - main [MainThread]: End processing [mountwizzard4] error
+[2024-05-11 18:35:15] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/8b/f4/0b8659ff282e21dd91120e7b693c909d64230d30799a6ecfcf808cad6c44/dash_oflog_components-0.0.9.tar.gz
+[2024-05-11 18:35:16] INFO root fetch - processPackages [dash-oflog-components]: executing diffoscope
+[2024-05-11 18:35:16] INFO root fetch - processPackages [dash-oflog-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_oflog_components-0.0.8.tar.gz tmp/dash_oflog_components-0.0.9.tar.gz --markdown 20240511/d/dash-oflog-components/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:35:16] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.8.tar.gz]
+[2024-05-11 18:35:16] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.9.tar.gz]
+[2024-05-11 18:35:16] INFO root fetch - main [MainThread]: End processing [dash-oflog-components]: success
+[2024-05-11 18:35:16] INFO root fetch - main [MainThread]: Store serial: [23162726]
