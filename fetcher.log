@@ -19950,3 +19950,42 @@
 [2024-05-11 18:40:50] INFO root fetch - processPackages [opm]: Remove: archive file [/home/abi/fetcher/tmp/opm-2024.4-cp39-cp39-manylinux2014_x86_64.whl.zip]
 [2024-05-11 18:40:50] INFO root fetch - main [MainThread]: End processing [opm]: success
 [2024-05-11 18:40:50] INFO root fetch - main [MainThread]: Store serial: [23162752]
+[2024-05-11 18:43:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162752]
+[2024-05-11 18:43:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aipkgs-firebase
+[2024-05-11 18:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymatviz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: streaminessz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: denoisers
+[2024-05-11 18:43:10] INFO root fetch - processPackages [aipkgs-firebase]: New version: [1.0.5] Old Version: [1.0.3]
+[2024-05-11 18:43:10] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/52/e5/c43c1da2886d7067102a17ae99aa48a503d38cb55e03d8aa6b2970cfaf8c/aipkgs_firebase-1.0.3.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [pymatviz]: New version: [0.8.2] Old Version: [0.8.1]
+[2024-05-11 18:43:10] INFO root fetch - processPackages [streaminessz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:43:10] INFO root fetch - processPackages [denoisers]: New version: [0.1.8] Old Version: [0.1.7]
+[2024-05-11 18:43:10] INFO root fetch - processPackages [pymatviz]: Downloading https://files.pythonhosted.org/packages/bc/fb/9e47f25899f07ceeb66ccfd62955aba81fa415222c2c9ed581b0ac788537/pymatviz-0.8.1.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [streaminessz]: Downloading https://files.pythonhosted.org/packages/19/49/ccce7a27083162a15771d2ff73b6091a95792a6113a3efda1bc14c59d7ad/streaminessz-1.1.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [denoisers]: Downloading https://files.pythonhosted.org/packages/18/84/20805b8e22f60efc75bdf8d5b74dad8114ce6c1dfb39e6a5bee041e6e108/denoisers-0.1.7.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/1f/d3/cac80f35cea1db6ec4db1b950b59692eab7f75525065212468a10f85e8c1/aipkgs_firebase-1.0.5.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 18:43:10] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-1.0.3.tar.gz tmp/aipkgs_firebase-1.0.5.tar.gz --markdown 20240511/a/aipkgs-firebase/1.0.3-1.0.5/README.md --exclude *.pyd
+[2024-05-11 18:43:10] INFO root fetch - processPackages [pymatviz]: Downloading https://files.pythonhosted.org/packages/c2/29/2377afd64483c6c5af23241d534cabe8dc20d72e729bbf621c6ea2064c95/pymatviz-0.8.2.tar.gz
+[2024-05-11 18:43:10] INFO root fetch - processPackages [streaminessz]: Downloading https://files.pythonhosted.org/packages/cf/dd/71236d8a5dbe6410117b96d6bdfd040fe2caf6f5c67d25df0dcfbb4b62f5/streaminessz-2.1.tar.gz
+[2024-05-11 18:43:11] INFO root fetch - processPackages [denoisers]: Downloading https://files.pythonhosted.org/packages/a9/bb/ad931e1961f5cee80eb82c31bcd7f0000af114e87b1b5d3d8977a43dd795/denoisers-0.1.8.tar.gz
+[2024-05-11 18:43:11] INFO root fetch - processPackages [pymatviz]: executing diffoscope
+[2024-05-11 18:43:11] INFO root fetch - processPackages [pymatviz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatviz-0.8.1.tar.gz tmp/pymatviz-0.8.2.tar.gz --markdown 20240511/p/pymatviz/0.8.1-0.8.2/README.md --exclude *.pyd
+[2024-05-11 18:43:11] INFO root fetch - processPackages [streaminessz]: executing diffoscope
+[2024-05-11 18:43:11] INFO root fetch - processPackages [streaminessz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streaminessz-1.1.tar.gz tmp/streaminessz-2.1.tar.gz --markdown 20240511/s/streaminessz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:43:11] INFO root fetch - processPackages [denoisers]: executing diffoscope
+[2024-05-11 18:43:11] INFO root fetch - processPackages [denoisers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/denoisers-0.1.7.tar.gz tmp/denoisers-0.1.8.tar.gz --markdown 20240511/d/denoisers/0.1.7-0.1.8/README.md --exclude *.pyd
+[2024-05-11 18:43:11] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.3.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.5.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 18:43:11] INFO root fetch - processPackages [streaminessz]: Remove: archive file [/home/abi/fetcher/tmp/streaminessz-1.1.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - processPackages [streaminessz]: Remove: archive file [/home/abi/fetcher/tmp/streaminessz-2.1.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - main [MainThread]: End processing [streaminessz]: success
+[2024-05-11 18:43:11] INFO root fetch - processPackages [denoisers]: Remove: archive file [/home/abi/fetcher/tmp/denoisers-0.1.7.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - processPackages [denoisers]: Remove: archive file [/home/abi/fetcher/tmp/denoisers-0.1.8.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - main [MainThread]: End processing [denoisers]: success
+[2024-05-11 18:43:11] INFO root fetch - processPackages [pymatviz]: Remove: archive file [/home/abi/fetcher/tmp/pymatviz-0.8.1.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - processPackages [pymatviz]: Remove: archive file [/home/abi/fetcher/tmp/pymatviz-0.8.2.tar.gz]
+[2024-05-11 18:43:11] INFO root fetch - main [MainThread]: End processing [pymatviz]: success
+[2024-05-11 18:43:11] INFO root fetch - main [MainThread]: Store serial: [23162768]
