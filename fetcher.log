@@ -21228,3 +21228,36 @@
 [2024-05-11 20:08:24] INFO root fetch - processPackages [geotify]: Remove: archive file [/home/abi/fetcher/tmp/geotify-0.2.0.tar.gz]
 [2024-05-11 20:08:24] INFO root fetch - main [MainThread]: End processing [geotify]: success
 [2024-05-11 20:08:24] INFO root fetch - main [MainThread]: Store serial: [23163363]
+[2024-05-11 20:10:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163363]
+[2024-05-11 20:10:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 20:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tamerlanismz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rest-api-response
+[2024-05-11 20:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: databaseautomation-klmuppalla
+[2024-05-11 20:10:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sleipnirgroup-jormungandr
+[2024-05-11 20:10:33] INFO root fetch - processPackages [rest-api-response]: New version: [0.2] Old Version: [0.1.1]
+[2024-05-11 20:10:33] INFO root fetch - processPackages [tamerlanismz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:10:33] WARNING root fetch - processPackages [databaseautomation-klmuppalla]: Skipping, unable to determine old version
+[2024-05-11 20:10:33] INFO root fetch - main [MainThread]: End processing [databaseautomation-klmuppalla] error
+[2024-05-11 20:10:33] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-05-11 20:10:33] INFO root fetch - processPackages [rest-api-response]: Downloading https://files.pythonhosted.org/packages/4d/80/d72b9ef86d256f29c6a4bd3f02d0100e88dc7be4f423a5615dae2250de5e/rest_api_response-0.1.1.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [tamerlanismz]: Downloading https://files.pythonhosted.org/packages/4e/c3/1850390bbec169adad73ae7c66da06dcd58cc9ea2d0c59714cf1f49946aa/tamerlanismz-1.1.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [tamerlanismz]: Downloading https://files.pythonhosted.org/packages/bd/0c/d72b59b411c00df556bf09f071b43bc530eb943c049af89864e41412dc63/tamerlanismz-2.1.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [rest-api-response]: Downloading https://files.pythonhosted.org/packages/0f/12/186e77d9bfde26e61cca14c0353cd6f7449487d53fcad8c057ea8436af29/rest_api_response-0.2.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-05-11 20:10:33] INFO root fetch - processPackages [rest-api-response]: executing diffoscope
+[2024-05-11 20:10:33] INFO root fetch - processPackages [rest-api-response]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_api_response-0.1.1.tar.gz tmp/rest_api_response-0.2.tar.gz --markdown 20240511/r/rest-api-response/0.1.1-0.2/README.md --exclude *.pyd
+[2024-05-11 20:10:33] INFO root fetch - processPackages [tamerlanismz]: executing diffoscope
+[2024-05-11 20:10:33] INFO root fetch - processPackages [tamerlanismz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tamerlanismz-1.1.tar.gz tmp/tamerlanismz-2.1.tar.gz --markdown 20240511/t/tamerlanismz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:10:33] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-05-11 20:10:33] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240511/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/README.md --exclude *.pyd
+[2024-05-11 20:10:34] INFO root fetch - processPackages [tamerlanismz]: Remove: archive file [/home/abi/fetcher/tmp/tamerlanismz-1.1.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - processPackages [tamerlanismz]: Remove: archive file [/home/abi/fetcher/tmp/tamerlanismz-2.1.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - main [MainThread]: End processing [tamerlanismz]: success
+[2024-05-11 20:10:34] INFO root fetch - processPackages [rest-api-response]: Remove: archive file [/home/abi/fetcher/tmp/rest_api_response-0.1.1.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - processPackages [rest-api-response]: Remove: archive file [/home/abi/fetcher/tmp/rest_api_response-0.2.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - main [MainThread]: End processing [rest-api-response]: success
+[2024-05-11 20:10:34] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-05-11 20:10:34] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-05-11 20:10:34] INFO root fetch - main [MainThread]: Store serial: [23163386]
