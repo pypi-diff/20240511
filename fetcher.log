@@ -19843,3 +19843,36 @@
 [2024-05-11 18:30:26] INFO root fetch - processPackages [chess-utils]: Remove: archive file [/home/abi/fetcher/tmp/chess_utils-0.1.9.tar.gz]
 [2024-05-11 18:30:26] INFO root fetch - main [MainThread]: End processing [chess-utils]: success
 [2024-05-11 18:30:26] INFO root fetch - main [MainThread]: Store serial: [23162682]
+[2024-05-11 18:32:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162682]
+[2024-05-11 18:32:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stonemenz
+[2024-05-11 18:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: antibacterial-model
+[2024-05-11 18:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: solv
+[2024-05-11 18:32:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ai-alchemy
+[2024-05-11 18:32:35] INFO root fetch - processPackages [antibacterial-model]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-11 18:32:35] INFO root fetch - processPackages [antibacterial-model]: Downloading https://files.pythonhosted.org/packages/e4/9e/7941187dc33d972aeee786e2bd7d61466202de8accf86f9fad695cd66334/antibacterial-model-1.0.6.tar.gz
+[2024-05-11 18:32:35] INFO root fetch - processPackages [stonemenz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:32:35] WARNING root fetch - processPackages [ai-alchemy]: Skipping, unable to determine old version
+[2024-05-11 18:32:35] INFO root fetch - main [MainThread]: End processing [ai-alchemy] error
+[2024-05-11 18:32:35] INFO root fetch - processPackages [solv]: New version: [0.7.29] Old Version: [0.7.28]
+[2024-05-11 18:32:35] INFO root fetch - processPackages [stonemenz]: Downloading https://files.pythonhosted.org/packages/a5/fe/cdfb1f1d506be0a7e3af012e54ee71d3e0f12fa558517653d6e999a1b1fd/stonemenz-1.1.tar.gz
+[2024-05-11 18:32:35] INFO root fetch - processPackages [solv]: Downloading https://files.pythonhosted.org/packages/d5/8d/e623f9cb425877c51ff4d57ae04e26f6a3bb53e556c0456601a7c1d67277/solv-0.7.28-cp39-cp39-manylinux_2_28_aarch64.whl
+[2024-05-11 18:32:35] INFO root fetch - processPackages [antibacterial-model]: Downloading https://files.pythonhosted.org/packages/82/64/8fe10bf300ac20825a471dfa6746c1965d7c5c006e647acfdec93fcccea9/antibacterial-model-1.0.7.tar.gz
+[2024-05-11 18:32:35] INFO root fetch - processPackages [stonemenz]: Downloading https://files.pythonhosted.org/packages/89/4c/b5f58b353656dcfae3b143b6fed0071b4a4505e6b5ae4148ef9d4286043d/stonemenz-2.1.tar.gz
+[2024-05-11 18:32:35] INFO root fetch - processPackages [stonemenz]: executing diffoscope
+[2024-05-11 18:32:35] INFO root fetch - processPackages [stonemenz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stonemenz-1.1.tar.gz tmp/stonemenz-2.1.tar.gz --markdown 20240511/s/stonemenz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:32:36] INFO root fetch - processPackages [antibacterial-model]: executing diffoscope
+[2024-05-11 18:32:36] INFO root fetch - processPackages [antibacterial-model]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/antibacterial-model-1.0.6.tar.gz tmp/antibacterial-model-1.0.7.tar.gz --markdown 20240511/a/antibacterial-model/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-11 18:32:36] INFO root fetch - processPackages [solv]: Downloading https://files.pythonhosted.org/packages/9f/3b/597710d117bfc5478784b5db42870f4d202d5fe3b587838cb8bbc4765999/solv-0.7.29-cp39-cp39-manylinux_2_28_x86_64.whl
+[2024-05-11 18:32:36] INFO root fetch - processPackages [stonemenz]: Remove: archive file [/home/abi/fetcher/tmp/stonemenz-1.1.tar.gz]
+[2024-05-11 18:32:36] INFO root fetch - processPackages [stonemenz]: Remove: archive file [/home/abi/fetcher/tmp/stonemenz-2.1.tar.gz]
+[2024-05-11 18:32:36] INFO root fetch - main [MainThread]: End processing [stonemenz]: success
+[2024-05-11 18:32:36] INFO root fetch - processPackages [solv]: executing diffoscope
+[2024-05-11 18:32:36] INFO root fetch - processPackages [solv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solv-0.7.28-cp39-cp39-manylinux_2_28_aarch64.whl.zip tmp/solv-0.7.29-cp39-cp39-manylinux_2_28_x86_64.whl.zip --markdown 20240511/s/solv/0.7.28-0.7.29/README.md --exclude *.pyd
+[2024-05-11 18:32:37] INFO root fetch - processPackages [antibacterial-model]: Remove: archive file [/home/abi/fetcher/tmp/antibacterial-model-1.0.6.tar.gz]
+[2024-05-11 18:32:37] INFO root fetch - processPackages [antibacterial-model]: Remove: archive file [/home/abi/fetcher/tmp/antibacterial-model-1.0.7.tar.gz]
+[2024-05-11 18:32:37] INFO root fetch - main [MainThread]: End processing [antibacterial-model]: success
+[2024-05-11 18:32:59] INFO root fetch - processPackages [solv]: Remove: archive file [/home/abi/fetcher/tmp/solv-0.7.28-cp39-cp39-manylinux_2_28_aarch64.whl.zip]
+[2024-05-11 18:32:59] INFO root fetch - processPackages [solv]: Remove: archive file [/home/abi/fetcher/tmp/solv-0.7.29-cp39-cp39-manylinux_2_28_x86_64.whl.zip]
+[2024-05-11 18:32:59] INFO root fetch - main [MainThread]: End processing [solv]: success
+[2024-05-11 18:32:59] INFO root fetch - main [MainThread]: Store serial: [23162718]
