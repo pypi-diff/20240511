@@ -21793,3 +21793,42 @@
 [2024-05-11 20:43:13] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
 [2024-05-11 20:43:13] INFO root fetch - main [MainThread]: End processing [django-restit]: success
 [2024-05-11 20:43:13] INFO root fetch - main [MainThread]: Store serial: [23163596]
+[2024-05-11 20:45:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163596]
+[2024-05-11 20:45:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: camera-ui-python-types
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ALLM
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysparkler
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: thaumantiasz
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ALLM]: New version: [1.0.4] Old Version: [1.0.3]
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/ed/76/e3611015a89f11f8e3d2220f796c79f163cc1cf57f7df0b237eaea03a70e/ALLM-1.0.3-py3-none-any.whl
+[2024-05-11 20:45:22] INFO root fetch - processPackages [thaumantiasz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:45:22] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 20:45:22] INFO root fetch - processPackages [pysparkler]: New version: [0.9.dev1715453058] Old Version: [0.9.dev1706788159]
+[2024-05-11 20:45:22] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ALLM]: Downloading https://files.pythonhosted.org/packages/e6/75/a51a0015a0d486d2650588a5ec0822b42eebad362de6c6410efe8ef80f84/ALLM-1.0.4-py3-none-any.whl
+[2024-05-11 20:45:22] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/4b/99/43b679234ff700e8a408ca4141caae76897e61b7f755fe5490cda162bf03/pysparkler-0.9.dev1706788159.tar.gz
+[2024-05-11 20:45:22] INFO root fetch - processPackages [thaumantiasz]: Downloading https://files.pythonhosted.org/packages/9b/6b/e0fe30cbb64c0017233fd8273faca698b5fa6d12ca51f86eb4348b9bb11f/thaumantiasz-1.1.tar.gz
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ALLM]: executing diffoscope
+[2024-05-11 20:45:22] INFO root fetch - processPackages [ALLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ALLM-1.0.3-py3-none-any.whl.zip tmp/ALLM-1.0.4-py3-none-any.whl.zip --markdown 20240511/A/ALLM/1.0.3-1.0.4/README.md --exclude *.pyd
+[2024-05-11 20:45:23] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-11 20:45:23] INFO root fetch - processPackages [pysparkler]: Downloading https://files.pythonhosted.org/packages/80/f6/38ed156ac4bf5f92bf51073598fc9ac6371e395290043e4b4e84e08bd858/pysparkler-0.9.dev1715453058.tar.gz
+[2024-05-11 20:45:23] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-11 20:45:23] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240511/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: Downloading https://files.pythonhosted.org/packages/90/4a/ad40b6ebbcb7b18868eea5c74952bc31bbcea71341b5b08e5af711220229/thaumantiasz-2.1.tar.gz
+[2024-05-11 20:45:23] INFO root fetch - processPackages [pysparkler]: executing diffoscope
+[2024-05-11 20:45:23] INFO root fetch - processPackages [pysparkler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysparkler-0.9.dev1706788159.tar.gz tmp/pysparkler-0.9.dev1715453058.tar.gz --markdown 20240511/p/pysparkler/0.9.dev1706788159-0.9.dev1715453058/README.md --exclude *.pyd
+[2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: executing diffoscope
+[2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/thaumantiasz-1.1.tar.gz tmp/thaumantiasz-2.1.tar.gz --markdown 20240511/t/thaumantiasz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:45:23] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.3-py3-none-any.whl.zip]
+[2024-05-11 20:45:23] INFO root fetch - processPackages [ALLM]: Remove: archive file [/home/abi/fetcher/tmp/ALLM-1.0.4-py3-none-any.whl.zip]
+[2024-05-11 20:45:23] INFO root fetch - main [MainThread]: End processing [ALLM]: success
+[2024-05-11 20:45:23] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-11 20:45:23] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1706788159.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - processPackages [pysparkler]: Remove: archive file [/home/abi/fetcher/tmp/pysparkler-0.9.dev1715453058.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - main [MainThread]: End processing [pysparkler]: success
+[2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: Remove: archive file [/home/abi/fetcher/tmp/thaumantiasz-1.1.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - processPackages [thaumantiasz]: Remove: archive file [/home/abi/fetcher/tmp/thaumantiasz-2.1.tar.gz]
+[2024-05-11 20:45:23] INFO root fetch - main [MainThread]: End processing [thaumantiasz]: success
+[2024-05-11 20:45:23] INFO root fetch - main [MainThread]: Store serial: [23163675]
