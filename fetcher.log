@@ -13001,3 +13001,36 @@
 [2024-05-11 10:54:25] INFO root fetch - main [MainThread]: End processing [wdm-wavelet]: success
 [2024-05-11 10:54:25] INFO root fetch - main [MainThread]: End processing [wdm-wavelet]: success
 [2024-05-11 10:54:25] INFO root fetch - main [MainThread]: Store serial: [23159195]
+[2024-05-11 10:56:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159195]
+[2024-05-11 10:56:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 10:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: d3rlpy
+[2024-05-11 10:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: petiolesz
+[2024-05-11 10:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: DrissionPagePlus
+[2024-05-11 10:56:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: applang
+[2024-05-11 10:56:34] INFO root fetch - processPackages [petiolesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:56:34] WARNING root fetch - processPackages [DrissionPagePlus]: Skipping, unable to determine old version
+[2024-05-11 10:56:34] INFO root fetch - main [MainThread]: End processing [DrissionPagePlus] error
+[2024-05-11 10:56:34] INFO root fetch - processPackages [d3rlpy]: New version: [2.5.0] Old Version: [2.4.0]
+[2024-05-11 10:56:34] INFO root fetch - processPackages [applang]: New version: [0.0.1a4] Old Version: [0.0.1a3]
+[2024-05-11 10:56:34] INFO root fetch - processPackages [petiolesz]: Downloading https://files.pythonhosted.org/packages/9e/08/41c92f080bf2ef76fbf4d7ea6a6416620cffb10f22ec7899f9d1c4130e4a/petiolesz-1.1.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [d3rlpy]: Downloading https://files.pythonhosted.org/packages/4a/93/ed60c463c97a96045442883ebb8b5c1f3ab8ac18e97bce4972dfd61ded6a/d3rlpy-2.4.0.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [applang]: Downloading https://files.pythonhosted.org/packages/1f/65/bb5192734da9d8ba012c3124f4c4fe4d65a0132cabdc101011d1184099f6/applang-0.0.1a3.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [petiolesz]: Downloading https://files.pythonhosted.org/packages/09/d9/025040169504db30c2fa2f40279b575f8fa7c601ac363eac6e9d45e3c548/petiolesz-2.1.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [d3rlpy]: Downloading https://files.pythonhosted.org/packages/a5/35/c13238c87331bedd8b188fb257b78e582d739e7eda83e5a3b0daacdbacf7/d3rlpy-2.5.0.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [applang]: Downloading https://files.pythonhosted.org/packages/10/96/6c403487586845f3bc3496134cdaac4c3fb545defcef9baa128ebb21f0cf/applang-0.0.1a4.tar.gz
+[2024-05-11 10:56:34] INFO root fetch - processPackages [petiolesz]: executing diffoscope
+[2024-05-11 10:56:34] INFO root fetch - processPackages [petiolesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petiolesz-1.1.tar.gz tmp/petiolesz-2.1.tar.gz --markdown 20240511/p/petiolesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:56:34] INFO root fetch - processPackages [d3rlpy]: executing diffoscope
+[2024-05-11 10:56:34] INFO root fetch - processPackages [d3rlpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/d3rlpy-2.4.0.tar.gz tmp/d3rlpy-2.5.0.tar.gz --markdown 20240511/d/d3rlpy/2.4.0-2.5.0/README.md --exclude *.pyd
+[2024-05-11 10:56:34] INFO root fetch - processPackages [applang]: executing diffoscope
+[2024-05-11 10:56:34] INFO root fetch - processPackages [applang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/applang-0.0.1a3.tar.gz tmp/applang-0.0.1a4.tar.gz --markdown 20240511/a/applang/0.0.1a3-0.0.1a4/README.md --exclude *.pyd
+[2024-05-11 10:56:35] INFO root fetch - processPackages [petiolesz]: Remove: archive file [/home/abi/fetcher/tmp/petiolesz-1.1.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - processPackages [petiolesz]: Remove: archive file [/home/abi/fetcher/tmp/petiolesz-2.1.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - main [MainThread]: End processing [petiolesz]: success
+[2024-05-11 10:56:35] INFO root fetch - processPackages [d3rlpy]: Remove: archive file [/home/abi/fetcher/tmp/d3rlpy-2.4.0.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - processPackages [d3rlpy]: Remove: archive file [/home/abi/fetcher/tmp/d3rlpy-2.5.0.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - main [MainThread]: End processing [d3rlpy]: success
+[2024-05-11 10:56:35] INFO root fetch - processPackages [applang]: Remove: archive file [/home/abi/fetcher/tmp/applang-0.0.1a3.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - processPackages [applang]: Remove: archive file [/home/abi/fetcher/tmp/applang-0.0.1a4.tar.gz]
+[2024-05-11 10:56:35] INFO root fetch - main [MainThread]: End processing [applang]: success
+[2024-05-11 10:56:35] INFO root fetch - main [MainThread]: Store serial: [23159216]
