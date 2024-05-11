@@ -15379,3 +15379,18 @@
 [2024-05-11 13:25:33] INFO root fetch - processPackages [torchrl-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torchrl_nightly-2024.5.9-cp39-cp39-win_amd64.whl.zip]
 [2024-05-11 13:25:33] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
 [2024-05-11 13:25:33] INFO root fetch - main [MainThread]: Store serial: [23160489]
+[2024-05-11 13:27:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160489]
+[2024-05-11 13:27:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:27:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: epiniciaz
+[2024-05-11 13:27:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: team-14-lib-version
+[2024-05-11 13:27:42] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b1] Old Version: [0.6.0b0]
+[2024-05-11 13:27:42] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/bf/49/29d3c8a0a4da731b2fe2ae69eb68b165b50defc324859df80027cb396db5/team_14_lib_version-0.6.0b0.tar.gz
+[2024-05-11 13:27:42] WARNING root fetch - processPackages [epiniciaz]: Skipping, unable to determine old version
+[2024-05-11 13:27:42] INFO root fetch - main [MainThread]: End processing [epiniciaz] error
+[2024-05-11 13:27:42] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/0e/a4/7e26db16083732916f9d3532dc835f41efb23d2495b1258c692f5a7d72a8/team_14_lib_version-0.6.0b1.tar.gz
+[2024-05-11 13:27:42] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 13:27:42] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.6.0b0.tar.gz tmp/team_14_lib_version-0.6.0b1.tar.gz --markdown 20240511/t/team-14-lib-version/0.6.0b0-0.6.0b1/README.md --exclude *.pyd
+[2024-05-11 13:27:43] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b0.tar.gz]
+[2024-05-11 13:27:43] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b1.tar.gz]
+[2024-05-11 13:27:43] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 13:27:43] INFO root fetch - main [MainThread]: Store serial: [23160567]
