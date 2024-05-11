@@ -16776,3 +16776,62 @@
 [2024-05-11 15:01:52] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.6.tar.gz]
 [2024-05-11 15:01:52] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
 [2024-05-11 15:01:52] INFO root fetch - main [MainThread]: Store serial: [23161235]
+[2024-05-11 15:03:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161235]
+[2024-05-11 15:04:01] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: extensionmigrationassistant
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ciscoconfparse2
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: reanxietyz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pheval-ai-marrvel
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ediri-azapi
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: poetry-moment
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: becursesz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: apicat
+[2024-05-11 15:04:01] INFO root fetch - processPackages [apicat]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 15:04:01] WARNING root fetch - processPackages [extensionmigrationassistant]: Skipping, unable to determine old version
+[2024-05-11 15:04:01] INFO root fetch - main [MainThread]: End processing [extensionmigrationassistant] error
+[2024-05-11 15:04:01] INFO root fetch - processPackages [poetry-moment]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 15:04:01] INFO root fetch - processPackages [pheval-ai-marrvel]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 15:04:01] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/a8/30/f5daa72924244068ace4812a17697ef705e627c9402a82c6d9c73ca970d4/apicat-0.0.2.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/17/ed/a43926281dc618358cc25d84d8b3d3efcb22266c676c1efc0d95d612a704/poetry_moment-0.0.2.tar.gz
+[2024-05-11 15:04:01] WARNING root fetch - processPackages [becursesz]: Skipping, unable to determine old version
+[2024-05-11 15:04:01] INFO root fetch - main [MainThread]: End processing [becursesz] error
+[2024-05-11 15:04:01] INFO root fetch - processPackages [reanxietyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:04:01] INFO root fetch - processPackages [pheval-ai-marrvel]: Downloading https://files.pythonhosted.org/packages/f9/7f/c5b7eb844aed967a61a17a1b37a1e3f9987d4129bf81799522ee0805067d/pheval_ai_marrvel-0.1.1.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ediri-azapi]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-05-11 15:04:01] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-05-11 15:04:01] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-05-11 15:04:01] INFO root fetch - processPackages [reanxietyz]: Downloading https://files.pythonhosted.org/packages/fe/fb/fd25c8626745c27273751f98a97ddc1c852890a9c292f6f1db743dcf4dd9/reanxietyz-1.1.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/4f/bd/7bba2ea7b763df9b110335598b8e58378f9d8c35cda01b90e894c449f32f/ediri_azapi-1.8.1.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [pheval-ai-marrvel]: Downloading https://files.pythonhosted.org/packages/de/37/1a0a73a08e5f390dabef87cd890333824b45272fa34e261990b5f445c2dd/pheval_ai_marrvel-0.1.2.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [apicat]: Downloading https://files.pythonhosted.org/packages/b5/62/a9f5c92608531098811bfed3d44190ee239b0e24998cb40464869b89cb71/apicat-0.0.3.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [poetry-moment]: Downloading https://files.pythonhosted.org/packages/9b/e0/22cd37397aaead0dc7e3bb2b881a7bb097507159fa504101525325bb52e2/poetry_moment-0.0.3.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [pheval-ai-marrvel]: executing diffoscope
+[2024-05-11 15:04:01] INFO root fetch - processPackages [pheval-ai-marrvel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pheval_ai_marrvel-0.1.1.tar.gz tmp/pheval_ai_marrvel-0.1.2.tar.gz --markdown 20240511/p/pheval-ai-marrvel/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 15:04:01] INFO root fetch - processPackages [poetry-moment]: executing diffoscope
+[2024-05-11 15:04:01] INFO root fetch - processPackages [poetry-moment]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_moment-0.0.2.tar.gz tmp/poetry_moment-0.0.3.tar.gz --markdown 20240511/p/poetry-moment/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 15:04:01] INFO root fetch - processPackages [apicat]: executing diffoscope
+[2024-05-11 15:04:01] INFO root fetch - processPackages [apicat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apicat-0.0.2.tar.gz tmp/apicat-0.0.3.tar.gz --markdown 20240511/a/apicat/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 15:04:01] INFO root fetch - processPackages [reanxietyz]: Downloading https://files.pythonhosted.org/packages/e4/7f/c05b958bccebcf29b84849e984b76050da5dca8af28cdff5ef1251007c07/reanxietyz-2.1.tar.gz
+[2024-05-11 15:04:01] INFO root fetch - processPackages [reanxietyz]: executing diffoscope
+[2024-05-11 15:04:01] INFO root fetch - processPackages [reanxietyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reanxietyz-1.1.tar.gz tmp/reanxietyz-2.1.tar.gz --markdown 20240511/r/reanxietyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:04:02] INFO root fetch - processPackages [ediri-azapi]: Downloading https://files.pythonhosted.org/packages/85/78/878ffeedb7e8e6151d7067917063a6c95a2741dc12873c10d647ea56cd09/ediri_azapi-1.9.0.tar.gz
+[2024-05-11 15:04:02] INFO root fetch - processPackages [ediri-azapi]: executing diffoscope
+[2024-05-11 15:04:02] INFO root fetch - processPackages [ediri-azapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ediri_azapi-1.8.1.tar.gz tmp/ediri_azapi-1.9.0.tar.gz --markdown 20240511/e/ediri-azapi/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-11 15:04:02] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.2.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - processPackages [apicat]: Remove: archive file [/home/abi/fetcher/tmp/apicat-0.0.3.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - main [MainThread]: End processing [apicat]: success
+[2024-05-11 15:04:02] INFO root fetch - processPackages [pheval-ai-marrvel]: Remove: archive file [/home/abi/fetcher/tmp/pheval_ai_marrvel-0.1.1.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - processPackages [pheval-ai-marrvel]: Remove: archive file [/home/abi/fetcher/tmp/pheval_ai_marrvel-0.1.2.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - main [MainThread]: End processing [pheval-ai-marrvel]: success
+[2024-05-11 15:04:02] INFO root fetch - processPackages [reanxietyz]: Remove: archive file [/home/abi/fetcher/tmp/reanxietyz-1.1.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - processPackages [reanxietyz]: Remove: archive file [/home/abi/fetcher/tmp/reanxietyz-2.1.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - main [MainThread]: End processing [reanxietyz]: success
+[2024-05-11 15:04:02] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.2.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - processPackages [poetry-moment]: Remove: archive file [/home/abi/fetcher/tmp/poetry_moment-0.0.3.tar.gz]
+[2024-05-11 15:04:02] INFO root fetch - main [MainThread]: End processing [poetry-moment]: success
+[2024-05-11 15:04:03] INFO root fetch - processPackages [ediri-azapi]: Remove: archive file [/home/abi/fetcher/tmp/ediri_azapi-1.8.1.tar.gz]
+[2024-05-11 15:04:03] INFO root fetch - processPackages [ediri-azapi]: Remove: archive file [/home/abi/fetcher/tmp/ediri_azapi-1.9.0.tar.gz]
+[2024-05-11 15:04:03] INFO root fetch - main [MainThread]: End processing [ediri-azapi]: success
+[2024-05-11 15:04:03] INFO root fetch - main [MainThread]: Store serial: [23161257]
