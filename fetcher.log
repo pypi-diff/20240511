@@ -10755,3 +10755,24 @@
 [2024-05-11 07:55:22] INFO root fetch - processPackages [xingchen]: Remove: archive file [/home/abi/fetcher/tmp/xingchen-1.1.2.tar.gz]
 [2024-05-11 07:55:22] INFO root fetch - main [MainThread]: End processing [xingchen]: success
 [2024-05-11 07:55:22] INFO root fetch - main [MainThread]: Store serial: [23158040]
+[2024-05-11 07:57:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158040]
+[2024-05-11 07:57:31] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: python-spartan
+[2024-05-11 07:57:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: deepgpu
+[2024-05-11 07:57:31] INFO root fetch - processPackages [python-spartan]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 07:57:31] INFO root fetch - processPackages [python-spartan]: Downloading https://files.pythonhosted.org/packages/5a/72/98674e31cbfe61e12c34e6d482ec4cd4ac9e0ec339075c9a682440ce5126/python_spartan-0.2.5.tar.gz
+[2024-05-11 07:57:31] INFO root fetch - processPackages [deepgpu]: New version: [2.1.0rc3.post6] Old Version: [2.1.0rc3.post5]
+[2024-05-11 07:57:31] INFO root fetch - processPackages [python-spartan]: Downloading https://files.pythonhosted.org/packages/3b/a1/42affbb931091f4c4b19ee777d8a4e4d3037ddafc63665f95e3e77a5057a/python_spartan-0.2.6.tar.gz
+[2024-05-11 07:57:31] INFO root fetch - processPackages [deepgpu]: Downloading https://files.pythonhosted.org/packages/59/38/ef16f5ef50a574d037ffb8cb25239a1aa8eceecaafabea17dcc9d000108a/deepgpu-2.1.0rc3.post5.tar.gz
+[2024-05-11 07:57:32] INFO root fetch - processPackages [python-spartan]: executing diffoscope
+[2024-05-11 07:57:32] INFO root fetch - processPackages [python-spartan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_spartan-0.2.5.tar.gz tmp/python_spartan-0.2.6.tar.gz --markdown 20240511/p/python-spartan/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 07:57:32] INFO root fetch - processPackages [deepgpu]: Downloading https://files.pythonhosted.org/packages/fe/97/89368d28f6b4d3dfd1f1135a0489f582b5a32233e9385fcbb1d3c314c40b/deepgpu-2.1.0rc3.post6.tar.gz
+[2024-05-11 07:57:32] INFO root fetch - processPackages [deepgpu]: executing diffoscope
+[2024-05-11 07:57:32] INFO root fetch - processPackages [deepgpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deepgpu-2.1.0rc3.post5.tar.gz tmp/deepgpu-2.1.0rc3.post6.tar.gz --markdown 20240511/d/deepgpu/2.1.0rc3.post5-2.1.0rc3.post6/README.md --exclude *.pyd
+[2024-05-11 07:57:32] INFO root fetch - processPackages [python-spartan]: Remove: archive file [/home/abi/fetcher/tmp/python_spartan-0.2.5.tar.gz]
+[2024-05-11 07:57:32] INFO root fetch - processPackages [python-spartan]: Remove: archive file [/home/abi/fetcher/tmp/python_spartan-0.2.6.tar.gz]
+[2024-05-11 07:57:32] INFO root fetch - main [MainThread]: End processing [python-spartan]: success
+[2024-05-11 07:57:33] INFO root fetch - processPackages [deepgpu]: Remove: archive file [/home/abi/fetcher/tmp/deepgpu-2.1.0rc3.post5.tar.gz]
+[2024-05-11 07:57:33] INFO root fetch - processPackages [deepgpu]: Remove: archive file [/home/abi/fetcher/tmp/deepgpu-2.1.0rc3.post6.tar.gz]
+[2024-05-11 07:57:33] INFO root fetch - main [MainThread]: End processing [deepgpu]: success
+[2024-05-11 07:57:33] INFO root fetch - main [MainThread]: Store serial: [23158048]
