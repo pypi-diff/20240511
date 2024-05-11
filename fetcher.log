@@ -21150,3 +21150,30 @@
 [2024-05-11 20:04:03] INFO root fetch - processPackages [tamarindusz]: Remove: archive file [/home/abi/fetcher/tmp/tamarindusz-2.1.tar.gz]
 [2024-05-11 20:04:03] INFO root fetch - main [MainThread]: End processing [tamarindusz]: success
 [2024-05-11 20:04:03] INFO root fetch - main [MainThread]: Store serial: [23163331]
+[2024-05-11 20:06:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163331]
+[2024-05-11 20:06:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 20:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pymatgen-analysis-defects
+[2024-05-11 20:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: liteium
+[2024-05-11 20:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sterz
+[2024-05-11 20:06:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: project-arrakis
+[2024-05-11 20:06:12] WARNING root fetch - processPackages [liteium]: Skipping, unable to determine old version
+[2024-05-11 20:06:12] INFO root fetch - main [MainThread]: End processing [liteium] error
+[2024-05-11 20:06:12] WARNING root fetch - processPackages [sterz]: Skipping, unable to determine old version
+[2024-05-11 20:06:12] INFO root fetch - processPackages [project-arrakis]: New version: [0.1.1] Old Version: [0.1]
+[2024-05-11 20:06:12] INFO root fetch - main [MainThread]: End processing [sterz] error
+[2024-05-11 20:06:12] INFO root fetch - processPackages [pymatgen-analysis-defects]: New version: [2024.5.11] Old Version: [2024.4.23]
+[2024-05-11 20:06:12] INFO root fetch - processPackages [pymatgen-analysis-defects]: Downloading https://files.pythonhosted.org/packages/f7/2a/dd66ba2424b4007ce3e149c8dbd1d0ae12ad7b3bd8f70a32e4e3092056de/pymatgen_analysis_defects-2024.4.23.tar.gz
+[2024-05-11 20:06:12] INFO root fetch - processPackages [project-arrakis]: Downloading https://files.pythonhosted.org/packages/5d/86/3981b45b4fce5340aeef619f25a8bcfdbf51829178b643be99df07fd2c45/project-arrakis-0.1.tar.gz
+[2024-05-11 20:06:13] INFO root fetch - processPackages [pymatgen-analysis-defects]: Downloading https://files.pythonhosted.org/packages/bc/e9/50c975040b71f005f3698d12016666853f768165f4b59f15d90f77991925/pymatgen_analysis_defects-2024.5.11.tar.gz
+[2024-05-11 20:06:13] INFO root fetch - processPackages [pymatgen-analysis-defects]: executing diffoscope
+[2024-05-11 20:06:13] INFO root fetch - processPackages [pymatgen-analysis-defects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymatgen_analysis_defects-2024.4.23.tar.gz tmp/pymatgen_analysis_defects-2024.5.11.tar.gz --markdown 20240511/p/pymatgen-analysis-defects/2024.4.23-2024.5.11/README.md --exclude *.pyd
+[2024-05-11 20:06:13] INFO root fetch - processPackages [project-arrakis]: Downloading https://files.pythonhosted.org/packages/fc/04/1d990e5a0a45b8a04affffe44c86413ce2695a3e929059c13f4cb05fd1d1/project_arrakis-0.1.1.tar.gz
+[2024-05-11 20:06:13] INFO root fetch - processPackages [project-arrakis]: executing diffoscope
+[2024-05-11 20:06:13] INFO root fetch - processPackages [project-arrakis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/project-arrakis-0.1.tar.gz tmp/project_arrakis-0.1.1.tar.gz --markdown 20240511/p/project-arrakis/0.1-0.1.1/README.md --exclude *.pyd
+[2024-05-11 20:06:13] INFO root fetch - processPackages [pymatgen-analysis-defects]: Remove: archive file [/home/abi/fetcher/tmp/pymatgen_analysis_defects-2024.4.23.tar.gz]
+[2024-05-11 20:06:13] INFO root fetch - processPackages [pymatgen-analysis-defects]: Remove: archive file [/home/abi/fetcher/tmp/pymatgen_analysis_defects-2024.5.11.tar.gz]
+[2024-05-11 20:06:13] INFO root fetch - main [MainThread]: End processing [pymatgen-analysis-defects]: success
+[2024-05-11 20:06:14] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project-arrakis-0.1.tar.gz]
+[2024-05-11 20:06:14] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project_arrakis-0.1.1.tar.gz]
+[2024-05-11 20:06:14] INFO root fetch - main [MainThread]: End processing [project-arrakis]: success
+[2024-05-11 20:06:14] INFO root fetch - main [MainThread]: Store serial: [23163346]
