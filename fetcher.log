@@ -16969,3 +16969,15 @@
 [2024-05-11 15:15:41] INFO root fetch - processPackages [fissure-engine]: Remove: archive file [/home/abi/fetcher/tmp/fissure_engine-1.0.6.tar.gz]
 [2024-05-11 15:15:41] INFO root fetch - main [MainThread]: End processing [fissure-engine]: success
 [2024-05-11 15:15:41] INFO root fetch - main [MainThread]: Store serial: [23161310]
+[2024-05-11 15:17:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161310]
+[2024-05-11 15:17:49] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 15:17:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yumemi
+[2024-05-11 15:17:50] INFO root fetch - processPackages [yumemi]: New version: [2.1.0] Old Version: [2.0.2]
+[2024-05-11 15:17:50] INFO root fetch - processPackages [yumemi]: Downloading https://files.pythonhosted.org/packages/58/f8/5dfda5bd1f758ac1b8463a503b1bedca8eca3539663cf9829d9141d17627/yumemi-2.0.2.tar.gz
+[2024-05-11 15:17:50] INFO root fetch - processPackages [yumemi]: Downloading https://files.pythonhosted.org/packages/7a/8d/2bdd238385eef323d0d4bc37502402a41e2d454198fabe07510caa80f369/yumemi-2.1.0.tar.gz
+[2024-05-11 15:17:50] INFO root fetch - processPackages [yumemi]: executing diffoscope
+[2024-05-11 15:17:50] INFO root fetch - processPackages [yumemi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yumemi-2.0.2.tar.gz tmp/yumemi-2.1.0.tar.gz --markdown 20240511/y/yumemi/2.0.2-2.1.0/README.md --exclude *.pyd
+[2024-05-11 15:17:51] INFO root fetch - processPackages [yumemi]: Remove: archive file [/home/abi/fetcher/tmp/yumemi-2.0.2.tar.gz]
+[2024-05-11 15:17:51] INFO root fetch - processPackages [yumemi]: Remove: archive file [/home/abi/fetcher/tmp/yumemi-2.1.0.tar.gz]
+[2024-05-11 15:17:51] INFO root fetch - main [MainThread]: End processing [yumemi]: success
+[2024-05-11 15:17:51] INFO root fetch - main [MainThread]: Store serial: [23161313]
