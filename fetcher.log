@@ -17891,3 +17891,24 @@
 [2024-05-11 16:22:11] INFO root fetch - processPackages [odxtools]: Remove: archive file [/home/abi/fetcher/tmp/odxtools-7.1.1-py3-none-any.whl.zip]
 [2024-05-11 16:22:11] INFO root fetch - main [MainThread]: End processing [odxtools]: success
 [2024-05-11 16:22:11] INFO root fetch - main [MainThread]: Store serial: [23161876]
+[2024-05-11 16:24:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161876]
+[2024-05-11 16:24:19] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 16:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zensols.mimic
+[2024-05-11 16:24:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: SQLibEngine
+[2024-05-11 16:24:20] INFO root fetch - processPackages [SQLibEngine]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 16:24:20] INFO root fetch - processPackages [SQLibEngine]: Downloading https://files.pythonhosted.org/packages/ae/56/6ff468b75d5dcbfc2c73ddb7bd283c0103b9091290fb2f5b4fc8a6a40dd7/SQLibEngine-0.1.1.tar.gz
+[2024-05-11 16:24:20] INFO root fetch - processPackages [zensols.mimic]: New version: [1.7.1] Old Version: [1.7.0]
+[2024-05-11 16:24:20] INFO root fetch - processPackages [zensols.mimic]: Downloading https://files.pythonhosted.org/packages/41/57/3930e11ed5d6fd7f4eb474de6aa36459df2de9bfd363aa026fd1f1549d13/zensols.mimic-1.7.0-py3-none-any.whl
+[2024-05-11 16:24:20] INFO root fetch - processPackages [SQLibEngine]: Downloading https://files.pythonhosted.org/packages/61/b9/258ace0a115194a393ad3ad1efd99648525806f0d78bd916456a88df4227/SQLibEngine-0.1.2.tar.gz
+[2024-05-11 16:24:20] INFO root fetch - processPackages [SQLibEngine]: executing diffoscope
+[2024-05-11 16:24:20] INFO root fetch - processPackages [SQLibEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLibEngine-0.1.1.tar.gz tmp/SQLibEngine-0.1.2.tar.gz --markdown 20240511/S/SQLibEngine/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 16:24:20] INFO root fetch - processPackages [zensols.mimic]: Downloading https://files.pythonhosted.org/packages/38/b7/8cc96a15e37f5883945c7e1507494e7b1f871ba944f26700655b7721835f/zensols.mimic-1.7.1-py3-none-any.whl
+[2024-05-11 16:24:20] INFO root fetch - processPackages [zensols.mimic]: executing diffoscope
+[2024-05-11 16:24:20] INFO root fetch - processPackages [zensols.mimic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.mimic-1.7.0-py3-none-any.whl.zip tmp/zensols.mimic-1.7.1-py3-none-any.whl.zip --markdown 20240511/z/zensols.mimic/1.7.0-1.7.1/README.md --exclude *.pyd
+[2024-05-11 16:24:21] INFO root fetch - processPackages [SQLibEngine]: Remove: archive file [/home/abi/fetcher/tmp/SQLibEngine-0.1.1.tar.gz]
+[2024-05-11 16:24:21] INFO root fetch - processPackages [SQLibEngine]: Remove: archive file [/home/abi/fetcher/tmp/SQLibEngine-0.1.2.tar.gz]
+[2024-05-11 16:24:21] INFO root fetch - main [MainThread]: End processing [SQLibEngine]: success
+[2024-05-11 16:24:21] INFO root fetch - processPackages [zensols.mimic]: Remove: archive file [/home/abi/fetcher/tmp/zensols.mimic-1.7.0-py3-none-any.whl.zip]
+[2024-05-11 16:24:21] INFO root fetch - processPackages [zensols.mimic]: Remove: archive file [/home/abi/fetcher/tmp/zensols.mimic-1.7.1-py3-none-any.whl.zip]
+[2024-05-11 16:24:21] INFO root fetch - main [MainThread]: End processing [zensols.mimic]: success
+[2024-05-11 16:24:21] INFO root fetch - main [MainThread]: Store serial: [23161884]
