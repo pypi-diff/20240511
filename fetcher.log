@@ -14550,3 +14550,30 @@
 [2024-05-11 12:34:58] INFO root fetch - processPackages [sydney-py]: Remove: archive file [/home/abi/fetcher/tmp/sydney_py-0.9.0.tar.gz]
 [2024-05-11 12:34:58] INFO root fetch - main [MainThread]: End processing [sydney-py]: success
 [2024-05-11 12:34:58] INFO root fetch - main [MainThread]: Store serial: [23160117]
+[2024-05-11 12:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160117]
+[2024-05-11 12:37:07] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: delphininez
+[2024-05-11 12:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: scrapeddit
+[2024-05-11 12:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapy-scraper
+[2024-05-11 12:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vipas
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapeddit]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 12:37:07] WARNING root fetch - processPackages [vipas]: Skipping, unable to determine old version
+[2024-05-11 12:37:07] INFO root fetch - main [MainThread]: End processing [vipas] error
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapy-scraper]: New version: [1.7] Old Version: [1.6]
+[2024-05-11 12:37:07] WARNING root fetch - processPackages [delphininez]: Skipping, unable to determine old version
+[2024-05-11 12:37:07] INFO root fetch - main [MainThread]: End processing [delphininez] error
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/6e/58/925ffa0d4982672ae911eb28a345efbc20479ed4536a545799adbd4ee431/scrapeddit-0.0.4.tar.gz
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapy-scraper]: Downloading https://files.pythonhosted.org/packages/0d/83/1f55dd697683cefb04d8b0e74c58332c5470a1cff5fe23216ac6977951fb/scrapy-scraper-1.6.tar.gz
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/4b/b1/a8ec693ac3388446ecab450d34e795eeeec6c9d50ed9f1ea2e4d2851835b/scrapeddit-0.0.5.tar.gz
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.0.4.tar.gz tmp/scrapeddit-0.0.5.tar.gz --markdown 20240511/s/scrapeddit/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 12:37:07] INFO root fetch - processPackages [scrapy-scraper]: Downloading https://files.pythonhosted.org/packages/2a/9e/235310d22b52d09dcc91594166ca899f150acd1bf91ceffd60732a05ac06/scrapy_scraper-1.7.tar.gz
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapy-scraper]: executing diffoscope
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapy-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapy-scraper-1.6.tar.gz tmp/scrapy_scraper-1.7.tar.gz --markdown 20240511/s/scrapy-scraper/1.6-1.7/README.md --exclude *.pyd
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.0.4.tar.gz]
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.0.5.tar.gz]
+[2024-05-11 12:37:08] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapy-scraper]: Remove: archive file [/home/abi/fetcher/tmp/scrapy-scraper-1.6.tar.gz]
+[2024-05-11 12:37:08] INFO root fetch - processPackages [scrapy-scraper]: Remove: archive file [/home/abi/fetcher/tmp/scrapy_scraper-1.7.tar.gz]
+[2024-05-11 12:37:08] INFO root fetch - main [MainThread]: End processing [scrapy-scraper]: success
+[2024-05-11 12:37:08] INFO root fetch - main [MainThread]: Store serial: [23160133]
