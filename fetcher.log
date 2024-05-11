@@ -11294,3 +11294,36 @@
 [2024-05-11 08:41:19] INFO root fetch - main [MainThread]: End processing [odiblez]: success
 [2024-05-11 08:41:19] INFO root fetch - main [MainThread]: End processing [partial-json-parser]: success
 [2024-05-11 08:41:19] INFO root fetch - main [MainThread]: Store serial: [23158324]
+[2024-05-11 08:43:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158324]
+[2024-05-11 08:43:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 08:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: otpcr
+[2024-05-11 08:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: probreg
+[2024-05-11 08:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wikivoyage
+[2024-05-11 08:43:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: carbon-registry-indexer
+[2024-05-11 08:43:28] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 08:43:28] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/ec/48/f5c4b55a71efa3e5189f875f3119be9f47d4076dc54afa09e169f19c5624/carbon-registry-indexer-0.1.4.tar.gz
+[2024-05-11 08:43:28] WARNING root fetch - processPackages [wikivoyage]: Skipping, unable to determine old version
+[2024-05-11 08:43:28] INFO root fetch - main [MainThread]: End processing [wikivoyage] error
+[2024-05-11 08:43:28] INFO root fetch - processPackages [otpcr]: New version: [9] Old Version: [8]
+[2024-05-11 08:43:28] INFO root fetch - processPackages [probreg]: New version: [0.3.8] Old Version: [0.3.7]
+[2024-05-11 08:43:28] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/37/0b/8bd06d4112258b1b2c7a9453b3a01eae742c0312cd1f9fdac10d84e634b6/otpcr-8.tar.gz
+[2024-05-11 08:43:29] INFO root fetch - processPackages [probreg]: Downloading https://files.pythonhosted.org/packages/01/3f/64b03807b5d3da2037c2b5890b4a74552f9b6edd587abb51f75df37e18f8/probreg-0.3.7.tar.gz
+[2024-05-11 08:43:29] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/bc/59/3497ef1abbbc93b8b3c4a6979ad577f7757e81991ddf0697b39d489649bb/carbon-registry-indexer-0.1.5.tar.gz
+[2024-05-11 08:43:29] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-11 08:43:29] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.4.tar.gz tmp/carbon-registry-indexer-0.1.5.tar.gz --markdown 20240511/c/carbon-registry-indexer/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 08:43:29] INFO root fetch - processPackages [probreg]: Downloading https://files.pythonhosted.org/packages/ed/f5/4cda3ac2e064013c293f7b405a9ed2e55f80ef802f2e7811eb6e9ef6b094/probreg-0.3.8.tar.gz
+[2024-05-11 08:43:29] INFO root fetch - processPackages [otpcr]: Downloading https://files.pythonhosted.org/packages/54/7e/af8cf1cb765a2f3cb2416931b8e932571cea62c675981c5a5ae52fc76702/otpcr-9.tar.gz
+[2024-05-11 08:43:29] INFO root fetch - processPackages [probreg]: executing diffoscope
+[2024-05-11 08:43:29] INFO root fetch - processPackages [probreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/probreg-0.3.7.tar.gz tmp/probreg-0.3.8.tar.gz --markdown 20240511/p/probreg/0.3.7-0.3.8/README.md --exclude *.pyd
+[2024-05-11 08:43:29] INFO root fetch - processPackages [otpcr]: executing diffoscope
+[2024-05-11 08:43:29] INFO root fetch - processPackages [otpcr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otpcr-8.tar.gz tmp/otpcr-9.tar.gz --markdown 20240511/o/otpcr/8-9/README.md --exclude *.pyd
+[2024-05-11 08:43:29] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.4.tar.gz]
+[2024-05-11 08:43:29] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.5.tar.gz]
+[2024-05-11 08:43:29] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-11 08:43:30] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-8.tar.gz]
+[2024-05-11 08:43:30] INFO root fetch - processPackages [otpcr]: Remove: archive file [/home/abi/fetcher/tmp/otpcr-9.tar.gz]
+[2024-05-11 08:43:30] INFO root fetch - main [MainThread]: End processing [otpcr]: success
+[2024-05-11 08:43:31] INFO root fetch - processPackages [probreg]: Remove: archive file [/home/abi/fetcher/tmp/probreg-0.3.7.tar.gz]
+[2024-05-11 08:43:31] INFO root fetch - processPackages [probreg]: Remove: archive file [/home/abi/fetcher/tmp/probreg-0.3.8.tar.gz]
+[2024-05-11 08:43:31] INFO root fetch - main [MainThread]: End processing [probreg]: success
+[2024-05-11 08:43:31] INFO root fetch - main [MainThread]: Store serial: [23158335]
