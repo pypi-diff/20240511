@@ -19546,3 +19546,48 @@
 [2024-05-11 18:10:51] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.16.0.tar.gz]
 [2024-05-11 18:10:51] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-11 18:10:51] INFO root fetch - main [MainThread]: Store serial: [23162538]
+[2024-05-11 18:12:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162538]
+[2024-05-11 18:13:00] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bcp47
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-plugin-export
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: extensionmigrationassistant
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nodify
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: rag-pychunk
+[2024-05-11 18:13:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: norfolkz
+[2024-05-11 18:13:00] INFO root fetch - processPackages [bcp47]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 18:13:00] INFO root fetch - processPackages [extensionmigrationassistant]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-11 18:13:00] WARNING root fetch - processPackages [rag-pychunk]: Skipping, unable to determine old version
+[2024-05-11 18:13:00] INFO root fetch - main [MainThread]: End processing [rag-pychunk] error
+[2024-05-11 18:13:00] INFO root fetch - processPackages [bcp47]: Downloading https://files.pythonhosted.org/packages/e9/e2/5d9560dba7b272281edf2bed3c953c03d425b6d84af339a967475de068c7/bcp47-0.0.4.tar.gz
+[2024-05-11 18:13:00] INFO root fetch - processPackages [nodify]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 18:13:00] WARNING root fetch - processPackages [norfolkz]: Skipping, unable to determine old version
+[2024-05-11 18:13:00] INFO root fetch - main [MainThread]: End processing [norfolkz] error
+[2024-05-11 18:13:01] INFO root fetch - processPackages [poetry-plugin-export]: New version: [1.8.0] Old Version: [1.7.1]
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: Downloading https://files.pythonhosted.org/packages/b5/ea/c19661032f67127e3d5384bb0abd6aee9d6c8926a0ae0da53d3b971f0d7b/extensionmigrationassistant-0.1.0.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [bcp47]: Downloading https://files.pythonhosted.org/packages/49/86/4c4421935d6035d36c14cbc26849c75a1c1ed9f672676cd7ecc8e8e15fb6/bcp47-0.0.5.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [poetry-plugin-export]: Downloading https://files.pythonhosted.org/packages/68/d8/b3320a09e3051d3cc9c3e47bccb50bc3cb651de88ce8434e61d231ff041d/poetry_plugin_export-1.7.1.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [nodify]: Downloading https://files.pythonhosted.org/packages/01/68/e1ab71ba2edbb0e21b22c4dd871b2bfe797a0d9cac3c0f82c1c5957fccef/nodify-0.0.5.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [bcp47]: executing diffoscope
+[2024-05-11 18:13:01] INFO root fetch - processPackages [bcp47]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bcp47-0.0.4.tar.gz tmp/bcp47-0.0.5.tar.gz --markdown 20240511/b/bcp47/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: Downloading https://files.pythonhosted.org/packages/12/91/513668b605f907b1b59a20f133ab5e2f467be360ec5f7a3d0f5af79f1a29/extensionmigrationassistant-0.1.2-py3-none-any.whl
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: executing diffoscope
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/extensionmigrationassistant-0.1.0.tar.gz tmp/extensionmigrationassistant-0.1.2-py3-none-any.whl.zip --markdown 20240511/e/extensionmigrationassistant/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-11 18:13:01] INFO root fetch - processPackages [poetry-plugin-export]: Downloading https://files.pythonhosted.org/packages/81/bf/270ef984c6f4b610a22a6948096b6b9d949de8f77c4c427d981c530ac521/poetry_plugin_export-1.8.0.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [nodify]: Downloading https://files.pythonhosted.org/packages/ad/12/1871537db64d7ec123682ac7d6b851fee5466767ffa00aa69bd4a77548ae/nodify-0.0.6.tar.gz
+[2024-05-11 18:13:01] INFO root fetch - processPackages [nodify]: executing diffoscope
+[2024-05-11 18:13:01] INFO root fetch - processPackages [nodify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nodify-0.0.5.tar.gz tmp/nodify-0.0.6.tar.gz --markdown 20240511/n/nodify/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-11 18:13:01] INFO root fetch - processPackages [poetry-plugin-export]: executing diffoscope
+[2024-05-11 18:13:01] INFO root fetch - processPackages [poetry-plugin-export]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry_plugin_export-1.7.1.tar.gz tmp/poetry_plugin_export-1.8.0.tar.gz --markdown 20240511/p/poetry-plugin-export/1.7.1-1.8.0/README.md --exclude *.pyd
+[2024-05-11 18:13:01] INFO root fetch - processPackages [bcp47]: Remove: archive file [/home/abi/fetcher/tmp/bcp47-0.0.4.tar.gz]
+[2024-05-11 18:13:01] INFO root fetch - processPackages [bcp47]: Remove: archive file [/home/abi/fetcher/tmp/bcp47-0.0.5.tar.gz]
+[2024-05-11 18:13:01] INFO root fetch - main [MainThread]: End processing [bcp47]: success
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: Remove: archive file [/home/abi/fetcher/tmp/extensionmigrationassistant-0.1.0.tar.gz]
+[2024-05-11 18:13:01] INFO root fetch - processPackages [extensionmigrationassistant]: Remove: archive file [/home/abi/fetcher/tmp/extensionmigrationassistant-0.1.2-py3-none-any.whl.zip]
+[2024-05-11 18:13:01] INFO root fetch - main [MainThread]: End processing [extensionmigrationassistant]: success
+[2024-05-11 18:13:02] INFO root fetch - processPackages [poetry-plugin-export]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_export-1.7.1.tar.gz]
+[2024-05-11 18:13:02] INFO root fetch - processPackages [poetry-plugin-export]: Remove: archive file [/home/abi/fetcher/tmp/poetry_plugin_export-1.8.0.tar.gz]
+[2024-05-11 18:13:02] INFO root fetch - main [MainThread]: End processing [poetry-plugin-export]: success
+[2024-05-11 18:13:02] INFO root fetch - processPackages [nodify]: Remove: archive file [/home/abi/fetcher/tmp/nodify-0.0.5.tar.gz]
+[2024-05-11 18:13:02] INFO root fetch - processPackages [nodify]: Remove: archive file [/home/abi/fetcher/tmp/nodify-0.0.6.tar.gz]
+[2024-05-11 18:13:02] INFO root fetch - main [MainThread]: End processing [nodify]: success
+[2024-05-11 18:13:02] INFO root fetch - main [MainThread]: Store serial: [23162562]
