@@ -10222,3 +10222,15 @@
 [2024-05-11 07:08:53] INFO root fetch - processPackages [muckz]: Remove: archive file [/home/abi/fetcher/tmp/muckz-2.1.tar.gz]
 [2024-05-11 07:08:53] INFO root fetch - main [MainThread]: End processing [muckz]: success
 [2024-05-11 07:08:53] INFO root fetch - main [MainThread]: Store serial: [23157515]
+[2024-05-11 07:10:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157515]
+[2024-05-11 07:11:01] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 07:11:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bisos.currents
+[2024-05-11 07:11:02] INFO root fetch - processPackages [bisos.currents]: New version: [0.5] Old Version: [0.4]
+[2024-05-11 07:11:02] INFO root fetch - processPackages [bisos.currents]: Downloading https://files.pythonhosted.org/packages/d0/70/d6c9ce5d3d598aceca1beb163baf847cfeacb896b15bc4acd0f21bbe5cca/bisos.currents-0.4.tar.gz
+[2024-05-11 07:11:02] INFO root fetch - processPackages [bisos.currents]: Downloading https://files.pythonhosted.org/packages/8c/07/806731305f70f507da17bf84b4a599d668c3250e58be469a3f643137c19f/bisos.currents-0.5.tar.gz
+[2024-05-11 07:11:02] INFO root fetch - processPackages [bisos.currents]: executing diffoscope
+[2024-05-11 07:11:02] INFO root fetch - processPackages [bisos.currents]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.currents-0.4.tar.gz tmp/bisos.currents-0.5.tar.gz --markdown 20240511/b/bisos.currents/0.4-0.5/README.md --exclude *.pyd
+[2024-05-11 07:11:03] INFO root fetch - processPackages [bisos.currents]: Remove: archive file [/home/abi/fetcher/tmp/bisos.currents-0.4.tar.gz]
+[2024-05-11 07:11:03] INFO root fetch - processPackages [bisos.currents]: Remove: archive file [/home/abi/fetcher/tmp/bisos.currents-0.5.tar.gz]
+[2024-05-11 07:11:03] INFO root fetch - main [MainThread]: End processing [bisos.currents]: success
+[2024-05-11 07:11:03] INFO root fetch - main [MainThread]: Store serial: [23157519]
