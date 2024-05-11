@@ -10405,3 +10405,27 @@
 [2024-05-11 07:26:18] INFO root fetch - processPackages [osw]: Remove: archive file [/home/abi/fetcher/tmp/osw-0.9.0.tar.gz]
 [2024-05-11 07:26:18] INFO root fetch - main [MainThread]: End processing [osw]: success
 [2024-05-11 07:26:18] INFO root fetch - main [MainThread]: Store serial: [23157775]
+[2024-05-11 07:28:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157775]
+[2024-05-11 07:28:27] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nappiesz
+[2024-05-11 07:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: funcnodes
+[2024-05-11 07:28:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: isohexylz
+[2024-05-11 07:28:27] INFO root fetch - processPackages [funcnodes]: New version: [0.2.5] Old Version: [0.2.3]
+[2024-05-11 07:28:27] INFO root fetch - processPackages [funcnodes]: Downloading https://files.pythonhosted.org/packages/45/8a/3a949afe3296baa250b196fc80873dc66cef655cccfb3f62c687d507a8b7/funcnodes-0.2.3.tar.gz
+[2024-05-11 07:28:27] WARNING root fetch - processPackages [isohexylz]: Skipping, unable to determine old version
+[2024-05-11 07:28:27] INFO root fetch - main [MainThread]: End processing [isohexylz] error
+[2024-05-11 07:28:27] INFO root fetch - processPackages [nappiesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:28:27] INFO root fetch - processPackages [nappiesz]: Downloading https://files.pythonhosted.org/packages/25/3f/bb173682ad5df2722faae1b7ccfeeefa761157022ca4de778130099d6956/nappiesz-1.1.tar.gz
+[2024-05-11 07:28:27] INFO root fetch - processPackages [funcnodes]: Downloading https://files.pythonhosted.org/packages/7c/ab/4efd8289388d6b96666bcc4b81557fff13d2e8b8949373d429dc5bd63156/funcnodes-0.2.5.tar.gz
+[2024-05-11 07:28:27] INFO root fetch - processPackages [nappiesz]: Downloading https://files.pythonhosted.org/packages/fb/d9/4889d86d3a17750d19ac051739bdb368cea2487ef24a25403a6cf3a4107a/nappiesz-2.1.tar.gz
+[2024-05-11 07:28:28] INFO root fetch - processPackages [funcnodes]: executing diffoscope
+[2024-05-11 07:28:28] INFO root fetch - processPackages [funcnodes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/funcnodes-0.2.3.tar.gz tmp/funcnodes-0.2.5.tar.gz --markdown 20240511/f/funcnodes/0.2.3-0.2.5/README.md --exclude *.pyd
+[2024-05-11 07:28:28] INFO root fetch - processPackages [nappiesz]: executing diffoscope
+[2024-05-11 07:28:28] INFO root fetch - processPackages [nappiesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nappiesz-1.1.tar.gz tmp/nappiesz-2.1.tar.gz --markdown 20240511/n/nappiesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:28:28] INFO root fetch - processPackages [nappiesz]: Remove: archive file [/home/abi/fetcher/tmp/nappiesz-1.1.tar.gz]
+[2024-05-11 07:28:28] INFO root fetch - processPackages [nappiesz]: Remove: archive file [/home/abi/fetcher/tmp/nappiesz-2.1.tar.gz]
+[2024-05-11 07:28:28] INFO root fetch - main [MainThread]: End processing [nappiesz]: success
+[2024-05-11 07:28:29] INFO root fetch - processPackages [funcnodes]: Remove: archive file [/home/abi/fetcher/tmp/funcnodes-0.2.3.tar.gz]
+[2024-05-11 07:28:29] INFO root fetch - processPackages [funcnodes]: Remove: archive file [/home/abi/fetcher/tmp/funcnodes-0.2.5.tar.gz]
+[2024-05-11 07:28:29] INFO root fetch - main [MainThread]: End processing [funcnodes]: success
+[2024-05-11 07:28:29] INFO root fetch - main [MainThread]: Store serial: [23157784]
