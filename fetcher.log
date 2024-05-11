@@ -16296,3 +16296,29 @@
 [2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: Remove: archive file [/home/abi/fetcher/tmp/pyridoxinez-2.1.tar.gz]
 [2024-05-11 14:28:48] INFO root fetch - main [MainThread]: End processing [pyridoxinez]: success
 [2024-05-11 14:28:48] INFO root fetch - main [MainThread]: Store serial: [23161055]
+[2024-05-11 14:30:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161055]
+[2024-05-11 14:30:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 14:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cheatshh
+[2024-05-11 14:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: team-14-lib-version
+[2024-05-11 14:30:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ciscoconfparse2
+[2024-05-11 14:30:57] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b4] Old Version: [0.6.0b3]
+[2024-05-11 14:30:57] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 14:30:57] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/93/c7/685775753b88413a721714af30a31806112ed91bb1618d0ef086bd44d2fa/team_14_lib_version-0.6.0b3.tar.gz
+[2024-05-11 14:30:57] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-05-11 14:30:57] INFO root fetch - processPackages [cheatshh]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 14:30:57] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-05-11 14:30:57] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: Downloading https://files.pythonhosted.org/packages/aa/04/91e0edc405de00320994f0f4025257c8a87e5599323b01b57cba835e6fa0/cheatshh-1.0.2.tar.gz
+[2024-05-11 14:30:58] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/95/9c/c3061f9353e47af7e4c66401f4c7dfa843f7a2bc2973b5060f6c50ca6d88/team_14_lib_version-0.6.0b4.tar.gz
+[2024-05-11 14:30:58] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 14:30:58] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.6.0b3.tar.gz tmp/team_14_lib_version-0.6.0b4.tar.gz --markdown 20240511/t/team-14-lib-version/0.6.0b3-0.6.0b4/README.md --exclude *.pyd
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: Downloading https://files.pythonhosted.org/packages/40/be/1fc6a4192a1d84db88c8db93592dc93d3e98ccfd5c30e23794750e7b6f45/cheatshh-1.0.3.tar.gz
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: executing diffoscope
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cheatshh-1.0.2.tar.gz tmp/cheatshh-1.0.3.tar.gz --markdown 20240511/c/cheatshh/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 14:30:58] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b3.tar.gz]
+[2024-05-11 14:30:58] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b4.tar.gz]
+[2024-05-11 14:30:58] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: Remove: archive file [/home/abi/fetcher/tmp/cheatshh-1.0.2.tar.gz]
+[2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: Remove: archive file [/home/abi/fetcher/tmp/cheatshh-1.0.3.tar.gz]
+[2024-05-11 14:30:58] INFO root fetch - main [MainThread]: End processing [cheatshh]: success
+[2024-05-11 14:30:58] INFO root fetch - main [MainThread]: Store serial: [23161064]
