@@ -8294,3 +8294,42 @@
 [2024-05-11 04:44:55] INFO root fetch - processPackages [not1mm]: Remove: archive file [/home/abi/fetcher/tmp/not1mm-24.5.9.tar.gz]
 [2024-05-11 04:44:55] INFO root fetch - main [MainThread]: End processing [not1mm]: success
 [2024-05-11 04:44:55] INFO root fetch - main [MainThread]: Store serial: [23156726]
+[2024-05-11 04:46:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156726]
+[2024-05-11 04:47:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 04:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sp-lh3-constant-contact
+[2024-05-11 04:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxynt
+[2024-05-11 04:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docprompt
+[2024-05-11 04:47:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: litholapaxyz
+[2024-05-11 04:47:04] INFO root fetch - processPackages [sp-lh3-constant-contact]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-11 04:47:04] INFO root fetch - processPackages [litholapaxyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:47:04] INFO root fetch - processPackages [proxynt]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-11 04:47:04] INFO root fetch - processPackages [docprompt]: New version: [0.4.5] Old Version: [0.4.4]
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/35/0d/f8d307d0189ab0677dc95a1ed6dbf4f3bf031cde2105080f9f3f98ab01b1/sp_lh3_constant_contact-0.1.0.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/87/0a/03b7dc7fc11acd78d68e471e47040bb49eebac7ecce517844d7eedcc8e1f/docprompt-0.4.4.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [proxynt]: Downloading https://files.pythonhosted.org/packages/85/87/e21a408743bcd813362637731c7b1b6cd96619344176cf3d2c10d4912990/proxynt-1.1.8.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [litholapaxyz]: Downloading https://files.pythonhosted.org/packages/82/8a/337da2aed146bfd9a5c0bf43c29efbb2b54c58ae31b7f0bb0e6c6c54dc2f/litholapaxyz-1.1.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/90/a2/d44dcdfcc9512fae53cf38156f3a7d4dde53fa7a11a8014cf0c29f759725/sp_lh3_constant_contact-0.1.2.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: executing diffoscope
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sp_lh3_constant_contact-0.1.0.tar.gz tmp/sp_lh3_constant_contact-0.1.2.tar.gz --markdown 20240511/s/sp-lh3-constant-contact/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-11 04:47:05] INFO root fetch - processPackages [litholapaxyz]: Downloading https://files.pythonhosted.org/packages/d2/05/aa48c479f6e4870f2ee253e2a5810c16315f42673747edffb1284efad515/litholapaxyz-2.1.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [docprompt]: Downloading https://files.pythonhosted.org/packages/e4/0b/276310f083b47f09b574a07f26036d1f790a685668f1632507304d2f02c6/docprompt-0.4.5.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [litholapaxyz]: executing diffoscope
+[2024-05-11 04:47:05] INFO root fetch - processPackages [litholapaxyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/litholapaxyz-1.1.tar.gz tmp/litholapaxyz-2.1.tar.gz --markdown 20240511/l/litholapaxyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:47:05] INFO root fetch - processPackages [docprompt]: executing diffoscope
+[2024-05-11 04:47:05] INFO root fetch - processPackages [docprompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docprompt-0.4.4.tar.gz tmp/docprompt-0.4.5.tar.gz --markdown 20240511/d/docprompt/0.4.4-0.4.5/README.md --exclude *.pyd
+[2024-05-11 04:47:05] INFO root fetch - processPackages [proxynt]: Downloading https://files.pythonhosted.org/packages/0d/da/ce1fdd2997452125d925e27b6b90d9ef60ea63095cdb7dfaa274f21ae58f/proxynt-1.1.9.tar.gz
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.0.tar.gz]
+[2024-05-11 04:47:05] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.2.tar.gz]
+[2024-05-11 04:47:05] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact]: success
+[2024-05-11 04:47:06] INFO root fetch - processPackages [proxynt]: executing diffoscope
+[2024-05-11 04:47:06] INFO root fetch - processPackages [proxynt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxynt-1.1.8.tar.gz tmp/proxynt-1.1.9.tar.gz --markdown 20240511/p/proxynt/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-11 04:47:06] INFO root fetch - processPackages [litholapaxyz]: Remove: archive file [/home/abi/fetcher/tmp/litholapaxyz-1.1.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - processPackages [litholapaxyz]: Remove: archive file [/home/abi/fetcher/tmp/litholapaxyz-2.1.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - main [MainThread]: End processing [litholapaxyz]: success
+[2024-05-11 04:47:06] INFO root fetch - processPackages [docprompt]: Remove: archive file [/home/abi/fetcher/tmp/docprompt-0.4.4.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - processPackages [docprompt]: Remove: archive file [/home/abi/fetcher/tmp/docprompt-0.4.5.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - main [MainThread]: End processing [docprompt]: success
+[2024-05-11 04:47:06] INFO root fetch - processPackages [proxynt]: Remove: archive file [/home/abi/fetcher/tmp/proxynt-1.1.8.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - processPackages [proxynt]: Remove: archive file [/home/abi/fetcher/tmp/proxynt-1.1.9.tar.gz]
+[2024-05-11 04:47:06] INFO root fetch - main [MainThread]: End processing [proxynt]: success
+[2024-05-11 04:47:06] INFO root fetch - main [MainThread]: Store serial: [23156737]
