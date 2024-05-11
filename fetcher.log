@@ -23539,3 +23539,47 @@
 [2024-05-11 22:49:47] ERROR root fetch - processPackages [nchuchain]: Unable to get metadata: No such project 'nchuchain'
 [2024-05-11 22:49:47] INFO root fetch - main [MainThread]: End processing [nchuchain] error
 [2024-05-11 22:49:47] INFO root fetch - main [MainThread]: Store serial: [23164469]
+[2024-05-11 22:51:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164469]
+[2024-05-11 22:51:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 22:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llmware
+[2024-05-11 22:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: InterProcessPyObjects
+[2024-05-11 22:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unemphaticallyz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: surfkit
+[2024-05-11 22:51:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: camera-ui-python-types
+[2024-05-11 22:51:56] INFO root fetch - processPackages [camera-ui-python-types]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 22:51:56] INFO root fetch - processPackages [surfkit]: New version: [0.1.99] Old Version: [0.1.98]
+[2024-05-11 22:51:56] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/4d/91/8f66920b92ee71f302a89040cd5bda06874eb3068a8e2783d2727e21e145/camera-ui-python-types-0.1.8.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [llmware]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 22:51:56] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/c2/e4/d9d6efb4013a22047e07b2174dc8716a86fe2b3fe0652e6e1edddbde177b/surfkit-0.1.98.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [unemphaticallyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:51:56] INFO root fetch - processPackages [InterProcessPyObjects]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 22:51:56] INFO root fetch - processPackages [llmware]: Downloading https://files.pythonhosted.org/packages/4d/21/4672a53b26db92deb1117cea11feaaa74f3279ed29198c6a7f77ff2c8ca2/llmware-0.2.8-py3-none-any.whl
+[2024-05-11 22:51:56] INFO root fetch - processPackages [unemphaticallyz]: Downloading https://files.pythonhosted.org/packages/75/93/88006b7ae41b70a7f958f58dde4e2246dfcd8ebab1685b33de297c71be28/unemphaticallyz-1.1.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [InterProcessPyObjects]: Downloading https://files.pythonhosted.org/packages/f1/04/a2a4d8b88e7a8ac74859137f08fc84d02b1922822a20f0f731d20a8d245b/interprocesspyobjects-1.0.2.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [surfkit]: Downloading https://files.pythonhosted.org/packages/65/a8/bfc822b58240522d18c4cf24a25a6f2476da037058406af11377393fa476/surfkit-0.1.99.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [camera-ui-python-types]: Downloading https://files.pythonhosted.org/packages/aa/10/16d19e4d819a9d548f5b24a065fd209324b510898722599b0caf5da342e7/camera-ui-python-types-0.1.9.tar.gz
+[2024-05-11 22:51:56] INFO root fetch - processPackages [camera-ui-python-types]: executing diffoscope
+[2024-05-11 22:51:56] INFO root fetch - processPackages [camera-ui-python-types]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/camera-ui-python-types-0.1.8.tar.gz tmp/camera-ui-python-types-0.1.9.tar.gz --markdown 20240511/c/camera-ui-python-types/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 22:51:56] INFO root fetch - processPackages [surfkit]: executing diffoscope
+[2024-05-11 22:51:56] INFO root fetch - processPackages [surfkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/surfkit-0.1.98.tar.gz tmp/surfkit-0.1.99.tar.gz --markdown 20240511/s/surfkit/0.1.98-0.1.99/README.md --exclude *.pyd
+[2024-05-11 22:51:56] INFO root fetch - processPackages [unemphaticallyz]: Downloading https://files.pythonhosted.org/packages/0a/ae/6329aa91d532724f278a5080ca85a632c38ac5cf55e544541d8386094eac/unemphaticallyz-2.1.tar.gz
+[2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: Downloading https://files.pythonhosted.org/packages/ff/12/d08ef441bbf974c5d238e27e784cb240b7a861b3c08a66855ba58d8f2de6/interprocesspyobjects-1.0.3.tar.gz
+[2024-05-11 22:51:57] INFO root fetch - processPackages [unemphaticallyz]: executing diffoscope
+[2024-05-11 22:51:57] INFO root fetch - processPackages [unemphaticallyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unemphaticallyz-1.1.tar.gz tmp/unemphaticallyz-2.1.tar.gz --markdown 20240511/u/unemphaticallyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:51:57] WARNING root fetch - processPackages [llmware]: Skipping package: exceeds size limit 39931855>=10485760
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [llmware] error
+[2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: executing diffoscope
+[2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/interprocesspyobjects-1.0.2.tar.gz tmp/interprocesspyobjects-1.0.3.tar.gz --markdown 20240511/I/InterProcessPyObjects/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 22:51:57] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.8.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - processPackages [camera-ui-python-types]: Remove: archive file [/home/abi/fetcher/tmp/camera-ui-python-types-0.1.9.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [camera-ui-python-types]: success
+[2024-05-11 22:51:57] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.98.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - processPackages [surfkit]: Remove: archive file [/home/abi/fetcher/tmp/surfkit-0.1.99.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [surfkit]: success
+[2024-05-11 22:51:57] INFO root fetch - processPackages [unemphaticallyz]: Remove: archive file [/home/abi/fetcher/tmp/unemphaticallyz-1.1.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - processPackages [unemphaticallyz]: Remove: archive file [/home/abi/fetcher/tmp/unemphaticallyz-2.1.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [unemphaticallyz]: success
+[2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: Remove: archive file [/home/abi/fetcher/tmp/interprocesspyobjects-1.0.2.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: Remove: archive file [/home/abi/fetcher/tmp/interprocesspyobjects-1.0.3.tar.gz]
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [InterProcessPyObjects]: success
+[2024-05-11 22:51:57] INFO root fetch - main [MainThread]: Store serial: [23164482]
