@@ -11182,3 +11182,21 @@
 [2024-05-11 08:32:40] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.6.tar.gz]
 [2024-05-11 08:32:40] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact]: success
 [2024-05-11 08:32:40] INFO root fetch - main [MainThread]: Store serial: [23158271]
+[2024-05-11 08:34:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158271]
+[2024-05-11 08:34:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 08:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-kurogames
+[2024-05-11 08:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nuancesz
+[2024-05-11 08:34:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: enteropneustanz
+[2024-05-11 08:34:48] WARNING root fetch - processPackages [nonebot-plugin-kurogames]: Skipping, unable to determine old version
+[2024-05-11 08:34:48] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames] error
+[2024-05-11 08:34:48] INFO root fetch - processPackages [nuancesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:34:48] WARNING root fetch - processPackages [enteropneustanz]: Skipping, unable to determine old version
+[2024-05-11 08:34:48] INFO root fetch - main [MainThread]: End processing [enteropneustanz] error
+[2024-05-11 08:34:48] INFO root fetch - processPackages [nuancesz]: Downloading https://files.pythonhosted.org/packages/a3/fd/b1127331cff43221a7c89172f51128ac53c06f4ceca23923e6a679a31aaf/nuancesz-1.1.tar.gz
+[2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: Downloading https://files.pythonhosted.org/packages/73/82/d555be13b716e5f5932bbb43851fdbc28dc6da6564454245f78fe1963fd5/nuancesz-2.1.tar.gz
+[2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: executing diffoscope
+[2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nuancesz-1.1.tar.gz tmp/nuancesz-2.1.tar.gz --markdown 20240511/n/nuancesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: Remove: archive file [/home/abi/fetcher/tmp/nuancesz-1.1.tar.gz]
+[2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: Remove: archive file [/home/abi/fetcher/tmp/nuancesz-2.1.tar.gz]
+[2024-05-11 08:34:49] INFO root fetch - main [MainThread]: End processing [nuancesz]: success
+[2024-05-11 08:34:49] INFO root fetch - main [MainThread]: Store serial: [23158293]
