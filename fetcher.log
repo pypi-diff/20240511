@@ -12823,3 +12823,36 @@
 [2024-05-11 10:41:18] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 10:41:18] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 10:41:18] INFO root fetch - main [MainThread]: Store serial: [23159076]
+[2024-05-11 10:43:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159076]
+[2024-05-11 10:43:27] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 10:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zibuyu-LLM
+[2024-05-11 10:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: precomparez
+[2024-05-11 10:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: libreppc
+[2024-05-11 10:43:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kuzu
+[2024-05-11 10:43:27] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 10:43:27] INFO root fetch - processPackages [libreppc]: New version: [0.2.1] Old Version: [0.2.0]
+[2024-05-11 10:43:27] WARNING root fetch - processPackages [precomparez]: Skipping, unable to determine old version
+[2024-05-11 10:43:27] INFO root fetch - main [MainThread]: End processing [precomparez] error
+[2024-05-11 10:43:27] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/17/6a/72bcbd9e8b1d2caba262e46c39fd9480df72a930ae6ee62ad897a7193ba5/libreppc-0.2.0.tar.gz
+[2024-05-11 10:43:27] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/e6/b8/977993505308a37f4f40cda11d8d2b327c2cbfed78f30ddfa1ef3bfdc873/zibuyu_LLM-0.0.2-py3-none-any.whl
+[2024-05-11 10:43:27] INFO root fetch - processPackages [kuzu]: New version: [0.4.2.dev4] Old Version: [0.4.2.dev3]
+[2024-05-11 10:43:27] INFO root fetch - processPackages [libreppc]: Downloading https://files.pythonhosted.org/packages/5c/cf/0cdbabb0d08f64ca02ba7e7728bb92a17de186b6f39cddb46c245001ef71/libreppc-0.2.1.tar.gz
+[2024-05-11 10:43:27] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/bc/5e/3b3247d9b7e1154abba3280eeee63f916f1d6d24b3cbbc39451499bcdf95/zibuyu_LLM-0.0.3-py3-none-any.whl
+[2024-05-11 10:43:27] INFO root fetch - processPackages [libreppc]: executing diffoscope
+[2024-05-11 10:43:27] INFO root fetch - processPackages [libreppc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/libreppc-0.2.0.tar.gz tmp/libreppc-0.2.1.tar.gz --markdown 20240511/l/libreppc/0.2.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 10:43:28] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/39/1b/fb7f9901d04d35e30f92425d6a6488f3616fb32961d20f7576df1814fec2/kuzu-0.4.2.dev3.tar.gz
+[2024-05-11 10:43:28] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-11 10:43:28] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.2-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.3-py3-none-any.whl.zip --markdown 20240511/z/zibuyu-LLM/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 10:43:28] INFO root fetch - processPackages [kuzu]: Downloading https://files.pythonhosted.org/packages/2f/f2/db246f497827bd49555e2adfc7d2ab04fb58d1a36548255711aab44cc55f/kuzu-0.4.2.dev4-cp39-cp39-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl
+[2024-05-11 10:43:28] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.2.0.tar.gz]
+[2024-05-11 10:43:28] INFO root fetch - processPackages [libreppc]: Remove: archive file [/home/abi/fetcher/tmp/libreppc-0.2.1.tar.gz]
+[2024-05-11 10:43:28] INFO root fetch - main [MainThread]: End processing [libreppc]: success
+[2024-05-11 10:43:28] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.2-py3-none-any.whl.zip]
+[2024-05-11 10:43:28] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.3-py3-none-any.whl.zip]
+[2024-05-11 10:43:28] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-11 10:43:29] INFO root fetch - processPackages [kuzu]: executing diffoscope
+[2024-05-11 10:43:29] INFO root fetch - processPackages [kuzu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kuzu-0.4.2.dev3.tar.gz tmp/kuzu-0.4.2.dev4-cp39-cp39-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.zip --markdown 20240511/k/kuzu/0.4.2.dev3-0.4.2.dev4/README.md --exclude *.pyd
+[2024-05-11 10:43:31] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev3.tar.gz]
+[2024-05-11 10:43:31] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev4-cp39-cp39-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.zip]
+[2024-05-11 10:43:31] INFO root fetch - main [MainThread]: End processing [kuzu]: success
+[2024-05-11 10:43:31] INFO root fetch - main [MainThread]: Store serial: [23159112]
