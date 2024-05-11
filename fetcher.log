@@ -13169,3 +13169,33 @@
 [2024-05-11 11:05:17] INFO root fetch - processPackages [autogluon.multimodal]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.multimodal-1.1.1b20240510.tar.gz]
 [2024-05-11 11:05:17] INFO root fetch - main [MainThread]: End processing [autogluon.multimodal]: success
 [2024-05-11 11:05:17] INFO root fetch - main [MainThread]: Store serial: [23159265]
+[2024-05-11 11:07:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159265]
+[2024-05-11 11:07:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 11:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: autogluon.timeseries
+[2024-05-11 11:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autogluon
+[2024-05-11 11:07:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gmxpy
+[2024-05-11 11:07:25] INFO root fetch - processPackages [autogluon.timeseries]: New version: [1.1.1b20240510] Old Version: [1.1.1b20240509]
+[2024-05-11 11:07:25] INFO root fetch - processPackages [autogluon]: New version: [1.1.1b20240510] Old Version: [1.1.1b20240509]
+[2024-05-11 11:07:25] INFO root fetch - processPackages [gmxpy]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 11:07:25] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/c3/4c/3f4b37f3686cd905fe491c5b0fa6c76833a7a655c9dac2b84cab4fcf43d9/autogluon.timeseries-1.1.1b20240509.tar.gz
+[2024-05-11 11:07:25] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/e3/06/fb1e6c7ef85d6efe93a949364779ff80d095612bcec87e067763a6c44979/autogluon-1.1.1b20240509.tar.gz
+[2024-05-11 11:07:26] INFO root fetch - processPackages [gmxpy]: Downloading https://files.pythonhosted.org/packages/63/52/be0118fc5bebb5c7e3fcecb75227d1c14ed880c68f5c2bb21b63df94689a/gmxpy-0.0.4.tar.gz
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon.timeseries]: Downloading https://files.pythonhosted.org/packages/a3/e6/1bb9f6301ccd33a4f64e1269b28cc402c962427bd1e9a4882fdd418d6d54/autogluon.timeseries-1.1.1b20240510.tar.gz
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon]: Downloading https://files.pythonhosted.org/packages/24/4d/5f98258d6bf52a2700bdd59a0536375c4fd6bb8caf40bfab5e46e63eaed2/autogluon-1.1.1b20240510.tar.gz
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon.timeseries]: executing diffoscope
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon.timeseries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon.timeseries-1.1.1b20240509.tar.gz tmp/autogluon.timeseries-1.1.1b20240510.tar.gz --markdown 20240511/a/autogluon.timeseries/1.1.1b20240509-1.1.1b20240510/README.md --exclude *.pyd
+[2024-05-11 11:07:26] INFO root fetch - processPackages [gmxpy]: Downloading https://files.pythonhosted.org/packages/2f/f2/4f11702cdbc277e60d094de5c956c0ad4b124a2ddafaae45a6062f3c5c47/gmxpy-0.0.5.tar.gz
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon]: executing diffoscope
+[2024-05-11 11:07:26] INFO root fetch - processPackages [autogluon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autogluon-1.1.1b20240509.tar.gz tmp/autogluon-1.1.1b20240510.tar.gz --markdown 20240511/a/autogluon/1.1.1b20240509-1.1.1b20240510/README.md --exclude *.pyd
+[2024-05-11 11:07:26] INFO root fetch - processPackages [gmxpy]: executing diffoscope
+[2024-05-11 11:07:26] INFO root fetch - processPackages [gmxpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gmxpy-0.0.4.tar.gz tmp/gmxpy-0.0.5.tar.gz --markdown 20240511/g/gmxpy/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 11:07:27] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240509.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - processPackages [autogluon]: Remove: archive file [/home/abi/fetcher/tmp/autogluon-1.1.1b20240510.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - main [MainThread]: End processing [autogluon]: success
+[2024-05-11 11:07:27] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240509.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - processPackages [autogluon.timeseries]: Remove: archive file [/home/abi/fetcher/tmp/autogluon.timeseries-1.1.1b20240510.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - main [MainThread]: End processing [autogluon.timeseries]: success
+[2024-05-11 11:07:27] INFO root fetch - processPackages [gmxpy]: Remove: archive file [/home/abi/fetcher/tmp/gmxpy-0.0.4.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - processPackages [gmxpy]: Remove: archive file [/home/abi/fetcher/tmp/gmxpy-0.0.5.tar.gz]
+[2024-05-11 11:07:27] INFO root fetch - main [MainThread]: End processing [gmxpy]: success
+[2024-05-11 11:07:27] INFO root fetch - main [MainThread]: Store serial: [23159275]
