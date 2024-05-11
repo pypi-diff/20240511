@@ -10776,3 +10776,39 @@
 [2024-05-11 07:57:33] INFO root fetch - processPackages [deepgpu]: Remove: archive file [/home/abi/fetcher/tmp/deepgpu-2.1.0rc3.post6.tar.gz]
 [2024-05-11 07:57:33] INFO root fetch - main [MainThread]: End processing [deepgpu]: success
 [2024-05-11 07:57:33] INFO root fetch - main [MainThread]: Store serial: [23158048]
+[2024-05-11 07:59:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158048]
+[2024-05-11 07:59:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 07:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonconformablyz
+[2024-05-11 07:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeratez
+[2024-05-11 07:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pied-poker
+[2024-05-11 07:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lokzzpylib
+[2024-05-11 07:59:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: scHyper
+[2024-05-11 07:59:42] WARNING root fetch - processPackages [aeratez]: Skipping, unable to determine old version
+[2024-05-11 07:59:42] INFO root fetch - main [MainThread]: End processing [aeratez] error
+[2024-05-11 07:59:42] INFO root fetch - processPackages [nonconformablyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:59:42] INFO root fetch - processPackages [lokzzpylib]: New version: [0.2.dev9] Old Version: [0.2.dev85]
+[2024-05-11 07:59:42] WARNING root fetch - processPackages [scHyper]: Skipping, unable to determine old version
+[2024-05-11 07:59:42] INFO root fetch - main [MainThread]: End processing [scHyper] error
+[2024-05-11 07:59:42] INFO root fetch - processPackages [pied-poker]: New version: [1.3.5] Old Version: [1.3.4]
+[2024-05-11 07:59:43] INFO root fetch - processPackages [nonconformablyz]: Downloading https://files.pythonhosted.org/packages/59/63/1623316aa090d4f472eadc8fa1293586ab1d262ae33034a912761ff2a991/nonconformablyz-1.1.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/34/98/36ed4aec1dde8daafeb1b57836c9b9dd4e3a81822631de97835fa9227f70/lokzzpylib-0.2.dev85.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/9e/ad/68cc3caeda09bff890cc5f5bcf15a1dd23a0c58995ec3986f7cc9ce6403f/pied_poker-1.3.4.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [nonconformablyz]: Downloading https://files.pythonhosted.org/packages/1d/67/6a9acdb5386fe52b171576db65972505254fbbe86c4e6597434f56fdde45/nonconformablyz-2.1.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [pied-poker]: Downloading https://files.pythonhosted.org/packages/df/49/cb5097de6a288f48d149999e1e444d17e5e08cb50e3898aafb41f46ddf84/pied_poker-1.3.5.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [lokzzpylib]: Downloading https://files.pythonhosted.org/packages/d3/9b/e4bbf15840f86c58df052ec37f778b6563255557c0f8edc61797a91a6dcf/lokzzpylib-0.2.dev9.tar.gz
+[2024-05-11 07:59:43] INFO root fetch - processPackages [nonconformablyz]: executing diffoscope
+[2024-05-11 07:59:43] INFO root fetch - processPackages [nonconformablyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonconformablyz-1.1.tar.gz tmp/nonconformablyz-2.1.tar.gz --markdown 20240511/n/nonconformablyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:59:43] INFO root fetch - processPackages [pied-poker]: executing diffoscope
+[2024-05-11 07:59:43] INFO root fetch - processPackages [pied-poker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pied_poker-1.3.4.tar.gz tmp/pied_poker-1.3.5.tar.gz --markdown 20240511/p/pied-poker/1.3.4-1.3.5/README.md --exclude *.pyd
+[2024-05-11 07:59:43] INFO root fetch - processPackages [lokzzpylib]: executing diffoscope
+[2024-05-11 07:59:43] INFO root fetch - processPackages [lokzzpylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lokzzpylib-0.2.dev85.tar.gz tmp/lokzzpylib-0.2.dev9.tar.gz --markdown 20240511/l/lokzzpylib/0.2.dev85-0.2.dev9/README.md --exclude *.pyd
+[2024-05-11 07:59:44] INFO root fetch - processPackages [nonconformablyz]: Remove: archive file [/home/abi/fetcher/tmp/nonconformablyz-1.1.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - processPackages [nonconformablyz]: Remove: archive file [/home/abi/fetcher/tmp/nonconformablyz-2.1.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - main [MainThread]: End processing [nonconformablyz]: success
+[2024-05-11 07:59:44] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev85.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - processPackages [lokzzpylib]: Remove: archive file [/home/abi/fetcher/tmp/lokzzpylib-0.2.dev9.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - main [MainThread]: End processing [lokzzpylib]: success
+[2024-05-11 07:59:44] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.3.4.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.3.5.tar.gz]
+[2024-05-11 07:59:44] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
+[2024-05-11 07:59:44] INFO root fetch - main [MainThread]: Store serial: [23158067]
