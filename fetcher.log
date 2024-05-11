@@ -19363,3 +19363,27 @@
 [2024-05-11 17:57:37] INFO root fetch - processPackages [habits.txt]: Remove: archive file [/home/abi/fetcher/tmp/habits_txt-0.1.1.tar.gz]
 [2024-05-11 17:57:37] INFO root fetch - main [MainThread]: End processing [habits.txt]: success
 [2024-05-11 17:57:37] INFO root fetch - main [MainThread]: Store serial: [23162472]
+[2024-05-11 17:59:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162472]
+[2024-05-11 17:59:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: overlockerz
+[2024-05-11 17:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tm_parser
+[2024-05-11 17:59:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: physicsLab
+[2024-05-11 17:59:45] WARNING root fetch - processPackages [overlockerz]: Skipping, unable to determine old version
+[2024-05-11 17:59:45] INFO root fetch - main [MainThread]: End processing [overlockerz] error
+[2024-05-11 17:59:45] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 17:59:45] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 17:59:45] INFO root fetch - processPackages [physicsLab]: New version: [1.4.8] Old Version: [1.4.7]
+[2024-05-11 17:59:46] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 17:59:46] INFO root fetch - processPackages [physicsLab]: Downloading https://files.pythonhosted.org/packages/da/ee/9c835535959b8d120b7af49753f3906b265d472a00d26edc3ffe7ef76516/physicslab-1.4.7.tar.gz
+[2024-05-11 17:59:46] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 17:59:46] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 17:59:46] INFO root fetch - processPackages [physicsLab]: Downloading https://files.pythonhosted.org/packages/2c/b4/5080bfa3aa4074a75d47c1aed409db360d2a52056ba1f2cc051d05b31ccf/physicslab-1.4.8.tar.gz
+[2024-05-11 17:59:46] INFO root fetch - processPackages [physicsLab]: executing diffoscope
+[2024-05-11 17:59:46] INFO root fetch - processPackages [physicsLab]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/physicslab-1.4.7.tar.gz tmp/physicslab-1.4.8.tar.gz --markdown 20240511/p/physicsLab/1.4.7-1.4.8/README.md --exclude *.pyd
+[2024-05-11 17:59:46] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 17:59:46] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 17:59:46] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 17:59:47] INFO root fetch - processPackages [physicsLab]: Remove: archive file [/home/abi/fetcher/tmp/physicslab-1.4.7.tar.gz]
+[2024-05-11 17:59:47] INFO root fetch - processPackages [physicsLab]: Remove: archive file [/home/abi/fetcher/tmp/physicslab-1.4.8.tar.gz]
+[2024-05-11 17:59:47] INFO root fetch - main [MainThread]: End processing [physicsLab]: success
+[2024-05-11 17:59:47] INFO root fetch - main [MainThread]: Store serial: [23162483]
