@@ -11327,3 +11327,45 @@
 [2024-05-11 08:43:31] INFO root fetch - processPackages [probreg]: Remove: archive file [/home/abi/fetcher/tmp/probreg-0.3.8.tar.gz]
 [2024-05-11 08:43:31] INFO root fetch - main [MainThread]: End processing [probreg]: success
 [2024-05-11 08:43:31] INFO root fetch - main [MainThread]: Store serial: [23158335]
+[2024-05-11 08:45:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158335]
+[2024-05-11 08:45:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 08:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pulumi-artifactory
+[2024-05-11 08:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: oenochoaez
+[2024-05-11 08:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unpictorialisingz
+[2024-05-11 08:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: QtHarmony
+[2024-05-11 08:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: carbon-registry-indexer
+[2024-05-11 08:45:40] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 08:45:40] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 08:45:40] INFO root fetch - processPackages [pulumi-artifactory]: New version: [6.8.0a1715335295] Old Version: [6.8.0a1715303559]
+[2024-05-11 08:45:40] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/4f/64/7b109f68ad712793e6bbeb921c229a090107dcc442d4ab56816fd3c55d6b/qtharmony-0.1.0.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/bc/59/3497ef1abbbc93b8b3c4a6979ad577f7757e81991ddf0697b39d489649bb/carbon-registry-indexer-0.1.5.tar.gz
+[2024-05-11 08:45:40] WARNING root fetch - processPackages [unpictorialisingz]: Skipping, unable to determine old version
+[2024-05-11 08:45:40] INFO root fetch - main [MainThread]: End processing [unpictorialisingz] error
+[2024-05-11 08:45:40] INFO root fetch - processPackages [oenochoaez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:45:40] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/20/19/343a9fc6802fbf9a0cdfacfcbeafbcb412679980512688f8149064313c30/pulumi_artifactory-6.8.0a1715303559.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [oenochoaez]: Downloading https://files.pythonhosted.org/packages/4c/b9/ad5afc56677208c64e9b3578d7e29fcd239d43388aa7b1f8544a0fc69a9e/oenochoaez-1.1.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/4d/fa/55f962e29073e42387c21875f0935b78fbde55b7eaf67ea49d4c5fa0c5d3/qtharmony-0.1.1.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/31/86/98fd7a13cc60a2f11124f77ef4b2375e60e494a759baa33c33c0b2431210/carbon-registry-indexer-0.1.6.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-11 08:45:40] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.0.tar.gz tmp/qtharmony-0.1.1.tar.gz --markdown 20240511/Q/QtHarmony/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 08:45:40] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-11 08:45:40] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.5.tar.gz tmp/carbon-registry-indexer-0.1.6.tar.gz --markdown 20240511/c/carbon-registry-indexer/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 08:45:40] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/a0/48/1d9fe75e588796cd020651de000afe41c7374061a2ccef4051bfa3eb9fff/pulumi_artifactory-6.8.0a1715335295.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [oenochoaez]: Downloading https://files.pythonhosted.org/packages/07/98/cc49e5ccb54737ec63f1409ef7f0a314546b73d08538e8a6db836ff6bef0/oenochoaez-2.1.tar.gz
+[2024-05-11 08:45:40] INFO root fetch - processPackages [oenochoaez]: executing diffoscope
+[2024-05-11 08:45:40] INFO root fetch - processPackages [oenochoaez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oenochoaez-1.1.tar.gz tmp/oenochoaez-2.1.tar.gz --markdown 20240511/o/oenochoaez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:45:40] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2024-05-11 08:45:40] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-6.8.0a1715303559.tar.gz tmp/pulumi_artifactory-6.8.0a1715335295.tar.gz --markdown 20240511/p/pulumi-artifactory/6.8.0a1715303559-6.8.0a1715335295/README.md --exclude *.pyd
+[2024-05-11 08:45:41] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.0.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.1.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-11 08:45:41] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.5.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.6.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-11 08:45:41] INFO root fetch - processPackages [oenochoaez]: Remove: archive file [/home/abi/fetcher/tmp/oenochoaez-1.1.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - processPackages [oenochoaez]: Remove: archive file [/home/abi/fetcher/tmp/oenochoaez-2.1.tar.gz]
+[2024-05-11 08:45:41] INFO root fetch - main [MainThread]: End processing [oenochoaez]: success
+[2024-05-11 08:45:43] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715303559.tar.gz]
+[2024-05-11 08:45:43] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715335295.tar.gz]
+[2024-05-11 08:45:43] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2024-05-11 08:45:43] INFO root fetch - main [MainThread]: Store serial: [23158349]
