@@ -10692,3 +10692,66 @@
 [2024-05-11 07:53:11] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
 [2024-05-11 07:53:11] INFO root fetch - main [MainThread]: End processing [hgraph]: success
 [2024-05-11 07:53:11] INFO root fetch - main [MainThread]: Store serial: [23158016]
+[2024-05-11 07:55:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158016]
+[2024-05-11 07:55:20] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypomes-db
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xingchen
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: passivalz
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: register-transfer
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sqlite-vec
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: datasette-sqlite-vec
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sqlite-utils-sqlite-vec
+[2024-05-11 07:55:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: proxies-taster
+[2024-05-11 07:55:20] WARNING root fetch - processPackages [register-transfer]: Skipping, unable to determine old version
+[2024-05-11 07:55:20] INFO root fetch - main [MainThread]: End processing [register-transfer] error
+[2024-05-11 07:55:20] INFO root fetch - processPackages [datasette-sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [pypomes-db]: New version: [0.6.9] Old Version: [0.6.8]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [proxies-taster]: New version: [1.2.3] Old Version: [1.2.2]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [sqlite-vec]: New version: [0.0.1a7] Old Version: [0.0.1a3]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [xingchen]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 07:55:20] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/9e/f1/3e1ec0c026dd6453a9fb3d02e9cbcc87c1c017313c2f2850b900ffcfe047/pypomes_db-0.6.8.tar.gz
+[2024-05-11 07:55:20] WARNING root fetch - processPackages [passivalz]: Skipping, unable to determine old version
+[2024-05-11 07:55:20] INFO root fetch - main [MainThread]: End processing [passivalz] error
+[2024-05-11 07:55:20] INFO root fetch - processPackages [datasette-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/ad/5c/98cdcaca0d9a59f46a02b7a7b40f335b577153e301659de85ae1511c60eb/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl
+[2024-05-11 07:55:20] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/b4/a1/0ae425f4d3770c4f4ff42d7b3a36d781bd817c3afa0f80f2f7d321aa5a1e/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl
+[2024-05-11 07:55:20] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/c2/43/45660ab9fce078308bb8b377d2a3205db7d20ea1c4c58ad59944a2279df4/proxies-taster-1.2.2.tar.gz
+[2024-05-11 07:55:20] INFO root fetch - processPackages [sqlite-vec]: Downloading https://files.pythonhosted.org/packages/1a/28/4602b5a8e159f374dbfae0d527615c9b51abe4ae6e851d29d4f15f2f390f/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl
+[2024-05-11 07:55:20] INFO root fetch - processPackages [xingchen]: Downloading https://files.pythonhosted.org/packages/22/8a/42a34995017dce464d9b30363a740cb25be8c43e8c502dc74f96afc1b78d/xingchen-1.1.1.tar.gz
+[2024-05-11 07:55:20] INFO root fetch - processPackages [datasette-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/85/92/f6bf383acc8cedd5787e0fdae1544f13e5cd79735bec9de8ccf44450dde1/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Downloading https://files.pythonhosted.org/packages/28/b6/73e340a2b1ac711b9e797c2fa5791bf4258cb119dfc9f07fc12d032c02bb/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-vec]: Downloading https://files.pythonhosted.org/packages/f0/25/0711b407aaae86022ef03d37e218d67740ba6258a9a421466e3c5cd8a442/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl
+[2024-05-11 07:55:21] INFO root fetch - processPackages [datasette-sqlite-vec]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [datasette-sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl.zip tmp/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl.zip --markdown 20240511/d/datasette-sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [pypomes-db]: Downloading https://files.pythonhosted.org/packages/7e/00/97ba519aea2e1ae9ef97d1d128e56c4d45ad7499d2cbaccf43a677369314/pypomes_db-0.6.9.tar.gz
+[2024-05-11 07:55:21] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/5f/9c/adc216579c90145dc05f37b4b0c2449c4b7f78307f63b1521728b74eb877/proxies_taster-1.2.3.tar.gz
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl.zip tmp/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl.zip --markdown 20240511/s/sqlite-utils-sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [pypomes-db]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [pypomes-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypomes_db-0.6.8.tar.gz tmp/pypomes_db-0.6.9.tar.gz --markdown 20240511/p/pypomes-db/0.6.8-0.6.9/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-vec]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-vec]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl.zip tmp/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl.zip --markdown 20240511/s/sqlite-vec/0.0.1a3-0.0.1a7/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [xingchen]: Downloading https://files.pythonhosted.org/packages/6a/1c/ea2f4ae5dd88d3ec2b1b0968e78a3ea3db052fe89d822698a07eab45a157/xingchen-1.1.2.tar.gz
+[2024-05-11 07:55:21] INFO root fetch - processPackages [proxies-taster]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [proxies-taster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxies-taster-1.2.2.tar.gz tmp/proxies_taster-1.2.3.tar.gz --markdown 20240511/p/proxies-taster/1.2.2-1.2.3/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [xingchen]: executing diffoscope
+[2024-05-11 07:55:21] INFO root fetch - processPackages [xingchen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xingchen-1.1.1.tar.gz tmp/xingchen-1.1.2.tar.gz --markdown 20240511/x/xingchen/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 07:55:21] INFO root fetch - processPackages [datasette-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/datasette_sqlite_vec-0.0.1a3-py3-none-any.whl.zip]
+[2024-05-11 07:55:21] INFO root fetch - processPackages [datasette-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/datasette_sqlite_vec-0.0.1a7-py3-none-any.whl.zip]
+[2024-05-11 07:55:21] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vec]: success
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_utils_sqlite_vec-0.0.1a3-py3-none-any.whl.zip]
+[2024-05-11 07:55:21] INFO root fetch - processPackages [sqlite-utils-sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_utils_sqlite_vec-0.0.1a7-py3-none-any.whl.zip]
+[2024-05-11 07:55:21] INFO root fetch - main [MainThread]: End processing [sqlite-utils-sqlite-vec]: success
+[2024-05-11 07:55:21] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.8.tar.gz]
+[2024-05-11 07:55:21] INFO root fetch - processPackages [pypomes-db]: Remove: archive file [/home/abi/fetcher/tmp/pypomes_db-0.6.9.tar.gz]
+[2024-05-11 07:55:21] INFO root fetch - main [MainThread]: End processing [pypomes-db]: success
+[2024-05-11 07:55:21] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies-taster-1.2.2.tar.gz]
+[2024-05-11 07:55:21] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies_taster-1.2.3.tar.gz]
+[2024-05-11 07:55:21] INFO root fetch - main [MainThread]: End processing [proxies-taster]: success
+[2024-05-11 07:55:22] INFO root fetch - processPackages [sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_vec-0.0.1a3-py3-none-win_amd64.whl.zip]
+[2024-05-11 07:55:22] INFO root fetch - processPackages [sqlite-vec]: Remove: archive file [/home/abi/fetcher/tmp/sqlite_vec-0.0.1a7-py3-none-win_amd64.whl.zip]
+[2024-05-11 07:55:22] INFO root fetch - main [MainThread]: End processing [sqlite-vec]: success
+[2024-05-11 07:55:22] INFO root fetch - processPackages [xingchen]: Remove: archive file [/home/abi/fetcher/tmp/xingchen-1.1.1.tar.gz]
+[2024-05-11 07:55:22] INFO root fetch - processPackages [xingchen]: Remove: archive file [/home/abi/fetcher/tmp/xingchen-1.1.2.tar.gz]
+[2024-05-11 07:55:22] INFO root fetch - main [MainThread]: End processing [xingchen]: success
+[2024-05-11 07:55:22] INFO root fetch - main [MainThread]: Store serial: [23158040]
