@@ -22456,3 +22456,18 @@
 [2024-05-11 21:31:03] INFO root fetch - processPackages [pyiron-base]: Remove: archive file [/home/abi/fetcher/tmp/pyiron_base-0.8.4.tar.gz]
 [2024-05-11 21:31:03] INFO root fetch - main [MainThread]: End processing [pyiron-base]: success
 [2024-05-11 21:31:03] INFO root fetch - main [MainThread]: Store serial: [23163979]
+[2024-05-11 21:33:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163979]
+[2024-05-11 21:33:12] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 21:33:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: toggelz
+[2024-05-11 21:33:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fumadez
+[2024-05-11 21:33:12] INFO root fetch - processPackages [toggelz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 21:33:12] WARNING root fetch - processPackages [fumadez]: Skipping, unable to determine old version
+[2024-05-11 21:33:12] INFO root fetch - main [MainThread]: End processing [fumadez] error
+[2024-05-11 21:33:12] INFO root fetch - processPackages [toggelz]: Downloading https://files.pythonhosted.org/packages/48/e4/f12afb19f8ede9f68eb54395c6047b27188444c1ae9e5a0e6ea12457d6f9/toggelz-1.1.tar.gz
+[2024-05-11 21:33:12] INFO root fetch - processPackages [toggelz]: Downloading https://files.pythonhosted.org/packages/ac/76/c3e9c71de6236e0cc0547461df67836b6a086faf33134c677a3ce7280086/toggelz-2.1.tar.gz
+[2024-05-11 21:33:13] INFO root fetch - processPackages [toggelz]: executing diffoscope
+[2024-05-11 21:33:13] INFO root fetch - processPackages [toggelz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toggelz-1.1.tar.gz tmp/toggelz-2.1.tar.gz --markdown 20240511/t/toggelz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 21:33:13] INFO root fetch - processPackages [toggelz]: Remove: archive file [/home/abi/fetcher/tmp/toggelz-1.1.tar.gz]
+[2024-05-11 21:33:13] INFO root fetch - processPackages [toggelz]: Remove: archive file [/home/abi/fetcher/tmp/toggelz-2.1.tar.gz]
+[2024-05-11 21:33:13] INFO root fetch - main [MainThread]: End processing [toggelz]: success
+[2024-05-11 21:33:13] INFO root fetch - main [MainThread]: Store serial: [23163987]
