@@ -13413,3 +13413,36 @@
 [2024-05-11 11:22:44] INFO root fetch - processPackages [linguaf]: Remove: archive file [/home/abi/fetcher/tmp/linguaf-0.1.1.tar.gz]
 [2024-05-11 11:22:44] INFO root fetch - main [MainThread]: End processing [linguaf]: success
 [2024-05-11 11:22:44] INFO root fetch - main [MainThread]: Store serial: [23159572]
+[2024-05-11 11:24:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159572]
+[2024-05-11 11:24:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 11:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: migration-db
+[2024-05-11 11:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: formagenz
+[2024-05-11 11:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-flask
+[2024-05-11 11:24:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PyAibote
+[2024-05-11 11:24:53] INFO root fetch - processPackages [migration-db]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 11:24:53] WARNING root fetch - processPackages [formagenz]: Skipping, unable to determine old version
+[2024-05-11 11:24:53] INFO root fetch - main [MainThread]: End processing [formagenz] error
+[2024-05-11 11:24:53] INFO root fetch - processPackages [aim-flask]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 11:24:53] INFO root fetch - processPackages [PyAibote]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-11 11:24:53] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/7f/ed/1d35592a8041b6e70f3af7408af064fcea50ebc84c2e08def0f09107c7ce/migration_db-1.0.8.tar.gz
+[2024-05-11 11:24:54] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/3a/67/b6e27b06b45fb0c3ca2422c5bc4de120590875249a9494bedea0f9e4343b/PyAibote-1.4.5.tar.gz
+[2024-05-11 11:24:54] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/21/4d/a05ab9a9bb48f79223952469dbca6b72d5dd7b36d9ecafec42abe2033706/migration_db-1.0.9.tar.gz
+[2024-05-11 11:24:54] INFO root fetch - processPackages [aim-flask]: Downloading https://files.pythonhosted.org/packages/ee/26/b703f0af67febd926969d72ea7accb1f14c4352a3f9ac68a46234a27be48/aim_flask-1.0.8-py3-none-any.whl
+[2024-05-11 11:24:54] INFO root fetch - processPackages [migration-db]: executing diffoscope
+[2024-05-11 11:24:54] INFO root fetch - processPackages [migration-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migration_db-1.0.8.tar.gz tmp/migration_db-1.0.9.tar.gz --markdown 20240511/m/migration-db/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 11:24:54] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/d3/67/7747f60aec6824d4b81acbc5a48613cb74e35a09cfd3da4fea351d498425/PyAibote-1.4.6-py3-none-any.whl
+[2024-05-11 11:24:54] INFO root fetch - processPackages [aim-flask]: Downloading https://files.pythonhosted.org/packages/f7/a6/e6b84f0f2f800f18770a834b4a901a904f5164f4a39abed0bf1d78b6eacc/aim_flask-1.0.9-py3-none-any.whl
+[2024-05-11 11:24:54] INFO root fetch - processPackages [aim-flask]: executing diffoscope
+[2024-05-11 11:24:54] INFO root fetch - processPackages [aim-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim_flask-1.0.8-py3-none-any.whl.zip tmp/aim_flask-1.0.9-py3-none-any.whl.zip --markdown 20240511/a/aim-flask/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 11:24:54] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-05-11 11:24:54] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.5.tar.gz tmp/PyAibote-1.4.6-py3-none-any.whl.zip --markdown 20240511/P/PyAibote/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-11 11:24:54] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.8.tar.gz]
+[2024-05-11 11:24:54] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
+[2024-05-11 11:24:54] INFO root fetch - main [MainThread]: End processing [migration-db]: success
+[2024-05-11 11:24:55] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.5.tar.gz]
+[2024-05-11 11:24:55] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.6-py3-none-any.whl.zip]
+[2024-05-11 11:24:55] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-05-11 11:24:55] INFO root fetch - processPackages [aim-flask]: Remove: archive file [/home/abi/fetcher/tmp/aim_flask-1.0.8-py3-none-any.whl.zip]
+[2024-05-11 11:24:55] INFO root fetch - processPackages [aim-flask]: Remove: archive file [/home/abi/fetcher/tmp/aim_flask-1.0.9-py3-none-any.whl.zip]
+[2024-05-11 11:24:55] INFO root fetch - main [MainThread]: End processing [aim-flask]: success
+[2024-05-11 11:24:55] INFO root fetch - main [MainThread]: Store serial: [23159589]
