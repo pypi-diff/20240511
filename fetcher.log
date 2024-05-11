@@ -13692,3 +13692,39 @@
 [2024-05-11 11:42:18] INFO root fetch - processPackages [movie-barcodes]: Remove: archive file [/home/abi/fetcher/tmp/movie-barcodes-0.1.1.tar.gz]
 [2024-05-11 11:42:18] INFO root fetch - main [MainThread]: End processing [movie-barcodes]: success
 [2024-05-11 11:42:18] INFO root fetch - main [MainThread]: Store serial: [23159681]
+[2024-05-11 11:44:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159681]
+[2024-05-11 11:44:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swarmtube
+[2024-05-11 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: syncmodels
+[2024-05-11 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: agptools
+[2024-05-11 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: biosynthesizez
+[2024-05-11 11:44:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: splupy2check
+[2024-05-11 11:44:26] WARNING root fetch - processPackages [splupy2check]: Skipping, unable to determine old version
+[2024-05-11 11:44:26] INFO root fetch - main [MainThread]: End processing [splupy2check] error
+[2024-05-11 11:44:26] INFO root fetch - processPackages [swarmtube]: New version: [0.1.36] Old Version: [0.1.35]
+[2024-05-11 11:44:26] INFO root fetch - processPackages [agptools]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 11:44:26] WARNING root fetch - processPackages [biosynthesizez]: Skipping, unable to determine old version
+[2024-05-11 11:44:26] INFO root fetch - main [MainThread]: End processing [biosynthesizez] error
+[2024-05-11 11:44:26] INFO root fetch - processPackages [syncmodels]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 11:44:26] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/ef/90/08317ea7b8434657a0c64c671a0ce91127781d19896203a19175d974fc12/agptools-0.1.8-py2.py3-none-any.whl
+[2024-05-11 11:44:26] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/09/13/db4988a642af43523190154e2a5fc392ebeed8a8fa626973e593b7c6b635/syncmodels-0.1.8-py2.py3-none-any.whl
+[2024-05-11 11:44:26] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/ef/0f/c7d6fe6812fc87963e8c7002efba3ffee0fe5c0e551b2bae242bd15b036d/swarmtube-0.1.35-py2.py3-none-any.whl
+[2024-05-11 11:44:27] INFO root fetch - processPackages [agptools]: Downloading https://files.pythonhosted.org/packages/b4/96/a1fa0a1e147cbeb8acd6a36e118eb3b3ecfbf93d5b5de31b99b5d8bef5f4/agptools-0.1.9-py2.py3-none-any.whl
+[2024-05-11 11:44:27] INFO root fetch - processPackages [syncmodels]: Downloading https://files.pythonhosted.org/packages/fa/f6/eeeb0b12fc045f5917cfc3967317eddb0f896b12df99ee9cb26dd42b0529/syncmodels-0.1.9-py2.py3-none-any.whl
+[2024-05-11 11:44:27] INFO root fetch - processPackages [swarmtube]: Downloading https://files.pythonhosted.org/packages/a5/fe/a92d150e049707b9c6dbae66b78d27689d9e5c5c805960c9ed51926d46ef/swarmtube-0.1.36-py2.py3-none-any.whl
+[2024-05-11 11:44:27] INFO root fetch - processPackages [agptools]: executing diffoscope
+[2024-05-11 11:44:27] INFO root fetch - processPackages [agptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/agptools-0.1.8-py2.py3-none-any.whl.zip tmp/agptools-0.1.9-py2.py3-none-any.whl.zip --markdown 20240511/a/agptools/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 11:44:27] INFO root fetch - processPackages [syncmodels]: executing diffoscope
+[2024-05-11 11:44:27] INFO root fetch - processPackages [syncmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip --markdown 20240511/s/syncmodels/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 11:44:27] INFO root fetch - processPackages [swarmtube]: executing diffoscope
+[2024-05-11 11:44:27] INFO root fetch - processPackages [swarmtube]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swarmtube-0.1.35-py2.py3-none-any.whl.zip tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip --markdown 20240511/s/swarmtube/0.1.35-0.1.36/README.md --exclude *.pyd
+[2024-05-11 11:44:28] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - processPackages [agptools]: Remove: archive file [/home/abi/fetcher/tmp/agptools-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - main [MainThread]: End processing [agptools]: success
+[2024-05-11 11:44:28] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.8-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - processPackages [syncmodels]: Remove: archive file [/home/abi/fetcher/tmp/syncmodels-0.1.9-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - main [MainThread]: End processing [syncmodels]: success
+[2024-05-11 11:44:28] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.35-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - processPackages [swarmtube]: Remove: archive file [/home/abi/fetcher/tmp/swarmtube-0.1.36-py2.py3-none-any.whl.zip]
+[2024-05-11 11:44:28] INFO root fetch - main [MainThread]: End processing [swarmtube]: success
+[2024-05-11 11:44:28] INFO root fetch - main [MainThread]: Store serial: [23159699]
