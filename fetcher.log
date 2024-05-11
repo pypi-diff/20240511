@@ -13999,3 +13999,42 @@
 [2024-05-11 11:59:51] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.0.tar.gz]
 [2024-05-11 11:59:51] INFO root fetch - main [MainThread]: End processing [abses]: success
 [2024-05-11 11:59:51] INFO root fetch - main [MainThread]: Store serial: [23159796]
+[2024-05-11 12:01:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159796]
+[2024-05-11 12:02:01] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: abses
+[2024-05-11 12:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MPSPEnv
+[2024-05-11 12:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hagworm
+[2024-05-11 12:02:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: polyspermousz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [abses]: New version: [0.6.0] Old Version: [0.5.8]
+[2024-05-11 12:02:01] INFO root fetch - processPackages [MPSPEnv]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 12:02:01] INFO root fetch - processPackages [hagworm]: New version: [5.9.9] Old Version: [5.9.8]
+[2024-05-11 12:02:01] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/8d/ff/0a952299697796c1ad8395812c5fe91ff36cf74999861262125259834ad4/abses-0.5.8.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [polyspermousz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:02:01] INFO root fetch - processPackages [MPSPEnv]: Downloading https://files.pythonhosted.org/packages/9e/be/f91fa76e471a0dd7260d37c9e6499277a10610790a3e5f7831d659956074/MPSPEnv-0.0.8.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/e0/1c/5dac91f7c38d49ccecfdc58d536db8299a6047d9ff58930a0d6013757ea4/hagworm-5.9.8.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [polyspermousz]: Downloading https://files.pythonhosted.org/packages/af/f7/673b95b11409796ad952676ae508ecd426fddfecaa93201a4505428ee7a7/polyspermousz-1.1.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [MPSPEnv]: Downloading https://files.pythonhosted.org/packages/49/f7/3d0031c911e5d69c9e8536e156ebae2cf1453167270f34f5b3ba240b8672/MPSPEnv-0.0.9.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [abses]: Downloading https://files.pythonhosted.org/packages/b7/85/6f217e3bf3a3b325b2bcaf85332753d3f2e39e3646a6cacc80dfe4a2ff60/abses-0.6.0.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [hagworm]: Downloading https://files.pythonhosted.org/packages/2f/0d/16fd32d0754a2e5208aede68d6b772bc36ed5dcefe41035760e37a84fbbc/hagworm-5.9.9.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [MPSPEnv]: executing diffoscope
+[2024-05-11 12:02:01] INFO root fetch - processPackages [MPSPEnv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MPSPEnv-0.0.8.tar.gz tmp/MPSPEnv-0.0.9.tar.gz --markdown 20240511/M/MPSPEnv/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 12:02:01] INFO root fetch - processPackages [hagworm]: executing diffoscope
+[2024-05-11 12:02:01] INFO root fetch - processPackages [hagworm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hagworm-5.9.8.tar.gz tmp/hagworm-5.9.9.tar.gz --markdown 20240511/h/hagworm/5.9.8-5.9.9/README.md --exclude *.pyd
+[2024-05-11 12:02:01] INFO root fetch - processPackages [polyspermousz]: Downloading https://files.pythonhosted.org/packages/f6/b4/6daae4dbda8870155389209ee69274a6d463da13a4e0bbdc888af581ab59/polyspermousz-2.1.tar.gz
+[2024-05-11 12:02:01] INFO root fetch - processPackages [abses]: executing diffoscope
+[2024-05-11 12:02:01] INFO root fetch - processPackages [abses]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abses-0.5.8.tar.gz tmp/abses-0.6.0.tar.gz --markdown 20240511/a/abses/0.5.8-0.6.0/README.md --exclude *.pyd
+[2024-05-11 12:02:02] INFO root fetch - processPackages [polyspermousz]: executing diffoscope
+[2024-05-11 12:02:02] INFO root fetch - processPackages [polyspermousz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polyspermousz-1.1.tar.gz tmp/polyspermousz-2.1.tar.gz --markdown 20240511/p/polyspermousz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:02:02] INFO root fetch - processPackages [MPSPEnv]: Remove: archive file [/home/abi/fetcher/tmp/MPSPEnv-0.0.8.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - processPackages [MPSPEnv]: Remove: archive file [/home/abi/fetcher/tmp/MPSPEnv-0.0.9.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - main [MainThread]: End processing [MPSPEnv]: success
+[2024-05-11 12:02:02] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.8.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.9.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - main [MainThread]: End processing [hagworm]: success
+[2024-05-11 12:02:02] INFO root fetch - processPackages [polyspermousz]: Remove: archive file [/home/abi/fetcher/tmp/polyspermousz-1.1.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - processPackages [polyspermousz]: Remove: archive file [/home/abi/fetcher/tmp/polyspermousz-2.1.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - main [MainThread]: End processing [polyspermousz]: success
+[2024-05-11 12:02:02] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.5.8.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - processPackages [abses]: Remove: archive file [/home/abi/fetcher/tmp/abses-0.6.0.tar.gz]
+[2024-05-11 12:02:02] INFO root fetch - main [MainThread]: End processing [abses]: success
+[2024-05-11 12:02:02] INFO root fetch - main [MainThread]: Store serial: [23159806]
