@@ -24378,3 +24378,33 @@
 [2024-05-11 23:57:06] INFO root fetch - processPackages [py-imgui-redux]: Remove: archive file [/home/abi/fetcher/tmp/py_imgui_redux-3.0.0.tar.gz]
 [2024-05-11 23:57:06] INFO root fetch - main [MainThread]: End processing [py-imgui-redux]: success
 [2024-05-11 23:57:06] INFO root fetch - main [MainThread]: Store serial: [23164865]
+[2024-05-11 23:59:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164865]
+[2024-05-11 23:59:14] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 23:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cyberdrop-dl
+[2024-05-11 23:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Books-Lib
+[2024-05-11 23:59:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unvantagedz
+[2024-05-11 23:59:14] INFO root fetch - processPackages [Books-Lib]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 23:59:15] INFO root fetch - processPackages [cyberdrop-dl]: New version: [5.3.6] Old Version: [5.3.5]
+[2024-05-11 23:59:15] INFO root fetch - processPackages [Books-Lib]: Downloading https://files.pythonhosted.org/packages/32/49/b30949cc15434769355be385d270a9ab7db31ce39300d7a51881119d11ad/books_lib-1.0.2.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [unvantagedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:59:15] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/bb/3d/9ae4085eb3d70d7f2463eeb4aec9ee65b4627e9fe852c0f65e5e0744c4d0/cyberdrop_dl-5.3.5.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [unvantagedz]: Downloading https://files.pythonhosted.org/packages/bd/ab/1acd32c27bb9519bb1241034b957fc2aeb2201f79a2ccf9cac3c25848169/unvantagedz-1.1.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [Books-Lib]: Downloading https://files.pythonhosted.org/packages/6c/36/f806028ea0f87ebcf63a1dedf50ceea61e078e711a259ee6445826fb41fb/books_lib-1.0.3.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/3d/a5/838330b2cdc8fe97e347e353f91bb8dce143fd32732dce05f62de2e8ae6f/cyberdrop_dl-5.3.6.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [Books-Lib]: executing diffoscope
+[2024-05-11 23:59:15] INFO root fetch - processPackages [Books-Lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/books_lib-1.0.2.tar.gz tmp/books_lib-1.0.3.tar.gz --markdown 20240511/B/Books-Lib/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 23:59:15] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2024-05-11 23:59:15] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop_dl-5.3.5.tar.gz tmp/cyberdrop_dl-5.3.6.tar.gz --markdown 20240511/c/cyberdrop-dl/5.3.5-5.3.6/README.md --exclude *.pyd
+[2024-05-11 23:59:15] INFO root fetch - processPackages [unvantagedz]: Downloading https://files.pythonhosted.org/packages/20/ff/d067fbf9d5cc00106eab8f81046acd7f1b5c05bc9fa32b6d3ed73ef0b69c/unvantagedz-2.1.tar.gz
+[2024-05-11 23:59:15] INFO root fetch - processPackages [unvantagedz]: executing diffoscope
+[2024-05-11 23:59:15] INFO root fetch - processPackages [unvantagedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unvantagedz-1.1.tar.gz tmp/unvantagedz-2.1.tar.gz --markdown 20240511/u/unvantagedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:59:16] INFO root fetch - processPackages [Books-Lib]: Remove: archive file [/home/abi/fetcher/tmp/books_lib-1.0.2.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - processPackages [Books-Lib]: Remove: archive file [/home/abi/fetcher/tmp/books_lib-1.0.3.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - main [MainThread]: End processing [Books-Lib]: success
+[2024-05-11 23:59:16] INFO root fetch - processPackages [unvantagedz]: Remove: archive file [/home/abi/fetcher/tmp/unvantagedz-1.1.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - processPackages [unvantagedz]: Remove: archive file [/home/abi/fetcher/tmp/unvantagedz-2.1.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - main [MainThread]: End processing [unvantagedz]: success
+[2024-05-11 23:59:16] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.5.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.6.tar.gz]
+[2024-05-11 23:59:16] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2024-05-11 23:59:16] INFO root fetch - main [MainThread]: Store serial: [23164886]
