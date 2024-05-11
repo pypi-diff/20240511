@@ -17078,3 +17078,36 @@
 [2024-05-11 15:24:23] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.3.tar.gz]
 [2024-05-11 15:24:23] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
 [2024-05-11 15:24:23] INFO root fetch - main [MainThread]: Store serial: [23161368]
+[2024-05-11 15:26:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161368]
+[2024-05-11 15:26:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 15:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datamana
+[2024-05-11 15:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cmake
+[2024-05-11 15:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bibla
+[2024-05-11 15:26:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lukasdata
+[2024-05-11 15:26:32] WARNING root fetch - processPackages [bibla]: Skipping, unable to determine old version
+[2024-05-11 15:26:32] INFO root fetch - main [MainThread]: End processing [bibla] error
+[2024-05-11 15:26:32] INFO root fetch - processPackages [datamana]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 15:26:32] INFO root fetch - processPackages [cmake]: New version: [3.9.6] Old Version: [3.8.2]
+[2024-05-11 15:26:32] INFO root fetch - processPackages [lukasdata]: New version: [1.3.1] Old Version: [1.3.0]
+[2024-05-11 15:26:32] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/a2/45/208e1e292b0ca3ec6932a7072cc8401ff18008df56d992b4a0e18c6ace19/datamana-0.1.0.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [cmake]: Downloading https://files.pythonhosted.org/packages/4d/ad/19916b99d0f65b090bf3cb24665209a9ddf1a698419d18b2a0e64d609378/cmake-3.8.2.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/07/0e/987997ac0d5ee2257efef84b3def5e874136c162c0c637907c585fb25e1a/lukasdata-1.3.0.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [datamana]: Downloading https://files.pythonhosted.org/packages/16/3b/727123fae12408cb3459ea6fc130bd42ca691d7c27d5b09d55f6d5a1435f/datamana-0.1.1.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [datamana]: executing diffoscope
+[2024-05-11 15:26:32] INFO root fetch - processPackages [datamana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamana-0.1.0.tar.gz tmp/datamana-0.1.1.tar.gz --markdown 20240511/d/datamana/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 15:26:32] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/37/00/ee22067dd0abfe106dc1505f71cde3c4427c687b4d275d45ba6804aa9b5e/lukasdata-1.3.1.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [cmake]: Downloading https://files.pythonhosted.org/packages/d8/89/79dc57c6fa77f314917d2168e96bdd61c7349a101c4720421e50576c894e/cmake-3.9.6.tar.gz
+[2024-05-11 15:26:32] INFO root fetch - processPackages [cmake]: executing diffoscope
+[2024-05-11 15:26:32] INFO root fetch - processPackages [cmake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-3.8.2.tar.gz tmp/cmake-3.9.6.tar.gz --markdown 20240511/c/cmake/3.8.2-3.9.6/README.md --exclude *.pyd
+[2024-05-11 15:26:32] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-11 15:26:32] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.3.0.tar.gz tmp/lukasdata-1.3.1.tar.gz --markdown 20240511/l/lukasdata/1.3.0-1.3.1/README.md --exclude *.pyd
+[2024-05-11 15:26:33] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.1.0.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - processPackages [datamana]: Remove: archive file [/home/abi/fetcher/tmp/datamana-0.1.1.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - main [MainThread]: End processing [datamana]: success
+[2024-05-11 15:26:33] INFO root fetch - processPackages [cmake]: Remove: archive file [/home/abi/fetcher/tmp/cmake-3.8.2.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - processPackages [cmake]: Remove: archive file [/home/abi/fetcher/tmp/cmake-3.9.6.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - main [MainThread]: End processing [cmake]: success
+[2024-05-11 15:26:33] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.0.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.3.1.tar.gz]
+[2024-05-11 15:26:33] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-11 15:26:33] INFO root fetch - main [MainThread]: Store serial: [23161382]
