@@ -11425,3 +11425,15 @@
 [2024-05-11 08:50:03] INFO root fetch - processPackages [tulona]: Remove: archive file [/home/abi/fetcher/tmp/tulona-0.7.8.tar.gz]
 [2024-05-11 08:50:03] INFO root fetch - main [MainThread]: End processing [tulona]: success
 [2024-05-11 08:50:03] INFO root fetch - main [MainThread]: Store serial: [23158425]
+[2024-05-11 08:52:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158425]
+[2024-05-11 08:52:12] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 08:52:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hc-log-filter
+[2024-05-11 08:52:12] INFO root fetch - processPackages [hc-log-filter]: New version: [1.2.2] Old Version: [1.1.18]
+[2024-05-11 08:52:12] INFO root fetch - processPackages [hc-log-filter]: Downloading https://files.pythonhosted.org/packages/1e/cf/715297957aed27ef6a4eabefdebbc42bc40707c9d892472b1ca4f5a4c692/hc_log_filter-1.1.18.tar.gz
+[2024-05-11 08:52:12] INFO root fetch - processPackages [hc-log-filter]: Downloading https://files.pythonhosted.org/packages/36/27/e6d17dbf78f53602ae886cea8ef802442439358160d5f04289b6f2161dd0/hc_log_filter-1.2.2.tar.gz
+[2024-05-11 08:52:12] INFO root fetch - processPackages [hc-log-filter]: executing diffoscope
+[2024-05-11 08:52:12] INFO root fetch - processPackages [hc-log-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hc_log_filter-1.1.18.tar.gz tmp/hc_log_filter-1.2.2.tar.gz --markdown 20240511/h/hc-log-filter/1.1.18-1.2.2/README.md --exclude *.pyd
+[2024-05-11 08:52:13] INFO root fetch - processPackages [hc-log-filter]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_filter-1.1.18.tar.gz]
+[2024-05-11 08:52:13] INFO root fetch - processPackages [hc-log-filter]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_filter-1.2.2.tar.gz]
+[2024-05-11 08:52:13] INFO root fetch - main [MainThread]: End processing [hc-log-filter]: success
+[2024-05-11 08:52:13] INFO root fetch - main [MainThread]: Store serial: [23158428]
