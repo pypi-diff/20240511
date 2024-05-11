@@ -16358,3 +16358,24 @@
 [2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-2.0.0.tar.gz]
 [2024-05-11 14:35:19] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
 [2024-05-11 14:35:19] INFO root fetch - main [MainThread]: Store serial: [23161077]
+[2024-05-11 14:37:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161077]
+[2024-05-11 14:37:28] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 14:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: speechlib
+[2024-05-11 14:37:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rakelyz
+[2024-05-11 14:37:28] INFO root fetch - processPackages [rakelyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:37:28] INFO root fetch - processPackages [speechlib]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 14:37:28] INFO root fetch - processPackages [speechlib]: Downloading https://files.pythonhosted.org/packages/ca/29/0b6b920b62d4a43f1162bb66824fe5bc534a4ffb4c19048ac320325c12ad/speechlib-1.0.8.tar.gz
+[2024-05-11 14:37:28] INFO root fetch - processPackages [rakelyz]: Downloading https://files.pythonhosted.org/packages/0d/76/c6e7ea00e1a11aa13f7c8a186021b9943081dd3515bbd99e79db2cdbed85/rakelyz-1.1.tar.gz
+[2024-05-11 14:37:29] INFO root fetch - processPackages [rakelyz]: Downloading https://files.pythonhosted.org/packages/63/8a/e7fe00382b7968edaed3879165e339a7e36d3bf55ea703cc988afcd7a7f5/rakelyz-2.1.tar.gz
+[2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: Downloading https://files.pythonhosted.org/packages/66/0c/8833215e0144e5e9c4e7bfd4817522940ecf6f0df3d3785c51d2583ab5fb/speechlib-1.0.9.tar.gz
+[2024-05-11 14:37:29] INFO root fetch - processPackages [rakelyz]: executing diffoscope
+[2024-05-11 14:37:29] INFO root fetch - processPackages [rakelyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rakelyz-1.1.tar.gz tmp/rakelyz-2.1.tar.gz --markdown 20240511/r/rakelyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: executing diffoscope
+[2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speechlib-1.0.8.tar.gz tmp/speechlib-1.0.9.tar.gz --markdown 20240511/s/speechlib/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 14:37:29] INFO root fetch - processPackages [rakelyz]: Remove: archive file [/home/abi/fetcher/tmp/rakelyz-1.1.tar.gz]
+[2024-05-11 14:37:29] INFO root fetch - processPackages [rakelyz]: Remove: archive file [/home/abi/fetcher/tmp/rakelyz-2.1.tar.gz]
+[2024-05-11 14:37:29] INFO root fetch - main [MainThread]: End processing [rakelyz]: success
+[2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: Remove: archive file [/home/abi/fetcher/tmp/speechlib-1.0.8.tar.gz]
+[2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: Remove: archive file [/home/abi/fetcher/tmp/speechlib-1.0.9.tar.gz]
+[2024-05-11 14:37:29] INFO root fetch - main [MainThread]: End processing [speechlib]: success
+[2024-05-11 14:37:29] INFO root fetch - main [MainThread]: Store serial: [23161083]
