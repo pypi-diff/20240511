@@ -18449,3 +18449,42 @@
 [2024-05-11 17:01:29] WARNING root fetch - processPackages [prologizingz]: Skipping, unable to determine old version
 [2024-05-11 17:01:29] INFO root fetch - main [MainThread]: End processing [prologizingz] error
 [2024-05-11 17:01:29] INFO root fetch - main [MainThread]: Store serial: [23162124]
+[2024-05-11 17:03:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162124]
+[2024-05-11 17:03:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: regdiffusion
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ezfs
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pdfsyntax
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sheepkeepingz
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ezfs]: New version: [1.1.0] Old Version: [1.0.2]
+[2024-05-11 17:03:38] INFO root fetch - processPackages [sheepkeepingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:03:38] INFO root fetch - processPackages [regdiffusion]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 17:03:38] INFO root fetch - processPackages [pdfsyntax]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 17:03:38] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/48/57/597aa08a7c06eb45b3b2a7a5578b2d5f1a4cbb19333d039dce509bfe6d08/ezfs-1.0.2.tar.gz
+[2024-05-11 17:03:38] INFO root fetch - processPackages [regdiffusion]: Downloading https://files.pythonhosted.org/packages/e8/81/b36b348525941349bc0af247fc3a4ae0847a3ff9254c77db1938ce8d2213/regdiffusion-0.0.7.tar.gz
+[2024-05-11 17:03:38] INFO root fetch - processPackages [pdfsyntax]: Downloading https://files.pythonhosted.org/packages/25/cb/65a549b50247864e4d5c558993be8cb5ee7fab9354557c930c3344c773a9/pdfsyntax-0.1.0.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [sheepkeepingz]: Downloading https://files.pythonhosted.org/packages/9b/ab/983e84596919f7711aeab19f8857a6967cf582a7ded748e3c5dc10e32d69/sheepkeepingz-1.1.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [regdiffusion]: Downloading https://files.pythonhosted.org/packages/ff/e5/23f380553ad1a9e7e68091e51abec4bcf62a42abc7e4b9fc9c45da0ff842/regdiffusion-0.0.8.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [ezfs]: Downloading https://files.pythonhosted.org/packages/e4/a6/d054c61ba012316b9b848f5d9728489e7db3bb6b6536b28a275eb066df5f/ezfs-1.1.0.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [pdfsyntax]: Downloading https://files.pythonhosted.org/packages/27/36/840b1a2ae7ae02fcba4517752decc8a4fcc913e39b3583683f1647bb498f/pdfsyntax-0.1.1.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [ezfs]: executing diffoscope
+[2024-05-11 17:03:39] INFO root fetch - processPackages [ezfs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ezfs-1.0.2.tar.gz tmp/ezfs-1.1.0.tar.gz --markdown 20240511/e/ezfs/1.0.2-1.1.0/README.md --exclude *.pyd
+[2024-05-11 17:03:39] INFO root fetch - processPackages [regdiffusion]: executing diffoscope
+[2024-05-11 17:03:39] INFO root fetch - processPackages [regdiffusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/regdiffusion-0.0.7.tar.gz tmp/regdiffusion-0.0.8.tar.gz --markdown 20240511/r/regdiffusion/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 17:03:39] INFO root fetch - processPackages [sheepkeepingz]: Downloading https://files.pythonhosted.org/packages/ad/35/451480143728181ff04200f706d8b30f339e8c9ee36ebde1275299962b23/sheepkeepingz-2.1.tar.gz
+[2024-05-11 17:03:39] INFO root fetch - processPackages [pdfsyntax]: executing diffoscope
+[2024-05-11 17:03:39] INFO root fetch - processPackages [pdfsyntax]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdfsyntax-0.1.0.tar.gz tmp/pdfsyntax-0.1.1.tar.gz --markdown 20240511/p/pdfsyntax/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 17:03:39] INFO root fetch - processPackages [sheepkeepingz]: executing diffoscope
+[2024-05-11 17:03:39] INFO root fetch - processPackages [sheepkeepingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sheepkeepingz-1.1.tar.gz tmp/sheepkeepingz-2.1.tar.gz --markdown 20240511/s/sheepkeepingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:03:40] INFO root fetch - processPackages [sheepkeepingz]: Remove: archive file [/home/abi/fetcher/tmp/sheepkeepingz-1.1.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - processPackages [sheepkeepingz]: Remove: archive file [/home/abi/fetcher/tmp/sheepkeepingz-2.1.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - main [MainThread]: End processing [sheepkeepingz]: success
+[2024-05-11 17:03:40] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.0.2.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - processPackages [ezfs]: Remove: archive file [/home/abi/fetcher/tmp/ezfs-1.1.0.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - main [MainThread]: End processing [ezfs]: success
+[2024-05-11 17:03:40] INFO root fetch - processPackages [regdiffusion]: Remove: archive file [/home/abi/fetcher/tmp/regdiffusion-0.0.7.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - processPackages [regdiffusion]: Remove: archive file [/home/abi/fetcher/tmp/regdiffusion-0.0.8.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - main [MainThread]: End processing [regdiffusion]: success
+[2024-05-11 17:03:40] INFO root fetch - processPackages [pdfsyntax]: Remove: archive file [/home/abi/fetcher/tmp/pdfsyntax-0.1.0.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - processPackages [pdfsyntax]: Remove: archive file [/home/abi/fetcher/tmp/pdfsyntax-0.1.1.tar.gz]
+[2024-05-11 17:03:40] INFO root fetch - main [MainThread]: End processing [pdfsyntax]: success
+[2024-05-11 17:03:40] INFO root fetch - main [MainThread]: Store serial: [23162136]
