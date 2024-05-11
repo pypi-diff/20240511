@@ -20284,3 +20284,30 @@
 [2024-05-11 19:04:57] INFO root fetch - processPackages [event-external-local]: Remove: archive file [/home/abi/fetcher/tmp/event-external-local-0.0.9.tar.gz]
 [2024-05-11 19:04:57] INFO root fetch - main [MainThread]: End processing [event-external-local]: success
 [2024-05-11 19:04:57] INFO root fetch - main [MainThread]: Store serial: [23162895]
+[2024-05-11 19:07:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162895]
+[2024-05-11 19:07:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gen-wrappers
+[2024-05-11 19:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addon-purchase-packaging-default
+[2024-05-11 19:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: subjugatingz
+[2024-05-11 19:07:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo14-addon-partner-country-lang
+[2024-05-11 19:07:06] INFO root fetch - processPackages [gen-wrappers]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-11 19:07:06] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/b3/85/8b69ad38615a14e9ca66bc899a2bf505455ad5c81e5a08de6e8c5bed0b6b/gen_wrappers-0.2.6.tar.gz
+[2024-05-11 19:07:06] WARNING root fetch - processPackages [odoo-addon-purchase-packaging-default]: Skipping, unable to determine old version
+[2024-05-11 19:07:06] INFO root fetch - main [MainThread]: End processing [odoo-addon-purchase-packaging-default] error
+[2024-05-11 19:07:06] INFO root fetch - processPackages [subjugatingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:07:06] WARNING root fetch - processPackages [odoo14-addon-partner-country-lang]: Skipping, unable to determine old version
+[2024-05-11 19:07:06] INFO root fetch - main [MainThread]: End processing [odoo14-addon-partner-country-lang] error
+[2024-05-11 19:07:06] INFO root fetch - processPackages [subjugatingz]: Downloading https://files.pythonhosted.org/packages/48/96/5702039adda733f6f848a89331968430a035b3ad3d12152d24936424136b/subjugatingz-1.1.tar.gz
+[2024-05-11 19:07:06] INFO root fetch - processPackages [gen-wrappers]: Downloading https://files.pythonhosted.org/packages/65/c4/f9b1a4fb35f6a56b326a06186eb822129945061a247e013e65a689f9f38c/gen_wrappers-0.2.7.tar.gz
+[2024-05-11 19:07:06] INFO root fetch - processPackages [gen-wrappers]: executing diffoscope
+[2024-05-11 19:07:06] INFO root fetch - processPackages [gen-wrappers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen_wrappers-0.2.6.tar.gz tmp/gen_wrappers-0.2.7.tar.gz --markdown 20240511/g/gen-wrappers/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-11 19:07:06] INFO root fetch - processPackages [subjugatingz]: Downloading https://files.pythonhosted.org/packages/d0/d1/b99dca402e1be1b63cfe9949bdc85389a643906fb7d41139942bb8357e43/subjugatingz-2.1.tar.gz
+[2024-05-11 19:07:06] INFO root fetch - processPackages [subjugatingz]: executing diffoscope
+[2024-05-11 19:07:06] INFO root fetch - processPackages [subjugatingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subjugatingz-1.1.tar.gz tmp/subjugatingz-2.1.tar.gz --markdown 20240511/s/subjugatingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:07:07] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.2.6.tar.gz]
+[2024-05-11 19:07:07] INFO root fetch - processPackages [gen-wrappers]: Remove: archive file [/home/abi/fetcher/tmp/gen_wrappers-0.2.7.tar.gz]
+[2024-05-11 19:07:07] INFO root fetch - main [MainThread]: End processing [gen-wrappers]: success
+[2024-05-11 19:07:07] INFO root fetch - processPackages [subjugatingz]: Remove: archive file [/home/abi/fetcher/tmp/subjugatingz-1.1.tar.gz]
+[2024-05-11 19:07:07] INFO root fetch - processPackages [subjugatingz]: Remove: archive file [/home/abi/fetcher/tmp/subjugatingz-2.1.tar.gz]
+[2024-05-11 19:07:07] INFO root fetch - main [MainThread]: End processing [subjugatingz]: success
+[2024-05-11 19:07:07] INFO root fetch - main [MainThread]: Store serial: [23162908]
