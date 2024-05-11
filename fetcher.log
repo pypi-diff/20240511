@@ -18171,3 +18171,27 @@
 [2024-05-11 16:41:50] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.7.tar.gz]
 [2024-05-11 16:41:50] INFO root fetch - main [MainThread]: End processing [joulescope-ui]: success
 [2024-05-11 16:41:50] INFO root fetch - main [MainThread]: Store serial: [23162002]
+[2024-05-11 16:43:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162002]
+[2024-05-11 16:43:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 16:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: joulescope-ui
+[2024-05-11 16:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ptrlib
+[2024-05-11 16:43:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tempit
+[2024-05-11 16:43:59] INFO root fetch - processPackages [joulescope-ui]: New version: [1.1.7] Old Version: [1.1.6]
+[2024-05-11 16:44:00] INFO root fetch - processPackages [joulescope-ui]: Downloading https://files.pythonhosted.org/packages/29/01/fa327cff0b80e57c88166d74e315315b047ece1bff45d9bdc4a24b3c5125/joulescope_ui-1.1.6.tar.gz
+[2024-05-11 16:44:00] WARNING root fetch - processPackages [tempit]: Skipping, unable to determine old version
+[2024-05-11 16:44:00] INFO root fetch - main [MainThread]: End processing [tempit] error
+[2024-05-11 16:44:00] INFO root fetch - processPackages [ptrlib]: New version: [2.3.0] Old Version: [2.2.0]
+[2024-05-11 16:44:00] INFO root fetch - processPackages [ptrlib]: Downloading https://files.pythonhosted.org/packages/87/69/cc6ab9c49d8a44b98f78cc6cdc0b4721803a96af40f865452fee4d08a6b9/ptrlib-2.2.0-py3-none-any.whl
+[2024-05-11 16:44:00] INFO root fetch - processPackages [joulescope-ui]: Downloading https://files.pythonhosted.org/packages/a7/72/6c06a47755ef4164b849bf06d85e7842eae04f8105a1fdc6af81e2e9a517/joulescope_ui-1.1.7.tar.gz
+[2024-05-11 16:44:00] INFO root fetch - processPackages [ptrlib]: Downloading https://files.pythonhosted.org/packages/a9/83/8226d4a61315377a2370be6384722d1bd8007f6b23c02dd3d77297d1f7d6/ptrlib-2.3.0-py3-none-any.whl
+[2024-05-11 16:44:00] INFO root fetch - processPackages [ptrlib]: executing diffoscope
+[2024-05-11 16:44:00] INFO root fetch - processPackages [ptrlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ptrlib-2.2.0-py3-none-any.whl.zip tmp/ptrlib-2.3.0-py3-none-any.whl.zip --markdown 20240511/p/ptrlib/2.2.0-2.3.0/README.md --exclude *.pyd
+[2024-05-11 16:44:00] INFO root fetch - processPackages [joulescope-ui]: executing diffoscope
+[2024-05-11 16:44:00] INFO root fetch - processPackages [joulescope-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joulescope_ui-1.1.6.tar.gz tmp/joulescope_ui-1.1.7.tar.gz --markdown 20240511/j/joulescope-ui/1.1.6-1.1.7/README.md --exclude *.pyd
+[2024-05-11 16:44:01] INFO root fetch - processPackages [ptrlib]: Remove: archive file [/home/abi/fetcher/tmp/ptrlib-2.2.0-py3-none-any.whl.zip]
+[2024-05-11 16:44:01] INFO root fetch - processPackages [ptrlib]: Remove: archive file [/home/abi/fetcher/tmp/ptrlib-2.3.0-py3-none-any.whl.zip]
+[2024-05-11 16:44:01] INFO root fetch - main [MainThread]: End processing [ptrlib]: success
+[2024-05-11 16:44:05] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.6.tar.gz]
+[2024-05-11 16:44:05] INFO root fetch - processPackages [joulescope-ui]: Remove: archive file [/home/abi/fetcher/tmp/joulescope_ui-1.1.7.tar.gz]
+[2024-05-11 16:44:05] INFO root fetch - main [MainThread]: End processing [joulescope-ui]: success
+[2024-05-11 16:44:05] INFO root fetch - main [MainThread]: Store serial: [23162013]
