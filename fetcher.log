@@ -14434,3 +14434,42 @@
 [2024-05-11 12:26:15] INFO root fetch - processPackages [textmate-grammar-python]: Remove: archive file [/home/abi/fetcher/tmp/textmate_grammar_python-0.5.2.tar.gz]
 [2024-05-11 12:26:15] INFO root fetch - main [MainThread]: End processing [textmate-grammar-python]: success
 [2024-05-11 12:26:15] INFO root fetch - main [MainThread]: Store serial: [23160055]
+[2024-05-11 12:28:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160055]
+[2024-05-11 12:28:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mimllearning
+[2024-05-11 12:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: toycv
+[2024-05-11 12:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: precleansz
+[2024-05-11 12:28:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: epyt
+[2024-05-11 12:28:23] INFO root fetch - processPackages [toycv]: New version: [0.3.5] Old Version: [0.3.4]
+[2024-05-11 12:28:23] INFO root fetch - processPackages [epyt]: New version: [1.1.4] Old Version: [1.1.3]
+[2024-05-11 12:28:23] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 12:28:23] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/36/bc/be2236a09fa99efdb3676bcd704f14b6b7237e87b946a7faf18abe1ab8be/toycv-0.3.4.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [precleansz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:28:24] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/2e/d9/206a921b25e81eee483468f78928e74a4f379094135e551f472c9c7e71f2/epyt-1.1.3-py3-none-any.whl
+[2024-05-11 12:28:24] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [precleansz]: Downloading https://files.pythonhosted.org/packages/58/36/0207e6082a0e2fab144324b5c767e330c3abaa20a7d2e75f0516a27ab404/precleansz-1.1.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [toycv]: Downloading https://files.pythonhosted.org/packages/84/fa/103f590d39a58ee4d48610a1def9b0184edee7b5110a5d23b058af6de2d6/toycv-0.3.5.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [toycv]: executing diffoscope
+[2024-05-11 12:28:24] INFO root fetch - processPackages [toycv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/toycv-0.3.4.tar.gz tmp/toycv-0.3.5.tar.gz --markdown 20240511/t/toycv/0.3.4-0.3.5/README.md --exclude *.pyd
+[2024-05-11 12:28:24] INFO root fetch - processPackages [precleansz]: Downloading https://files.pythonhosted.org/packages/28/8c/219d6efd9252d51409c758e11ea2b9a897c97231b7d9138cd44dc67756f4/precleansz-2.1.tar.gz
+[2024-05-11 12:28:24] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 12:28:24] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 12:28:24] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/ff/03/3fa30897c9ae97f5d6f855becf5f18a25529ced721a9de1f67aa98129519/epyt-1.1.4-py3-none-any.whl
+[2024-05-11 12:28:24] INFO root fetch - processPackages [precleansz]: executing diffoscope
+[2024-05-11 12:28:24] INFO root fetch - processPackages [precleansz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/precleansz-1.1.tar.gz tmp/precleansz-2.1.tar.gz --markdown 20240511/p/precleansz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:28:24] INFO root fetch - processPackages [epyt]: executing diffoscope
+[2024-05-11 12:28:24] INFO root fetch - processPackages [epyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt-1.1.3-py3-none-any.whl.zip tmp/epyt-1.1.4-py3-none-any.whl.zip --markdown 20240511/e/epyt/1.1.3-1.1.4/README.md --exclude *.pyd
+[2024-05-11 12:28:25] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.4.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - processPackages [toycv]: Remove: archive file [/home/abi/fetcher/tmp/toycv-0.3.5.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - main [MainThread]: End processing [toycv]: success
+[2024-05-11 12:28:25] INFO root fetch - processPackages [precleansz]: Remove: archive file [/home/abi/fetcher/tmp/precleansz-1.1.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - processPackages [precleansz]: Remove: archive file [/home/abi/fetcher/tmp/precleansz-2.1.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - main [MainThread]: End processing [precleansz]: success
+[2024-05-11 12:28:25] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 12:28:25] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 12:28:27] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.3-py3-none-any.whl.zip]
+[2024-05-11 12:28:27] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.4-py3-none-any.whl.zip]
+[2024-05-11 12:28:27] INFO root fetch - main [MainThread]: End processing [epyt]: success
+[2024-05-11 12:28:27] INFO root fetch - main [MainThread]: Store serial: [23160071]
