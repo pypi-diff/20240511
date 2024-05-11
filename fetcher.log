@@ -10623,3 +10623,30 @@
 [2024-05-11 07:46:39] INFO root fetch - processPackages [hagworm]: Remove: archive file [/home/abi/fetcher/tmp/hagworm-5.9.9.tar.gz]
 [2024-05-11 07:46:39] INFO root fetch - main [MainThread]: End processing [hagworm]: success
 [2024-05-11 07:46:39] INFO root fetch - main [MainThread]: Store serial: [23157901]
+[2024-05-11 07:48:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157901]
+[2024-05-11 07:48:48] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 07:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: newtz
+[2024-05-11 07:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streamlit-kepler-component
+[2024-05-11 07:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: uncoopedz
+[2024-05-11 07:48:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: javascript
+[2024-05-11 07:48:48] WARNING root fetch - processPackages [streamlit-kepler-component]: Skipping, unable to determine old version
+[2024-05-11 07:48:48] INFO root fetch - processPackages [newtz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:48:48] INFO root fetch - main [MainThread]: End processing [streamlit-kepler-component] error
+[2024-05-11 07:48:48] WARNING root fetch - processPackages [uncoopedz]: Skipping, unable to determine old version
+[2024-05-11 07:48:48] INFO root fetch - main [MainThread]: End processing [uncoopedz] error
+[2024-05-11 07:48:48] INFO root fetch - processPackages [javascript]: New version: [2015.32.59] Old Version: [2015.32.57.1]
+[2024-05-11 07:48:48] INFO root fetch - processPackages [newtz]: Downloading https://files.pythonhosted.org/packages/fe/9d/8780ddd7672d1478c0ca40c916fc4471727fb11d8ec2c68b9fda2613f36c/newtz-1.1.tar.gz
+[2024-05-11 07:48:48] INFO root fetch - processPackages [javascript]: Downloading https://files.pythonhosted.org/packages/9f/d3/4423f5918284cac51b7722537d96499ba9606df0f6eb03926c4c04b95a75/javascript-2015.32.57.1-py2.py3-none-any.whl
+[2024-05-11 07:48:48] INFO root fetch - processPackages [newtz]: Downloading https://files.pythonhosted.org/packages/3a/be/f32f9d7cb28042173c67ce75117a084774019e3b564b31f0630e7381dba8/newtz-2.1.tar.gz
+[2024-05-11 07:48:49] INFO root fetch - processPackages [newtz]: executing diffoscope
+[2024-05-11 07:48:49] INFO root fetch - processPackages [newtz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/newtz-1.1.tar.gz tmp/newtz-2.1.tar.gz --markdown 20240511/n/newtz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:48:49] INFO root fetch - processPackages [javascript]: Downloading https://files.pythonhosted.org/packages/5f/55/8b80fcea4cca9c250b9cfc8e426dacdc59af014b10bbf5430a160619d7b6/javascript-2015.32.59-py2.py3-none-any.whl
+[2024-05-11 07:48:49] INFO root fetch - processPackages [javascript]: executing diffoscope
+[2024-05-11 07:48:49] INFO root fetch - processPackages [javascript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/javascript-2015.32.57.1-py2.py3-none-any.whl.zip tmp/javascript-2015.32.59-py2.py3-none-any.whl.zip --markdown 20240511/j/javascript/2015.32.57.1-2015.32.59/README.md --exclude *.pyd
+[2024-05-11 07:48:49] INFO root fetch - processPackages [newtz]: Remove: archive file [/home/abi/fetcher/tmp/newtz-1.1.tar.gz]
+[2024-05-11 07:48:49] INFO root fetch - processPackages [newtz]: Remove: archive file [/home/abi/fetcher/tmp/newtz-2.1.tar.gz]
+[2024-05-11 07:48:49] INFO root fetch - main [MainThread]: End processing [newtz]: success
+[2024-05-11 07:48:49] INFO root fetch - processPackages [javascript]: Remove: archive file [/home/abi/fetcher/tmp/javascript-2015.32.57.1-py2.py3-none-any.whl.zip]
+[2024-05-11 07:48:49] INFO root fetch - processPackages [javascript]: Remove: archive file [/home/abi/fetcher/tmp/javascript-2015.32.59-py2.py3-none-any.whl.zip]
+[2024-05-11 07:48:49] INFO root fetch - main [MainThread]: End processing [javascript]: success
+[2024-05-11 07:48:49] INFO root fetch - main [MainThread]: Store serial: [23157985]
