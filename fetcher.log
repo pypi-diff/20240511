@@ -8178,3 +8178,20 @@
 [2024-05-11 04:36:12] INFO root fetch - processPackages [ligroinesz]: Remove: archive file [/home/abi/fetcher/tmp/ligroinesz-2.1.tar.gz]
 [2024-05-11 04:36:12] INFO root fetch - main [MainThread]: End processing [ligroinesz]: success
 [2024-05-11 04:36:12] INFO root fetch - main [MainThread]: Store serial: [23156686]
+[2024-05-11 04:38:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156686]
+[2024-05-11 04:38:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 04:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mirar
+[2024-05-11 04:38:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: EasyPage
+[2024-05-11 04:38:21] INFO root fetch - processPackages [mirar]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-11 04:38:21] INFO root fetch - processPackages [EasyPage]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 04:38:22] INFO root fetch - processPackages [mirar]: Downloading https://files.pythonhosted.org/packages/c2/1f/8bb51b9b229168180f6f1cd662a4e6c58a745f73e1da19c40f773f8d974e/mirar-0.9.1.tar.gz
+[2024-05-11 04:38:22] INFO root fetch - processPackages [EasyPage]: Downloading https://files.pythonhosted.org/packages/9a/a1/99f6414a3fec272ca5fa995f21a6939635271595db28b7b78021b9f473b8/EasyPage-0.0.4.tar.gz
+[2024-05-11 04:38:22] INFO root fetch - processPackages [EasyPage]: Downloading https://files.pythonhosted.org/packages/cd/79/4ccc2878b7bf399df6dcd82ff429e9914f3a8a75a6c9a4ae04272f514ec9/EasyPage-0.0.5.tar.gz
+[2024-05-11 04:38:22] INFO root fetch - processPackages [EasyPage]: executing diffoscope
+[2024-05-11 04:38:22] INFO root fetch - processPackages [EasyPage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EasyPage-0.0.4.tar.gz tmp/EasyPage-0.0.5.tar.gz --markdown 20240511/E/EasyPage/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 04:38:22] WARNING root fetch - processPackages [mirar]: Skipping package: exceeds size limit 90122563>=10485760
+[2024-05-11 04:38:22] INFO root fetch - main [MainThread]: End processing [mirar] error
+[2024-05-11 04:38:23] INFO root fetch - processPackages [EasyPage]: Remove: archive file [/home/abi/fetcher/tmp/EasyPage-0.0.4.tar.gz]
+[2024-05-11 04:38:23] INFO root fetch - processPackages [EasyPage]: Remove: archive file [/home/abi/fetcher/tmp/EasyPage-0.0.5.tar.gz]
+[2024-05-11 04:38:23] INFO root fetch - main [MainThread]: End processing [EasyPage]: success
+[2024-05-11 04:38:23] INFO root fetch - main [MainThread]: Store serial: [23156691]
