@@ -11719,3 +11719,27 @@
 [2024-05-11 09:09:38] INFO root fetch - processPackages [ngstoolkits]: Remove: archive file [/home/abi/fetcher/tmp/ngstoolkits-1.0.0rc8.tar.gz]
 [2024-05-11 09:09:38] INFO root fetch - main [MainThread]: End processing [ngstoolkits]: success
 [2024-05-11 09:09:38] INFO root fetch - main [MainThread]: Store serial: [23158567]
+[2024-05-11 09:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158567]
+[2024-05-11 09:11:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 09:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: precultivationz
+[2024-05-11 09:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: organophonicz
+[2024-05-11 09:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: niwatoko
+[2024-05-11 09:11:47] INFO root fetch - processPackages [niwatoko]: New version: [1.1.2] Old Version: [1.1.1]
+[2024-05-11 09:11:47] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/0a/e4/23b21ef3877aed7008b99cbb63b8408d5d909cf6612653cede145257e2fb/niwatoko-1.1.1.tar.gz
+[2024-05-11 09:11:47] WARNING root fetch - processPackages [precultivationz]: Skipping, unable to determine old version
+[2024-05-11 09:11:47] INFO root fetch - main [MainThread]: End processing [precultivationz] error
+[2024-05-11 09:11:47] INFO root fetch - processPackages [organophonicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:11:47] INFO root fetch - processPackages [organophonicz]: Downloading https://files.pythonhosted.org/packages/52/8a/146fedfe3dd1a6128239baafed8231028ea93f5231a6a1ad72e6723bcc41/organophonicz-1.1.tar.gz
+[2024-05-11 09:11:47] INFO root fetch - processPackages [niwatoko]: Downloading https://files.pythonhosted.org/packages/c0/a5/07fc51e9f2d81643780246b2ca2ce34b4016fc3e1a1a6bafa1bea41f1b48/niwatoko-1.1.2.tar.gz
+[2024-05-11 09:11:47] INFO root fetch - processPackages [niwatoko]: executing diffoscope
+[2024-05-11 09:11:47] INFO root fetch - processPackages [niwatoko]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/niwatoko-1.1.1.tar.gz tmp/niwatoko-1.1.2.tar.gz --markdown 20240511/n/niwatoko/1.1.1-1.1.2/README.md --exclude *.pyd
+[2024-05-11 09:11:47] INFO root fetch - processPackages [organophonicz]: Downloading https://files.pythonhosted.org/packages/eb/01/f565578722be632227036986f050a75dfc0132caca705bc36856b54ea8f9/organophonicz-2.1.tar.gz
+[2024-05-11 09:11:47] INFO root fetch - processPackages [organophonicz]: executing diffoscope
+[2024-05-11 09:11:47] INFO root fetch - processPackages [organophonicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/organophonicz-1.1.tar.gz tmp/organophonicz-2.1.tar.gz --markdown 20240511/o/organophonicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:11:48] INFO root fetch - processPackages [organophonicz]: Remove: archive file [/home/abi/fetcher/tmp/organophonicz-1.1.tar.gz]
+[2024-05-11 09:11:48] INFO root fetch - processPackages [organophonicz]: Remove: archive file [/home/abi/fetcher/tmp/organophonicz-2.1.tar.gz]
+[2024-05-11 09:11:48] INFO root fetch - main [MainThread]: End processing [organophonicz]: success
+[2024-05-11 09:11:48] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.1.tar.gz]
+[2024-05-11 09:11:48] INFO root fetch - processPackages [niwatoko]: Remove: archive file [/home/abi/fetcher/tmp/niwatoko-1.1.2.tar.gz]
+[2024-05-11 09:11:48] INFO root fetch - main [MainThread]: End processing [niwatoko]: success
+[2024-05-11 09:11:48] INFO root fetch - main [MainThread]: Store serial: [23158576]
