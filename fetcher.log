@@ -23583,3 +23583,23 @@
 [2024-05-11 22:51:57] INFO root fetch - processPackages [InterProcessPyObjects]: Remove: archive file [/home/abi/fetcher/tmp/interprocesspyobjects-1.0.3.tar.gz]
 [2024-05-11 22:51:57] INFO root fetch - main [MainThread]: End processing [InterProcessPyObjects]: success
 [2024-05-11 22:51:57] INFO root fetch - main [MainThread]: Store serial: [23164482]
+[2024-05-11 22:54:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164482]
+[2024-05-11 22:54:06] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 22:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fxgui
+[2024-05-11 22:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sourcery
+[2024-05-11 22:54:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: llm-workflow
+[2024-05-11 22:54:06] INFO root fetch - processPackages [llm-workflow]: New version: [0.0.8] Old Version: [0.0.6]
+[2024-05-11 22:54:06] INFO root fetch - processPackages [llm-workflow]: Downloading https://files.pythonhosted.org/packages/a5/1e/ce70dd1923eb1eefb481e5da0a61a7d5df8a9c584cf418cf96489e8245c3/llm-workflow-0.0.6.tar.gz
+[2024-05-11 22:54:06] WARNING root fetch - processPackages [fxgui]: Skipping, unable to determine old version
+[2024-05-11 22:54:06] INFO root fetch - main [MainThread]: End processing [fxgui] error
+[2024-05-11 22:54:06] INFO root fetch - processPackages [sourcery]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-11 22:54:06] INFO root fetch - processPackages [llm-workflow]: Downloading https://files.pythonhosted.org/packages/e2/65/e64e1c9dd97197ed428e930e5de50c4a06925fb44744ab65e480a2163058/llm-workflow-0.0.8.tar.gz
+[2024-05-11 22:54:06] INFO root fetch - processPackages [sourcery]: Downloading https://files.pythonhosted.org/packages/ac/b2/30c3e38f55566f1e165408fb3f9a91f953ffe468b04e8f01cb4f76ca23ca/sourcery-1.8.0-py2.py3-none-win_amd64.whl
+[2024-05-11 22:54:06] WARNING root fetch - processPackages [sourcery]: Skipping package: exceeds size limit 68486949>=10485760
+[2024-05-11 22:54:06] INFO root fetch - main [MainThread]: End processing [sourcery] error
+[2024-05-11 22:54:06] INFO root fetch - processPackages [llm-workflow]: executing diffoscope
+[2024-05-11 22:54:06] INFO root fetch - processPackages [llm-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llm-workflow-0.0.6.tar.gz tmp/llm-workflow-0.0.8.tar.gz --markdown 20240511/l/llm-workflow/0.0.6-0.0.8/README.md --exclude *.pyd
+[2024-05-11 22:54:07] INFO root fetch - processPackages [llm-workflow]: Remove: archive file [/home/abi/fetcher/tmp/llm-workflow-0.0.6.tar.gz]
+[2024-05-11 22:54:07] INFO root fetch - processPackages [llm-workflow]: Remove: archive file [/home/abi/fetcher/tmp/llm-workflow-0.0.8.tar.gz]
+[2024-05-11 22:54:07] INFO root fetch - main [MainThread]: End processing [llm-workflow]: success
+[2024-05-11 22:54:07] INFO root fetch - main [MainThread]: Store serial: [23164490]
