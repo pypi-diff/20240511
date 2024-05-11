@@ -18368,3 +18368,45 @@
 [2024-05-11 16:55:00] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 16:55:00] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 16:55:00] INFO root fetch - main [MainThread]: Store serial: [23162091]
+[2024-05-11 16:57:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162091]
+[2024-05-11 16:57:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 16:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mkdoxy
+[2024-05-11 16:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: metalarchivist
+[2024-05-11 16:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gradient-free-optimizers
+[2024-05-11 16:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mimllearning
+[2024-05-11 16:57:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chinafyz
+[2024-05-11 16:57:09] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 16:57:09] INFO root fetch - processPackages [gradient-free-optimizers]: New version: [1.4.0] Old Version: [1.3.0]
+[2024-05-11 16:57:09] INFO root fetch - processPackages [metalarchivist]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 16:57:09] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 16:57:09] INFO root fetch - processPackages [mkdoxy]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-11 16:57:09] WARNING root fetch - processPackages [chinafyz]: Skipping, unable to determine old version
+[2024-05-11 16:57:09] INFO root fetch - main [MainThread]: End processing [chinafyz] error
+[2024-05-11 16:57:09] INFO root fetch - processPackages [gradient-free-optimizers]: Downloading https://files.pythonhosted.org/packages/46/34/57e1729ac7c86b7d0d74211e0c3d107741f95041a81d27082f3579c5b8f0/gradient_free_optimizers-1.3.0-py3-none-any.whl
+[2024-05-11 16:57:09] INFO root fetch - processPackages [mkdoxy]: Downloading https://files.pythonhosted.org/packages/a8/4a/79b8d79c3f00675d6f63f718dca944cc1eaffde75f63d175ebe3f4e03a04/mkdoxy-1.2.3.tar.gz
+[2024-05-11 16:57:09] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/7c/da/ecfe01db8b7ff64066420eb5dd17a37176b3408bfed21432f2d0002500dc/metalarchivist-0.2.8.tar.gz
+[2024-05-11 16:57:09] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 16:57:09] INFO root fetch - processPackages [gradient-free-optimizers]: Downloading https://files.pythonhosted.org/packages/dd/26/f41fb214e1cb97b1c39881d51eae3f7fb44719d93e4647b6451354893fac/gradient_free_optimizers-1.4.0-py3-none-any.whl
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 16:57:10] INFO root fetch - processPackages [metalarchivist]: Downloading https://files.pythonhosted.org/packages/9f/99/abd55a94a4990d7a874c8a172958515f3e1b215742eb53cacebc7e77d4bc/metalarchivist-0.2.9.tar.gz
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mkdoxy]: Downloading https://files.pythonhosted.org/packages/69/f5/1a80bc88593808a6c6514651803acae0da79f24f8a44c774f684697765d2/mkdoxy-1.2.4.tar.gz
+[2024-05-11 16:57:10] INFO root fetch - processPackages [metalarchivist]: executing diffoscope
+[2024-05-11 16:57:10] INFO root fetch - processPackages [metalarchivist]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/metalarchivist-0.2.8.tar.gz tmp/metalarchivist-0.2.9.tar.gz --markdown 20240511/m/metalarchivist/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mkdoxy]: executing diffoscope
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mkdoxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mkdoxy-1.2.3.tar.gz tmp/mkdoxy-1.2.4.tar.gz --markdown 20240511/m/mkdoxy/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-11 16:57:10] INFO root fetch - processPackages [gradient-free-optimizers]: executing diffoscope
+[2024-05-11 16:57:10] INFO root fetch - processPackages [gradient-free-optimizers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gradient_free_optimizers-1.3.0-py3-none-any.whl.zip tmp/gradient_free_optimizers-1.4.0-py3-none-any.whl.zip --markdown 20240511/g/gradient-free-optimizers/1.3.0-1.4.0/README.md --exclude *.pyd
+[2024-05-11 16:57:10] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.2.8.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - processPackages [metalarchivist]: Remove: archive file [/home/abi/fetcher/tmp/metalarchivist-0.2.9.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - main [MainThread]: End processing [metalarchivist]: success
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mkdoxy]: Remove: archive file [/home/abi/fetcher/tmp/mkdoxy-1.2.3.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - processPackages [mkdoxy]: Remove: archive file [/home/abi/fetcher/tmp/mkdoxy-1.2.4.tar.gz]
+[2024-05-11 16:57:10] INFO root fetch - main [MainThread]: End processing [mkdoxy]: success
+[2024-05-11 16:57:11] INFO root fetch - processPackages [gradient-free-optimizers]: Remove: archive file [/home/abi/fetcher/tmp/gradient_free_optimizers-1.3.0-py3-none-any.whl.zip]
+[2024-05-11 16:57:11] INFO root fetch - processPackages [gradient-free-optimizers]: Remove: archive file [/home/abi/fetcher/tmp/gradient_free_optimizers-1.4.0-py3-none-any.whl.zip]
+[2024-05-11 16:57:11] INFO root fetch - main [MainThread]: End processing [gradient-free-optimizers]: success
+[2024-05-11 16:57:11] INFO root fetch - main [MainThread]: Store serial: [23162107]
