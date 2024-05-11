@@ -9828,3 +9828,15 @@
 [2024-05-11 06:38:26] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.5.0.tar.gz]
 [2024-05-11 06:38:26] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
 [2024-05-11 06:38:27] INFO root fetch - main [MainThread]: Store serial: [23157309]
+[2024-05-11 06:40:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157309]
+[2024-05-11 06:40:35] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:40:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bisos.facter
+[2024-05-11 06:40:35] INFO root fetch - processPackages [bisos.facter]: New version: [0.4] Old Version: [0.3]
+[2024-05-11 06:40:35] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/7d/f9/7698bf75f4eb9198ff094eb2bd6eaef78b4ebb8bff22d78739aee1de6991/bisos.facter-0.3.tar.gz
+[2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: Downloading https://files.pythonhosted.org/packages/de/a1/619c8fc0f655a8c85cbb8dd703f76a2c580cb35b7e5e7418a5c7f4167042/bisos.facter-0.4.tar.gz
+[2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: executing diffoscope
+[2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bisos.facter-0.3.tar.gz tmp/bisos.facter-0.4.tar.gz --markdown 20240511/b/bisos.facter/0.3-0.4/README.md --exclude *.pyd
+[2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.3.tar.gz]
+[2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.4.tar.gz]
+[2024-05-11 06:40:36] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
+[2024-05-11 06:40:36] INFO root fetch - main [MainThread]: Store serial: [23157311]
