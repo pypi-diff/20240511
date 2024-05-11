@@ -11464,3 +11464,72 @@
 [2024-05-11 08:56:33] INFO root fetch - processPackages [omphalospinousz]: Remove: archive file [/home/abi/fetcher/tmp/omphalospinousz-2.1.tar.gz]
 [2024-05-11 08:56:33] INFO root fetch - main [MainThread]: End processing [omphalospinousz]: success
 [2024-05-11 08:56:33] INFO root fetch - main [MainThread]: Store serial: [23158461]
+[2024-05-11 08:58:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158461]
+[2024-05-11 08:58:41] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zibuyu-LLM
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aily-sdk
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mesop
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ketacli
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webdrivermanager-cn
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: CTG-Utils
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: GnDocTrans
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: database-common-tools
+[2024-05-11 08:58:41] INFO root fetch - processPackages [mesop]: New version: [0.5.4] Old Version: [0.5.3]
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ketacli]: New version: [0.9] Old Version: [0.8]
+[2024-05-11 08:58:41] WARNING root fetch - processPackages [zibuyu-LLM]: Skipping, unable to determine old version
+[2024-05-11 08:58:41] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM] error
+[2024-05-11 08:58:41] INFO root fetch - processPackages [aily-sdk]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 08:58:41] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/0d/42/d79c5b22a3dade2d26235e9df579f5c337649ac2041e4d35a77cae13dbdd/mesop-0.5.3-py3-none-any.whl
+[2024-05-11 08:58:41] INFO root fetch - processPackages [ketacli]: Downloading https://files.pythonhosted.org/packages/26/21/56d65bb9c164a4fda18b7374277a8c8235463d0e639ec6f3b77630516473/ketacli-0.8.tar.gz
+[2024-05-11 08:58:41] INFO root fetch - processPackages [database-common-tools]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-11 08:58:41] INFO root fetch - processPackages [GnDocTrans]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 08:58:41] INFO root fetch - processPackages [CTG-Utils]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-11 08:58:41] INFO root fetch - processPackages [webdrivermanager-cn]: New version: [1.5.2] Old Version: [1.5.1]
+[2024-05-11 08:58:42] INFO root fetch - processPackages [aily-sdk]: Downloading https://files.pythonhosted.org/packages/3a/9c/7370a51727952e3bb2421ad16f506a532c93a2a26a36e473d6909d897f7a/aily_sdk-0.8.0.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [GnDocTrans]: Downloading https://files.pythonhosted.org/packages/88/c6/3441d838f32074feb917dbbd4cf64789fcf169c54dd2a120336feee722b8/GnDocTrans-0.0.4.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/ca/3c/6b8cd59d336e1c605691395b32685c8a043c3effb94cb81dc1d7cec6a6d8/database-common-tools-1.1.8.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/13/e7/4fc47472df3973e2625fb78b8d5af4a671d890f289997236c6b3a93f5f8a/CTG_Utils-1.0.0.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [webdrivermanager-cn]: Downloading https://files.pythonhosted.org/packages/63/88/49fdf5fb10be73c05adfff6ae46f2d83467203ba5a4ca8faa369e6883e39/webdrivermanager_cn-1.5.1-py3-none-any.whl
+[2024-05-11 08:58:42] INFO root fetch - processPackages [ketacli]: Downloading https://files.pythonhosted.org/packages/a9/f4/d17557b1ae241bb7d49f310e2d6dca5c0bc3fae2f46dd05d76b0ac740d16/ketacli-0.9.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [aily-sdk]: Downloading https://files.pythonhosted.org/packages/08/a5/02998881950b9af6457fa27bef1feb81834a40abb70ef2b9a1b61a067920/aily_sdk-0.9.0.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [ketacli]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [ketacli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ketacli-0.8.tar.gz tmp/ketacli-0.9.tar.gz --markdown 20240511/k/ketacli/0.8-0.9/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [aily-sdk]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [aily-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aily_sdk-0.8.0.tar.gz tmp/aily_sdk-0.9.0.tar.gz --markdown 20240511/a/aily-sdk/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [mesop]: Downloading https://files.pythonhosted.org/packages/07/ed/6b79623bb7a0df2cc2388bd9130a4838f8279b994e514eebec0abecf669f/mesop-0.5.4-py3-none-any.whl
+[2024-05-11 08:58:42] INFO root fetch - processPackages [webdrivermanager-cn]: Downloading https://files.pythonhosted.org/packages/ef/94/e4729e5b86854643be182da4446bdc93bc3317eaa198246b47c7e2092cf8/webdrivermanager_cn-1.5.2-py3-none-any.whl
+[2024-05-11 08:58:42] INFO root fetch - processPackages [database-common-tools]: Downloading https://files.pythonhosted.org/packages/55/1d/f84bdab15e57cb34658d4f445048d8bfeaf6b8cd2d0da82250fefbaa75f0/database-common-tools-1.1.9.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [GnDocTrans]: Downloading https://files.pythonhosted.org/packages/b8/f6/05005783acc9194224e56786a2a5013081f27e7bf1feb91e31868fe43114/GnDocTrans-0.0.5.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [webdrivermanager-cn]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [webdrivermanager-cn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webdrivermanager_cn-1.5.1-py3-none-any.whl.zip tmp/webdrivermanager_cn-1.5.2-py3-none-any.whl.zip --markdown 20240511/w/webdrivermanager-cn/1.5.1-1.5.2/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [database-common-tools]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [database-common-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/database-common-tools-1.1.8.tar.gz tmp/database-common-tools-1.1.9.tar.gz --markdown 20240511/d/database-common-tools/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [GnDocTrans]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [GnDocTrans]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GnDocTrans-0.0.4.tar.gz tmp/GnDocTrans-0.0.5.tar.gz --markdown 20240511/G/GnDocTrans/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [CTG-Utils]: Downloading https://files.pythonhosted.org/packages/0f/2b/9c7917b9ad6cd0498d1bbfdb243599b6276053b8c3b50e88ee16dca06723/CTG_Utils-1.1.0.tar.gz
+[2024-05-11 08:58:42] INFO root fetch - processPackages [mesop]: executing diffoscope
+[2024-05-11 08:58:42] INFO root fetch - processPackages [mesop]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mesop-0.5.3-py3-none-any.whl.zip tmp/mesop-0.5.4-py3-none-any.whl.zip --markdown 20240511/m/mesop/0.5.3-0.5.4/README.md --exclude *.pyd
+[2024-05-11 08:58:42] INFO root fetch - processPackages [ketacli]: Remove: archive file [/home/abi/fetcher/tmp/ketacli-0.8.tar.gz]
+[2024-05-11 08:58:42] INFO root fetch - processPackages [ketacli]: Remove: archive file [/home/abi/fetcher/tmp/ketacli-0.9.tar.gz]
+[2024-05-11 08:58:42] INFO root fetch - main [MainThread]: End processing [ketacli]: success
+[2024-05-11 08:58:43] INFO root fetch - processPackages [CTG-Utils]: executing diffoscope
+[2024-05-11 08:58:43] INFO root fetch - processPackages [CTG-Utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CTG_Utils-1.0.0.tar.gz tmp/CTG_Utils-1.1.0.tar.gz --markdown 20240511/C/CTG-Utils/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-11 08:58:43] INFO root fetch - processPackages [aily-sdk]: Remove: archive file [/home/abi/fetcher/tmp/aily_sdk-0.8.0.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - processPackages [aily-sdk]: Remove: archive file [/home/abi/fetcher/tmp/aily_sdk-0.9.0.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - main [MainThread]: End processing [aily-sdk]: success
+[2024-05-11 08:58:43] INFO root fetch - processPackages [webdrivermanager-cn]: Remove: archive file [/home/abi/fetcher/tmp/webdrivermanager_cn-1.5.1-py3-none-any.whl.zip]
+[2024-05-11 08:58:43] INFO root fetch - processPackages [webdrivermanager-cn]: Remove: archive file [/home/abi/fetcher/tmp/webdrivermanager_cn-1.5.2-py3-none-any.whl.zip]
+[2024-05-11 08:58:43] INFO root fetch - main [MainThread]: End processing [webdrivermanager-cn]: success
+[2024-05-11 08:58:43] INFO root fetch - processPackages [GnDocTrans]: Remove: archive file [/home/abi/fetcher/tmp/GnDocTrans-0.0.4.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - processPackages [GnDocTrans]: Remove: archive file [/home/abi/fetcher/tmp/GnDocTrans-0.0.5.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - main [MainThread]: End processing [GnDocTrans]: success
+[2024-05-11 08:58:43] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.8.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - processPackages [database-common-tools]: Remove: archive file [/home/abi/fetcher/tmp/database-common-tools-1.1.9.tar.gz]
+[2024-05-11 08:58:43] INFO root fetch - main [MainThread]: End processing [database-common-tools]: success
+[2024-05-11 08:58:44] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.0.0.tar.gz]
+[2024-05-11 08:58:44] INFO root fetch - processPackages [CTG-Utils]: Remove: archive file [/home/abi/fetcher/tmp/CTG_Utils-1.1.0.tar.gz]
+[2024-05-11 08:58:44] INFO root fetch - main [MainThread]: End processing [CTG-Utils]: success
+[2024-05-11 08:58:44] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.5.3-py3-none-any.whl.zip]
+[2024-05-11 08:58:44] INFO root fetch - processPackages [mesop]: Remove: archive file [/home/abi/fetcher/tmp/mesop-0.5.4-py3-none-any.whl.zip]
+[2024-05-11 08:58:44] INFO root fetch - main [MainThread]: End processing [mesop]: success
+[2024-05-11 08:58:44] INFO root fetch - main [MainThread]: Store serial: [23158489]
