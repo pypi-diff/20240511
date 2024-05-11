@@ -14901,3 +14901,54 @@
 [2024-05-11 12:54:45] INFO root fetch - processPackages [google-chad]: Remove: archive file [/home/abi/fetcher/tmp/google_chad-5.7.tar.gz]
 [2024-05-11 12:54:45] INFO root fetch - main [MainThread]: End processing [google-chad]: success
 [2024-05-11 12:54:45] INFO root fetch - main [MainThread]: Store serial: [23160308]
+[2024-05-11 12:56:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160308]
+[2024-05-11 12:56:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sy-ofb-python-sdk
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: soco-cli
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: methylatedz
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SQLibEngine
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vdg
+[2024-05-11 12:56:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: logrich
+[2024-05-11 12:56:55] INFO root fetch - processPackages [sy-ofb-python-sdk]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-05-11 12:56:55] INFO root fetch - processPackages [SQLibEngine]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 12:56:55] INFO root fetch - processPackages [logrich]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-11 12:56:55] INFO root fetch - processPackages [vdg]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-11 12:56:55] INFO root fetch - processPackages [logrich]: Downloading https://files.pythonhosted.org/packages/9c/05/6c26c6545c2ca20d3ec5039ab97362bbb7f12ccc841e4edc8ca9e8e39d16/logrich-1.0.4.tar.gz
+[2024-05-11 12:56:55] WARNING root fetch - processPackages [methylatedz]: Skipping, unable to determine old version
+[2024-05-11 12:56:55] INFO root fetch - main [MainThread]: End processing [methylatedz] error
+[2024-05-11 12:56:55] INFO root fetch - processPackages [soco-cli]: New version: [0.4.9] Old Version: [0.4.8]
+[2024-05-11 12:56:56] INFO root fetch - processPackages [sy-ofb-python-sdk]: Downloading https://files.pythonhosted.org/packages/72/06/9c1947a6da51650d8ed01b94243fb9b46cf1ad478efa1580ed477f39c7a2/sy_ofb_python_sdk-0.0.0.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [SQLibEngine]: Downloading https://files.pythonhosted.org/packages/9c/22/a24b30b66c90c6602efa8d635e77d997f7c92823c47f1070a9a83ae2a966/SQLibEngine-0.1.0.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/98/52/22d74d6aa55e839af426bb4ac06eac6caf3f078c795c14b68c5d1640c468/vdg-0.1.3.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [soco-cli]: Downloading https://files.pythonhosted.org/packages/08/77/18dc625b150748a1c5cd44aaf95740bd0a39b53399acd07bf3c461e2b10d/soco-cli-0.4.8.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [logrich]: Downloading https://files.pythonhosted.org/packages/22/c2/7091c28e975445cf81479f594dcd339aa5a9419b5c7476bd04222758b32d/logrich-1.0.5.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [logrich]: executing diffoscope
+[2024-05-11 12:56:56] INFO root fetch - processPackages [logrich]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logrich-1.0.4.tar.gz tmp/logrich-1.0.5.tar.gz --markdown 20240511/l/logrich/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-11 12:56:56] INFO root fetch - processPackages [sy-ofb-python-sdk]: Downloading https://files.pythonhosted.org/packages/b6/8c/b6e0dc314c278846a9b9558a5f3c169bd5611e41672574a569e9aabe0fd8/sy_ofb_python_sdk-0.1.0.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [SQLibEngine]: Downloading https://files.pythonhosted.org/packages/ae/56/6ff468b75d5dcbfc2c73ddb7bd283c0103b9091290fb2f5b4fc8a6a40dd7/SQLibEngine-0.1.1.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/f5/b4/9fcacad63df7bd05b3ba39d0044a1ccbf4374e1d12d890360dd4c311c2d2/vdg-0.2.0.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [sy-ofb-python-sdk]: executing diffoscope
+[2024-05-11 12:56:56] INFO root fetch - processPackages [sy-ofb-python-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sy_ofb_python_sdk-0.0.0.tar.gz tmp/sy_ofb_python_sdk-0.1.0.tar.gz --markdown 20240511/s/sy-ofb-python-sdk/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-05-11 12:56:56] INFO root fetch - processPackages [SQLibEngine]: executing diffoscope
+[2024-05-11 12:56:56] INFO root fetch - processPackages [SQLibEngine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SQLibEngine-0.1.0.tar.gz tmp/SQLibEngine-0.1.1.tar.gz --markdown 20240511/S/SQLibEngine/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 12:56:56] INFO root fetch - processPackages [vdg]: executing diffoscope
+[2024-05-11 12:56:56] INFO root fetch - processPackages [vdg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdg-0.1.3.tar.gz tmp/vdg-0.2.0.tar.gz --markdown 20240511/v/vdg/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-11 12:56:56] INFO root fetch - processPackages [soco-cli]: Downloading https://files.pythonhosted.org/packages/9c/20/022b3752b29a24cf2ab7a66eff45702404292a0de61533d8eeea70de84d0/soco-cli-0.4.9.tar.gz
+[2024-05-11 12:56:56] INFO root fetch - processPackages [logrich]: Remove: archive file [/home/abi/fetcher/tmp/logrich-1.0.4.tar.gz]
+[2024-05-11 12:56:56] INFO root fetch - processPackages [logrich]: Remove: archive file [/home/abi/fetcher/tmp/logrich-1.0.5.tar.gz]
+[2024-05-11 12:56:56] INFO root fetch - main [MainThread]: End processing [logrich]: success
+[2024-05-11 12:56:56] INFO root fetch - processPackages [soco-cli]: executing diffoscope
+[2024-05-11 12:56:56] INFO root fetch - processPackages [soco-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soco-cli-0.4.8.tar.gz tmp/soco-cli-0.4.9.tar.gz --markdown 20240511/s/soco-cli/0.4.8-0.4.9/README.md --exclude *.pyd
+[2024-05-11 12:56:57] INFO root fetch - processPackages [sy-ofb-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sy_ofb_python_sdk-0.0.0.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - processPackages [sy-ofb-python-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sy_ofb_python_sdk-0.1.0.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - main [MainThread]: End processing [sy-ofb-python-sdk]: success
+[2024-05-11 12:56:57] INFO root fetch - processPackages [SQLibEngine]: Remove: archive file [/home/abi/fetcher/tmp/SQLibEngine-0.1.0.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - processPackages [SQLibEngine]: Remove: archive file [/home/abi/fetcher/tmp/SQLibEngine-0.1.1.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - main [MainThread]: End processing [SQLibEngine]: success
+[2024-05-11 12:56:57] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.1.3.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.2.0.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - main [MainThread]: End processing [vdg]: success
+[2024-05-11 12:56:57] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.8.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - processPackages [soco-cli]: Remove: archive file [/home/abi/fetcher/tmp/soco-cli-0.4.9.tar.gz]
+[2024-05-11 12:56:57] INFO root fetch - main [MainThread]: End processing [soco-cli]: success
+[2024-05-11 12:56:57] INFO root fetch - main [MainThread]: Store serial: [23160323]
