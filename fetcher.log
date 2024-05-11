@@ -9047,3 +9047,63 @@
 [2024-05-11 05:32:46] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.1.tar.gz]
 [2024-05-11 05:32:46] INFO root fetch - main [MainThread]: End processing [pkg-inspect]: success
 [2024-05-11 05:32:46] INFO root fetch - main [MainThread]: Store serial: [23157020]
+[2024-05-11 05:34:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157020]
+[2024-05-11 05:34:55] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: migration-db
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manipulatedz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ovos-plugin-manager
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdktf-cdktf-provider-hcp
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PepperPepper
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: GazooResearchUtils
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: runner-v1
+[2024-05-11 05:34:55] INFO root fetch - processPackages [migration-db]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 05:34:55] INFO root fetch - processPackages [GazooResearchUtils]: New version: [1.4.4] Old Version: [1.4.3]
+[2024-05-11 05:34:55] WARNING root fetch - processPackages [manipulatedz]: Skipping, unable to determine old version
+[2024-05-11 05:34:55] INFO root fetch - main [MainThread]: End processing [manipulatedz] error
+[2024-05-11 05:34:55] INFO root fetch - processPackages [runner-v1]: New version: [0.1.0] Old Version: [0.0.0]
+[2024-05-11 05:34:55] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-11 05:34:55] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: New version: [9.9.0] Old Version: [9.8.0]
+[2024-05-11 05:34:55] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/7f/ed/1d35592a8041b6e70f3af7408af064fcea50ebc84c2e08def0f09107c7ce/migration_db-1.0.8.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/60/60/52a800dfde6885b0ebdb51de8246251cedc39a3de7ac551004cc4f575c00/GazooResearchUtils-1.4.3.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ovos-plugin-manager]: New version: [0.0.9] Old Version: [0.0.8a3]
+[2024-05-11 05:34:55] INFO root fetch - processPackages [runner-v1]: Downloading https://files.pythonhosted.org/packages/23/5e/098a1c3a324701c50c1ddca38b33ebf27738f2e8ff8c68f072afe16c3889/runner_v1-0.0.0.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: Downloading https://files.pythonhosted.org/packages/73/f0/dc3b2096146433db58b81ea406510a87c44d52e7ceefee35f70adfa3980b/cdktf-cdktf-provider-hcp-9.8.0.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/b2/37/1a222e9f15849fb1ebcafce5a7ba00f48fc94ba80438f3c9e243ce6b66c3/ovos_plugin_manager-0.0.8a3-py3-none-any.whl
+[2024-05-11 05:34:55] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [migration-db]: Downloading https://files.pythonhosted.org/packages/21/4d/a05ab9a9bb48f79223952469dbca6b72d5dd7b36d9ecafec42abe2033706/migration_db-1.0.9.tar.gz
+[2024-05-11 05:34:55] INFO root fetch - processPackages [GazooResearchUtils]: Downloading https://files.pythonhosted.org/packages/d0/54/086a6512400ebfbc243acd22070c7ad00a2fa923a1d35b5693d748d81ef2/GazooResearchUtils-1.4.4.tar.gz
+[2024-05-11 05:34:56] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240511/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [migration-db]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [migration-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/migration_db-1.0.8.tar.gz tmp/migration_db-1.0.9.tar.gz --markdown 20240511/m/migration-db/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [GazooResearchUtils]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [GazooResearchUtils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/GazooResearchUtils-1.4.3.tar.gz tmp/GazooResearchUtils-1.4.4.tar.gz --markdown 20240511/G/GazooResearchUtils/1.4.3-1.4.4/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [runner-v1]: Downloading https://files.pythonhosted.org/packages/19/12/21e2251bfc5363fdb3cf6dc5ebc2673f5efc4def9099ec674d3be4c11a34/runner_v1-0.1.0.tar.gz
+[2024-05-11 05:34:56] INFO root fetch - processPackages [ovos-plugin-manager]: Downloading https://files.pythonhosted.org/packages/52/e2/f57129caaddb3c7ec480ea84cd54a36c5f47dec4dff4add3d7d3eea6e6a8/ovos_plugin_manager-0.0.9-py3-none-any.whl
+[2024-05-11 05:34:56] INFO root fetch - processPackages [runner-v1]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [runner-v1]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runner_v1-0.0.0.tar.gz tmp/runner_v1-0.1.0.tar.gz --markdown 20240511/r/runner-v1/0.0.0-0.1.0/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: Downloading https://files.pythonhosted.org/packages/e2/ba/ea6860ed41ceef01e5e4b8b926f1fbdc0b4a2650741a592b6e2761232e42/cdktf-cdktf-provider-hcp-9.9.0.tar.gz
+[2024-05-11 05:34:56] INFO root fetch - processPackages [ovos-plugin-manager]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [ovos-plugin-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip --markdown 20240511/o/ovos-plugin-manager/0.0.8a3-0.0.9/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: executing diffoscope
+[2024-05-11 05:34:56] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-cdktf-provider-hcp-9.8.0.tar.gz tmp/cdktf-cdktf-provider-hcp-9.9.0.tar.gz --markdown 20240511/c/cdktf-cdktf-provider-hcp/9.8.0-9.9.0/README.md --exclude *.pyd
+[2024-05-11 05:34:56] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.3.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - processPackages [GazooResearchUtils]: Remove: archive file [/home/abi/fetcher/tmp/GazooResearchUtils-1.4.4.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - main [MainThread]: End processing [GazooResearchUtils]: success
+[2024-05-11 05:34:56] INFO root fetch - processPackages [runner-v1]: Remove: archive file [/home/abi/fetcher/tmp/runner_v1-0.0.0.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - processPackages [runner-v1]: Remove: archive file [/home/abi/fetcher/tmp/runner_v1-0.1.0.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - main [MainThread]: End processing [runner-v1]: success
+[2024-05-11 05:34:56] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-11 05:34:56] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.8.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
+[2024-05-11 05:34:56] INFO root fetch - main [MainThread]: End processing [migration-db]: success
+[2024-05-11 05:34:57] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.8a3-py3-none-any.whl.zip]
+[2024-05-11 05:34:57] INFO root fetch - processPackages [ovos-plugin-manager]: Remove: archive file [/home/abi/fetcher/tmp/ovos_plugin_manager-0.0.9-py3-none-any.whl.zip]
+[2024-05-11 05:34:57] INFO root fetch - main [MainThread]: End processing [ovos-plugin-manager]: success
+[2024-05-11 05:34:58] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-hcp-9.8.0.tar.gz]
+[2024-05-11 05:34:58] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-hcp-9.9.0.tar.gz]
+[2024-05-11 05:34:58] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-hcp]: success
+[2024-05-11 05:34:58] INFO root fetch - main [MainThread]: Store serial: [23157041]
