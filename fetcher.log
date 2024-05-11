@@ -20257,3 +20257,30 @@
 [2024-05-11 19:02:47] INFO root fetch - processPackages [subgroupz]: Remove: archive file [/home/abi/fetcher/tmp/subgroupz-2.1.tar.gz]
 [2024-05-11 19:02:47] INFO root fetch - main [MainThread]: End processing [subgroupz]: success
 [2024-05-11 19:02:47] INFO root fetch - main [MainThread]: Store serial: [23162870]
+[2024-05-11 19:04:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162870]
+[2024-05-11 19:04:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twenty
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ExcelExtractorJsonPDF
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: phalaropez
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: event-external-local
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CustomTkinterMessagebox
+[2024-05-11 19:04:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo-addon-hr-department-analytic
+[2024-05-11 19:04:56] WARNING root fetch - processPackages [ExcelExtractorJsonPDF]: Skipping, unable to determine old version
+[2024-05-11 19:04:56] INFO root fetch - main [MainThread]: End processing [ExcelExtractorJsonPDF] error
+[2024-05-11 19:04:56] INFO root fetch - processPackages [event-external-local]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 19:04:56] WARNING root fetch - processPackages [twenty]: Skipping, unable to determine old version
+[2024-05-11 19:04:56] INFO root fetch - main [MainThread]: End processing [twenty] error
+[2024-05-11 19:04:56] WARNING root fetch - processPackages [phalaropez]: Skipping, unable to determine old version
+[2024-05-11 19:04:56] INFO root fetch - main [MainThread]: End processing [phalaropez] error
+[2024-05-11 19:04:56] WARNING root fetch - processPackages [odoo-addon-hr-department-analytic]: Skipping, unable to determine old version
+[2024-05-11 19:04:56] INFO root fetch - main [MainThread]: End processing [odoo-addon-hr-department-analytic] error
+[2024-05-11 19:04:56] WARNING root fetch - processPackages [CustomTkinterMessagebox]: Skipping, unable to determine old version
+[2024-05-11 19:04:56] INFO root fetch - main [MainThread]: End processing [CustomTkinterMessagebox] error
+[2024-05-11 19:04:56] INFO root fetch - processPackages [event-external-local]: Downloading https://files.pythonhosted.org/packages/77/b6/64766104122bca87e0ed480c5c6c43e3f0478c69990cb5fe7a3fac9a793f/event-external-local-0.0.8.tar.gz
+[2024-05-11 19:04:56] INFO root fetch - processPackages [event-external-local]: Downloading https://files.pythonhosted.org/packages/4b/fe/e97241207f1a92fc9c3d56b21a5b7484441e075673671fb9674510ba2e6a/event-external-local-0.0.9.tar.gz
+[2024-05-11 19:04:56] INFO root fetch - processPackages [event-external-local]: executing diffoscope
+[2024-05-11 19:04:56] INFO root fetch - processPackages [event-external-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/event-external-local-0.0.8.tar.gz tmp/event-external-local-0.0.9.tar.gz --markdown 20240511/e/event-external-local/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 19:04:57] INFO root fetch - processPackages [event-external-local]: Remove: archive file [/home/abi/fetcher/tmp/event-external-local-0.0.8.tar.gz]
+[2024-05-11 19:04:57] INFO root fetch - processPackages [event-external-local]: Remove: archive file [/home/abi/fetcher/tmp/event-external-local-0.0.9.tar.gz]
+[2024-05-11 19:04:57] INFO root fetch - main [MainThread]: End processing [event-external-local]: success
+[2024-05-11 19:04:57] INFO root fetch - main [MainThread]: Store serial: [23162895]
