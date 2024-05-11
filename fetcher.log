@@ -21543,3 +21543,27 @@
 [2024-05-11 20:25:49] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.4.tar.gz]
 [2024-05-11 20:25:49] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-05-11 20:25:49] INFO root fetch - main [MainThread]: Store serial: [23163489]
+[2024-05-11 20:27:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163489]
+[2024-05-11 20:27:58] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 20:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dialog-lib
+[2024-05-11 20:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: python-artnet
+[2024-05-11 20:27:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: malkinz
+[2024-05-11 20:27:58] INFO root fetch - processPackages [dialog-lib]: New version: [0.0.1.9] Old Version: [0.0.1.8]
+[2024-05-11 20:27:58] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/e9/13/4188899d6b95c46737dcb91b618d7f043ee4fc94128efb54e8917315026d/dialog_lib-0.0.1.8.tar.gz
+[2024-05-11 20:27:58] WARNING root fetch - processPackages [malkinz]: Skipping, unable to determine old version
+[2024-05-11 20:27:58] INFO root fetch - main [MainThread]: End processing [malkinz] error
+[2024-05-11 20:27:58] INFO root fetch - processPackages [python-artnet]: New version: [1.1.0] Old Version: [1.0.0]
+[2024-05-11 20:27:58] INFO root fetch - processPackages [python-artnet]: Downloading https://files.pythonhosted.org/packages/bb/7c/6b69a96038afe8428c2328d4fbafe13af135acd0c296f05dd867f10efaa6/python_artnet-1.0.0.tar.gz
+[2024-05-11 20:27:58] INFO root fetch - processPackages [dialog-lib]: Downloading https://files.pythonhosted.org/packages/a6/99/91b03e62dec54e7fb1c05a8fb35ed00fe60baf6eb48ab34311a56782abd6/dialog_lib-0.0.1.9.tar.gz
+[2024-05-11 20:27:58] INFO root fetch - processPackages [dialog-lib]: executing diffoscope
+[2024-05-11 20:27:58] INFO root fetch - processPackages [dialog-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dialog_lib-0.0.1.8.tar.gz tmp/dialog_lib-0.0.1.9.tar.gz --markdown 20240511/d/dialog-lib/0.0.1.8-0.0.1.9/README.md --exclude *.pyd
+[2024-05-11 20:27:58] INFO root fetch - processPackages [python-artnet]: Downloading https://files.pythonhosted.org/packages/1d/ba/d7ceaba518abe6c73f8c2edd65882463040d6b35ad5947039089e55c0829/python_artnet-1.1.0.tar.gz
+[2024-05-11 20:27:58] INFO root fetch - processPackages [python-artnet]: executing diffoscope
+[2024-05-11 20:27:58] INFO root fetch - processPackages [python-artnet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_artnet-1.0.0.tar.gz tmp/python_artnet-1.1.0.tar.gz --markdown 20240511/p/python-artnet/1.0.0-1.1.0/README.md --exclude *.pyd
+[2024-05-11 20:27:59] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.8.tar.gz]
+[2024-05-11 20:27:59] INFO root fetch - processPackages [dialog-lib]: Remove: archive file [/home/abi/fetcher/tmp/dialog_lib-0.0.1.9.tar.gz]
+[2024-05-11 20:27:59] INFO root fetch - main [MainThread]: End processing [dialog-lib]: success
+[2024-05-11 20:27:59] INFO root fetch - processPackages [python-artnet]: Remove: archive file [/home/abi/fetcher/tmp/python_artnet-1.0.0.tar.gz]
+[2024-05-11 20:27:59] INFO root fetch - processPackages [python-artnet]: Remove: archive file [/home/abi/fetcher/tmp/python_artnet-1.1.0.tar.gz]
+[2024-05-11 20:27:59] INFO root fetch - main [MainThread]: End processing [python-artnet]: success
+[2024-05-11 20:27:59] INFO root fetch - main [MainThread]: Store serial: [23163501]
