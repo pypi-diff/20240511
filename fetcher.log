@@ -17703,3 +17703,67 @@
 [2024-05-11 16:13:28] INFO root fetch - processPackages [evidently]: Remove: archive file [/home/abi/fetcher/tmp/evidently-0.4.9.tar.gz]
 [2024-05-11 16:13:28] INFO root fetch - main [MainThread]: End processing [evidently]: success
 [2024-05-11 16:13:28] INFO root fetch - main [MainThread]: Store serial: [23161773]
+[2024-05-11 16:15:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161773]
+[2024-05-11 16:15:38] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: envex
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: oc-chat-django
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: path-reducer
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lambkid
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aipkgs-firebase
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pulmonicz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: roundedlyz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [envex]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-05-11 16:15:38] WARNING root fetch - processPackages [path-reducer]: Skipping, unable to determine old version
+[2024-05-11 16:15:38] INFO root fetch - main [MainThread]: End processing [path-reducer] error
+[2024-05-11 16:15:38] INFO root fetch - processPackages [roundedlyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:15:38] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-11 16:15:38] INFO root fetch - processPackages [aipkgs-firebase]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 16:15:38] WARNING root fetch - processPackages [oc-chat-django]: Skipping, unable to determine old version
+[2024-05-11 16:15:38] INFO root fetch - processPackages [lambkid]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-11 16:15:38] WARNING root fetch - processPackages [pulmonicz]: Skipping, unable to determine old version
+[2024-05-11 16:15:38] INFO root fetch - main [MainThread]: End processing [oc-chat-django] error
+[2024-05-11 16:15:38] INFO root fetch - main [MainThread]: End processing [pulmonicz] error
+[2024-05-11 16:15:38] INFO root fetch - processPackages [envex]: Downloading https://files.pythonhosted.org/packages/58/1f/7e9c55730bdbad03c7bc51462a0d715661d78eabaa3b73ab79943315bd3b/envex-3.0.3.tar.gz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-11 16:15:38] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/2a/05/3ffb7974db064cbcc79af161bf87417bc66b99e257e16f9f35bc2dfaf41e/lambkid-0.1.9.tar.gz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-11 16:15:38] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/60/e0/69dc666392bdade23f817a0bf986a0c5515505750a48b475b318e9e8083c/aipkgs_firebase-0.0.8.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [roundedlyz]: Downloading https://files.pythonhosted.org/packages/87/7a/d2b73e74e67d3c64a1d66194d8b039bf1e44900a55f6d367358958dedb53/roundedlyz-1.1.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [envex]: Downloading https://files.pythonhosted.org/packages/8f/29/1227a112c194b8704b79ceeaeb81907ab70108fb09c11cb7760ad9d3f1c2/envex-3.1.0.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [envex]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [envex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envex-3.0.3.tar.gz tmp/envex-3.1.0.tar.gz --markdown 20240511/e/envex/3.0.3-3.1.0/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [lambkid]: Downloading https://files.pythonhosted.org/packages/e4/8d/ebc2265954842c99f7cce9ca7f59e620a85dab89dc8c47bde94f402a82de/lambkid-0.2.0.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240511/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240511/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [lambkid]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [lambkid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lambkid-0.1.9.tar.gz tmp/lambkid-0.2.0.tar.gz --markdown 20240511/l/lambkid/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [roundedlyz]: Downloading https://files.pythonhosted.org/packages/1a/5a/c3e1e9b80f03201b07dd68700806b137b78ac65c016d171391ce5af0af7c/roundedlyz-2.1.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/99/79/af6dbbe811fe0a12d668e3665e1b2d00dfe2c6ce4cad2d9bf55436b29a70/aipkgs_firebase-0.0.9.tar.gz
+[2024-05-11 16:15:39] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-0.0.8.tar.gz tmp/aipkgs_firebase-0.0.9.tar.gz --markdown 20240511/a/aipkgs-firebase/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [roundedlyz]: executing diffoscope
+[2024-05-11 16:15:39] INFO root fetch - processPackages [roundedlyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/roundedlyz-1.1.tar.gz tmp/roundedlyz-2.1.tar.gz --markdown 20240511/r/roundedlyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:15:39] INFO root fetch - processPackages [envex]: Remove: archive file [/home/abi/fetcher/tmp/envex-3.0.3.tar.gz]
+[2024-05-11 16:15:39] INFO root fetch - processPackages [envex]: Remove: archive file [/home/abi/fetcher/tmp/envex-3.1.0.tar.gz]
+[2024-05-11 16:15:39] INFO root fetch - main [MainThread]: End processing [envex]: success
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-11 16:15:39] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-11 16:15:39] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-11 16:15:40] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-11 16:15:40] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.1.9.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - processPackages [lambkid]: Remove: archive file [/home/abi/fetcher/tmp/lambkid-0.2.0.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - main [MainThread]: End processing [lambkid]: success
+[2024-05-11 16:15:40] INFO root fetch - processPackages [roundedlyz]: Remove: archive file [/home/abi/fetcher/tmp/roundedlyz-1.1.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - processPackages [roundedlyz]: Remove: archive file [/home/abi/fetcher/tmp/roundedlyz-2.1.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - main [MainThread]: End processing [roundedlyz]: success
+[2024-05-11 16:15:40] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.8.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-0.0.9.tar.gz]
+[2024-05-11 16:15:40] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 16:15:40] INFO root fetch - main [MainThread]: Store serial: [23161807]
