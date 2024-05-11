@@ -10258,3 +10258,30 @@
 [2024-05-11 07:13:13] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.2.1.tar.gz]
 [2024-05-11 07:13:13] INFO root fetch - main [MainThread]: End processing [soundtools]: success
 [2024-05-11 07:13:13] INFO root fetch - main [MainThread]: Store serial: [23157588]
+[2024-05-11 07:15:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157588]
+[2024-05-11 07:15:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lightnovel-crawler
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ovos-audio
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: NetHyTech-Battery
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Clean-up-gcs-bucket
+[2024-05-11 07:15:22] INFO root fetch - processPackages [lightnovel-crawler]: New version: [3.7.0] Old Version: [3.6.0]
+[2024-05-11 07:15:22] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/6c/f8/c0641d6b959392fed195eb8a0a8b48d8036afc584634ee10aff308e8c177/lightnovel_crawler-3.6.0-py3-none-any.whl
+[2024-05-11 07:15:22] WARNING root fetch - processPackages [NetHyTech-Battery]: Skipping, unable to determine old version
+[2024-05-11 07:15:22] INFO root fetch - main [MainThread]: End processing [NetHyTech-Battery] error
+[2024-05-11 07:15:22] WARNING root fetch - processPackages [Clean-up-gcs-bucket]: Skipping, unable to determine old version
+[2024-05-11 07:15:22] INFO root fetch - main [MainThread]: End processing [Clean-up-gcs-bucket] error
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ovos-audio]: New version: [0.0.2a9] Old Version: [0.0.2a8]
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ovos-audio]: Downloading https://files.pythonhosted.org/packages/d4/17/2d3fbb5841c27544510814bf6ec9bc14e395b73db018714288dfb969ac7a/ovos_audio-0.0.2a8-py3-none-any.whl
+[2024-05-11 07:15:22] INFO root fetch - processPackages [lightnovel-crawler]: Downloading https://files.pythonhosted.org/packages/ee/2b/181065107ebf4b312c373dbda8038da512cc84020f0952aacdaa2d6346ac/lightnovel_crawler-3.7.0-py3-none-any.whl
+[2024-05-11 07:15:22] INFO root fetch - processPackages [lightnovel-crawler]: executing diffoscope
+[2024-05-11 07:15:22] INFO root fetch - processPackages [lightnovel-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lightnovel_crawler-3.6.0-py3-none-any.whl.zip tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip --markdown 20240511/l/lightnovel-crawler/3.6.0-3.7.0/README.md --exclude *.pyd
+[2024-05-11 07:15:22] INFO root fetch - processPackages [ovos-audio]: Downloading https://files.pythonhosted.org/packages/20/6f/67cf3b43303131b43946e6f35ff68018c8c9e3112db8aaf2d6dfc8545a60/ovos_audio-0.0.2a9-py3-none-any.whl
+[2024-05-11 07:15:23] INFO root fetch - processPackages [ovos-audio]: executing diffoscope
+[2024-05-11 07:15:23] INFO root fetch - processPackages [ovos-audio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ovos_audio-0.0.2a8-py3-none-any.whl.zip tmp/ovos_audio-0.0.2a9-py3-none-any.whl.zip --markdown 20240511/o/ovos-audio/0.0.2a8-0.0.2a9/README.md --exclude *.pyd
+[2024-05-11 07:15:23] INFO root fetch - processPackages [ovos-audio]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio-0.0.2a8-py3-none-any.whl.zip]
+[2024-05-11 07:15:23] INFO root fetch - processPackages [ovos-audio]: Remove: archive file [/home/abi/fetcher/tmp/ovos_audio-0.0.2a9-py3-none-any.whl.zip]
+[2024-05-11 07:15:23] INFO root fetch - main [MainThread]: End processing [ovos-audio]: success
+[2024-05-11 07:15:24] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.6.0-py3-none-any.whl.zip]
+[2024-05-11 07:15:24] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip]
+[2024-05-11 07:15:24] INFO root fetch - main [MainThread]: End processing [lightnovel-crawler]: success
+[2024-05-11 07:15:24] INFO root fetch - main [MainThread]: Store serial: [23157625]
