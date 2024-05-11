@@ -12958,3 +12958,24 @@
 [2024-05-11 10:50:04] INFO root fetch - processPackages [paradance]: Remove: archive file [/home/abi/fetcher/tmp/paradance-0.4.9.tar.gz]
 [2024-05-11 10:50:04] INFO root fetch - main [MainThread]: End processing [paradance]: success
 [2024-05-11 10:50:04] INFO root fetch - main [MainThread]: Store serial: [23159165]
+[2024-05-11 10:52:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159165]
+[2024-05-11 10:52:13] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 10:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: picked-group-fdr
+[2024-05-11 10:52:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zibuyu-LLM
+[2024-05-11 10:52:13] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 10:52:13] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/bc/5e/3b3247d9b7e1154abba3280eeee63f916f1d6d24b3cbbc39451499bcdf95/zibuyu_LLM-0.0.3-py3-none-any.whl
+[2024-05-11 10:52:13] INFO root fetch - processPackages [picked-group-fdr]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 10:52:13] INFO root fetch - processPackages [picked-group-fdr]: Downloading https://files.pythonhosted.org/packages/8e/e5/71e0a0388a1ca4f5cb27ee4317bc461a149052eaff612e8b669af4563faa/picked_group_fdr-0.7.0-py3-none-any.whl
+[2024-05-11 10:52:13] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/49/b9/5964a8f2aa51fd5533fda3456f798b00723eddab8833ea2e2cb1127fa65f/zibuyu_LLM-0.0.4-py3-none-any.whl
+[2024-05-11 10:52:13] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-11 10:52:13] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.3-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.4-py3-none-any.whl.zip --markdown 20240511/z/zibuyu-LLM/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 10:52:13] INFO root fetch - processPackages [picked-group-fdr]: Downloading https://files.pythonhosted.org/packages/b6/dd/bf2d2532cd45af5dd6c94059134a68b57ab796f0903ea9e3e284ac3c5cb1/picked_group_fdr-0.7.1-py3-none-any.whl
+[2024-05-11 10:52:13] INFO root fetch - processPackages [picked-group-fdr]: executing diffoscope
+[2024-05-11 10:52:13] INFO root fetch - processPackages [picked-group-fdr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/picked_group_fdr-0.7.0-py3-none-any.whl.zip tmp/picked_group_fdr-0.7.1-py3-none-any.whl.zip --markdown 20240511/p/picked-group-fdr/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-11 10:52:14] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.3-py3-none-any.whl.zip]
+[2024-05-11 10:52:14] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.4-py3-none-any.whl.zip]
+[2024-05-11 10:52:14] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-11 10:52:14] INFO root fetch - processPackages [picked-group-fdr]: Remove: archive file [/home/abi/fetcher/tmp/picked_group_fdr-0.7.0-py3-none-any.whl.zip]
+[2024-05-11 10:52:14] INFO root fetch - processPackages [picked-group-fdr]: Remove: archive file [/home/abi/fetcher/tmp/picked_group_fdr-0.7.1-py3-none-any.whl.zip]
+[2024-05-11 10:52:14] INFO root fetch - main [MainThread]: End processing [picked-group-fdr]: success
+[2024-05-11 10:52:14] INFO root fetch - main [MainThread]: Store serial: [23159181]
