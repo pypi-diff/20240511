@@ -18893,3 +18893,21 @@
 [2024-05-11 17:30:55] INFO root fetch - processPackages [clear-skies]: Remove: archive file [/home/abi/fetcher/tmp/clear-skies-1.9.0.tar.gz]
 [2024-05-11 17:30:55] INFO root fetch - main [MainThread]: End processing [clear-skies]: success
 [2024-05-11 17:30:55] INFO root fetch - main [MainThread]: Store serial: [23162290]
+[2024-05-11 17:32:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162290]
+[2024-05-11 17:33:03] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beardtonguez
+[2024-05-11 17:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tanu
+[2024-05-11 17:33:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rotary-embedding-torch
+[2024-05-11 17:33:03] WARNING root fetch - processPackages [tanu]: Skipping, unable to determine old version
+[2024-05-11 17:33:03] INFO root fetch - main [MainThread]: End processing [tanu] error
+[2024-05-11 17:33:03] WARNING root fetch - processPackages [beardtonguez]: Skipping, unable to determine old version
+[2024-05-11 17:33:03] INFO root fetch - main [MainThread]: End processing [beardtonguez] error
+[2024-05-11 17:33:03] INFO root fetch - processPackages [rotary-embedding-torch]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 17:33:04] INFO root fetch - processPackages [rotary-embedding-torch]: Downloading https://files.pythonhosted.org/packages/12/f6/07a749853b1e4b4c558e2c715ce7d68235187cd2973828085a0ddd9fd6ae/rotary_embedding_torch-0.6.0.tar.gz
+[2024-05-11 17:33:04] INFO root fetch - processPackages [rotary-embedding-torch]: Downloading https://files.pythonhosted.org/packages/bc/d0/0ca1a580beb0fca528948b7b8dad81231c2023a1594c4099712fa42f92b6/rotary_embedding_torch-0.6.1.tar.gz
+[2024-05-11 17:33:04] INFO root fetch - processPackages [rotary-embedding-torch]: executing diffoscope
+[2024-05-11 17:33:04] INFO root fetch - processPackages [rotary-embedding-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rotary_embedding_torch-0.6.0.tar.gz tmp/rotary_embedding_torch-0.6.1.tar.gz --markdown 20240511/r/rotary-embedding-torch/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-11 17:33:05] INFO root fetch - processPackages [rotary-embedding-torch]: Remove: archive file [/home/abi/fetcher/tmp/rotary_embedding_torch-0.6.0.tar.gz]
+[2024-05-11 17:33:05] INFO root fetch - processPackages [rotary-embedding-torch]: Remove: archive file [/home/abi/fetcher/tmp/rotary_embedding_torch-0.6.1.tar.gz]
+[2024-05-11 17:33:05] INFO root fetch - main [MainThread]: End processing [rotary-embedding-torch]: success
+[2024-05-11 17:33:05] INFO root fetch - main [MainThread]: Store serial: [23162302]
