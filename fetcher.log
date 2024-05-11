@@ -24094,3 +24094,15 @@
 [2024-05-11 23:28:58] INFO root fetch - processPackages [unquarteredz]: Remove: archive file [/home/abi/fetcher/tmp/unquarteredz-2.1.tar.gz]
 [2024-05-11 23:28:58] INFO root fetch - main [MainThread]: End processing [unquarteredz]: success
 [2024-05-11 23:28:58] INFO root fetch - main [MainThread]: Store serial: [23164710]
+[2024-05-11 23:31:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164710]
+[2024-05-11 23:31:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 23:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rendercat
+[2024-05-11 23:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hgui
+[2024-05-11 23:31:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: penninitez
+[2024-05-11 23:31:07] WARNING root fetch - processPackages [rendercat]: Skipping, unable to determine old version
+[2024-05-11 23:31:07] INFO root fetch - main [MainThread]: End processing [rendercat] error
+[2024-05-11 23:31:07] WARNING root fetch - processPackages [penninitez]: Skipping, unable to determine old version
+[2024-05-11 23:31:07] INFO root fetch - main [MainThread]: End processing [penninitez] error
+[2024-05-11 23:31:07] WARNING root fetch - processPackages [hgui]: Skipping, unable to determine old version
+[2024-05-11 23:31:07] INFO root fetch - main [MainThread]: End processing [hgui] error
+[2024-05-11 23:31:07] INFO root fetch - main [MainThread]: Store serial: [23164722]
