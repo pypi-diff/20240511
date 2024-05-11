@@ -22908,3 +22908,24 @@
 [2024-05-11 22:03:58] INFO root fetch - processPackages [yabte]: Remove: archive file [/home/abi/fetcher/tmp/yabte-0.4.1.tar.gz]
 [2024-05-11 22:03:58] INFO root fetch - main [MainThread]: End processing [yabte]: success
 [2024-05-11 22:03:58] INFO root fetch - main [MainThread]: Store serial: [23164170]
+[2024-05-11 22:06:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164170]
+[2024-05-11 22:06:08] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 22:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mke-sculib
+[2024-05-11 22:06:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autoboot-web
+[2024-05-11 22:06:08] INFO root fetch - processPackages [autoboot-web]: New version: [0.5.0] Old Version: [0.4.0]
+[2024-05-11 22:06:08] INFO root fetch - processPackages [mke-sculib]: New version: [2.5.3] Old Version: [2.5.2]
+[2024-05-11 22:06:08] INFO root fetch - processPackages [autoboot-web]: Downloading https://files.pythonhosted.org/packages/c3/a4/37ff72b6944ed8084269ac4c17a5651b2912105a0b2b5f42a695fc10fe53/autoboot-web-0.4.0.tar.gz
+[2024-05-11 22:06:08] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/e5/36/d8f824037f85165b50b23a90d1a13bd6804213a58ce938a5f0314e284957/mke_sculib-2.5.2.tar.gz
+[2024-05-11 22:06:08] INFO root fetch - processPackages [autoboot-web]: Downloading https://files.pythonhosted.org/packages/83/c4/eb2f887d9d60311ee2b5dcf2034f7fcbc01923627800d311ac30ba59751d/autoboot_web-0.5.0.tar.gz
+[2024-05-11 22:06:08] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/9a/3d/c07ce50c76722f34cf37ae705135a15c457573e8769c7da370f94e879536/mke_sculib-2.5.3.tar.gz
+[2024-05-11 22:06:08] INFO root fetch - processPackages [autoboot-web]: executing diffoscope
+[2024-05-11 22:06:08] INFO root fetch - processPackages [autoboot-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoboot-web-0.4.0.tar.gz tmp/autoboot_web-0.5.0.tar.gz --markdown 20240511/a/autoboot-web/0.4.0-0.5.0/README.md --exclude *.pyd
+[2024-05-11 22:06:08] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-05-11 22:06:08] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.5.2.tar.gz tmp/mke_sculib-2.5.3.tar.gz --markdown 20240511/m/mke-sculib/2.5.2-2.5.3/README.md --exclude *.pyd
+[2024-05-11 22:06:09] INFO root fetch - processPackages [autoboot-web]: Remove: archive file [/home/abi/fetcher/tmp/autoboot-web-0.4.0.tar.gz]
+[2024-05-11 22:06:09] INFO root fetch - processPackages [autoboot-web]: Remove: archive file [/home/abi/fetcher/tmp/autoboot_web-0.5.0.tar.gz]
+[2024-05-11 22:06:09] INFO root fetch - main [MainThread]: End processing [autoboot-web]: success
+[2024-05-11 22:06:09] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.2.tar.gz]
+[2024-05-11 22:06:09] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.3.tar.gz]
+[2024-05-11 22:06:09] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-05-11 22:06:09] INFO root fetch - main [MainThread]: Store serial: [23164175]
