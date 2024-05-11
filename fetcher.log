@@ -20535,3 +20535,27 @@
 [2024-05-11 19:18:07] INFO root fetch - processPackages [pyaction]: Remove: archive file [/home/abi/fetcher/tmp/pyaction-0.6.1.tar.gz]
 [2024-05-11 19:18:07] INFO root fetch - main [MainThread]: End processing [pyaction]: success
 [2024-05-11 19:18:07] INFO root fetch - main [MainThread]: Store serial: [23162996]
+[2024-05-11 19:20:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162996]
+[2024-05-11 19:20:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 19:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pylogg
+[2024-05-11 19:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PyCatFile
+[2024-05-11 19:20:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emulsz
+[2024-05-11 19:20:16] INFO root fetch - processPackages [PyCatFile]: New version: [0.9.8] Old Version: [0.9.6]
+[2024-05-11 19:20:16] INFO root fetch - processPackages [pylogg]: New version: [0.3.3] Old Version: [0.3.2]
+[2024-05-11 19:20:16] WARNING root fetch - processPackages [emulsz]: Skipping, unable to determine old version
+[2024-05-11 19:20:16] INFO root fetch - main [MainThread]: End processing [emulsz] error
+[2024-05-11 19:20:16] INFO root fetch - processPackages [pylogg]: Downloading https://files.pythonhosted.org/packages/4f/8c/d5eca39be4cbaf1f871d74f37a3be91615dccc4c9e2206d1cfdb8ecae2a5/pylogg-0.3.2.tar.gz
+[2024-05-11 19:20:16] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/08/96/4c154ca314dbb76c0bba84e70c73f3a53cd4528ee43f7ac17b54954c0b85/pycatfile-0.9.6.tar.gz
+[2024-05-11 19:20:17] INFO root fetch - processPackages [pylogg]: Downloading https://files.pythonhosted.org/packages/8e/38/23e4f050b0f2814aeb3032661020abcda9b10afeb528c097c67a2f2d855a/pylogg-0.3.3.tar.gz
+[2024-05-11 19:20:17] INFO root fetch - processPackages [PyCatFile]: Downloading https://files.pythonhosted.org/packages/d8/c3/779688dd1beca850480edb18c8e26ce64dcf364b8ab9b110d2a55552ca93/pycatfile-0.9.8.tar.gz
+[2024-05-11 19:20:17] INFO root fetch - processPackages [pylogg]: executing diffoscope
+[2024-05-11 19:20:17] INFO root fetch - processPackages [pylogg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylogg-0.3.2.tar.gz tmp/pylogg-0.3.3.tar.gz --markdown 20240511/p/pylogg/0.3.2-0.3.3/README.md --exclude *.pyd
+[2024-05-11 19:20:17] INFO root fetch - processPackages [PyCatFile]: executing diffoscope
+[2024-05-11 19:20:17] INFO root fetch - processPackages [PyCatFile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycatfile-0.9.6.tar.gz tmp/pycatfile-0.9.8.tar.gz --markdown 20240511/P/PyCatFile/0.9.6-0.9.8/README.md --exclude *.pyd
+[2024-05-11 19:20:17] INFO root fetch - processPackages [pylogg]: Remove: archive file [/home/abi/fetcher/tmp/pylogg-0.3.2.tar.gz]
+[2024-05-11 19:20:17] INFO root fetch - processPackages [pylogg]: Remove: archive file [/home/abi/fetcher/tmp/pylogg-0.3.3.tar.gz]
+[2024-05-11 19:20:17] INFO root fetch - main [MainThread]: End processing [pylogg]: success
+[2024-05-11 19:20:18] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.6.tar.gz]
+[2024-05-11 19:20:18] INFO root fetch - processPackages [PyCatFile]: Remove: archive file [/home/abi/fetcher/tmp/pycatfile-0.9.8.tar.gz]
+[2024-05-11 19:20:18] INFO root fetch - main [MainThread]: End processing [PyCatFile]: success
+[2024-05-11 19:20:18] INFO root fetch - main [MainThread]: Store serial: [23163016]
