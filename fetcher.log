@@ -21705,3 +21705,49 @@
 [2024-05-11 20:38:51] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
 [2024-05-11 20:38:51] INFO root fetch - main [MainThread]: End processing [django-restit]: success
 [2024-05-11 20:38:51] INFO root fetch - main [MainThread]: Store serial: [23163553]
+[2024-05-11 20:40:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163553]
+[2024-05-11 20:41:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 20:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musicntwrk
+[2024-05-11 20:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aipkgs-firebase
+[2024-05-11 20:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tetanillaz
+[2024-05-11 20:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sign-prosody-extraction
+[2024-05-11 20:41:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sign-prosody-extraction
+[2024-05-11 20:41:00] INFO root fetch - processPackages [musicntwrk]: New version: [2.3.5] Old Version: [2.3.4]
+[2024-05-11 20:41:00] INFO root fetch - processPackages [sign-prosody-extraction]: New version: [24.5] Old Version: [24.4]
+[2024-05-11 20:41:00] INFO root fetch - processPackages [sign-prosody-extraction]: New version: [24.5] Old Version: [24.4]
+[2024-05-11 20:41:00] INFO root fetch - processPackages [tetanillaz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:41:00] INFO root fetch - processPackages [aipkgs-firebase]: New version: [1.0.7] Old Version: [1.0.6]
+[2024-05-11 20:41:00] INFO root fetch - processPackages [musicntwrk]: Downloading https://files.pythonhosted.org/packages/12/c7/76d5b600a9e8225d840c16a7630e2190d565685a96587690331cdab4362d/musicntwrk-2.3.4.tar.gz
+[2024-05-11 20:41:00] INFO root fetch - processPackages [sign-prosody-extraction]: Downloading https://files.pythonhosted.org/packages/28/b6/add330e2bcc6ff07cc59e078eaf6ece006d9d158140ec300935bd0434291/sign_prosody_extraction-24.4.tar.gz
+[2024-05-11 20:41:00] INFO root fetch - processPackages [sign-prosody-extraction]: Downloading https://files.pythonhosted.org/packages/28/b6/add330e2bcc6ff07cc59e078eaf6ece006d9d158140ec300935bd0434291/sign_prosody_extraction-24.4.tar.gz
+[2024-05-11 20:41:00] INFO root fetch - processPackages [tetanillaz]: Downloading https://files.pythonhosted.org/packages/aa/f8/af1c2dc1e145c6d9815befee9c7514c211876ebc8e6a69a13f2c6b22af21/tetanillaz-1.1.tar.gz
+[2024-05-11 20:41:00] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/fd/79/1e52f8f09c91248e57ac8b46125d4d569d4420f9fa408d253a9d76610ae5/aipkgs_firebase-1.0.6.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [musicntwrk]: Downloading https://files.pythonhosted.org/packages/7c/78/2b1bc78fb8d9d440d8b0e12c9f0cadcb816d5eb5a1bf01cd5dbe187ea495/musicntwrk-2.3.5.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [tetanillaz]: Downloading https://files.pythonhosted.org/packages/6c/cb/f6ad7d9c7c980393d11132c873f855fccc779a2a1bbbf9984450e9ee5fa6/tetanillaz-2.1.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [aipkgs-firebase]: Downloading https://files.pythonhosted.org/packages/76/fc/d85842594fd331887550d96886353c151b3f6cd38c94296c6d942978b341/aipkgs_firebase-1.0.7.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [musicntwrk]: executing diffoscope
+[2024-05-11 20:41:01] INFO root fetch - processPackages [musicntwrk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musicntwrk-2.3.4.tar.gz tmp/musicntwrk-2.3.5.tar.gz --markdown 20240511/m/musicntwrk/2.3.4-2.3.5/README.md --exclude *.pyd
+[2024-05-11 20:41:01] INFO root fetch - processPackages [tetanillaz]: executing diffoscope
+[2024-05-11 20:41:01] INFO root fetch - processPackages [tetanillaz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tetanillaz-1.1.tar.gz tmp/tetanillaz-2.1.tar.gz --markdown 20240511/t/tetanillaz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: Downloading https://files.pythonhosted.org/packages/61/e0/6db08fc9babccc4aeda786048388bf17e4b3e5b0459163143288b77ab9f4/sign_prosody_extraction-24.5.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: Downloading https://files.pythonhosted.org/packages/61/e0/6db08fc9babccc4aeda786048388bf17e4b3e5b0459163143288b77ab9f4/sign_prosody_extraction-24.5.tar.gz
+[2024-05-11 20:41:01] INFO root fetch - processPackages [aipkgs-firebase]: executing diffoscope
+[2024-05-11 20:41:01] INFO root fetch - processPackages [aipkgs-firebase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aipkgs_firebase-1.0.6.tar.gz tmp/aipkgs_firebase-1.0.7.tar.gz --markdown 20240511/a/aipkgs-firebase/1.0.6-1.0.7/README.md --exclude *.pyd
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: executing diffoscope
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sign_prosody_extraction-24.4.tar.gz tmp/sign_prosody_extraction-24.5.tar.gz --markdown 20240511/s/sign-prosody-extraction/24.4-24.5/README.md --exclude *.pyd
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: executing diffoscope
+[2024-05-11 20:41:01] INFO root fetch - processPackages [sign-prosody-extraction]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sign_prosody_extraction-24.4.tar.gz tmp/sign_prosody_extraction-24.5.tar.gz --markdown 20240511/s/sign-prosody-extraction/24.4-24.5/README.md --exclude *.pyd
+[2024-05-11 20:41:01] INFO root fetch - processPackages [tetanillaz]: Remove: archive file [/home/abi/fetcher/tmp/tetanillaz-1.1.tar.gz]
+[2024-05-11 20:41:01] INFO root fetch - processPackages [tetanillaz]: Remove: archive file [/home/abi/fetcher/tmp/tetanillaz-2.1.tar.gz]
+[2024-05-11 20:41:01] INFO root fetch - main [MainThread]: End processing [tetanillaz]: success
+[2024-05-11 20:41:02] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.6.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - processPackages [aipkgs-firebase]: Remove: archive file [/home/abi/fetcher/tmp/aipkgs_firebase-1.0.7.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - main [MainThread]: End processing [aipkgs-firebase]: success
+[2024-05-11 20:41:02] INFO root fetch - processPackages [sign-prosody-extraction]: Remove: archive file [/home/abi/fetcher/tmp/sign_prosody_extraction-24.4.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - processPackages [sign-prosody-extraction]: Remove: archive file [/home/abi/fetcher/tmp/sign_prosody_extraction-24.5.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - main [MainThread]: End processing [sign-prosody-extraction]: success
+[2024-05-11 20:41:02] INFO root fetch - main [MainThread]: End processing [sign-prosody-extraction]: success
+[2024-05-11 20:41:02] INFO root fetch - processPackages [musicntwrk]: Remove: archive file [/home/abi/fetcher/tmp/musicntwrk-2.3.4.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - processPackages [musicntwrk]: Remove: archive file [/home/abi/fetcher/tmp/musicntwrk-2.3.5.tar.gz]
+[2024-05-11 20:41:02] INFO root fetch - main [MainThread]: End processing [musicntwrk]: success
+[2024-05-11 20:41:02] INFO root fetch - main [MainThread]: Store serial: [23163570]
