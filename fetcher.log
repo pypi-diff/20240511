@@ -23952,3 +23952,18 @@
 [2024-05-11 23:13:43] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
 [2024-05-11 23:13:43] INFO root fetch - main [MainThread]: End processing [locust]: success
 [2024-05-11 23:13:43] INFO root fetch - main [MainThread]: Store serial: [23164632]
+[2024-05-11 23:15:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164632]
+[2024-05-11 23:15:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iconometryz
+[2024-05-11 23:15:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AyiinXd
+[2024-05-11 23:15:52] WARNING root fetch - processPackages [iconometryz]: Skipping, unable to determine old version
+[2024-05-11 23:15:52] INFO root fetch - main [MainThread]: End processing [iconometryz] error
+[2024-05-11 23:15:52] INFO root fetch - processPackages [AyiinXd]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 23:15:52] INFO root fetch - processPackages [AyiinXd]: Downloading https://files.pythonhosted.org/packages/e4/69/ad6062efbdade640d255917209704f4c7d6cb30adf6754f74548f4f98063/AyiinXd-0.1.0-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 23:15:53] INFO root fetch - processPackages [AyiinXd]: Downloading https://files.pythonhosted.org/packages/ef/4c/a30a4d59b20f16d3436451c2dbdc09ec42fb425d60f2999b9cc3c9415935/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 23:15:54] INFO root fetch - processPackages [AyiinXd]: executing diffoscope
+[2024-05-11 23:15:54] INFO root fetch - processPackages [AyiinXd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AyiinXd-0.1.0-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240511/A/AyiinXd/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 23:15:58] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.0-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 23:15:58] INFO root fetch - processPackages [AyiinXd]: Remove: archive file [/home/abi/fetcher/tmp/AyiinXd-0.1.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 23:15:58] INFO root fetch - main [MainThread]: End processing [AyiinXd]: success
+[2024-05-11 23:15:58] INFO root fetch - main [MainThread]: Store serial: [23164646]
