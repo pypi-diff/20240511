@@ -21751,3 +21751,45 @@
 [2024-05-11 20:41:02] INFO root fetch - processPackages [musicntwrk]: Remove: archive file [/home/abi/fetcher/tmp/musicntwrk-2.3.5.tar.gz]
 [2024-05-11 20:41:02] INFO root fetch - main [MainThread]: End processing [musicntwrk]: success
 [2024-05-11 20:41:02] INFO root fetch - main [MainThread]: Store serial: [23163570]
+[2024-05-11 20:43:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163570]
+[2024-05-11 20:43:11] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 20:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mke-sculib
+[2024-05-11 20:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: merkinz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: flops-utils
+[2024-05-11 20:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-restit
+[2024-05-11 20:43:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sleipnirgroup-jormungandr
+[2024-05-11 20:43:11] INFO root fetch - processPackages [mke-sculib]: New version: [2.5.1] Old Version: [2.5.0]
+[2024-05-11 20:43:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: New version: [0.0.1.dev99] Old Version: [0.0.1.dev98]
+[2024-05-11 20:43:11] INFO root fetch - processPackages [flops-utils]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 20:43:11] INFO root fetch - processPackages [django-restit]: New version: [4.2.9] Old Version: [4.2.8]
+[2024-05-11 20:43:11] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/42/51/1f54c65d65adf76e11b85db8b1cca4c62246d71dfacf945af5cdcf64ad57/flops_utils-0.4.0.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/3f/46/b55a8a7e7140ddf851152aef6c19651fe60bcb0bc7f7370b045a1338af19/mke_sculib-2.5.0.tar.gz
+[2024-05-11 20:43:11] WARNING root fetch - processPackages [merkinz]: Skipping, unable to determine old version
+[2024-05-11 20:43:11] INFO root fetch - main [MainThread]: End processing [merkinz] error
+[2024-05-11 20:43:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/cc/12/913e734462cf5d457ad69ec174744b76c771c8b63ebfb55efeb3cf02373e/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/c2/a7/9a624d19b03f5a2774d34ae27fa11ab51ecdc59b679adabd04219cc8b435/django_restit-4.2.8.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Downloading https://files.pythonhosted.org/packages/c4/65/9e9a4eafe0a550c5be12a69cf1665a71a4b5c434089722b18386b65569f5/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/97/a2/30c0c8877e9927c13e857081a82315eee18e227af8b338b280c62a643d1a/flops_utils-0.4.1.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [mke-sculib]: Downloading https://files.pythonhosted.org/packages/a8/dc/9c3ed1ee90e9b7663d95e4a330a78cd1dca89d6db8e5a9717b7283f1fb6f/mke_sculib-2.5.1.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [django-restit]: Downloading https://files.pythonhosted.org/packages/04/6a/4a0798142c60a6490ec67b5805d087bb35d3e9fc4b5da82c2af6c231a3d8/django_restit-4.2.9.tar.gz
+[2024-05-11 20:43:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: executing diffoscope
+[2024-05-11 20:43:11] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz --markdown 20240511/s/sleipnirgroup-jormungandr/0.0.1.dev98-0.0.1.dev99/README.md --exclude *.pyd
+[2024-05-11 20:43:11] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-11 20:43:11] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.4.0.tar.gz tmp/flops_utils-0.4.1.tar.gz --markdown 20240511/f/flops-utils/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 20:43:12] INFO root fetch - processPackages [mke-sculib]: executing diffoscope
+[2024-05-11 20:43:12] INFO root fetch - processPackages [mke-sculib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mke_sculib-2.5.0.tar.gz tmp/mke_sculib-2.5.1.tar.gz --markdown 20240511/m/mke-sculib/2.5.0-2.5.1/README.md --exclude *.pyd
+[2024-05-11 20:43:12] INFO root fetch - processPackages [django-restit]: executing diffoscope
+[2024-05-11 20:43:12] INFO root fetch - processPackages [django-restit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_restit-4.2.8.tar.gz tmp/django_restit-4.2.9.tar.gz --markdown 20240511/d/django-restit/4.2.8-4.2.9/README.md --exclude *.pyd
+[2024-05-11 20:43:12] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.0.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.1.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-11 20:43:12] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.0.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.1.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
+[2024-05-11 20:43:12] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev98.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
+[2024-05-11 20:43:12] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
+[2024-05-11 20:43:13] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.8.tar.gz]
+[2024-05-11 20:43:13] INFO root fetch - processPackages [django-restit]: Remove: archive file [/home/abi/fetcher/tmp/django_restit-4.2.9.tar.gz]
+[2024-05-11 20:43:13] INFO root fetch - main [MainThread]: End processing [django-restit]: success
+[2024-05-11 20:43:13] INFO root fetch - main [MainThread]: Store serial: [23163596]
