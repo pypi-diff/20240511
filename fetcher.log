@@ -24231,3 +24231,42 @@
 [2024-05-11 23:41:55] INFO root fetch - processPackages [aiocmcapi]: Remove: archive file [/home/abi/fetcher/tmp/aiocmcapi-0.2.tar.gz]
 [2024-05-11 23:41:55] INFO root fetch - main [MainThread]: End processing [aiocmcapi]: success
 [2024-05-11 23:41:55] INFO root fetch - main [MainThread]: Store serial: [23164792]
+[2024-05-11 23:43:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164792]
+[2024-05-11 23:44:04] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 23:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiochris
+[2024-05-11 23:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unsewz
+[2024-05-11 23:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: KFSconfig
+[2024-05-11 23:44:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: django-admin-reset
+[2024-05-11 23:44:04] INFO root fetch - processPackages [KFSconfig]: New version: [2.1.3] Old Version: [2.1.2]
+[2024-05-11 23:44:04] INFO root fetch - processPackages [unsewz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:44:04] INFO root fetch - processPackages [django-admin-reset]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 23:44:04] INFO root fetch - processPackages [aiochris]: New version: [0.5.0a6] Old Version: [0.5.0a5]
+[2024-05-11 23:44:04] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/3f/b9/fd8637047d9ff7f05b43a430d1a39bb625fccdace99334850f6131065d1e/kfsconfig-2.1.2.tar.gz
+[2024-05-11 23:44:04] INFO root fetch - processPackages [unsewz]: Downloading https://files.pythonhosted.org/packages/88/99/59b04b9eff1002cff225705849feb32dd8a937e1ea69e155313c35ba1738/unsewz-1.1.tar.gz
+[2024-05-11 23:44:04] INFO root fetch - processPackages [aiochris]: Downloading https://files.pythonhosted.org/packages/ae/87/138c5c16eb6cd00d6fd5440b5ecd279a97d46c7ba6eff6ac16d75a016c5b/aiochris-0.5.0a5.tar.gz
+[2024-05-11 23:44:04] INFO root fetch - processPackages [django-admin-reset]: Downloading https://files.pythonhosted.org/packages/6c/89/3934049cd0c5cfe2bca6cc5c4376c3f32936ab2e21f14e421bfb1d96ad23/django_admin_reset-0.7.0-py3-none-any.whl
+[2024-05-11 23:44:05] INFO root fetch - processPackages [KFSconfig]: Downloading https://files.pythonhosted.org/packages/27/6d/5ef02154d6f82a4c138a45ef727897da15aefacd34b1e13f91608ecb3786/kfsconfig-2.1.3.tar.gz
+[2024-05-11 23:44:05] INFO root fetch - processPackages [unsewz]: Downloading https://files.pythonhosted.org/packages/15/29/87800c3948f1268f317c1ddb9357a03b995efe3167907b6ad154423ac4a3/unsewz-2.1.tar.gz
+[2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: Downloading https://files.pythonhosted.org/packages/bc/09/5861f1a179eddf270a1bc9ecadfc2a5ec822242f7b1ca7350781ba055410/aiochris-0.5.0a6.tar.gz
+[2024-05-11 23:44:05] INFO root fetch - processPackages [django-admin-reset]: Downloading https://files.pythonhosted.org/packages/69/0f/3cd563f3a954c98a3336b57d9c214fe50f30ba0cb68188c31ee8e24ed179/django_admin_reset-0.7.1-py3-none-any.whl
+[2024-05-11 23:44:05] INFO root fetch - processPackages [unsewz]: executing diffoscope
+[2024-05-11 23:44:05] INFO root fetch - processPackages [unsewz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unsewz-1.1.tar.gz tmp/unsewz-2.1.tar.gz --markdown 20240511/u/unsewz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:44:05] INFO root fetch - processPackages [django-admin-reset]: executing diffoscope
+[2024-05-11 23:44:05] INFO root fetch - processPackages [django-admin-reset]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_admin_reset-0.7.0-py3-none-any.whl.zip tmp/django_admin_reset-0.7.1-py3-none-any.whl.zip --markdown 20240511/d/django-admin-reset/0.7.0-0.7.1/README.md --exclude *.pyd
+[2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: executing diffoscope
+[2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiochris-0.5.0a5.tar.gz tmp/aiochris-0.5.0a6.tar.gz --markdown 20240511/a/aiochris/0.5.0a5-0.5.0a6/README.md --exclude *.pyd
+[2024-05-11 23:44:05] INFO root fetch - processPackages [KFSconfig]: executing diffoscope
+[2024-05-11 23:44:05] INFO root fetch - processPackages [KFSconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kfsconfig-2.1.2.tar.gz tmp/kfsconfig-2.1.3.tar.gz --markdown 20240511/K/KFSconfig/2.1.2-2.1.3/README.md --exclude *.pyd
+[2024-05-11 23:44:05] INFO root fetch - processPackages [django-admin-reset]: Remove: archive file [/home/abi/fetcher/tmp/django_admin_reset-0.7.0-py3-none-any.whl.zip]
+[2024-05-11 23:44:05] INFO root fetch - processPackages [django-admin-reset]: Remove: archive file [/home/abi/fetcher/tmp/django_admin_reset-0.7.1-py3-none-any.whl.zip]
+[2024-05-11 23:44:05] INFO root fetch - main [MainThread]: End processing [django-admin-reset]: success
+[2024-05-11 23:44:05] INFO root fetch - processPackages [unsewz]: Remove: archive file [/home/abi/fetcher/tmp/unsewz-1.1.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - processPackages [unsewz]: Remove: archive file [/home/abi/fetcher/tmp/unsewz-2.1.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - main [MainThread]: End processing [unsewz]: success
+[2024-05-11 23:44:05] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.1.2.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - processPackages [KFSconfig]: Remove: archive file [/home/abi/fetcher/tmp/kfsconfig-2.1.3.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - main [MainThread]: End processing [KFSconfig]: success
+[2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: Remove: archive file [/home/abi/fetcher/tmp/aiochris-0.5.0a5.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - processPackages [aiochris]: Remove: archive file [/home/abi/fetcher/tmp/aiochris-0.5.0a6.tar.gz]
+[2024-05-11 23:44:05] INFO root fetch - main [MainThread]: End processing [aiochris]: success
+[2024-05-11 23:44:05] INFO root fetch - main [MainThread]: Store serial: [23164804]
