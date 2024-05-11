@@ -24106,3 +24106,33 @@
 [2024-05-11 23:31:07] WARNING root fetch - processPackages [hgui]: Skipping, unable to determine old version
 [2024-05-11 23:31:07] INFO root fetch - main [MainThread]: End processing [hgui] error
 [2024-05-11 23:31:07] INFO root fetch - main [MainThread]: Store serial: [23164722]
+[2024-05-11 23:33:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164722]
+[2024-05-11 23:33:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 23:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: market-engine
+[2024-05-11 23:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unriggedz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lytix-py
+[2024-05-11 23:33:16] INFO root fetch - processPackages [lytix-py]: New version: [1.2.1] Old Version: [1.2.0]
+[2024-05-11 23:33:16] INFO root fetch - processPackages [lytix-py]: Downloading https://files.pythonhosted.org/packages/c0/fd/643ee621bb6e21043e9c53a2babe6798c6e03b81b25c3244166656efcb9d/lytix_py-1.2.0.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [market-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 23:33:16] INFO root fetch - processPackages [unriggedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:33:16] INFO root fetch - processPackages [unriggedz]: Downloading https://files.pythonhosted.org/packages/97/34/2b31d97f400682a5477a0e4b3ed4b6aa9412f5510a02b077cbbcc3b47df0/unriggedz-1.1.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [market-engine]: Downloading https://files.pythonhosted.org/packages/d8/bd/82a9be9afd2e3a96f90ebba4b98815d7c0d5c6661a2819b61db3eabf4cc2/market-engine-0.1.8.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [lytix-py]: Downloading https://files.pythonhosted.org/packages/52/7f/c06007e26d41a6c99baefe23585a7ca6fe66bc096eab4b8bcadd80eadf49/lytix_py-1.2.1.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [lytix-py]: executing diffoscope
+[2024-05-11 23:33:16] INFO root fetch - processPackages [lytix-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lytix_py-1.2.0.tar.gz tmp/lytix_py-1.2.1.tar.gz --markdown 20240511/l/lytix-py/1.2.0-1.2.1/README.md --exclude *.pyd
+[2024-05-11 23:33:16] INFO root fetch - processPackages [unriggedz]: Downloading https://files.pythonhosted.org/packages/09/3d/191c26d4c8fffe15be61db516b77668bac4f376be583c1ad0a350d5f0477/unriggedz-2.1.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [market-engine]: Downloading https://files.pythonhosted.org/packages/3b/e0/436fca5207f1cd4f34ca629d8709efe1ef4b8955f65769c7375c0278d2c5/market-engine-0.1.9.tar.gz
+[2024-05-11 23:33:16] INFO root fetch - processPackages [unriggedz]: executing diffoscope
+[2024-05-11 23:33:16] INFO root fetch - processPackages [unriggedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unriggedz-1.1.tar.gz tmp/unriggedz-2.1.tar.gz --markdown 20240511/u/unriggedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:33:17] INFO root fetch - processPackages [market-engine]: executing diffoscope
+[2024-05-11 23:33:17] INFO root fetch - processPackages [market-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market-engine-0.1.8.tar.gz tmp/market-engine-0.1.9.tar.gz --markdown 20240511/m/market-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 23:33:17] INFO root fetch - processPackages [lytix-py]: Remove: archive file [/home/abi/fetcher/tmp/lytix_py-1.2.0.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - processPackages [lytix-py]: Remove: archive file [/home/abi/fetcher/tmp/lytix_py-1.2.1.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - main [MainThread]: End processing [lytix-py]: success
+[2024-05-11 23:33:17] INFO root fetch - processPackages [unriggedz]: Remove: archive file [/home/abi/fetcher/tmp/unriggedz-1.1.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - processPackages [unriggedz]: Remove: archive file [/home/abi/fetcher/tmp/unriggedz-2.1.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - main [MainThread]: End processing [unriggedz]: success
+[2024-05-11 23:33:17] INFO root fetch - processPackages [market-engine]: Remove: archive file [/home/abi/fetcher/tmp/market-engine-0.1.8.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - processPackages [market-engine]: Remove: archive file [/home/abi/fetcher/tmp/market-engine-0.1.9.tar.gz]
+[2024-05-11 23:33:17] INFO root fetch - main [MainThread]: End processing [market-engine]: success
+[2024-05-11 23:33:17] INFO root fetch - main [MainThread]: Store serial: [23164732]
