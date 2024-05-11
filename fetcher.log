@@ -9397,3 +9397,15 @@
 [2024-05-11 05:56:40] WARNING root fetch - processPackages [cossaeanz]: Skipping, unable to determine old version
 [2024-05-11 05:56:40] INFO root fetch - main [MainThread]: End processing [cossaeanz] error
 [2024-05-11 05:56:40] INFO root fetch - main [MainThread]: Store serial: [23157149]
+[2024-05-11 05:58:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157149]
+[2024-05-11 05:58:48] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 05:58:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Pynapse
+[2024-05-11 05:58:48] INFO root fetch - processPackages [Pynapse]: New version: [0.2.0] Old Version: [0.1.0]
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/08/19/4e0570fbdd438c5968c707612d4b76e6672c753e6ec3971d9cf983944f77/pynapse-0.1.0.tar.gz
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/ac/13/86eacc58cb6b3376b332d7bfb69aad493cbff48cc918ac91beb79889ed0e/pynapse-0.2.0.tar.gz
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: executing diffoscope
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynapse-0.1.0.tar.gz tmp/pynapse-0.2.0.tar.gz --markdown 20240511/P/Pynapse/0.1.0-0.2.0/README.md --exclude *.pyd
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.1.0.tar.gz]
+[2024-05-11 05:58:49] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.2.0.tar.gz]
+[2024-05-11 05:58:49] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
+[2024-05-11 05:58:49] INFO root fetch - main [MainThread]: Store serial: [23157152]
