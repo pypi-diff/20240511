@@ -20056,3 +20056,48 @@
 [2024-05-11 18:47:32] INFO root fetch - processPackages [ytmusicapi]: Remove: archive file [/home/abi/fetcher/tmp/ytmusicapi-1.7.1.tar.gz]
 [2024-05-11 18:47:32] INFO root fetch - main [MainThread]: End processing [ytmusicapi]: success
 [2024-05-11 18:47:32] INFO root fetch - main [MainThread]: Store serial: [23162797]
+[2024-05-11 18:49:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162797]
+[2024-05-11 18:49:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wgd
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: simple-ddl-parser
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tiniestsegmenter
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: microconidiumz
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nestpython
+[2024-05-11 18:49:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: lolcatt
+[2024-05-11 18:49:42] INFO root fetch - processPackages [nestpython]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 18:49:42] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/b1/f8/51fda9d49660653ca99e1f6cbbdc504df279a6fe7b43809054713131e974/nestpython-0.3.8.tar.gz
+[2024-05-11 18:49:42] WARNING root fetch - processPackages [tiniestsegmenter]: Skipping, unable to determine old version
+[2024-05-11 18:49:42] INFO root fetch - main [MainThread]: End processing [tiniestsegmenter] error
+[2024-05-11 18:49:42] INFO root fetch - processPackages [wgd]: New version: [2.0.38] Old Version: [2.0.37]
+[2024-05-11 18:49:42] INFO root fetch - processPackages [simple-ddl-parser]: New version: [1.3.0] Old Version: [1.2.1]
+[2024-05-11 18:49:42] WARNING root fetch - processPackages [microconidiumz]: Skipping, unable to determine old version
+[2024-05-11 18:49:42] INFO root fetch - main [MainThread]: End processing [microconidiumz] error
+[2024-05-11 18:49:42] INFO root fetch - processPackages [lolcatt]: New version: [0.3.1] Old Version: [0.3.0]
+[2024-05-11 18:49:42] INFO root fetch - processPackages [nestpython]: Downloading https://files.pythonhosted.org/packages/0a/1d/0219f8d2d8aad0bb1e8a24049457f39884694bab6e94b94b73620f8cb155/nestpython-0.3.9.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/5f/26/e1fa0d613c9382873e503cc46c1e8f72c8274e8d36ba3b7584575bcb479b/wgd-2.0.37.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/6b/2d/be429da4cbca196e7257d851291e6d296f71f713be51fbcf0baa235c85ba/lolcatt-0.3.0.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [simple-ddl-parser]: Downloading https://files.pythonhosted.org/packages/47/e3/d0c009ff99f88c0084a08d61690a46ab9989de67acf35f612251faf1b16a/simple_ddl_parser-1.2.1.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [nestpython]: executing diffoscope
+[2024-05-11 18:49:42] INFO root fetch - processPackages [nestpython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nestpython-0.3.8.tar.gz tmp/nestpython-0.3.9.tar.gz --markdown 20240511/n/nestpython/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 18:49:42] INFO root fetch - processPackages [wgd]: Downloading https://files.pythonhosted.org/packages/12/31/8cf36b79578a3a9557615e302f4a4fe136285390935546256e22a79a5f37/wgd-2.0.38.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [lolcatt]: Downloading https://files.pythonhosted.org/packages/74/a0/8e84ac8f0ebe416d0d105a86d17c20097740d3a1fd1e07d5d6f30e38e1fc/lolcatt-0.3.1.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [simple-ddl-parser]: Downloading https://files.pythonhosted.org/packages/38/13/0ee44c79994e366df4a0c83c0ab7d0a5ee90ab7dbbf02179c047550cfaf1/simple_ddl_parser-1.3.0.tar.gz
+[2024-05-11 18:49:42] INFO root fetch - processPackages [wgd]: executing diffoscope
+[2024-05-11 18:49:42] INFO root fetch - processPackages [wgd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wgd-2.0.37.tar.gz tmp/wgd-2.0.38.tar.gz --markdown 20240511/w/wgd/2.0.37-2.0.38/README.md --exclude *.pyd
+[2024-05-11 18:49:42] INFO root fetch - processPackages [simple-ddl-parser]: executing diffoscope
+[2024-05-11 18:49:42] INFO root fetch - processPackages [simple-ddl-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simple_ddl_parser-1.2.1.tar.gz tmp/simple_ddl_parser-1.3.0.tar.gz --markdown 20240511/s/simple-ddl-parser/1.2.1-1.3.0/README.md --exclude *.pyd
+[2024-05-11 18:49:42] INFO root fetch - processPackages [lolcatt]: executing diffoscope
+[2024-05-11 18:49:42] INFO root fetch - processPackages [lolcatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lolcatt-0.3.0.tar.gz tmp/lolcatt-0.3.1.tar.gz --markdown 20240511/l/lolcatt/0.3.0-0.3.1/README.md --exclude *.pyd
+[2024-05-11 18:49:43] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.8.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - processPackages [nestpython]: Remove: archive file [/home/abi/fetcher/tmp/nestpython-0.3.9.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - main [MainThread]: End processing [nestpython]: success
+[2024-05-11 18:49:43] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.3.0.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - processPackages [lolcatt]: Remove: archive file [/home/abi/fetcher/tmp/lolcatt-0.3.1.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - main [MainThread]: End processing [lolcatt]: success
+[2024-05-11 18:49:43] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.2.1.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - processPackages [simple-ddl-parser]: Remove: archive file [/home/abi/fetcher/tmp/simple_ddl_parser-1.3.0.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - main [MainThread]: End processing [simple-ddl-parser]: success
+[2024-05-11 18:49:43] INFO root fetch - processPackages [wgd]: Remove: archive file [/home/abi/fetcher/tmp/wgd-2.0.37.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - processPackages [wgd]: Remove: archive file [/home/abi/fetcher/tmp/wgd-2.0.38.tar.gz]
+[2024-05-11 18:49:43] INFO root fetch - main [MainThread]: End processing [wgd]: success
+[2024-05-11 18:49:43] INFO root fetch - main [MainThread]: Store serial: [23162817]
