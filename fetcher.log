@@ -13223,3 +13223,45 @@
 [2024-05-11 11:09:37] INFO root fetch - processPackages [imesh]: Remove: archive file [/home/abi/fetcher/tmp/imesh-0.0.9.tar.gz]
 [2024-05-11 11:09:37] INFO root fetch - main [MainThread]: End processing [imesh]: success
 [2024-05-11 11:09:37] INFO root fetch - main [MainThread]: Store serial: [23159342]
+[2024-05-11 11:11:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159342]
+[2024-05-11 11:11:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zibuyu-LLM
+[2024-05-11 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: phariseez
+[2024-05-11 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clerk-django
+[2024-05-11 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: asknews
+[2024-05-11 11:11:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: openmeter
+[2024-05-11 11:11:47] INFO root fetch - processPackages [zibuyu-LLM]: New version: [0.0.6] Old Version: [0.0.5]
+[2024-05-11 11:11:47] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/6e/39/33e948f7e74160f3b1c7fb57ba750ff3d60411f104a219b577e6113dfc63/zibuyu_LLM-0.0.5-py3-none-any.whl
+[2024-05-11 11:11:47] INFO root fetch - processPackages [asknews]: New version: [0.6.0] Old Version: [0.5.5]
+[2024-05-11 11:11:47] INFO root fetch - processPackages [phariseez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:11:47] INFO root fetch - processPackages [openmeter]: New version: [1.0.0b73] Old Version: [1.0.0b72]
+[2024-05-11 11:11:47] WARNING root fetch - processPackages [clerk-django]: Skipping, unable to determine old version
+[2024-05-11 11:11:47] INFO root fetch - main [MainThread]: End processing [clerk-django] error
+[2024-05-11 11:11:47] INFO root fetch - processPackages [openmeter]: Downloading https://files.pythonhosted.org/packages/90/d3/106883340c4eefe1ebd0abf3d43ed6522d55d8ea662bcf2e9320c4834d47/openmeter-1.0.0b72.tar.gz
+[2024-05-11 11:11:47] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/7f/e0/0de1bf37b4cf7053520077c02f4c49fbf14141ec2392bd1434d58fd19b29/asknews-0.5.5-py3-none-any.whl
+[2024-05-11 11:11:47] INFO root fetch - processPackages [phariseez]: Downloading https://files.pythonhosted.org/packages/b5/e3/691b037a0fb77f29530b558c61d97a47f80c61acf52b2c33ffae367a4bd4/phariseez-1.1.tar.gz
+[2024-05-11 11:11:47] INFO root fetch - processPackages [zibuyu-LLM]: Downloading https://files.pythonhosted.org/packages/9b/71/7baa72842bdf9b8f3f8639e8f7449b216928b1a2072be930986e2404fd1b/zibuyu_LLM-0.0.6-py3-none-any.whl
+[2024-05-11 11:11:47] INFO root fetch - processPackages [zibuyu-LLM]: executing diffoscope
+[2024-05-11 11:11:47] INFO root fetch - processPackages [zibuyu-LLM]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zibuyu_LLM-0.0.5-py3-none-any.whl.zip tmp/zibuyu_LLM-0.0.6-py3-none-any.whl.zip --markdown 20240511/z/zibuyu-LLM/0.0.5-0.0.6/README.md --exclude *.pyd
+[2024-05-11 11:11:47] INFO root fetch - processPackages [asknews]: Downloading https://files.pythonhosted.org/packages/35/f7/bbdc64d473592b3015369cebeffc1dfb9a56ccf6a6f3ccba2c6a7313aff4/asknews-0.6.0-py3-none-any.whl
+[2024-05-11 11:11:47] INFO root fetch - processPackages [openmeter]: Downloading https://files.pythonhosted.org/packages/9d/f8/83550fb4122b48264aed59027432aac22d63e85345d6ba24505a84c60763/openmeter-1.0.0b73.tar.gz
+[2024-05-11 11:11:47] INFO root fetch - processPackages [phariseez]: Downloading https://files.pythonhosted.org/packages/18/c9/fff5d6690605cdca1e0b51aeb2d1cc4a99818012c934735e348e21f2de3e/phariseez-2.1.tar.gz
+[2024-05-11 11:11:47] INFO root fetch - processPackages [phariseez]: executing diffoscope
+[2024-05-11 11:11:47] INFO root fetch - processPackages [asknews]: executing diffoscope
+[2024-05-11 11:11:47] INFO root fetch - processPackages [asknews]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asknews-0.5.5-py3-none-any.whl.zip tmp/asknews-0.6.0-py3-none-any.whl.zip --markdown 20240511/a/asknews/0.5.5-0.6.0/README.md --exclude *.pyd
+[2024-05-11 11:11:47] INFO root fetch - processPackages [phariseez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/phariseez-1.1.tar.gz tmp/phariseez-2.1.tar.gz --markdown 20240511/p/phariseez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:11:47] INFO root fetch - processPackages [openmeter]: executing diffoscope
+[2024-05-11 11:11:47] INFO root fetch - processPackages [openmeter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/openmeter-1.0.0b72.tar.gz tmp/openmeter-1.0.0b73.tar.gz --markdown 20240511/o/openmeter/1.0.0b72-1.0.0b73/README.md --exclude *.pyd
+[2024-05-11 11:11:48] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.5-py3-none-any.whl.zip]
+[2024-05-11 11:11:48] INFO root fetch - processPackages [zibuyu-LLM]: Remove: archive file [/home/abi/fetcher/tmp/zibuyu_LLM-0.0.6-py3-none-any.whl.zip]
+[2024-05-11 11:11:48] INFO root fetch - main [MainThread]: End processing [zibuyu-LLM]: success
+[2024-05-11 11:11:48] INFO root fetch - processPackages [phariseez]: Remove: archive file [/home/abi/fetcher/tmp/phariseez-1.1.tar.gz]
+[2024-05-11 11:11:48] INFO root fetch - processPackages [phariseez]: Remove: archive file [/home/abi/fetcher/tmp/phariseez-2.1.tar.gz]
+[2024-05-11 11:11:48] INFO root fetch - main [MainThread]: End processing [phariseez]: success
+[2024-05-11 11:11:48] INFO root fetch - processPackages [openmeter]: Remove: archive file [/home/abi/fetcher/tmp/openmeter-1.0.0b72.tar.gz]
+[2024-05-11 11:11:48] INFO root fetch - processPackages [openmeter]: Remove: archive file [/home/abi/fetcher/tmp/openmeter-1.0.0b73.tar.gz]
+[2024-05-11 11:11:48] INFO root fetch - main [MainThread]: End processing [openmeter]: success
+[2024-05-11 11:11:48] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.5.5-py3-none-any.whl.zip]
+[2024-05-11 11:11:48] INFO root fetch - processPackages [asknews]: Remove: archive file [/home/abi/fetcher/tmp/asknews-0.6.0-py3-none-any.whl.zip]
+[2024-05-11 11:11:48] INFO root fetch - main [MainThread]: End processing [asknews]: success
+[2024-05-11 11:11:48] INFO root fetch - main [MainThread]: Store serial: [23159362]
