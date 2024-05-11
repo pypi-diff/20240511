@@ -18863,3 +18863,33 @@
 [2024-05-11 17:28:44] INFO root fetch - processPackages [antibacterial-model]: Remove: archive file [/home/abi/fetcher/tmp/antibacterial-model-1.0.7.tar.gz]
 [2024-05-11 17:28:44] INFO root fetch - main [MainThread]: End processing [antibacterial-model]: success
 [2024-05-11 17:28:44] INFO root fetch - main [MainThread]: Store serial: [23162276]
+[2024-05-11 17:30:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162276]
+[2024-05-11 17:30:53] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:30:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: skindivez
+[2024-05-11 17:30:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: clear-skies
+[2024-05-11 17:30:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: infodesreg
+[2024-05-11 17:30:53] INFO root fetch - processPackages [infodesreg]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 17:30:53] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/f5/eb/ab3af7accfd723fd23d38ceaa2ddd5e105d4156b3cc172e4a7efb2be4342/infodesreg-0.0.7.tar.gz
+[2024-05-11 17:30:53] INFO root fetch - processPackages [skindivez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:30:53] INFO root fetch - processPackages [clear-skies]: New version: [1.9.0] Old Version: [1.8.0]
+[2024-05-11 17:30:53] INFO root fetch - processPackages [skindivez]: Downloading https://files.pythonhosted.org/packages/1a/f8/d64ddf97da4f2a8ba793aafbb0b6e1725147553b4708833d302094cee2e7/skindivez-1.1.tar.gz
+[2024-05-11 17:30:53] INFO root fetch - processPackages [infodesreg]: Downloading https://files.pythonhosted.org/packages/17/69/72f7895d14860cf05da8ce829334f6f4588aca72560ba8a39129955e1349/infodesreg-0.0.8.tar.gz
+[2024-05-11 17:30:53] INFO root fetch - processPackages [infodesreg]: executing diffoscope
+[2024-05-11 17:30:53] INFO root fetch - processPackages [infodesreg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/infodesreg-0.0.7.tar.gz tmp/infodesreg-0.0.8.tar.gz --markdown 20240511/i/infodesreg/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 17:30:53] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/86/c6/5fc7f98d0b986c1fc7be0ee2f9821c93bff9852a85fc1b812fd0d36b5902/clear-skies-1.8.0.tar.gz
+[2024-05-11 17:30:53] INFO root fetch - processPackages [skindivez]: Downloading https://files.pythonhosted.org/packages/64/e0/1c93c59adac41902198ea8d1639eb497e35bf8e9eea47b981333a2b6dd18/skindivez-2.1.tar.gz
+[2024-05-11 17:30:54] INFO root fetch - processPackages [skindivez]: executing diffoscope
+[2024-05-11 17:30:54] INFO root fetch - processPackages [skindivez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skindivez-1.1.tar.gz tmp/skindivez-2.1.tar.gz --markdown 20240511/s/skindivez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:30:54] INFO root fetch - processPackages [clear-skies]: Downloading https://files.pythonhosted.org/packages/46/ff/38dd0872e0df49c2ac34c7256f311d26a829dd84c6f09be6ed0215107767/clear-skies-1.9.0.tar.gz
+[2024-05-11 17:30:54] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.7.tar.gz]
+[2024-05-11 17:30:54] INFO root fetch - processPackages [infodesreg]: Remove: archive file [/home/abi/fetcher/tmp/infodesreg-0.0.8.tar.gz]
+[2024-05-11 17:30:54] INFO root fetch - main [MainThread]: End processing [infodesreg]: success
+[2024-05-11 17:30:54] INFO root fetch - processPackages [clear-skies]: executing diffoscope
+[2024-05-11 17:30:54] INFO root fetch - processPackages [clear-skies]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clear-skies-1.8.0.tar.gz tmp/clear-skies-1.9.0.tar.gz --markdown 20240511/c/clear-skies/1.8.0-1.9.0/README.md --exclude *.pyd
+[2024-05-11 17:30:54] INFO root fetch - processPackages [skindivez]: Remove: archive file [/home/abi/fetcher/tmp/skindivez-1.1.tar.gz]
+[2024-05-11 17:30:54] INFO root fetch - processPackages [skindivez]: Remove: archive file [/home/abi/fetcher/tmp/skindivez-2.1.tar.gz]
+[2024-05-11 17:30:54] INFO root fetch - main [MainThread]: End processing [skindivez]: success
+[2024-05-11 17:30:55] INFO root fetch - processPackages [clear-skies]: Remove: archive file [/home/abi/fetcher/tmp/clear-skies-1.8.0.tar.gz]
+[2024-05-11 17:30:55] INFO root fetch - processPackages [clear-skies]: Remove: archive file [/home/abi/fetcher/tmp/clear-skies-1.9.0.tar.gz]
+[2024-05-11 17:30:55] INFO root fetch - main [MainThread]: End processing [clear-skies]: success
+[2024-05-11 17:30:55] INFO root fetch - main [MainThread]: Store serial: [23162290]
