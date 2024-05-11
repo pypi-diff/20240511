@@ -22929,3 +22929,56 @@
 [2024-05-11 22:06:09] INFO root fetch - processPackages [mke-sculib]: Remove: archive file [/home/abi/fetcher/tmp/mke_sculib-2.5.3.tar.gz]
 [2024-05-11 22:06:09] INFO root fetch - main [MainThread]: End processing [mke-sculib]: success
 [2024-05-11 22:06:09] INFO root fetch - main [MainThread]: Store serial: [23164175]
+[2024-05-11 22:08:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164175]
+[2024-05-11 22:08:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugenr8
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: auto-circuit
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aim-ui
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcp-pal
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aim
+[2024-05-11 22:08:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cloudaciousIAC
+[2024-05-11 22:08:18] INFO root fetch - processPackages [cloudaciousIAC]: New version: [0.0.7] Old Version: [0.0.6]
+[2024-05-11 22:08:18] INFO root fetch - processPackages [aim-ui]: New version: [4.1.0.dev20230930] Old Version: [4.1.0.dev20230929]
+[2024-05-11 22:08:18] INFO root fetch - processPackages [auto-circuit]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 22:08:18] INFO root fetch - processPackages [docugenr8]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 22:08:18] INFO root fetch - processPackages [aim-ui]: Downloading https://files.pythonhosted.org/packages/2a/05/f8c2e155a815903b692d80c9a1647ba25d4a1f119791eaeb671026bcfa33/aim-ui-4.1.0.dev20230929.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/b9/ca/3c2b195fcee2b86f5feff620bf6c742cd4a15d45becacf9a9e768b91ec8d/auto_circuit-0.1.4.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [gcp-pal]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 22:08:18] WARNING root fetch - processPackages [aim-ui]: Skipping package: exceeds size limit 19246573>=10485760
+[2024-05-11 22:08:18] INFO root fetch - main [MainThread]: End processing [aim-ui] error
+[2024-05-11 22:08:18] INFO root fetch - processPackages [cloudaciousIAC]: Downloading https://files.pythonhosted.org/packages/79/75/bf71ee5f4ead8ecb0cbf3097c27c53f8d8c7613702a9d76e8bb496a79dc3/cloudaciousiac-0.0.6.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [aim]: New version: [4.0.3] Old Version: [4.0.2]
+[2024-05-11 22:08:18] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/b9/53/0499b1bdad8e79c84118cbf501ebb26b70c8b5b60bce463c4a8d0618fe81/gcp_pal-1.0.8.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9a/a5/aa6030a12b43fe39bfa3f72277e6448f95801c71f37824996f2a765bef62/docugenr8-0.0.9.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/98/64/678e79086184628263abf777da40075c3afbf995d04657d250dbd6ae6f4c/auto_circuit-0.1.5.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/4a/00/f7e303a3bd0a6d75c08ccd60562a0c5f00fa9f4c16c945fbffa86d96ab7d/aim-4.0.2.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [cloudaciousIAC]: Downloading https://files.pythonhosted.org/packages/1a/f4/110a619a6ad1892345645d730cff692df67a8eb3aedd61d81e8695968834/cloudaciousiac-0.0.7.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-11 22:08:18] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.8.tar.gz tmp/docugenr8-0.0.9.tar.gz --markdown 20240511/d/docugenr8/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 22:08:18] INFO root fetch - processPackages [gcp-pal]: Downloading https://files.pythonhosted.org/packages/8c/b8/2efa9600008859fa691d602891fa9c6bb228fd92cd7f0036d55241b68620/gcp_pal-1.0.9.tar.gz
+[2024-05-11 22:08:18] INFO root fetch - processPackages [auto-circuit]: executing diffoscope
+[2024-05-11 22:08:18] INFO root fetch - processPackages [auto-circuit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_circuit-0.1.4.tar.gz tmp/auto_circuit-0.1.5.tar.gz --markdown 20240511/a/auto-circuit/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 22:08:18] INFO root fetch - processPackages [cloudaciousIAC]: executing diffoscope
+[2024-05-11 22:08:18] INFO root fetch - processPackages [cloudaciousIAC]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudaciousiac-0.0.6.tar.gz tmp/cloudaciousiac-0.0.7.tar.gz --markdown 20240511/c/cloudaciousIAC/0.0.6-0.0.7/README.md --exclude *.pyd
+[2024-05-11 22:08:18] INFO root fetch - processPackages [gcp-pal]: executing diffoscope
+[2024-05-11 22:08:18] INFO root fetch - processPackages [gcp-pal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcp_pal-1.0.8.tar.gz tmp/gcp_pal-1.0.9.tar.gz --markdown 20240511/g/gcp-pal/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 22:08:19] INFO root fetch - processPackages [aim]: Downloading https://files.pythonhosted.org/packages/50/12/a5a7bf25fd6105558d11afbd3f7500aa63283494e429296746c821354590/aim-4.0.3.tar.gz
+[2024-05-11 22:08:19] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.9.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-11 22:08:19] INFO root fetch - processPackages [aim]: executing diffoscope
+[2024-05-11 22:08:19] INFO root fetch - processPackages [aim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aim-4.0.2.tar.gz tmp/aim-4.0.3.tar.gz --markdown 20240511/a/aim/4.0.2-4.0.3/README.md --exclude *.pyd
+[2024-05-11 22:08:19] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.4.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.5.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - main [MainThread]: End processing [auto-circuit]: success
+[2024-05-11 22:08:19] INFO root fetch - processPackages [cloudaciousIAC]: Remove: archive file [/home/abi/fetcher/tmp/cloudaciousiac-0.0.6.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - processPackages [cloudaciousIAC]: Remove: archive file [/home/abi/fetcher/tmp/cloudaciousiac-0.0.7.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - main [MainThread]: End processing [cloudaciousIAC]: success
+[2024-05-11 22:08:19] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-1.0.8.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - processPackages [gcp-pal]: Remove: archive file [/home/abi/fetcher/tmp/gcp_pal-1.0.9.tar.gz]
+[2024-05-11 22:08:19] INFO root fetch - main [MainThread]: End processing [gcp-pal]: success
+[2024-05-11 22:08:23] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.2.tar.gz]
+[2024-05-11 22:08:23] INFO root fetch - processPackages [aim]: Remove: archive file [/home/abi/fetcher/tmp/aim-4.0.3.tar.gz]
+[2024-05-11 22:08:23] INFO root fetch - main [MainThread]: End processing [aim]: success
+[2024-05-11 22:08:23] INFO root fetch - main [MainThread]: Store serial: [23164191]
