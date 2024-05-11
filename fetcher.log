@@ -9619,3 +9619,15 @@
 [2024-05-11 06:23:00] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.1.tar.gz]
 [2024-05-11 06:23:00] INFO root fetch - main [MainThread]: End processing [pyproject-fmt-rust]: success
 [2024-05-11 06:23:00] INFO root fetch - main [MainThread]: Store serial: [23157233]
+[2024-05-11 06:25:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157233]
+[2024-05-11 06:25:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:25:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyuilder
+[2024-05-11 06:25:08] INFO root fetch - processPackages [pyuilder]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: Downloading https://files.pythonhosted.org/packages/94/52/cfbf537667c9c3458d23359f1388ac65e0bc74459b2b4210bb1f8bdfce72/pyuilder-0.0.4.tar.gz
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: Downloading https://files.pythonhosted.org/packages/73/26/f65c506243e94cc369a9aaa58ba10f33a8984a21dbd7b0f225f7d24d6b75/pyuilder-0.0.5.tar.gz
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: executing diffoscope
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyuilder-0.0.4.tar.gz tmp/pyuilder-0.0.5.tar.gz --markdown 20240511/p/pyuilder/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyuilder-0.0.4.tar.gz]
+[2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyuilder-0.0.5.tar.gz]
+[2024-05-11 06:25:09] INFO root fetch - main [MainThread]: End processing [pyuilder]: success
+[2024-05-11 06:25:09] INFO root fetch - main [MainThread]: Store serial: [23157236]
