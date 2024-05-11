@@ -11017,3 +11017,29 @@
 [2024-05-11 08:15:11] INFO root fetch - processPackages [fake-bpy-module-latest]: Remove: archive file [/home/abi/fetcher/tmp/fake_bpy_module_latest-20240510.tar.gz]
 [2024-05-11 08:15:11] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2024-05-11 08:15:11] INFO root fetch - main [MainThread]: Store serial: [23158177]
+[2024-05-11 08:17:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158177]
+[2024-05-11 08:17:30] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 08:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secretflow-doctools
+[2024-05-11 08:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tidevice3
+[2024-05-11 08:17:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sklearn-viz
+[2024-05-11 08:17:30] INFO root fetch - processPackages [secretflow-doctools]: New version: [0.7.1] Old Version: [0.7.0]
+[2024-05-11 08:17:30] INFO root fetch - processPackages [sklearn-viz]: New version: [0.6.3] Old Version: [0.6.2]
+[2024-05-11 08:17:30] INFO root fetch - processPackages [secretflow-doctools]: Downloading https://files.pythonhosted.org/packages/8a/c8/e2750554992a4041610b50a35f8c903de6d7e07a271722f3a5d3c5fad667/secretflow_doctools-0.7.0.tar.gz
+[2024-05-11 08:17:30] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/3f/51/dac552c80f023ebf17e56724efecf5d448a22621a892ea24faa78b669414/sklearn_viz-0.6.2.tar.gz
+[2024-05-11 08:17:30] INFO root fetch - processPackages [tidevice3]: New version: [0.9.0] Old Version: [0.8.4]
+[2024-05-11 08:17:30] WARNING root fetch - processPackages [secretflow-doctools]: Skipping package: exceeds size limit 50069976>=10485760
+[2024-05-11 08:17:30] INFO root fetch - main [MainThread]: End processing [secretflow-doctools] error
+[2024-05-11 08:17:30] INFO root fetch - processPackages [tidevice3]: Downloading https://files.pythonhosted.org/packages/8a/17/e0f82c11869b11833b40302d8d0fe110e38365a27113f69a3f46035324ed/tidevice3-0.8.4.tar.gz
+[2024-05-11 08:17:30] INFO root fetch - processPackages [sklearn-viz]: Downloading https://files.pythonhosted.org/packages/d6/be/8c0e6389d3cb7b7cda970466bf7790680bdb2a7ec9fab8b125ab57be108e/sklearn_viz-0.6.3.tar.gz
+[2024-05-11 08:17:30] INFO root fetch - processPackages [sklearn-viz]: executing diffoscope
+[2024-05-11 08:17:30] INFO root fetch - processPackages [sklearn-viz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sklearn_viz-0.6.2.tar.gz tmp/sklearn_viz-0.6.3.tar.gz --markdown 20240511/s/sklearn-viz/0.6.2-0.6.3/README.md --exclude *.pyd
+[2024-05-11 08:17:30] INFO root fetch - processPackages [tidevice3]: Downloading https://files.pythonhosted.org/packages/2c/f4/083237e9504ad0bf6aeae982e20d0bbdaafb39a0be3514f3648b39275cb0/tidevice3-0.9.0.tar.gz
+[2024-05-11 08:17:31] INFO root fetch - processPackages [tidevice3]: executing diffoscope
+[2024-05-11 08:17:31] INFO root fetch - processPackages [tidevice3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tidevice3-0.8.4.tar.gz tmp/tidevice3-0.9.0.tar.gz --markdown 20240511/t/tidevice3/0.8.4-0.9.0/README.md --exclude *.pyd
+[2024-05-11 08:17:31] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.2.tar.gz]
+[2024-05-11 08:17:31] INFO root fetch - processPackages [sklearn-viz]: Remove: archive file [/home/abi/fetcher/tmp/sklearn_viz-0.6.3.tar.gz]
+[2024-05-11 08:17:31] INFO root fetch - main [MainThread]: End processing [sklearn-viz]: success
+[2024-05-11 08:17:31] INFO root fetch - processPackages [tidevice3]: Remove: archive file [/home/abi/fetcher/tmp/tidevice3-0.8.4.tar.gz]
+[2024-05-11 08:17:31] INFO root fetch - processPackages [tidevice3]: Remove: archive file [/home/abi/fetcher/tmp/tidevice3-0.9.0.tar.gz]
+[2024-05-11 08:17:31] INFO root fetch - main [MainThread]: End processing [tidevice3]: success
+[2024-05-11 08:17:31] INFO root fetch - main [MainThread]: Store serial: [23158186]
