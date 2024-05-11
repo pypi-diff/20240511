@@ -21847,3 +21847,18 @@
 [2024-05-11 20:47:33] INFO root fetch - processPackages [project-arrakis]: Remove: archive file [/home/abi/fetcher/tmp/project_arrakis-0.1.1.tar.gz]
 [2024-05-11 20:47:33] INFO root fetch - main [MainThread]: End processing [project-arrakis]: success
 [2024-05-11 20:47:33] INFO root fetch - main [MainThread]: Store serial: [23163698]
+[2024-05-11 20:49:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163698]
+[2024-05-11 20:49:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 20:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ggbro
+[2024-05-11 20:49:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: flops-utils
+[2024-05-11 20:49:42] INFO root fetch - processPackages [flops-utils]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-11 20:49:42] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/97/a2/30c0c8877e9927c13e857081a82315eee18e227af8b338b280c62a643d1a/flops_utils-0.4.1.tar.gz
+[2024-05-11 20:49:42] WARNING root fetch - processPackages [ggbro]: Skipping, unable to determine old version
+[2024-05-11 20:49:42] INFO root fetch - main [MainThread]: End processing [ggbro] error
+[2024-05-11 20:49:42] INFO root fetch - processPackages [flops-utils]: Downloading https://files.pythonhosted.org/packages/ef/06/8a02b0b7a2fbbc1c9d24a4da22ce6d92dd8b50f232670949823ebee3ae9e/flops_utils-0.4.2.tar.gz
+[2024-05-11 20:49:43] INFO root fetch - processPackages [flops-utils]: executing diffoscope
+[2024-05-11 20:49:43] INFO root fetch - processPackages [flops-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flops_utils-0.4.1.tar.gz tmp/flops_utils-0.4.2.tar.gz --markdown 20240511/f/flops-utils/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-11 20:49:43] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.1.tar.gz]
+[2024-05-11 20:49:43] INFO root fetch - processPackages [flops-utils]: Remove: archive file [/home/abi/fetcher/tmp/flops_utils-0.4.2.tar.gz]
+[2024-05-11 20:49:43] INFO root fetch - main [MainThread]: End processing [flops-utils]: success
+[2024-05-11 20:49:43] INFO root fetch - main [MainThread]: Store serial: [23163706]
