@@ -16379,3 +16379,72 @@
 [2024-05-11 14:37:29] INFO root fetch - processPackages [speechlib]: Remove: archive file [/home/abi/fetcher/tmp/speechlib-1.0.9.tar.gz]
 [2024-05-11 14:37:29] INFO root fetch - main [MainThread]: End processing [speechlib]: success
 [2024-05-11 14:37:29] INFO root fetch - main [MainThread]: Store serial: [23161083]
+[2024-05-11 14:39:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161083]
+[2024-05-11 14:39:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: team-14-lib-version
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorcircuit-nightly
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-kurogames
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: packaged
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: astatinesz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: notolog
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrapeddit
+[2024-05-11 14:39:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prodiapy
+[2024-05-11 14:39:39] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b5] Old Version: [0.6.0b4]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [packaged]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [scrapeddit]: New version: [0.2.0] Old Version: [0.1.9]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [prodiapy]: New version: [5.1.5] Old Version: [5.1.4]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [nonebot-plugin-kurogames]: New version: [0.1.2] Old Version: [0.1.0]
+[2024-05-11 14:39:39] WARNING root fetch - processPackages [astatinesz]: Skipping, unable to determine old version
+[2024-05-11 14:39:39] INFO root fetch - main [MainThread]: End processing [astatinesz] error
+[2024-05-11 14:39:39] INFO root fetch - processPackages [notolog]: New version: [0.9.1b2] Old Version: [0.9.1b1]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [tensorcircuit-nightly]: New version: [0.9.1.dev20230608] Old Version: [0.9.1.dev20230607]
+[2024-05-11 14:39:39] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/95/9c/c3061f9353e47af7e4c66401f4c7dfa843f7a2bc2973b5060f6c50ca6d88/team_14_lib_version-0.6.0b4.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [packaged]: Downloading https://files.pythonhosted.org/packages/ed/a5/7e21d35251e6e1e93bc5f9823b84962d97f0b428efb98602ad6b9a780fe2/packaged-0.1.0.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [prodiapy]: Downloading https://files.pythonhosted.org/packages/dd/3f/07768709a2089729b28e6c3382a6b614d415c006a52ec2435ca1f71edb3e/prodiapy-5.1.4.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/1b/c1/884f7adbfc38316bf2d832e3fb8d69460afbeaf0d0825d0fabb108e01334/scrapeddit-0.1.9.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/67/84/d618cd7e7a577e14bfb9701f629415d3e86c8b110fcf0677d0ad483750f7/nonebot_plugin_kurogames-0.1.0.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/e7/03/1432733862554e0c3310e17a48c1d45fedbc46c86f609b432a0ba104f838/notolog-0.9.1b1.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/79/2a/50740b6f8b7e1d0c4223c72c789f41baca7a4e77f32e8f52bd91e7ebff20/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/28/7f/9a0104aa34453383c5a3deeee5a2f83dc8e815f64373719c5197e1442710/team_14_lib_version-0.6.0b5.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [packaged]: Downloading https://files.pythonhosted.org/packages/a1/74/28a99294d3b0ea1c39e9dba1421530fc2a756ba5fb8f374f259a903a2552/packaged-0.1.1.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [prodiapy]: Downloading https://files.pythonhosted.org/packages/dd/15/e02192a0416c5f1ec5fd68b3a4c12b4b3d378663c31e1646010dfb850f5f/prodiapy-5.1.5.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 14:39:39] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.6.0b4.tar.gz tmp/team_14_lib_version-0.6.0b5.tar.gz --markdown 20240511/t/team-14-lib-version/0.6.0b4-0.6.0b5/README.md --exclude *.pyd
+[2024-05-11 14:39:39] INFO root fetch - processPackages [packaged]: executing diffoscope
+[2024-05-11 14:39:39] INFO root fetch - processPackages [packaged]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/packaged-0.1.0.tar.gz tmp/packaged-0.1.1.tar.gz --markdown 20240511/p/packaged/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 14:39:39] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/55/55/2107dabc692deb5ff6d8f81dac584a47d1ecafc889380accf5e4ee05cc75/scrapeddit-0.2.0.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [prodiapy]: executing diffoscope
+[2024-05-11 14:39:39] INFO root fetch - processPackages [prodiapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prodiapy-5.1.4.tar.gz tmp/prodiapy-5.1.5.tar.gz --markdown 20240511/p/prodiapy/5.1.4-5.1.5/README.md --exclude *.pyd
+[2024-05-11 14:39:39] INFO root fetch - processPackages [tensorcircuit-nightly]: Downloading https://files.pythonhosted.org/packages/2f/cc/671276320457670987d1eb503de15ee19924e63c7ec9c99b14c240d5aa18/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz
+[2024-05-11 14:39:39] INFO root fetch - processPackages [notolog]: Downloading https://files.pythonhosted.org/packages/80/cf/7745119f39e096ac86302ca717c1932fb8adcad14406c3db2b861ba48dbc/notolog-0.9.1b2.tar.gz
+[2024-05-11 14:39:40] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 14:39:40] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.9.tar.gz tmp/scrapeddit-0.2.0.tar.gz --markdown 20240511/s/scrapeddit/0.1.9-0.2.0/README.md --exclude *.pyd
+[2024-05-11 14:39:40] INFO root fetch - processPackages [tensorcircuit-nightly]: executing diffoscope
+[2024-05-11 14:39:40] INFO root fetch - processPackages [tensorcircuit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz --markdown 20240511/t/tensorcircuit-nightly/0.9.1.dev20230607-0.9.1.dev20230608/README.md --exclude *.pyd
+[2024-05-11 14:39:40] INFO root fetch - processPackages [notolog]: executing diffoscope
+[2024-05-11 14:39:40] INFO root fetch - processPackages [notolog]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notolog-0.9.1b1.tar.gz tmp/notolog-0.9.1b2.tar.gz --markdown 20240511/n/notolog/0.9.1b1-0.9.1b2/README.md --exclude *.pyd
+[2024-05-11 14:39:40] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Downloading https://files.pythonhosted.org/packages/df/91/6ca58f19cb9a0e6e9e2ba60d12216ea176db96969ec7d81683ac26d91fef/nonebot_plugin_kurogames-0.1.2.tar.gz
+[2024-05-11 14:39:40] INFO root fetch - processPackages [nonebot-plugin-kurogames]: executing diffoscope
+[2024-05-11 14:39:40] INFO root fetch - processPackages [nonebot-plugin-kurogames]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_kurogames-0.1.0.tar.gz tmp/nonebot_plugin_kurogames-0.1.2.tar.gz --markdown 20240511/n/nonebot-plugin-kurogames/0.1.0-0.1.2/README.md --exclude *.pyd
+[2024-05-11 14:39:40] INFO root fetch - processPackages [packaged]: Remove: archive file [/home/abi/fetcher/tmp/packaged-0.1.0.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - processPackages [packaged]: Remove: archive file [/home/abi/fetcher/tmp/packaged-0.1.1.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - main [MainThread]: End processing [packaged]: success
+[2024-05-11 14:39:40] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.9.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.0.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 14:39:40] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b4.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b5.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 14:39:40] INFO root fetch - processPackages [prodiapy]: Remove: archive file [/home/abi/fetcher/tmp/prodiapy-5.1.4.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - processPackages [prodiapy]: Remove: archive file [/home/abi/fetcher/tmp/prodiapy-5.1.5.tar.gz]
+[2024-05-11 14:39:40] INFO root fetch - main [MainThread]: End processing [prodiapy]: success
+[2024-05-11 14:39:41] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230607.tar.gz]
+[2024-05-11 14:39:41] INFO root fetch - processPackages [tensorcircuit-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tensorcircuit-nightly-0.9.1.dev20230608.tar.gz]
+[2024-05-11 14:39:41] INFO root fetch - main [MainThread]: End processing [tensorcircuit-nightly]: success
+[2024-05-11 14:39:41] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.0.tar.gz]
+[2024-05-11 14:39:41] INFO root fetch - processPackages [nonebot-plugin-kurogames]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_kurogames-0.1.2.tar.gz]
+[2024-05-11 14:39:41] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames]: success
+[2024-05-11 14:39:42] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b1.tar.gz]
+[2024-05-11 14:39:42] INFO root fetch - processPackages [notolog]: Remove: archive file [/home/abi/fetcher/tmp/notolog-0.9.1b2.tar.gz]
+[2024-05-11 14:39:42] INFO root fetch - main [MainThread]: End processing [notolog]: success
+[2024-05-11 14:39:42] INFO root fetch - main [MainThread]: Store serial: [23161108]
