@@ -20702,3 +20702,9 @@
 [2024-05-11 19:28:59] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
 [2024-05-11 19:28:59] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
 [2024-05-11 19:28:59] INFO root fetch - main [MainThread]: Store serial: [23163100]
+[2024-05-11 19:31:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163100]
+[2024-05-11 19:31:08] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 19:31:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: motionlesslyz
+[2024-05-11 19:31:08] WARNING root fetch - processPackages [motionlesslyz]: Skipping, unable to determine old version
+[2024-05-11 19:31:08] INFO root fetch - main [MainThread]: End processing [motionlesslyz] error
+[2024-05-11 19:31:08] INFO root fetch - main [MainThread]: Store serial: [23163104]
