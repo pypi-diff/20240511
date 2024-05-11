@@ -16877,3 +16877,45 @@
 [2024-05-11 15:08:22] INFO root fetch - processPackages [recarryz]: Remove: archive file [/home/abi/fetcher/tmp/recarryz-2.1.tar.gz]
 [2024-05-11 15:08:22] INFO root fetch - main [MainThread]: End processing [recarryz]: success
 [2024-05-11 15:08:22] INFO root fetch - main [MainThread]: Store serial: [23161268]
+[2024-05-11 15:10:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161268]
+[2024-05-11 15:10:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 15:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mteb
+[2024-05-11 15:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aidennz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-RanFurryPic
+[2024-05-11 15:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pg-sync-roles
+[2024-05-11 15:10:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vak
+[2024-05-11 15:10:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: New version: [1.0.3.2] Old Version: [1.0.3.1]
+[2024-05-11 15:10:31] INFO root fetch - processPackages [mteb]: New version: [1.8.8] Old Version: [1.8.7]
+[2024-05-11 15:10:31] INFO root fetch - processPackages [pg-sync-roles]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 15:10:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/cc/24/b32d843ddd4c5f02dc82b6a04c490d807586567aa761612c93114aad1aea/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz
+[2024-05-11 15:10:31] WARNING root fetch - processPackages [aidennz]: Skipping, unable to determine old version
+[2024-05-11 15:10:31] INFO root fetch - main [MainThread]: End processing [aidennz] error
+[2024-05-11 15:10:31] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/e5/00/689dce1c71a269fc31a6f29e65d7d555fd7ddbc8cc79da2dff482ce5e687/pg_sync_roles-0.0.8.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [vak]: New version: [1.0.0a3] Old Version: [1.0.0a2]
+[2024-05-11 15:10:31] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/d7/6c/f7f0c5fb933ec8f6a87f72f30609b61a95fef5aad9b3828e661c9d8cf855/mteb-1.8.7.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [pg-sync-roles]: Downloading https://files.pythonhosted.org/packages/57/16/3555015cd988ece14b511219460af3c22de1b955c715d90322aa11026bd9/pg_sync_roles-0.0.9.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [vak]: Downloading https://files.pythonhosted.org/packages/79/56/df143e0c4c5a150faba3340e8141849f89c1232ba6715aeebec1c8872d81/vak-1.0.0a2.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Downloading https://files.pythonhosted.org/packages/df/bd/4aabe0bedfbcc85028da8227e7c14f37ac05bb43bbbda4908110f3d809a9/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [pg-sync-roles]: executing diffoscope
+[2024-05-11 15:10:31] INFO root fetch - processPackages [pg-sync-roles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pg_sync_roles-0.0.8.tar.gz tmp/pg_sync_roles-0.0.9.tar.gz --markdown 20240511/p/pg-sync-roles/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 15:10:31] INFO root fetch - processPackages [mteb]: Downloading https://files.pythonhosted.org/packages/67/03/34ece901f53f12b3005b0a989c7feaee38cf202c3f4f5ee2b36118cf93b4/mteb-1.8.8.tar.gz
+[2024-05-11 15:10:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: executing diffoscope
+[2024-05-11 15:10:31] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz tmp/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz --markdown 20240511/n/nonebot-plugin-RanFurryPic/1.0.3.1-1.0.3.2/README.md --exclude *.pyd
+[2024-05-11 15:10:32] INFO root fetch - processPackages [mteb]: executing diffoscope
+[2024-05-11 15:10:32] INFO root fetch - processPackages [mteb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mteb-1.8.7.tar.gz tmp/mteb-1.8.8.tar.gz --markdown 20240511/m/mteb/1.8.7-1.8.8/README.md --exclude *.pyd
+[2024-05-11 15:10:32] INFO root fetch - processPackages [vak]: Downloading https://files.pythonhosted.org/packages/74/36/aedb4456b965c02f98a0c27f6f9c7d8ba896de0cd07b626a738b3c0a188d/vak-1.0.0a3.tar.gz
+[2024-05-11 15:10:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.1.tar.gz]
+[2024-05-11 15:10:32] INFO root fetch - processPackages [nonebot-plugin-RanFurryPic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_ranfurrypic-1.0.3.2.tar.gz]
+[2024-05-11 15:10:32] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-RanFurryPic]: success
+[2024-05-11 15:10:32] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.8.tar.gz]
+[2024-05-11 15:10:32] INFO root fetch - processPackages [pg-sync-roles]: Remove: archive file [/home/abi/fetcher/tmp/pg_sync_roles-0.0.9.tar.gz]
+[2024-05-11 15:10:32] INFO root fetch - main [MainThread]: End processing [pg-sync-roles]: success
+[2024-05-11 15:10:32] INFO root fetch - processPackages [vak]: executing diffoscope
+[2024-05-11 15:10:32] INFO root fetch - processPackages [vak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vak-1.0.0a2.tar.gz tmp/vak-1.0.0a3.tar.gz --markdown 20240511/v/vak/1.0.0a2-1.0.0a3/README.md --exclude *.pyd
+[2024-05-11 15:10:34] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a2.tar.gz]
+[2024-05-11 15:10:34] INFO root fetch - processPackages [vak]: Remove: archive file [/home/abi/fetcher/tmp/vak-1.0.0a3.tar.gz]
+[2024-05-11 15:10:34] INFO root fetch - main [MainThread]: End processing [vak]: success
+[2024-05-11 15:10:34] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.7.tar.gz]
+[2024-05-11 15:10:34] INFO root fetch - processPackages [mteb]: Remove: archive file [/home/abi/fetcher/tmp/mteb-1.8.8.tar.gz]
+[2024-05-11 15:10:34] INFO root fetch - main [MainThread]: End processing [mteb]: success
+[2024-05-11 15:10:34] INFO root fetch - main [MainThread]: Store serial: [23161286]
