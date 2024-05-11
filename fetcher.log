@@ -21636,3 +21636,48 @@
 [2024-05-11 20:34:29] INFO root fetch - processPackages [laia-gen-lib]: Remove: archive file [/home/abi/fetcher/tmp/laia-gen-lib-0.1.9.tar.gz]
 [2024-05-11 20:34:29] INFO root fetch - main [MainThread]: End processing [laia-gen-lib]: success
 [2024-05-11 20:34:29] INFO root fetch - main [MainThread]: Store serial: [23163524]
+[2024-05-11 20:36:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163524]
+[2024-05-11 20:36:38] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: musical_games
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: testatrixesz
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pluto-subscriptions
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: balisaurz
+[2024-05-11 20:36:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyplejd
+[2024-05-11 20:36:39] INFO root fetch - processPackages [musical_games]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-11 20:36:39] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2024-05-11 20:36:39] WARNING root fetch - processPackages [pluto-subscriptions]: Skipping, unable to determine old version
+[2024-05-11 20:36:39] INFO root fetch - main [MainThread]: End processing [pluto-subscriptions] error
+[2024-05-11 20:36:39] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/bb/7b/348f9e93879dd6f63641a47f7cc1d21959322d1d7b28c526f1b07547ef2b/musical_games-0.8.3.tar.gz
+[2024-05-11 20:36:39] WARNING root fetch - processPackages [balisaurz]: Skipping, unable to determine old version
+[2024-05-11 20:36:39] INFO root fetch - main [MainThread]: End processing [balisaurz] error
+[2024-05-11 20:36:39] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [testatrixesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 20:36:39] INFO root fetch - processPackages [pyplejd]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 20:36:39] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/9a/64/3acb78c0c34a00a5d2fb50213ab227ace8395a0868f1df71371a940dd356/musical_games-0.8.4.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [testatrixesz]: Downloading https://files.pythonhosted.org/packages/09/71/45e55e2546ed3650c4c42687f526baf0486f7ee2dae365339c3ec3977ed1/testatrixesz-1.1.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [pyplejd]: Downloading https://files.pythonhosted.org/packages/f9/4a/9bace7f1d131c43be9a25a51a28a8f2cd3b999691a75964616c936142828/pyplejd-0.8.0.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2024-05-11 20:36:39] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20240511/p/peaqevcore/9.2.2-9.2.3/README.md --exclude *.pyd
+[2024-05-11 20:36:39] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-05-11 20:36:39] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.8.3.tar.gz tmp/musical_games-0.8.4.tar.gz --markdown 20240511/m/musical_games/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-11 20:36:39] INFO root fetch - processPackages [testatrixesz]: Downloading https://files.pythonhosted.org/packages/3e/75/af159cd6e6f2e63a1db864cec4c5ba10a22c22f1d98f6ee56fc2a870e29e/testatrixesz-2.1.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [pyplejd]: Downloading https://files.pythonhosted.org/packages/e1/5d/5ea26422e69a83fd59239471f9ecda80c72b950697fe8a6eeb8ec5396331/pyplejd-0.9.0.tar.gz
+[2024-05-11 20:36:39] INFO root fetch - processPackages [testatrixesz]: executing diffoscope
+[2024-05-11 20:36:39] INFO root fetch - processPackages [testatrixesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/testatrixesz-1.1.tar.gz tmp/testatrixesz-2.1.tar.gz --markdown 20240511/t/testatrixesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 20:36:39] INFO root fetch - processPackages [pyplejd]: executing diffoscope
+[2024-05-11 20:36:39] INFO root fetch - processPackages [pyplejd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyplejd-0.8.0.tar.gz tmp/pyplejd-0.9.0.tar.gz --markdown 20240511/p/pyplejd/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 20:36:40] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.2.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - processPackages [peaqevcore]: Remove: archive file [/home/abi/fetcher/tmp/peaqevcore-9.2.3.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2024-05-11 20:36:40] INFO root fetch - processPackages [testatrixesz]: Remove: archive file [/home/abi/fetcher/tmp/testatrixesz-1.1.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - processPackages [testatrixesz]: Remove: archive file [/home/abi/fetcher/tmp/testatrixesz-2.1.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - main [MainThread]: End processing [testatrixesz]: success
+[2024-05-11 20:36:40] INFO root fetch - processPackages [pyplejd]: Remove: archive file [/home/abi/fetcher/tmp/pyplejd-0.8.0.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - processPackages [pyplejd]: Remove: archive file [/home/abi/fetcher/tmp/pyplejd-0.9.0.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - main [MainThread]: End processing [pyplejd]: success
+[2024-05-11 20:36:40] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.3.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.4.tar.gz]
+[2024-05-11 20:36:40] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-05-11 20:36:40] INFO root fetch - main [MainThread]: Store serial: [23163542]
