@@ -12201,3 +12201,42 @@
 [2024-05-11 09:51:23] INFO root fetch - processPackages [misleep]: Remove: archive file [/home/abi/fetcher/tmp/misleep-0.2.6b0.tar.gz]
 [2024-05-11 09:51:23] INFO root fetch - main [MainThread]: End processing [misleep]: success
 [2024-05-11 09:51:23] INFO root fetch - main [MainThread]: Store serial: [23158799]
+[2024-05-11 09:53:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158799]
+[2024-05-11 09:53:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 09:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beanhub-extract
+[2024-05-11 09:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cyberiadaml-py
+[2024-05-11 09:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: paleocrystallicz
+[2024-05-11 09:53:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: airtestProject
+[2024-05-11 09:53:32] INFO root fetch - processPackages [airtestProject]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 09:53:32] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/c6/c2/4027d12fc7bf77ffe823f9727fbfab04a8756c013f44918b7cd27ac31ac1/airtestproject-0.1.4.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [cyberiadaml-py]: New version: [1.0] Old Version: [0.1.1]
+[2024-05-11 09:53:32] INFO root fetch - processPackages [paleocrystallicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:53:32] INFO root fetch - processPackages [beanhub-extract]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 09:53:32] INFO root fetch - processPackages [cyberiadaml-py]: Downloading https://files.pythonhosted.org/packages/5a/f1/627523250dfc085689e26dad30692c38233ce1b5fdfe25083e8ef7376b23/cyberiadaml_py-0.1.1.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [paleocrystallicz]: Downloading https://files.pythonhosted.org/packages/09/2f/3d717238eb254c4026da2717bedbbe9988666a3bcef3be0fc6705ac14bfa/paleocrystallicz-1.1.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [beanhub-extract]: Downloading https://files.pythonhosted.org/packages/cf/4e/b636eb013a69a3fd2c63a19b3cf14b8d9a9e82e52c5185f40aff81b4daca/beanhub_extract-0.0.7.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [airtestProject]: Downloading https://files.pythonhosted.org/packages/2d/11/18fa51f93d921f1d1986226848d3b3f8c1a70ee902d66a9e47f0628bff13/airtestproject-0.1.5.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [airtestProject]: executing diffoscope
+[2024-05-11 09:53:32] INFO root fetch - processPackages [airtestProject]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airtestproject-0.1.4.tar.gz tmp/airtestproject-0.1.5.tar.gz --markdown 20240511/a/airtestProject/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 09:53:32] INFO root fetch - processPackages [cyberiadaml-py]: Downloading https://files.pythonhosted.org/packages/ea/cd/be39ceb86ed83943e17ae4a82b055fcab053ffd37e22fd9db1b192413adf/cyberiadaml_py-1.0.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [paleocrystallicz]: Downloading https://files.pythonhosted.org/packages/01/0d/39d3933ab91762a8e8e17febb0fee6dd9179353bf73d8add5ca155789a4a/paleocrystallicz-2.1.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [beanhub-extract]: Downloading https://files.pythonhosted.org/packages/7e/58/c50b1d142629ddfdf8b537df6a501289cfaa84693f814cb36dc9edd57c01/beanhub_extract-0.0.8.tar.gz
+[2024-05-11 09:53:32] INFO root fetch - processPackages [cyberiadaml-py]: executing diffoscope
+[2024-05-11 09:53:32] INFO root fetch - processPackages [cyberiadaml-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberiadaml_py-0.1.1.tar.gz tmp/cyberiadaml_py-1.0.tar.gz --markdown 20240511/c/cyberiadaml-py/0.1.1-1.0/README.md --exclude *.pyd
+[2024-05-11 09:53:32] INFO root fetch - processPackages [beanhub-extract]: executing diffoscope
+[2024-05-11 09:53:32] INFO root fetch - processPackages [beanhub-extract]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanhub_extract-0.0.7.tar.gz tmp/beanhub_extract-0.0.8.tar.gz --markdown 20240511/b/beanhub-extract/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 09:53:32] INFO root fetch - processPackages [paleocrystallicz]: executing diffoscope
+[2024-05-11 09:53:32] INFO root fetch - processPackages [paleocrystallicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paleocrystallicz-1.1.tar.gz tmp/paleocrystallicz-2.1.tar.gz --markdown 20240511/p/paleocrystallicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:53:33] INFO root fetch - processPackages [cyberiadaml-py]: Remove: archive file [/home/abi/fetcher/tmp/cyberiadaml_py-0.1.1.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - processPackages [cyberiadaml-py]: Remove: archive file [/home/abi/fetcher/tmp/cyberiadaml_py-1.0.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - main [MainThread]: End processing [cyberiadaml-py]: success
+[2024-05-11 09:53:33] INFO root fetch - processPackages [paleocrystallicz]: Remove: archive file [/home/abi/fetcher/tmp/paleocrystallicz-1.1.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - processPackages [paleocrystallicz]: Remove: archive file [/home/abi/fetcher/tmp/paleocrystallicz-2.1.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - main [MainThread]: End processing [paleocrystallicz]: success
+[2024-05-11 09:53:33] INFO root fetch - processPackages [beanhub-extract]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_extract-0.0.7.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - processPackages [beanhub-extract]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_extract-0.0.8.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - main [MainThread]: End processing [beanhub-extract]: success
+[2024-05-11 09:53:33] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.4.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - processPackages [airtestProject]: Remove: archive file [/home/abi/fetcher/tmp/airtestproject-0.1.5.tar.gz]
+[2024-05-11 09:53:33] INFO root fetch - main [MainThread]: End processing [airtestProject]: success
+[2024-05-11 09:53:33] INFO root fetch - main [MainThread]: Store serial: [23158811]
