@@ -18488,3 +18488,57 @@
 [2024-05-11 17:03:40] INFO root fetch - processPackages [pdfsyntax]: Remove: archive file [/home/abi/fetcher/tmp/pdfsyntax-0.1.1.tar.gz]
 [2024-05-11 17:03:40] INFO root fetch - main [MainThread]: End processing [pdfsyntax]: success
 [2024-05-11 17:03:40] INFO root fetch - main [MainThread]: Store serial: [23162136]
+[2024-05-11 17:05:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162136]
+[2024-05-11 17:05:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: discretelog
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo14-addon-ssi-inventory-closing
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tempit
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qdetective
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fastapi-utils
+[2024-05-11 17:05:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: vit-pytorch
+[2024-05-11 17:05:49] WARNING root fetch - processPackages [discretelog]: Skipping, unable to determine old version
+[2024-05-11 17:05:49] INFO root fetch - main [MainThread]: End processing [discretelog] error
+[2024-05-11 17:05:49] WARNING root fetch - processPackages [tempit]: Skipping, unable to determine old version
+[2024-05-11 17:05:49] INFO root fetch - main [MainThread]: End processing [tempit] error
+[2024-05-11 17:05:49] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 17:05:49] INFO root fetch - processPackages [qdetective]: New version: [0.1.0] Old Version: [0.0.2]
+[2024-05-11 17:05:49] INFO root fetch - processPackages [vit-pytorch]: New version: [1.6.9] Old Version: [1.6.8]
+[2024-05-11 17:05:49] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: New version: [14.0.1.3.0] Old Version: [14.0.1.2.0]
+[2024-05-11 17:05:49] INFO root fetch - processPackages [fastapi-utils]: New version: [0.6.0] Old Version: [0.2.1]
+[2024-05-11 17:05:49] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: Downloading https://files.pythonhosted.org/packages/e0/91/102b9bc794c80266600beb9e1a3366ef3702ee4cb5b816c432d3a1723393/odoo14_addon_ssi_inventory_closing-14.0.1.2.0-py3-none-any.whl
+[2024-05-11 17:05:49] INFO root fetch - processPackages [qdetective]: Downloading https://files.pythonhosted.org/packages/22/59/13e8c000b9fcdddb376ba007cc1aead9b9d40f2e08b95c0ca6800daba4c0/QDetective-0.0.2.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [fastapi-utils]: Downloading https://files.pythonhosted.org/packages/e6/c9/d7d8908902afb3fae40d4713b4a72848bc015e21c5c4bebfb935708b21b9/fastapi-utils-0.2.1.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [vit-pytorch]: Downloading https://files.pythonhosted.org/packages/5b/1e/114fc4d8413a8fe4a160fffad10a595a36d7bfc581fb5e4bbb56acfa0fc5/vit_pytorch-1.6.8.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [qdetective]: Downloading https://files.pythonhosted.org/packages/e5/67/bc9c625c512c3871892f7322b0001ee1c30586cd7ed4bf823c2c3166bd7e/QDetective-0.1.0.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: Downloading https://files.pythonhosted.org/packages/9a/5d/0d9faec7053553cfb106953452e15be3138ac951fbb23f5bfada20922418/odoo14_addon_ssi_inventory_closing-14.0.1.3.0-py3-none-any.whl
+[2024-05-11 17:05:49] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 17:05:49] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 17:05:49] INFO root fetch - processPackages [qdetective]: executing diffoscope
+[2024-05-11 17:05:49] INFO root fetch - processPackages [qdetective]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QDetective-0.0.2.tar.gz tmp/QDetective-0.1.0.tar.gz --markdown 20240511/q/qdetective/0.0.2-0.1.0/README.md --exclude *.pyd
+[2024-05-11 17:05:49] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: executing diffoscope
+[2024-05-11 17:05:49] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_ssi_inventory_closing-14.0.1.2.0-py3-none-any.whl.zip tmp/odoo14_addon_ssi_inventory_closing-14.0.1.3.0-py3-none-any.whl.zip --markdown 20240511/o/odoo14-addon-ssi-inventory-closing/14.0.1.2.0-14.0.1.3.0/README.md --exclude *.pyd
+[2024-05-11 17:05:49] INFO root fetch - processPackages [fastapi-utils]: Downloading https://files.pythonhosted.org/packages/eb/b7/a8334f16b18f11d3200139c978cab5b90e7cbbd3aee518d4b452c67d2f01/fastapi_utils-0.6.0.tar.gz
+[2024-05-11 17:05:49] INFO root fetch - processPackages [vit-pytorch]: Downloading https://files.pythonhosted.org/packages/1d/1b/513db51622c8c1212fdd9d6a3d589f90abc97bb1ccf10f404ae55e4dee74/vit_pytorch-1.6.9.tar.gz
+[2024-05-11 17:05:50] INFO root fetch - processPackages [fastapi-utils]: executing diffoscope
+[2024-05-11 17:05:50] INFO root fetch - processPackages [fastapi-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi-utils-0.2.1.tar.gz tmp/fastapi_utils-0.6.0.tar.gz --markdown 20240511/f/fastapi-utils/0.2.1-0.6.0/README.md --exclude *.pyd
+[2024-05-11 17:05:50] INFO root fetch - processPackages [vit-pytorch]: executing diffoscope
+[2024-05-11 17:05:50] INFO root fetch - processPackages [vit-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vit_pytorch-1.6.8.tar.gz tmp/vit_pytorch-1.6.9.tar.gz --markdown 20240511/v/vit-pytorch/1.6.8-1.6.9/README.md --exclude *.pyd
+[2024-05-11 17:05:50] INFO root fetch - processPackages [qdetective]: Remove: archive file [/home/abi/fetcher/tmp/QDetective-0.0.2.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - processPackages [qdetective]: Remove: archive file [/home/abi/fetcher/tmp/QDetective-0.1.0.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [qdetective]: success
+[2024-05-11 17:05:50] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_inventory_closing-14.0.1.2.0-py3-none-any.whl.zip]
+[2024-05-11 17:05:50] INFO root fetch - processPackages [odoo14-addon-ssi-inventory-closing]: Remove: archive file [/home/abi/fetcher/tmp/odoo14_addon_ssi_inventory_closing-14.0.1.3.0-py3-none-any.whl.zip]
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-inventory-closing]: success
+[2024-05-11 17:05:50] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 17:05:50] INFO root fetch - processPackages [fastapi-utils]: Remove: archive file [/home/abi/fetcher/tmp/fastapi-utils-0.2.1.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - processPackages [fastapi-utils]: Remove: archive file [/home/abi/fetcher/tmp/fastapi_utils-0.6.0.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [fastapi-utils]: success
+[2024-05-11 17:05:50] INFO root fetch - processPackages [vit-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/vit_pytorch-1.6.8.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - processPackages [vit-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/vit_pytorch-1.6.9.tar.gz]
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [vit-pytorch]: success
+[2024-05-11 17:05:50] INFO root fetch - main [MainThread]: Store serial: [23162157]
