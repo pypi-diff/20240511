@@ -15846,3 +15846,57 @@
 [2024-05-11 14:00:24] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.8.tar.gz]
 [2024-05-11 14:00:24] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
 [2024-05-11 14:00:24] INFO root fetch - main [MainThread]: Store serial: [23160747]
+[2024-05-11 14:02:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160747]
+[2024-05-11 14:02:32] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aparat-crawler
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qamomile
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: slise
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pulvicz
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyanno4rt
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: relativez
+[2024-05-11 14:02:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pythreadserver
+[2024-05-11 14:02:33] INFO root fetch - processPackages [aparat-crawler]: New version: [0.9.1.1] Old Version: [0.9.1]
+[2024-05-11 14:02:33] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/ec/7b/bae31dca3e43e9084a0e5001f68a4a99568db943f62a2149eeb121c0109f/aparat_crawler-0.9.1.tar.gz
+[2024-05-11 14:02:33] WARNING root fetch - processPackages [qamomile]: Skipping, unable to determine old version
+[2024-05-11 14:02:33] INFO root fetch - main [MainThread]: End processing [qamomile] error
+[2024-05-11 14:02:33] INFO root fetch - processPackages [slise]: New version: [2.2.4] Old Version: [2.2.3]
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pyanno4rt]: New version: [0.15.0] Old Version: [0.14.0]
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pulvicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:02:33] WARNING root fetch - processPackages [relativez]: Skipping, unable to determine old version
+[2024-05-11 14:02:33] INFO root fetch - main [MainThread]: End processing [relativez] error
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pythreadserver]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 14:02:33] INFO root fetch - processPackages [slise]: Downloading https://files.pythonhosted.org/packages/b6/6a/4da10eb7958355184e84692e7b04b6c9827fe246df0e9a9f2f137f977d48/slise-2.2.3.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pulvicz]: Downloading https://files.pythonhosted.org/packages/46/af/323813a3669246989b2bce9dca8480316b3538b0748bdab17e6e951cfbf2/pulvicz-1.1.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/82/88/97f2ccc6371217e5702e5222ebcb57f043a36626c4501105bf6ae619a590/pyanno4rt-0.14.0.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/2c/97/afa92da5efc125e978672f75c5ff716bed94d5849793b47336b2a5723d5a/aparat_crawler-0.9.1.1.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/2f/a3/3d066a7f6c69649c83e0e2c30db856b5c6ab59f9f0d223879c45ad9503d2/pythreadserver-0.1.2.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [aparat-crawler]: executing diffoscope
+[2024-05-11 14:02:33] INFO root fetch - processPackages [aparat-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aparat_crawler-0.9.1.tar.gz tmp/aparat_crawler-0.9.1.1.tar.gz --markdown 20240511/a/aparat-crawler/0.9.1-0.9.1.1/README.md --exclude *.pyd
+[2024-05-11 14:02:33] INFO root fetch - processPackages [slise]: Downloading https://files.pythonhosted.org/packages/0d/ae/d377c8cf8a3ba04ec717b56136f65290c73ba1ba2d91e117b6a321e51917/slise-2.2.4.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pulvicz]: Downloading https://files.pythonhosted.org/packages/4d/f2/2152ed9de4b5d240a66cfc975aca4f9c472d65dfe85aa51b4450813b1940/pulvicz-2.1.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pythreadserver]: Downloading https://files.pythonhosted.org/packages/37/b2/1c1130777bdc7c108e35695d6d1411dfaa25d4ee4882056bf9e988e0f575/pythreadserver-0.1.3.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [slise]: executing diffoscope
+[2024-05-11 14:02:33] INFO root fetch - processPackages [slise]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slise-2.2.3.tar.gz tmp/slise-2.2.4.tar.gz --markdown 20240511/s/slise/2.2.3-2.2.4/README.md --exclude *.pyd
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pulvicz]: executing diffoscope
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pulvicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulvicz-1.1.tar.gz tmp/pulvicz-2.1.tar.gz --markdown 20240511/p/pulvicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/0a/87/7739f7922a7c35cd4c8cf7d1f73fa4ffa1027b8ffba5697be843a6da7441/pyanno4rt-0.15.0.tar.gz
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pythreadserver]: executing diffoscope
+[2024-05-11 14:02:33] INFO root fetch - processPackages [pythreadserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythreadserver-0.1.2.tar.gz tmp/pythreadserver-0.1.3.tar.gz --markdown 20240511/p/pythreadserver/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pyanno4rt]: executing diffoscope
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pyanno4rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanno4rt-0.14.0.tar.gz tmp/pyanno4rt-0.15.0.tar.gz --markdown 20240511/p/pyanno4rt/0.14.0-0.15.0/README.md --exclude *.pyd
+[2024-05-11 14:02:34] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.1.1.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pulvicz]: Remove: archive file [/home/abi/fetcher/tmp/pulvicz-1.1.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pulvicz]: Remove: archive file [/home/abi/fetcher/tmp/pulvicz-2.1.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - main [MainThread]: End processing [pulvicz]: success
+[2024-05-11 14:02:34] INFO root fetch - processPackages [slise]: Remove: archive file [/home/abi/fetcher/tmp/slise-2.2.3.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - processPackages [slise]: Remove: archive file [/home/abi/fetcher/tmp/slise-2.2.4.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - main [MainThread]: End processing [slise]: success
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.2.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - processPackages [pythreadserver]: Remove: archive file [/home/abi/fetcher/tmp/pythreadserver-0.1.3.tar.gz]
+[2024-05-11 14:02:34] INFO root fetch - main [MainThread]: End processing [pythreadserver]: success
+[2024-05-11 14:02:37] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.14.0.tar.gz]
+[2024-05-11 14:02:37] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.15.0.tar.gz]
+[2024-05-11 14:02:37] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
+[2024-05-11 14:02:37] INFO root fetch - main [MainThread]: Store serial: [23160768]
