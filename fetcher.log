@@ -15578,3 +15578,24 @@
 [2024-05-11 13:38:34] INFO root fetch - processPackages [decision-utils]: Remove: archive file [/home/abi/fetcher/tmp/decision_utils-0.0.7.tar.gz]
 [2024-05-11 13:38:34] INFO root fetch - main [MainThread]: End processing [decision-utils]: success
 [2024-05-11 13:38:34] INFO root fetch - main [MainThread]: Store serial: [23160646]
+[2024-05-11 13:40:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160646]
+[2024-05-11 13:40:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nonebot-plugin-savepic
+[2024-05-11 13:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: propertyshipz
+[2024-05-11 13:40:43] INFO root fetch - processPackages [nonebot-plugin-savepic]: New version: [0.2.5] Old Version: [0.2.0]
+[2024-05-11 13:40:43] INFO root fetch - processPackages [propertyshipz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:40:43] INFO root fetch - processPackages [nonebot-plugin-savepic]: Downloading https://files.pythonhosted.org/packages/79/98/e555626dc80179b02a766664878030070f1ae3ad4d47da9c0400098edd3a/nonebot_plugin_savepic-0.2.0.tar.gz
+[2024-05-11 13:40:43] INFO root fetch - processPackages [propertyshipz]: Downloading https://files.pythonhosted.org/packages/1e/5d/2cf19cc0a71ce402e0a7751ad9c2f4771f2e686d0981cc0dd7c34755f815/propertyshipz-1.1.tar.gz
+[2024-05-11 13:40:44] INFO root fetch - processPackages [nonebot-plugin-savepic]: Downloading https://files.pythonhosted.org/packages/b4/2d/d8b6d20a470caa7da20a8cdc79092023fb36c70bc6fe9e1aebc08d6a4b94/nonebot_plugin_savepic-0.2.5.tar.gz
+[2024-05-11 13:40:44] INFO root fetch - processPackages [nonebot-plugin-savepic]: executing diffoscope
+[2024-05-11 13:40:44] INFO root fetch - processPackages [nonebot-plugin-savepic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_savepic-0.2.0.tar.gz tmp/nonebot_plugin_savepic-0.2.5.tar.gz --markdown 20240511/n/nonebot-plugin-savepic/0.2.0-0.2.5/README.md --exclude *.pyd
+[2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: Downloading https://files.pythonhosted.org/packages/f6/f3/6c87713e5e993ea1f21a66314bdda7db71b32a61a3ffb20eaae7e6d8b363/propertyshipz-2.1.tar.gz
+[2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: executing diffoscope
+[2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/propertyshipz-1.1.tar.gz tmp/propertyshipz-2.1.tar.gz --markdown 20240511/p/propertyshipz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:40:44] INFO root fetch - processPackages [nonebot-plugin-savepic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_savepic-0.2.0.tar.gz]
+[2024-05-11 13:40:44] INFO root fetch - processPackages [nonebot-plugin-savepic]: Remove: archive file [/home/abi/fetcher/tmp/nonebot_plugin_savepic-0.2.5.tar.gz]
+[2024-05-11 13:40:44] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-savepic]: success
+[2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: Remove: archive file [/home/abi/fetcher/tmp/propertyshipz-1.1.tar.gz]
+[2024-05-11 13:40:44] INFO root fetch - processPackages [propertyshipz]: Remove: archive file [/home/abi/fetcher/tmp/propertyshipz-2.1.tar.gz]
+[2024-05-11 13:40:44] INFO root fetch - main [MainThread]: End processing [propertyshipz]: success
+[2024-05-11 13:40:44] INFO root fetch - main [MainThread]: Store serial: [23160651]
