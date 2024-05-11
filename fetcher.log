@@ -16346,3 +16346,15 @@
 [2024-05-11 14:33:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
 [2024-05-11 14:33:10] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
 [2024-05-11 14:33:10] INFO root fetch - main [MainThread]: Store serial: [23161074]
+[2024-05-11 14:35:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161074]
+[2024-05-11 14:35:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 14:35:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sae-lens
+[2024-05-11 14:35:18] INFO root fetch - processPackages [sae-lens]: New version: [2.0.0] Old Version: [1.8.0]
+[2024-05-11 14:35:18] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/29/db/808445ce9d83262e0781cd4412a1ea29702c9ebdc4180f7cb0731269f912/sae_lens-1.8.0.tar.gz
+[2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: Downloading https://files.pythonhosted.org/packages/b2/63/67b8bde748ae2cb3bc4a574d48888950a37f88956b6f90808e05eca26bcd/sae_lens-2.0.0.tar.gz
+[2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: executing diffoscope
+[2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sae_lens-1.8.0.tar.gz tmp/sae_lens-2.0.0.tar.gz --markdown 20240511/s/sae-lens/1.8.0-2.0.0/README.md --exclude *.pyd
+[2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-1.8.0.tar.gz]
+[2024-05-11 14:35:19] INFO root fetch - processPackages [sae-lens]: Remove: archive file [/home/abi/fetcher/tmp/sae_lens-2.0.0.tar.gz]
+[2024-05-11 14:35:19] INFO root fetch - main [MainThread]: End processing [sae-lens]: success
+[2024-05-11 14:35:19] INFO root fetch - main [MainThread]: Store serial: [23161077]
