@@ -16077,3 +16077,48 @@
 [2024-05-11 14:11:27] INFO root fetch - processPackages [skoolkit]: Remove: archive file [/home/abi/fetcher/tmp/skoolkit-9.2.tar.gz]
 [2024-05-11 14:11:27] INFO root fetch - main [MainThread]: End processing [skoolkit]: success
 [2024-05-11 14:11:27] INFO root fetch - main [MainThread]: Store serial: [23160836]
+[2024-05-11 14:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160836]
+[2024-05-11 14:13:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: punchballz
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: posterioristicallyz
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vdg
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mptradelib
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cuminai
+[2024-05-11 14:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: scrapeddit
+[2024-05-11 14:13:36] INFO root fetch - processPackages [vdg]: New version: [0.2.0] Old Version: [0.1.3]
+[2024-05-11 14:13:36] INFO root fetch - processPackages [scrapeddit]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 14:13:36] INFO root fetch - processPackages [mptradelib]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 14:13:36] WARNING root fetch - processPackages [cuminai]: Skipping, unable to determine old version
+[2024-05-11 14:13:36] INFO root fetch - main [MainThread]: End processing [cuminai] error
+[2024-05-11 14:13:36] INFO root fetch - processPackages [punchballz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:13:36] WARNING root fetch - processPackages [posterioristicallyz]: Skipping, unable to determine old version
+[2024-05-11 14:13:36] INFO root fetch - main [MainThread]: End processing [posterioristicallyz] error
+[2024-05-11 14:13:36] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/98/52/22d74d6aa55e839af426bb4ac06eac6caf3f078c795c14b68c5d1640c468/vdg-0.1.3.tar.gz
+[2024-05-11 14:13:36] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/c4/82/8be0d194afe04ebf397c88f44fb8809ba43aa89da02eabb329612387f22d/scrapeddit-0.1.8.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/97/f8/34c966ad2665c5f0e419147dcc705a464d95c17ece4cc4b9b34426cd71b4/mptradelib-0.4.0.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [punchballz]: Downloading https://files.pythonhosted.org/packages/db/fc/67cf62af6397dd4eed0672f9d83a2d8e861f5aed64d7481ebf33b25b8abd/punchballz-1.1.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [vdg]: Downloading https://files.pythonhosted.org/packages/f5/b4/9fcacad63df7bd05b3ba39d0044a1ccbf4374e1d12d890360dd4c311c2d2/vdg-0.2.0.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [vdg]: executing diffoscope
+[2024-05-11 14:13:37] INFO root fetch - processPackages [vdg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vdg-0.1.3.tar.gz tmp/vdg-0.2.0.tar.gz --markdown 20240511/v/vdg/0.1.3-0.2.0/README.md --exclude *.pyd
+[2024-05-11 14:13:37] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/1b/c1/884f7adbfc38316bf2d832e3fb8d69460afbeaf0d0825d0fabb108e01334/scrapeddit-0.1.9.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [mptradelib]: Downloading https://files.pythonhosted.org/packages/ea/46/d067d64cf782a77c526b63092cb0b09d490fe80556459761b5f3d77cfde7/mptradelib-0.4.1.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 14:13:37] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.1.8.tar.gz tmp/scrapeddit-0.1.9.tar.gz --markdown 20240511/s/scrapeddit/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 14:13:37] INFO root fetch - processPackages [punchballz]: Downloading https://files.pythonhosted.org/packages/14/fa/521095cd1f31d7af2de7d162c26e07adcb0071d92692804a939644804ba5/punchballz-2.1.tar.gz
+[2024-05-11 14:13:37] INFO root fetch - processPackages [mptradelib]: executing diffoscope
+[2024-05-11 14:13:37] INFO root fetch - processPackages [mptradelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mptradelib-0.4.0.tar.gz tmp/mptradelib-0.4.1.tar.gz --markdown 20240511/m/mptradelib/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 14:13:37] INFO root fetch - processPackages [punchballz]: executing diffoscope
+[2024-05-11 14:13:37] INFO root fetch - processPackages [punchballz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/punchballz-1.1.tar.gz tmp/punchballz-2.1.tar.gz --markdown 20240511/p/punchballz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:13:37] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.1.3.tar.gz]
+[2024-05-11 14:13:37] INFO root fetch - processPackages [vdg]: Remove: archive file [/home/abi/fetcher/tmp/vdg-0.2.0.tar.gz]
+[2024-05-11 14:13:37] INFO root fetch - main [MainThread]: End processing [vdg]: success
+[2024-05-11 14:13:38] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.8.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.1.9.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 14:13:38] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.4.0.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - processPackages [mptradelib]: Remove: archive file [/home/abi/fetcher/tmp/mptradelib-0.4.1.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - main [MainThread]: End processing [mptradelib]: success
+[2024-05-11 14:13:38] INFO root fetch - processPackages [punchballz]: Remove: archive file [/home/abi/fetcher/tmp/punchballz-1.1.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - processPackages [punchballz]: Remove: archive file [/home/abi/fetcher/tmp/punchballz-2.1.tar.gz]
+[2024-05-11 14:13:38] INFO root fetch - main [MainThread]: End processing [punchballz]: success
+[2024-05-11 14:13:38] INFO root fetch - main [MainThread]: Store serial: [23160856]
