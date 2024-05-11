@@ -17579,3 +17579,55 @@
 [2024-05-11 16:05:40] INFO root fetch - processPackages [rotundatez]: Remove: archive file [/home/abi/fetcher/tmp/rotundatez-2.1.tar.gz]
 [2024-05-11 16:05:40] INFO root fetch - main [MainThread]: End processing [rotundatez]: success
 [2024-05-11 16:05:40] INFO root fetch - main [MainThread]: Store serial: [23161719]
+[2024-05-11 16:07:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161719]
+[2024-05-11 16:07:48] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: glpic
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: REMLA-Test-Lib-version
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: carbon-registry-indexer
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tm_parser
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tm_parser
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tm_parser
+[2024-05-11 16:07:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ciscoconfparse2
+[2024-05-11 16:07:49] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 16:07:49] INFO root fetch - processPackages [carbon-registry-indexer]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 16:07:49] INFO root fetch - processPackages [glpic]: New version: [99.0.202405102340] Old Version: [99.0.202405102337]
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 16:07:49] WARNING root fetch - processPackages [REMLA-Test-Lib-version]: Skipping, unable to determine old version
+[2024-05-11 16:07:49] INFO root fetch - main [MainThread]: End processing [REMLA-Test-Lib-version] error
+[2024-05-11 16:07:49] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/31/86/98fd7a13cc60a2f11124f77ef4b2375e60e494a759baa33c33c0b2431210/carbon-registry-indexer-0.1.6.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/cf/35/a00a8345a18aa0d9cd8abbd5b221401002b71684ba5d95be617f5829dedb/glpic-99.0.202405102337.tar.gz
+[2024-05-11 16:07:49] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-05-11 16:07:49] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [carbon-registry-indexer]: Downloading https://files.pythonhosted.org/packages/d2/d7/5ccde11a3855e0732b38d3fffe06f663e5dc7ab37be6764ef7cb434ef8a3/carbon-registry-indexer-0.1.7.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [glpic]: Downloading https://files.pythonhosted.org/packages/7a/4f/d3aafdab7bcdb6fd9735d59e11b8ea0962442c5d7b92460ad4367b7a709d/glpic-99.0.202405102340.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [glpic]: executing diffoscope
+[2024-05-11 16:07:49] INFO root fetch - processPackages [glpic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/glpic-99.0.202405102337.tar.gz tmp/glpic-99.0.202405102340.tar.gz --markdown 20240511/g/glpic/99.0.202405102337-99.0.202405102340/README.md --exclude *.pyd
+[2024-05-11 16:07:49] INFO root fetch - processPackages [carbon-registry-indexer]: executing diffoscope
+[2024-05-11 16:07:49] INFO root fetch - processPackages [carbon-registry-indexer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carbon-registry-indexer-0.1.6.tar.gz tmp/carbon-registry-indexer-0.1.7.tar.gz --markdown 20240511/c/carbon-registry-indexer/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 16:07:49] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 16:07:50] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.6.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - processPackages [carbon-registry-indexer]: Remove: archive file [/home/abi/fetcher/tmp/carbon-registry-indexer-0.1.7.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer]: success
+[2024-05-11 16:07:50] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102337.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - processPackages [glpic]: Remove: archive file [/home/abi/fetcher/tmp/glpic-99.0.202405102340.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: End processing [glpic]: success
+[2024-05-11 16:07:50] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 16:07:50] INFO root fetch - main [MainThread]: Store serial: [23161738]
