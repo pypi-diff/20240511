@@ -19917,3 +19917,36 @@
 [2024-05-11 18:37:27] INFO root fetch - processPackages [testpulse-uploader]: Remove: archive file [/home/abi/fetcher/tmp/testpulse-uploader-0.0.9.tar.gz]
 [2024-05-11 18:37:27] INFO root fetch - main [MainThread]: End processing [testpulse-uploader]: success
 [2024-05-11 18:37:27] INFO root fetch - main [MainThread]: Store serial: [23162731]
+[2024-05-11 18:39:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162731]
+[2024-05-11 18:39:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: opm
+[2024-05-11 18:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: plutobook
+[2024-05-11 18:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: veneerz
+[2024-05-11 18:39:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: subtitle-filter
+[2024-05-11 18:39:35] INFO root fetch - processPackages [plutobook]: New version: [0.0.9] Old Version: [0.0.11]
+[2024-05-11 18:39:35] WARNING root fetch - processPackages [veneerz]: Skipping, unable to determine old version
+[2024-05-11 18:39:35] INFO root fetch - main [MainThread]: End processing [veneerz] error
+[2024-05-11 18:39:35] INFO root fetch - processPackages [opm]: New version: [2024.4] Old Version: [2023.4.1]
+[2024-05-11 18:39:35] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/b1/16/0e2537ad7a116fb21ec48942a49caf5f26232ad62e36e065f0d49067e8e8/plutobook-0.0.11.tar.gz
+[2024-05-11 18:39:35] INFO root fetch - processPackages [subtitle-filter]: New version: [1.4.9] Old Version: [1.4.8]
+[2024-05-11 18:39:36] INFO root fetch - processPackages [opm]: Downloading https://files.pythonhosted.org/packages/a8/0e/2c75a4896f91010cdcb2a2dac69168d25ed7f3b162c647c1bbb58c25dac7/opm-2023.4.1-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 18:39:36] INFO root fetch - processPackages [plutobook]: Downloading https://files.pythonhosted.org/packages/f7/69/e2ce3f48aac41182551c9f451f36da07e8c87677c80bb6043d83cfbc05d6/plutobook-0.0.9.tar.gz
+[2024-05-11 18:39:36] INFO root fetch - processPackages [subtitle-filter]: Downloading https://files.pythonhosted.org/packages/c7/8f/8516e624b8d282533588d1e9a7a4e53f3c6adf8476f8565c8d7467c8eabb/subtitle-filter-1.4.8.tar.gz
+[2024-05-11 18:39:36] INFO root fetch - processPackages [plutobook]: executing diffoscope
+[2024-05-11 18:39:36] INFO root fetch - processPackages [plutobook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plutobook-0.0.11.tar.gz tmp/plutobook-0.0.9.tar.gz --markdown 20240511/p/plutobook/0.0.11-0.0.9/README.md --exclude *.pyd
+[2024-05-11 18:39:36] INFO root fetch - processPackages [subtitle-filter]: Downloading https://files.pythonhosted.org/packages/98/df/6b1457f5046de5fa2eea0c7273ac8cdbb3aa764a20eb47aae76f03fa004a/subtitle-filter-1.4.9.tar.gz
+[2024-05-11 18:39:36] INFO root fetch - processPackages [subtitle-filter]: executing diffoscope
+[2024-05-11 18:39:36] INFO root fetch - processPackages [subtitle-filter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subtitle-filter-1.4.8.tar.gz tmp/subtitle-filter-1.4.9.tar.gz --markdown 20240511/s/subtitle-filter/1.4.8-1.4.9/README.md --exclude *.pyd
+[2024-05-11 18:39:36] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.11.tar.gz]
+[2024-05-11 18:39:36] INFO root fetch - processPackages [plutobook]: Remove: archive file [/home/abi/fetcher/tmp/plutobook-0.0.9.tar.gz]
+[2024-05-11 18:39:36] INFO root fetch - main [MainThread]: End processing [plutobook]: success
+[2024-05-11 18:39:37] INFO root fetch - processPackages [subtitle-filter]: Remove: archive file [/home/abi/fetcher/tmp/subtitle-filter-1.4.8.tar.gz]
+[2024-05-11 18:39:37] INFO root fetch - processPackages [subtitle-filter]: Remove: archive file [/home/abi/fetcher/tmp/subtitle-filter-1.4.9.tar.gz]
+[2024-05-11 18:39:37] INFO root fetch - main [MainThread]: End processing [subtitle-filter]: success
+[2024-05-11 18:39:40] INFO root fetch - processPackages [opm]: Downloading https://files.pythonhosted.org/packages/1c/e8/6e4f07bee3eda6e6e118b8ec6510f1a190b5cfe123db4873ed5f6fabc477/opm-2024.4-cp39-cp39-manylinux2014_x86_64.whl
+[2024-05-11 18:39:42] INFO root fetch - processPackages [opm]: executing diffoscope
+[2024-05-11 18:39:42] INFO root fetch - processPackages [opm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opm-2023.4.1-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/opm-2024.4-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20240511/o/opm/2023.4.1-2024.4/README.md --exclude *.pyd
+[2024-05-11 18:40:50] INFO root fetch - processPackages [opm]: Remove: archive file [/home/abi/fetcher/tmp/opm-2023.4.1-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 18:40:50] INFO root fetch - processPackages [opm]: Remove: archive file [/home/abi/fetcher/tmp/opm-2024.4-cp39-cp39-manylinux2014_x86_64.whl.zip]
+[2024-05-11 18:40:50] INFO root fetch - main [MainThread]: End processing [opm]: success
+[2024-05-11 18:40:50] INFO root fetch - main [MainThread]: Store serial: [23162752]
