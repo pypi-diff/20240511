@@ -23216,3 +23216,36 @@
 [2024-05-11 22:30:02] INFO root fetch - processPackages [shadowsocks-manager]: Remove: archive file [/home/abi/fetcher/tmp/shadowsocks_manager-0.1.7.tar.gz]
 [2024-05-11 22:30:02] INFO root fetch - main [MainThread]: End processing [shadowsocks-manager]: success
 [2024-05-11 22:30:02] INFO root fetch - main [MainThread]: Store serial: [23164330]
+[2024-05-11 22:32:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164330]
+[2024-05-11 22:32:11] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ValeraLib
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nchuchain
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: AlgoGrade
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: AsyncKandinsky
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ValeraLib]: New version: [1.4.2] Old Version: [1.4.1]
+[2024-05-11 22:32:11] ERROR root fetch - processPackages [nchuchain]: Unable to get metadata: No such project 'nchuchain'
+[2024-05-11 22:32:11] INFO root fetch - main [MainThread]: End processing [nchuchain] error
+[2024-05-11 22:32:11] INFO root fetch - processPackages [AsyncKandinsky]: New version: [2.0.2] Old Version: [2.0.1]
+[2024-05-11 22:32:11] INFO root fetch - processPackages [AlgoGrade]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 22:32:11] INFO root fetch - processPackages [ValeraLib]: Downloading https://files.pythonhosted.org/packages/ab/f2/b177b1031bf2afc378b13301c08aa773e8b80ddc09449b16fd86ce032fc0/valeralib-1.4.1.tar.gz
+[2024-05-11 22:32:11] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/33/90/206b7f28a7e746ae76657cb69afe50035d6aff011258781e2ece9766581b/AlgoGrade-1.0.8.tar.gz
+[2024-05-11 22:32:11] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/f9/93/1d6b383de864f2ac4f3d4ca45b5e3740b2a9dfadc6fae84490d5fe156019/AsyncKandinsky-2.0.1.tar.gz
+[2024-05-11 22:32:12] INFO root fetch - processPackages [ValeraLib]: Downloading https://files.pythonhosted.org/packages/ce/23/948a4bf6a59823116481821ba1612768e590fb963691cffb732c2d3ae416/valeralib-1.4.2.tar.gz
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AsyncKandinsky]: Downloading https://files.pythonhosted.org/packages/c1/1f/c90918fb3b792a3c7c2a61972fba6ca69209972c034c6af3e353e8105984/AsyncKandinsky-2.0.2.tar.gz
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-11 22:32:12] INFO root fetch - processPackages [ValeraLib]: executing diffoscope
+[2024-05-11 22:32:12] INFO root fetch - processPackages [ValeraLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/valeralib-1.4.1.tar.gz tmp/valeralib-1.4.2.tar.gz --markdown 20240511/V/ValeraLib/1.4.1-1.4.2/README.md --exclude *.pyd
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AsyncKandinsky]: executing diffoscope
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AsyncKandinsky]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AsyncKandinsky-2.0.1.tar.gz tmp/AsyncKandinsky-2.0.2.tar.gz --markdown 20240511/A/AsyncKandinsky/2.0.1-2.0.2/README.md --exclude *.pyd
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.8.tar.gz tmp/AlgoGrade-1.0.9.tar.gz --markdown 20240511/A/AlgoGrade/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-2.0.1.tar.gz]
+[2024-05-11 22:32:12] INFO root fetch - processPackages [AsyncKandinsky]: Remove: archive file [/home/abi/fetcher/tmp/AsyncKandinsky-2.0.2.tar.gz]
+[2024-05-11 22:32:12] INFO root fetch - main [MainThread]: End processing [AsyncKandinsky]: success
+[2024-05-11 22:32:13] INFO root fetch - processPackages [ValeraLib]: Remove: archive file [/home/abi/fetcher/tmp/valeralib-1.4.1.tar.gz]
+[2024-05-11 22:32:13] INFO root fetch - processPackages [ValeraLib]: Remove: archive file [/home/abi/fetcher/tmp/valeralib-1.4.2.tar.gz]
+[2024-05-11 22:32:13] INFO root fetch - main [MainThread]: End processing [ValeraLib]: success
+[2024-05-11 22:32:13] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.8.tar.gz]
+[2024-05-11 22:32:13] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-11 22:32:13] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-11 22:32:13] INFO root fetch - main [MainThread]: Store serial: [23164350]
