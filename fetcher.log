@@ -17344,3 +17344,54 @@
 [2024-05-11 15:48:16] INFO root fetch - processPackages [pysqa]: Remove: archive file [/home/abi/fetcher/tmp/pysqa-0.1.9.tar.gz]
 [2024-05-11 15:48:16] INFO root fetch - main [MainThread]: End processing [pysqa]: success
 [2024-05-11 15:48:16] INFO root fetch - main [MainThread]: Store serial: [23161485]
+[2024-05-11 15:50:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161485]
+[2024-05-11 15:50:24] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zensols.deeplearn
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dowedz
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: retrenchmentsz
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marcel
+[2024-05-11 15:50:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pytrydan
+[2024-05-11 15:50:24] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 15:50:24] INFO root fetch - processPackages [marcel]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-11 15:50:24] INFO root fetch - processPackages [zensols.deeplearn]: New version: [1.9.0] Old Version: [1.8.1]
+[2024-05-11 15:50:24] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 15:50:24] INFO root fetch - processPackages [retrenchmentsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 15:50:24] WARNING root fetch - processPackages [dowedz]: Skipping, unable to determine old version
+[2024-05-11 15:50:24] INFO root fetch - main [MainThread]: End processing [dowedz] error
+[2024-05-11 15:50:24] INFO root fetch - processPackages [pytrydan]: New version: [0.6.1] Old Version: [0.6.0]
+[2024-05-11 15:50:24] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/3a/07/c626f18aa14df89e1f194e115cbffaa2d99bcfc736f7251795e2f889c0d6/marcel-0.9.8-py3-none-any.whl
+[2024-05-11 15:50:24] INFO root fetch - processPackages [zensols.deeplearn]: Downloading https://files.pythonhosted.org/packages/b1/25/f9bb627489273fe9c208c00c383e187504d4cf5080873c804fa811167696/zensols.deeplearn-1.8.1-py3-none-any.whl
+[2024-05-11 15:50:25] INFO root fetch - processPackages [retrenchmentsz]: Downloading https://files.pythonhosted.org/packages/aa/23/bfdb2fc5365db69d818f3a1de40d8b2d8f09b22de7b722728b757d614cd6/retrenchmentsz-1.1.tar.gz
+[2024-05-11 15:50:25] INFO root fetch - processPackages [pytrydan]: Downloading https://files.pythonhosted.org/packages/16/de/5ae276b404238196d4d99ff6e5a29e0ee8cd2be787c547eb3cb8a946a9a5/pytrydan-0.6.0.tar.gz
+[2024-05-11 15:50:25] INFO root fetch - processPackages [marcel]: Downloading https://files.pythonhosted.org/packages/4b/3d/fd4bc1e7906ea7d19b4ad1010b8dce76e96202ac6886bcab6162db5f992f/marcel-0.9.9-py3-none-any.whl
+[2024-05-11 15:50:25] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 15:50:25] INFO root fetch - processPackages [marcel]: executing diffoscope
+[2024-05-11 15:50:25] INFO root fetch - processPackages [marcel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marcel-0.9.8-py3-none-any.whl.zip tmp/marcel-0.9.9-py3-none-any.whl.zip --markdown 20240511/m/marcel/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-11 15:50:25] INFO root fetch - processPackages [retrenchmentsz]: Downloading https://files.pythonhosted.org/packages/d8/c4/cf2f14ccda909f25802cf94a603398d6d8d377a7946bc1c1883775d5dd61/retrenchmentsz-2.1.tar.gz
+[2024-05-11 15:50:25] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 15:50:25] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 15:50:25] INFO root fetch - processPackages [zensols.deeplearn]: Downloading https://files.pythonhosted.org/packages/61/f7/9f7d8893abf3e256645f2921a301b8f15da3226559770faa228d0e559fd8/zensols.deeplearn-1.9.0-py3-none-any.whl
+[2024-05-11 15:50:25] INFO root fetch - processPackages [pytrydan]: Downloading https://files.pythonhosted.org/packages/2f/22/3d52428bb8ebd4b41c1c67dc900333e28e30165721b441da4c6d358ce9af/pytrydan-0.6.1.tar.gz
+[2024-05-11 15:50:25] INFO root fetch - processPackages [retrenchmentsz]: executing diffoscope
+[2024-05-11 15:50:25] INFO root fetch - processPackages [retrenchmentsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/retrenchmentsz-1.1.tar.gz tmp/retrenchmentsz-2.1.tar.gz --markdown 20240511/r/retrenchmentsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 15:50:25] INFO root fetch - processPackages [pytrydan]: executing diffoscope
+[2024-05-11 15:50:25] INFO root fetch - processPackages [pytrydan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrydan-0.6.0.tar.gz tmp/pytrydan-0.6.1.tar.gz --markdown 20240511/p/pytrydan/0.6.0-0.6.1/README.md --exclude *.pyd
+[2024-05-11 15:50:25] INFO root fetch - processPackages [zensols.deeplearn]: executing diffoscope
+[2024-05-11 15:50:25] INFO root fetch - processPackages [zensols.deeplearn]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensols.deeplearn-1.8.1-py3-none-any.whl.zip tmp/zensols.deeplearn-1.9.0-py3-none-any.whl.zip --markdown 20240511/z/zensols.deeplearn/1.8.1-1.9.0/README.md --exclude *.pyd
+[2024-05-11 15:50:26] INFO root fetch - processPackages [pytrydan]: Remove: archive file [/home/abi/fetcher/tmp/pytrydan-0.6.0.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - processPackages [pytrydan]: Remove: archive file [/home/abi/fetcher/tmp/pytrydan-0.6.1.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [pytrydan]: success
+[2024-05-11 15:50:26] INFO root fetch - processPackages [retrenchmentsz]: Remove: archive file [/home/abi/fetcher/tmp/retrenchmentsz-1.1.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - processPackages [retrenchmentsz]: Remove: archive file [/home/abi/fetcher/tmp/retrenchmentsz-2.1.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [retrenchmentsz]: success
+[2024-05-11 15:50:26] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 15:50:26] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.8-py3-none-any.whl.zip]
+[2024-05-11 15:50:26] INFO root fetch - processPackages [marcel]: Remove: archive file [/home/abi/fetcher/tmp/marcel-0.9.9-py3-none-any.whl.zip]
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [marcel]: success
+[2024-05-11 15:50:26] INFO root fetch - processPackages [zensols.deeplearn]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deeplearn-1.8.1-py3-none-any.whl.zip]
+[2024-05-11 15:50:26] INFO root fetch - processPackages [zensols.deeplearn]: Remove: archive file [/home/abi/fetcher/tmp/zensols.deeplearn-1.9.0-py3-none-any.whl.zip]
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: End processing [zensols.deeplearn]: success
+[2024-05-11 15:50:26] INFO root fetch - main [MainThread]: Store serial: [23161501]
