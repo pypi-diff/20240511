@@ -11995,3 +11995,27 @@
 [2024-05-11 09:35:41] WARNING root fetch - processPackages [create-django-project-sundar12]: Skipping, unable to determine old version
 [2024-05-11 09:35:41] INFO root fetch - main [MainThread]: End processing [create-django-project-sundar12] error
 [2024-05-11 09:35:41] INFO root fetch - main [MainThread]: Store serial: [23158691]
+[2024-05-11 09:37:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158691]
+[2024-05-11 09:37:50] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: stauropegiaz
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: envex
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ngstoolkits
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ngstoolkits]: New version: [1.0.0rc8] Old Version: [1.0.0rc7]
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ngstoolkits]: Downloading https://files.pythonhosted.org/packages/0c/cb/ac434020be07784e11960fecfbc8f6470e6815735e784d07bf884ef6eda1/ngstoolkits-1.0.0rc7.tar.gz
+[2024-05-11 09:37:50] WARNING root fetch - processPackages [stauropegiaz]: Skipping, unable to determine old version
+[2024-05-11 09:37:50] INFO root fetch - main [MainThread]: End processing [stauropegiaz] error
+[2024-05-11 09:37:50] INFO root fetch - processPackages [envex]: New version: [3.1.0] Old Version: [3.0.3]
+[2024-05-11 09:37:50] INFO root fetch - processPackages [envex]: Downloading https://files.pythonhosted.org/packages/58/1f/7e9c55730bdbad03c7bc51462a0d715661d78eabaa3b73ab79943315bd3b/envex-3.0.3.tar.gz
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ngstoolkits]: Downloading https://files.pythonhosted.org/packages/7b/0c/2dcda17fab3da25f1ee884bbce77517dcaf5f864247c2d27619c9ea37bcc/ngstoolkits-1.0.0rc8.tar.gz
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ngstoolkits]: executing diffoscope
+[2024-05-11 09:37:50] INFO root fetch - processPackages [ngstoolkits]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ngstoolkits-1.0.0rc7.tar.gz tmp/ngstoolkits-1.0.0rc8.tar.gz --markdown 20240511/n/ngstoolkits/1.0.0rc7-1.0.0rc8/README.md --exclude *.pyd
+[2024-05-11 09:37:50] INFO root fetch - processPackages [envex]: Downloading https://files.pythonhosted.org/packages/8f/29/1227a112c194b8704b79ceeaeb81907ab70108fb09c11cb7760ad9d3f1c2/envex-3.1.0.tar.gz
+[2024-05-11 09:37:51] INFO root fetch - processPackages [envex]: executing diffoscope
+[2024-05-11 09:37:51] INFO root fetch - processPackages [envex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/envex-3.0.3.tar.gz tmp/envex-3.1.0.tar.gz --markdown 20240511/e/envex/3.0.3-3.1.0/README.md --exclude *.pyd
+[2024-05-11 09:37:51] INFO root fetch - processPackages [ngstoolkits]: Remove: archive file [/home/abi/fetcher/tmp/ngstoolkits-1.0.0rc7.tar.gz]
+[2024-05-11 09:37:51] INFO root fetch - processPackages [ngstoolkits]: Remove: archive file [/home/abi/fetcher/tmp/ngstoolkits-1.0.0rc8.tar.gz]
+[2024-05-11 09:37:51] INFO root fetch - main [MainThread]: End processing [ngstoolkits]: success
+[2024-05-11 09:37:51] INFO root fetch - processPackages [envex]: Remove: archive file [/home/abi/fetcher/tmp/envex-3.0.3.tar.gz]
+[2024-05-11 09:37:51] INFO root fetch - processPackages [envex]: Remove: archive file [/home/abi/fetcher/tmp/envex-3.1.0.tar.gz]
+[2024-05-11 09:37:51] INFO root fetch - main [MainThread]: End processing [envex]: success
+[2024-05-11 09:37:51] INFO root fetch - main [MainThread]: Store serial: [23158702]
