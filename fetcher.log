@@ -22872,3 +22872,39 @@
 [2024-05-11 22:01:48] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.4.tar.gz]
 [2024-05-11 22:01:48] INFO root fetch - main [MainThread]: End processing [auto-circuit]: success
 [2024-05-11 22:01:48] INFO root fetch - main [MainThread]: Store serial: [23164151]
+[2024-05-11 22:03:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164151]
+[2024-05-11 22:03:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 22:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yabte
+[2024-05-11 22:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: climweb-wdqms
+[2024-05-11 22:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tushiez
+[2024-05-11 22:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hommocksz
+[2024-05-11 22:03:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autoboot
+[2024-05-11 22:03:57] INFO root fetch - processPackages [yabte]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 22:03:57] ERROR root fetch - processPackages [climweb-wdqms]: Unable to get metadata: No such project 'climweb-wdqms'
+[2024-05-11 22:03:57] INFO root fetch - main [MainThread]: End processing [climweb-wdqms] error
+[2024-05-11 22:03:57] INFO root fetch - processPackages [autoboot]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 22:03:57] WARNING root fetch - processPackages [hommocksz]: Skipping, unable to determine old version
+[2024-05-11 22:03:57] INFO root fetch - processPackages [tushiez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 22:03:57] INFO root fetch - main [MainThread]: End processing [hommocksz] error
+[2024-05-11 22:03:57] INFO root fetch - processPackages [yabte]: Downloading https://files.pythonhosted.org/packages/c9/5b/734c93b411e8558f1ef5330f91fa6405e44be6867a8c6f7d61f1db65802c/yabte-0.4.0.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [autoboot]: Downloading https://files.pythonhosted.org/packages/27/a9/18fb15074e6b392f28b6f94dd7f599f26976dbfe7e65c30107f9dbae96e1/autoboot-0.8.0.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [tushiez]: Downloading https://files.pythonhosted.org/packages/d1/69/246c59ce72d7eb861ec1b270186c1c442bf48b1e73ee4916b3ef316e696d/tushiez-1.1.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [autoboot]: Downloading https://files.pythonhosted.org/packages/4f/9f/4079badff222712e59d6f09485a5e4753cec341544db69f44b43d65db5cd/autoboot-0.9.0.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [tushiez]: Downloading https://files.pythonhosted.org/packages/31/61/c0fb182d8c64f255612b41259c668e1ced91e1fe8e52aee730a65329a28b/tushiez-2.1.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [yabte]: Downloading https://files.pythonhosted.org/packages/10/21/0de0b5a8b5abdef7f00ae3258312b1183e3480957f25f93bcbdfeb046374/yabte-0.4.1.tar.gz
+[2024-05-11 22:03:57] INFO root fetch - processPackages [tushiez]: executing diffoscope
+[2024-05-11 22:03:57] INFO root fetch - processPackages [tushiez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tushiez-1.1.tar.gz tmp/tushiez-2.1.tar.gz --markdown 20240511/t/tushiez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 22:03:57] INFO root fetch - processPackages [autoboot]: executing diffoscope
+[2024-05-11 22:03:57] INFO root fetch - processPackages [autoboot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoboot-0.8.0.tar.gz tmp/autoboot-0.9.0.tar.gz --markdown 20240511/a/autoboot/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 22:03:57] INFO root fetch - processPackages [yabte]: executing diffoscope
+[2024-05-11 22:03:57] INFO root fetch - processPackages [yabte]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yabte-0.4.0.tar.gz tmp/yabte-0.4.1.tar.gz --markdown 20240511/y/yabte/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 22:03:58] INFO root fetch - processPackages [tushiez]: Remove: archive file [/home/abi/fetcher/tmp/tushiez-1.1.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - processPackages [tushiez]: Remove: archive file [/home/abi/fetcher/tmp/tushiez-2.1.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - main [MainThread]: End processing [tushiez]: success
+[2024-05-11 22:03:58] INFO root fetch - processPackages [autoboot]: Remove: archive file [/home/abi/fetcher/tmp/autoboot-0.8.0.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - processPackages [autoboot]: Remove: archive file [/home/abi/fetcher/tmp/autoboot-0.9.0.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - main [MainThread]: End processing [autoboot]: success
+[2024-05-11 22:03:58] INFO root fetch - processPackages [yabte]: Remove: archive file [/home/abi/fetcher/tmp/yabte-0.4.0.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - processPackages [yabte]: Remove: archive file [/home/abi/fetcher/tmp/yabte-0.4.1.tar.gz]
+[2024-05-11 22:03:58] INFO root fetch - main [MainThread]: End processing [yabte]: success
+[2024-05-11 22:03:58] INFO root fetch - main [MainThread]: Store serial: [23164170]
