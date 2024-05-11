@@ -17123,3 +17123,26 @@
 [2024-05-11 15:28:43] INFO root fetch - processPackages [refusingz]: Remove: archive file [/home/abi/fetcher/tmp/refusingz-2.1.tar.gz]
 [2024-05-11 15:28:43] INFO root fetch - main [MainThread]: End processing [refusingz]: success
 [2024-05-11 15:28:43] INFO root fetch - main [MainThread]: Store serial: [23161397]
+[2024-05-11 15:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161397]
+[2024-05-11 15:30:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 15:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: new2
+[2024-05-11 15:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: venereologistz
+[2024-05-11 15:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySimultan
+[2024-05-11 15:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bellek
+[2024-05-11 15:30:52] INFO root fetch - processPackages [bellek]: New version: [0.99.0] Old Version: [0.98.0]
+[2024-05-11 15:30:52] WARNING root fetch - processPackages [venereologistz]: Skipping, unable to determine old version
+[2024-05-11 15:30:52] INFO root fetch - main [MainThread]: End processing [venereologistz] error
+[2024-05-11 15:30:52] WARNING root fetch - processPackages [new2]: Skipping, unable to determine old version
+[2024-05-11 15:30:52] INFO root fetch - main [MainThread]: End processing [new2] error
+[2024-05-11 15:30:52] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/26/4a/fccdc0d1ab493a2f8ff61dc7887c3dfae74cbb14da793a33c1372d57e126/bellek-0.98.0.tar.gz
+[2024-05-11 15:30:52] INFO root fetch - processPackages [PySimultan]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: Downloading https://files.pythonhosted.org/packages/1a/2c/d10c9a7db975b462d348e242a313e4d15e3c11363d764f5a1f40176b3e42/bellek-0.99.0.tar.gz
+[2024-05-11 15:30:53] INFO root fetch - processPackages [PySimultan]: Downloading https://files.pythonhosted.org/packages/af/32/688a1d4aa1de4f1c99c4d64851941aff18828b488f36d2f8ea0f395e4538/pysimultan-0.2.3.tar.gz
+[2024-05-11 15:30:53] WARNING root fetch - processPackages [PySimultan]: Skipping package: exceeds size limit 12483367>=10485760
+[2024-05-11 15:30:53] INFO root fetch - main [MainThread]: End processing [PySimultan] error
+[2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: executing diffoscope
+[2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bellek-0.98.0.tar.gz tmp/bellek-0.99.0.tar.gz --markdown 20240511/b/bellek/0.98.0-0.99.0/README.md --exclude *.pyd
+[2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.98.0.tar.gz]
+[2024-05-11 15:30:53] INFO root fetch - processPackages [bellek]: Remove: archive file [/home/abi/fetcher/tmp/bellek-0.99.0.tar.gz]
+[2024-05-11 15:30:53] INFO root fetch - main [MainThread]: End processing [bellek]: success
+[2024-05-11 15:30:53] INFO root fetch - main [MainThread]: Store serial: [23161411]
