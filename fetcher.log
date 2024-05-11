@@ -11758,3 +11758,36 @@
 [2024-05-11 09:13:57] INFO root fetch - processPackages [dolphie]: Remove: archive file [/home/abi/fetcher/tmp/dolphie-5.0.2.tar.gz]
 [2024-05-11 09:13:57] INFO root fetch - main [MainThread]: End processing [dolphie]: success
 [2024-05-11 09:13:57] INFO root fetch - main [MainThread]: Store serial: [23158584]
+[2024-05-11 09:16:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158584]
+[2024-05-11 09:16:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 09:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aily-sdk
+[2024-05-11 09:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unsophisticationz
+[2024-05-11 09:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PlumedToHTML
+[2024-05-11 09:16:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: otiorhynchidaez
+[2024-05-11 09:16:06] INFO root fetch - processPackages [aily-sdk]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 09:16:06] INFO root fetch - processPackages [PlumedToHTML]: New version: [0.9] Old Version: [0.8]
+[2024-05-11 09:16:06] WARNING root fetch - processPackages [unsophisticationz]: Skipping, unable to determine old version
+[2024-05-11 09:16:06] INFO root fetch - main [MainThread]: End processing [unsophisticationz] error
+[2024-05-11 09:16:06] INFO root fetch - processPackages [aily-sdk]: Downloading https://files.pythonhosted.org/packages/3a/9c/7370a51727952e3bb2421ad16f506a532c93a2a26a36e473d6909d897f7a/aily_sdk-0.8.0.tar.gz
+[2024-05-11 09:16:06] INFO root fetch - processPackages [PlumedToHTML]: Downloading https://files.pythonhosted.org/packages/81/95/5ed2d773d95e4fcba932cfdf67091abff694ff6ee4f10462588473535c97/PlumedToHTML-0.8.tar.gz
+[2024-05-11 09:16:06] INFO root fetch - processPackages [otiorhynchidaez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:16:07] INFO root fetch - processPackages [aily-sdk]: Downloading https://files.pythonhosted.org/packages/08/a5/02998881950b9af6457fa27bef1feb81834a40abb70ef2b9a1b61a067920/aily_sdk-0.9.0.tar.gz
+[2024-05-11 09:16:07] INFO root fetch - processPackages [PlumedToHTML]: Downloading https://files.pythonhosted.org/packages/d0/90/42341120e8c5d44ef5413125d4ea0ec3c0e2ca685bfe6358a3c5aa6fc7f9/PlumedToHTML-0.9.tar.gz
+[2024-05-11 09:16:07] INFO root fetch - processPackages [otiorhynchidaez]: Downloading https://files.pythonhosted.org/packages/2a/4e/ebb12277765de0a3e10bab1599d4d74c0ee5033cf3eb18f515fcd7b83883/otiorhynchidaez-1.1.tar.gz
+[2024-05-11 09:16:07] INFO root fetch - processPackages [aily-sdk]: executing diffoscope
+[2024-05-11 09:16:07] INFO root fetch - processPackages [aily-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aily_sdk-0.8.0.tar.gz tmp/aily_sdk-0.9.0.tar.gz --markdown 20240511/a/aily-sdk/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 09:16:07] INFO root fetch - processPackages [PlumedToHTML]: executing diffoscope
+[2024-05-11 09:16:07] INFO root fetch - processPackages [PlumedToHTML]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PlumedToHTML-0.8.tar.gz tmp/PlumedToHTML-0.9.tar.gz --markdown 20240511/P/PlumedToHTML/0.8-0.9/README.md --exclude *.pyd
+[2024-05-11 09:16:07] INFO root fetch - processPackages [otiorhynchidaez]: Downloading https://files.pythonhosted.org/packages/b8/ac/c804a17f60cbaf131e74366c2cdfd66132e909c940339014c83e81ab5ffd/otiorhynchidaez-2.1.tar.gz
+[2024-05-11 09:16:07] INFO root fetch - processPackages [otiorhynchidaez]: executing diffoscope
+[2024-05-11 09:16:07] INFO root fetch - processPackages [otiorhynchidaez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/otiorhynchidaez-1.1.tar.gz tmp/otiorhynchidaez-2.1.tar.gz --markdown 20240511/o/otiorhynchidaez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:16:07] INFO root fetch - processPackages [aily-sdk]: Remove: archive file [/home/abi/fetcher/tmp/aily_sdk-0.8.0.tar.gz]
+[2024-05-11 09:16:07] INFO root fetch - processPackages [aily-sdk]: Remove: archive file [/home/abi/fetcher/tmp/aily_sdk-0.9.0.tar.gz]
+[2024-05-11 09:16:07] INFO root fetch - main [MainThread]: End processing [aily-sdk]: success
+[2024-05-11 09:16:07] INFO root fetch - processPackages [PlumedToHTML]: Remove: archive file [/home/abi/fetcher/tmp/PlumedToHTML-0.8.tar.gz]
+[2024-05-11 09:16:07] INFO root fetch - processPackages [PlumedToHTML]: Remove: archive file [/home/abi/fetcher/tmp/PlumedToHTML-0.9.tar.gz]
+[2024-05-11 09:16:07] INFO root fetch - main [MainThread]: End processing [PlumedToHTML]: success
+[2024-05-11 09:16:08] INFO root fetch - processPackages [otiorhynchidaez]: Remove: archive file [/home/abi/fetcher/tmp/otiorhynchidaez-1.1.tar.gz]
+[2024-05-11 09:16:08] INFO root fetch - processPackages [otiorhynchidaez]: Remove: archive file [/home/abi/fetcher/tmp/otiorhynchidaez-2.1.tar.gz]
+[2024-05-11 09:16:08] INFO root fetch - main [MainThread]: End processing [otiorhynchidaez]: success
+[2024-05-11 09:16:08] INFO root fetch - main [MainThread]: Store serial: [23158599]
