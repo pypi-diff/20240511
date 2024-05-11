@@ -16476,3 +16476,32 @@
 [2024-05-11 14:41:53] INFO root fetch - processPackages [bigdl-llm]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_llm-2.5.0b20240510-py3-none-win_amd64.whl.zip]
 [2024-05-11 14:41:53] INFO root fetch - main [MainThread]: End processing [bigdl-llm]: success
 [2024-05-11 14:41:53] INFO root fetch - main [MainThread]: Store serial: [23161120]
+[2024-05-11 14:43:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161120]
+[2024-05-11 14:44:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rapturouslyz
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ciscoconfparse2
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: preliminaryz
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: unitradeapi
+[2024-05-11 14:44:02] INFO root fetch - processPackages [unitradeapi]: New version: [0.121] Old Version: [0.120]
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ciscoconfparse2]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 14:44:02] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/36/27/780783971b90227716811bb6ae5fc901c85dd5e56e662a0d0f41a0723888/unitradeapi-0.120.tar.gz
+[2024-05-11 14:44:02] WARNING root fetch - processPackages [preliminaryz]: Skipping, unable to determine old version
+[2024-05-11 14:44:02] INFO root fetch - main [MainThread]: End processing [preliminaryz] error
+[2024-05-11 14:44:02] INFO root fetch - processPackages [rapturouslyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:44:02] INFO root fetch - processPackages [ciscoconfparse2]: Downloading https://files.pythonhosted.org/packages/26/c5/d7a1bbb15197a52ec641fb3455b2bad160571ef08bbb87f61c8e83e45163/ciscoconfparse2-0.7.8.tar.gz
+[2024-05-11 14:44:02] WARNING root fetch - processPackages [ciscoconfparse2]: Skipping package: exceeds size limit 12946892>=10485760
+[2024-05-11 14:44:02] INFO root fetch - main [MainThread]: End processing [ciscoconfparse2] error
+[2024-05-11 14:44:02] INFO root fetch - processPackages [rapturouslyz]: Downloading https://files.pythonhosted.org/packages/08/a3/9f98489a31e697d2b78762ba779bc823cf8437b50af38a2c890ea80df357/rapturouslyz-1.1.tar.gz
+[2024-05-11 14:44:02] INFO root fetch - processPackages [unitradeapi]: Downloading https://files.pythonhosted.org/packages/a9/9c/89e93c5a2b8eba51e9fad8c6be2182606fc2205177a07b644d161120a9b7/unitradeapi-0.121.tar.gz
+[2024-05-11 14:44:02] INFO root fetch - processPackages [unitradeapi]: executing diffoscope
+[2024-05-11 14:44:02] INFO root fetch - processPackages [unitradeapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unitradeapi-0.120.tar.gz tmp/unitradeapi-0.121.tar.gz --markdown 20240511/u/unitradeapi/0.120-0.121/README.md --exclude *.pyd
+[2024-05-11 14:44:02] INFO root fetch - processPackages [rapturouslyz]: Downloading https://files.pythonhosted.org/packages/8a/84/d44e434ba1bd190c00d195876619c9fb0a0f56df89fd08b59aaeeb1e55d5/rapturouslyz-2.1.tar.gz
+[2024-05-11 14:44:02] INFO root fetch - processPackages [rapturouslyz]: executing diffoscope
+[2024-05-11 14:44:02] INFO root fetch - processPackages [rapturouslyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapturouslyz-1.1.tar.gz tmp/rapturouslyz-2.1.tar.gz --markdown 20240511/r/rapturouslyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:44:03] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.120.tar.gz]
+[2024-05-11 14:44:03] INFO root fetch - processPackages [unitradeapi]: Remove: archive file [/home/abi/fetcher/tmp/unitradeapi-0.121.tar.gz]
+[2024-05-11 14:44:03] INFO root fetch - main [MainThread]: End processing [unitradeapi]: success
+[2024-05-11 14:44:03] INFO root fetch - processPackages [rapturouslyz]: Remove: archive file [/home/abi/fetcher/tmp/rapturouslyz-1.1.tar.gz]
+[2024-05-11 14:44:03] INFO root fetch - processPackages [rapturouslyz]: Remove: archive file [/home/abi/fetcher/tmp/rapturouslyz-2.1.tar.gz]
+[2024-05-11 14:44:03] INFO root fetch - main [MainThread]: End processing [rapturouslyz]: success
+[2024-05-11 14:44:03] INFO root fetch - main [MainThread]: Store serial: [23161133]
