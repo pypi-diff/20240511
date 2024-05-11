@@ -12856,3 +12856,51 @@
 [2024-05-11 10:43:31] INFO root fetch - processPackages [kuzu]: Remove: archive file [/home/abi/fetcher/tmp/kuzu-0.4.2.dev4-cp39-cp39-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.zip]
 [2024-05-11 10:43:31] INFO root fetch - main [MainThread]: End processing [kuzu]: success
 [2024-05-11 10:43:31] INFO root fetch - main [MainThread]: Store serial: [23159112]
+[2024-05-11 10:45:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159112]
+[2024-05-11 10:45:39] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 10:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aguirre
+[2024-05-11 10:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tfp-nightly
+[2024-05-11 10:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pervagatez
+[2024-05-11 10:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: auth-middleware
+[2024-05-11 10:45:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tf-nightly-cpu
+[2024-05-11 10:45:39] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2024-05-11 10:45:39] INFO root fetch - processPackages [aguirre]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 10:45:39] INFO root fetch - processPackages [pervagatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:45:39] INFO root fetch - processPackages [auth-middleware]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 10:45:39] INFO root fetch - processPackages [tf-nightly-cpu]: New version: [2.17.0.dev20240511] Old Version: [2.17.0.dev20240510]
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2024-05-11 10:45:40] INFO root fetch - processPackages [aguirre]: Downloading https://files.pythonhosted.org/packages/0e/8d/06d499bfc9c7322c6c6a08b4684a370138c86f9c116e9c9d9f4d4dde53ed/aguirre-0.1.0.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [pervagatez]: Downloading https://files.pythonhosted.org/packages/c5/bb/b4d5c24caa6601faf95e9b949f2e09780eb0964fbe6cabd5ff55d80feea1/pervagatez-1.1.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/32/b4/6c4021d6f31e5fa3a39e800cdd613ab846250768017a00bbbd1b90e9597d/auth_middleware-0.1.8.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/d0/f8/604bb1aeb6799959e643a61f78c948a54fd890c6d0464eb8ebd826a0da0e/tf_nightly_cpu-2.17.0.dev20240510-cp39-cp39-win_amd64.whl
+[2024-05-11 10:45:40] INFO root fetch - processPackages [aguirre]: Downloading https://files.pythonhosted.org/packages/f6/d5/59bce51861d205da331314d114ea0774238ea3f66a68f77589ad9b5a9a61/aguirre-0.1.1.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [pervagatez]: Downloading https://files.pythonhosted.org/packages/be/10/86f1d2f3995ff7a1e261b824577a2bb6bbbbfc9c579b66b8e020ca3e46b2/pervagatez-2.1.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tf-nightly-cpu]: Downloading https://files.pythonhosted.org/packages/4f/67/225479b8337f5f2c9ca482d97d986ca4569e972d3119d5db388306cfba52/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl
+[2024-05-11 10:45:40] INFO root fetch - processPackages [aguirre]: executing diffoscope
+[2024-05-11 10:45:40] INFO root fetch - processPackages [aguirre]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aguirre-0.1.0.tar.gz tmp/aguirre-0.1.1.tar.gz --markdown 20240511/a/aguirre/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 10:45:40] INFO root fetch - processPackages [auth-middleware]: Downloading https://files.pythonhosted.org/packages/82/09/803273cd28dac3a0477244fbe67e635462cb4604351a1141f5d544d12f50/auth_middleware-0.1.9.tar.gz
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2024-05-11 10:45:40] INFO root fetch - processPackages [pervagatez]: executing diffoscope
+[2024-05-11 10:45:40] INFO root fetch - processPackages [pervagatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pervagatez-1.1.tar.gz tmp/pervagatez-2.1.tar.gz --markdown 20240511/p/pervagatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:45:40] INFO root fetch - processPackages [auth-middleware]: executing diffoscope
+[2024-05-11 10:45:40] INFO root fetch - processPackages [auth-middleware]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auth_middleware-0.1.8.tar.gz tmp/auth_middleware-0.1.9.tar.gz --markdown 20240511/a/auth-middleware/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tf-nightly-cpu]: executing diffoscope
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tf-nightly-cpu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_nightly_cpu-2.17.0.dev20240510-cp39-cp39-win_amd64.whl.zip tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip --markdown 20240511/t/tf-nightly-cpu/2.17.0.dev20240510-2.17.0.dev20240511/README.md --exclude *.pyd
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2024-05-11 10:45:40] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20240511/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/README.md --exclude *.pyd
+[2024-05-11 10:45:41] INFO root fetch - processPackages [pervagatez]: Remove: archive file [/home/abi/fetcher/tmp/pervagatez-1.1.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - processPackages [pervagatez]: Remove: archive file [/home/abi/fetcher/tmp/pervagatez-2.1.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - main [MainThread]: End processing [pervagatez]: success
+[2024-05-11 10:45:41] INFO root fetch - processPackages [aguirre]: Remove: archive file [/home/abi/fetcher/tmp/aguirre-0.1.0.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - processPackages [aguirre]: Remove: archive file [/home/abi/fetcher/tmp/aguirre-0.1.1.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - main [MainThread]: End processing [aguirre]: success
+[2024-05-11 10:45:41] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.8.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - processPackages [auth-middleware]: Remove: archive file [/home/abi/fetcher/tmp/auth_middleware-0.1.9.tar.gz]
+[2024-05-11 10:45:41] INFO root fetch - main [MainThread]: End processing [auth-middleware]: success
+[2024-05-11 10:45:41] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240510-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 10:45:41] INFO root fetch - processPackages [tf-nightly-cpu]: Remove: archive file [/home/abi/fetcher/tmp/tf_nightly_cpu-2.17.0.dev20240511-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 10:45:41] INFO root fetch - main [MainThread]: End processing [tf-nightly-cpu]: success
+[2024-05-11 10:45:43] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip]
+[2024-05-11 10:45:43] INFO root fetch - processPackages [tfp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip]
+[2024-05-11 10:45:43] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2024-05-11 10:45:43] INFO root fetch - main [MainThread]: Store serial: [23159131]
