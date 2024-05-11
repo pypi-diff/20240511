@@ -3212,3 +3212,24 @@
 [2024-05-11 02:52:34] INFO root fetch - processPackages [windmill-api]: Remove: archive file [/home/abi/fetcher/tmp/windmill_api-1.99.0.tar.gz]
 [2024-05-11 02:52:34] INFO root fetch - main [MainThread]: End processing [windmill-api]: success
 [2024-05-11 02:52:34] INFO root fetch - main [MainThread]: Store serial: [23154922]
+[2024-05-11 02:54:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154922]
+[2024-05-11 02:54:42] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 02:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rtorrent-rpc
+[2024-05-11 02:54:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-lambda-layer-curl
+[2024-05-11 02:54:42] INFO root fetch - processPackages [rtorrent-rpc]: New version: [0.6.2] Old Version: [0.6.1]
+[2024-05-11 02:54:42] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-11 02:54:42] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/53/42/9c00ecc131b74eccc9081350a3f4ccfc06c9e2f9410232d60aee08288971/rtorrent_rpc-0.6.1.tar.gz
+[2024-05-11 02:54:42] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/c8/e2/39c88cfa63f418383f3a383b2b62dfe801cbfd5c53de4d005804c19d76dc/cdk-lambda-layer-curl-2.0.98.tar.gz
+[2024-05-11 02:54:42] INFO root fetch - processPackages [rtorrent-rpc]: Downloading https://files.pythonhosted.org/packages/02/ed/e7e41dd6e42a9f507ba9e46ea78e4016fceb1589de3006a7d2030dae49ce/rtorrent_rpc-0.6.2.tar.gz
+[2024-05-11 02:54:43] INFO root fetch - processPackages [rtorrent-rpc]: executing diffoscope
+[2024-05-11 02:54:43] INFO root fetch - processPackages [rtorrent-rpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rtorrent_rpc-0.6.1.tar.gz tmp/rtorrent_rpc-0.6.2.tar.gz --markdown 20240511/r/rtorrent-rpc/0.6.1-0.6.2/README.md --exclude *.pyd
+[2024-05-11 02:54:43] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Downloading https://files.pythonhosted.org/packages/2e/02/9e7ab6bc6191e2cbe6705c1530f695ed00527096133668b731e72d6a6445/cdk-lambda-layer-curl-2.0.99.tar.gz
+[2024-05-11 02:54:43] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2024-05-11 02:54:43] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20240511/c/cdk-lambda-layer-curl/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-11 02:54:43] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.6.1.tar.gz]
+[2024-05-11 02:54:43] INFO root fetch - processPackages [rtorrent-rpc]: Remove: archive file [/home/abi/fetcher/tmp/rtorrent_rpc-0.6.2.tar.gz]
+[2024-05-11 02:54:43] INFO root fetch - main [MainThread]: End processing [rtorrent-rpc]: success
+[2024-05-11 02:54:44] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.98.tar.gz]
+[2024-05-11 02:54:44] INFO root fetch - processPackages [cdk-lambda-layer-curl]: Remove: archive file [/home/abi/fetcher/tmp/cdk-lambda-layer-curl-2.0.99.tar.gz]
+[2024-05-11 02:54:44] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2024-05-11 02:54:44] INFO root fetch - main [MainThread]: Store serial: [23154933]
