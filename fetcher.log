@@ -11911,3 +11911,27 @@
 [2024-05-11 09:26:59] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.9.tar.gz]
 [2024-05-11 09:26:59] INFO root fetch - main [MainThread]: End processing [jcvi]: success
 [2024-05-11 09:26:59] INFO root fetch - main [MainThread]: Store serial: [23158659]
+[2024-05-11 09:29:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158659]
+[2024-05-11 09:29:09] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 09:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jcvi
+[2024-05-11 09:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: csv2notion-neo
+[2024-05-11 09:29:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docker-container-domain-connector
+[2024-05-11 09:29:09] INFO root fetch - processPackages [jcvi]: New version: [1.4.9] Old Version: [1.4.5]
+[2024-05-11 09:29:09] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/3b/c7/8f87e09c1bc53218c88e3cbd40b736a113062e49e0ba98afc3c204ac19b0/jcvi-1.4.5.tar.gz
+[2024-05-11 09:29:09] WARNING root fetch - processPackages [docker-container-domain-connector]: Skipping, unable to determine old version
+[2024-05-11 09:29:09] INFO root fetch - main [MainThread]: End processing [docker-container-domain-connector] error
+[2024-05-11 09:29:09] INFO root fetch - processPackages [csv2notion-neo]: New version: [1.2.5] Old Version: [1.2.4]
+[2024-05-11 09:29:09] INFO root fetch - processPackages [csv2notion-neo]: Downloading https://files.pythonhosted.org/packages/3c/4f/b29e233ab912bb74e8c226f5e71376ac5e795f2420a9840719cc6b5f25c6/csv2notion_neo-1.2.4.tar.gz
+[2024-05-11 09:29:09] INFO root fetch - processPackages [jcvi]: Downloading https://files.pythonhosted.org/packages/5d/24/5036675f79005ad20ca239e90bec15f8b40ead5317b7ed2daa5bf2021117/jcvi-1.4.9.tar.gz
+[2024-05-11 09:29:09] INFO root fetch - processPackages [jcvi]: executing diffoscope
+[2024-05-11 09:29:09] INFO root fetch - processPackages [jcvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jcvi-1.4.5.tar.gz tmp/jcvi-1.4.9.tar.gz --markdown 20240511/j/jcvi/1.4.5-1.4.9/README.md --exclude *.pyd
+[2024-05-11 09:29:09] INFO root fetch - processPackages [csv2notion-neo]: Downloading https://files.pythonhosted.org/packages/29/a8/ee181fa4952923e042dcbf932f45acf737dc009910f8edd8cda9281e06b4/csv2notion_neo-1.2.5.tar.gz
+[2024-05-11 09:29:10] INFO root fetch - processPackages [csv2notion-neo]: executing diffoscope
+[2024-05-11 09:29:10] INFO root fetch - processPackages [csv2notion-neo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/csv2notion_neo-1.2.4.tar.gz tmp/csv2notion_neo-1.2.5.tar.gz --markdown 20240511/c/csv2notion-neo/1.2.4-1.2.5/README.md --exclude *.pyd
+[2024-05-11 09:29:10] INFO root fetch - processPackages [csv2notion-neo]: Remove: archive file [/home/abi/fetcher/tmp/csv2notion_neo-1.2.4.tar.gz]
+[2024-05-11 09:29:10] INFO root fetch - processPackages [csv2notion-neo]: Remove: archive file [/home/abi/fetcher/tmp/csv2notion_neo-1.2.5.tar.gz]
+[2024-05-11 09:29:10] INFO root fetch - main [MainThread]: End processing [csv2notion-neo]: success
+[2024-05-11 09:29:12] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.5.tar.gz]
+[2024-05-11 09:29:12] INFO root fetch - processPackages [jcvi]: Remove: archive file [/home/abi/fetcher/tmp/jcvi-1.4.9.tar.gz]
+[2024-05-11 09:29:12] INFO root fetch - main [MainThread]: End processing [jcvi]: success
+[2024-05-11 09:29:12] INFO root fetch - main [MainThread]: Store serial: [23158669]
