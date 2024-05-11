@@ -9334,3 +9334,54 @@
 [2024-05-11 05:50:08] INFO root fetch - processPackages [mastodonsz]: Remove: archive file [/home/abi/fetcher/tmp/mastodonsz-2.1.tar.gz]
 [2024-05-11 05:50:08] INFO root fetch - main [MainThread]: End processing [mastodonsz]: success
 [2024-05-11 05:50:08] INFO root fetch - main [MainThread]: Store serial: [23157126]
+[2024-05-11 05:52:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157126]
+[2024-05-11 05:52:17] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: myf-face-recognition
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lusid-sdk
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: macrosmaticz
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lyypymysql
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mlpr
+[2024-05-11 05:52:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cubetools
+[2024-05-11 05:52:17] INFO root fetch - processPackages [mlpr]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 05:52:17] INFO root fetch - processPackages [lusid-sdk]: New version: [2.1.99] Old Version: [2.1.98]
+[2024-05-11 05:52:17] INFO root fetch - processPackages [lyypymysql]: New version: [1.2] Old Version: [1.1]
+[2024-05-11 05:52:17] WARNING root fetch - processPackages [macrosmaticz]: Skipping, unable to determine old version
+[2024-05-11 05:52:17] INFO root fetch - main [MainThread]: End processing [macrosmaticz] error
+[2024-05-11 05:52:17] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/6a/86/a6b175ad77fa196cb69b2936b66bac851a0e0775fafe75aaa7ea59361abf/mlpr-0.1.3.tar.gz
+[2024-05-11 05:52:17] INFO root fetch - processPackages [myf-face-recognition]: New version: [0.9] Old Version: [0.8]
+[2024-05-11 05:52:17] INFO root fetch - processPackages [cubetools]: New version: [0.7.7] Old Version: [0.7.6]
+[2024-05-11 05:52:17] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/15/56/0526e0499d9414b698f8c1260f8aac2e2a3209a0dc66949600aff2c28199/lusid_sdk-2.1.98.tar.gz
+[2024-05-11 05:52:17] INFO root fetch - processPackages [lyypymysql]: Downloading https://files.pythonhosted.org/packages/ed/90/ec0da1fb82d0414f69f1942fea9a6d9b76c51f639f8947f72295981e6160/lyypymysql-1.1.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [cubetools]: Downloading https://files.pythonhosted.org/packages/fa/e7/e5529b87835ebfbfb84909a881e73f1a81cb33d652515564ba1fa8621251/cubetools-0.7.6.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [myf-face-recognition]: Downloading https://files.pythonhosted.org/packages/fd/9e/f6bb52c8c7f17dbeb9945f85bab284c8eeffda82ada0522466f82bd7f5f9/myf_face_recognition-0.8.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lusid-sdk]: Downloading https://files.pythonhosted.org/packages/2c/d6/b08aeae5c238a1e7a8cd3ba4a93d6c65acd45e317b927d0f06091d65479d/lusid_sdk-2.1.99.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/06/dc/9598387383db68304b47294da3d5f8973c2d6a3812aed8aa37720b08f408/mlpr-0.1.4.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lyypymysql]: Downloading https://files.pythonhosted.org/packages/eb/88/1f5e895ee7343c3a042e09dacfae7c6d4b4685fa7b8da058f5b9aa7423f8/lyypymysql-1.2.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-11 05:52:18] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.3.tar.gz tmp/mlpr-0.1.4.tar.gz --markdown 20240511/m/mlpr/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lyypymysql]: executing diffoscope
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lyypymysql]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lyypymysql-1.1.tar.gz tmp/lyypymysql-1.2.tar.gz --markdown 20240511/l/lyypymysql/1.1-1.2/README.md --exclude *.pyd
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lusid-sdk]: executing diffoscope
+[2024-05-11 05:52:18] INFO root fetch - processPackages [lusid-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lusid_sdk-2.1.98.tar.gz tmp/lusid_sdk-2.1.99.tar.gz --markdown 20240511/l/lusid-sdk/2.1.98-2.1.99/README.md --exclude *.pyd
+[2024-05-11 05:52:18] INFO root fetch - processPackages [myf-face-recognition]: Downloading https://files.pythonhosted.org/packages/80/71/75029b51bf454bdcb985e1cac1d64fd55f178b9895ffd6de459c418f9371/myf_face_recognition-0.9.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [cubetools]: Downloading https://files.pythonhosted.org/packages/82/49/92b736a94596fb3c61e96066fcae275d661e93608ae0c549c72fc15927e2/cubetools-0.7.7.tar.gz
+[2024-05-11 05:52:18] INFO root fetch - processPackages [myf-face-recognition]: executing diffoscope
+[2024-05-11 05:52:18] INFO root fetch - processPackages [myf-face-recognition]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/myf_face_recognition-0.8.tar.gz tmp/myf_face_recognition-0.9.tar.gz --markdown 20240511/m/myf-face-recognition/0.8-0.9/README.md --exclude *.pyd
+[2024-05-11 05:52:18] INFO root fetch - processPackages [cubetools]: executing diffoscope
+[2024-05-11 05:52:18] INFO root fetch - processPackages [cubetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cubetools-0.7.6.tar.gz tmp/cubetools-0.7.7.tar.gz --markdown 20240511/c/cubetools/0.7.6-0.7.7/README.md --exclude *.pyd
+[2024-05-11 05:52:19] INFO root fetch - processPackages [lyypymysql]: Remove: archive file [/home/abi/fetcher/tmp/lyypymysql-1.1.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - processPackages [lyypymysql]: Remove: archive file [/home/abi/fetcher/tmp/lyypymysql-1.2.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - main [MainThread]: End processing [lyypymysql]: success
+[2024-05-11 05:52:19] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.3.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.4.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-11 05:52:19] INFO root fetch - processPackages [myf-face-recognition]: Remove: archive file [/home/abi/fetcher/tmp/myf_face_recognition-0.8.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - processPackages [myf-face-recognition]: Remove: archive file [/home/abi/fetcher/tmp/myf_face_recognition-0.9.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - main [MainThread]: End processing [myf-face-recognition]: success
+[2024-05-11 05:52:19] INFO root fetch - processPackages [cubetools]: Remove: archive file [/home/abi/fetcher/tmp/cubetools-0.7.6.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - processPackages [cubetools]: Remove: archive file [/home/abi/fetcher/tmp/cubetools-0.7.7.tar.gz]
+[2024-05-11 05:52:19] INFO root fetch - main [MainThread]: End processing [cubetools]: success
+[2024-05-11 05:52:22] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.98.tar.gz]
+[2024-05-11 05:52:22] INFO root fetch - processPackages [lusid-sdk]: Remove: archive file [/home/abi/fetcher/tmp/lusid_sdk-2.1.99.tar.gz]
+[2024-05-11 05:52:22] INFO root fetch - main [MainThread]: End processing [lusid-sdk]: success
+[2024-05-11 05:52:22] INFO root fetch - main [MainThread]: Store serial: [23157143]
