@@ -9604,3 +9604,18 @@
 [2024-05-11 06:20:49] INFO root fetch - processPackages [metonymicallyz]: Remove: archive file [/home/abi/fetcher/tmp/metonymicallyz-2.1.tar.gz]
 [2024-05-11 06:20:49] INFO root fetch - main [MainThread]: End processing [metonymicallyz]: success
 [2024-05-11 06:20:49] INFO root fetch - main [MainThread]: Store serial: [23157217]
+[2024-05-11 06:22:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157217]
+[2024-05-11 06:22:58] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 06:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nepenthesz
+[2024-05-11 06:22:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyproject-fmt-rust
+[2024-05-11 06:22:58] WARNING root fetch - processPackages [nepenthesz]: Skipping, unable to determine old version
+[2024-05-11 06:22:58] INFO root fetch - main [MainThread]: End processing [nepenthesz] error
+[2024-05-11 06:22:58] INFO root fetch - processPackages [pyproject-fmt-rust]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 06:22:59] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/c4/b7/0955691063239f68f88b1fc9b49956e91d6e67c7516220190b269e0bc7b1/pyproject_fmt_rust-1.0.0.tar.gz
+[2024-05-11 06:22:59] INFO root fetch - processPackages [pyproject-fmt-rust]: Downloading https://files.pythonhosted.org/packages/9a/1b/589582988956f6a7b9a7d63985781ccadedf367891c1ad3e0b538963d101/pyproject_fmt_rust-1.0.1.tar.gz
+[2024-05-11 06:22:59] INFO root fetch - processPackages [pyproject-fmt-rust]: executing diffoscope
+[2024-05-11 06:22:59] INFO root fetch - processPackages [pyproject-fmt-rust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt_rust-1.0.0.tar.gz tmp/pyproject_fmt_rust-1.0.1.tar.gz --markdown 20240511/p/pyproject-fmt-rust/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 06:23:00] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.0.tar.gz]
+[2024-05-11 06:23:00] INFO root fetch - processPackages [pyproject-fmt-rust]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt_rust-1.0.1.tar.gz]
+[2024-05-11 06:23:00] INFO root fetch - main [MainThread]: End processing [pyproject-fmt-rust]: success
+[2024-05-11 06:23:00] INFO root fetch - main [MainThread]: Store serial: [23157233]
