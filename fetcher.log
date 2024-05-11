@@ -9391,3 +9391,9 @@
 [2024-05-11 05:54:31] WARNING root fetch - processPackages [mazedz]: Skipping, unable to determine old version
 [2024-05-11 05:54:31] INFO root fetch - main [MainThread]: End processing [mazedz] error
 [2024-05-11 05:54:31] INFO root fetch - main [MainThread]: Store serial: [23157145]
+[2024-05-11 05:56:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157145]
+[2024-05-11 05:56:39] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 05:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cossaeanz
+[2024-05-11 05:56:40] WARNING root fetch - processPackages [cossaeanz]: Skipping, unable to determine old version
+[2024-05-11 05:56:40] INFO root fetch - main [MainThread]: End processing [cossaeanz] error
+[2024-05-11 05:56:40] INFO root fetch - main [MainThread]: Store serial: [23157149]
