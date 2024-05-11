@@ -2651,3 +2651,118 @@
 [2024-05-11 02:25:36] INFO root fetch - processPackages [NMODL-nightly]: Remove: archive file [/home/abi/fetcher/tmp/NMODL_nightly-0.6.98-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip]
 [2024-05-11 02:25:36] INFO root fetch - main [MainThread]: End processing [NMODL-nightly]: success
 [2024-05-11 02:25:36] INFO root fetch - main [MainThread]: Store serial: [23154595]
+[2024-05-11 02:27:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154595]
+[2024-05-11 02:27:45] INFO root fetch - main [MainThread]: Found 14 changed packages
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: devon-agent
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: coiled
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-oci
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-serverless-clamscan
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-certbot-dns-route53
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: integripalliatez
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-ecs-service-extensions
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: OpenGeode-core
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: petrarchanz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: cdk-secret-manager-wrapper-layer
+[2024-05-11 02:27:45] INFO root fetch - processPackages [pulumi-oci]: New version: [1.9.0a1693981063] Old Version: [1.9.0a1693634572]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.6.99] Old Version: [2.6.98]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a99] Old Version: [2.0.1a98]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/02/f8/59b31ede3416e4e37062af605ed2293a67d7cfe3eec867258c58481c638d/pulumi_oci-1.9.0a1693634572.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [integripalliatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 02:27:45] WARNING root fetch - processPackages [petrarchanz]: Skipping, unable to determine old version
+[2024-05-11 02:27:45] INFO root fetch - processPackages [petrarchanz]: Start processing: dash-oflog-components
+[2024-05-11 02:27:45] INFO root fetch - main [MainThread]: End processing [petrarchanz] error
+[2024-05-11 02:27:45] INFO root fetch - processPackages [devon-agent]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [dash-oflog-components]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [OpenGeode-core]: New version: [9.10.4] Old Version: [14.19.4rc1]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/c9/ad/d7965da0f34d52de670def31464963b3971de03ac20cddf5eac577722b31/cdk-ecs-service-extensions-2.0.1a98.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/04/67/6fb0e00ee65986b766391e4327a7370cec35f8458c0c80507e3b56a79e57/cdk-serverless-clamscan-2.6.98.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/87/0b/f416b5cdfcc73fcb0e1d8e73d90f0fde8fa4a3042b87eef6a6f78630737b/dash_oflog_components-0.0.8.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [integripalliatez]: Downloading https://files.pythonhosted.org/packages/81/13/f7a61e7671f2570b4812dcba8d05bdc55e9d1d4cdb9f95b42e5e69e1f301/integripalliatez-1.1.tar.gz
+[2024-05-11 02:27:45] INFO root fetch - processPackages [coiled]: New version: [1.9.1.dev9] Old Version: [1.9.1.dev8]
+[2024-05-11 02:27:46] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/54/13/ae864c0a7d9753f4b1072a3d9773a6fa11f58a0766fe6acc1cd36d6dddb5/devon_agent-0.1.0.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [OpenGeode-core]: Downloading https://files.pythonhosted.org/packages/2f/e3/6493ddf3fa9a2d4a0dab447340a47632931290b9fa9798de59e3f527d94e/OpenGeode_core-14.19.4rc1-cp39-cp39-win_amd64.whl
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Downloading https://files.pythonhosted.org/packages/9c/f7/1a593c4ae0d3c80332cec251caad8f13a27842299475718ad186eea220ba/cdk-ecs-service-extensions-2.0.1a99.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-serverless-clamscan]: Downloading https://files.pythonhosted.org/packages/53/8f/ea40546b0f696761a1aaeee533ca8a5f53147131c3aa1f0aa1316112f44f/cdk-serverless-clamscan-2.6.99.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/00/91/545869a3cc999dbc9750aad345d775087610ebf834517c928a0d0e289c4e/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/8b/f4/0b8659ff282e21dd91120e7b693c909d64230d30799a6ecfcf808cad6c44/dash_oflog_components-0.0.9.tar.gz
+[2024-05-11 02:27:46] WARNING root fetch - processPackages [OpenGeode-core]: Skipping package: exceeds size limit 11735516>=10485760
+[2024-05-11 02:27:46] INFO root fetch - processPackages [OpenGeode-core]: Start processing: cdk-gitlab-runner
+[2024-05-11 02:27:46] INFO root fetch - main [MainThread]: End processing [OpenGeode-core] error
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.2.99] Old Version: [2.2.98]
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.6.98.tar.gz tmp/cdk-serverless-clamscan-2.6.99.tar.gz --markdown 20240511/c/cdk-serverless-clamscan/2.6.98-2.6.99/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz --markdown 20240511/c/cdk-ecs-service-extensions/2.0.1a98-2.0.1a99/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/8b/97/14337c08d9fc8bec2c9c7a5961519e141cf75d7dffa582bb987eecacefa4/coiled-1.9.1.dev8.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [integripalliatez]: Downloading https://files.pythonhosted.org/packages/51/9f/81c2bf22e2fd6d91e73fea136b436d00c5631acdaa046878d5bcabcef5c9/integripalliatez-2.1.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [dash-oflog-components]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [dash-oflog-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_oflog_components-0.0.8.tar.gz tmp/dash_oflog_components-0.0.9.tar.gz --markdown 20240511/d/dash-oflog-components/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240511/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [pulumi-oci]: Downloading https://files.pythonhosted.org/packages/77/93/cd3384a9ca236f6aa79a6f6fa7c94647e0588bdaf8a86d173cca47e31e21/pulumi_oci-1.9.0a1693981063.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/07/29/9f2cc8590770873b6073743e94ff15a2a7913eb0de3e6a4d2fc133008f62/cdk-gitlab-runner-2.2.98.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [integripalliatez]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [integripalliatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/integripalliatez-1.1.tar.gz tmp/integripalliatez-2.1.tar.gz --markdown 20240511/i/integripalliatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [devon-agent]: Downloading https://files.pythonhosted.org/packages/16/64/653ef1880d9b9d5ce80df4cd6f194f1e39c8ecd14906dd6a940971308a93/devon_agent-0.1.1.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Downloading https://files.pythonhosted.org/packages/c2/c5/a8a13bb72ea375e2ce99dd389e945478ce7d95d8628acf6db64f14f674f5/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-gitlab-runner]: Downloading https://files.pythonhosted.org/packages/16/61/e9f00b4e877a6352bd641de360f7577c27548fbcedc3aab19b1cf3852b9a/cdk-gitlab-runner-2.2.99.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20240511/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [coiled]: Downloading https://files.pythonhosted.org/packages/58/16/aec6b9100728dfee740792b7dd55fc6e56240fdadb5ef317a1d120e019d7/coiled-1.9.1.dev9.tar.gz
+[2024-05-11 02:27:46] INFO root fetch - processPackages [pulumi-oci]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [pulumi-oci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_oci-1.9.0a1693634572.tar.gz tmp/pulumi_oci-1.9.0a1693981063.tar.gz --markdown 20240511/p/pulumi-oci/1.9.0a1693634572-1.9.0a1693981063/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.2.98.tar.gz tmp/cdk-gitlab-runner-2.2.99.tar.gz --markdown 20240511/c/cdk-gitlab-runner/2.2.98-2.2.99/README.md --exclude *.pyd
+[2024-05-11 02:27:46] INFO root fetch - processPackages [coiled]: executing diffoscope
+[2024-05-11 02:27:46] INFO root fetch - processPackages [coiled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coiled-1.9.1.dev8.tar.gz tmp/coiled-1.9.1.dev9.tar.gz --markdown 20240511/c/coiled/1.9.1.dev8-1.9.1.dev9/README.md --exclude *.pyd
+[2024-05-11 02:27:47] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-11 02:27:47] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.0.tar.gz tmp/devon_agent-0.1.1.tar.gz --markdown 20240511/d/devon-agent/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a98.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Remove: archive file [/home/abi/fetcher/tmp/cdk-ecs-service-extensions-2.0.1a99.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-ecs-service-extensions]: Start processing: cdk-certbot-dns-route53
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [integripalliatez]: Remove: archive file [/home/abi/fetcher/tmp/integripalliatez-1.1.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [integripalliatez]: Remove: archive file [/home/abi/fetcher/tmp/integripalliatez-2.1.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [integripalliatez]: Start processing: devon-agent
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [integripalliatez]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.4.99] Old Version: [2.4.98]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.98.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-serverless-clamscan]: Remove: archive file [/home/abi/fetcher/tmp/cdk-serverless-clamscan-2.6.99.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [devon-agent]: New version: [0.1.1] Old Version: [0.1.0]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/7d/4d/b1cb6c8586d736f490cc5099e0220282aadb28d3aefc028cf88e6a183b06/cdk-certbot-dns-route53-2.4.98.tar.gz
+[2024-05-11 02:27:47] INFO root fetch - processPackages [devon-agent]: executing diffoscope
+[2024-05-11 02:27:47] INFO root fetch - processPackages [devon-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devon_agent-0.1.0.tar.gz tmp/devon_agent-0.1.1.tar.gz --markdown 20240511/d/devon-agent/0.1.0-0.1.1/README.md --exclude *.pyd
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.98.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-gitlab-runner]: Remove: archive file [/home/abi/fetcher/tmp/cdk-gitlab-runner-2.2.99.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Downloading https://files.pythonhosted.org/packages/28/81/76f66486f9d6f5aee6f787bb13f11ab8012414fd95d10756b575fd69b909/cdk-certbot-dns-route53-2.4.99.tar.gz
+[2024-05-11 02:27:47] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.8.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.9.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [dash-oflog-components]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Remove: archive file [/home/abi/fetcher/tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2024-05-11 02:27:47] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.4.98.tar.gz tmp/cdk-certbot-dns-route53-2.4.99.tar.gz --markdown 20240511/c/cdk-certbot-dns-route53/2.4.98-2.4.99/README.md --exclude *.pyd
+[2024-05-11 02:27:47] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev8.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - processPackages [coiled]: Remove: archive file [/home/abi/fetcher/tmp/coiled-1.9.1.dev9.tar.gz]
+[2024-05-11 02:27:47] INFO root fetch - main [MainThread]: End processing [coiled]: success
+[2024-05-11 02:27:48] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.0.tar.gz]
+[2024-05-11 02:27:48] INFO root fetch - processPackages [devon-agent]: Remove: archive file [/home/abi/fetcher/tmp/devon_agent-0.1.1.tar.gz]
+[2024-05-11 02:27:48] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-11 02:27:48] INFO root fetch - main [MainThread]: End processing [devon-agent]: success
+[2024-05-11 02:27:48] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.98.tar.gz]
+[2024-05-11 02:27:48] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Remove: archive file [/home/abi/fetcher/tmp/cdk-certbot-dns-route53-2.4.99.tar.gz]
+[2024-05-11 02:27:48] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2024-05-11 02:28:01] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693634572.tar.gz]
+[2024-05-11 02:28:01] INFO root fetch - processPackages [pulumi-oci]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_oci-1.9.0a1693981063.tar.gz]
+[2024-05-11 02:28:01] INFO root fetch - main [MainThread]: End processing [pulumi-oci]: success
+[2024-05-11 02:28:01] INFO root fetch - main [MainThread]: Store serial: [23154648]
