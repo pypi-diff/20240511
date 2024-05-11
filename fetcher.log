@@ -12402,3 +12402,33 @@
 [2024-05-11 10:06:38] INFO root fetch - processPackages [gmsofttest]: Remove: archive file [/home/abi/fetcher/tmp/gmsofttest-0.0.9.tar.gz]
 [2024-05-11 10:06:38] INFO root fetch - main [MainThread]: End processing [gmsofttest]: success
 [2024-05-11 10:06:38] INFO root fetch - main [MainThread]: Store serial: [23158880]
+[2024-05-11 10:08:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158880]
+[2024-05-11 10:08:46] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:08:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyglove
+[2024-05-11 10:08:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: partyistz
+[2024-05-11 10:08:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: QtHarmony
+[2024-05-11 10:08:46] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 10:08:46] INFO root fetch - processPackages [pyglove]: New version: [0.4.5.dev20240510] Old Version: [0.4.5.dev20240509]
+[2024-05-11 10:08:46] INFO root fetch - processPackages [partyistz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:08:46] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/1a/c4/0af6bd151c20533c9f11c24d65be874f6f9c10492875635f4a386af3cd41/qtharmony-0.1.3.tar.gz
+[2024-05-11 10:08:46] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/08/ca/00edeaabe928b39f53b97a3aa1c814e327a710a91c5e496e0133bc6d973f/pyglove-0.4.5.dev20240509.tar.gz
+[2024-05-11 10:08:47] INFO root fetch - processPackages [partyistz]: Downloading https://files.pythonhosted.org/packages/1c/9a/b8a86285de75293c06658593a79a0d706a965b9fcd4d15c12cb2d5ebdd25/partyistz-1.1.tar.gz
+[2024-05-11 10:08:47] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/f5/26/08fb82c5e191d6036cf9976fe1a3f77726b8b2ad41087f05ed36f3757041/qtharmony-0.1.4.tar.gz
+[2024-05-11 10:08:47] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/33/0e/16b37f00120ff421f78d0cd53f0bd531d2f2f8944620848df9e1f8768b85/pyglove-0.4.5.dev20240510.tar.gz
+[2024-05-11 10:08:47] INFO root fetch - processPackages [partyistz]: Downloading https://files.pythonhosted.org/packages/6f/0d/67e9a133e96237195968c6c9e030a3549f3a697a0900620b9d341462f9b5/partyistz-2.1.tar.gz
+[2024-05-11 10:08:47] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-11 10:08:47] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.3.tar.gz tmp/qtharmony-0.1.4.tar.gz --markdown 20240511/Q/QtHarmony/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 10:08:47] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2024-05-11 10:08:47] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.4.5.dev20240509.tar.gz tmp/pyglove-0.4.5.dev20240510.tar.gz --markdown 20240511/p/pyglove/0.4.5.dev20240509-0.4.5.dev20240510/README.md --exclude *.pyd
+[2024-05-11 10:08:47] INFO root fetch - processPackages [partyistz]: executing diffoscope
+[2024-05-11 10:08:47] INFO root fetch - processPackages [partyistz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/partyistz-1.1.tar.gz tmp/partyistz-2.1.tar.gz --markdown 20240511/p/partyistz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:08:48] INFO root fetch - processPackages [partyistz]: Remove: archive file [/home/abi/fetcher/tmp/partyistz-1.1.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - processPackages [partyistz]: Remove: archive file [/home/abi/fetcher/tmp/partyistz-2.1.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - main [MainThread]: End processing [partyistz]: success
+[2024-05-11 10:08:48] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.3.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.4.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-11 10:08:48] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240509.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240510.tar.gz]
+[2024-05-11 10:08:48] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2024-05-11 10:08:48] INFO root fetch - main [MainThread]: Store serial: [23158888]
