@@ -8969,3 +8969,69 @@
 [2024-05-11 05:28:25] INFO root fetch - processPackages [konfuzio-sdk]: Remove: archive file [/home/abi/fetcher/tmp/konfuzio_sdk-0.3.4.dev20240510100753.tar.gz]
 [2024-05-11 05:28:25] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2024-05-11 05:28:25] INFO root fetch - main [MainThread]: Store serial: [23156987]
+[2024-05-11 05:30:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156987]
+[2024-05-11 05:30:34] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sp-lh3-constant-contact
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpr
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: taskwarrior_flow
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensorset
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nlp-nightly
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hc-log-tools
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: reflex
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nourishinglyz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: duwi-smart-sdk
+[2024-05-11 05:30:34] INFO root fetch - processPackages [sp-lh3-constant-contact]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 05:30:34] INFO root fetch - processPackages [taskwarrior_flow]: New version: [0.4.0] Old Version: [0.3.2]
+[2024-05-11 05:30:34] INFO root fetch - processPackages [duwi-smart-sdk]: New version: [0.2.5] Old Version: [0.2.4]
+[2024-05-11 05:30:34] WARNING root fetch - processPackages [mlpr]: Skipping, unable to determine old version
+[2024-05-11 05:30:34] INFO root fetch - main [MainThread]: End processing [mlpr] error
+[2024-05-11 05:30:34] INFO root fetch - processPackages [keras-nlp-nightly]: New version: [0.9.0.dev2024041003] Old Version: [0.9.0.dev2024040803]
+[2024-05-11 05:30:34] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/33/cb/bf62d2154c244c681f538d55b4534aafbbe2b3d650d6add84e96832df5a8/taskwarrior_flow-0.3.2.tar.gz
+[2024-05-11 05:30:34] WARNING root fetch - processPackages [tensorset]: Skipping, unable to determine old version
+[2024-05-11 05:30:34] INFO root fetch - main [MainThread]: End processing [tensorset] error
+[2024-05-11 05:30:34] WARNING root fetch - processPackages [nourishinglyz]: Skipping, unable to determine old version
+[2024-05-11 05:30:34] INFO root fetch - main [MainThread]: End processing [nourishinglyz] error
+[2024-05-11 05:30:34] INFO root fetch - processPackages [hc-log-tools]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-05-11 05:30:34] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/e9/c8/7f581d2ae825faa0b7973bcc73c15e31c01c7e1f5c085a746ded34473011/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [reflex]: New version: [0.5.0a2] Old Version: [0.5.0a1]
+[2024-05-11 05:30:34] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/15/f6/03e37ff3378d17e3c742953dfccf33dddbe6a596a127c5d069df46c0e09b/duwi_smart_sdk-0.2.4.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/90/a2/d44dcdfcc9512fae53cf38156f3a7d4dde53fa7a11a8014cf0c29f759725/sp_lh3_constant_contact-0.1.2.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/c4/6b/3a0871dc7297d1a3fba8b448773e111f9a1a2b5983f5c2d7929ab89998fc/taskwarrior_flow-0.4.0.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/30/c8/c011d2ae789c8ce20a1ca29fabd339af6ee302a752671d19fb9d43e7fd91/hc_log_tools-1.2.1.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/c5/f2/a39901dae74525462524ce6bcfd2b66e61f32dd3d492f1264cf2db6c8679/reflex-0.5.0a1.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/d0/89/ec85477dd71d427401a28ad04081d86846e1186ac4e5246412b2f6bfcdb6/duwi_smart_sdk-0.2.5.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [keras-nlp-nightly]: Downloading https://files.pythonhosted.org/packages/74/95/bdeb12dec2c7c5b69ee11a239dcb09345f2e4180ca0e26e6f12bef8f5013/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz
+[2024-05-11 05:30:34] INFO root fetch - processPackages [taskwarrior_flow]: executing diffoscope
+[2024-05-11 05:30:34] INFO root fetch - processPackages [taskwarrior_flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskwarrior_flow-0.3.2.tar.gz tmp/taskwarrior_flow-0.4.0.tar.gz --markdown 20240511/t/taskwarrior_flow/0.3.2-0.4.0/README.md --exclude *.pyd
+[2024-05-11 05:30:34] INFO root fetch - processPackages [duwi-smart-sdk]: executing diffoscope
+[2024-05-11 05:30:34] INFO root fetch - processPackages [duwi-smart-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duwi_smart_sdk-0.2.4.tar.gz tmp/duwi_smart_sdk-0.2.5.tar.gz --markdown 20240511/d/duwi-smart-sdk/0.2.4-0.2.5/README.md --exclude *.pyd
+[2024-05-11 05:30:34] INFO root fetch - processPackages [keras-nlp-nightly]: executing diffoscope
+[2024-05-11 05:30:34] INFO root fetch - processPackages [keras-nlp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz --markdown 20240511/k/keras-nlp-nightly/0.9.0.dev2024040803-0.9.0.dev2024041003/README.md --exclude *.pyd
+[2024-05-11 05:30:34] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/9e/30/0eed91022097b58ffc7ac119dda893c63d5983ed9887f57f714a35ab8b1a/sp_lh3_constant_contact-0.1.3.tar.gz
+[2024-05-11 05:30:35] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/c8/21/9fa0c9cab7ca1b516922b4bda99bd1740f0751ae69a1765932e4a57bbdc4/hc_log_tools-1.2.3.tar.gz
+[2024-05-11 05:30:35] INFO root fetch - processPackages [sp-lh3-constant-contact]: executing diffoscope
+[2024-05-11 05:30:35] INFO root fetch - processPackages [sp-lh3-constant-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sp_lh3_constant_contact-0.1.2.tar.gz tmp/sp_lh3_constant_contact-0.1.3.tar.gz --markdown 20240511/s/sp-lh3-constant-contact/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 05:30:35] INFO root fetch - processPackages [reflex]: Downloading https://files.pythonhosted.org/packages/d6/58/1a4dbd1e26aa9ee9d8979c06fe18be37c0b8f4d7cbac61de3ae60fc61cb4/reflex-0.5.0a2.tar.gz
+[2024-05-11 05:30:35] INFO root fetch - processPackages [hc-log-tools]: executing diffoscope
+[2024-05-11 05:30:35] INFO root fetch - processPackages [hc-log-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hc_log_tools-1.2.1.tar.gz tmp/hc_log_tools-1.2.3.tar.gz --markdown 20240511/h/hc-log-tools/1.2.1-1.2.3/README.md --exclude *.pyd
+[2024-05-11 05:30:35] INFO root fetch - processPackages [reflex]: executing diffoscope
+[2024-05-11 05:30:35] INFO root fetch - processPackages [reflex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reflex-0.5.0a1.tar.gz tmp/reflex-0.5.0a2.tar.gz --markdown 20240511/r/reflex/0.5.0a1-0.5.0a2/README.md --exclude *.pyd
+[2024-05-11 05:30:35] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.3.2.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.4.0.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
+[2024-05-11 05:30:35] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.4.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.5.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
+[2024-05-11 05:30:35] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.2.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.3.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact]: success
+[2024-05-11 05:30:35] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.1.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.3.tar.gz]
+[2024-05-11 05:30:35] INFO root fetch - main [MainThread]: End processing [hc-log-tools]: success
+[2024-05-11 05:30:36] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024040803.tar.gz]
+[2024-05-11 05:30:36] INFO root fetch - processPackages [keras-nlp-nightly]: Remove: archive file [/home/abi/fetcher/tmp/keras-nlp-nightly-0.9.0.dev2024041003.tar.gz]
+[2024-05-11 05:30:36] INFO root fetch - main [MainThread]: End processing [keras-nlp-nightly]: success
+[2024-05-11 05:30:37] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.0a1.tar.gz]
+[2024-05-11 05:30:37] INFO root fetch - processPackages [reflex]: Remove: archive file [/home/abi/fetcher/tmp/reflex-0.5.0a2.tar.gz]
+[2024-05-11 05:30:37] INFO root fetch - main [MainThread]: End processing [reflex]: success
+[2024-05-11 05:30:37] INFO root fetch - main [MainThread]: Store serial: [23157017]
