@@ -23098,3 +23098,21 @@
 [2024-05-11 22:19:11] INFO root fetch - processPackages [unballastingz]: Remove: archive file [/home/abi/fetcher/tmp/unballastingz-2.1.tar.gz]
 [2024-05-11 22:19:11] INFO root fetch - main [MainThread]: End processing [unballastingz]: success
 [2024-05-11 22:19:11] INFO root fetch - main [MainThread]: Store serial: [23164259]
+[2024-05-11 22:21:15] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164259]
+[2024-05-11 22:21:19] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 22:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: git-cliff
+[2024-05-11 22:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: config-profile
+[2024-05-11 22:21:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: req12
+[2024-05-11 22:21:20] WARNING root fetch - processPackages [req12]: Skipping, unable to determine old version
+[2024-05-11 22:21:20] INFO root fetch - main [MainThread]: End processing [req12] error
+[2024-05-11 22:21:20] WARNING root fetch - processPackages [config-profile]: Skipping, unable to determine old version
+[2024-05-11 22:21:20] INFO root fetch - main [MainThread]: End processing [config-profile] error
+[2024-05-11 22:21:20] INFO root fetch - processPackages [git-cliff]: New version: [2.2.2] Old Version: [2.2.1]
+[2024-05-11 22:21:20] INFO root fetch - processPackages [git-cliff]: Downloading https://files.pythonhosted.org/packages/ac/bd/3bc9cd4ed7d6e2db7d51f531e3e167f1d9ce308ef137f980cda7ebed1f83/git_cliff-2.2.1.tar.gz
+[2024-05-11 22:21:20] INFO root fetch - processPackages [git-cliff]: Downloading https://files.pythonhosted.org/packages/2d/3f/d008fee51d674c6461671d21e04cc619065a46a5c11e0704f15f54525eaf/git_cliff-2.2.2.tar.gz
+[2024-05-11 22:21:21] INFO root fetch - processPackages [git-cliff]: executing diffoscope
+[2024-05-11 22:21:21] INFO root fetch - processPackages [git-cliff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/git_cliff-2.2.1.tar.gz tmp/git_cliff-2.2.2.tar.gz --markdown 20240511/g/git-cliff/2.2.1-2.2.2/README.md --exclude *.pyd
+[2024-05-11 22:21:21] INFO root fetch - processPackages [git-cliff]: Remove: archive file [/home/abi/fetcher/tmp/git_cliff-2.2.1.tar.gz]
+[2024-05-11 22:21:21] INFO root fetch - processPackages [git-cliff]: Remove: archive file [/home/abi/fetcher/tmp/git_cliff-2.2.2.tar.gz]
+[2024-05-11 22:21:21] INFO root fetch - main [MainThread]: End processing [git-cliff]: success
+[2024-05-11 22:21:21] INFO root fetch - main [MainThread]: Store serial: [23164279]
