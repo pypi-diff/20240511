@@ -23821,3 +23821,50 @@
 [2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [mojii]: success
 [2024-05-11 23:05:00] INFO root fetch - main [MainThread]: End processing [mojii]: success
 [2024-05-11 23:05:00] INFO root fetch - main [MainThread]: Store serial: [23164578]
+[2024-05-11 23:07:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164578]
+[2024-05-11 23:07:09] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mojii
+[2024-05-11 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mojii
+[2024-05-11 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unimprisonedz
+[2024-05-11 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: avenger
+[2024-05-11 23:07:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tm_parser
+[2024-05-11 23:07:09] INFO root fetch - processPackages [mojii]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 23:07:09] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 23:07:09] INFO root fetch - processPackages [mojii]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 23:07:09] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/79/53/cd34af8c0536a907ed72efa203c2ce9934f0b4e6179c5417eb1ad54083ee/mojii-0.1.1-py3-none-any.whl
+[2024-05-11 23:07:09] INFO root fetch - processPackages [unimprisonedz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:07:09] INFO root fetch - processPackages [avenger]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 23:07:09] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 23:07:09] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/79/53/cd34af8c0536a907ed72efa203c2ce9934f0b4e6179c5417eb1ad54083ee/mojii-0.1.1-py3-none-any.whl
+[2024-05-11 23:07:09] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/30/60/0f83aaa0d486f5f8866ef2111d8ea046e2a17bb910d094aaf70fb6cbc64b/mojii-0.1.2-py3-none-any.whl
+[2024-05-11 23:07:09] INFO root fetch - processPackages [unimprisonedz]: Downloading https://files.pythonhosted.org/packages/32/7a/0df85ba03a08d555f58cf4a48d72310c2611aeb6debc4c4ffe93482c225f/unimprisonedz-1.1.tar.gz
+[2024-05-11 23:07:09] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 23:07:09] INFO root fetch - processPackages [avenger]: Downloading https://files.pythonhosted.org/packages/2e/0c/ac723158de7028244160fab1460870590ace5581f9b8b24f0761ae6276dc/avenger-0.0.7.tar.gz
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: Downloading https://files.pythonhosted.org/packages/9e/44/9895fbc80d261e0e3600ae09dad55e85f987d29696ae8305ed87a3aeb18a/mojii-0.1.2.tar.gz
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: executing diffoscope
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojii-0.1.1-py3-none-any.whl.zip tmp/mojii-0.1.2-py3-none-any.whl.zip --markdown 20240511/m/mojii/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 23:07:10] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 23:07:10] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: executing diffoscope
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojii-0.1.1-py3-none-any.whl.zip tmp/mojii-0.1.2.tar.gz --markdown 20240511/m/mojii/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 23:07:10] INFO root fetch - processPackages [unimprisonedz]: Downloading https://files.pythonhosted.org/packages/62/9c/309897a5883d662720c0d9e47fdcf8040198ba43fdfaadfa13f25c277174/unimprisonedz-2.1.tar.gz
+[2024-05-11 23:07:10] INFO root fetch - processPackages [avenger]: Downloading https://files.pythonhosted.org/packages/e2/c3/5902924a49e3deea62c8bf83590d88a1512dcacf14d2c74e6c180fb41620/avenger-0.0.8.tar.gz
+[2024-05-11 23:07:10] INFO root fetch - processPackages [unimprisonedz]: executing diffoscope
+[2024-05-11 23:07:10] INFO root fetch - processPackages [unimprisonedz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unimprisonedz-1.1.tar.gz tmp/unimprisonedz-2.1.tar.gz --markdown 20240511/u/unimprisonedz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:07:10] INFO root fetch - processPackages [avenger]: executing diffoscope
+[2024-05-11 23:07:10] INFO root fetch - processPackages [avenger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/avenger-0.0.7.tar.gz tmp/avenger-0.0.8.tar.gz --markdown 20240511/a/avenger/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: Remove: archive file [/home/abi/fetcher/tmp/mojii-0.1.1-py3-none-any.whl.zip]
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: Remove: archive file [/home/abi/fetcher/tmp/mojii-0.1.2-py3-none-any.whl.zip]
+[2024-05-11 23:07:10] INFO root fetch - main [MainThread]: End processing [mojii]: success
+[2024-05-11 23:07:10] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 23:07:10] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 23:07:10] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 23:07:10] INFO root fetch - processPackages [mojii]: Remove: archive file [/home/abi/fetcher/tmp/mojii-0.1.2.tar.gz]
+[2024-05-11 23:07:10] INFO root fetch - main [MainThread]: End processing [mojii]: success
+[2024-05-11 23:07:10] INFO root fetch - processPackages [unimprisonedz]: Remove: archive file [/home/abi/fetcher/tmp/unimprisonedz-1.1.tar.gz]
+[2024-05-11 23:07:10] INFO root fetch - processPackages [unimprisonedz]: Remove: archive file [/home/abi/fetcher/tmp/unimprisonedz-2.1.tar.gz]
+[2024-05-11 23:07:10] INFO root fetch - main [MainThread]: End processing [unimprisonedz]: success
+[2024-05-11 23:07:11] INFO root fetch - processPackages [avenger]: Remove: archive file [/home/abi/fetcher/tmp/avenger-0.0.7.tar.gz]
+[2024-05-11 23:07:11] INFO root fetch - processPackages [avenger]: Remove: archive file [/home/abi/fetcher/tmp/avenger-0.0.8.tar.gz]
+[2024-05-11 23:07:11] INFO root fetch - main [MainThread]: End processing [avenger]: success
+[2024-05-11 23:07:11] INFO root fetch - main [MainThread]: Store serial: [23164597]
