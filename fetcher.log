@@ -10315,3 +10315,18 @@
 [2024-05-11 07:17:35] INFO root fetch - processPackages [mutez]: Remove: archive file [/home/abi/fetcher/tmp/mutez-2.1.tar.gz]
 [2024-05-11 07:17:35] INFO root fetch - main [MainThread]: End processing [mutez]: success
 [2024-05-11 07:17:35] INFO root fetch - main [MainThread]: Store serial: [23157658]
+[2024-05-11 07:19:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157658]
+[2024-05-11 07:19:43] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: provablez
+[2024-05-11 07:19:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxies-taster
+[2024-05-11 07:19:43] WARNING root fetch - processPackages [provablez]: Skipping, unable to determine old version
+[2024-05-11 07:19:43] INFO root fetch - main [MainThread]: End processing [provablez] error
+[2024-05-11 07:19:43] INFO root fetch - processPackages [proxies-taster]: New version: [1.2.2] Old Version: [1.2.1]
+[2024-05-11 07:19:44] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/8f/b0/43066505f78313726aaf3353d4192bab720d9ccfde329b1bfeb45c8d971c/proxies-taster-1.2.1.tar.gz
+[2024-05-11 07:19:44] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/c2/43/45660ab9fce078308bb8b377d2a3205db7d20ea1c4c58ad59944a2279df4/proxies-taster-1.2.2.tar.gz
+[2024-05-11 07:19:44] INFO root fetch - processPackages [proxies-taster]: executing diffoscope
+[2024-05-11 07:19:44] INFO root fetch - processPackages [proxies-taster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxies-taster-1.2.1.tar.gz tmp/proxies-taster-1.2.2.tar.gz --markdown 20240511/p/proxies-taster/1.2.1-1.2.2/README.md --exclude *.pyd
+[2024-05-11 07:19:45] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies-taster-1.2.1.tar.gz]
+[2024-05-11 07:19:45] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies-taster-1.2.2.tar.gz]
+[2024-05-11 07:19:45] INFO root fetch - main [MainThread]: End processing [proxies-taster]: success
+[2024-05-11 07:19:45] INFO root fetch - main [MainThread]: Store serial: [23157739]
