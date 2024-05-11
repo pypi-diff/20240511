@@ -2975,3 +2975,24 @@
 [2024-05-11 02:41:14] INFO root fetch - processPackages [connected-components-3d]: Remove: archive file [/home/abi/fetcher/tmp/connected-components-3d-3.9.1.tar.gz]
 [2024-05-11 02:41:14] INFO root fetch - main [MainThread]: End processing [connected-components-3d]: success
 [2024-05-11 02:41:14] INFO root fetch - main [MainThread]: Store serial: [23154774]
+[2024-05-11 02:43:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154774]
+[2024-05-11 02:43:22] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 02:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: invalidnessz
+[2024-05-11 02:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hallooz
+[2024-05-11 02:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bxsolana-trader-proto
+[2024-05-11 02:43:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: anipy-api
+[2024-05-11 02:43:22] WARNING root fetch - processPackages [invalidnessz]: Skipping, unable to determine old version
+[2024-05-11 02:43:22] INFO root fetch - main [MainThread]: End processing [invalidnessz] error
+[2024-05-11 02:43:22] INFO root fetch - processPackages [bxsolana-trader-proto]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 02:43:22] WARNING root fetch - processPackages [hallooz]: Skipping, unable to determine old version
+[2024-05-11 02:43:22] INFO root fetch - main [MainThread]: End processing [hallooz] error
+[2024-05-11 02:43:22] WARNING root fetch - processPackages [anipy-api]: Skipping, unable to determine old version
+[2024-05-11 02:43:22] INFO root fetch - main [MainThread]: End processing [anipy-api] error
+[2024-05-11 02:43:22] INFO root fetch - processPackages [bxsolana-trader-proto]: Downloading https://files.pythonhosted.org/packages/cc/d4/3f7c211a4ccb59865cc2c8d794c3929a7c5bb19d89429a74cc76c5c682c2/bxsolana-trader-proto-0.0.8.tar.gz
+[2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: Downloading https://files.pythonhosted.org/packages/f1/4d/2dae934faee772dba6ffca551f80a4bf48f3e12feb404256a37b431161ac/bxsolana-trader-proto-0.0.9.tar.gz
+[2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: executing diffoscope
+[2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bxsolana-trader-proto-0.0.8.tar.gz tmp/bxsolana-trader-proto-0.0.9.tar.gz --markdown 20240511/b/bxsolana-trader-proto/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: Remove: archive file [/home/abi/fetcher/tmp/bxsolana-trader-proto-0.0.8.tar.gz]
+[2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: Remove: archive file [/home/abi/fetcher/tmp/bxsolana-trader-proto-0.0.9.tar.gz]
+[2024-05-11 02:43:23] INFO root fetch - main [MainThread]: End processing [bxsolana-trader-proto]: success
+[2024-05-11 02:43:23] INFO root fetch - main [MainThread]: Store serial: [23154788]
