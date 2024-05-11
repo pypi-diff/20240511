@@ -19128,3 +19128,48 @@
 [2024-05-11 17:46:21] INFO root fetch - processPackages [muko]: Remove: archive file [/home/abi/fetcher/tmp/muko-2.44-py3-none-any.whl.zip]
 [2024-05-11 17:46:21] INFO root fetch - main [MainThread]: End processing [muko]: success
 [2024-05-11 17:46:21] INFO root fetch - main [MainThread]: Store serial: [23162380]
+[2024-05-11 17:48:25] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162380]
+[2024-05-11 17:48:30] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tm_parser
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: matplotloom
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dependency-confusion111
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pythonix
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: semicomplicatedz
+[2024-05-11 17:48:30] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfury
+[2024-05-11 17:48:30] INFO root fetch - processPackages [tm_parser]: New version: [0.9.3] Old Version: [0.9.2]
+[2024-05-11 17:48:30] INFO root fetch - processPackages [pythonix]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 17:48:30] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/cb/46/ba205d0155ab1c880efb1afc3c149008969af6c1e87d0d390a1c3eb6f312/tm_parser-0.9.2.tar.gz
+[2024-05-11 17:48:30] WARNING root fetch - processPackages [semicomplicatedz]: Skipping, unable to determine old version
+[2024-05-11 17:48:30] INFO root fetch - main [MainThread]: End processing [semicomplicatedz] error
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pyfury]: New version: [0.6.0.dev0] Old Version: [0.4.1]
+[2024-05-11 17:48:31] INFO root fetch - processPackages [matplotloom]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-11 17:48:31] ERROR root fetch - processPackages [dependency-confusion111]: Unable to get metadata: No such project 'dependency-confusion111'
+[2024-05-11 17:48:31] INFO root fetch - main [MainThread]: End processing [dependency-confusion111] error
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pythonix]: Downloading https://files.pythonhosted.org/packages/4a/8b/f912759e9ac57842f073146a24e9c0f37d2d4df7616541ba3e5254a39c64/pythonix-1.0.2.tar.gz
+[2024-05-11 17:48:31] INFO root fetch - processPackages [tm_parser]: Downloading https://files.pythonhosted.org/packages/f5/6e/e6251a34da8fa8b1bc139bde5510333b475f839726791e8cb4ab721ee41a/tm_parser-0.9.3.tar.gz
+[2024-05-11 17:48:31] INFO root fetch - processPackages [matplotloom]: Downloading https://files.pythonhosted.org/packages/f5/a0/efe3378a7452e93954797f5468d8a77a1eac08c28398fc8a878a579ae076/matplotloom-0.3.0.tar.gz
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pyfury]: Downloading https://files.pythonhosted.org/packages/94/fe/156a50427c814bdc041b098b011ade55d4bd5c76b74a41aad0ffa8127852/pyfury-0.4.1-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-11 17:48:31] INFO root fetch - processPackages [tm_parser]: executing diffoscope
+[2024-05-11 17:48:31] INFO root fetch - processPackages [tm_parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tm_parser-0.9.2.tar.gz tmp/tm_parser-0.9.3.tar.gz --markdown 20240511/t/tm_parser/0.9.2-0.9.3/README.md --exclude *.pyd
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pythonix]: Downloading https://files.pythonhosted.org/packages/a7/64/4c96341ed54d28456ce6da32b7ff2fb67f55d680a93726d0c8f77d58db1e/pythonix-1.0.3.tar.gz
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pythonix]: executing diffoscope
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pythonix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonix-1.0.2.tar.gz tmp/pythonix-1.0.3.tar.gz --markdown 20240511/p/pythonix/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 17:48:31] INFO root fetch - processPackages [matplotloom]: Downloading https://files.pythonhosted.org/packages/f5/1c/222bbf5703a2117eedbed11eead09b2fe9e5818feac9ec90f20fc449051a/matplotloom-0.4.0.tar.gz
+[2024-05-11 17:48:31] INFO root fetch - processPackages [pyfury]: Downloading https://files.pythonhosted.org/packages/25/45/5e71cbbc1fa5af283d4a6e35c4e0368fa6978888d5e0491b4d6275f90223/pyfury-0.6.0.dev0-cp39-cp39-manylinux1_x86_64.whl
+[2024-05-11 17:48:31] INFO root fetch - processPackages [matplotloom]: executing diffoscope
+[2024-05-11 17:48:31] INFO root fetch - processPackages [matplotloom]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/matplotloom-0.3.0.tar.gz tmp/matplotloom-0.4.0.tar.gz --markdown 20240511/m/matplotloom/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-11 17:48:31] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.2.tar.gz]
+[2024-05-11 17:48:31] INFO root fetch - processPackages [tm_parser]: Remove: archive file [/home/abi/fetcher/tmp/tm_parser-0.9.3.tar.gz]
+[2024-05-11 17:48:31] INFO root fetch - main [MainThread]: End processing [tm_parser]: success
+[2024-05-11 17:48:32] INFO root fetch - processPackages [pyfury]: executing diffoscope
+[2024-05-11 17:48:32] INFO root fetch - processPackages [pyfury]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfury-0.4.1-cp39-cp39-manylinux1_x86_64.whl.zip tmp/pyfury-0.6.0.dev0-cp39-cp39-manylinux1_x86_64.whl.zip --markdown 20240511/p/pyfury/0.4.1-0.6.0.dev0/README.md --exclude *.pyd
+[2024-05-11 17:48:32] INFO root fetch - processPackages [pythonix]: Remove: archive file [/home/abi/fetcher/tmp/pythonix-1.0.2.tar.gz]
+[2024-05-11 17:48:32] INFO root fetch - processPackages [pythonix]: Remove: archive file [/home/abi/fetcher/tmp/pythonix-1.0.3.tar.gz]
+[2024-05-11 17:48:32] INFO root fetch - main [MainThread]: End processing [pythonix]: success
+[2024-05-11 17:48:32] INFO root fetch - processPackages [matplotloom]: Remove: archive file [/home/abi/fetcher/tmp/matplotloom-0.3.0.tar.gz]
+[2024-05-11 17:48:32] INFO root fetch - processPackages [matplotloom]: Remove: archive file [/home/abi/fetcher/tmp/matplotloom-0.4.0.tar.gz]
+[2024-05-11 17:48:32] INFO root fetch - main [MainThread]: End processing [matplotloom]: success
+[2024-05-11 17:48:43] INFO root fetch - processPackages [pyfury]: Remove: archive file [/home/abi/fetcher/tmp/pyfury-0.4.1-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-11 17:48:43] INFO root fetch - processPackages [pyfury]: Remove: archive file [/home/abi/fetcher/tmp/pyfury-0.6.0.dev0-cp39-cp39-manylinux1_x86_64.whl.zip]
+[2024-05-11 17:48:43] INFO root fetch - main [MainThread]: End processing [pyfury]: success
+[2024-05-11 17:48:43] INFO root fetch - main [MainThread]: Store serial: [23162405]
