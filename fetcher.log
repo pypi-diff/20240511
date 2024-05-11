@@ -11437,3 +11437,15 @@
 [2024-05-11 08:52:13] INFO root fetch - processPackages [hc-log-filter]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_filter-1.2.2.tar.gz]
 [2024-05-11 08:52:13] INFO root fetch - main [MainThread]: End processing [hc-log-filter]: success
 [2024-05-11 08:52:13] INFO root fetch - main [MainThread]: Store serial: [23158428]
+[2024-05-11 08:54:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158428]
+[2024-05-11 08:54:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 08:54:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lcbuilder
+[2024-05-11 08:54:22] INFO root fetch - processPackages [lcbuilder]: New version: [0.9.9] Old Version: [0.9.8]
+[2024-05-11 08:54:22] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/f4/7f/fe7e2a3a797ae2569375c4260501908dc35c2a523d3e7f89eb1769068c3a/lcbuilder-0.9.8.tar.gz
+[2024-05-11 08:54:22] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/31/8f/6990e76cc8de8a1377d1e6653c8950226902239559275c6b11838d5cb379/lcbuilder-0.9.9.tar.gz
+[2024-05-11 08:54:22] INFO root fetch - processPackages [lcbuilder]: executing diffoscope
+[2024-05-11 08:54:22] INFO root fetch - processPackages [lcbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcbuilder-0.9.8.tar.gz tmp/lcbuilder-0.9.9.tar.gz --markdown 20240511/l/lcbuilder/0.9.8-0.9.9/README.md --exclude *.pyd
+[2024-05-11 08:54:23] INFO root fetch - processPackages [lcbuilder]: Remove: archive file [/home/abi/fetcher/tmp/lcbuilder-0.9.8.tar.gz]
+[2024-05-11 08:54:23] INFO root fetch - processPackages [lcbuilder]: Remove: archive file [/home/abi/fetcher/tmp/lcbuilder-0.9.9.tar.gz]
+[2024-05-11 08:54:23] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
+[2024-05-11 08:54:23] INFO root fetch - main [MainThread]: Store serial: [23158449]
