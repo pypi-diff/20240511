@@ -22725,3 +22725,27 @@
 [2024-05-11 21:48:46] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.4.tar.gz]
 [2024-05-11 21:48:46] INFO root fetch - main [MainThread]: End processing [auto-circuit]: success
 [2024-05-11 21:48:46] INFO root fetch - main [MainThread]: Store serial: [23164094]
+[2024-05-11 21:50:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164094]
+[2024-05-11 21:50:55] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aiohttp-requests
+[2024-05-11 21:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: react-iq
+[2024-05-11 21:50:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telemetrix
+[2024-05-11 21:50:55] WARNING root fetch - processPackages [react-iq]: Skipping, unable to determine old version
+[2024-05-11 21:50:55] INFO root fetch - main [MainThread]: End processing [react-iq] error
+[2024-05-11 21:50:55] INFO root fetch - processPackages [aiohttp-requests]: New version: [0.2.4] Old Version: [0.2.3]
+[2024-05-11 21:50:55] INFO root fetch - processPackages [telemetrix]: New version: [1.9] Old Version: [1.8]
+[2024-05-11 21:50:55] INFO root fetch - processPackages [aiohttp-requests]: Downloading https://files.pythonhosted.org/packages/ed/52/c442fe4bffb57c34510eb575d87f19dda399f61616ec6f331582d08ec26d/aiohttp-requests-0.2.3.tar.gz
+[2024-05-11 21:50:55] INFO root fetch - processPackages [telemetrix]: Downloading https://files.pythonhosted.org/packages/c8/f5/840cbe7d23b96c276d1926d4fb2a499b2278e9de29b31c8a603614143838/telemetrix-1.8.tar.gz
+[2024-05-11 21:50:55] INFO root fetch - processPackages [aiohttp-requests]: Downloading https://files.pythonhosted.org/packages/53/2b/34ddd6fb516a8439ec5a860d7640050b49c94b64b7b134cbfbf5a21bbe17/aiohttp-requests-0.2.4.tar.gz
+[2024-05-11 21:50:56] INFO root fetch - processPackages [aiohttp-requests]: executing diffoscope
+[2024-05-11 21:50:56] INFO root fetch - processPackages [aiohttp-requests]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiohttp-requests-0.2.3.tar.gz tmp/aiohttp-requests-0.2.4.tar.gz --markdown 20240511/a/aiohttp-requests/0.2.3-0.2.4/README.md --exclude *.pyd
+[2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: Downloading https://files.pythonhosted.org/packages/b9/70/d5a1a250501dd035c9ba89a3b45be7d699f70a1c84071aeafdb492569698/telemetrix-1.9.tar.gz
+[2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: executing diffoscope
+[2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telemetrix-1.8.tar.gz tmp/telemetrix-1.9.tar.gz --markdown 20240511/t/telemetrix/1.8-1.9/README.md --exclude *.pyd
+[2024-05-11 21:50:56] INFO root fetch - processPackages [aiohttp-requests]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp-requests-0.2.3.tar.gz]
+[2024-05-11 21:50:56] INFO root fetch - processPackages [aiohttp-requests]: Remove: archive file [/home/abi/fetcher/tmp/aiohttp-requests-0.2.4.tar.gz]
+[2024-05-11 21:50:56] INFO root fetch - main [MainThread]: End processing [aiohttp-requests]: success
+[2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-1.8.tar.gz]
+[2024-05-11 21:50:56] INFO root fetch - processPackages [telemetrix]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-1.9.tar.gz]
+[2024-05-11 21:50:56] INFO root fetch - main [MainThread]: End processing [telemetrix]: success
+[2024-05-11 21:50:56] INFO root fetch - main [MainThread]: Store serial: [23164103]
