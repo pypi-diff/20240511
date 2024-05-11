@@ -21261,3 +21261,63 @@
 [2024-05-11 20:10:34] INFO root fetch - processPackages [sleipnirgroup-jormungandr]: Remove: archive file [/home/abi/fetcher/tmp/sleipnirgroup_jormungandr-0.0.1.dev99.tar.gz]
 [2024-05-11 20:10:34] INFO root fetch - main [MainThread]: End processing [sleipnirgroup-jormungandr]: success
 [2024-05-11 20:10:34] INFO root fetch - main [MainThread]: Store serial: [23163386]
+[2024-05-11 20:12:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163386]
+[2024-05-11 20:12:43] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hottentoticz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: unusualwhales-python-client
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: a9x-webstatistics
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: musical_games
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-partiql-parser
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rotarypi
+[2024-05-11 20:12:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: aiounifi
+[2024-05-11 20:12:43] INFO root fetch - processPackages [rotarypi]: New version: [2.1.2] Old Version: [2.1.1]
+[2024-05-11 20:12:43] WARNING root fetch - processPackages [hottentoticz]: Skipping, unable to determine old version
+[2024-05-11 20:12:43] INFO root fetch - main [MainThread]: End processing [hottentoticz] error
+[2024-05-11 20:12:43] INFO root fetch - processPackages [musical_games]: New version: [0.8.4] Old Version: [0.8.3]
+[2024-05-11 20:12:43] INFO root fetch - processPackages [unusualwhales-python-client]: New version: [4.0.1] Old Version: [3.3]
+[2024-05-11 20:12:43] INFO root fetch - processPackages [py-partiql-parser]: New version: [0.5.5] Old Version: [0.5.4]
+[2024-05-11 20:12:43] INFO root fetch - processPackages [a9x-webstatistics]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 20:12:43] INFO root fetch - processPackages [aiounifi]: New version: [9] Old Version: [8]
+[2024-05-11 20:12:43] INFO root fetch - processPackages [rotarypi]: Downloading https://files.pythonhosted.org/packages/71/06/8065f1e708c72f1030ee47b43e06c664f81cd8fa431ebbd12e808e348a00/rotarypi-2.1.1.tar.gz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/bb/7b/348f9e93879dd6f63641a47f7cc1d21959322d1d7b28c526f1b07547ef2b/musical_games-0.8.3.tar.gz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/db/cb/1a8a3ba98ef891c29b861e1f69c1687217a55abd9036a974e3cf17cd7bac/py_partiql_parser-0.5.4.tar.gz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [unusualwhales-python-client]: Downloading https://files.pythonhosted.org/packages/79/46/59078039f5693804a9bc35fe9f8b8a4ba26dc3e414414b5d05022a342e70/unusualwhales_python_client-3.3.tar.gz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/53/d1/9ce7f9fdaecf898188c97902576ef3ac16e1fbacdc31a2bfa2a574c57b41/a9x_webstatistics-0.1.6.tar.gz
+[2024-05-11 20:12:43] INFO root fetch - processPackages [aiounifi]: Downloading https://files.pythonhosted.org/packages/f2/d3/41ed032ca77b591345ff1acab6e3e73548f1f1c7db8e05326edeca8c7c4a/aiounifi-8.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [py-partiql-parser]: Downloading https://files.pythonhosted.org/packages/f6/a1/7d4e17588f17f904746ca5f1b60d21432f1abbc67f41a574d7f46afb9e4b/py_partiql_parser-0.5.5.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [musical_games]: Downloading https://files.pythonhosted.org/packages/9a/64/3acb78c0c34a00a5d2fb50213ab227ace8395a0868f1df71371a940dd356/musical_games-0.8.4.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [aiounifi]: Downloading https://files.pythonhosted.org/packages/3e/99/3710e9e4e2c4d5e01f2fb4a1a2459a673a60a56c632f11644e0848e8d92a/aiounifi-9.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [a9x-webstatistics]: Downloading https://files.pythonhosted.org/packages/6b/1a/6d8eb7a0eb834e882b4a32671d8f55b7058e94c1705abb39591b7e14acb4/a9x_webstatistics-0.1.7.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [unusualwhales-python-client]: Downloading https://files.pythonhosted.org/packages/ed/26/5ff409c9d3467945bc49e3e5c0957835bf244ee98ec35e8e5ffc8158474b/unusualwhales_python_client-4.0.1.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [rotarypi]: Downloading https://files.pythonhosted.org/packages/10/c3/b990ebf09fdaa903a4ac9687d0954cd62cb24171bc2edaa8bae0fde2e48c/rotarypi-2.1.2.tar.gz
+[2024-05-11 20:12:44] INFO root fetch - processPackages [aiounifi]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [aiounifi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiounifi-8.tar.gz tmp/aiounifi-9.tar.gz --markdown 20240511/a/aiounifi/8-9/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [unusualwhales-python-client]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [unusualwhales-python-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unusualwhales_python_client-3.3.tar.gz tmp/unusualwhales_python_client-4.0.1.tar.gz --markdown 20240511/u/unusualwhales-python-client/3.3-4.0.1/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [py-partiql-parser]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [py-partiql-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_partiql_parser-0.5.4.tar.gz tmp/py_partiql_parser-0.5.5.tar.gz --markdown 20240511/p/py-partiql-parser/0.5.4-0.5.5/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [musical_games]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [musical_games]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musical_games-0.8.3.tar.gz tmp/musical_games-0.8.4.tar.gz --markdown 20240511/m/musical_games/0.8.3-0.8.4/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [a9x-webstatistics]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [a9x-webstatistics]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/a9x_webstatistics-0.1.6.tar.gz tmp/a9x_webstatistics-0.1.7.tar.gz --markdown 20240511/a/a9x-webstatistics/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [rotarypi]: executing diffoscope
+[2024-05-11 20:12:44] INFO root fetch - processPackages [rotarypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rotarypi-2.1.1.tar.gz tmp/rotarypi-2.1.2.tar.gz --markdown 20240511/r/rotarypi/2.1.1-2.1.2/README.md --exclude *.pyd
+[2024-05-11 20:12:44] INFO root fetch - processPackages [aiounifi]: Remove: archive file [/home/abi/fetcher/tmp/aiounifi-8.tar.gz]
+[2024-05-11 20:12:44] INFO root fetch - processPackages [aiounifi]: Remove: archive file [/home/abi/fetcher/tmp/aiounifi-9.tar.gz]
+[2024-05-11 20:12:44] INFO root fetch - main [MainThread]: End processing [aiounifi]: success
+[2024-05-11 20:12:44] INFO root fetch - processPackages [py-partiql-parser]: Remove: archive file [/home/abi/fetcher/tmp/py_partiql_parser-0.5.4.tar.gz]
+[2024-05-11 20:12:44] INFO root fetch - processPackages [py-partiql-parser]: Remove: archive file [/home/abi/fetcher/tmp/py_partiql_parser-0.5.5.tar.gz]
+[2024-05-11 20:12:44] INFO root fetch - main [MainThread]: End processing [py-partiql-parser]: success
+[2024-05-11 20:12:45] INFO root fetch - processPackages [rotarypi]: Remove: archive file [/home/abi/fetcher/tmp/rotarypi-2.1.1.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - processPackages [rotarypi]: Remove: archive file [/home/abi/fetcher/tmp/rotarypi-2.1.2.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - main [MainThread]: End processing [rotarypi]: success
+[2024-05-11 20:12:45] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.6.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - processPackages [a9x-webstatistics]: Remove: archive file [/home/abi/fetcher/tmp/a9x_webstatistics-0.1.7.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - main [MainThread]: End processing [a9x-webstatistics]: success
+[2024-05-11 20:12:45] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.3.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - processPackages [musical_games]: Remove: archive file [/home/abi/fetcher/tmp/musical_games-0.8.4.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - main [MainThread]: End processing [musical_games]: success
+[2024-05-11 20:12:45] INFO root fetch - processPackages [unusualwhales-python-client]: Remove: archive file [/home/abi/fetcher/tmp/unusualwhales_python_client-3.3.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - processPackages [unusualwhales-python-client]: Remove: archive file [/home/abi/fetcher/tmp/unusualwhales_python_client-4.0.1.tar.gz]
+[2024-05-11 20:12:45] INFO root fetch - main [MainThread]: End processing [unusualwhales-python-client]: success
+[2024-05-11 20:12:45] INFO root fetch - main [MainThread]: Store serial: [23163408]
