@@ -11104,3 +11104,24 @@
 [2024-05-11 08:23:58] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.9-py3-none-any.whl.zip]
 [2024-05-11 08:23:58] INFO root fetch - main [MainThread]: End processing [zhijiang]: success
 [2024-05-11 08:23:58] INFO root fetch - main [MainThread]: Store serial: [23158205]
+[2024-05-11 08:26:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158205]
+[2024-05-11 08:26:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 08:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: taskwarrior_flow
+[2024-05-11 08:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lixivez
+[2024-05-11 08:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: carbon-registry-indexer
+[2024-05-11 08:26:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: causalimpactreturn
+[2024-05-11 08:26:09] INFO root fetch - processPackages [taskwarrior_flow]: New version: [0.4.1] Old Version: [0.4.0]
+[2024-05-11 08:26:09] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/c4/6b/3a0871dc7297d1a3fba8b448773e111f9a1a2b5983f5c2d7929ab89998fc/taskwarrior_flow-0.4.0.tar.gz
+[2024-05-11 08:26:09] WARNING root fetch - processPackages [lixivez]: Skipping, unable to determine old version
+[2024-05-11 08:26:09] INFO root fetch - main [MainThread]: End processing [lixivez] error
+[2024-05-11 08:26:09] WARNING root fetch - processPackages [causalimpactreturn]: Skipping, unable to determine old version
+[2024-05-11 08:26:09] INFO root fetch - main [MainThread]: End processing [causalimpactreturn] error
+[2024-05-11 08:26:09] WARNING root fetch - processPackages [carbon-registry-indexer]: Skipping, unable to determine old version
+[2024-05-11 08:26:09] INFO root fetch - main [MainThread]: End processing [carbon-registry-indexer] error
+[2024-05-11 08:26:09] INFO root fetch - processPackages [taskwarrior_flow]: Downloading https://files.pythonhosted.org/packages/f8/a2/4faee51238c3fa4a81fce7e17cf6e4c814a4f18e82acd63e60bed947e7f1/taskwarrior_flow-0.4.1.tar.gz
+[2024-05-11 08:26:09] INFO root fetch - processPackages [taskwarrior_flow]: executing diffoscope
+[2024-05-11 08:26:09] INFO root fetch - processPackages [taskwarrior_flow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/taskwarrior_flow-0.4.0.tar.gz tmp/taskwarrior_flow-0.4.1.tar.gz --markdown 20240511/t/taskwarrior_flow/0.4.0-0.4.1/README.md --exclude *.pyd
+[2024-05-11 08:26:10] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.4.0.tar.gz]
+[2024-05-11 08:26:10] INFO root fetch - processPackages [taskwarrior_flow]: Remove: archive file [/home/abi/fetcher/tmp/taskwarrior_flow-0.4.1.tar.gz]
+[2024-05-11 08:26:10] INFO root fetch - main [MainThread]: End processing [taskwarrior_flow]: success
+[2024-05-11 08:26:10] INFO root fetch - main [MainThread]: Store serial: [23158226]
