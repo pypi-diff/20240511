@@ -21420,3 +21420,33 @@
 [2024-05-11 20:17:07] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: Remove: archive file [/home/abi/fetcher/tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz]
 [2024-05-11 20:17:07] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2024-05-11 20:17:07] INFO root fetch - main [MainThread]: Store serial: [23163439]
+[2024-05-11 20:19:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163439]
+[2024-05-11 20:19:15] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 20:19:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: morpholib
+[2024-05-11 20:19:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gen3-tracker
+[2024-05-11 20:19:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tsugu
+[2024-05-11 20:19:16] INFO root fetch - processPackages [gen3-tracker]: New version: [0.0.4rc2] Old Version: [0.0.3rc9]
+[2024-05-11 20:19:16] INFO root fetch - processPackages [morpholib]: New version: [0.9.0.dev1] Old Version: [0.9.0]
+[2024-05-11 20:19:16] INFO root fetch - processPackages [tsugu]: New version: [0.6.0] Old Version: [0.5.7]
+[2024-05-11 20:19:16] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/37/13/d98b35020ac2a56b6b8d930600dd64c0349f7f09dccb0a291775d9d0b397/gen3_tracker-0.0.3rc9.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [morpholib]: Downloading https://files.pythonhosted.org/packages/fc/43/c8bc82443e559be90d845cad2d528156120c147faf6d335a3f9ddcb60570/morpholib-0.9.0.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/6c/2d/9f63c7bbdbd7b38e26d51f78f41a9fbb5a0a64cb0cf5d3889272b573ceba/tsugu-0.5.7.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [tsugu]: Downloading https://files.pythonhosted.org/packages/bc/18/759c4e1da1888e5aad0aaf3c934b39d06e579a8169117c5514a09b23c6b2/tsugu-0.6.0.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [gen3-tracker]: Downloading https://files.pythonhosted.org/packages/ce/70/a77cd1c57753e589ea1377b730fc4f2d5e4dd603dff6fa7030d4c22557e4/gen3_tracker-0.0.4rc2.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [morpholib]: Downloading https://files.pythonhosted.org/packages/7b/b7/fdc3df3550c4c921f399da483616f1e15b2e99674d7c414de4b2992b776e/morpholib-0.9.0.dev1.tar.gz
+[2024-05-11 20:19:16] INFO root fetch - processPackages [tsugu]: executing diffoscope
+[2024-05-11 20:19:16] INFO root fetch - processPackages [tsugu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tsugu-0.5.7.tar.gz tmp/tsugu-0.6.0.tar.gz --markdown 20240511/t/tsugu/0.5.7-0.6.0/README.md --exclude *.pyd
+[2024-05-11 20:19:16] INFO root fetch - processPackages [gen3-tracker]: executing diffoscope
+[2024-05-11 20:19:16] INFO root fetch - processPackages [gen3-tracker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gen3_tracker-0.0.3rc9.tar.gz tmp/gen3_tracker-0.0.4rc2.tar.gz --markdown 20240511/g/gen3-tracker/0.0.3rc9-0.0.4rc2/README.md --exclude *.pyd
+[2024-05-11 20:19:17] INFO root fetch - processPackages [morpholib]: executing diffoscope
+[2024-05-11 20:19:17] INFO root fetch - processPackages [morpholib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/morpholib-0.9.0.tar.gz tmp/morpholib-0.9.0.dev1.tar.gz --markdown 20240511/m/morpholib/0.9.0-0.9.0.dev1/README.md --exclude *.pyd
+[2024-05-11 20:19:17] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.5.7.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - processPackages [tsugu]: Remove: archive file [/home/abi/fetcher/tmp/tsugu-0.6.0.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - main [MainThread]: End processing [tsugu]: success
+[2024-05-11 20:19:17] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.3rc9.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - processPackages [gen3-tracker]: Remove: archive file [/home/abi/fetcher/tmp/gen3_tracker-0.0.4rc2.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - main [MainThread]: End processing [gen3-tracker]: success
+[2024-05-11 20:19:17] INFO root fetch - processPackages [morpholib]: Remove: archive file [/home/abi/fetcher/tmp/morpholib-0.9.0.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - processPackages [morpholib]: Remove: archive file [/home/abi/fetcher/tmp/morpholib-0.9.0.dev1.tar.gz]
+[2024-05-11 20:19:17] INFO root fetch - main [MainThread]: End processing [morpholib]: success
+[2024-05-11 20:19:17] INFO root fetch - main [MainThread]: Store serial: [23163448]
