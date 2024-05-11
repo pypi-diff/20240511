@@ -24000,3 +24000,9 @@
 [2024-05-11 23:18:09] INFO root fetch - processPackages [unirradiatedz]: Remove: archive file [/home/abi/fetcher/tmp/unirradiatedz-2.1.tar.gz]
 [2024-05-11 23:18:09] INFO root fetch - main [MainThread]: End processing [unirradiatedz]: success
 [2024-05-11 23:18:09] INFO root fetch - main [MainThread]: Store serial: [23164659]
+[2024-05-11 23:20:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164659]
+[2024-05-11 23:20:18] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 23:20:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: decisionz
+[2024-05-11 23:20:18] WARNING root fetch - processPackages [decisionz]: Skipping, unable to determine old version
+[2024-05-11 23:20:18] INFO root fetch - main [MainThread]: End processing [decisionz] error
+[2024-05-11 23:20:18] INFO root fetch - main [MainThread]: Store serial: [23164663]
