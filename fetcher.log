@@ -9158,3 +9158,92 @@
 [2024-05-11 05:37:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_core-0.1.6.tar.gz]
 [2024-05-11 05:37:09] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-core]: success
 [2024-05-11 05:37:09] INFO root fetch - main [MainThread]: Store serial: [23157057]
+[2024-05-11 05:39:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157057]
+[2024-05-11 05:39:17] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PepperPepper
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webull-python-sdk-mdata
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sp-lh3-constant-contact
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webull-python-sdk-trade-events-core
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: marinesz
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ambient-backend-api-client
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webull-python-sdk-trade
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: sy-riskmodels
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sy-riskmodels
+[2024-05-11 05:39:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sy-riskmodels
+[2024-05-11 05:39:18] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-trade]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [marinesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/34/68/50c19ea7a17c7d190e7d803c1fd7cf3a52981a5a6e033a194d3b3dcdb194/ambient_backend_api_client-0.1.2.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sp-lh3-constant-contact]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/35/c2/19d98dbe3397872de4d984dfe92bac6745315181a7dd187c91488a12c34d/sy_riskmodels-0.0.7.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/35/c2/19d98dbe3397872de4d984dfe92bac6745315181a7dd187c91488a12c34d/sy_riskmodels-0.0.7.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/35/c2/19d98dbe3397872de4d984dfe92bac6745315181a7dd187c91488a12c34d/sy_riskmodels-0.0.7.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [marinesz]: Downloading https://files.pythonhosted.org/packages/a7/ae/970c8eb8d6bdd11df126343e72f0a33d51a8008e985572045bae8efda056/marinesz-1.1.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Downloading https://files.pythonhosted.org/packages/74/6c/386e1d0f766fe682120d7ae7d4f75341ac5624698d7120416ceaebc4beee/webull-python-sdk-trade-events-core-0.1.5.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-trade]: Downloading https://files.pythonhosted.org/packages/83/77/4fb68fdf93cea9f73979144029c2b0b8bebb2ed84e1bed7e73dd05b3495c/webull-python-sdk-trade-0.1.5.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: Downloading https://files.pythonhosted.org/packages/37/e6/1e40cd9da5a03b01cecf813c8877d21edd4cf52476ba5a01bc78199c2d13/webull-python-sdk-mdata-0.1.5.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/d3/5b/5089de506a666818ab9770b06fd77cc6eab6c9560e00a1d42a77ba160bd0/sp_lh3_constant_contact-0.1.4.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/ec/81/74b869f685518083b34c6c91ce01745c47febaac09d2bc815445c04fa6bf/ambient_backend_api_client-0.1.3.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-11 05:39:18] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240511/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-11 05:39:18] INFO root fetch - processPackages [marinesz]: Downloading https://files.pythonhosted.org/packages/06/81/c7107a8e477a525a435e7fde1476bf9733901f38377b14fb7a2cb1db7a6d/marinesz-2.1.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-11 05:39:18] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.2.tar.gz tmp/ambient_backend_api_client-0.1.3.tar.gz --markdown 20240511/a/ambient-backend-api-client/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/c4/52/dff27d538d1cbd1c97704bc7ed53d90a00ad8efe8cbbb3dbc3212c85e94a/sy_riskmodels-0.0.8.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/c4/52/dff27d538d1cbd1c97704bc7ed53d90a00ad8efe8cbbb3dbc3212c85e94a/sy_riskmodels-0.0.8.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-mdata]: Downloading https://files.pythonhosted.org/packages/55/c0/bfe60790ba1d46127036f05807d00bbb98708c2f8f04c955610158b11f00/webull_python_sdk_mdata-0.1.6.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sy-riskmodels]: Downloading https://files.pythonhosted.org/packages/c4/52/dff27d538d1cbd1c97704bc7ed53d90a00ad8efe8cbbb3dbc3212c85e94a/sy_riskmodels-0.0.8.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [sp-lh3-constant-contact]: Downloading https://files.pythonhosted.org/packages/c0/03/e0b358a59a68f7d130702ddc1ecbf470ea7db53958694adea85c0b7723a2/sp_lh3_constant_contact-0.1.5.tar.gz
+[2024-05-11 05:39:18] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Downloading https://files.pythonhosted.org/packages/e5/bc/9c39c09f83aae07710864791a914fa8e8ffd94a5749086a11730dcc57486/webull_python_sdk_trade_events_core-0.1.6.tar.gz
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade]: Downloading https://files.pythonhosted.org/packages/50/72/19ce6a592a3bb1f3e5897e66020249acad8fce73e2d4591938fa306d35f6/webull_python_sdk_trade-0.1.6.tar.gz
+[2024-05-11 05:39:19] INFO root fetch - processPackages [marinesz]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [marinesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/marinesz-1.1.tar.gz tmp/marinesz-2.1.tar.gz --markdown 20240511/m/marinesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sp-lh3-constant-contact]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sp-lh3-constant-contact]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sp_lh3_constant_contact-0.1.4.tar.gz tmp/sp_lh3_constant_contact-0.1.5.tar.gz --markdown 20240511/s/sp-lh3-constant-contact/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-mdata]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-mdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull-python-sdk-mdata-0.1.5.tar.gz tmp/webull_python_sdk_mdata-0.1.6.tar.gz --markdown 20240511/w/webull-python-sdk-mdata/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull-python-sdk-trade-events-core-0.1.5.tar.gz tmp/webull_python_sdk_trade_events_core-0.1.6.tar.gz --markdown 20240511/w/webull-python-sdk-trade-events-core/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sy_riskmodels-0.0.7.tar.gz tmp/sy_riskmodels-0.0.8.tar.gz --markdown 20240511/s/sy-riskmodels/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sy_riskmodels-0.0.7.tar.gz tmp/sy_riskmodels-0.0.8.tar.gz --markdown 20240511/s/sy-riskmodels/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [sy-riskmodels]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sy_riskmodels-0.0.7.tar.gz tmp/sy_riskmodels-0.0.8.tar.gz --markdown 20240511/s/sy-riskmodels/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade]: executing diffoscope
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull-python-sdk-trade-0.1.5.tar.gz tmp/webull_python_sdk_trade-0.1.6.tar.gz --markdown 20240511/w/webull-python-sdk-trade/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 05:39:19] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-11 05:39:19] INFO root fetch - processPackages [marinesz]: Remove: archive file [/home/abi/fetcher/tmp/marinesz-1.1.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - processPackages [marinesz]: Remove: archive file [/home/abi/fetcher/tmp/marinesz-2.1.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - main [MainThread]: End processing [marinesz]: success
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Remove: archive file [/home/abi/fetcher/tmp/webull-python-sdk-trade-events-core-0.1.5.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - processPackages [webull-python-sdk-trade-events-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade_events_core-0.1.6.tar.gz]
+[2024-05-11 05:39:19] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-trade-events-core]: success
+[2024-05-11 05:39:20] INFO root fetch - processPackages [webull-python-sdk-mdata]: Remove: archive file [/home/abi/fetcher/tmp/webull-python-sdk-mdata-0.1.5.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - processPackages [webull-python-sdk-mdata]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_mdata-0.1.6.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-mdata]: success
+[2024-05-11 05:39:20] INFO root fetch - processPackages [webull-python-sdk-trade]: Remove: archive file [/home/abi/fetcher/tmp/webull-python-sdk-trade-0.1.5.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - processPackages [webull-python-sdk-trade]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_trade-0.1.6.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-trade]: success
+[2024-05-11 05:39:20] INFO root fetch - processPackages [sy-riskmodels]: Remove: archive file [/home/abi/fetcher/tmp/sy_riskmodels-0.0.7.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - processPackages [sy-riskmodels]: Remove: archive file [/home/abi/fetcher/tmp/sy_riskmodels-0.0.8.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [sy-riskmodels]: success
+[2024-05-11 05:39:20] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.4.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - processPackages [sp-lh3-constant-contact]: Remove: archive file [/home/abi/fetcher/tmp/sp_lh3_constant_contact-0.1.5.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [sp-lh3-constant-contact]: success
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [sy-riskmodels]: success
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [sy-riskmodels]: success
+[2024-05-11 05:39:20] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.2.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.3.tar.gz]
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-11 05:39:20] INFO root fetch - main [MainThread]: Store serial: [23157088]
