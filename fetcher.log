@@ -14298,3 +14298,60 @@
 [2024-05-11 12:19:44] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.6.3.tar.gz]
 [2024-05-11 12:19:44] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
 [2024-05-11 12:19:44] INFO root fetch - main [MainThread]: Store serial: [23159913]
+[2024-05-11 12:21:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159913]
+[2024-05-11 12:21:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shadowinessz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: team-14-lib-version
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: vipas
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lukasdata
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gy-redis
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: splupy2check
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: scrapeddit
+[2024-05-11 12:21:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: prealludingz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [scrapeddit]: New version: [0.0.2] Old Version: [0.0.1]
+[2024-05-11 12:21:53] INFO root fetch - processPackages [gy-redis]: New version: [0.1.7] Old Version: [0.1.6]
+[2024-05-11 12:21:53] WARNING root fetch - processPackages [vipas]: Skipping, unable to determine old version
+[2024-05-11 12:21:53] INFO root fetch - main [MainThread]: End processing [vipas] error
+[2024-05-11 12:21:53] WARNING root fetch - processPackages [shadowinessz]: Skipping, unable to determine old version
+[2024-05-11 12:21:53] INFO root fetch - main [MainThread]: End processing [shadowinessz] error
+[2024-05-11 12:21:53] INFO root fetch - processPackages [team-14-lib-version]: New version: [0.6.0b0] Old Version: [0.5.0]
+[2024-05-11 12:21:53] INFO root fetch - processPackages [gy-redis]: Downloading https://files.pythonhosted.org/packages/63/50/cf60a4b23683149206c0b4c90b2ac9630bb1d64ba16f7f4e201ca4155bb4/gy_redis-0.1.6.tar.gz
+[2024-05-11 12:21:53] WARNING root fetch - processPackages [splupy2check]: Skipping, unable to determine old version
+[2024-05-11 12:21:53] INFO root fetch - main [MainThread]: End processing [splupy2check] error
+[2024-05-11 12:21:53] INFO root fetch - processPackages [lukasdata]: New version: [1.2.9] Old Version: [1.2.8]
+[2024-05-11 12:21:53] INFO root fetch - processPackages [prealludingz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 12:21:53] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/da/ad/082d0c4ccfe48637fd3e5d125ddd89670c28bb2841f9aa9c8d812b34bfa0/scrapeddit-0.0.1.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/5d/3e/edadf431e0779c5567f00f9cacf532c149fc5f4821e24b8de5c9fd319a42/team_14_lib_version-0.5.0.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/5d/04/930a9f9a788c348c6704b85a4ac5de5b2be7d6005da9f7713f26eca3c5ee/lukasdata-1.2.8.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [gy-redis]: Downloading https://files.pythonhosted.org/packages/f9/61/60d5ee6b76b2a9fbbea00d910622fcff25d5cc6667356e976dd062814170/gy_redis-0.1.7.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [prealludingz]: Downloading https://files.pythonhosted.org/packages/8c/e4/7a05519b65da7a0aacf5b8f308596596cc0a563039ce08f7b5b74ad47a02/prealludingz-1.1.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [gy-redis]: executing diffoscope
+[2024-05-11 12:21:53] INFO root fetch - processPackages [gy-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gy_redis-0.1.6.tar.gz tmp/gy_redis-0.1.7.tar.gz --markdown 20240511/g/gy-redis/0.1.6-0.1.7/README.md --exclude *.pyd
+[2024-05-11 12:21:53] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/d7/0f/84ffe30ef08a0d8461b718ee96fa75e90ea5612956e2558e0c6e562757cc/scrapeddit-0.0.2.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [team-14-lib-version]: Downloading https://files.pythonhosted.org/packages/bf/49/29d3c8a0a4da731b2fe2ae69eb68b165b50defc324859df80027cb396db5/team_14_lib_version-0.6.0b0.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [lukasdata]: Downloading https://files.pythonhosted.org/packages/be/f3/4ce59f27421acb86d02152ea9b91f56f30bfc2ece67df4e66e52d09ecf5a/lukasdata-1.2.9.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 12:21:53] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.0.1.tar.gz tmp/scrapeddit-0.0.2.tar.gz --markdown 20240511/s/scrapeddit/0.0.1-0.0.2/README.md --exclude *.pyd
+[2024-05-11 12:21:53] INFO root fetch - processPackages [prealludingz]: Downloading https://files.pythonhosted.org/packages/d9/78/05991cdb4820dd23232b2387e65e1507bb2bc43436a4495e1534b5bd383b/prealludingz-2.1.tar.gz
+[2024-05-11 12:21:53] INFO root fetch - processPackages [lukasdata]: executing diffoscope
+[2024-05-11 12:21:53] INFO root fetch - processPackages [lukasdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lukasdata-1.2.8.tar.gz tmp/lukasdata-1.2.9.tar.gz --markdown 20240511/l/lukasdata/1.2.8-1.2.9/README.md --exclude *.pyd
+[2024-05-11 12:21:54] INFO root fetch - processPackages [team-14-lib-version]: executing diffoscope
+[2024-05-11 12:21:54] INFO root fetch - processPackages [team-14-lib-version]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/team_14_lib_version-0.5.0.tar.gz tmp/team_14_lib_version-0.6.0b0.tar.gz --markdown 20240511/t/team-14-lib-version/0.5.0-0.6.0b0/README.md --exclude *.pyd
+[2024-05-11 12:21:54] INFO root fetch - processPackages [prealludingz]: executing diffoscope
+[2024-05-11 12:21:54] INFO root fetch - processPackages [prealludingz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prealludingz-1.1.tar.gz tmp/prealludingz-2.1.tar.gz --markdown 20240511/p/prealludingz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 12:21:54] INFO root fetch - processPackages [gy-redis]: Remove: archive file [/home/abi/fetcher/tmp/gy_redis-0.1.6.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - processPackages [gy-redis]: Remove: archive file [/home/abi/fetcher/tmp/gy_redis-0.1.7.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [gy-redis]: success
+[2024-05-11 12:21:54] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.0.1.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.0.2.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 12:21:54] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.2.8.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - processPackages [lukasdata]: Remove: archive file [/home/abi/fetcher/tmp/lukasdata-1.2.9.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [lukasdata]: success
+[2024-05-11 12:21:54] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.5.0.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - processPackages [team-14-lib-version]: Remove: archive file [/home/abi/fetcher/tmp/team_14_lib_version-0.6.0b0.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [team-14-lib-version]: success
+[2024-05-11 12:21:54] INFO root fetch - processPackages [prealludingz]: Remove: archive file [/home/abi/fetcher/tmp/prealludingz-1.1.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - processPackages [prealludingz]: Remove: archive file [/home/abi/fetcher/tmp/prealludingz-2.1.tar.gz]
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [prealludingz]: success
+[2024-05-11 12:21:54] INFO root fetch - main [MainThread]: Store serial: [23159945]
