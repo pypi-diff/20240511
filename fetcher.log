@@ -11989,3 +11989,9 @@
 [2024-05-11 09:33:32] INFO root fetch - processPackages [xyz-util]: Remove: archive file [/home/abi/fetcher/tmp/xyz_util-0.9.9-py3-none-any.whl.zip]
 [2024-05-11 09:33:32] INFO root fetch - main [MainThread]: End processing [xyz-util]: success
 [2024-05-11 09:33:32] INFO root fetch - main [MainThread]: Store serial: [23158686]
+[2024-05-11 09:35:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158686]
+[2024-05-11 09:35:41] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 09:35:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: create-django-project-sundar12
+[2024-05-11 09:35:41] WARNING root fetch - processPackages [create-django-project-sundar12]: Skipping, unable to determine old version
+[2024-05-11 09:35:41] INFO root fetch - main [MainThread]: End processing [create-django-project-sundar12] error
+[2024-05-11 09:35:41] INFO root fetch - main [MainThread]: Store serial: [23158691]
