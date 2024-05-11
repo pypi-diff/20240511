@@ -23931,3 +23931,24 @@
 [2024-05-11 23:11:32] INFO root fetch - processPackages [cyberdrop-dl]: Remove: archive file [/home/abi/fetcher/tmp/cyberdrop_dl-5.3.5.tar.gz]
 [2024-05-11 23:11:32] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2024-05-11 23:11:32] INFO root fetch - main [MainThread]: Store serial: [23164626]
+[2024-05-11 23:13:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164626]
+[2024-05-11 23:13:41] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 23:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: locust
+[2024-05-11 23:13:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: AlgoGrade
+[2024-05-11 23:13:41] INFO root fetch - processPackages [AlgoGrade]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 23:13:41] INFO root fetch - processPackages [locust]: New version: [2.9.1.dev45] Old Version: [2.9.1.dev38]
+[2024-05-11 23:13:41] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/33/90/206b7f28a7e746ae76657cb69afe50035d6aff011258781e2ece9766581b/AlgoGrade-1.0.8.tar.gz
+[2024-05-11 23:13:41] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/9e/ec/230b194549eadcded8e4a0fd7d2e3ed3a9c600452bfc52bfe59d845fb5a5/locust-2.9.1.dev38.tar.gz
+[2024-05-11 23:13:41] INFO root fetch - processPackages [AlgoGrade]: Downloading https://files.pythonhosted.org/packages/f3/8c/50a21ccffcb9d6f18d7b27b3039f1e90a1b91fe9721d89295f083a8bf52c/AlgoGrade-1.0.9.tar.gz
+[2024-05-11 23:13:41] INFO root fetch - processPackages [AlgoGrade]: executing diffoscope
+[2024-05-11 23:13:41] INFO root fetch - processPackages [AlgoGrade]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AlgoGrade-1.0.8.tar.gz tmp/AlgoGrade-1.0.9.tar.gz --markdown 20240511/A/AlgoGrade/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 23:13:41] INFO root fetch - processPackages [locust]: Downloading https://files.pythonhosted.org/packages/ec/25/23264f2f77e7f0b1be817a375627e7821524f1a6bf4a5fd503bab0031505/locust-2.9.1.dev45.tar.gz
+[2024-05-11 23:13:41] INFO root fetch - processPackages [locust]: executing diffoscope
+[2024-05-11 23:13:41] INFO root fetch - processPackages [locust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/locust-2.9.1.dev38.tar.gz tmp/locust-2.9.1.dev45.tar.gz --markdown 20240511/l/locust/2.9.1.dev38-2.9.1.dev45/README.md --exclude *.pyd
+[2024-05-11 23:13:42] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.8.tar.gz]
+[2024-05-11 23:13:42] INFO root fetch - processPackages [AlgoGrade]: Remove: archive file [/home/abi/fetcher/tmp/AlgoGrade-1.0.9.tar.gz]
+[2024-05-11 23:13:42] INFO root fetch - main [MainThread]: End processing [AlgoGrade]: success
+[2024-05-11 23:13:43] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev38.tar.gz]
+[2024-05-11 23:13:43] INFO root fetch - processPackages [locust]: Remove: archive file [/home/abi/fetcher/tmp/locust-2.9.1.dev45.tar.gz]
+[2024-05-11 23:13:43] INFO root fetch - main [MainThread]: End processing [locust]: success
+[2024-05-11 23:13:43] INFO root fetch - main [MainThread]: Store serial: [23164632]
