@@ -14194,3 +14194,39 @@
 [2024-05-11 12:13:00] INFO root fetch - processPackages [romt]: Remove: archive file [/home/abi/fetcher/tmp/romt-0.6.1.tar.gz]
 [2024-05-11 12:13:00] INFO root fetch - main [MainThread]: End processing [romt]: success
 [2024-05-11 12:13:00] INFO root fetch - main [MainThread]: Store serial: [23159863]
+[2024-05-11 12:15:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159863]
+[2024-05-11 12:15:08] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ok-script
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudtower-sdk
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: logger-local
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: interknottingz
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vdg
+[2024-05-11 12:15:08] INFO root fetch - processPackages [ok-script]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 12:15:09] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/5f/e3/968a4bfd4b0c82df5c5171f3d7d42fc8d8354283f3bae8becf975bc2cfb9/ok-script-0.0.8.tar.gz
+[2024-05-11 12:15:09] WARNING root fetch - processPackages [vdg]: Skipping, unable to determine old version
+[2024-05-11 12:15:09] INFO root fetch - main [MainThread]: End processing [vdg] error
+[2024-05-11 12:15:09] WARNING root fetch - processPackages [interknottingz]: Skipping, unable to determine old version
+[2024-05-11 12:15:09] INFO root fetch - main [MainThread]: End processing [interknottingz] error
+[2024-05-11 12:15:09] INFO root fetch - processPackages [cloudtower-sdk]: New version: [2.9.1] Old Version: [2.9.0]
+[2024-05-11 12:15:09] INFO root fetch - processPackages [logger-local]: New version: [0.0.99] Old Version: [0.0.98]
+[2024-05-11 12:15:09] INFO root fetch - processPackages [cloudtower-sdk]: Downloading https://files.pythonhosted.org/packages/ab/d6/d4c858a81ca68b32996954b88411b8d192ed3eac0a500eda2e8dba8e117a/cloudtower-sdk-2.9.0.tar.gz
+[2024-05-11 12:15:09] INFO root fetch - processPackages [ok-script]: Downloading https://files.pythonhosted.org/packages/7e/57/3cb2ecf6f3abc49a58957eb87297ca0e7574e568b46c512c2a5fc710a462/ok-script-0.0.9.tar.gz
+[2024-05-11 12:15:09] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/95/83/cbbeaca04ecc0f2c8811769437b1979bde80cd488f848e324e92d8440499/logger-local-0.0.98.tar.gz
+[2024-05-11 12:15:09] INFO root fetch - processPackages [ok-script]: executing diffoscope
+[2024-05-11 12:15:09] INFO root fetch - processPackages [ok-script]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ok-script-0.0.8.tar.gz tmp/ok-script-0.0.9.tar.gz --markdown 20240511/o/ok-script/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 12:15:09] INFO root fetch - processPackages [logger-local]: Downloading https://files.pythonhosted.org/packages/32/72/d6d6521aa3b74d3c30af8cdee32bb3e7a6008c5629d957853e9e7a3c01b4/logger-local-0.0.99.tar.gz
+[2024-05-11 12:15:09] INFO root fetch - processPackages [logger-local]: executing diffoscope
+[2024-05-11 12:15:09] INFO root fetch - processPackages [logger-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logger-local-0.0.98.tar.gz tmp/logger-local-0.0.99.tar.gz --markdown 20240511/l/logger-local/0.0.98-0.0.99/README.md --exclude *.pyd
+[2024-05-11 12:15:10] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.8.tar.gz]
+[2024-05-11 12:15:10] INFO root fetch - processPackages [ok-script]: Remove: archive file [/home/abi/fetcher/tmp/ok-script-0.0.9.tar.gz]
+[2024-05-11 12:15:10] INFO root fetch - main [MainThread]: End processing [ok-script]: success
+[2024-05-11 12:15:10] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.98.tar.gz]
+[2024-05-11 12:15:10] INFO root fetch - processPackages [logger-local]: Remove: archive file [/home/abi/fetcher/tmp/logger-local-0.0.99.tar.gz]
+[2024-05-11 12:15:10] INFO root fetch - main [MainThread]: End processing [logger-local]: success
+[2024-05-11 12:15:10] INFO root fetch - processPackages [cloudtower-sdk]: Downloading https://files.pythonhosted.org/packages/1e/a3/6174d1dab5438c911798850e16b2173aa0d5b25316399b3c2d462f9fe31b/cloudtower-sdk-2.9.1.tar.gz
+[2024-05-11 12:15:10] INFO root fetch - processPackages [cloudtower-sdk]: executing diffoscope
+[2024-05-11 12:15:10] INFO root fetch - processPackages [cloudtower-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudtower-sdk-2.9.0.tar.gz tmp/cloudtower-sdk-2.9.1.tar.gz --markdown 20240511/c/cloudtower-sdk/2.9.0-2.9.1/README.md --exclude *.pyd
+[2024-05-11 12:15:17] INFO root fetch - processPackages [cloudtower-sdk]: Remove: archive file [/home/abi/fetcher/tmp/cloudtower-sdk-2.9.0.tar.gz]
+[2024-05-11 12:15:17] INFO root fetch - processPackages [cloudtower-sdk]: Remove: archive file [/home/abi/fetcher/tmp/cloudtower-sdk-2.9.1.tar.gz]
+[2024-05-11 12:15:17] INFO root fetch - main [MainThread]: End processing [cloudtower-sdk]: success
+[2024-05-11 12:15:17] INFO root fetch - main [MainThread]: Store serial: [23159881]
