@@ -12165,3 +12165,24 @@
 [2024-05-11 09:47:03] INFO root fetch - processPackages [beanhub-import]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_import-0.1.6.tar.gz]
 [2024-05-11 09:47:03] INFO root fetch - main [MainThread]: End processing [beanhub-import]: success
 [2024-05-11 09:47:03] INFO root fetch - main [MainThread]: Store serial: [23158783]
+[2024-05-11 09:49:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158783]
+[2024-05-11 09:49:11] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beanhub-import
+[2024-05-11 09:49:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dalpha
+[2024-05-11 09:49:11] INFO root fetch - processPackages [dalpha]: New version: [0.5.0rc0] Old Version: [0.4.5rc1]
+[2024-05-11 09:49:11] INFO root fetch - processPackages [beanhub-import]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 09:49:12] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/3e/52/460e7089648caba18d7d33d11d2fe89bba1e2a58878fd66ef1f72bdd2df7/dalpha-0.4.5rc1.tar.gz
+[2024-05-11 09:49:12] INFO root fetch - processPackages [beanhub-import]: Downloading https://files.pythonhosted.org/packages/65/6f/217249a668114ebc6cd64c3e93ec415fd3fe0547a22cae84b04ef141a615/beanhub_import-0.1.5.tar.gz
+[2024-05-11 09:49:12] INFO root fetch - processPackages [dalpha]: Downloading https://files.pythonhosted.org/packages/ef/78/75950482a2a0f10aa6992caae266e1afbca44a4a5e611fa9483e448c746a/dalpha-0.5.0rc0.tar.gz
+[2024-05-11 09:49:12] INFO root fetch - processPackages [beanhub-import]: Downloading https://files.pythonhosted.org/packages/ff/22/f3f4fb24e8b218ffbd278b58829d0e05ba9a03e0f3655bdf44ab2b04ac6d/beanhub_import-0.1.6.tar.gz
+[2024-05-11 09:49:12] INFO root fetch - processPackages [dalpha]: executing diffoscope
+[2024-05-11 09:49:12] INFO root fetch - processPackages [dalpha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dalpha-0.4.5rc1.tar.gz tmp/dalpha-0.5.0rc0.tar.gz --markdown 20240511/d/dalpha/0.4.5rc1-0.5.0rc0/README.md --exclude *.pyd
+[2024-05-11 09:49:12] INFO root fetch - processPackages [beanhub-import]: executing diffoscope
+[2024-05-11 09:49:12] INFO root fetch - processPackages [beanhub-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beanhub_import-0.1.5.tar.gz tmp/beanhub_import-0.1.6.tar.gz --markdown 20240511/b/beanhub-import/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 09:49:13] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.4.5rc1.tar.gz]
+[2024-05-11 09:49:13] INFO root fetch - processPackages [beanhub-import]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_import-0.1.5.tar.gz]
+[2024-05-11 09:49:13] INFO root fetch - processPackages [dalpha]: Remove: archive file [/home/abi/fetcher/tmp/dalpha-0.5.0rc0.tar.gz]
+[2024-05-11 09:49:13] INFO root fetch - processPackages [beanhub-import]: Remove: archive file [/home/abi/fetcher/tmp/beanhub_import-0.1.6.tar.gz]
+[2024-05-11 09:49:13] INFO root fetch - main [MainThread]: End processing [dalpha]: success
+[2024-05-11 09:49:13] INFO root fetch - main [MainThread]: End processing [beanhub-import]: success
+[2024-05-11 09:49:13] INFO root fetch - main [MainThread]: Store serial: [23158790]
