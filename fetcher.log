@@ -2996,3 +2996,60 @@
 [2024-05-11 02:43:23] INFO root fetch - processPackages [bxsolana-trader-proto]: Remove: archive file [/home/abi/fetcher/tmp/bxsolana-trader-proto-0.0.9.tar.gz]
 [2024-05-11 02:43:23] INFO root fetch - main [MainThread]: End processing [bxsolana-trader-proto]: success
 [2024-05-11 02:43:23] INFO root fetch - main [MainThread]: Store serial: [23154788]
+[2024-05-11 02:45:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23154788]
+[2024-05-11 02:45:32] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anipy-cli
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cvprocessor
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pygformula
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: dash-oflog-components
+[2024-05-11 02:45:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-databrew-cicd
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cvprocessor]: New version: [0.3.0] Old Version: [0.2.0]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [pygformula]: New version: [1.1.1] Old Version: [1.1.0]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [dash-oflog-components]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.4.dev202405100044] Old Version: [4.9.4.dev202405090044]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cdk-databrew-cicd]: New version: [2.0.99] Old Version: [2.0.98]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cvprocessor]: Downloading https://files.pythonhosted.org/packages/6c/5c/94d36067a274dcf8c0a614b4e57ca2409b2102ceebafbcdfc5e28354dbbe/cvprocessor-0.2.0.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [anipy-cli]: New version: [3.0.0.dev0] Old Version: [2.7.9]
+[2024-05-11 02:45:32] INFO root fetch - processPackages [pygformula]: Downloading https://files.pythonhosted.org/packages/b1/63/b23ea20ddd8ac3a7a85b7cfdb32428c1cee055222d8f0607dce0569afd17/pygformula-1.1.0.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/87/0b/f416b5cdfcc73fcb0e1d8e73d90f0fde8fa4a3042b87eef6a6f78630737b/dash_oflog_components-0.0.8.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/6b/27/a2476e789070ba64072b2a3494e08dbf12d926afb85deb84cfb8b1d56c2c/tfds-nightly-4.9.4.dev202405090044.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/9c/18/acad9d22fe20a13d93a1aee49739981e3ab739a2edcb478344aa0fc5b783/cdk_databrew_cicd-2.0.98.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/18/ad/854d891575b230f33c069488f969016184a51451b3c45ecc09da4b5ae43b/anipy_cli-2.7.9.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [pygformula]: Downloading https://files.pythonhosted.org/packages/33/eb/9bb4b9a97eb1293e3aa727b14442543ffcff83e2f88505590dc5a9cf6707/pygformula-1.1.1.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cvprocessor]: Downloading https://files.pythonhosted.org/packages/63/e9/9025fc98ae4d2e7c3644c07ce3af3a623b541692f62928e2b00f93f90f1a/cvprocessor-0.3.0.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [pygformula]: executing diffoscope
+[2024-05-11 02:45:32] INFO root fetch - processPackages [pygformula]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygformula-1.1.0.tar.gz tmp/pygformula-1.1.1.tar.gz --markdown 20240511/p/pygformula/1.1.0-1.1.1/README.md --exclude *.pyd
+[2024-05-11 02:45:32] INFO root fetch - processPackages [dash-oflog-components]: Downloading https://files.pythonhosted.org/packages/8b/f4/0b8659ff282e21dd91120e7b693c909d64230d30799a6ecfcf808cad6c44/dash_oflog_components-0.0.9.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cdk-databrew-cicd]: Downloading https://files.pythonhosted.org/packages/66/41/4c5089b171b28b627753bb3de1b4b696fdaeb4f78ef49dcb72a79fcb6e9d/cdk_databrew_cicd-2.0.99.tar.gz
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cvprocessor]: executing diffoscope
+[2024-05-11 02:45:32] INFO root fetch - processPackages [cvprocessor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cvprocessor-0.2.0.tar.gz tmp/cvprocessor-0.3.0.tar.gz --markdown 20240511/c/cvprocessor/0.2.0-0.3.0/README.md --exclude *.pyd
+[2024-05-11 02:45:32] INFO root fetch - processPackages [anipy-cli]: Downloading https://files.pythonhosted.org/packages/dc/a9/07ba471b33b8be3edc9d1fd2823eb14e5180484a80c1b62fc5148abb3c0f/anipy_cli-3.0.0.dev0.tar.gz
+[2024-05-11 02:45:33] INFO root fetch - processPackages [dash-oflog-components]: executing diffoscope
+[2024-05-11 02:45:33] INFO root fetch - processPackages [dash-oflog-components]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash_oflog_components-0.0.8.tar.gz tmp/dash_oflog_components-0.0.9.tar.gz --markdown 20240511/d/dash-oflog-components/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 02:45:33] INFO root fetch - processPackages [tfds-nightly]: Downloading https://files.pythonhosted.org/packages/ff/59/ce8cb52dc56d56af5c16cf29a15e78e40eb433b340c717e7f991255f1df4/tfds-nightly-4.9.4.dev202405100044.tar.gz
+[2024-05-11 02:45:33] INFO root fetch - processPackages [cdk-databrew-cicd]: executing diffoscope
+[2024-05-11 02:45:33] INFO root fetch - processPackages [cdk-databrew-cicd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_databrew_cicd-2.0.98.tar.gz tmp/cdk_databrew_cicd-2.0.99.tar.gz --markdown 20240511/c/cdk-databrew-cicd/2.0.98-2.0.99/README.md --exclude *.pyd
+[2024-05-11 02:45:33] INFO root fetch - processPackages [anipy-cli]: executing diffoscope
+[2024-05-11 02:45:33] INFO root fetch - processPackages [anipy-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anipy_cli-2.7.9.tar.gz tmp/anipy_cli-3.0.0.dev0.tar.gz --markdown 20240511/a/anipy-cli/2.7.9-3.0.0.dev0/README.md --exclude *.pyd
+[2024-05-11 02:45:33] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2024-05-11 02:45:33] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.4.dev202405090044.tar.gz tmp/tfds-nightly-4.9.4.dev202405100044.tar.gz --markdown 20240511/t/tfds-nightly/4.9.4.dev202405090044-4.9.4.dev202405100044/README.md --exclude *.pyd
+[2024-05-11 02:45:33] INFO root fetch - processPackages [pygformula]: Remove: archive file [/home/abi/fetcher/tmp/pygformula-1.1.0.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - processPackages [pygformula]: Remove: archive file [/home/abi/fetcher/tmp/pygformula-1.1.1.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - main [MainThread]: End processing [pygformula]: success
+[2024-05-11 02:45:33] INFO root fetch - processPackages [cvprocessor]: Remove: archive file [/home/abi/fetcher/tmp/cvprocessor-0.2.0.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - processPackages [cvprocessor]: Remove: archive file [/home/abi/fetcher/tmp/cvprocessor-0.3.0.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - main [MainThread]: End processing [cvprocessor]: success
+[2024-05-11 02:45:33] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-2.7.9.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - processPackages [anipy-cli]: Remove: archive file [/home/abi/fetcher/tmp/anipy_cli-3.0.0.dev0.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - main [MainThread]: End processing [anipy-cli]: success
+[2024-05-11 02:45:33] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.8.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - processPackages [dash-oflog-components]: Remove: archive file [/home/abi/fetcher/tmp/dash_oflog_components-0.0.9.tar.gz]
+[2024-05-11 02:45:33] INFO root fetch - main [MainThread]: End processing [dash-oflog-components]: success
+[2024-05-11 02:45:34] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.98.tar.gz]
+[2024-05-11 02:45:34] INFO root fetch - processPackages [cdk-databrew-cicd]: Remove: archive file [/home/abi/fetcher/tmp/cdk_databrew_cicd-2.0.99.tar.gz]
+[2024-05-11 02:45:34] INFO root fetch - main [MainThread]: End processing [cdk-databrew-cicd]: success
+[2024-05-11 02:45:42] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405090044.tar.gz]
+[2024-05-11 02:45:42] INFO root fetch - processPackages [tfds-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tfds-nightly-4.9.4.dev202405100044.tar.gz]
+[2024-05-11 02:45:42] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2024-05-11 02:45:42] INFO root fetch - main [MainThread]: Store serial: [23154805]
