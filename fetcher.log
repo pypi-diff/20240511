@@ -11797,3 +11797,18 @@
 [2024-05-11 09:18:17] WARNING root fetch - processPackages [python-aidot]: Skipping, unable to determine old version
 [2024-05-11 09:18:17] INFO root fetch - main [MainThread]: End processing [python-aidot] error
 [2024-05-11 09:18:17] INFO root fetch - main [MainThread]: Store serial: [23158604]
+[2024-05-11 09:20:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158604]
+[2024-05-11 09:20:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 09:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Pynapse
+[2024-05-11 09:20:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: outpushz
+[2024-05-11 09:20:25] INFO root fetch - processPackages [Pynapse]: New version: [0.6.0] Old Version: [0.5.0]
+[2024-05-11 09:20:25] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/03/68/801646b7aea392a910c31ad2f09646127162b410ee7e3470a677aca4d051/pynapse-0.5.0.tar.gz
+[2024-05-11 09:20:25] WARNING root fetch - processPackages [outpushz]: Skipping, unable to determine old version
+[2024-05-11 09:20:25] INFO root fetch - main [MainThread]: End processing [outpushz] error
+[2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: Downloading https://files.pythonhosted.org/packages/a7/d9/a35399fa22c7280d8acaa4dcfa407f59e616020bec62b85c1d5ed0da7d38/pynapse-0.6.0.tar.gz
+[2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: executing diffoscope
+[2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pynapse-0.5.0.tar.gz tmp/pynapse-0.6.0.tar.gz --markdown 20240511/P/Pynapse/0.5.0-0.6.0/README.md --exclude *.pyd
+[2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.5.0.tar.gz]
+[2024-05-11 09:20:26] INFO root fetch - processPackages [Pynapse]: Remove: archive file [/home/abi/fetcher/tmp/pynapse-0.6.0.tar.gz]
+[2024-05-11 09:20:26] INFO root fetch - main [MainThread]: End processing [Pynapse]: success
+[2024-05-11 09:20:26] INFO root fetch - main [MainThread]: Store serial: [23158626]
