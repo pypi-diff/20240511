@@ -18542,3 +18542,27 @@
 [2024-05-11 17:05:50] INFO root fetch - processPackages [vit-pytorch]: Remove: archive file [/home/abi/fetcher/tmp/vit_pytorch-1.6.9.tar.gz]
 [2024-05-11 17:05:50] INFO root fetch - main [MainThread]: End processing [vit-pytorch]: success
 [2024-05-11 17:05:50] INFO root fetch - main [MainThread]: Store serial: [23162157]
+[2024-05-11 17:07:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162157]
+[2024-05-11 17:07:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 17:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poolwortz
+[2024-05-11 17:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zrcl
+[2024-05-11 17:07:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sigmoidalz
+[2024-05-11 17:07:59] WARNING root fetch - processPackages [poolwortz]: Skipping, unable to determine old version
+[2024-05-11 17:07:59] INFO root fetch - main [MainThread]: End processing [poolwortz] error
+[2024-05-11 17:07:59] INFO root fetch - processPackages [sigmoidalz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:07:59] INFO root fetch - processPackages [zrcl]: New version: [0.2.1] Old Version: [0.1.0]
+[2024-05-11 17:08:00] INFO root fetch - processPackages [zrcl]: Downloading https://files.pythonhosted.org/packages/24/4f/8a8862d21c8aa1a5aeb691747f93b469e3e2fdd00c543c81d32c3fd24a33/zrcl-0.1.0.tar.gz
+[2024-05-11 17:08:00] INFO root fetch - processPackages [sigmoidalz]: Downloading https://files.pythonhosted.org/packages/a2/3c/a819f4aa20ecfcdc523898a6d21b94665531b7eb13257f9baf9db29bbbde/sigmoidalz-1.1.tar.gz
+[2024-05-11 17:08:00] INFO root fetch - processPackages [zrcl]: Downloading https://files.pythonhosted.org/packages/d0/7f/8f418045b1491812fa5332ed3d53277155a32acab8c84c5536bd14c93990/zrcl-0.2.1.tar.gz
+[2024-05-11 17:08:00] INFO root fetch - processPackages [sigmoidalz]: Downloading https://files.pythonhosted.org/packages/77/9c/ada5609e4f6b4fef4d071191780ff818541c08187d2ad2bca10c6bfa184e/sigmoidalz-2.1.tar.gz
+[2024-05-11 17:08:00] INFO root fetch - processPackages [zrcl]: executing diffoscope
+[2024-05-11 17:08:00] INFO root fetch - processPackages [zrcl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zrcl-0.1.0.tar.gz tmp/zrcl-0.2.1.tar.gz --markdown 20240511/z/zrcl/0.1.0-0.2.1/README.md --exclude *.pyd
+[2024-05-11 17:08:00] INFO root fetch - processPackages [sigmoidalz]: executing diffoscope
+[2024-05-11 17:08:00] INFO root fetch - processPackages [sigmoidalz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sigmoidalz-1.1.tar.gz tmp/sigmoidalz-2.1.tar.gz --markdown 20240511/s/sigmoidalz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:08:01] INFO root fetch - processPackages [sigmoidalz]: Remove: archive file [/home/abi/fetcher/tmp/sigmoidalz-1.1.tar.gz]
+[2024-05-11 17:08:01] INFO root fetch - processPackages [sigmoidalz]: Remove: archive file [/home/abi/fetcher/tmp/sigmoidalz-2.1.tar.gz]
+[2024-05-11 17:08:01] INFO root fetch - main [MainThread]: End processing [sigmoidalz]: success
+[2024-05-11 17:08:01] INFO root fetch - processPackages [zrcl]: Remove: archive file [/home/abi/fetcher/tmp/zrcl-0.1.0.tar.gz]
+[2024-05-11 17:08:01] INFO root fetch - processPackages [zrcl]: Remove: archive file [/home/abi/fetcher/tmp/zrcl-0.2.1.tar.gz]
+[2024-05-11 17:08:01] INFO root fetch - main [MainThread]: End processing [zrcl]: success
+[2024-05-11 17:08:01] INFO root fetch - main [MainThread]: Store serial: [23162167]
