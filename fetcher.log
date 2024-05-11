@@ -13058,3 +13058,15 @@
 [2024-05-11 10:58:46] INFO root fetch - processPackages [JianYingDraft.PY]: Remove: archive file [/home/abi/fetcher/tmp/jianyingdraft_py-1.0.4.tar.gz]
 [2024-05-11 10:58:46] INFO root fetch - main [MainThread]: End processing [JianYingDraft.PY]: success
 [2024-05-11 10:58:46] INFO root fetch - main [MainThread]: Store serial: [23159233]
+[2024-05-11 11:00:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159233]
+[2024-05-11 11:00:54] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 11:00:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: petulantlyz
+[2024-05-11 11:00:54] INFO root fetch - processPackages [petulantlyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:00:55] INFO root fetch - processPackages [petulantlyz]: Downloading https://files.pythonhosted.org/packages/e3/83/927180b22b9246d12775a417752672fb898059c514474705f2125ad08eec/petulantlyz-1.1.tar.gz
+[2024-05-11 11:00:55] INFO root fetch - processPackages [petulantlyz]: Downloading https://files.pythonhosted.org/packages/d4/ce/c11cae0449010072a25fda2394c9e6566c7e22119dc9571386571fa319b8/petulantlyz-2.1.tar.gz
+[2024-05-11 11:00:55] INFO root fetch - processPackages [petulantlyz]: executing diffoscope
+[2024-05-11 11:00:55] INFO root fetch - processPackages [petulantlyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/petulantlyz-1.1.tar.gz tmp/petulantlyz-2.1.tar.gz --markdown 20240511/p/petulantlyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:00:56] INFO root fetch - processPackages [petulantlyz]: Remove: archive file [/home/abi/fetcher/tmp/petulantlyz-1.1.tar.gz]
+[2024-05-11 11:00:56] INFO root fetch - processPackages [petulantlyz]: Remove: archive file [/home/abi/fetcher/tmp/petulantlyz-2.1.tar.gz]
+[2024-05-11 11:00:56] INFO root fetch - main [MainThread]: End processing [petulantlyz]: success
+[2024-05-11 11:00:56] INFO root fetch - main [MainThread]: Store serial: [23159235]
