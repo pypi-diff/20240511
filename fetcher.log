@@ -10812,3 +10812,39 @@
 [2024-05-11 07:59:44] INFO root fetch - processPackages [pied-poker]: Remove: archive file [/home/abi/fetcher/tmp/pied_poker-1.3.5.tar.gz]
 [2024-05-11 07:59:44] INFO root fetch - main [MainThread]: End processing [pied-poker]: success
 [2024-05-11 07:59:44] INFO root fetch - main [MainThread]: Store serial: [23158067]
+[2024-05-11 08:01:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158067]
+[2024-05-11 08:01:52] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 08:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: artless-framework
+[2024-05-11 08:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: proxies-taster
+[2024-05-11 08:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gekito
+[2024-05-11 08:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FlowVisor
+[2024-05-11 08:01:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: LSDpy
+[2024-05-11 08:01:53] INFO root fetch - processPackages [proxies-taster]: New version: [1.2.4] Old Version: [1.2.3]
+[2024-05-11 08:01:53] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/5f/9c/adc216579c90145dc05f37b4b0c2449c4b7f78307f63b1521728b74eb877/proxies_taster-1.2.3.tar.gz
+[2024-05-11 08:01:53] WARNING root fetch - processPackages [gekito]: Skipping, unable to determine old version
+[2024-05-11 08:01:53] INFO root fetch - main [MainThread]: End processing [gekito] error
+[2024-05-11 08:01:53] INFO root fetch - processPackages [FlowVisor]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 08:01:53] WARNING root fetch - processPackages [artless-framework]: Skipping, unable to determine old version
+[2024-05-11 08:01:53] INFO root fetch - main [MainThread]: End processing [artless-framework] error
+[2024-05-11 08:01:53] INFO root fetch - processPackages [LSDpy]: New version: [0.4.7] Old Version: [0.4.6]
+[2024-05-11 08:01:53] INFO root fetch - processPackages [FlowVisor]: Downloading https://files.pythonhosted.org/packages/c6/9b/6f2b1c51df6e18970ccbdece6812c99d0b45d5d0f8db0d82692816d690dc/FlowVisor-0.1.4.tar.gz
+[2024-05-11 08:01:53] INFO root fetch - processPackages [LSDpy]: Downloading https://files.pythonhosted.org/packages/48/28/d5fb1e79baa696cde0de18734dd0982e8b06b83c85295a99dc22d5e9bbf1/LSDpy-0.4.6.tar.gz
+[2024-05-11 08:01:53] INFO root fetch - processPackages [proxies-taster]: Downloading https://files.pythonhosted.org/packages/90/cf/724b4e49174c5a3ac61ae1cffbf6104b0da79047e19a37476ed3548de6e6/proxies_taster-1.2.4.tar.gz
+[2024-05-11 08:01:53] INFO root fetch - processPackages [proxies-taster]: executing diffoscope
+[2024-05-11 08:01:53] INFO root fetch - processPackages [proxies-taster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proxies_taster-1.2.3.tar.gz tmp/proxies_taster-1.2.4.tar.gz --markdown 20240511/p/proxies-taster/1.2.3-1.2.4/README.md --exclude *.pyd
+[2024-05-11 08:01:53] INFO root fetch - processPackages [FlowVisor]: Downloading https://files.pythonhosted.org/packages/94/01/3b8e9813c58fb219b7f437097e606d7313323fb79a446c08473f630f37e2/FlowVisor-0.1.5.tar.gz
+[2024-05-11 08:01:53] INFO root fetch - processPackages [LSDpy]: Downloading https://files.pythonhosted.org/packages/96/44/0fa3f52b5e86a91faaf41e23bc3d5c3c40a826fb495c338a03f035ad1d58/lsdpy-0.4.7.tar.gz
+[2024-05-11 08:01:53] INFO root fetch - processPackages [FlowVisor]: executing diffoscope
+[2024-05-11 08:01:53] INFO root fetch - processPackages [FlowVisor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlowVisor-0.1.4.tar.gz tmp/FlowVisor-0.1.5.tar.gz --markdown 20240511/F/FlowVisor/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 08:01:53] INFO root fetch - processPackages [LSDpy]: executing diffoscope
+[2024-05-11 08:01:53] INFO root fetch - processPackages [LSDpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LSDpy-0.4.6.tar.gz tmp/lsdpy-0.4.7.tar.gz --markdown 20240511/L/LSDpy/0.4.6-0.4.7/README.md --exclude *.pyd
+[2024-05-11 08:01:54] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies_taster-1.2.3.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - processPackages [proxies-taster]: Remove: archive file [/home/abi/fetcher/tmp/proxies_taster-1.2.4.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - main [MainThread]: End processing [proxies-taster]: success
+[2024-05-11 08:01:54] INFO root fetch - processPackages [FlowVisor]: Remove: archive file [/home/abi/fetcher/tmp/FlowVisor-0.1.4.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - processPackages [FlowVisor]: Remove: archive file [/home/abi/fetcher/tmp/FlowVisor-0.1.5.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - main [MainThread]: End processing [FlowVisor]: success
+[2024-05-11 08:01:54] INFO root fetch - processPackages [LSDpy]: Remove: archive file [/home/abi/fetcher/tmp/LSDpy-0.4.6.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - processPackages [LSDpy]: Remove: archive file [/home/abi/fetcher/tmp/lsdpy-0.4.7.tar.gz]
+[2024-05-11 08:01:54] INFO root fetch - main [MainThread]: End processing [LSDpy]: success
+[2024-05-11 08:01:54] INFO root fetch - main [MainThread]: Store serial: [23158090]
