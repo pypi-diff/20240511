@@ -11200,3 +11200,15 @@
 [2024-05-11 08:34:49] INFO root fetch - processPackages [nuancesz]: Remove: archive file [/home/abi/fetcher/tmp/nuancesz-2.1.tar.gz]
 [2024-05-11 08:34:49] INFO root fetch - main [MainThread]: End processing [nuancesz]: success
 [2024-05-11 08:34:49] INFO root fetch - main [MainThread]: Store serial: [23158293]
+[2024-05-11 08:36:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158293]
+[2024-05-11 08:36:58] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 08:36:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hc-log-tools
+[2024-05-11 08:36:58] INFO root fetch - processPackages [hc-log-tools]: New version: [1.2.3] Old Version: [1.2.1]
+[2024-05-11 08:36:58] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/30/c8/c011d2ae789c8ce20a1ca29fabd339af6ee302a752671d19fb9d43e7fd91/hc_log_tools-1.2.1.tar.gz
+[2024-05-11 08:36:59] INFO root fetch - processPackages [hc-log-tools]: Downloading https://files.pythonhosted.org/packages/c8/21/9fa0c9cab7ca1b516922b4bda99bd1740f0751ae69a1765932e4a57bbdc4/hc_log_tools-1.2.3.tar.gz
+[2024-05-11 08:36:59] INFO root fetch - processPackages [hc-log-tools]: executing diffoscope
+[2024-05-11 08:36:59] INFO root fetch - processPackages [hc-log-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hc_log_tools-1.2.1.tar.gz tmp/hc_log_tools-1.2.3.tar.gz --markdown 20240511/h/hc-log-tools/1.2.1-1.2.3/README.md --exclude *.pyd
+[2024-05-11 08:36:59] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.1.tar.gz]
+[2024-05-11 08:36:59] INFO root fetch - processPackages [hc-log-tools]: Remove: archive file [/home/abi/fetcher/tmp/hc_log_tools-1.2.3.tar.gz]
+[2024-05-11 08:36:59] INFO root fetch - main [MainThread]: End processing [hc-log-tools]: success
+[2024-05-11 08:36:59] INFO root fetch - main [MainThread]: Store serial: [23158293]
