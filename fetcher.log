@@ -7646,3 +7646,34 @@
 [2024-05-11 03:56:12] INFO root fetch - processPackages [bioregistry]: Remove: archive file [/home/abi/fetcher/tmp/bioregistry-0.9.97.tar.gz]
 [2024-05-11 03:56:12] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
 [2024-05-11 03:56:12] INFO root fetch - main [MainThread]: Store serial: [23156465]
+[2024-05-11 03:58:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156465]
+[2024-05-11 03:58:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bagbag
+[2024-05-11 03:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: owiener
+[2024-05-11 03:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: owiener
+[2024-05-11 03:58:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emulsorz
+[2024-05-11 03:58:23] WARNING root fetch - processPackages [emulsorz]: Skipping, unable to determine old version
+[2024-05-11 03:58:23] INFO root fetch - processPackages [owiener]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 03:58:23] INFO root fetch - main [MainThread]: End processing [emulsorz] error
+[2024-05-11 03:58:23] INFO root fetch - processPackages [owiener]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 03:58:24] INFO root fetch - processPackages [bagbag]: New version: [0.67.3] Old Version: [0.67.2]
+[2024-05-11 03:58:24] INFO root fetch - processPackages [bagbag]: Downloading https://files.pythonhosted.org/packages/97/56/15e36d1bb182091fb77d72150882af1b976353ef9551153257ea74d7da33/bagbag-0.67.2.tar.gz
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: Downloading https://files.pythonhosted.org/packages/c6/cc/975c4859a4dcd380a9c38fadd9ae884df181bceeccfa46d6d9d2de84f7d0/owiener-1.0.8-py2.py3-none-any.whl
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: Downloading https://files.pythonhosted.org/packages/c6/cc/975c4859a4dcd380a9c38fadd9ae884df181bceeccfa46d6d9d2de84f7d0/owiener-1.0.8-py2.py3-none-any.whl
+[2024-05-11 03:58:24] INFO root fetch - processPackages [bagbag]: Downloading https://files.pythonhosted.org/packages/41/8d/a9e067df9e1da190b68d9723decdcf9b39a52c24c9e4c58f4ab910bd6795/bagbag-0.67.3.tar.gz
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: Downloading https://files.pythonhosted.org/packages/58/b4/72875246c1cc54636a54a02bf895c2c4396170a60ec22ff75d4954f1687c/owiener-1.0.9.tar.gz
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: Downloading https://files.pythonhosted.org/packages/58/b4/72875246c1cc54636a54a02bf895c2c4396170a60ec22ff75d4954f1687c/owiener-1.0.9.tar.gz
+[2024-05-11 03:58:24] INFO root fetch - processPackages [bagbag]: executing diffoscope
+[2024-05-11 03:58:24] INFO root fetch - processPackages [bagbag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bagbag-0.67.2.tar.gz tmp/bagbag-0.67.3.tar.gz --markdown 20240511/b/bagbag/0.67.2-0.67.3/README.md --exclude *.pyd
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: executing diffoscope
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owiener-1.0.8-py2.py3-none-any.whl.zip tmp/owiener-1.0.9.tar.gz --markdown 20240511/o/owiener/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: executing diffoscope
+[2024-05-11 03:58:24] INFO root fetch - processPackages [owiener]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/owiener-1.0.8-py2.py3-none-any.whl.zip tmp/owiener-1.0.9.tar.gz --markdown 20240511/o/owiener/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 03:58:25] INFO root fetch - processPackages [owiener]: Remove: archive file [/home/abi/fetcher/tmp/owiener-1.0.8-py2.py3-none-any.whl.zip]
+[2024-05-11 03:58:25] INFO root fetch - processPackages [owiener]: Remove: archive file [/home/abi/fetcher/tmp/owiener-1.0.9.tar.gz]
+[2024-05-11 03:58:25] INFO root fetch - main [MainThread]: End processing [owiener]: success
+[2024-05-11 03:58:25] INFO root fetch - main [MainThread]: End processing [owiener]: success
+[2024-05-11 03:58:25] INFO root fetch - processPackages [bagbag]: Remove: archive file [/home/abi/fetcher/tmp/bagbag-0.67.2.tar.gz]
+[2024-05-11 03:58:25] INFO root fetch - processPackages [bagbag]: Remove: archive file [/home/abi/fetcher/tmp/bagbag-0.67.3.tar.gz]
+[2024-05-11 03:58:25] INFO root fetch - main [MainThread]: End processing [bagbag]: success
+[2024-05-11 03:58:25] INFO root fetch - main [MainThread]: Store serial: [23156478]
