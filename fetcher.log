@@ -22785,3 +22785,27 @@
 [2024-05-11 21:53:07] INFO root fetch - processPackages [badkeys]: Remove: archive file [/home/abi/fetcher/tmp/badkeys-0.0.9.tar.gz]
 [2024-05-11 21:53:07] INFO root fetch - main [MainThread]: End processing [badkeys]: success
 [2024-05-11 21:53:07] INFO root fetch - main [MainThread]: Store serial: [23164115]
+[2024-05-11 21:55:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164115]
+[2024-05-11 21:55:16] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 21:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: paraselenez
+[2024-05-11 21:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: satsure-core-test
+[2024-05-11 21:55:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: telemetrix-aio
+[2024-05-11 21:55:16] WARNING root fetch - processPackages [paraselenez]: Skipping, unable to determine old version
+[2024-05-11 21:55:16] INFO root fetch - main [MainThread]: End processing [paraselenez] error
+[2024-05-11 21:55:16] INFO root fetch - processPackages [satsure-core-test]: New version: [0.0.6] Old Version: [0.0.4]
+[2024-05-11 21:55:16] INFO root fetch - processPackages [telemetrix-aio]: New version: [1.9] Old Version: [1.8]
+[2024-05-11 21:55:16] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/4c/cb/d4596ab089f8fd7b84007df4c778f1b7605185d4c1772410d2dd0a486453/satsure_core_test-0.0.4.tar.gz
+[2024-05-11 21:55:16] INFO root fetch - processPackages [telemetrix-aio]: Downloading https://files.pythonhosted.org/packages/71/7d/27ba0731255575b188ba14564bea43acedb0594030c02bc134c57a18c5dc/telemetrix-aio-1.8.tar.gz
+[2024-05-11 21:55:16] INFO root fetch - processPackages [satsure-core-test]: Downloading https://files.pythonhosted.org/packages/14/e0/24d0e1e92ad56d5a56dba00615bf5dcdf3f050f7db3ade1e4e03cfe2dba9/satsure_core_test-0.0.6.tar.gz
+[2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: Downloading https://files.pythonhosted.org/packages/2c/e3/1cce051290e2ae1aacba6b1c56bfefeb0529bc77a7a42b3206a6f37dec50/telemetrix-aio-1.9.tar.gz
+[2024-05-11 21:55:17] INFO root fetch - processPackages [satsure-core-test]: executing diffoscope
+[2024-05-11 21:55:17] INFO root fetch - processPackages [satsure-core-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/satsure_core_test-0.0.4.tar.gz tmp/satsure_core_test-0.0.6.tar.gz --markdown 20240511/s/satsure-core-test/0.0.4-0.0.6/README.md --exclude *.pyd
+[2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: executing diffoscope
+[2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/telemetrix-aio-1.8.tar.gz tmp/telemetrix-aio-1.9.tar.gz --markdown 20240511/t/telemetrix-aio/1.8-1.9/README.md --exclude *.pyd
+[2024-05-11 21:55:17] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure_core_test-0.0.4.tar.gz]
+[2024-05-11 21:55:17] INFO root fetch - processPackages [satsure-core-test]: Remove: archive file [/home/abi/fetcher/tmp/satsure_core_test-0.0.6.tar.gz]
+[2024-05-11 21:55:17] INFO root fetch - main [MainThread]: End processing [satsure-core-test]: success
+[2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-aio-1.8.tar.gz]
+[2024-05-11 21:55:17] INFO root fetch - processPackages [telemetrix-aio]: Remove: archive file [/home/abi/fetcher/tmp/telemetrix-aio-1.9.tar.gz]
+[2024-05-11 21:55:17] INFO root fetch - main [MainThread]: End processing [telemetrix-aio]: success
+[2024-05-11 21:55:17] INFO root fetch - main [MainThread]: Store serial: [23164126]
