@@ -18287,3 +18287,63 @@
 [2024-05-11 16:50:37] INFO root fetch - processPackages [tmexio]: Remove: archive file [/home/abi/fetcher/tmp/tmexio-0.1.0.tar.gz]
 [2024-05-11 16:50:37] INFO root fetch - main [MainThread]: End processing [tmexio]: success
 [2024-05-11 16:50:37] INFO root fetch - main [MainThread]: Store serial: [23162055]
+[2024-05-11 16:52:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162055]
+[2024-05-11 16:52:46] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zoomto
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: albespynez
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyxllib
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: servilelyz
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-ssi-transaction-queue-mixin
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo14-addon-ssi-transaction-queue-cancel-mixin
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: linktest
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo14-addon-ssi-transaction-queue-done-mixin
+[2024-05-11 16:52:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rofimoji
+[2024-05-11 16:52:46] INFO root fetch - processPackages [zoomto]: New version: [0.9.0] Old Version: [0.2]
+[2024-05-11 16:52:46] INFO root fetch - processPackages [zoomto]: Downloading https://files.pythonhosted.org/packages/4b/93/05c528b7554d0894bda557410bfa873dbe18293be373c36f0f4450340fb7/zoomto-0.2.tar.gz
+[2024-05-11 16:52:46] INFO root fetch - processPackages [servilelyz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:52:46] INFO root fetch - processPackages [pyxllib]: New version: [0.3.96] Old Version: [0.3.95]
+[2024-05-11 16:52:46] WARNING root fetch - processPackages [albespynez]: Skipping, unable to determine old version
+[2024-05-11 16:52:46] INFO root fetch - main [MainThread]: End processing [albespynez] error
+[2024-05-11 16:52:46] WARNING root fetch - processPackages [odoo14-addon-ssi-transaction-queue-cancel-mixin]: Skipping, unable to determine old version
+[2024-05-11 16:52:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-transaction-queue-cancel-mixin] error
+[2024-05-11 16:52:46] WARNING root fetch - processPackages [odoo14-addon-ssi-transaction-queue-done-mixin]: Skipping, unable to determine old version
+[2024-05-11 16:52:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-transaction-queue-done-mixin] error
+[2024-05-11 16:52:46] INFO root fetch - processPackages [linktest]: New version: [2.7.7] Old Version: [2.7.6]
+[2024-05-11 16:52:46] WARNING root fetch - processPackages [odoo14-addon-ssi-transaction-queue-mixin]: Skipping, unable to determine old version
+[2024-05-11 16:52:46] INFO root fetch - main [MainThread]: End processing [odoo14-addon-ssi-transaction-queue-mixin] error
+[2024-05-11 16:52:46] INFO root fetch - processPackages [rofimoji]: New version: [6.3.1] Old Version: [6.3.0]
+[2024-05-11 16:52:46] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/e7/3c/17e7db64b3f76320bbf38868555e1b764c703a512c991724477530a4d563/pyxllib-0.3.95.tar.gz
+[2024-05-11 16:52:46] INFO root fetch - processPackages [zoomto]: Downloading https://files.pythonhosted.org/packages/7c/63/346623c74968d73c63bca23729f138c82c260ae7d30be0bc9e8568388de0/zoomto-0.9.0.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: Downloading https://files.pythonhosted.org/packages/58/b5/ffc256bb11e9da1d440e52e6a58d3221d6b33d59544e1b615fb3699aac53/servilelyz-1.1.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/31/36/0c27aa0ec2299a0080df5a2fd7390337f6b684352ae417b3fe22f93c1b3e/linktest-2.7.6.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [rofimoji]: Downloading https://files.pythonhosted.org/packages/41/c3/0081544359a93b8a0a429f7073febe902900b427fdfa15cbae497262b109/rofimoji-6.3.0.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [zoomto]: executing diffoscope
+[2024-05-11 16:52:47] INFO root fetch - processPackages [zoomto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoomto-0.2.tar.gz tmp/zoomto-0.9.0.tar.gz --markdown 20240511/z/zoomto/0.2-0.9.0/README.md --exclude *.pyd
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: Downloading https://files.pythonhosted.org/packages/ef/74/591977d4b0af06dc549ace3c4d6a4c3db7bff7615004f34a1df0d35132e3/servilelyz-2.1.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [pyxllib]: Downloading https://files.pythonhosted.org/packages/28/6c/845f9d401f8fc52b82d4e4d79b9fc6d67497c441d4a1b3ac886e243aea4e/pyxllib-0.3.96.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [linktest]: Downloading https://files.pythonhosted.org/packages/5f/a8/6725353ebc672400ac51adf0319ff4d65607389ca67ef5693b58c62c734b/linktest-2.7.7.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: executing diffoscope
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/servilelyz-1.1.tar.gz tmp/servilelyz-2.1.tar.gz --markdown 20240511/s/servilelyz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:52:47] INFO root fetch - processPackages [rofimoji]: Downloading https://files.pythonhosted.org/packages/0b/b3/f70541ac503f199de25252fd9100df79d6b52661fed6b24ce4e665b0aa3a/rofimoji-6.3.1.tar.gz
+[2024-05-11 16:52:47] INFO root fetch - processPackages [pyxllib]: executing diffoscope
+[2024-05-11 16:52:47] INFO root fetch - processPackages [pyxllib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxllib-0.3.95.tar.gz tmp/pyxllib-0.3.96.tar.gz --markdown 20240511/p/pyxllib/0.3.95-0.3.96/README.md --exclude *.pyd
+[2024-05-11 16:52:47] INFO root fetch - processPackages [linktest]: executing diffoscope
+[2024-05-11 16:52:47] INFO root fetch - processPackages [linktest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linktest-2.7.6.tar.gz tmp/linktest-2.7.7.tar.gz --markdown 20240511/l/linktest/2.7.6-2.7.7/README.md --exclude *.pyd
+[2024-05-11 16:52:47] INFO root fetch - processPackages [zoomto]: Remove: archive file [/home/abi/fetcher/tmp/zoomto-0.2.tar.gz]
+[2024-05-11 16:52:47] INFO root fetch - processPackages [zoomto]: Remove: archive file [/home/abi/fetcher/tmp/zoomto-0.9.0.tar.gz]
+[2024-05-11 16:52:47] INFO root fetch - main [MainThread]: End processing [zoomto]: success
+[2024-05-11 16:52:47] INFO root fetch - processPackages [rofimoji]: executing diffoscope
+[2024-05-11 16:52:47] INFO root fetch - processPackages [rofimoji]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rofimoji-6.3.0.tar.gz tmp/rofimoji-6.3.1.tar.gz --markdown 20240511/r/rofimoji/6.3.0-6.3.1/README.md --exclude *.pyd
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: Remove: archive file [/home/abi/fetcher/tmp/servilelyz-1.1.tar.gz]
+[2024-05-11 16:52:47] INFO root fetch - processPackages [servilelyz]: Remove: archive file [/home/abi/fetcher/tmp/servilelyz-2.1.tar.gz]
+[2024-05-11 16:52:47] INFO root fetch - main [MainThread]: End processing [servilelyz]: success
+[2024-05-11 16:52:48] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.7.6.tar.gz]
+[2024-05-11 16:52:48] INFO root fetch - processPackages [linktest]: Remove: archive file [/home/abi/fetcher/tmp/linktest-2.7.7.tar.gz]
+[2024-05-11 16:52:48] INFO root fetch - main [MainThread]: End processing [linktest]: success
+[2024-05-11 16:52:49] INFO root fetch - processPackages [pyxllib]: Remove: archive file [/home/abi/fetcher/tmp/pyxllib-0.3.95.tar.gz]
+[2024-05-11 16:52:49] INFO root fetch - processPackages [pyxllib]: Remove: archive file [/home/abi/fetcher/tmp/pyxllib-0.3.96.tar.gz]
+[2024-05-11 16:52:49] INFO root fetch - main [MainThread]: End processing [pyxllib]: success
+[2024-05-11 16:52:49] INFO root fetch - processPackages [rofimoji]: Remove: archive file [/home/abi/fetcher/tmp/rofimoji-6.3.0.tar.gz]
+[2024-05-11 16:52:49] INFO root fetch - processPackages [rofimoji]: Remove: archive file [/home/abi/fetcher/tmp/rofimoji-6.3.1.tar.gz]
+[2024-05-11 16:52:49] INFO root fetch - main [MainThread]: End processing [rofimoji]: success
+[2024-05-11 16:52:49] INFO root fetch - main [MainThread]: Store serial: [23162083]
