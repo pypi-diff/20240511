@@ -12432,3 +12432,20 @@
 [2024-05-11 10:08:48] INFO root fetch - processPackages [pyglove]: Remove: archive file [/home/abi/fetcher/tmp/pyglove-0.4.5.dev20240510.tar.gz]
 [2024-05-11 10:08:48] INFO root fetch - main [MainThread]: End processing [pyglove]: success
 [2024-05-11 10:08:48] INFO root fetch - main [MainThread]: Store serial: [23158888]
+[2024-05-11 10:10:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158888]
+[2024-05-11 10:10:57] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 10:12:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158888]
+[2024-05-11 10:13:02] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 10:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fissionz
+[2024-05-11 10:13:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: peltationz
+[2024-05-11 10:13:02] WARNING root fetch - processPackages [fissionz]: Skipping, unable to determine old version
+[2024-05-11 10:13:02] INFO root fetch - main [MainThread]: End processing [fissionz] error
+[2024-05-11 10:13:02] INFO root fetch - processPackages [peltationz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:13:02] INFO root fetch - processPackages [peltationz]: Downloading https://files.pythonhosted.org/packages/6c/11/85ce22ba837771cd0a46744746fc8ab53de3ac64a0a3addb255f06b48890/peltationz-1.1.tar.gz
+[2024-05-11 10:13:02] INFO root fetch - processPackages [peltationz]: Downloading https://files.pythonhosted.org/packages/e9/3c/7ee51783931d16948c662d05c969179f066034a4a682793baef790dcbfcb/peltationz-2.1.tar.gz
+[2024-05-11 10:13:03] INFO root fetch - processPackages [peltationz]: executing diffoscope
+[2024-05-11 10:13:03] INFO root fetch - processPackages [peltationz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peltationz-1.1.tar.gz tmp/peltationz-2.1.tar.gz --markdown 20240511/p/peltationz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:13:03] INFO root fetch - processPackages [peltationz]: Remove: archive file [/home/abi/fetcher/tmp/peltationz-1.1.tar.gz]
+[2024-05-11 10:13:03] INFO root fetch - processPackages [peltationz]: Remove: archive file [/home/abi/fetcher/tmp/peltationz-2.1.tar.gz]
+[2024-05-11 10:13:03] INFO root fetch - main [MainThread]: End processing [peltationz]: success
+[2024-05-11 10:13:03] INFO root fetch - main [MainThread]: Store serial: [23158897]
