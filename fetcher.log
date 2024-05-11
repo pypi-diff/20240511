@@ -15175,3 +15175,40 @@
 [2024-05-11 13:12:18] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.13.0.tar.gz]
 [2024-05-11 13:12:18] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
 [2024-05-11 13:12:18] INFO root fetch - main [MainThread]: Store serial: [23160405]
+[2024-05-11 13:14:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160405]
+[2024-05-11 13:14:26] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 13:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2024-05-11 13:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fluidprop
+[2024-05-11 13:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-core-cpp
+[2024-05-11 13:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bigdl-core-xe-esimd-21
+[2024-05-11 13:14:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: prerefinez
+[2024-05-11 13:14:27] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: New version: [2.5.0b20240510] Old Version: [2.5.0b20240509]
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-cpp]: New version: [2.5.0b20240510] Old Version: [2.5.0b20240509]
+[2024-05-11 13:14:27] WARNING root fetch - processPackages [fluidprop]: Skipping, unable to determine old version
+[2024-05-11 13:14:27] INFO root fetch - main [MainThread]: End processing [fluidprop] error
+[2024-05-11 13:14:27] INFO root fetch - processPackages [prerefinez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 13:14:27] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-cpp]: Downloading https://files.pythonhosted.org/packages/6a/b1/cda12f3dbc78bfa4c584b827d63db9c3d933699c3308c474d0b3490b26a0/bigdl_core_cpp-2.5.0b20240509-py3-none-win_amd64.whl
+[2024-05-11 13:14:27] WARNING root fetch - processPackages [bigdl-core-cpp]: Skipping package: exceeds size limit 26935658>=10485760
+[2024-05-11 13:14:27] INFO root fetch - main [MainThread]: End processing [bigdl-core-cpp] error
+[2024-05-11 13:14:27] INFO root fetch - processPackages [prerefinez]: Downloading https://files.pythonhosted.org/packages/54/df/532f60a589872c80bee06c721d5a71cb37e37cb4f3ba2c891397dbb40e00/prerefinez-1.1.tar.gz
+[2024-05-11 13:14:27] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Downloading https://files.pythonhosted.org/packages/3d/24/f1aeff7f137eabd72c868a3046ccbc3585cc05e00a01b81ef4d4fafda975/bigdl_core_xe_esimd_21-2.5.0b20240510-cp39-cp39-win_amd64.whl
+[2024-05-11 13:14:27] INFO root fetch - processPackages [prerefinez]: Downloading https://files.pythonhosted.org/packages/ae/8e/0539469ca1a1ac61297ec414b6ed5adeaaaee8f06adaa0c796feacb7437b/prerefinez-2.1.tar.gz
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: executing diffoscope
+[2024-05-11 13:14:27] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_core_xe_esimd_21-2.5.0b20240509-cp39-cp39-win_amd64.whl.zip tmp/bigdl_core_xe_esimd_21-2.5.0b20240510-cp39-cp39-win_amd64.whl.zip --markdown 20240511/b/bigdl-core-xe-esimd-21/2.5.0b20240509-2.5.0b20240510/README.md --exclude *.pyd
+[2024-05-11 13:14:27] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2024-05-11 13:14:27] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20240511/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/README.md --exclude *.pyd
+[2024-05-11 13:14:27] INFO root fetch - processPackages [prerefinez]: executing diffoscope
+[2024-05-11 13:14:27] INFO root fetch - processPackages [prerefinez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prerefinez-1.1.tar.gz tmp/prerefinez-2.1.tar.gz --markdown 20240511/p/prerefinez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 13:14:28] INFO root fetch - processPackages [prerefinez]: Remove: archive file [/home/abi/fetcher/tmp/prerefinez-1.1.tar.gz]
+[2024-05-11 13:14:28] INFO root fetch - processPackages [prerefinez]: Remove: archive file [/home/abi/fetcher/tmp/prerefinez-2.1.tar.gz]
+[2024-05-11 13:14:28] INFO root fetch - main [MainThread]: End processing [prerefinez]: success
+[2024-05-11 13:14:28] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_core_xe_esimd_21-2.5.0b20240509-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 13:14:28] INFO root fetch - processPackages [bigdl-core-xe-esimd-21]: Remove: archive file [/home/abi/fetcher/tmp/bigdl_core_xe_esimd_21-2.5.0b20240510-cp39-cp39-win_amd64.whl.zip]
+[2024-05-11 13:14:28] INFO root fetch - main [MainThread]: End processing [bigdl-core-xe-esimd-21]: success
+[2024-05-11 13:14:29] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip]
+[2024-05-11 13:14:29] INFO root fetch - processPackages [tb-nightly]: Remove: archive file [/home/abi/fetcher/tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip]
+[2024-05-11 13:14:29] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2024-05-11 13:14:29] INFO root fetch - main [MainThread]: Store serial: [23160419]
