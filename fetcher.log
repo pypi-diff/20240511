@@ -9840,3 +9840,21 @@
 [2024-05-11 06:40:36] INFO root fetch - processPackages [bisos.facter]: Remove: archive file [/home/abi/fetcher/tmp/bisos.facter-0.4.tar.gz]
 [2024-05-11 06:40:36] INFO root fetch - main [MainThread]: End processing [bisos.facter]: success
 [2024-05-11 06:40:36] INFO root fetch - main [MainThread]: Store serial: [23157311]
+[2024-05-11 06:42:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157311]
+[2024-05-11 06:42:45] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 06:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mischievousnessz
+[2024-05-11 06:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gh_copilot_chat
+[2024-05-11 06:42:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fistulariidaez
+[2024-05-11 06:42:45] WARNING root fetch - processPackages [gh_copilot_chat]: Skipping, unable to determine old version
+[2024-05-11 06:42:45] INFO root fetch - main [MainThread]: End processing [gh_copilot_chat] error
+[2024-05-11 06:42:45] INFO root fetch - processPackages [mischievousnessz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:42:45] WARNING root fetch - processPackages [fistulariidaez]: Skipping, unable to determine old version
+[2024-05-11 06:42:45] INFO root fetch - main [MainThread]: End processing [fistulariidaez] error
+[2024-05-11 06:42:45] INFO root fetch - processPackages [mischievousnessz]: Downloading https://files.pythonhosted.org/packages/6b/10/50a085a41ff8f0de855dd5a32ba202d69a6374982928c1eae1d369ea7cff/mischievousnessz-1.1.tar.gz
+[2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: Downloading https://files.pythonhosted.org/packages/40/41/15ae2a93e681b6b475593d21f361bdbb500bf3f07e376e50ed031eff7dfc/mischievousnessz-2.1.tar.gz
+[2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: executing diffoscope
+[2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mischievousnessz-1.1.tar.gz tmp/mischievousnessz-2.1.tar.gz --markdown 20240511/m/mischievousnessz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: Remove: archive file [/home/abi/fetcher/tmp/mischievousnessz-1.1.tar.gz]
+[2024-05-11 06:42:46] INFO root fetch - processPackages [mischievousnessz]: Remove: archive file [/home/abi/fetcher/tmp/mischievousnessz-2.1.tar.gz]
+[2024-05-11 06:42:46] INFO root fetch - main [MainThread]: End processing [mischievousnessz]: success
+[2024-05-11 06:42:46] INFO root fetch - main [MainThread]: Store serial: [23157320]
