@@ -22851,3 +22851,24 @@
 [2024-05-11 21:59:37] INFO root fetch - processPackages [trowelingz]: Remove: archive file [/home/abi/fetcher/tmp/trowelingz-2.1.tar.gz]
 [2024-05-11 21:59:37] INFO root fetch - main [MainThread]: End processing [trowelingz]: success
 [2024-05-11 21:59:37] INFO root fetch - main [MainThread]: Store serial: [23164146]
+[2024-05-11 22:01:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164146]
+[2024-05-11 22:01:46] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 22:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: auto-circuit
+[2024-05-11 22:01:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eyeGestures
+[2024-05-11 22:01:47] INFO root fetch - processPackages [auto-circuit]: New version: [0.1.4] Old Version: [0.1.3]
+[2024-05-11 22:01:47] INFO root fetch - processPackages [eyeGestures]: New version: [1.4.4] Old Version: [1.3.4]
+[2024-05-11 22:01:47] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/b8/c6/f3e77b7a65f11ce6e82aeb9b4a473a972946af6b9e6eb3abc4a286e2a7de/auto_circuit-0.1.3.tar.gz
+[2024-05-11 22:01:47] INFO root fetch - processPackages [eyeGestures]: Downloading https://files.pythonhosted.org/packages/0f/53/2fb43ae6e277c29585ee71e5b9238c75d68cacfcd69b498c50d5a5bc0241/eyegestures-1.3.4.tar.gz
+[2024-05-11 22:01:47] INFO root fetch - processPackages [auto-circuit]: Downloading https://files.pythonhosted.org/packages/b9/ca/3c2b195fcee2b86f5feff620bf6c742cd4a15d45becacf9a9e768b91ec8d/auto_circuit-0.1.4.tar.gz
+[2024-05-11 22:01:47] INFO root fetch - processPackages [eyeGestures]: Downloading https://files.pythonhosted.org/packages/4a/a9/462d661ac6fc5c6e05ffd6cf1ff7d5e20c8efc5507f5791b94c1f6c81c2f/eyegestures-1.4.4.tar.gz
+[2024-05-11 22:01:47] INFO root fetch - processPackages [eyeGestures]: executing diffoscope
+[2024-05-11 22:01:47] INFO root fetch - processPackages [eyeGestures]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eyegestures-1.3.4.tar.gz tmp/eyegestures-1.4.4.tar.gz --markdown 20240511/e/eyeGestures/1.3.4-1.4.4/README.md --exclude *.pyd
+[2024-05-11 22:01:47] INFO root fetch - processPackages [auto-circuit]: executing diffoscope
+[2024-05-11 22:01:47] INFO root fetch - processPackages [auto-circuit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/auto_circuit-0.1.3.tar.gz tmp/auto_circuit-0.1.4.tar.gz --markdown 20240511/a/auto-circuit/0.1.3-0.1.4/README.md --exclude *.pyd
+[2024-05-11 22:01:48] INFO root fetch - processPackages [eyeGestures]: Remove: archive file [/home/abi/fetcher/tmp/eyegestures-1.3.4.tar.gz]
+[2024-05-11 22:01:48] INFO root fetch - processPackages [eyeGestures]: Remove: archive file [/home/abi/fetcher/tmp/eyegestures-1.4.4.tar.gz]
+[2024-05-11 22:01:48] INFO root fetch - main [MainThread]: End processing [eyeGestures]: success
+[2024-05-11 22:01:48] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.3.tar.gz]
+[2024-05-11 22:01:48] INFO root fetch - processPackages [auto-circuit]: Remove: archive file [/home/abi/fetcher/tmp/auto_circuit-0.1.4.tar.gz]
+[2024-05-11 22:01:48] INFO root fetch - main [MainThread]: End processing [auto-circuit]: success
+[2024-05-11 22:01:48] INFO root fetch - main [MainThread]: Store serial: [23164151]
