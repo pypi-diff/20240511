@@ -18234,3 +18234,33 @@
 [2024-05-11 16:46:17] INFO root fetch - processPackages [akshare]: Remove: archive file [/home/abi/fetcher/tmp/akshare-1.9.99.tar.gz]
 [2024-05-11 16:46:17] INFO root fetch - main [MainThread]: End processing [akshare]: success
 [2024-05-11 16:46:17] INFO root fetch - main [MainThread]: Store serial: [23162034]
+[2024-05-11 16:48:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162034]
+[2024-05-11 16:48:26] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 16:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: serpulidz
+[2024-05-11 16:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-11 16:48:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: terragrunt-generator
+[2024-05-11 16:48:26] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 16:48:26] INFO root fetch - processPackages [serpulidz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 16:48:26] INFO root fetch - processPackages [terragrunt-generator]: New version: [0.7.6] Old Version: [0.7.5]
+[2024-05-11 16:48:26] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 16:48:26] INFO root fetch - processPackages [serpulidz]: Downloading https://files.pythonhosted.org/packages/b8/ac/8dd745481c50c0c8c2cbc2be867ed0df899326c8cf0f1aee377eea3838c2/serpulidz-1.1.tar.gz
+[2024-05-11 16:48:27] INFO root fetch - processPackages [terragrunt-generator]: Downloading https://files.pythonhosted.org/packages/19/6c/69cdb0094507ae30308690edd9520b0c3ae93b1b0e93e2d2e8a7b90b48ce/terragrunt-generator-0.7.5.tar.gz
+[2024-05-11 16:48:27] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 16:48:27] INFO root fetch - processPackages [serpulidz]: Downloading https://files.pythonhosted.org/packages/3f/0a/63b6f9d39918ba3dd19671a929eef0ec5104ccd6a257b3644a7098f11dcf/serpulidz-2.1.tar.gz
+[2024-05-11 16:48:27] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 16:48:27] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 16:48:27] INFO root fetch - processPackages [terragrunt-generator]: Downloading https://files.pythonhosted.org/packages/0c/8e/f59055da2af800e3036a84e1be795d670fac049fbedb97620bfa96242231/terragrunt_generator-0.7.6.tar.gz
+[2024-05-11 16:48:27] INFO root fetch - processPackages [serpulidz]: executing diffoscope
+[2024-05-11 16:48:27] INFO root fetch - processPackages [serpulidz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/serpulidz-1.1.tar.gz tmp/serpulidz-2.1.tar.gz --markdown 20240511/s/serpulidz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 16:48:27] INFO root fetch - processPackages [terragrunt-generator]: executing diffoscope
+[2024-05-11 16:48:27] INFO root fetch - processPackages [terragrunt-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terragrunt-generator-0.7.5.tar.gz tmp/terragrunt_generator-0.7.6.tar.gz --markdown 20240511/t/terragrunt-generator/0.7.5-0.7.6/README.md --exclude *.pyd
+[2024-05-11 16:48:27] INFO root fetch - processPackages [serpulidz]: Remove: archive file [/home/abi/fetcher/tmp/serpulidz-1.1.tar.gz]
+[2024-05-11 16:48:27] INFO root fetch - processPackages [serpulidz]: Remove: archive file [/home/abi/fetcher/tmp/serpulidz-2.1.tar.gz]
+[2024-05-11 16:48:27] INFO root fetch - main [MainThread]: End processing [serpulidz]: success
+[2024-05-11 16:48:28] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 16:48:28] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 16:48:28] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 16:48:28] INFO root fetch - processPackages [terragrunt-generator]: Remove: archive file [/home/abi/fetcher/tmp/terragrunt-generator-0.7.5.tar.gz]
+[2024-05-11 16:48:28] INFO root fetch - processPackages [terragrunt-generator]: Remove: archive file [/home/abi/fetcher/tmp/terragrunt_generator-0.7.6.tar.gz]
+[2024-05-11 16:48:28] INFO root fetch - main [MainThread]: End processing [terragrunt-generator]: success
+[2024-05-11 16:48:28] INFO root fetch - main [MainThread]: Store serial: [23162042]
