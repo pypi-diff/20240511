@@ -24136,3 +24136,36 @@
 [2024-05-11 23:33:17] INFO root fetch - processPackages [market-engine]: Remove: archive file [/home/abi/fetcher/tmp/market-engine-0.1.9.tar.gz]
 [2024-05-11 23:33:17] INFO root fetch - main [MainThread]: End processing [market-engine]: success
 [2024-05-11 23:33:17] INFO root fetch - main [MainThread]: Store serial: [23164732]
+[2024-05-11 23:35:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164732]
+[2024-05-11 23:35:26] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 23:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: market-engine
+[2024-05-11 23:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyaogmaneo
+[2024-05-11 23:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hikari-tanjun
+[2024-05-11 23:35:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vasotocinz
+[2024-05-11 23:35:26] INFO root fetch - processPackages [market-engine]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 23:35:26] INFO root fetch - processPackages [market-engine]: Downloading https://files.pythonhosted.org/packages/d8/bd/82a9be9afd2e3a96f90ebba4b98815d7c0d5c6661a2819b61db3eabf4cc2/market-engine-0.1.8.tar.gz
+[2024-05-11 23:35:26] WARNING root fetch - processPackages [vasotocinz]: Skipping, unable to determine old version
+[2024-05-11 23:35:26] INFO root fetch - main [MainThread]: End processing [vasotocinz] error
+[2024-05-11 23:35:26] INFO root fetch - processPackages [hikari-tanjun]: New version: [2.9.0a1] Old Version: [2.8.1a1]
+[2024-05-11 23:35:26] INFO root fetch - processPackages [pyaogmaneo]: New version: [2.6.1] Old Version: [2.6.0]
+[2024-05-11 23:35:26] INFO root fetch - processPackages [hikari-tanjun]: Downloading https://files.pythonhosted.org/packages/71/30/c5ae4288e24c952ee5355ca028f61f166c17b12586c18cad6a2743f7c6a4/hikari-tanjun-2.8.1a1.tar.gz
+[2024-05-11 23:35:26] INFO root fetch - processPackages [market-engine]: Downloading https://files.pythonhosted.org/packages/3b/e0/436fca5207f1cd4f34ca629d8709efe1ef4b8955f65769c7375c0278d2c5/market-engine-0.1.9.tar.gz
+[2024-05-11 23:35:26] INFO root fetch - processPackages [market-engine]: executing diffoscope
+[2024-05-11 23:35:26] INFO root fetch - processPackages [market-engine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/market-engine-0.1.8.tar.gz tmp/market-engine-0.1.9.tar.gz --markdown 20240511/m/market-engine/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 23:35:27] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/ca/40/e67a82bf97d8a94819975197d866866d217e14b12e583175aacf304879c2/pyaogmaneo-2.6.0.tar.gz
+[2024-05-11 23:35:27] INFO root fetch - processPackages [hikari-tanjun]: Downloading https://files.pythonhosted.org/packages/19/06/58f326a3b2fb3b26f8f8461e44564b589fcba7b44e9737bfcc53cf7029a1/hikari-tanjun-2.9.0a1.tar.gz
+[2024-05-11 23:35:27] INFO root fetch - processPackages [pyaogmaneo]: Downloading https://files.pythonhosted.org/packages/93/5d/d1d89038b8348d58d341b47c4bf597407ec6d8ed8f2e379c04843239af63/pyaogmaneo-2.6.1-cp312-cp312-win32.whl
+[2024-05-11 23:35:27] INFO root fetch - processPackages [market-engine]: Remove: archive file [/home/abi/fetcher/tmp/market-engine-0.1.8.tar.gz]
+[2024-05-11 23:35:27] INFO root fetch - processPackages [market-engine]: Remove: archive file [/home/abi/fetcher/tmp/market-engine-0.1.9.tar.gz]
+[2024-05-11 23:35:27] INFO root fetch - main [MainThread]: End processing [market-engine]: success
+[2024-05-11 23:35:27] INFO root fetch - processPackages [hikari-tanjun]: executing diffoscope
+[2024-05-11 23:35:27] INFO root fetch - processPackages [hikari-tanjun]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hikari-tanjun-2.8.1a1.tar.gz tmp/hikari-tanjun-2.9.0a1.tar.gz --markdown 20240511/h/hikari-tanjun/2.8.1a1-2.9.0a1/README.md --exclude *.pyd
+[2024-05-11 23:35:27] INFO root fetch - processPackages [pyaogmaneo]: executing diffoscope
+[2024-05-11 23:35:27] INFO root fetch - processPackages [pyaogmaneo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyaogmaneo-2.6.0.tar.gz tmp/pyaogmaneo-2.6.1-cp312-cp312-win32.whl.zip --markdown 20240511/p/pyaogmaneo/2.6.0-2.6.1/README.md --exclude *.pyd
+[2024-05-11 23:35:28] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.6.0.tar.gz]
+[2024-05-11 23:35:28] INFO root fetch - processPackages [pyaogmaneo]: Remove: archive file [/home/abi/fetcher/tmp/pyaogmaneo-2.6.1-cp312-cp312-win32.whl.zip]
+[2024-05-11 23:35:28] INFO root fetch - main [MainThread]: End processing [pyaogmaneo]: success
+[2024-05-11 23:35:29] INFO root fetch - processPackages [hikari-tanjun]: Remove: archive file [/home/abi/fetcher/tmp/hikari-tanjun-2.8.1a1.tar.gz]
+[2024-05-11 23:35:29] INFO root fetch - processPackages [hikari-tanjun]: Remove: archive file [/home/abi/fetcher/tmp/hikari-tanjun-2.9.0a1.tar.gz]
+[2024-05-11 23:35:29] INFO root fetch - main [MainThread]: End processing [hikari-tanjun]: success
+[2024-05-11 23:35:29] INFO root fetch - main [MainThread]: Store serial: [23164759]
