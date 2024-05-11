@@ -24169,3 +24169,39 @@
 [2024-05-11 23:35:29] INFO root fetch - processPackages [hikari-tanjun]: Remove: archive file [/home/abi/fetcher/tmp/hikari-tanjun-2.9.0a1.tar.gz]
 [2024-05-11 23:35:29] INFO root fetch - main [MainThread]: End processing [hikari-tanjun]: success
 [2024-05-11 23:35:29] INFO root fetch - main [MainThread]: Store serial: [23164759]
+[2024-05-11 23:37:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23164759]
+[2024-05-11 23:37:38] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 23:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tesla-fleet-api
+[2024-05-11 23:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meetlify
+[2024-05-11 23:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiocmcapi
+[2024-05-11 23:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Books-Lib
+[2024-05-11 23:37:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: unrulablez
+[2024-05-11 23:37:38] INFO root fetch - processPackages [Books-Lib]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 23:37:38] WARNING root fetch - processPackages [aiocmcapi]: Skipping, unable to determine old version
+[2024-05-11 23:37:38] INFO root fetch - main [MainThread]: End processing [aiocmcapi] error
+[2024-05-11 23:37:38] INFO root fetch - processPackages [Books-Lib]: Downloading https://files.pythonhosted.org/packages/49/5e/7cd4bd0ff86fdab637e12b085dc011ec7f85b86f46fd846c541d48cd797c/books_lib-1.0.1.tar.gz
+[2024-05-11 23:37:38] INFO root fetch - processPackages [unrulablez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 23:37:38] INFO root fetch - processPackages [tesla-fleet-api]: New version: [0.5.7] Old Version: [0.5.6]
+[2024-05-11 23:37:38] WARNING root fetch - processPackages [meetlify]: Skipping, unable to determine old version
+[2024-05-11 23:37:38] INFO root fetch - main [MainThread]: End processing [meetlify] error
+[2024-05-11 23:37:38] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/80/a3/264955b201fe9533d85f2ede554c05779d4d7d2306372822c6cce9c3bb0b/tesla_fleet_api-0.5.6.tar.gz
+[2024-05-11 23:37:38] INFO root fetch - processPackages [unrulablez]: Downloading https://files.pythonhosted.org/packages/18/b3/ad4bfaac95a29a3b44af0932efe1d173031f295001046751e4bdd0d9c896/unrulablez-1.1.tar.gz
+[2024-05-11 23:37:38] INFO root fetch - processPackages [Books-Lib]: Downloading https://files.pythonhosted.org/packages/32/49/b30949cc15434769355be385d270a9ab7db31ce39300d7a51881119d11ad/books_lib-1.0.2.tar.gz
+[2024-05-11 23:37:38] INFO root fetch - processPackages [Books-Lib]: executing diffoscope
+[2024-05-11 23:37:38] INFO root fetch - processPackages [Books-Lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/books_lib-1.0.1.tar.gz tmp/books_lib-1.0.2.tar.gz --markdown 20240511/B/Books-Lib/1.0.1-1.0.2/README.md --exclude *.pyd
+[2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: Downloading https://files.pythonhosted.org/packages/72/d9/10086c853fd6e8b2e80e8aa6c085e2f81c3d536ef1a3dc65fa6592f5d8dc/tesla_fleet_api-0.5.7.tar.gz
+[2024-05-11 23:37:39] INFO root fetch - processPackages [unrulablez]: Downloading https://files.pythonhosted.org/packages/aa/d1/ba39a9f1ea33c3276ffca5458330839f8bd5e50a47582d33a27ceabe7d5e/unrulablez-2.1.tar.gz
+[2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: executing diffoscope
+[2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tesla_fleet_api-0.5.6.tar.gz tmp/tesla_fleet_api-0.5.7.tar.gz --markdown 20240511/t/tesla-fleet-api/0.5.6-0.5.7/README.md --exclude *.pyd
+[2024-05-11 23:37:39] INFO root fetch - processPackages [unrulablez]: executing diffoscope
+[2024-05-11 23:37:39] INFO root fetch - processPackages [unrulablez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/unrulablez-1.1.tar.gz tmp/unrulablez-2.1.tar.gz --markdown 20240511/u/unrulablez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 23:37:39] INFO root fetch - processPackages [Books-Lib]: Remove: archive file [/home/abi/fetcher/tmp/books_lib-1.0.1.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - processPackages [Books-Lib]: Remove: archive file [/home/abi/fetcher/tmp/books_lib-1.0.2.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - main [MainThread]: End processing [Books-Lib]: success
+[2024-05-11 23:37:39] INFO root fetch - processPackages [unrulablez]: Remove: archive file [/home/abi/fetcher/tmp/unrulablez-1.1.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - processPackages [unrulablez]: Remove: archive file [/home/abi/fetcher/tmp/unrulablez-2.1.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - main [MainThread]: End processing [unrulablez]: success
+[2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.6.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - processPackages [tesla-fleet-api]: Remove: archive file [/home/abi/fetcher/tmp/tesla_fleet_api-0.5.7.tar.gz]
+[2024-05-11 23:37:39] INFO root fetch - main [MainThread]: End processing [tesla-fleet-api]: success
+[2024-05-11 23:37:39] INFO root fetch - main [MainThread]: Store serial: [23164783]
