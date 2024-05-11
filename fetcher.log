@@ -7797,3 +7797,24 @@
 [2024-05-11 04:09:17] INFO root fetch - processPackages [migration-db]: Remove: archive file [/home/abi/fetcher/tmp/migration_db-1.0.9.tar.gz]
 [2024-05-11 04:09:17] INFO root fetch - main [MainThread]: End processing [migration-db]: success
 [2024-05-11 04:09:17] INFO root fetch - main [MainThread]: Store serial: [23156530]
+[2024-05-11 04:11:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156530]
+[2024-05-11 04:11:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 04:11:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: laryngologicalz
+[2024-05-11 04:11:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: symclosestwannier
+[2024-05-11 04:11:25] INFO root fetch - processPackages [symclosestwannier]: New version: [1.1.9] Old Version: [1.1.8]
+[2024-05-11 04:11:25] INFO root fetch - processPackages [laryngologicalz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 04:11:25] INFO root fetch - processPackages [symclosestwannier]: Downloading https://files.pythonhosted.org/packages/9d/f1/ed93cbcf63633eb0e2aea3928d4e912e4221b0fa6607a5d4e0561495183d/symclosestwannier-1.1.8.tar.gz
+[2024-05-11 04:11:25] INFO root fetch - processPackages [laryngologicalz]: Downloading https://files.pythonhosted.org/packages/4d/65/94788a60c3f152087ff324e70570de552a1c00d3d920f99060e1b6c30546/laryngologicalz-1.1.tar.gz
+[2024-05-11 04:11:26] INFO root fetch - processPackages [laryngologicalz]: Downloading https://files.pythonhosted.org/packages/61/ad/9b72c89b3a146d186abf04662c066d89d8e755c523b0a7cd149c2c01408f/laryngologicalz-2.1.tar.gz
+[2024-05-11 04:11:26] INFO root fetch - processPackages [symclosestwannier]: Downloading https://files.pythonhosted.org/packages/c9/6b/dc4bc941bb36b0a925990b345183e0f0a585e8a567bd72a1b30a0ca7d7bd/symclosestwannier-1.1.9.tar.gz
+[2024-05-11 04:11:26] INFO root fetch - processPackages [laryngologicalz]: executing diffoscope
+[2024-05-11 04:11:26] INFO root fetch - processPackages [laryngologicalz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/laryngologicalz-1.1.tar.gz tmp/laryngologicalz-2.1.tar.gz --markdown 20240511/l/laryngologicalz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 04:11:26] INFO root fetch - processPackages [symclosestwannier]: executing diffoscope
+[2024-05-11 04:11:26] INFO root fetch - processPackages [symclosestwannier]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symclosestwannier-1.1.8.tar.gz tmp/symclosestwannier-1.1.9.tar.gz --markdown 20240511/s/symclosestwannier/1.1.8-1.1.9/README.md --exclude *.pyd
+[2024-05-11 04:11:26] INFO root fetch - processPackages [laryngologicalz]: Remove: archive file [/home/abi/fetcher/tmp/laryngologicalz-1.1.tar.gz]
+[2024-05-11 04:11:26] INFO root fetch - processPackages [laryngologicalz]: Remove: archive file [/home/abi/fetcher/tmp/laryngologicalz-2.1.tar.gz]
+[2024-05-11 04:11:26] INFO root fetch - main [MainThread]: End processing [laryngologicalz]: success
+[2024-05-11 04:11:27] INFO root fetch - processPackages [symclosestwannier]: Remove: archive file [/home/abi/fetcher/tmp/symclosestwannier-1.1.8.tar.gz]
+[2024-05-11 04:11:27] INFO root fetch - processPackages [symclosestwannier]: Remove: archive file [/home/abi/fetcher/tmp/symclosestwannier-1.1.9.tar.gz]
+[2024-05-11 04:11:27] INFO root fetch - main [MainThread]: End processing [symclosestwannier]: success
+[2024-05-11 04:11:27] INFO root fetch - main [MainThread]: Store serial: [23156537]
