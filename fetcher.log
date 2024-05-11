@@ -7324,3 +7324,38 @@
 [2024-05-11 03:28:56] INFO root fetch - processPackages [neon-utils]: Remove: archive file [/home/abi/fetcher/tmp/neon-utils-1.9.2a5.tar.gz]
 [2024-05-11 03:28:56] INFO root fetch - main [MainThread]: End processing [neon-utils]: success
 [2024-05-11 03:28:56] INFO root fetch - main [MainThread]: Store serial: [23156143]
+[2024-05-11 03:31:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156143]
+[2024-05-11 03:31:05] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 03:33:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156199]
+[2024-05-11 03:33:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 03:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mypdns
+[2024-05-11 03:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: BunkrrUploader
+[2024-05-11 03:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tennoz
+[2024-05-11 03:33:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pikaur
+[2024-05-11 03:33:10] INFO root fetch - processPackages [BunkrrUploader]: New version: [0.10.4] Old Version: [0.10.3]
+[2024-05-11 03:33:11] WARNING root fetch - processPackages [tennoz]: Skipping, unable to determine old version
+[2024-05-11 03:33:11] INFO root fetch - processPackages [mypdns]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-11 03:33:11] INFO root fetch - main [MainThread]: End processing [tennoz] error
+[2024-05-11 03:33:11] INFO root fetch - processPackages [pikaur]: New version: [1.9] Old Version: [1.8]
+[2024-05-11 03:33:11] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/8b/21/07a653953b6583e8ce7307aee5fb41a2f0488b52e4f5cd1d7cf0d9129b5d/bunkrruploader-0.10.3.tar.gz
+[2024-05-11 03:33:11] INFO root fetch - processPackages [mypdns]: Downloading https://files.pythonhosted.org/packages/9b/44/07fbe0157c13d7225a7e4773470adcd96f183b0ac8d03f45909e589543ae/mypdns-1.0.4.tar.gz
+[2024-05-11 03:33:11] INFO root fetch - processPackages [pikaur]: Downloading https://files.pythonhosted.org/packages/18/a4/88b2f0d40d1e90fb8762febb4b163d5d637f36e293b9261e39bbe174c7d4/pikaur-1.8.tar.gz
+[2024-05-11 03:33:11] INFO root fetch - processPackages [mypdns]: Downloading https://files.pythonhosted.org/packages/d7/7a/72e9d5324285403bd96681f21ff70a6162b1b6035142774ab2622a994ce0/mypdns-1.0.5.tar.gz
+[2024-05-11 03:33:11] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/87/0c/d698f7a9a8ee93c32fc194369706b3a39c8bc5dedf228dd5c07b1c1dd6f9/bunkrruploader-0.10.4.tar.gz
+[2024-05-11 03:33:11] INFO root fetch - processPackages [BunkrrUploader]: executing diffoscope
+[2024-05-11 03:33:11] INFO root fetch - processPackages [BunkrrUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunkrruploader-0.10.3.tar.gz tmp/bunkrruploader-0.10.4.tar.gz --markdown 20240511/B/BunkrrUploader/0.10.3-0.10.4/README.md --exclude *.pyd
+[2024-05-11 03:33:11] INFO root fetch - processPackages [mypdns]: executing diffoscope
+[2024-05-11 03:33:11] INFO root fetch - processPackages [mypdns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mypdns-1.0.4.tar.gz tmp/mypdns-1.0.5.tar.gz --markdown 20240511/m/mypdns/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-11 03:33:11] INFO root fetch - processPackages [pikaur]: Downloading https://files.pythonhosted.org/packages/44/23/73dc076ab8b6b5f49dc34baca5c2cf564ccc21d12e63fafee3d7cc1f6bca/pikaur-1.9.tar.gz
+[2024-05-11 03:33:12] INFO root fetch - processPackages [pikaur]: executing diffoscope
+[2024-05-11 03:33:12] INFO root fetch - processPackages [pikaur]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pikaur-1.8.tar.gz tmp/pikaur-1.9.tar.gz --markdown 20240511/p/pikaur/1.8-1.9/README.md --exclude *.pyd
+[2024-05-11 03:33:12] INFO root fetch - processPackages [mypdns]: Remove: archive file [/home/abi/fetcher/tmp/mypdns-1.0.4.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - processPackages [mypdns]: Remove: archive file [/home/abi/fetcher/tmp/mypdns-1.0.5.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - main [MainThread]: End processing [mypdns]: success
+[2024-05-11 03:33:12] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.3.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.4.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - main [MainThread]: End processing [BunkrrUploader]: success
+[2024-05-11 03:33:12] INFO root fetch - processPackages [pikaur]: Remove: archive file [/home/abi/fetcher/tmp/pikaur-1.8.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - processPackages [pikaur]: Remove: archive file [/home/abi/fetcher/tmp/pikaur-1.9.tar.gz]
+[2024-05-11 03:33:12] INFO root fetch - main [MainThread]: End processing [pikaur]: success
+[2024-05-11 03:33:12] INFO root fetch - main [MainThread]: Store serial: [23156269]
