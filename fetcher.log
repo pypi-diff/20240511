@@ -9577,3 +9577,15 @@
 [2024-05-11 06:16:30] INFO root fetch - processPackages [cloud-volume]: Remove: archive file [/home/abi/fetcher/tmp/cloud-volume-8.9.2.tar.gz]
 [2024-05-11 06:16:30] INFO root fetch - main [MainThread]: End processing [cloud-volume]: success
 [2024-05-11 06:16:30] INFO root fetch - main [MainThread]: Store serial: [23157208]
+[2024-05-11 06:18:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157208]
+[2024-05-11 06:18:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:18:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: duwi-smart-sdk
+[2024-05-11 06:18:38] INFO root fetch - processPackages [duwi-smart-sdk]: New version: [0.2.7] Old Version: [0.2.6]
+[2024-05-11 06:18:38] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/d8/9e/4d092a645a20b2f8a7fcd85f43aed9a6d0d43ca5ce15c69d8275ed66faf0/duwi_smart_sdk-0.2.6.tar.gz
+[2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: Downloading https://files.pythonhosted.org/packages/e3/d0/c645f28ab7879c8fea388de98649fd033b127d2721585560ac2943e31f0b/duwi_smart_sdk-0.2.7.tar.gz
+[2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: executing diffoscope
+[2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/duwi_smart_sdk-0.2.6.tar.gz tmp/duwi_smart_sdk-0.2.7.tar.gz --markdown 20240511/d/duwi-smart-sdk/0.2.6-0.2.7/README.md --exclude *.pyd
+[2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.6.tar.gz]
+[2024-05-11 06:18:39] INFO root fetch - processPackages [duwi-smart-sdk]: Remove: archive file [/home/abi/fetcher/tmp/duwi_smart_sdk-0.2.7.tar.gz]
+[2024-05-11 06:18:39] INFO root fetch - main [MainThread]: End processing [duwi-smart-sdk]: success
+[2024-05-11 06:18:39] INFO root fetch - main [MainThread]: Store serial: [23157210]
