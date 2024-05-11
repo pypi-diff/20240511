@@ -19989,3 +19989,27 @@
 [2024-05-11 18:43:11] INFO root fetch - processPackages [pymatviz]: Remove: archive file [/home/abi/fetcher/tmp/pymatviz-0.8.2.tar.gz]
 [2024-05-11 18:43:11] INFO root fetch - main [MainThread]: End processing [pymatviz]: success
 [2024-05-11 18:43:11] INFO root fetch - main [MainThread]: Store serial: [23162768]
+[2024-05-11 18:45:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162768]
+[2024-05-11 18:45:20] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 18:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: togethernessz
+[2024-05-11 18:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: paystack-cli
+[2024-05-11 18:45:20] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pkg-inspect
+[2024-05-11 18:45:20] INFO root fetch - processPackages [pkg-inspect]: New version: [0.2.2] Old Version: [0.2.1]
+[2024-05-11 18:45:20] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/00/f3/f9da92caf83aa9570c73a8c9619e24736ece8fff1ee73c42a540f1778a23/pkg_inspect-0.2.1.tar.gz
+[2024-05-11 18:45:20] INFO root fetch - processPackages [paystack-cli]: New version: [0.2.0] Old Version: [0.1.4]
+[2024-05-11 18:45:20] WARNING root fetch - processPackages [togethernessz]: Skipping, unable to determine old version
+[2024-05-11 18:45:20] INFO root fetch - main [MainThread]: End processing [togethernessz] error
+[2024-05-11 18:45:21] INFO root fetch - processPackages [paystack-cli]: Downloading https://files.pythonhosted.org/packages/10/a7/e4128b8066a3fa68b345c296c85b39d844e259a95f46bc8b02999a03b5fe/paystack_cli-0.1.4.tar.gz
+[2024-05-11 18:45:21] INFO root fetch - processPackages [pkg-inspect]: Downloading https://files.pythonhosted.org/packages/3d/d9/2620fb14461bcb5b06dff12743c6cdbe0cb1f5c19880945776c8872da48d/pkg_inspect-0.2.2.tar.gz
+[2024-05-11 18:45:21] INFO root fetch - processPackages [pkg-inspect]: executing diffoscope
+[2024-05-11 18:45:21] INFO root fetch - processPackages [pkg-inspect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pkg_inspect-0.2.1.tar.gz tmp/pkg_inspect-0.2.2.tar.gz --markdown 20240511/p/pkg-inspect/0.2.1-0.2.2/README.md --exclude *.pyd
+[2024-05-11 18:45:21] INFO root fetch - processPackages [paystack-cli]: Downloading https://files.pythonhosted.org/packages/02/c9/679dae998a8da63f0145d47ee3b8ee47d86722b4e35cfcd8f0d87a0a83a9/paystack_cli-0.2.0.tar.gz
+[2024-05-11 18:45:21] INFO root fetch - processPackages [paystack-cli]: executing diffoscope
+[2024-05-11 18:45:21] INFO root fetch - processPackages [paystack-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/paystack_cli-0.1.4.tar.gz tmp/paystack_cli-0.2.0.tar.gz --markdown 20240511/p/paystack-cli/0.1.4-0.2.0/README.md --exclude *.pyd
+[2024-05-11 18:45:21] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.1.tar.gz]
+[2024-05-11 18:45:21] INFO root fetch - processPackages [pkg-inspect]: Remove: archive file [/home/abi/fetcher/tmp/pkg_inspect-0.2.2.tar.gz]
+[2024-05-11 18:45:21] INFO root fetch - main [MainThread]: End processing [pkg-inspect]: success
+[2024-05-11 18:45:22] INFO root fetch - processPackages [paystack-cli]: Remove: archive file [/home/abi/fetcher/tmp/paystack_cli-0.1.4.tar.gz]
+[2024-05-11 18:45:22] INFO root fetch - processPackages [paystack-cli]: Remove: archive file [/home/abi/fetcher/tmp/paystack_cli-0.2.0.tar.gz]
+[2024-05-11 18:45:22] INFO root fetch - main [MainThread]: End processing [paystack-cli]: success
+[2024-05-11 18:45:22] INFO root fetch - main [MainThread]: Store serial: [23162781]
