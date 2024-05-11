@@ -15939,3 +15939,45 @@
 [2024-05-11 14:04:47] INFO root fetch - processPackages [lib-ml-group3]: Remove: archive file [/home/abi/fetcher/tmp/lib_ml_group3-0.2.0.tar.gz]
 [2024-05-11 14:04:47] INFO root fetch - main [MainThread]: End processing [lib-ml-group3]: success
 [2024-05-11 14:04:47] INFO root fetch - main [MainThread]: Store serial: [23160781]
+[2024-05-11 14:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160781]
+[2024-05-11 14:06:56] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qamomile
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stac-fastapi.elasticsearch
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ccxt
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pumpetz
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torcheval-nightly
+[2024-05-11 14:06:56] WARNING root fetch - processPackages [qamomile]: Skipping, unable to determine old version
+[2024-05-11 14:06:56] INFO root fetch - main [MainThread]: End processing [qamomile] error
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ccxt]: New version: [4.3.9] Old Version: [4.3.8]
+[2024-05-11 14:06:56] INFO root fetch - processPackages [torcheval-nightly]: New version: [2024.5.9] Old Version: [2024.5.8]
+[2024-05-11 14:06:56] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: New version: [3.0.0a0] Old Version: [2.4.1]
+[2024-05-11 14:06:56] INFO root fetch - processPackages [pumpetz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:06:56] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/1c/a1/3a1a3f9672e43a2620d2ab195c398183c3594751d3a306bd022e7ceccbb7/ccxt-4.3.8.tar.gz
+[2024-05-11 14:06:56] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/98/c1/96a1c122528ea0121ecc29466d1a6b26c68b8a6036aae6bdb121ddcfdbff/torcheval_nightly-2024.5.8.tar.gz
+[2024-05-11 14:06:56] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/b1/d0/e280210d8c5e03b84453e7cc26e640639203856b905137808527eaa95b18/stac_fastapi_elasticsearch-2.4.1.tar.gz
+[2024-05-11 14:06:56] INFO root fetch - processPackages [pumpetz]: Downloading https://files.pythonhosted.org/packages/b4/dd/0176454f67d73c9c4039ec7653d2605e1adae0bf8ae7e3de81fa6cacf6db/pumpetz-1.1.tar.gz
+[2024-05-11 14:06:56] INFO root fetch - processPackages [torcheval-nightly]: Downloading https://files.pythonhosted.org/packages/60/c3/da56bee236b598ba0c7ed2929a00a2cf4f41f79676194a22cd34a85b00eb/torcheval_nightly-2024.5.9.tar.gz
+[2024-05-11 14:06:57] INFO root fetch - processPackages [torcheval-nightly]: executing diffoscope
+[2024-05-11 14:06:57] INFO root fetch - processPackages [torcheval-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torcheval_nightly-2024.5.8.tar.gz tmp/torcheval_nightly-2024.5.9.tar.gz --markdown 20240511/t/torcheval-nightly/2024.5.8-2024.5.9/README.md --exclude *.pyd
+[2024-05-11 14:06:57] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Downloading https://files.pythonhosted.org/packages/b5/56/bb332a3945c666057f5b0d909a174bb92e159403d165e5acbd7223038f9a/stac_fastapi_elasticsearch-3.0.0a0.tar.gz
+[2024-05-11 14:06:57] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/f0/34/c7c38c5c0bec0a22183d7eed68184bef3efe315a8570460824012267cbac/ccxt-4.3.9.tar.gz
+[2024-05-11 14:06:57] INFO root fetch - processPackages [pumpetz]: Downloading https://files.pythonhosted.org/packages/b9/b8/a052a54460889cb85cc5643dea281f378aa064289bccf31d334e5a552cdf/pumpetz-2.1.tar.gz
+[2024-05-11 14:06:57] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: executing diffoscope
+[2024-05-11 14:06:57] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stac_fastapi_elasticsearch-2.4.1.tar.gz tmp/stac_fastapi_elasticsearch-3.0.0a0.tar.gz --markdown 20240511/s/stac-fastapi.elasticsearch/2.4.1-3.0.0a0/README.md --exclude *.pyd
+[2024-05-11 14:06:57] INFO root fetch - processPackages [pumpetz]: executing diffoscope
+[2024-05-11 14:06:57] INFO root fetch - processPackages [pumpetz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pumpetz-1.1.tar.gz tmp/pumpetz-2.1.tar.gz --markdown 20240511/p/pumpetz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:06:57] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2024-05-11 14:06:57] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-4.3.8.tar.gz tmp/ccxt-4.3.9.tar.gz --markdown 20240511/c/ccxt/4.3.8-4.3.9/README.md --exclude *.pyd
+[2024-05-11 14:06:57] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.8.tar.gz]
+[2024-05-11 14:06:57] INFO root fetch - processPackages [torcheval-nightly]: Remove: archive file [/home/abi/fetcher/tmp/torcheval_nightly-2024.5.9.tar.gz]
+[2024-05-11 14:06:57] INFO root fetch - main [MainThread]: End processing [torcheval-nightly]: success
+[2024-05-11 14:06:57] INFO root fetch - processPackages [pumpetz]: Remove: archive file [/home/abi/fetcher/tmp/pumpetz-1.1.tar.gz]
+[2024-05-11 14:06:57] INFO root fetch - processPackages [pumpetz]: Remove: archive file [/home/abi/fetcher/tmp/pumpetz-2.1.tar.gz]
+[2024-05-11 14:06:57] INFO root fetch - main [MainThread]: End processing [pumpetz]: success
+[2024-05-11 14:06:58] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-2.4.1.tar.gz]
+[2024-05-11 14:06:58] INFO root fetch - processPackages [stac-fastapi.elasticsearch]: Remove: archive file [/home/abi/fetcher/tmp/stac_fastapi_elasticsearch-3.0.0a0.tar.gz]
+[2024-05-11 14:06:58] INFO root fetch - main [MainThread]: End processing [stac-fastapi.elasticsearch]: success
+[2024-05-11 14:07:01] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.8.tar.gz]
+[2024-05-11 14:07:01] INFO root fetch - processPackages [ccxt]: Remove: archive file [/home/abi/fetcher/tmp/ccxt-4.3.9.tar.gz]
+[2024-05-11 14:07:01] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2024-05-11 14:07:01] INFO root fetch - main [MainThread]: Store serial: [23160796]
