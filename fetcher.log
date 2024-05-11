@@ -20843,3 +20843,18 @@
 [2024-05-11 19:42:16] INFO root fetch - processPackages [music-assistant-frontend]: Remove: archive file [/home/abi/fetcher/tmp/music-assistant-frontend-2.5.7.tar.gz]
 [2024-05-11 19:42:16] INFO root fetch - main [MainThread]: End processing [music-assistant-frontend]: success
 [2024-05-11 19:42:16] INFO root fetch - main [MainThread]: Store serial: [23163150]
+[2024-05-11 19:44:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163150]
+[2024-05-11 19:44:25] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 19:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sussz
+[2024-05-11 19:44:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jsoncgx
+[2024-05-11 19:44:25] WARNING root fetch - processPackages [jsoncgx]: Skipping, unable to determine old version
+[2024-05-11 19:44:25] INFO root fetch - main [MainThread]: End processing [jsoncgx] error
+[2024-05-11 19:44:25] INFO root fetch - processPackages [sussz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:44:26] INFO root fetch - processPackages [sussz]: Downloading https://files.pythonhosted.org/packages/c4/34/0e1f6f303a8dc36b3ba15a3f99ff5280c8407e401e5465e6875e069feee9/sussz-1.1.tar.gz
+[2024-05-11 19:44:26] INFO root fetch - processPackages [sussz]: Downloading https://files.pythonhosted.org/packages/19/97/be1afbf7df44200abdd019aa61fc5da33c18ffcace04617d02105fc7194b/sussz-2.1.tar.gz
+[2024-05-11 19:44:26] INFO root fetch - processPackages [sussz]: executing diffoscope
+[2024-05-11 19:44:26] INFO root fetch - processPackages [sussz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sussz-1.1.tar.gz tmp/sussz-2.1.tar.gz --markdown 20240511/s/sussz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:44:27] INFO root fetch - processPackages [sussz]: Remove: archive file [/home/abi/fetcher/tmp/sussz-1.1.tar.gz]
+[2024-05-11 19:44:27] INFO root fetch - processPackages [sussz]: Remove: archive file [/home/abi/fetcher/tmp/sussz-2.1.tar.gz]
+[2024-05-11 19:44:27] INFO root fetch - main [MainThread]: End processing [sussz]: success
+[2024-05-11 19:44:27] INFO root fetch - main [MainThread]: Store serial: [23163152]
