@@ -10234,3 +10234,27 @@
 [2024-05-11 07:11:03] INFO root fetch - processPackages [bisos.currents]: Remove: archive file [/home/abi/fetcher/tmp/bisos.currents-0.5.tar.gz]
 [2024-05-11 07:11:03] INFO root fetch - main [MainThread]: End processing [bisos.currents]: success
 [2024-05-11 07:11:03] INFO root fetch - main [MainThread]: Store serial: [23157519]
+[2024-05-11 07:13:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157519]
+[2024-05-11 07:13:11] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: soundtools
+[2024-05-11 07:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multiovulatez
+[2024-05-11 07:13:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: unbankablenessz
+[2024-05-11 07:13:12] INFO root fetch - processPackages [multiovulatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:13:12] INFO root fetch - processPackages [soundtools]: New version: [0.2.2.1] Old Version: [0.2.2.0]
+[2024-05-11 07:13:12] WARNING root fetch - processPackages [unbankablenessz]: Skipping, unable to determine old version
+[2024-05-11 07:13:12] INFO root fetch - main [MainThread]: End processing [unbankablenessz] error
+[2024-05-11 07:13:12] INFO root fetch - processPackages [multiovulatez]: Downloading https://files.pythonhosted.org/packages/40/77/5758afbe11f70c1441678c0849e1e1066e415ba928f932e5b5d737a0aca2/multiovulatez-1.1.tar.gz
+[2024-05-11 07:13:12] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/f5/7d/e34be17a6d586da3a3cbba4dbfdc020d8fa3f1f14b35f9a5709d29c0b47e/soundtools-0.2.2.0.tar.gz
+[2024-05-11 07:13:12] INFO root fetch - processPackages [multiovulatez]: Downloading https://files.pythonhosted.org/packages/ee/89/cf3f267670061242da8919cf38239754f7ec8e5576ad3e8d129a4a517318/multiovulatez-2.1.tar.gz
+[2024-05-11 07:13:12] INFO root fetch - processPackages [soundtools]: Downloading https://files.pythonhosted.org/packages/cb/63/a03f9b319db7e7eb17c2af2f43f3b03cd5b75dd400f7ca67a4baffad30ed/soundtools-0.2.2.1.tar.gz
+[2024-05-11 07:13:12] INFO root fetch - processPackages [multiovulatez]: executing diffoscope
+[2024-05-11 07:13:12] INFO root fetch - processPackages [multiovulatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multiovulatez-1.1.tar.gz tmp/multiovulatez-2.1.tar.gz --markdown 20240511/m/multiovulatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:13:12] INFO root fetch - processPackages [soundtools]: executing diffoscope
+[2024-05-11 07:13:12] INFO root fetch - processPackages [soundtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/soundtools-0.2.2.0.tar.gz tmp/soundtools-0.2.2.1.tar.gz --markdown 20240511/s/soundtools/0.2.2.0-0.2.2.1/README.md --exclude *.pyd
+[2024-05-11 07:13:13] INFO root fetch - processPackages [multiovulatez]: Remove: archive file [/home/abi/fetcher/tmp/multiovulatez-1.1.tar.gz]
+[2024-05-11 07:13:13] INFO root fetch - processPackages [multiovulatez]: Remove: archive file [/home/abi/fetcher/tmp/multiovulatez-2.1.tar.gz]
+[2024-05-11 07:13:13] INFO root fetch - main [MainThread]: End processing [multiovulatez]: success
+[2024-05-11 07:13:13] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.2.0.tar.gz]
+[2024-05-11 07:13:13] INFO root fetch - processPackages [soundtools]: Remove: archive file [/home/abi/fetcher/tmp/soundtools-0.2.2.1.tar.gz]
+[2024-05-11 07:13:13] INFO root fetch - main [MainThread]: End processing [soundtools]: success
+[2024-05-11 07:13:13] INFO root fetch - main [MainThread]: Store serial: [23157588]
