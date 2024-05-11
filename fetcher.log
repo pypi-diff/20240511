@@ -13289,3 +13289,49 @@
 [2024-05-11 11:13:59] INFO root fetch - processPackages [narwhals]: Remove: archive file [/home/abi/fetcher/tmp/narwhals-0.8.9.tar.gz]
 [2024-05-11 11:13:59] INFO root fetch - main [MainThread]: End processing [narwhals]: success
 [2024-05-11 11:13:59] INFO root fetch - main [MainThread]: Store serial: [23159375]
+[2024-05-11 11:16:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159375]
+[2024-05-11 11:16:07] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2024-05-11 11:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spanishconjugator
+[2024-05-11 11:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: photogrammetristz
+[2024-05-11 11:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu118
+[2024-05-11 11:16:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nvfuser-cu121
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.2.3.dev20240510] Old Version: [0.2.3.dev20240509]
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.2.3.dev20240510] Old Version: [0.2.3.dev20240509]
+[2024-05-11 11:16:08] INFO root fetch - processPackages [photogrammetristz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/e7/9a/5037c9f3a71101b6d3791f065f0f9fa8a9792d521314c287dc455b506f32/nvfuser_cu121-0.2.3.dev20240509.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/12/01/2e9cc8408690bcc0a36eeb24a92b2930c74ceec422ca88bb114dab7fa440/nvfuser_cu118-0.2.3.dev20240509.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2024-05-11 11:16:08] INFO root fetch - processPackages [photogrammetristz]: Downloading https://files.pythonhosted.org/packages/4e/0a/7b2be3f9e8718079b95195b498e7f10661b91a65c287e221ca618e49b6d0/photogrammetristz-1.1.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/1c/a2/a7226dfd48c2c6d3e52091175146891f40a2c1c7d20943e8e0560192be85/spanishconjugator-2.3.998.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/10/6d/e43f5b7980a8e70bd5675580167736a94c6aa080580badbc2058586c4f94/nvfuser_cu118-0.2.3.dev20240510.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [photogrammetristz]: Downloading https://files.pythonhosted.org/packages/13/a6/776b50861dcf034f170492f41888767f9e8b4b83641720328bc4e1c056f1/photogrammetristz-2.1.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.2.3.dev20240509.tar.gz tmp/nvfuser_cu118-0.2.3.dev20240510.tar.gz --markdown 20240511/n/nvfuser-cu118/0.2.3.dev20240509-0.2.3.dev20240510/README.md --exclude *.pyd
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [spanishconjugator]: Downloading https://files.pythonhosted.org/packages/38/b5/7c4b33d552653d08874337c2258ccc985f5f1bc589073e61d6e1ccff130e/spanishconjugator-2.3.999.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/b6/e0/1dc0c04b31764deb59d3adfeb0ad10b0be5f7998019b33224b7de23c79d0/nvfuser_cu121-0.2.3.dev20240510.tar.gz
+[2024-05-11 11:16:08] INFO root fetch - processPackages [photogrammetristz]: executing diffoscope
+[2024-05-11 11:16:08] INFO root fetch - processPackages [photogrammetristz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/photogrammetristz-1.1.tar.gz tmp/photogrammetristz-2.1.tar.gz --markdown 20240511/p/photogrammetristz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.2.3.dev20240509.tar.gz tmp/nvfuser_cu121-0.2.3.dev20240510.tar.gz --markdown 20240511/n/nvfuser-cu121/0.2.3.dev20240509-0.2.3.dev20240510/README.md --exclude *.pyd
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240511/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20240511/s/spanishconjugator/2.3.998-2.3.999/README.md --exclude *.pyd
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240509.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu118]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu118-0.2.3.dev20240510.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2024-05-11 11:16:09] INFO root fetch - processPackages [photogrammetristz]: Remove: archive file [/home/abi/fetcher/tmp/photogrammetristz-1.1.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - processPackages [photogrammetristz]: Remove: archive file [/home/abi/fetcher/tmp/photogrammetristz-2.1.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [photogrammetristz]: success
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.998.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - processPackages [spanishconjugator]: Remove: archive file [/home/abi/fetcher/tmp/spanishconjugator-2.3.999.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240509.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - processPackages [nvfuser-cu121]: Remove: archive file [/home/abi/fetcher/tmp/nvfuser_cu121-0.2.3.dev20240510.tar.gz]
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2024-05-11 11:16:09] INFO root fetch - main [MainThread]: Store serial: [23159512]
