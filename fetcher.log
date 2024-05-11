@@ -9107,3 +9107,54 @@
 [2024-05-11 05:34:58] INFO root fetch - processPackages [cdktf-cdktf-provider-hcp]: Remove: archive file [/home/abi/fetcher/tmp/cdktf-cdktf-provider-hcp-9.9.0.tar.gz]
 [2024-05-11 05:34:58] INFO root fetch - main [MainThread]: End processing [cdktf-cdktf-provider-hcp]: success
 [2024-05-11 05:34:58] INFO root fetch - main [MainThread]: Store serial: [23157041]
+[2024-05-11 05:37:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157041]
+[2024-05-11 05:37:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tracheotomez
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: webull-python-sdk-core
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mlpr
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BunkrrUploader
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webull-python-sdk-quotes-core
+[2024-05-11 05:37:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PepperPepper
+[2024-05-11 05:37:07] INFO root fetch - processPackages [mlpr]: New version: [0.1.2] Old Version: [0.1.1]
+[2024-05-11 05:37:07] INFO root fetch - processPackages [BunkrrUploader]: New version: [0.10.5] Old Version: [0.10.4]
+[2024-05-11 05:37:07] INFO root fetch - processPackages [PepperPepper]: New version: [0.0.7.9] Old Version: [0.0.7.8]
+[2024-05-11 05:37:07] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 05:37:07] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/87/0c/d698f7a9a8ee93c32fc194369706b3a39c8bc5dedf228dd5c07b1c1dd6f9/bunkrruploader-0.10.4.tar.gz
+[2024-05-11 05:37:07] WARNING root fetch - processPackages [tracheotomez]: Skipping, unable to determine old version
+[2024-05-11 05:37:07] INFO root fetch - main [MainThread]: End processing [tracheotomez] error
+[2024-05-11 05:37:07] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/a2/6a/fc1e17ed8249aa662d736747b383ab6c49c7144dc000f01a9057721c3218/pepperpepper-0.0.7.8.tar.gz
+[2024-05-11 05:37:07] INFO root fetch - processPackages [webull-python-sdk-core]: New version: [0.1.6] Old Version: [0.1.5]
+[2024-05-11 05:37:07] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/8d/a9/a807880383b391e6906680a5483cad3a97d69c8571d6147935a5df6e26cf/mlpr-0.1.1.tar.gz
+[2024-05-11 05:37:07] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Downloading https://files.pythonhosted.org/packages/69/2a/40e49798e3e25c2ae9670828f0d31ad23543bf9b968cd53ea87fbce0615f/webull-python-sdk-quotes-core-0.1.5.tar.gz
+[2024-05-11 05:37:07] INFO root fetch - processPackages [webull-python-sdk-core]: Downloading https://files.pythonhosted.org/packages/52/1f/6c4d4e91e8e421200b632542ba4a6c097753105882b9da625b428d5fa3f0/webull-python-sdk-core-0.1.5.tar.gz
+[2024-05-11 05:37:07] INFO root fetch - processPackages [PepperPepper]: Downloading https://files.pythonhosted.org/packages/bd/bd/74c69c2a57615281d2dab96af6ddca9210d7c0be7e2ab04c6f559e1aea99/pepperpepper-0.0.7.9.tar.gz
+[2024-05-11 05:37:08] INFO root fetch - processPackages [BunkrrUploader]: Downloading https://files.pythonhosted.org/packages/0c/d1/bfe9d8d9d217547b73b9212f1d32f4abc557476bea69282969a1efee5fd8/bunkrruploader-0.10.5.tar.gz
+[2024-05-11 05:37:08] INFO root fetch - processPackages [PepperPepper]: executing diffoscope
+[2024-05-11 05:37:08] INFO root fetch - processPackages [PepperPepper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pepperpepper-0.0.7.8.tar.gz tmp/pepperpepper-0.0.7.9.tar.gz --markdown 20240511/P/PepperPepper/0.0.7.8-0.0.7.9/README.md --exclude *.pyd
+[2024-05-11 05:37:08] INFO root fetch - processPackages [BunkrrUploader]: executing diffoscope
+[2024-05-11 05:37:08] INFO root fetch - processPackages [BunkrrUploader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bunkrruploader-0.10.4.tar.gz tmp/bunkrruploader-0.10.5.tar.gz --markdown 20240511/B/BunkrrUploader/0.10.4-0.10.5/README.md --exclude *.pyd
+[2024-05-11 05:37:08] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/d2/a6/3e1e14b6897157533755151141f82633f7020c5638cbcf7968e370aaf37d/mlpr-0.1.2.tar.gz
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Downloading https://files.pythonhosted.org/packages/6d/b7/93f40c735803aa5e4d871d303badcb910dceda7f0c232b235803e4e16143/webull_python_sdk_quotes_core-0.1.6.tar.gz
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-core]: Downloading https://files.pythonhosted.org/packages/2f/9c/8839c05148a2608cfd3b512a212e3ac8b1913444291d8146d7c4f2bd6453/webull_python_sdk_core-0.1.6.tar.gz
+[2024-05-11 05:37:08] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-11 05:37:08] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.1.tar.gz tmp/mlpr-0.1.2.tar.gz --markdown 20240511/m/mlpr/0.1.1-0.1.2/README.md --exclude *.pyd
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: executing diffoscope
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull-python-sdk-quotes-core-0.1.5.tar.gz tmp/webull_python_sdk_quotes_core-0.1.6.tar.gz --markdown 20240511/w/webull-python-sdk-quotes-core/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-core]: executing diffoscope
+[2024-05-11 05:37:08] INFO root fetch - processPackages [webull-python-sdk-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webull-python-sdk-core-0.1.5.tar.gz tmp/webull_python_sdk_core-0.1.6.tar.gz --markdown 20240511/w/webull-python-sdk-core/0.1.5-0.1.6/README.md --exclude *.pyd
+[2024-05-11 05:37:08] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.8.tar.gz]
+[2024-05-11 05:37:08] INFO root fetch - processPackages [PepperPepper]: Remove: archive file [/home/abi/fetcher/tmp/pepperpepper-0.0.7.9.tar.gz]
+[2024-05-11 05:37:08] INFO root fetch - main [MainThread]: End processing [PepperPepper]: success
+[2024-05-11 05:37:08] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.4.tar.gz]
+[2024-05-11 05:37:08] INFO root fetch - processPackages [BunkrrUploader]: Remove: archive file [/home/abi/fetcher/tmp/bunkrruploader-0.10.5.tar.gz]
+[2024-05-11 05:37:08] INFO root fetch - main [MainThread]: End processing [BunkrrUploader]: success
+[2024-05-11 05:37:09] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Remove: archive file [/home/abi/fetcher/tmp/webull-python-sdk-quotes-core-0.1.5.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - processPackages [webull-python-sdk-quotes-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_quotes_core-0.1.6.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-quotes-core]: success
+[2024-05-11 05:37:09] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.1.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.2.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-11 05:37:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull-python-sdk-core-0.1.5.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - processPackages [webull-python-sdk-core]: Remove: archive file [/home/abi/fetcher/tmp/webull_python_sdk_core-0.1.6.tar.gz]
+[2024-05-11 05:37:09] INFO root fetch - main [MainThread]: End processing [webull-python-sdk-core]: success
+[2024-05-11 05:37:09] INFO root fetch - main [MainThread]: Store serial: [23157057]
