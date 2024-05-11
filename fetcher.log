@@ -8511,3 +8511,27 @@
 [2024-05-11 05:00:09] INFO root fetch - processPackages [ytdl-sub]: Remove: archive file [/home/abi/fetcher/tmp/ytdl_sub-2024.5.11.tar.gz]
 [2024-05-11 05:00:09] INFO root fetch - main [MainThread]: End processing [ytdl-sub]: success
 [2024-05-11 05:00:09] INFO root fetch - main [MainThread]: Store serial: [23156812]
+[2024-05-11 05:02:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156812]
+[2024-05-11 05:02:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 05:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jawi
+[2024-05-11 05:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: beancount-data
+[2024-05-11 05:02:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sphinxcontrib.asciinema
+[2024-05-11 05:02:18] INFO root fetch - processPackages [beancount-data]: New version: [3.0.0] Old Version: [2.0.3]
+[2024-05-11 05:02:18] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/ed/d4/56114464fa432d95ac58b07c476eedbb9bdd83d00f1a5efd96ec89468adc/beancount_data-2.0.3.tar.gz
+[2024-05-11 05:02:18] WARNING root fetch - processPackages [jawi]: Skipping, unable to determine old version
+[2024-05-11 05:02:18] INFO root fetch - main [MainThread]: End processing [jawi] error
+[2024-05-11 05:02:18] INFO root fetch - processPackages [sphinxcontrib.asciinema]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-11 05:02:19] INFO root fetch - processPackages [sphinxcontrib.asciinema]: Downloading https://files.pythonhosted.org/packages/62/7f/e96e4066da49830c37485d019b097b1543418f7d08cd9886e9ee619103f5/sphinxcontrib.asciinema-0.4.1.tar.gz
+[2024-05-11 05:02:19] INFO root fetch - processPackages [beancount-data]: Downloading https://files.pythonhosted.org/packages/38/54/11481b00be3471f34bc6942b62b4f6e23cb7fb3d1ec2c4294daaf176b6a6/beancount_data-3.0.0.tar.gz
+[2024-05-11 05:02:19] INFO root fetch - processPackages [beancount-data]: executing diffoscope
+[2024-05-11 05:02:19] INFO root fetch - processPackages [beancount-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_data-2.0.3.tar.gz tmp/beancount_data-3.0.0.tar.gz --markdown 20240511/b/beancount-data/2.0.3-3.0.0/README.md --exclude *.pyd
+[2024-05-11 05:02:19] INFO root fetch - processPackages [sphinxcontrib.asciinema]: Downloading https://files.pythonhosted.org/packages/c8/b8/a5e405c1c5eae37e466866ed4053613c5a4d75531819426941825a042228/sphinxcontrib.asciinema-0.4.2.tar.gz
+[2024-05-11 05:02:19] INFO root fetch - processPackages [sphinxcontrib.asciinema]: executing diffoscope
+[2024-05-11 05:02:19] INFO root fetch - processPackages [sphinxcontrib.asciinema]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxcontrib.asciinema-0.4.1.tar.gz tmp/sphinxcontrib.asciinema-0.4.2.tar.gz --markdown 20240511/s/sphinxcontrib.asciinema/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-11 05:02:19] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount_data-2.0.3.tar.gz]
+[2024-05-11 05:02:19] INFO root fetch - processPackages [beancount-data]: Remove: archive file [/home/abi/fetcher/tmp/beancount_data-3.0.0.tar.gz]
+[2024-05-11 05:02:19] INFO root fetch - main [MainThread]: End processing [beancount-data]: success
+[2024-05-11 05:02:20] INFO root fetch - processPackages [sphinxcontrib.asciinema]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib.asciinema-0.4.1.tar.gz]
+[2024-05-11 05:02:20] INFO root fetch - processPackages [sphinxcontrib.asciinema]: Remove: archive file [/home/abi/fetcher/tmp/sphinxcontrib.asciinema-0.4.2.tar.gz]
+[2024-05-11 05:02:20] INFO root fetch - main [MainThread]: End processing [sphinxcontrib.asciinema]: success
+[2024-05-11 05:02:20] INFO root fetch - main [MainThread]: Store serial: [23156822]
