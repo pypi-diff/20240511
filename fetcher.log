@@ -16322,3 +16322,27 @@
 [2024-05-11 14:30:58] INFO root fetch - processPackages [cheatshh]: Remove: archive file [/home/abi/fetcher/tmp/cheatshh-1.0.3.tar.gz]
 [2024-05-11 14:30:58] INFO root fetch - main [MainThread]: End processing [cheatshh]: success
 [2024-05-11 14:30:58] INFO root fetch - main [MainThread]: Store serial: [23161064]
+[2024-05-11 14:33:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161064]
+[2024-05-11 14:33:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 14:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: quarteringsz
+[2024-05-11 14:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mimllearning
+[2024-05-11 14:33:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: distainedz
+[2024-05-11 14:33:08] INFO root fetch - processPackages [quarteringsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:33:08] WARNING root fetch - processPackages [distainedz]: Skipping, unable to determine old version
+[2024-05-11 14:33:08] INFO root fetch - main [MainThread]: End processing [distainedz] error
+[2024-05-11 14:33:08] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 14:33:08] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 14:33:08] INFO root fetch - processPackages [quarteringsz]: Downloading https://files.pythonhosted.org/packages/8d/15/edc09e978b5286f3a89c60d2877f9b49cc27729f27e6b7a474b8754d632a/quarteringsz-1.1.tar.gz
+[2024-05-11 14:33:09] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 14:33:09] INFO root fetch - processPackages [quarteringsz]: Downloading https://files.pythonhosted.org/packages/cc/06/e53956d8b671c1dd999a946c8a088bd54d6aab99f53426701ab8e178bacd/quarteringsz-2.1.tar.gz
+[2024-05-11 14:33:09] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 14:33:09] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 14:33:09] INFO root fetch - processPackages [quarteringsz]: executing diffoscope
+[2024-05-11 14:33:09] INFO root fetch - processPackages [quarteringsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/quarteringsz-1.1.tar.gz tmp/quarteringsz-2.1.tar.gz --markdown 20240511/q/quarteringsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:33:09] INFO root fetch - processPackages [quarteringsz]: Remove: archive file [/home/abi/fetcher/tmp/quarteringsz-1.1.tar.gz]
+[2024-05-11 14:33:09] INFO root fetch - processPackages [quarteringsz]: Remove: archive file [/home/abi/fetcher/tmp/quarteringsz-2.1.tar.gz]
+[2024-05-11 14:33:09] INFO root fetch - main [MainThread]: End processing [quarteringsz]: success
+[2024-05-11 14:33:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 14:33:10] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 14:33:10] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 14:33:10] INFO root fetch - main [MainThread]: Store serial: [23161074]
