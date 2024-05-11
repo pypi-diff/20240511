@@ -17974,3 +17974,54 @@
 [2024-05-11 16:28:42] INFO root fetch - processPackages [alfworld]: Remove: archive file [/home/abi/fetcher/tmp/alfworld-0.3.4.tar.gz]
 [2024-05-11 16:28:42] INFO root fetch - main [MainThread]: End processing [alfworld]: success
 [2024-05-11 16:28:42] INFO root fetch - main [MainThread]: Store serial: [23161923]
+[2024-05-11 16:30:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161923]
+[2024-05-11 16:30:52] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: docugenr8
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jphrase
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knowinglyz
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: comwatt
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sumologic-sdk
+[2024-05-11 16:30:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: QtHarmony
+[2024-05-11 16:30:52] INFO root fetch - processPackages [docugenr8]: New version: [0.0.8] Old Version: [0.0.7]
+[2024-05-11 16:30:52] INFO root fetch - processPackages [QtHarmony]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 16:30:52] INFO root fetch - processPackages [comwatt]: New version: [0.7.0] Old Version: [0.6.0]
+[2024-05-11 16:30:52] WARNING root fetch - processPackages [knowinglyz]: Skipping, unable to determine old version
+[2024-05-11 16:30:52] INFO root fetch - main [MainThread]: End processing [knowinglyz] error
+[2024-05-11 16:30:52] INFO root fetch - processPackages [sumologic-sdk]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 16:30:52] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/d4/27/c67a11645ee3d09ed446269f550d25febbf19eff97845eb792e56a92a78c/docugenr8-0.0.7.tar.gz
+[2024-05-11 16:30:52] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/f5/26/08fb82c5e191d6036cf9976fe1a3f77726b8b2ad41087f05ed36f3757041/qtharmony-0.1.4.tar.gz
+[2024-05-11 16:30:52] INFO root fetch - processPackages [jphrase]: New version: [0.0.1] Old Version: [0.0.0]
+[2024-05-11 16:30:52] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/61/a3/83998f581c044ed43fd563e8484deb41f1dda4e001387a458fb196d18e56/comwatt-0.6.0.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [sumologic-sdk]: Downloading https://files.pythonhosted.org/packages/5a/b2/34dcda06902fbfed694e5f463177898d39ac67290806f314859659535d59/sumologic-sdk-0.1.8.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [jphrase]: Downloading https://files.pythonhosted.org/packages/41/62/3a014e6ab89bf86f1134e0bd3ff2d12cf129b48fa8197c74bad0c5468767/jphrase-0.0.0.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [docugenr8]: Downloading https://files.pythonhosted.org/packages/9b/01/1d7afde6078300322a758bab883a343aad43657961631bdf9eac9b892b06/docugenr8-0.0.8.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [comwatt]: Downloading https://files.pythonhosted.org/packages/df/a5/2441b1206615ea559015f6a63abda8ffe4f8355d5199046a0b512565365e/comwatt-0.7.0.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [QtHarmony]: Downloading https://files.pythonhosted.org/packages/a2/64/831ed127c617bae4238f589abcffe4c4e323e355bdfb110c39b36bfe570a/qtharmony-0.1.5.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [docugenr8]: executing diffoscope
+[2024-05-11 16:30:53] INFO root fetch - processPackages [docugenr8]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docugenr8-0.0.7.tar.gz tmp/docugenr8-0.0.8.tar.gz --markdown 20240511/d/docugenr8/0.0.7-0.0.8/README.md --exclude *.pyd
+[2024-05-11 16:30:53] INFO root fetch - processPackages [jphrase]: Downloading https://files.pythonhosted.org/packages/39/79/c902c6c0e0ecb32f0f78b10bd11578dd480d6fd1c9a204ee4c19c8c49527/jphrase-0.0.1.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [comwatt]: executing diffoscope
+[2024-05-11 16:30:53] INFO root fetch - processPackages [comwatt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/comwatt-0.6.0.tar.gz tmp/comwatt-0.7.0.tar.gz --markdown 20240511/c/comwatt/0.6.0-0.7.0/README.md --exclude *.pyd
+[2024-05-11 16:30:53] INFO root fetch - processPackages [QtHarmony]: executing diffoscope
+[2024-05-11 16:30:53] INFO root fetch - processPackages [QtHarmony]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtharmony-0.1.4.tar.gz tmp/qtharmony-0.1.5.tar.gz --markdown 20240511/Q/QtHarmony/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 16:30:53] INFO root fetch - processPackages [sumologic-sdk]: Downloading https://files.pythonhosted.org/packages/81/45/84af9deb1f0a441e69a87cdcaf0b187cc40257463b8ec4dd50ce5f081064/sumologic-sdk-0.1.9.tar.gz
+[2024-05-11 16:30:53] INFO root fetch - processPackages [jphrase]: executing diffoscope
+[2024-05-11 16:30:53] INFO root fetch - processPackages [jphrase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jphrase-0.0.0.tar.gz tmp/jphrase-0.0.1.tar.gz --markdown 20240511/j/jphrase/0.0.0-0.0.1/README.md --exclude *.pyd
+[2024-05-11 16:30:53] INFO root fetch - processPackages [sumologic-sdk]: executing diffoscope
+[2024-05-11 16:30:53] INFO root fetch - processPackages [sumologic-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sumologic-sdk-0.1.8.tar.gz tmp/sumologic-sdk-0.1.9.tar.gz --markdown 20240511/s/sumologic-sdk/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 16:30:54] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.7.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - processPackages [docugenr8]: Remove: archive file [/home/abi/fetcher/tmp/docugenr8-0.0.8.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [docugenr8]: success
+[2024-05-11 16:30:54] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.6.0.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - processPackages [comwatt]: Remove: archive file [/home/abi/fetcher/tmp/comwatt-0.7.0.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [comwatt]: success
+[2024-05-11 16:30:54] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.4.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - processPackages [QtHarmony]: Remove: archive file [/home/abi/fetcher/tmp/qtharmony-0.1.5.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [QtHarmony]: success
+[2024-05-11 16:30:54] INFO root fetch - processPackages [jphrase]: Remove: archive file [/home/abi/fetcher/tmp/jphrase-0.0.0.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - processPackages [jphrase]: Remove: archive file [/home/abi/fetcher/tmp/jphrase-0.0.1.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [jphrase]: success
+[2024-05-11 16:30:54] INFO root fetch - processPackages [sumologic-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sumologic-sdk-0.1.8.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - processPackages [sumologic-sdk]: Remove: archive file [/home/abi/fetcher/tmp/sumologic-sdk-0.1.9.tar.gz]
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: End processing [sumologic-sdk]: success
+[2024-05-11 16:30:54] INFO root fetch - main [MainThread]: Store serial: [23161942]
