@@ -14634,3 +14634,63 @@
 [2024-05-11 12:39:21] INFO root fetch - processPackages [spatium]: Remove: archive file [/home/abi/fetcher/tmp/spatium-1.5.5-cp310-cp310-musllinux_1_1_x86_64.whl.zip]
 [2024-05-11 12:39:21] INFO root fetch - main [MainThread]: End processing [spatium]: success
 [2024-05-11 12:39:21] INFO root fetch - main [MainThread]: Store serial: [23160149]
+[2024-05-11 12:41:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160149]
+[2024-05-11 12:41:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lucrativez
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: utilmy
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: file-scraper
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hao
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: epyt
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: botasaurus-proxy-authentication
+[2024-05-11 12:41:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: g2p-mix
+[2024-05-11 12:41:31] INFO root fetch - processPackages [botasaurus-proxy-authentication]: New version: [1.0.9] Old Version: [1.0.8]
+[2024-05-11 12:41:31] INFO root fetch - processPackages [file-scraper]: New version: [2.9] Old Version: [2.8]
+[2024-05-11 12:41:31] INFO root fetch - processPackages [epyt]: New version: [1.1.6] Old Version: [1.1.4]
+[2024-05-11 12:41:31] WARNING root fetch - processPackages [lucrativez]: Skipping, unable to determine old version
+[2024-05-11 12:41:31] INFO root fetch - main [MainThread]: End processing [lucrativez] error
+[2024-05-11 12:41:31] INFO root fetch - processPackages [g2p-mix]: New version: [0.4.2] Old Version: [0.4.1]
+[2024-05-11 12:41:31] INFO root fetch - processPackages [hao]: New version: [3.8.8] Old Version: [3.8.7]
+[2024-05-11 12:41:31] INFO root fetch - processPackages [utilmy]: New version: [0.1.17154240] Old Version: [0.1.17150852]
+[2024-05-11 12:41:31] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Downloading https://files.pythonhosted.org/packages/79/c5/c8800f375c5477ba9dad4440c1befa1e7e22f3072d4ec401614b39e91345/botasaurus_proxy_authentication-1.0.8.tar.gz
+[2024-05-11 12:41:31] INFO root fetch - processPackages [file-scraper]: Downloading https://files.pythonhosted.org/packages/60/ad/f2fc5b0bcf853e1e92d99fdd617fdf64c6074edd3dc19c0886911055d005/file-scraper-2.8.tar.gz
+[2024-05-11 12:41:31] INFO root fetch - processPackages [g2p-mix]: Downloading https://files.pythonhosted.org/packages/f8/56/d61b371eca9bf2427a3fd7c4fd42b8f34c550effd23246024d7dbde2133c/g2p-mix-0.4.1.tar.gz
+[2024-05-11 12:41:31] INFO root fetch - processPackages [hao]: Downloading https://files.pythonhosted.org/packages/53/d7/83c5eb587a326d71dc319566f12e1e4489bfa2624f7283b783027a022866/hao-3.8.7.tar.gz
+[2024-05-11 12:41:31] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/ff/03/3fa30897c9ae97f5d6f855becf5f18a25529ced721a9de1f67aa98129519/epyt-1.1.4-py3-none-any.whl
+[2024-05-11 12:41:31] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/88/86/242a21b3df008d5066a84d8ee6d4c58429c4613bafe144e8062dcc17d845/utilmy-0.1.17150852.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [file-scraper]: Downloading https://files.pythonhosted.org/packages/04/7a/ada47a669110ba355950e4d59b5b0fb8170e23d146a9d85e07e7cd507ec2/file_scraper-2.9.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Downloading https://files.pythonhosted.org/packages/7b/77/44e453ceaffb7ce5bbc256dbef18a6090ccbd5ddb52ee74559de0fc93571/botasaurus_proxy_authentication-1.0.9.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [hao]: Downloading https://files.pythonhosted.org/packages/50/a5/21a2b7deb1f7d7f2edb0ec75496faeb22d27da451ca4c2cd041d4d0ac14e/hao-3.8.8.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [botasaurus-proxy-authentication]: executing diffoscope
+[2024-05-11 12:41:32] INFO root fetch - processPackages [botasaurus-proxy-authentication]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/botasaurus_proxy_authentication-1.0.8.tar.gz tmp/botasaurus_proxy_authentication-1.0.9.tar.gz --markdown 20240511/b/botasaurus-proxy-authentication/1.0.8-1.0.9/README.md --exclude *.pyd
+[2024-05-11 12:41:32] INFO root fetch - processPackages [file-scraper]: executing diffoscope
+[2024-05-11 12:41:32] INFO root fetch - processPackages [file-scraper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/file-scraper-2.8.tar.gz tmp/file_scraper-2.9.tar.gz --markdown 20240511/f/file-scraper/2.8-2.9/README.md --exclude *.pyd
+[2024-05-11 12:41:32] INFO root fetch - processPackages [epyt]: Downloading https://files.pythonhosted.org/packages/08/5c/df3db85c71c274734403c5ae2398b6e5d3d853110b8d7b7db01c6626703c/epyt-1.1.6-py3-none-any.whl
+[2024-05-11 12:41:32] INFO root fetch - processPackages [hao]: executing diffoscope
+[2024-05-11 12:41:32] INFO root fetch - processPackages [hao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hao-3.8.7.tar.gz tmp/hao-3.8.8.tar.gz --markdown 20240511/h/hao/3.8.7-3.8.8/README.md --exclude *.pyd
+[2024-05-11 12:41:32] INFO root fetch - processPackages [utilmy]: Downloading https://files.pythonhosted.org/packages/b3/19/276f1fef83605862fbf067b485d619453572704385b7e4fd02a197245810/utilmy-0.1.17154240.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [g2p-mix]: Downloading https://files.pythonhosted.org/packages/ef/68/309528ef44602008545183aef543c69f4114e75e75491b0c0f9394a8b785/g2p-mix-0.4.2.tar.gz
+[2024-05-11 12:41:32] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_proxy_authentication-1.0.8.tar.gz]
+[2024-05-11 12:41:32] INFO root fetch - processPackages [botasaurus-proxy-authentication]: Remove: archive file [/home/abi/fetcher/tmp/botasaurus_proxy_authentication-1.0.9.tar.gz]
+[2024-05-11 12:41:32] INFO root fetch - main [MainThread]: End processing [botasaurus-proxy-authentication]: success
+[2024-05-11 12:41:33] INFO root fetch - processPackages [hao]: Remove: archive file [/home/abi/fetcher/tmp/hao-3.8.7.tar.gz]
+[2024-05-11 12:41:33] INFO root fetch - processPackages [hao]: Remove: archive file [/home/abi/fetcher/tmp/hao-3.8.8.tar.gz]
+[2024-05-11 12:41:33] INFO root fetch - main [MainThread]: End processing [hao]: success
+[2024-05-11 12:41:33] INFO root fetch - processPackages [file-scraper]: Remove: archive file [/home/abi/fetcher/tmp/file-scraper-2.8.tar.gz]
+[2024-05-11 12:41:33] INFO root fetch - processPackages [file-scraper]: Remove: archive file [/home/abi/fetcher/tmp/file_scraper-2.9.tar.gz]
+[2024-05-11 12:41:33] INFO root fetch - main [MainThread]: End processing [file-scraper]: success
+[2024-05-11 12:41:33] INFO root fetch - processPackages [g2p-mix]: executing diffoscope
+[2024-05-11 12:41:33] INFO root fetch - processPackages [g2p-mix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/g2p-mix-0.4.1.tar.gz tmp/g2p-mix-0.4.2.tar.gz --markdown 20240511/g/g2p-mix/0.4.1-0.4.2/README.md --exclude *.pyd
+[2024-05-11 12:41:33] INFO root fetch - processPackages [utilmy]: executing diffoscope
+[2024-05-11 12:41:33] INFO root fetch - processPackages [utilmy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/utilmy-0.1.17150852.tar.gz tmp/utilmy-0.1.17154240.tar.gz --markdown 20240511/u/utilmy/0.1.17150852-0.1.17154240/README.md --exclude *.pyd
+[2024-05-11 12:41:34] INFO root fetch - processPackages [epyt]: executing diffoscope
+[2024-05-11 12:41:34] INFO root fetch - processPackages [epyt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/epyt-1.1.4-py3-none-any.whl.zip tmp/epyt-1.1.6-py3-none-any.whl.zip --markdown 20240511/e/epyt/1.1.4-1.1.6/README.md --exclude *.pyd
+[2024-05-11 12:41:34] INFO root fetch - processPackages [g2p-mix]: Remove: archive file [/home/abi/fetcher/tmp/g2p-mix-0.4.1.tar.gz]
+[2024-05-11 12:41:34] INFO root fetch - processPackages [g2p-mix]: Remove: archive file [/home/abi/fetcher/tmp/g2p-mix-0.4.2.tar.gz]
+[2024-05-11 12:41:34] INFO root fetch - main [MainThread]: End processing [g2p-mix]: success
+[2024-05-11 12:41:36] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.4-py3-none-any.whl.zip]
+[2024-05-11 12:41:36] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.6-py3-none-any.whl.zip]
+[2024-05-11 12:41:36] INFO root fetch - main [MainThread]: End processing [epyt]: success
+[2024-05-11 12:41:41] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17150852.tar.gz]
+[2024-05-11 12:41:41] INFO root fetch - processPackages [utilmy]: Remove: archive file [/home/abi/fetcher/tmp/utilmy-0.1.17154240.tar.gz]
+[2024-05-11 12:41:41] INFO root fetch - main [MainThread]: End processing [utilmy]: success
+[2024-05-11 12:41:41] INFO root fetch - main [MainThread]: Store serial: [23160210]
