@@ -16746,3 +16746,33 @@
 [2024-05-11 14:59:30] INFO root fetch - processPackages [Furious-GUI]: Remove: archive file [/home/abi/fetcher/tmp/Furious-GUI-0.4.1.tar.gz]
 [2024-05-11 14:59:30] INFO root fetch - main [MainThread]: End processing [Furious-GUI]: success
 [2024-05-11 14:59:30] INFO root fetch - main [MainThread]: Store serial: [23161217]
+[2024-05-11 15:01:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161217]
+[2024-05-11 15:01:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 15:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: amarium
+[2024-05-11 15:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wikivoyage
+[2024-05-11 15:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scrapeddit
+[2024-05-11 15:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: CGenr
+[2024-05-11 15:01:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CGGenerator
+[2024-05-11 15:01:51] INFO root fetch - processPackages [amarium]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 15:01:51] WARNING root fetch - processPackages [wikivoyage]: Skipping, unable to determine old version
+[2024-05-11 15:01:51] INFO root fetch - main [MainThread]: End processing [wikivoyage] error
+[2024-05-11 15:01:51] INFO root fetch - processPackages [scrapeddit]: New version: [0.2.6] Old Version: [0.2.5]
+[2024-05-11 15:01:51] WARNING root fetch - processPackages [CGenr]: Skipping, unable to determine old version
+[2024-05-11 15:01:51] INFO root fetch - main [MainThread]: End processing [CGenr] error
+[2024-05-11 15:01:51] WARNING root fetch - processPackages [CGGenerator]: Skipping, unable to determine old version
+[2024-05-11 15:01:51] INFO root fetch - main [MainThread]: End processing [CGGenerator] error
+[2024-05-11 15:01:51] INFO root fetch - processPackages [amarium]: Downloading https://files.pythonhosted.org/packages/f9/cb/68b53c09b9e0a49d3188885a653a9951dcc0e6226d27964c64dd2e7864fc/amarium-0.2.8.tar.gz
+[2024-05-11 15:01:51] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/d4/22/a9c4d17886f7f1cd4c9c43ed534902e48933ae58ff4ebd5a5c5e8cd7775d/scrapeddit-0.2.5.tar.gz
+[2024-05-11 15:01:51] INFO root fetch - processPackages [amarium]: Downloading https://files.pythonhosted.org/packages/40/c0/32c8a5c9fff4147c02bcdbf50e15f1d2eea4325f746258119001be1723b7/amarium-0.2.9.tar.gz
+[2024-05-11 15:01:51] INFO root fetch - processPackages [scrapeddit]: Downloading https://files.pythonhosted.org/packages/c6/48/fa97aac679d5ad62f1541891178e406d0ef1e36d14ee19660e172a6818e2/scrapeddit-0.2.6.tar.gz
+[2024-05-11 15:01:51] INFO root fetch - processPackages [amarium]: executing diffoscope
+[2024-05-11 15:01:51] INFO root fetch - processPackages [amarium]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amarium-0.2.8.tar.gz tmp/amarium-0.2.9.tar.gz --markdown 20240511/a/amarium/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 15:01:52] INFO root fetch - processPackages [scrapeddit]: executing diffoscope
+[2024-05-11 15:01:52] INFO root fetch - processPackages [scrapeddit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scrapeddit-0.2.5.tar.gz tmp/scrapeddit-0.2.6.tar.gz --markdown 20240511/s/scrapeddit/0.2.5-0.2.6/README.md --exclude *.pyd
+[2024-05-11 15:01:52] INFO root fetch - processPackages [amarium]: Remove: archive file [/home/abi/fetcher/tmp/amarium-0.2.8.tar.gz]
+[2024-05-11 15:01:52] INFO root fetch - processPackages [amarium]: Remove: archive file [/home/abi/fetcher/tmp/amarium-0.2.9.tar.gz]
+[2024-05-11 15:01:52] INFO root fetch - main [MainThread]: End processing [amarium]: success
+[2024-05-11 15:01:52] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.5.tar.gz]
+[2024-05-11 15:01:52] INFO root fetch - processPackages [scrapeddit]: Remove: archive file [/home/abi/fetcher/tmp/scrapeddit-0.2.6.tar.gz]
+[2024-05-11 15:01:52] INFO root fetch - main [MainThread]: End processing [scrapeddit]: success
+[2024-05-11 15:01:52] INFO root fetch - main [MainThread]: Store serial: [23161235]
