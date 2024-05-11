@@ -12631,3 +12631,33 @@
 [2024-05-11 10:28:16] INFO root fetch - processPackages [pericementitisz]: Remove: archive file [/home/abi/fetcher/tmp/pericementitisz-2.1.tar.gz]
 [2024-05-11 10:28:16] INFO root fetch - main [MainThread]: End processing [pericementitisz]: success
 [2024-05-11 10:28:16] INFO root fetch - main [MainThread]: Store serial: [23159012]
+[2024-05-11 10:30:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159012]
+[2024-05-11 10:30:25] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 10:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pericementitisz
+[2024-05-11 10:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: detrain
+[2024-05-11 10:30:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rdf-doctor
+[2024-05-11 10:30:25] INFO root fetch - processPackages [pericementitisz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 10:30:25] INFO root fetch - processPackages [detrain]: New version: [0.2.4] Old Version: [0.2.2]
+[2024-05-11 10:30:25] INFO root fetch - processPackages [rdf-doctor]: New version: [1.1.5] Old Version: [1.1.4]
+[2024-05-11 10:30:25] INFO root fetch - processPackages [pericementitisz]: Downloading https://files.pythonhosted.org/packages/4f/90/c966d1597b851333a546fb1feb5fa33685d32e698c58a2ef75d666ba7fe5/pericementitisz-1.1.tar.gz
+[2024-05-11 10:30:25] INFO root fetch - processPackages [detrain]: Downloading https://files.pythonhosted.org/packages/5a/a7/285ab2a5d0c9aa83b7960c19d79945e61eb6b5d494595ac47e36403b873b/detrain-0.2.2.tar.gz
+[2024-05-11 10:30:26] INFO root fetch - processPackages [rdf-doctor]: Downloading https://files.pythonhosted.org/packages/a5/43/10033e068cbc07b90811ebf4c6e024021efb660b7e9f540044df8fe9e852/rdf_doctor-1.1.4-py3-none-any.whl
+[2024-05-11 10:30:26] INFO root fetch - processPackages [pericementitisz]: Downloading https://files.pythonhosted.org/packages/f2/4f/da0af5271dfe80b89cd3804458081505c760105868ad5cc1067d56be92d4/pericementitisz-2.1.tar.gz
+[2024-05-11 10:30:26] INFO root fetch - processPackages [detrain]: Downloading https://files.pythonhosted.org/packages/ba/78/d47bb195dbb2afa0067104ee6a55e534f489e41a3d521715b2b09d328762/detrain-0.2.4.tar.gz
+[2024-05-11 10:30:26] INFO root fetch - processPackages [pericementitisz]: executing diffoscope
+[2024-05-11 10:30:26] INFO root fetch - processPackages [pericementitisz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pericementitisz-1.1.tar.gz tmp/pericementitisz-2.1.tar.gz --markdown 20240511/p/pericementitisz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 10:30:26] INFO root fetch - processPackages [detrain]: executing diffoscope
+[2024-05-11 10:30:26] INFO root fetch - processPackages [detrain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/detrain-0.2.2.tar.gz tmp/detrain-0.2.4.tar.gz --markdown 20240511/d/detrain/0.2.2-0.2.4/README.md --exclude *.pyd
+[2024-05-11 10:30:26] INFO root fetch - processPackages [rdf-doctor]: Downloading https://files.pythonhosted.org/packages/21/72/879fefe03809a372fb2c5811bbe27799a9074e2554258ec8cbe1a9ddac2e/rdf_doctor-1.1.5-py3-none-any.whl
+[2024-05-11 10:30:26] INFO root fetch - processPackages [rdf-doctor]: executing diffoscope
+[2024-05-11 10:30:26] INFO root fetch - processPackages [rdf-doctor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rdf_doctor-1.1.4-py3-none-any.whl.zip tmp/rdf_doctor-1.1.5-py3-none-any.whl.zip --markdown 20240511/r/rdf-doctor/1.1.4-1.1.5/README.md --exclude *.pyd
+[2024-05-11 10:30:26] INFO root fetch - processPackages [pericementitisz]: Remove: archive file [/home/abi/fetcher/tmp/pericementitisz-1.1.tar.gz]
+[2024-05-11 10:30:26] INFO root fetch - processPackages [pericementitisz]: Remove: archive file [/home/abi/fetcher/tmp/pericementitisz-2.1.tar.gz]
+[2024-05-11 10:30:26] INFO root fetch - main [MainThread]: End processing [pericementitisz]: success
+[2024-05-11 10:30:26] INFO root fetch - processPackages [detrain]: Remove: archive file [/home/abi/fetcher/tmp/detrain-0.2.2.tar.gz]
+[2024-05-11 10:30:26] INFO root fetch - processPackages [detrain]: Remove: archive file [/home/abi/fetcher/tmp/detrain-0.2.4.tar.gz]
+[2024-05-11 10:30:26] INFO root fetch - main [MainThread]: End processing [detrain]: success
+[2024-05-11 10:30:27] INFO root fetch - processPackages [rdf-doctor]: Remove: archive file [/home/abi/fetcher/tmp/rdf_doctor-1.1.4-py3-none-any.whl.zip]
+[2024-05-11 10:30:27] INFO root fetch - processPackages [rdf-doctor]: Remove: archive file [/home/abi/fetcher/tmp/rdf_doctor-1.1.5-py3-none-any.whl.zip]
+[2024-05-11 10:30:27] INFO root fetch - main [MainThread]: End processing [rdf-doctor]: success
+[2024-05-11 10:30:27] INFO root fetch - main [MainThread]: Store serial: [23159019]
