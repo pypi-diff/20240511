@@ -20675,3 +20675,30 @@
 [2024-05-11 19:26:49] INFO root fetch - processPackages [langsmith]: Remove: archive file [/home/abi/fetcher/tmp/langsmith-0.1.9.tar.gz]
 [2024-05-11 19:26:49] INFO root fetch - main [MainThread]: End processing [langsmith]: success
 [2024-05-11 19:26:49] INFO root fetch - main [MainThread]: Store serial: [23163085]
+[2024-05-11 19:28:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163085]
+[2024-05-11 19:28:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lrlite3
+[2024-05-11 19:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: suffetesz
+[2024-05-11 19:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: logging-extension
+[2024-05-11 19:28:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: crazy-thursday
+[2024-05-11 19:28:58] INFO root fetch - processPackages [crazy-thursday]: New version: [2024.5.9.1] Old Version: [2024.5.9.0]
+[2024-05-11 19:28:58] INFO root fetch - processPackages [suffetesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:28:58] WARNING root fetch - processPackages [logging-extension]: Skipping, unable to determine old version
+[2024-05-11 19:28:58] INFO root fetch - main [MainThread]: End processing [logging-extension] error
+[2024-05-11 19:28:58] WARNING root fetch - processPackages [lrlite3]: Skipping, unable to determine old version
+[2024-05-11 19:28:58] INFO root fetch - main [MainThread]: End processing [lrlite3] error
+[2024-05-11 19:28:58] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/0a/108e3af749c5757158be48151418c2bbea49bff2269af8811bade316080a/crazy_thursday-2024.5.9.0.tar.gz
+[2024-05-11 19:28:58] INFO root fetch - processPackages [suffetesz]: Downloading https://files.pythonhosted.org/packages/d5/fa/661278043a71c2da6df5f9b055f3d4bb541f8bc33de52820c3afe97fe80e/suffetesz-1.1.tar.gz
+[2024-05-11 19:28:58] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/20/70/a719fb059f910b10790f6a51b1c5c3ff943f1349c91c46142f1911323575/crazy_thursday-2024.5.9.1.tar.gz
+[2024-05-11 19:28:59] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2024-05-11 19:28:59] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy_thursday-2024.5.9.0.tar.gz tmp/crazy_thursday-2024.5.9.1.tar.gz --markdown 20240511/c/crazy-thursday/2024.5.9.0-2024.5.9.1/README.md --exclude *.pyd
+[2024-05-11 19:28:59] INFO root fetch - processPackages [suffetesz]: Downloading https://files.pythonhosted.org/packages/fe/bf/01f33db8295a22e0bfe2d274e54ead310a857bb54fdf08cc682a9f945fbc/suffetesz-2.1.tar.gz
+[2024-05-11 19:28:59] INFO root fetch - processPackages [suffetesz]: executing diffoscope
+[2024-05-11 19:28:59] INFO root fetch - processPackages [suffetesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/suffetesz-1.1.tar.gz tmp/suffetesz-2.1.tar.gz --markdown 20240511/s/suffetesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:28:59] INFO root fetch - processPackages [suffetesz]: Remove: archive file [/home/abi/fetcher/tmp/suffetesz-1.1.tar.gz]
+[2024-05-11 19:28:59] INFO root fetch - processPackages [suffetesz]: Remove: archive file [/home/abi/fetcher/tmp/suffetesz-2.1.tar.gz]
+[2024-05-11 19:28:59] INFO root fetch - main [MainThread]: End processing [suffetesz]: success
+[2024-05-11 19:28:59] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.0.tar.gz]
+[2024-05-11 19:28:59] INFO root fetch - processPackages [crazy-thursday]: Remove: archive file [/home/abi/fetcher/tmp/crazy_thursday-2024.5.9.1.tar.gz]
+[2024-05-11 19:28:59] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2024-05-11 19:28:59] INFO root fetch - main [MainThread]: Store serial: [23163100]
