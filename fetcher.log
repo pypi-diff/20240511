@@ -10536,3 +10536,12 @@
 [2024-05-11 07:37:58] INFO root fetch - processPackages [meds-etl-cpp]: Remove: archive file [/home/abi/fetcher/tmp/meds_etl_cpp-0.2.1.tar.gz]
 [2024-05-11 07:37:58] INFO root fetch - main [MainThread]: End processing [meds-etl-cpp]: success
 [2024-05-11 07:37:58] INFO root fetch - main [MainThread]: Store serial: [23157858]
+[2024-05-11 07:40:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157858]
+[2024-05-11 07:40:07] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 07:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mydriaticz
+[2024-05-11 07:40:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QtHarmony
+[2024-05-11 07:40:07] WARNING root fetch - processPackages [QtHarmony]: Skipping, unable to determine old version
+[2024-05-11 07:40:07] INFO root fetch - main [MainThread]: End processing [QtHarmony] error
+[2024-05-11 07:40:07] WARNING root fetch - processPackages [mydriaticz]: Skipping, unable to determine old version
+[2024-05-11 07:40:07] INFO root fetch - main [MainThread]: End processing [mydriaticz] error
+[2024-05-11 07:40:07] INFO root fetch - main [MainThread]: Store serial: [23157868]
