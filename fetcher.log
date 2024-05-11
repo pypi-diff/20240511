@@ -11623,3 +11623,36 @@
 [2024-05-11 09:05:15] INFO root fetch - processPackages [databend-driver]: Remove: archive file [/home/abi/fetcher/tmp/databend_driver-0.9.5-cp37-abi3-win_amd64.whl.zip]
 [2024-05-11 09:05:15] INFO root fetch - main [MainThread]: End processing [databend-driver]: success
 [2024-05-11 09:05:15] INFO root fetch - main [MainThread]: Store serial: [23158531]
+[2024-05-11 09:07:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158531]
+[2024-05-11 09:07:23] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 09:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nvidia-dali-nightly-cuda110
+[2024-05-11 09:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pulumi-artifactory
+[2024-05-11 09:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oordz
+[2024-05-11 09:07:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ptaster
+[2024-05-11 09:07:23] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: New version: [1.38.0.dev20240507] Old Version: [1.38.0.dev20240506]
+[2024-05-11 09:07:23] INFO root fetch - processPackages [pulumi-artifactory]: New version: [6.8.0a1715408609] Old Version: [6.8.0a1715335295]
+[2024-05-11 09:07:23] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/b9/61/34b5196a3bcec01cfec2cb423b600b6e926eba3a6991ac7af195fab6843e/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz
+[2024-05-11 09:07:23] INFO root fetch - processPackages [oordz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 09:07:23] WARNING root fetch - processPackages [ptaster]: Skipping, unable to determine old version
+[2024-05-11 09:07:23] INFO root fetch - main [MainThread]: End processing [ptaster] error
+[2024-05-11 09:07:23] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/a0/48/1d9fe75e588796cd020651de000afe41c7374061a2ccef4051bfa3eb9fff/pulumi_artifactory-6.8.0a1715335295.tar.gz
+[2024-05-11 09:07:23] INFO root fetch - processPackages [oordz]: Downloading https://files.pythonhosted.org/packages/bd/09/1a843d7affa482a7f81362266815f4353b1b582af34e3959327d7ea94049/oordz-1.1.tar.gz
+[2024-05-11 09:07:23] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Downloading https://files.pythonhosted.org/packages/95/bf/58fd4b364b1db28993819037acf99704d4fa25f882cab0c898a11a6ff055/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz
+[2024-05-11 09:07:24] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: executing diffoscope
+[2024-05-11 09:07:24] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz --markdown 20240511/n/nvidia-dali-nightly-cuda110/1.38.0.dev20240506-1.38.0.dev20240507/README.md --exclude *.pyd
+[2024-05-11 09:07:24] INFO root fetch - processPackages [pulumi-artifactory]: Downloading https://files.pythonhosted.org/packages/16/fe/f1152420a392d1ebe91d238b6b26fb80cf005a76a5d098c3144442d77a03/pulumi_artifactory-6.8.0a1715408609.tar.gz
+[2024-05-11 09:07:24] INFO root fetch - processPackages [oordz]: Downloading https://files.pythonhosted.org/packages/2b/8f/7a55166257b75bb979144476af1d1343c0f780f9a8d689de5f46645f5b94/oordz-2.1.tar.gz
+[2024-05-11 09:07:24] INFO root fetch - processPackages [oordz]: executing diffoscope
+[2024-05-11 09:07:24] INFO root fetch - processPackages [oordz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oordz-1.1.tar.gz tmp/oordz-2.1.tar.gz --markdown 20240511/o/oordz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 09:07:24] INFO root fetch - processPackages [pulumi-artifactory]: executing diffoscope
+[2024-05-11 09:07:24] INFO root fetch - processPackages [pulumi-artifactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_artifactory-6.8.0a1715335295.tar.gz tmp/pulumi_artifactory-6.8.0a1715408609.tar.gz --markdown 20240511/p/pulumi-artifactory/6.8.0a1715335295-6.8.0a1715408609/README.md --exclude *.pyd
+[2024-05-11 09:07:24] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240506.tar.gz]
+[2024-05-11 09:07:24] INFO root fetch - processPackages [nvidia-dali-nightly-cuda110]: Remove: archive file [/home/abi/fetcher/tmp/nvidia_dali_nightly_cuda110-1.38.0.dev20240507.tar.gz]
+[2024-05-11 09:07:24] INFO root fetch - main [MainThread]: End processing [nvidia-dali-nightly-cuda110]: success
+[2024-05-11 09:07:24] INFO root fetch - processPackages [oordz]: Remove: archive file [/home/abi/fetcher/tmp/oordz-1.1.tar.gz]
+[2024-05-11 09:07:24] INFO root fetch - processPackages [oordz]: Remove: archive file [/home/abi/fetcher/tmp/oordz-2.1.tar.gz]
+[2024-05-11 09:07:24] INFO root fetch - main [MainThread]: End processing [oordz]: success
+[2024-05-11 09:07:26] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715335295.tar.gz]
+[2024-05-11 09:07:26] INFO root fetch - processPackages [pulumi-artifactory]: Remove: archive file [/home/abi/fetcher/tmp/pulumi_artifactory-6.8.0a1715408609.tar.gz]
+[2024-05-11 09:07:26] INFO root fetch - main [MainThread]: End processing [pulumi-artifactory]: success
+[2024-05-11 09:07:26] INFO root fetch - main [MainThread]: Store serial: [23158542]
