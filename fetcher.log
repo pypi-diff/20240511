@@ -15232,3 +15232,24 @@
 [2024-05-11 13:16:39] INFO root fetch - processPackages [tezapi]: Remove: archive file [/home/abi/fetcher/tmp/tezapi-0.0.5.tar.gz]
 [2024-05-11 13:16:39] INFO root fetch - main [MainThread]: End processing [tezapi]: success
 [2024-05-11 13:16:39] INFO root fetch - main [MainThread]: Store serial: [23160432]
+[2024-05-11 13:18:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160432]
+[2024-05-11 13:18:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 13:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aparat-crawler
+[2024-05-11 13:18:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mlpr
+[2024-05-11 13:18:47] INFO root fetch - processPackages [mlpr]: New version: [0.1.5] Old Version: [0.1.4]
+[2024-05-11 13:18:48] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/06/dc/9598387383db68304b47294da3d5f8973c2d6a3812aed8aa37720b08f408/mlpr-0.1.4.tar.gz
+[2024-05-11 13:18:48] INFO root fetch - processPackages [aparat-crawler]: New version: [0.9.0] Old Version: [0.8.9]
+[2024-05-11 13:18:48] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/15/8b/c0c33bc4dad19f107a7ccbb55c21eea23d56a66fc5bfacdeda5d8152ed81/aparat_crawler-0.8.9.tar.gz
+[2024-05-11 13:18:48] INFO root fetch - processPackages [mlpr]: Downloading https://files.pythonhosted.org/packages/3e/4f/0009e8eb0593c00835dd4acc0e9449e598673c24ab1623b62609acc073bc/mlpr-0.1.5.tar.gz
+[2024-05-11 13:18:48] INFO root fetch - processPackages [mlpr]: executing diffoscope
+[2024-05-11 13:18:48] INFO root fetch - processPackages [mlpr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mlpr-0.1.4.tar.gz tmp/mlpr-0.1.5.tar.gz --markdown 20240511/m/mlpr/0.1.4-0.1.5/README.md --exclude *.pyd
+[2024-05-11 13:18:48] INFO root fetch - processPackages [aparat-crawler]: Downloading https://files.pythonhosted.org/packages/e0/7f/01414077c3451d3792564790b26a0fb2b2843b6f003175dd53400bc816b6/aparat_crawler-0.9.0.tar.gz
+[2024-05-11 13:18:48] INFO root fetch - processPackages [aparat-crawler]: executing diffoscope
+[2024-05-11 13:18:48] INFO root fetch - processPackages [aparat-crawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aparat_crawler-0.8.9.tar.gz tmp/aparat_crawler-0.9.0.tar.gz --markdown 20240511/a/aparat-crawler/0.8.9-0.9.0/README.md --exclude *.pyd
+[2024-05-11 13:18:49] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.4.tar.gz]
+[2024-05-11 13:18:49] INFO root fetch - processPackages [mlpr]: Remove: archive file [/home/abi/fetcher/tmp/mlpr-0.1.5.tar.gz]
+[2024-05-11 13:18:49] INFO root fetch - main [MainThread]: End processing [mlpr]: success
+[2024-05-11 13:18:49] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.8.9.tar.gz]
+[2024-05-11 13:18:49] INFO root fetch - processPackages [aparat-crawler]: Remove: archive file [/home/abi/fetcher/tmp/aparat_crawler-0.9.0.tar.gz]
+[2024-05-11 13:18:49] INFO root fetch - main [MainThread]: End processing [aparat-crawler]: success
+[2024-05-11 13:18:49] INFO root fetch - main [MainThread]: Store serial: [23160438]
