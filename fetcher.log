@@ -14733,3 +14733,21 @@
 [2024-05-11 12:43:53] INFO root fetch - processPackages [webscout]: Remove: archive file [/home/abi/fetcher/tmp/webscout-1.4.6.tar.gz]
 [2024-05-11 12:43:53] INFO root fetch - main [MainThread]: End processing [webscout]: success
 [2024-05-11 12:43:53] INFO root fetch - main [MainThread]: Store serial: [23160221]
+[2024-05-11 12:45:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160221]
+[2024-05-11 12:46:01] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 12:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-allure-id2history
+[2024-05-11 12:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gliner
+[2024-05-11 12:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: umlautz
+[2024-05-11 12:46:01] WARNING root fetch - processPackages [pytest-allure-id2history]: Skipping, unable to determine old version
+[2024-05-11 12:46:01] INFO root fetch - main [MainThread]: End processing [pytest-allure-id2history] error
+[2024-05-11 12:46:01] WARNING root fetch - processPackages [umlautz]: Skipping, unable to determine old version
+[2024-05-11 12:46:01] INFO root fetch - main [MainThread]: End processing [umlautz] error
+[2024-05-11 12:46:01] INFO root fetch - processPackages [gliner]: New version: [0.1.9] Old Version: [0.1.8]
+[2024-05-11 12:46:02] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/4a/ee/c794dd4d843e1b869cfa087fb4f5065174e23201cb216a6920ae919a0702/gliner-0.1.8.tar.gz
+[2024-05-11 12:46:02] INFO root fetch - processPackages [gliner]: Downloading https://files.pythonhosted.org/packages/54/53/182c5c1b761ab40ca0d4b9b3dfdd6aa606d105eb3ad7d4c743fbcca13471/gliner-0.1.9.tar.gz
+[2024-05-11 12:46:02] INFO root fetch - processPackages [gliner]: executing diffoscope
+[2024-05-11 12:46:02] INFO root fetch - processPackages [gliner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gliner-0.1.8.tar.gz tmp/gliner-0.1.9.tar.gz --markdown 20240511/g/gliner/0.1.8-0.1.9/README.md --exclude *.pyd
+[2024-05-11 12:46:03] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.8.tar.gz]
+[2024-05-11 12:46:03] INFO root fetch - processPackages [gliner]: Remove: archive file [/home/abi/fetcher/tmp/gliner-0.1.9.tar.gz]
+[2024-05-11 12:46:03] INFO root fetch - main [MainThread]: End processing [gliner]: success
+[2024-05-11 12:46:03] INFO root fetch - main [MainThread]: Store serial: [23160236]
