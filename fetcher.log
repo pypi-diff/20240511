@@ -19756,3 +19756,30 @@
 [2024-05-11 18:23:56] INFO root fetch - processPackages [plom]: Remove: archive file [/home/abi/fetcher/tmp/plom-0.9.4.tar.gz]
 [2024-05-11 18:23:56] INFO root fetch - main [MainThread]: End processing [plom]: success
 [2024-05-11 18:23:56] INFO root fetch - main [MainThread]: Store serial: [23162635]
+[2024-05-11 18:26:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162635]
+[2024-05-11 18:26:05] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 18:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ExcelExtractorJsonPDF
+[2024-05-11 18:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: stercoricolousz
+[2024-05-11 18:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rag-pychunk
+[2024-05-11 18:26:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simple-bgpfuzz-rpc
+[2024-05-11 18:26:05] INFO root fetch - processPackages [rag-pychunk]: New version: [1.0.3] Old Version: [1.0.2]
+[2024-05-11 18:26:05] INFO root fetch - processPackages [stercoricolousz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 18:26:05] WARNING root fetch - processPackages [simple-bgpfuzz-rpc]: Skipping, unable to determine old version
+[2024-05-11 18:26:05] INFO root fetch - main [MainThread]: End processing [simple-bgpfuzz-rpc] error
+[2024-05-11 18:26:05] WARNING root fetch - processPackages [ExcelExtractorJsonPDF]: Skipping, unable to determine old version
+[2024-05-11 18:26:05] INFO root fetch - main [MainThread]: End processing [ExcelExtractorJsonPDF] error
+[2024-05-11 18:26:05] INFO root fetch - processPackages [rag-pychunk]: Downloading https://files.pythonhosted.org/packages/0b/50/bf9da016fc837cf2a28a198ccd71b4cbf3f1842703ff24e34d50a8c39f0c/rag_pychunk-1.0.2.tar.gz
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: Downloading https://files.pythonhosted.org/packages/88/56/b73c53c8da0248953da081939500fd0cf0eda032b3dc7c540bb8cc44b220/stercoricolousz-1.1.tar.gz
+[2024-05-11 18:26:06] INFO root fetch - processPackages [rag-pychunk]: Downloading https://files.pythonhosted.org/packages/25/e8/a92a4bdf1f9f0269c64fb94a806938afb1aba25b9922a2c19dbf1a42ab04/rag_pychunk-1.0.3.tar.gz
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: Downloading https://files.pythonhosted.org/packages/f5/f3/2db5d911821b82f1cb373801389515ee7eff6e4aa802eed0fe24c9c483e8/stercoricolousz-2.1.tar.gz
+[2024-05-11 18:26:06] INFO root fetch - processPackages [rag-pychunk]: executing diffoscope
+[2024-05-11 18:26:06] INFO root fetch - processPackages [rag-pychunk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rag_pychunk-1.0.2.tar.gz tmp/rag_pychunk-1.0.3.tar.gz --markdown 20240511/r/rag-pychunk/1.0.2-1.0.3/README.md --exclude *.pyd
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: executing diffoscope
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stercoricolousz-1.1.tar.gz tmp/stercoricolousz-2.1.tar.gz --markdown 20240511/s/stercoricolousz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 18:26:06] INFO root fetch - processPackages [rag-pychunk]: Remove: archive file [/home/abi/fetcher/tmp/rag_pychunk-1.0.2.tar.gz]
+[2024-05-11 18:26:06] INFO root fetch - processPackages [rag-pychunk]: Remove: archive file [/home/abi/fetcher/tmp/rag_pychunk-1.0.3.tar.gz]
+[2024-05-11 18:26:06] INFO root fetch - main [MainThread]: End processing [rag-pychunk]: success
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: Remove: archive file [/home/abi/fetcher/tmp/stercoricolousz-1.1.tar.gz]
+[2024-05-11 18:26:06] INFO root fetch - processPackages [stercoricolousz]: Remove: archive file [/home/abi/fetcher/tmp/stercoricolousz-2.1.tar.gz]
+[2024-05-11 18:26:06] INFO root fetch - main [MainThread]: End processing [stercoricolousz]: success
+[2024-05-11 18:26:06] INFO root fetch - main [MainThread]: Store serial: [23162650]
