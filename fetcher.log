@@ -14355,3 +14355,39 @@
 [2024-05-11 12:21:54] INFO root fetch - processPackages [prealludingz]: Remove: archive file [/home/abi/fetcher/tmp/prealludingz-2.1.tar.gz]
 [2024-05-11 12:21:54] INFO root fetch - main [MainThread]: End processing [prealludingz]: success
 [2024-05-11 12:21:54] INFO root fetch - main [MainThread]: Store serial: [23159945]
+[2024-05-11 12:23:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159945]
+[2024-05-11 12:24:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 12:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rest-client-micro
+[2024-05-11 12:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: manim-fonts
+[2024-05-11 12:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mimllearning
+[2024-05-11 12:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vdg
+[2024-05-11 12:24:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-allauth-themes
+[2024-05-11 12:24:03] INFO root fetch - processPackages [mimllearning]: New version: [0.3.9] Old Version: [0.3.8]
+[2024-05-11 12:24:03] INFO root fetch - processPackages [rest-client-micro]: New version: [0.3.4] Old Version: [0.3.3]
+[2024-05-11 12:24:03] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/15/86/0699749fbec8b1ea58413801d8e9d01b1524c442f62faaba3c35f93f0f8f/mimllearning-0.3.8.tar.gz
+[2024-05-11 12:24:03] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/10/fb/f40db3c7b79b10ed3c815cfe5bbe556c901d05ea7610104749d0d64a43be/rest_client_micro-0.3.3.tar.gz
+[2024-05-11 12:24:03] INFO root fetch - processPackages [manim-fonts]: New version: [0.4.0] Old Version: [0.3.0]
+[2024-05-11 12:24:03] WARNING root fetch - processPackages [vdg]: Skipping, unable to determine old version
+[2024-05-11 12:24:03] INFO root fetch - main [MainThread]: End processing [vdg] error
+[2024-05-11 12:24:03] WARNING root fetch - processPackages [django-allauth-themes]: Skipping, unable to determine old version
+[2024-05-11 12:24:03] INFO root fetch - main [MainThread]: End processing [django-allauth-themes] error
+[2024-05-11 12:24:03] INFO root fetch - processPackages [manim-fonts]: Downloading https://files.pythonhosted.org/packages/f2/69/a64149010c9db52cde9644fb44be1546de65c79e7cf6290ee4672f70c64c/manim_fonts-0.3.0.tar.gz
+[2024-05-11 12:24:03] INFO root fetch - processPackages [rest-client-micro]: Downloading https://files.pythonhosted.org/packages/d5/4f/b3f8d0fea1df15045fca3d134b22d39487a8a59ee9c691c2e29d4d0b2d15/rest_client_micro-0.3.4.tar.gz
+[2024-05-11 12:24:03] INFO root fetch - processPackages [mimllearning]: Downloading https://files.pythonhosted.org/packages/1d/ef/4b58b90493e94027713525beeda9443a1da722846dd33e98b1d6abba222f/mimllearning-0.3.9.tar.gz
+[2024-05-11 12:24:03] INFO root fetch - processPackages [rest-client-micro]: executing diffoscope
+[2024-05-11 12:24:03] INFO root fetch - processPackages [rest-client-micro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rest_client_micro-0.3.3.tar.gz tmp/rest_client_micro-0.3.4.tar.gz --markdown 20240511/r/rest-client-micro/0.3.3-0.3.4/README.md --exclude *.pyd
+[2024-05-11 12:24:03] INFO root fetch - processPackages [mimllearning]: executing diffoscope
+[2024-05-11 12:24:03] INFO root fetch - processPackages [mimllearning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mimllearning-0.3.8.tar.gz tmp/mimllearning-0.3.9.tar.gz --markdown 20240511/m/mimllearning/0.3.8-0.3.9/README.md --exclude *.pyd
+[2024-05-11 12:24:03] INFO root fetch - processPackages [manim-fonts]: Downloading https://files.pythonhosted.org/packages/bc/3a/53070214615f9439e4c40d075b39ed96f4f309f55bdf1acbad056ad1631d/manim_fonts-0.4.0.tar.gz
+[2024-05-11 12:24:04] INFO root fetch - processPackages [manim-fonts]: executing diffoscope
+[2024-05-11 12:24:04] INFO root fetch - processPackages [manim-fonts]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/manim_fonts-0.3.0.tar.gz tmp/manim_fonts-0.4.0.tar.gz --markdown 20240511/m/manim-fonts/0.3.0-0.4.0/README.md --exclude *.pyd
+[2024-05-11 12:24:04] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.3.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - processPackages [rest-client-micro]: Remove: archive file [/home/abi/fetcher/tmp/rest_client_micro-0.3.4.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - main [MainThread]: End processing [rest-client-micro]: success
+[2024-05-11 12:24:04] INFO root fetch - processPackages [manim-fonts]: Remove: archive file [/home/abi/fetcher/tmp/manim_fonts-0.3.0.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - processPackages [manim-fonts]: Remove: archive file [/home/abi/fetcher/tmp/manim_fonts-0.4.0.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - main [MainThread]: End processing [manim-fonts]: success
+[2024-05-11 12:24:04] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.8.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - processPackages [mimllearning]: Remove: archive file [/home/abi/fetcher/tmp/mimllearning-0.3.9.tar.gz]
+[2024-05-11 12:24:04] INFO root fetch - main [MainThread]: End processing [mimllearning]: success
+[2024-05-11 12:24:04] INFO root fetch - main [MainThread]: Store serial: [23159965]
