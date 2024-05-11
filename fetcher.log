@@ -20384,3 +20384,63 @@
 [2024-05-11 19:11:30] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_digitized_signature-12.0.2.1.0-py3-none-any.whl.zip]
 [2024-05-11 19:11:30] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-widget-digitized-signature]: success
 [2024-05-11 19:11:30] INFO root fetch - main [MainThread]: Store serial: [23162940]
+[2024-05-11 19:13:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162940]
+[2024-05-11 19:13:39] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py3grads
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: subtilizez
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: alibabacloud-arms20190808
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alibabacloud-ehpcinstant20230701
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: alibabacloud-gpdb20160503
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: starrailcard
+[2024-05-11 19:13:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: OZI.build
+[2024-05-11 19:13:39] WARNING root fetch - processPackages [py3grads]: Skipping, unable to determine old version
+[2024-05-11 19:13:39] INFO root fetch - main [MainThread]: End processing [py3grads] error
+[2024-05-11 19:13:39] INFO root fetch - processPackages [subtilizez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [OZI.build]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-arms20190808]: New version: [4.9.0] Old Version: [4.8.0]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [starrailcard]: New version: [2.1.8] Old Version: [2.1.7]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: New version: [3.6.1] Old Version: [3.6.0]
+[2024-05-11 19:13:39] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/c2/68/445f96f8f6a7f7bc556936a301c80ff6e3b858eff7efa40c69e738b241fa/OZI.build-0.0.8.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [subtilizez]: Downloading https://files.pythonhosted.org/packages/a5/45/09ae13aae6bcbc4f7c279cca7c045ddf6443ddb3ad42ba878b7dab347f77/subtilizez-1.1.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: Downloading https://files.pythonhosted.org/packages/a5/8e/2bc4337f5f116e3b29684ba6f1a34bdeeebe957eed102ca6fe67d5f854e1/alibabacloud_ehpcinstant20230701-1.0.0.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-arms20190808]: Downloading https://files.pythonhosted.org/packages/a0/33/d038dba0d14cb01873486937711da01cc697840cf694bb2903ab14d2b3bf/alibabacloud_arms20190808-4.8.0.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: Downloading https://files.pythonhosted.org/packages/f2/55/d0c6f3b8faea8d9fb6b13cce2c3cf39d3f1244af45dd95cbd9b35c2376f6/alibabacloud_gpdb20160503-3.6.0.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/19/bb/569d7d3c1c760d267cf3d2d46e30b46531c8069d7de6134c25654970f908/starrailcard-2.1.7.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [OZI.build]: Downloading https://files.pythonhosted.org/packages/b8/82/03697e429f995cc711a5f35ab319b525638b624dc6970aef7ef1879562c0/OZI.build-0.0.9.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [subtilizez]: Downloading https://files.pythonhosted.org/packages/46/e6/23550c468e679cd354e5837953eadbe3761acbe1b76c9e905856d6d84326/subtilizez-2.1.tar.gz
+[2024-05-11 19:13:39] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: Downloading https://files.pythonhosted.org/packages/76/12/04786839b7a8bfb949cb9318e1bfe2c8a628f774adc23401b6ec9ae1b9f7/alibabacloud_ehpcinstant20230701-1.0.1.tar.gz
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-arms20190808]: Downloading https://files.pythonhosted.org/packages/66/d9/0c6b583a4106c1de5b811914f33d24b53706c889a11769c86ec204e0fe33/alibabacloud_arms20190808-4.9.0.tar.gz
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: Downloading https://files.pythonhosted.org/packages/53/b3/f71e517b470340c104d2d160c7e6f46123fafcf415d4056bf8ea190f28d2/alibabacloud_gpdb20160503-3.6.1.tar.gz
+[2024-05-11 19:13:40] INFO root fetch - processPackages [starrailcard]: Downloading https://files.pythonhosted.org/packages/75/8b/a4675e5bd6b60a7c5e4f170a96a627578d9d54d4a402352307797c5e93ed/starrailcard-2.1.8.tar.gz
+[2024-05-11 19:13:40] INFO root fetch - processPackages [OZI.build]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [OZI.build]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/OZI.build-0.0.8.tar.gz tmp/OZI.build-0.0.9.tar.gz --markdown 20240511/O/OZI.build/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [subtilizez]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [subtilizez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/subtilizez-1.1.tar.gz tmp/subtilizez-2.1.tar.gz --markdown 20240511/s/subtilizez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_ehpcinstant20230701-1.0.0.tar.gz tmp/alibabacloud_ehpcinstant20230701-1.0.1.tar.gz --markdown 20240511/a/alibabacloud-ehpcinstant20230701/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_gpdb20160503-3.6.0.tar.gz tmp/alibabacloud_gpdb20160503-3.6.1.tar.gz --markdown 20240511/a/alibabacloud-gpdb20160503/3.6.0-3.6.1/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-arms20190808]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-arms20190808]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alibabacloud_arms20190808-4.8.0.tar.gz tmp/alibabacloud_arms20190808-4.9.0.tar.gz --markdown 20240511/a/alibabacloud-arms20190808/4.8.0-4.9.0/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [starrailcard]: executing diffoscope
+[2024-05-11 19:13:40] INFO root fetch - processPackages [starrailcard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starrailcard-2.1.7.tar.gz tmp/starrailcard-2.1.8.tar.gz --markdown 20240511/s/starrailcard/2.1.7-2.1.8/README.md --exclude *.pyd
+[2024-05-11 19:13:40] INFO root fetch - processPackages [subtilizez]: Remove: archive file [/home/abi/fetcher/tmp/subtilizez-1.1.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - processPackages [subtilizez]: Remove: archive file [/home/abi/fetcher/tmp/subtilizez-2.1.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - main [MainThread]: End processing [subtilizez]: success
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ehpcinstant20230701-1.0.0.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - processPackages [alibabacloud-ehpcinstant20230701]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_ehpcinstant20230701-1.0.1.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - main [MainThread]: End processing [alibabacloud-ehpcinstant20230701]: success
+[2024-05-11 19:13:40] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.8.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - processPackages [OZI.build]: Remove: archive file [/home/abi/fetcher/tmp/OZI.build-0.0.9.tar.gz]
+[2024-05-11 19:13:40] INFO root fetch - main [MainThread]: End processing [OZI.build]: success
+[2024-05-11 19:13:41] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.7.tar.gz]
+[2024-05-11 19:13:41] INFO root fetch - processPackages [starrailcard]: Remove: archive file [/home/abi/fetcher/tmp/starrailcard-2.1.8.tar.gz]
+[2024-05-11 19:13:41] INFO root fetch - main [MainThread]: End processing [starrailcard]: success
+[2024-05-11 19:13:41] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_gpdb20160503-3.6.0.tar.gz]
+[2024-05-11 19:13:41] INFO root fetch - processPackages [alibabacloud-gpdb20160503]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_gpdb20160503-3.6.1.tar.gz]
+[2024-05-11 19:13:41] INFO root fetch - main [MainThread]: End processing [alibabacloud-gpdb20160503]: success
+[2024-05-11 19:13:42] INFO root fetch - processPackages [alibabacloud-arms20190808]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_arms20190808-4.8.0.tar.gz]
+[2024-05-11 19:13:42] INFO root fetch - processPackages [alibabacloud-arms20190808]: Remove: archive file [/home/abi/fetcher/tmp/alibabacloud_arms20190808-4.9.0.tar.gz]
+[2024-05-11 19:13:42] INFO root fetch - main [MainThread]: End processing [alibabacloud-arms20190808]: success
+[2024-05-11 19:13:42] INFO root fetch - main [MainThread]: Store serial: [23162962]
