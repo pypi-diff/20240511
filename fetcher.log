@@ -13446,3 +13446,39 @@
 [2024-05-11 11:24:55] INFO root fetch - processPackages [aim-flask]: Remove: archive file [/home/abi/fetcher/tmp/aim_flask-1.0.9-py3-none-any.whl.zip]
 [2024-05-11 11:24:55] INFO root fetch - main [MainThread]: End processing [aim-flask]: success
 [2024-05-11 11:24:55] INFO root fetch - main [MainThread]: Store serial: [23159589]
+[2024-05-11 11:26:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159589]
+[2024-05-11 11:27:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2024-05-11 11:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PyAibote
+[2024-05-11 11:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solaredge-influxdb
+[2024-05-11 11:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-fastoche
+[2024-05-11 11:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dooth
+[2024-05-11 11:27:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pimelatez
+[2024-05-11 11:27:04] WARNING root fetch - processPackages [dooth]: Skipping, unable to determine old version
+[2024-05-11 11:27:04] INFO root fetch - main [MainThread]: End processing [dooth] error
+[2024-05-11 11:27:04] INFO root fetch - processPackages [PyAibote]: New version: [1.4.6] Old Version: [1.4.5]
+[2024-05-11 11:27:04] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/3a/67/b6e27b06b45fb0c3ca2422c5bc4de120590875249a9494bedea0f9e4343b/PyAibote-1.4.5.tar.gz
+[2024-05-11 11:27:04] WARNING root fetch - processPackages [django-fastoche]: Skipping, unable to determine old version
+[2024-05-11 11:27:04] INFO root fetch - main [MainThread]: End processing [django-fastoche] error
+[2024-05-11 11:27:04] INFO root fetch - processPackages [pimelatez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 11:27:04] INFO root fetch - processPackages [solaredge-influxdb]: New version: [1.3.0] Old Version: [1.1.0]
+[2024-05-11 11:27:04] INFO root fetch - processPackages [solaredge-influxdb]: Downloading https://files.pythonhosted.org/packages/a5/35/c2d3321b024bfa076d3cadb74045aac29cce974a4cec332b28906adb11c6/solaredge_influxdb-1.1.0.tar.gz
+[2024-05-11 11:27:04] INFO root fetch - processPackages [pimelatez]: Downloading https://files.pythonhosted.org/packages/1d/f7/3d7a14f3bd53ded0fee6aa727a5a50f4213d345eca1b75ed7f078a1045d7/pimelatez-1.1.tar.gz
+[2024-05-11 11:27:04] INFO root fetch - processPackages [PyAibote]: Downloading https://files.pythonhosted.org/packages/d3/67/7747f60aec6824d4b81acbc5a48613cb74e35a09cfd3da4fea351d498425/PyAibote-1.4.6-py3-none-any.whl
+[2024-05-11 11:27:04] INFO root fetch - processPackages [PyAibote]: executing diffoscope
+[2024-05-11 11:27:04] INFO root fetch - processPackages [PyAibote]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyAibote-1.4.5.tar.gz tmp/PyAibote-1.4.6-py3-none-any.whl.zip --markdown 20240511/P/PyAibote/1.4.5-1.4.6/README.md --exclude *.pyd
+[2024-05-11 11:27:04] INFO root fetch - processPackages [pimelatez]: Downloading https://files.pythonhosted.org/packages/68/7a/8c8fa70709ab34e2c3ae79d0d6bf3ff91ade8c89aa1a598c1e3d30140185/pimelatez-2.1.tar.gz
+[2024-05-11 11:27:04] INFO root fetch - processPackages [solaredge-influxdb]: Downloading https://files.pythonhosted.org/packages/54/cf/126b0b290bec988902c0b589eb0c0c47fe5b962e2f3b51351a49013d7a3b/solaredge_influxdb-1.3.0.tar.gz
+[2024-05-11 11:27:04] INFO root fetch - processPackages [pimelatez]: executing diffoscope
+[2024-05-11 11:27:04] INFO root fetch - processPackages [pimelatez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pimelatez-1.1.tar.gz tmp/pimelatez-2.1.tar.gz --markdown 20240511/p/pimelatez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 11:27:04] INFO root fetch - processPackages [solaredge-influxdb]: executing diffoscope
+[2024-05-11 11:27:04] INFO root fetch - processPackages [solaredge-influxdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solaredge_influxdb-1.1.0.tar.gz tmp/solaredge_influxdb-1.3.0.tar.gz --markdown 20240511/s/solaredge-influxdb/1.1.0-1.3.0/README.md --exclude *.pyd
+[2024-05-11 11:27:05] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.5.tar.gz]
+[2024-05-11 11:27:05] INFO root fetch - processPackages [PyAibote]: Remove: archive file [/home/abi/fetcher/tmp/PyAibote-1.4.6-py3-none-any.whl.zip]
+[2024-05-11 11:27:05] INFO root fetch - main [MainThread]: End processing [PyAibote]: success
+[2024-05-11 11:27:05] INFO root fetch - processPackages [pimelatez]: Remove: archive file [/home/abi/fetcher/tmp/pimelatez-1.1.tar.gz]
+[2024-05-11 11:27:05] INFO root fetch - processPackages [pimelatez]: Remove: archive file [/home/abi/fetcher/tmp/pimelatez-2.1.tar.gz]
+[2024-05-11 11:27:05] INFO root fetch - main [MainThread]: End processing [pimelatez]: success
+[2024-05-11 11:27:05] INFO root fetch - processPackages [solaredge-influxdb]: Remove: archive file [/home/abi/fetcher/tmp/solaredge_influxdb-1.1.0.tar.gz]
+[2024-05-11 11:27:05] INFO root fetch - processPackages [solaredge-influxdb]: Remove: archive file [/home/abi/fetcher/tmp/solaredge_influxdb-1.3.0.tar.gz]
+[2024-05-11 11:27:05] INFO root fetch - main [MainThread]: End processing [solaredge-influxdb]: success
+[2024-05-11 11:27:05] INFO root fetch - main [MainThread]: Store serial: [23159605]
