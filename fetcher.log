@@ -18767,3 +18767,42 @@
 [2024-05-11 17:22:03] WARNING root fetch - processPackages [catastasisz]: Skipping, unable to determine old version
 [2024-05-11 17:22:03] INFO root fetch - main [MainThread]: End processing [catastasisz] error
 [2024-05-11 17:22:03] INFO root fetch - main [MainThread]: Store serial: [23162240]
+[2024-05-11 17:24:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162240]
+[2024-05-11 17:24:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qwen-agent
+[2024-05-11 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: TINTOlib
+[2024-05-11 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-unfold-admin-list-filter-dropdown
+[2024-05-11 17:24:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: singularsz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [qwen-agent]: New version: [0.0.4] Old Version: [0.0.3]
+[2024-05-11 17:24:12] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: New version: [1.0.5] Old Version: [1.0.4]
+[2024-05-11 17:24:12] INFO root fetch - processPackages [TINTOlib]: New version: [0.0.9] Old Version: [0.0.8]
+[2024-05-11 17:24:12] INFO root fetch - processPackages [singularsz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 17:24:12] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/88/66/5ff78a7354d96c5cb6040119eab2be915cdf9e9570f5bf18b1c2dba81c64/tintolib-0.0.8.tar.gz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [qwen-agent]: Downloading https://files.pythonhosted.org/packages/48/44/cd2e29a5782e6e0c4a37d64af79fce9d05369c6a1de1b0d6be258a594470/qwen-agent-0.0.3.tar.gz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [singularsz]: Downloading https://files.pythonhosted.org/packages/ef/a8/3f876119086ec06f2837bd523141389c3e634ea398af57cab698235ee3a7/singularsz-1.1.tar.gz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: Downloading https://files.pythonhosted.org/packages/14/74/484ab12ee7aa17c81288b49ab8c420397e1a492f8ff9114e15c3689e36a5/django_unfold_admin_list_filter_dropdown-1.0.4.tar.gz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: Downloading https://files.pythonhosted.org/packages/c5/86/7309d87b19e9ecf95ad46d50adf2b88f77277d1302a6a036d1c569659941/django_unfold_admin_list_filter_dropdown-1.0.5.tar.gz
+[2024-05-11 17:24:12] INFO root fetch - processPackages [singularsz]: Downloading https://files.pythonhosted.org/packages/56/5f/4e85c366bd2e77ec2c261c8b5cbfdabdce934c240cfa3935300972f2c966/singularsz-2.1.tar.gz
+[2024-05-11 17:24:13] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: executing diffoscope
+[2024-05-11 17:24:13] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_unfold_admin_list_filter_dropdown-1.0.4.tar.gz tmp/django_unfold_admin_list_filter_dropdown-1.0.5.tar.gz --markdown 20240511/d/django-unfold-admin-list-filter-dropdown/1.0.4-1.0.5/README.md --exclude *.pyd
+[2024-05-11 17:24:13] INFO root fetch - processPackages [singularsz]: executing diffoscope
+[2024-05-11 17:24:13] INFO root fetch - processPackages [singularsz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/singularsz-1.1.tar.gz tmp/singularsz-2.1.tar.gz --markdown 20240511/s/singularsz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 17:24:13] INFO root fetch - processPackages [qwen-agent]: Downloading https://files.pythonhosted.org/packages/73/86/685523c1053c0a47c6b630ba858e4e92c156c1f4438620175efa75959d5d/qwen-agent-0.0.4.tar.gz
+[2024-05-11 17:24:13] INFO root fetch - processPackages [TINTOlib]: Downloading https://files.pythonhosted.org/packages/c4/27/a91d5cfaf102a55a2a1c9d05c61fa9b4e7a94ef94ddb79a837edafdb6324/tintolib-0.0.9.tar.gz
+[2024-05-11 17:24:13] INFO root fetch - processPackages [singularsz]: Remove: archive file [/home/abi/fetcher/tmp/singularsz-1.1.tar.gz]
+[2024-05-11 17:24:13] INFO root fetch - processPackages [singularsz]: Remove: archive file [/home/abi/fetcher/tmp/singularsz-2.1.tar.gz]
+[2024-05-11 17:24:13] INFO root fetch - main [MainThread]: End processing [singularsz]: success
+[2024-05-11 17:24:13] INFO root fetch - processPackages [qwen-agent]: executing diffoscope
+[2024-05-11 17:24:13] INFO root fetch - processPackages [qwen-agent]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qwen-agent-0.0.3.tar.gz tmp/qwen-agent-0.0.4.tar.gz --markdown 20240511/q/qwen-agent/0.0.3-0.0.4/README.md --exclude *.pyd
+[2024-05-11 17:24:13] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: Remove: archive file [/home/abi/fetcher/tmp/django_unfold_admin_list_filter_dropdown-1.0.4.tar.gz]
+[2024-05-11 17:24:13] INFO root fetch - processPackages [django-unfold-admin-list-filter-dropdown]: Remove: archive file [/home/abi/fetcher/tmp/django_unfold_admin_list_filter_dropdown-1.0.5.tar.gz]
+[2024-05-11 17:24:13] INFO root fetch - main [MainThread]: End processing [django-unfold-admin-list-filter-dropdown]: success
+[2024-05-11 17:24:13] INFO root fetch - processPackages [TINTOlib]: executing diffoscope
+[2024-05-11 17:24:13] INFO root fetch - processPackages [TINTOlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tintolib-0.0.8.tar.gz tmp/tintolib-0.0.9.tar.gz --markdown 20240511/T/TINTOlib/0.0.8-0.0.9/README.md --exclude *.pyd
+[2024-05-11 17:24:14] INFO root fetch - processPackages [qwen-agent]: Remove: archive file [/home/abi/fetcher/tmp/qwen-agent-0.0.3.tar.gz]
+[2024-05-11 17:24:14] INFO root fetch - processPackages [qwen-agent]: Remove: archive file [/home/abi/fetcher/tmp/qwen-agent-0.0.4.tar.gz]
+[2024-05-11 17:24:15] INFO root fetch - main [MainThread]: End processing [qwen-agent]: success
+[2024-05-11 17:24:22] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.8.tar.gz]
+[2024-05-11 17:24:22] INFO root fetch - processPackages [TINTOlib]: Remove: archive file [/home/abi/fetcher/tmp/tintolib-0.0.9.tar.gz]
+[2024-05-11 17:24:22] INFO root fetch - main [MainThread]: End processing [TINTOlib]: success
+[2024-05-11 17:24:22] INFO root fetch - main [MainThread]: Store serial: [23162253]
