@@ -16281,3 +16281,18 @@
 [2024-05-11 14:26:38] INFO root fetch - processPackages [graphysio]: Remove: archive file [/home/abi/fetcher/tmp/graphysio-2024.5.8.tar.gz]
 [2024-05-11 14:26:38] INFO root fetch - main [MainThread]: End processing [graphysio]: success
 [2024-05-11 14:26:38] INFO root fetch - main [MainThread]: Store serial: [23161049]
+[2024-05-11 14:28:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23161049]
+[2024-05-11 14:28:47] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyridoxinez
+[2024-05-11 14:28:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trachelectomyz
+[2024-05-11 14:28:47] INFO root fetch - processPackages [pyridoxinez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 14:28:47] WARNING root fetch - processPackages [trachelectomyz]: Skipping, unable to determine old version
+[2024-05-11 14:28:47] INFO root fetch - main [MainThread]: End processing [trachelectomyz] error
+[2024-05-11 14:28:47] INFO root fetch - processPackages [pyridoxinez]: Downloading https://files.pythonhosted.org/packages/16/39/dbca7f3cf325cc0af291f68118ea57d7cb1721b9117b4b7f27b192525de6/pyridoxinez-1.1.tar.gz
+[2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: Downloading https://files.pythonhosted.org/packages/95/46/105babbc4d4dd1d2a558470715815d56aac4927df8c47e205744efab38d5/pyridoxinez-2.1.tar.gz
+[2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: executing diffoscope
+[2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyridoxinez-1.1.tar.gz tmp/pyridoxinez-2.1.tar.gz --markdown 20240511/p/pyridoxinez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: Remove: archive file [/home/abi/fetcher/tmp/pyridoxinez-1.1.tar.gz]
+[2024-05-11 14:28:48] INFO root fetch - processPackages [pyridoxinez]: Remove: archive file [/home/abi/fetcher/tmp/pyridoxinez-2.1.tar.gz]
+[2024-05-11 14:28:48] INFO root fetch - main [MainThread]: End processing [pyridoxinez]: success
+[2024-05-11 14:28:48] INFO root fetch - main [MainThread]: Store serial: [23161055]
