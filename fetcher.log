@@ -9984,3 +9984,15 @@
 [2024-05-11 06:49:17] INFO root fetch - processPackages [uiautomator2]: Remove: archive file [/home/abi/fetcher/tmp/uiautomator2-3.0.9.tar.gz]
 [2024-05-11 06:49:17] INFO root fetch - main [MainThread]: End processing [uiautomator2]: success
 [2024-05-11 06:49:17] INFO root fetch - main [MainThread]: Store serial: [23157375]
+[2024-05-11 06:51:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157375]
+[2024-05-11 06:51:27] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 06:51:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: beancount-exporter
+[2024-05-11 06:51:27] INFO root fetch - processPackages [beancount-exporter]: New version: [2.0.3] Old Version: [2.0.2]
+[2024-05-11 06:51:27] INFO root fetch - processPackages [beancount-exporter]: Downloading https://files.pythonhosted.org/packages/70/a1/d916cdcca4acd8bf9532042c1b12d1d873d9fbb24938e0e635829039a60b/beancount_exporter-2.0.2.tar.gz
+[2024-05-11 06:51:28] INFO root fetch - processPackages [beancount-exporter]: Downloading https://files.pythonhosted.org/packages/a3/8b/5409aa2c47ecd7e874bd0addd2d17ee3e403913afc573b539dbef357f39d/beancount_exporter-2.0.3.tar.gz
+[2024-05-11 06:51:28] INFO root fetch - processPackages [beancount-exporter]: executing diffoscope
+[2024-05-11 06:51:28] INFO root fetch - processPackages [beancount-exporter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount_exporter-2.0.2.tar.gz tmp/beancount_exporter-2.0.3.tar.gz --markdown 20240511/b/beancount-exporter/2.0.2-2.0.3/README.md --exclude *.pyd
+[2024-05-11 06:51:28] INFO root fetch - processPackages [beancount-exporter]: Remove: archive file [/home/abi/fetcher/tmp/beancount_exporter-2.0.2.tar.gz]
+[2024-05-11 06:51:28] INFO root fetch - processPackages [beancount-exporter]: Remove: archive file [/home/abi/fetcher/tmp/beancount_exporter-2.0.3.tar.gz]
+[2024-05-11 06:51:28] INFO root fetch - main [MainThread]: End processing [beancount-exporter]: success
+[2024-05-11 06:51:28] INFO root fetch - main [MainThread]: Store serial: [23157379]
