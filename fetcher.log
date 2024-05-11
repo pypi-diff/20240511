@@ -20357,3 +20357,30 @@
 [2024-05-11 19:09:18] INFO root fetch - processPackages [odoo-addon-product-status]: Remove: archive file [/home/abi/fetcher/tmp/odoo_addon_product_status-15.0.1.1.0-py3-none-any.whl.zip]
 [2024-05-11 19:09:18] INFO root fetch - main [MainThread]: End processing [odoo-addon-product-status]: success
 [2024-05-11 19:09:18] INFO root fetch - main [MainThread]: Store serial: [23162928]
+[2024-05-11 19:11:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23162928]
+[2024-05-11 19:11:28] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 19:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: poetry2rye
+[2024-05-11 19:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo12-addon-web-widget-digitized-signature
+[2024-05-11 19:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: CustomTkinterMessagebox
+[2024-05-11 19:11:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bslite3
+[2024-05-11 19:11:28] INFO root fetch - processPackages [poetry2rye]: New version: [0.2.0] Old Version: [0.1.1]
+[2024-05-11 19:11:28] WARNING root fetch - processPackages [CustomTkinterMessagebox]: Skipping, unable to determine old version
+[2024-05-11 19:11:28] INFO root fetch - main [MainThread]: End processing [CustomTkinterMessagebox] error
+[2024-05-11 19:11:28] INFO root fetch - processPackages [poetry2rye]: Downloading https://files.pythonhosted.org/packages/29/02/2e6ae889696486a65ffc5ac2a8f667d84b7954713a9ca330090f2b22c4b9/poetry2rye-0.1.1.tar.gz
+[2024-05-11 19:11:28] WARNING root fetch - processPackages [bslite3]: Skipping, unable to determine old version
+[2024-05-11 19:11:28] INFO root fetch - main [MainThread]: End processing [bslite3] error
+[2024-05-11 19:11:28] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: New version: [12.0.2.1.0] Old Version: [12.0.2.0.0.99.dev3]
+[2024-05-11 19:11:28] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: Downloading https://files.pythonhosted.org/packages/e0/58/964ac2aabaf6d256d7a4bc15b11ec8ae75f3c600ecf29bcbbfc225f6a3bc/odoo12_addon_web_widget_digitized_signature-12.0.2.0.0.99.dev3-py3-none-any.whl
+[2024-05-11 19:11:28] INFO root fetch - processPackages [poetry2rye]: Downloading https://files.pythonhosted.org/packages/ea/be/ddc393dc4a29e16ac900be10288d221bd1dbdf1c493d20ebf1c93986a498/poetry2rye-0.2.0.tar.gz
+[2024-05-11 19:11:28] INFO root fetch - processPackages [poetry2rye]: executing diffoscope
+[2024-05-11 19:11:28] INFO root fetch - processPackages [poetry2rye]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry2rye-0.1.1.tar.gz tmp/poetry2rye-0.2.0.tar.gz --markdown 20240511/p/poetry2rye/0.1.1-0.2.0/README.md --exclude *.pyd
+[2024-05-11 19:11:29] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: Downloading https://files.pythonhosted.org/packages/00/77/c94618bd337945283bae09d0d5fd602a78013215479a911d55f43a984d4f/odoo12_addon_web_widget_digitized_signature-12.0.2.1.0-py3-none-any.whl
+[2024-05-11 19:11:29] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: executing diffoscope
+[2024-05-11 19:11:29] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_web_widget_digitized_signature-12.0.2.0.0.99.dev3-py3-none-any.whl.zip tmp/odoo12_addon_web_widget_digitized_signature-12.0.2.1.0-py3-none-any.whl.zip --markdown 20240511/o/odoo12-addon-web-widget-digitized-signature/12.0.2.0.0.99.dev3-12.0.2.1.0/README.md --exclude *.pyd
+[2024-05-11 19:11:29] INFO root fetch - processPackages [poetry2rye]: Remove: archive file [/home/abi/fetcher/tmp/poetry2rye-0.1.1.tar.gz]
+[2024-05-11 19:11:29] INFO root fetch - processPackages [poetry2rye]: Remove: archive file [/home/abi/fetcher/tmp/poetry2rye-0.2.0.tar.gz]
+[2024-05-11 19:11:29] INFO root fetch - main [MainThread]: End processing [poetry2rye]: success
+[2024-05-11 19:11:30] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_digitized_signature-12.0.2.0.0.99.dev3-py3-none-any.whl.zip]
+[2024-05-11 19:11:30] INFO root fetch - processPackages [odoo12-addon-web-widget-digitized-signature]: Remove: archive file [/home/abi/fetcher/tmp/odoo12_addon_web_widget_digitized_signature-12.0.2.1.0-py3-none-any.whl.zip]
+[2024-05-11 19:11:30] INFO root fetch - main [MainThread]: End processing [odoo12-addon-web-widget-digitized-signature]: success
+[2024-05-11 19:11:30] INFO root fetch - main [MainThread]: Store serial: [23162940]
