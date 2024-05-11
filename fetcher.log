@@ -9631,3 +9631,27 @@
 [2024-05-11 06:25:09] INFO root fetch - processPackages [pyuilder]: Remove: archive file [/home/abi/fetcher/tmp/pyuilder-0.0.5.tar.gz]
 [2024-05-11 06:25:09] INFO root fetch - main [MainThread]: End processing [pyuilder]: success
 [2024-05-11 06:25:09] INFO root fetch - main [MainThread]: Store serial: [23157236]
+[2024-05-11 06:27:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157236]
+[2024-05-11 06:27:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 06:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: micrologicz
+[2024-05-11 06:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: multivolentz
+[2024-05-11 06:27:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyproject-fmt
+[2024-05-11 06:27:18] INFO root fetch - processPackages [pyproject-fmt]: New version: [2.0.1] Old Version: [2.0.0]
+[2024-05-11 06:27:18] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/f4/01/cc621904439812d296338258533d5a69c73c6eb2cbb3c98936b3b9e8f750/pyproject_fmt-2.0.0.tar.gz
+[2024-05-11 06:27:18] INFO root fetch - processPackages [micrologicz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 06:27:18] WARNING root fetch - processPackages [multivolentz]: Skipping, unable to determine old version
+[2024-05-11 06:27:18] INFO root fetch - main [MainThread]: End processing [multivolentz] error
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: Downloading https://files.pythonhosted.org/packages/b7/fd/493406cd914d5283551ab1f77dea6f7f19a325de6ccee6e8f67a83d57afd/micrologicz-1.1.tar.gz
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: Downloading https://files.pythonhosted.org/packages/90/34/906befaeec25859dd81cb5f4b531362cf4e886532434228a030e8d91509e/micrologicz-2.1.tar.gz
+[2024-05-11 06:27:19] INFO root fetch - processPackages [pyproject-fmt]: Downloading https://files.pythonhosted.org/packages/a7/f8/5129e355f51f97901d44a23a73b036bccf636092b06d6e45e86c25cf415c/pyproject_fmt-2.0.1.tar.gz
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: executing diffoscope
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/micrologicz-1.1.tar.gz tmp/micrologicz-2.1.tar.gz --markdown 20240511/m/micrologicz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 06:27:19] INFO root fetch - processPackages [pyproject-fmt]: executing diffoscope
+[2024-05-11 06:27:19] INFO root fetch - processPackages [pyproject-fmt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyproject_fmt-2.0.0.tar.gz tmp/pyproject_fmt-2.0.1.tar.gz --markdown 20240511/p/pyproject-fmt/2.0.0-2.0.1/README.md --exclude *.pyd
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: Remove: archive file [/home/abi/fetcher/tmp/micrologicz-1.1.tar.gz]
+[2024-05-11 06:27:19] INFO root fetch - processPackages [micrologicz]: Remove: archive file [/home/abi/fetcher/tmp/micrologicz-2.1.tar.gz]
+[2024-05-11 06:27:19] INFO root fetch - main [MainThread]: End processing [micrologicz]: success
+[2024-05-11 06:27:20] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.0.tar.gz]
+[2024-05-11 06:27:20] INFO root fetch - processPackages [pyproject-fmt]: Remove: archive file [/home/abi/fetcher/tmp/pyproject_fmt-2.0.1.tar.gz]
+[2024-05-11 06:27:20] INFO root fetch - main [MainThread]: End processing [pyproject-fmt]: success
+[2024-05-11 06:27:20] INFO root fetch - main [MainThread]: Store serial: [23157245]
