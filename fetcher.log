@@ -8610,3 +8610,38 @@
 [2024-05-11 05:06:41] INFO root fetch - processPackages [litellm]: Remove: archive file [/home/abi/fetcher/tmp/litellm-1.9.dev0.tar.gz]
 [2024-05-11 05:06:41] INFO root fetch - main [MainThread]: End processing [litellm]: success
 [2024-05-11 05:06:41] INFO root fetch - main [MainThread]: Store serial: [23156854]
+[2024-05-11 05:08:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156854]
+[2024-05-11 05:08:50] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 05:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kcorrect
+[2024-05-11 05:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lvz
+[2024-05-11 05:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: shroudstone
+[2024-05-11 05:08:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sgptools
+[2024-05-11 05:08:50] INFO root fetch - processPackages [shroudstone]: New version: [0.1.1] Old Version: [0.1.0a8]
+[2024-05-11 05:08:50] INFO root fetch - processPackages [sgptools]: New version: [1.0.1] Old Version: [1.0.0]
+[2024-05-11 05:08:50] INFO root fetch - processPackages [lvz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 05:08:50] INFO root fetch - processPackages [kcorrect]: New version: [5.1.2] Old Version: [5.1.1]
+[2024-05-11 05:08:51] INFO root fetch - processPackages [shroudstone]: Downloading https://files.pythonhosted.org/packages/62/e0/2ea5a19727f8964e817d54fdb882146ac13f5d98100c4221e5125500c30b/shroudstone-0.1.0a8.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [sgptools]: Downloading https://files.pythonhosted.org/packages/7b/cf/ad5d4849c4c2039fc9ef6f4c1722de678d5937388edc7f059aa675b46ce3/sgptools-1.0.0.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [kcorrect]: Downloading https://files.pythonhosted.org/packages/1d/7a/bb5be545fc4b26d1951fe00cf84690d49a4e34f549fdc4d32cc1179a7315/kcorrect-5.1.1.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [lvz]: Downloading https://files.pythonhosted.org/packages/c2/a5/137156f29677f2f12c73cb56063be362f7a95d337d3d5552f90302731422/lvz-1.1.tar.gz
+[2024-05-11 05:08:51] WARNING root fetch - processPackages [kcorrect]: Skipping package: exceeds size limit 21631060>=10485760
+[2024-05-11 05:08:51] INFO root fetch - main [MainThread]: End processing [kcorrect] error
+[2024-05-11 05:08:51] INFO root fetch - processPackages [shroudstone]: Downloading https://files.pythonhosted.org/packages/6d/7e/5082730c5a068f4128008bc7fe58ab7683a3df502826e6832218946c388e/shroudstone-0.1.1.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [sgptools]: Downloading https://files.pythonhosted.org/packages/af/ab/6ea398a5c8b7d6f57fd13dd7eed08663f3e14c48418fe38e526b54ff3653/sgptools-1.0.1.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [lvz]: Downloading https://files.pythonhosted.org/packages/1f/df/779e221ff679fa69a2224bc4cb4dac3b5c1fb0779a001dc746295fa7e562/lvz-2.1.tar.gz
+[2024-05-11 05:08:51] INFO root fetch - processPackages [shroudstone]: executing diffoscope
+[2024-05-11 05:08:51] INFO root fetch - processPackages [shroudstone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shroudstone-0.1.0a8.tar.gz tmp/shroudstone-0.1.1.tar.gz --markdown 20240511/s/shroudstone/0.1.0a8-0.1.1/README.md --exclude *.pyd
+[2024-05-11 05:08:51] INFO root fetch - processPackages [sgptools]: executing diffoscope
+[2024-05-11 05:08:51] INFO root fetch - processPackages [sgptools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sgptools-1.0.0.tar.gz tmp/sgptools-1.0.1.tar.gz --markdown 20240511/s/sgptools/1.0.0-1.0.1/README.md --exclude *.pyd
+[2024-05-11 05:08:51] INFO root fetch - processPackages [lvz]: executing diffoscope
+[2024-05-11 05:08:51] INFO root fetch - processPackages [lvz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lvz-1.1.tar.gz tmp/lvz-2.1.tar.gz --markdown 20240511/l/lvz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 05:08:52] INFO root fetch - processPackages [lvz]: Remove: archive file [/home/abi/fetcher/tmp/lvz-1.1.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - processPackages [lvz]: Remove: archive file [/home/abi/fetcher/tmp/lvz-2.1.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - main [MainThread]: End processing [lvz]: success
+[2024-05-11 05:08:52] INFO root fetch - processPackages [sgptools]: Remove: archive file [/home/abi/fetcher/tmp/sgptools-1.0.0.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - processPackages [sgptools]: Remove: archive file [/home/abi/fetcher/tmp/sgptools-1.0.1.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - main [MainThread]: End processing [sgptools]: success
+[2024-05-11 05:08:52] INFO root fetch - processPackages [shroudstone]: Remove: archive file [/home/abi/fetcher/tmp/shroudstone-0.1.0a8.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - processPackages [shroudstone]: Remove: archive file [/home/abi/fetcher/tmp/shroudstone-0.1.1.tar.gz]
+[2024-05-11 05:08:52] INFO root fetch - main [MainThread]: End processing [shroudstone]: success
+[2024-05-11 05:08:52] INFO root fetch - main [MainThread]: Store serial: [23156864]
