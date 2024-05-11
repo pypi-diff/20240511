@@ -10285,3 +10285,33 @@
 [2024-05-11 07:15:24] INFO root fetch - processPackages [lightnovel-crawler]: Remove: archive file [/home/abi/fetcher/tmp/lightnovel_crawler-3.7.0-py3-none-any.whl.zip]
 [2024-05-11 07:15:24] INFO root fetch - main [MainThread]: End processing [lightnovel-crawler]: success
 [2024-05-11 07:15:24] INFO root fetch - main [MainThread]: Store serial: [23157625]
+[2024-05-11 07:17:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157625]
+[2024-05-11 07:17:33] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zoomto
+[2024-05-11 07:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rapidpe-rift-pipe
+[2024-05-11 07:17:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mutez
+[2024-05-11 07:17:33] INFO root fetch - processPackages [rapidpe-rift-pipe]: New version: [0.6.9.dev20240319] Old Version: [0.6.9.dev20240318]
+[2024-05-11 07:17:33] INFO root fetch - processPackages [mutez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:17:33] INFO root fetch - processPackages [zoomto]: New version: [0.9.0] Old Version: [0.2]
+[2024-05-11 07:17:33] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/e0/d8/d7b88a4aebe9c66f5be7749976ca4a5d90c4c1f76b8309b2528f7d696fc2/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz
+[2024-05-11 07:17:33] INFO root fetch - processPackages [mutez]: Downloading https://files.pythonhosted.org/packages/81/58/750fc42eaf7e04caddb36bf94c9099db89cd187725169fa3e01b8a4a510d/mutez-1.1.tar.gz
+[2024-05-11 07:17:33] INFO root fetch - processPackages [zoomto]: Downloading https://files.pythonhosted.org/packages/4b/93/05c528b7554d0894bda557410bfa873dbe18293be373c36f0f4450340fb7/zoomto-0.2.tar.gz
+[2024-05-11 07:17:33] INFO root fetch - processPackages [rapidpe-rift-pipe]: Downloading https://files.pythonhosted.org/packages/57/73/f8f8961db2f4ad6df9b52d6fc88b6fc134a86d378de28ab14ee4105baea4/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz
+[2024-05-11 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: executing diffoscope
+[2024-05-11 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz --markdown 20240511/r/rapidpe-rift-pipe/0.6.9.dev20240318-0.6.9.dev20240319/README.md --exclude *.pyd
+[2024-05-11 07:17:34] INFO root fetch - processPackages [zoomto]: Downloading https://files.pythonhosted.org/packages/7c/63/346623c74968d73c63bca23729f138c82c260ae7d30be0bc9e8568388de0/zoomto-0.9.0.tar.gz
+[2024-05-11 07:17:34] INFO root fetch - processPackages [zoomto]: executing diffoscope
+[2024-05-11 07:17:34] INFO root fetch - processPackages [zoomto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zoomto-0.2.tar.gz tmp/zoomto-0.9.0.tar.gz --markdown 20240511/z/zoomto/0.2-0.9.0/README.md --exclude *.pyd
+[2024-05-11 07:17:34] INFO root fetch - processPackages [mutez]: Downloading https://files.pythonhosted.org/packages/e9/50/9392d9668dcc4809617a45250c2acdc81bc50a8508609a65e6aa6309a3a7/mutez-2.1.tar.gz
+[2024-05-11 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240318.tar.gz]
+[2024-05-11 07:17:34] INFO root fetch - processPackages [rapidpe-rift-pipe]: Remove: archive file [/home/abi/fetcher/tmp/rapidpe_rift_pipe-0.6.9.dev20240319.tar.gz]
+[2024-05-11 07:17:34] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
+[2024-05-11 07:17:34] INFO root fetch - processPackages [mutez]: executing diffoscope
+[2024-05-11 07:17:34] INFO root fetch - processPackages [mutez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mutez-1.1.tar.gz tmp/mutez-2.1.tar.gz --markdown 20240511/m/mutez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:17:34] INFO root fetch - processPackages [zoomto]: Remove: archive file [/home/abi/fetcher/tmp/zoomto-0.2.tar.gz]
+[2024-05-11 07:17:34] INFO root fetch - processPackages [zoomto]: Remove: archive file [/home/abi/fetcher/tmp/zoomto-0.9.0.tar.gz]
+[2024-05-11 07:17:34] INFO root fetch - main [MainThread]: End processing [zoomto]: success
+[2024-05-11 07:17:35] INFO root fetch - processPackages [mutez]: Remove: archive file [/home/abi/fetcher/tmp/mutez-1.1.tar.gz]
+[2024-05-11 07:17:35] INFO root fetch - processPackages [mutez]: Remove: archive file [/home/abi/fetcher/tmp/mutez-2.1.tar.gz]
+[2024-05-11 07:17:35] INFO root fetch - main [MainThread]: End processing [mutez]: success
+[2024-05-11 07:17:35] INFO root fetch - main [MainThread]: Store serial: [23157658]
