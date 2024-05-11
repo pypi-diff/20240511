@@ -11072,3 +11072,35 @@
 [2024-05-11 08:19:41] INFO root fetch - processPackages [nonpervertedlyz]: Remove: archive file [/home/abi/fetcher/tmp/nonpervertedlyz-2.1.tar.gz]
 [2024-05-11 08:19:41] INFO root fetch - main [MainThread]: End processing [nonpervertedlyz]: success
 [2024-05-11 08:19:41] INFO root fetch - main [MainThread]: Store serial: [23158198]
+[2024-05-11 08:21:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158198]
+[2024-05-11 08:21:50] INFO root fetch - main [MainThread]: No changed packages found
+[2024-05-11 08:23:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158198]
+[2024-05-11 08:23:56] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 08:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zhijiang
+[2024-05-11 08:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyLodStorage
+[2024-05-11 08:23:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonproduciblez
+[2024-05-11 08:23:56] INFO root fetch - processPackages [zhijiang]: New version: [0.7.9] Old Version: [0.7.8]
+[2024-05-11 08:23:56] INFO root fetch - processPackages [nonproduciblez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 08:23:56] INFO root fetch - processPackages [pyLodStorage]: New version: [0.9.2] Old Version: [0.9.1]
+[2024-05-11 08:23:56] INFO root fetch - processPackages [zhijiang]: Downloading https://files.pythonhosted.org/packages/26/2b/3b52e8f559267bad8b17821e8e89f41e2252b1ce785ab75849cedf0c7646/zhijiang-0.7.8-py3-none-any.whl
+[2024-05-11 08:23:56] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/4c/e3/15ad58c688ca9613afcfa8f73ab039cb5ee8a215b2780d306a423cdcc76a/pylodstorage-0.9.1.tar.gz
+[2024-05-11 08:23:56] INFO root fetch - processPackages [nonproduciblez]: Downloading https://files.pythonhosted.org/packages/37/06/db6b8c6d8e9f81feff03201bd877d229fc79802197ce7dd481be4892d948/nonproduciblez-1.1.tar.gz
+[2024-05-11 08:23:56] INFO root fetch - processPackages [nonproduciblez]: Downloading https://files.pythonhosted.org/packages/dc/92/86ec9017c3c537debcaf769717021d3c3a91fdaa12bcd9c81dce9010fef6/nonproduciblez-2.1.tar.gz
+[2024-05-11 08:23:56] INFO root fetch - processPackages [pyLodStorage]: Downloading https://files.pythonhosted.org/packages/fa/73/19116c570959e490c6e63cc4ed466cc8f943e9f123f6c0fb7c3f944ee193/pylodstorage-0.9.2.tar.gz
+[2024-05-11 08:23:56] INFO root fetch - processPackages [zhijiang]: Downloading https://files.pythonhosted.org/packages/05/cf/ace85687f35b8c78491564744658a0392ee9c2b6187d7bd6d001fcc18b2c/zhijiang-0.7.9-py3-none-any.whl
+[2024-05-11 08:23:57] INFO root fetch - processPackages [pyLodStorage]: executing diffoscope
+[2024-05-11 08:23:57] INFO root fetch - processPackages [pyLodStorage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylodstorage-0.9.1.tar.gz tmp/pylodstorage-0.9.2.tar.gz --markdown 20240511/p/pyLodStorage/0.9.1-0.9.2/README.md --exclude *.pyd
+[2024-05-11 08:23:57] INFO root fetch - processPackages [nonproduciblez]: executing diffoscope
+[2024-05-11 08:23:57] INFO root fetch - processPackages [nonproduciblez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonproduciblez-1.1.tar.gz tmp/nonproduciblez-2.1.tar.gz --markdown 20240511/n/nonproduciblez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 08:23:57] INFO root fetch - processPackages [zhijiang]: executing diffoscope
+[2024-05-11 08:23:57] INFO root fetch - processPackages [zhijiang]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zhijiang-0.7.8-py3-none-any.whl.zip tmp/zhijiang-0.7.9-py3-none-any.whl.zip --markdown 20240511/z/zhijiang/0.7.8-0.7.9/README.md --exclude *.pyd
+[2024-05-11 08:23:57] INFO root fetch - processPackages [nonproduciblez]: Remove: archive file [/home/abi/fetcher/tmp/nonproduciblez-1.1.tar.gz]
+[2024-05-11 08:23:57] INFO root fetch - processPackages [nonproduciblez]: Remove: archive file [/home/abi/fetcher/tmp/nonproduciblez-2.1.tar.gz]
+[2024-05-11 08:23:57] INFO root fetch - main [MainThread]: End processing [nonproduciblez]: success
+[2024-05-11 08:23:58] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.1.tar.gz]
+[2024-05-11 08:23:58] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.2.tar.gz]
+[2024-05-11 08:23:58] INFO root fetch - main [MainThread]: End processing [pyLodStorage]: success
+[2024-05-11 08:23:58] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.8-py3-none-any.whl.zip]
+[2024-05-11 08:23:58] INFO root fetch - processPackages [zhijiang]: Remove: archive file [/home/abi/fetcher/tmp/zhijiang-0.7.9-py3-none-any.whl.zip]
+[2024-05-11 08:23:58] INFO root fetch - main [MainThread]: End processing [zhijiang]: success
+[2024-05-11 08:23:58] INFO root fetch - main [MainThread]: Store serial: [23158205]
