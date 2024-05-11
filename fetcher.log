@@ -7818,3 +7818,46 @@
 [2024-05-11 04:11:27] INFO root fetch - processPackages [symclosestwannier]: Remove: archive file [/home/abi/fetcher/tmp/symclosestwannier-1.1.9.tar.gz]
 [2024-05-11 04:11:27] INFO root fetch - main [MainThread]: End processing [symclosestwannier]: success
 [2024-05-11 04:11:27] INFO root fetch - main [MainThread]: Store serial: [23156537]
+[2024-05-11 04:13:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23156537]
+[2024-05-11 04:13:36] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: crepe
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: netron
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ambient-backend-api-client
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: guava3
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vanguard-api
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: catnappingz
+[2024-05-11 04:13:36] WARNING root fetch - processPackages [guava3]: Skipping, unable to determine old version
+[2024-05-11 04:13:36] INFO root fetch - main [MainThread]: End processing [guava3] error
+[2024-05-11 04:13:36] INFO root fetch - processPackages [vanguard-api]: New version: [0.0.3] Old Version: [0.0.2]
+[2024-05-11 04:13:36] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/fc/da/2654004b879776ee4745ea77551d80c76db7c17e209b0c4355a2cc915112/vanguard_api-0.0.2.tar.gz
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ambient-backend-api-client]: New version: [0.1.3] Old Version: [0.1.2]
+[2024-05-11 04:13:36] INFO root fetch - processPackages [netron]: New version: [7.6.5] Old Version: [7.6.4]
+[2024-05-11 04:13:36] INFO root fetch - processPackages [crepe]: New version: [0.0.9] Old Version: [0.0.7]
+[2024-05-11 04:13:36] WARNING root fetch - processPackages [catnappingz]: Skipping, unable to determine old version
+[2024-05-11 04:13:36] INFO root fetch - main [MainThread]: End processing [catnappingz] error
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/34/68/50c19ea7a17c7d190e7d803c1fd7cf3a52981a5a6e033a194d3b3dcdb194/ambient_backend_api_client-0.1.2.tar.gz
+[2024-05-11 04:13:36] INFO root fetch - processPackages [crepe]: Downloading https://files.pythonhosted.org/packages/a9/77/7caef0a698f515aede2feb1998b1ed1a6a6d5b65d985044057679f62ac99/crepe-0.0.7.tar.gz
+[2024-05-11 04:13:36] INFO root fetch - processPackages [vanguard-api]: Downloading https://files.pythonhosted.org/packages/da/01/6eb8bdd54d622528cd1b218f49258a97b1600e04dc8831875d8e9551ba1b/vanguard_api-0.0.3.tar.gz
+[2024-05-11 04:13:36] INFO root fetch - processPackages [vanguard-api]: executing diffoscope
+[2024-05-11 04:13:36] INFO root fetch - processPackages [vanguard-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vanguard_api-0.0.2.tar.gz tmp/vanguard_api-0.0.3.tar.gz --markdown 20240511/v/vanguard-api/0.0.2-0.0.3/README.md --exclude *.pyd
+[2024-05-11 04:13:36] INFO root fetch - processPackages [netron]: Downloading https://files.pythonhosted.org/packages/59/bf/4cf316dc975ca615ecbcc6c3573916cfb9bd595abf597a154d6f5e694aa9/netron-7.6.5-py3-none-any.whl
+[2024-05-11 04:13:36] INFO root fetch - processPackages [netron]: executing diffoscope
+[2024-05-11 04:13:36] INFO root fetch - processPackages [netron]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netron-7.6.4-py3-none-any.whl.zip tmp/netron-7.6.5-py3-none-any.whl.zip --markdown 20240511/n/netron/7.6.4-7.6.5/README.md --exclude *.pyd
+[2024-05-11 04:13:36] INFO root fetch - processPackages [ambient-backend-api-client]: Downloading https://files.pythonhosted.org/packages/ec/81/74b869f685518083b34c6c91ce01745c47febaac09d2bc815445c04fa6bf/ambient_backend_api_client-0.1.3.tar.gz
+[2024-05-11 04:13:37] INFO root fetch - processPackages [crepe]: Downloading https://files.pythonhosted.org/packages/fc/d4/348f7461bd4b6fea2917f3f35320defe3bed179990e8ee387fdf995d09e3/crepe-0.0.9.tar.gz
+[2024-05-11 04:13:37] INFO root fetch - processPackages [ambient-backend-api-client]: executing diffoscope
+[2024-05-11 04:13:37] INFO root fetch - processPackages [ambient-backend-api-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ambient_backend_api_client-0.1.2.tar.gz tmp/ambient_backend_api_client-0.1.3.tar.gz --markdown 20240511/a/ambient-backend-api-client/0.1.2-0.1.3/README.md --exclude *.pyd
+[2024-05-11 04:13:37] INFO root fetch - processPackages [crepe]: executing diffoscope
+[2024-05-11 04:13:37] INFO root fetch - processPackages [crepe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crepe-0.0.7.tar.gz tmp/crepe-0.0.9.tar.gz --markdown 20240511/c/crepe/0.0.7-0.0.9/README.md --exclude *.pyd
+[2024-05-11 04:13:37] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.2.tar.gz]
+[2024-05-11 04:13:37] INFO root fetch - processPackages [vanguard-api]: Remove: archive file [/home/abi/fetcher/tmp/vanguard_api-0.0.3.tar.gz]
+[2024-05-11 04:13:37] INFO root fetch - main [MainThread]: End processing [vanguard-api]: success
+[2024-05-11 04:13:37] INFO root fetch - processPackages [crepe]: Remove: archive file [/home/abi/fetcher/tmp/crepe-0.0.7.tar.gz]
+[2024-05-11 04:13:37] INFO root fetch - processPackages [crepe]: Remove: archive file [/home/abi/fetcher/tmp/crepe-0.0.9.tar.gz]
+[2024-05-11 04:13:37] INFO root fetch - main [MainThread]: End processing [crepe]: success
+[2024-05-11 04:13:38] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.2.tar.gz]
+[2024-05-11 04:13:38] INFO root fetch - processPackages [ambient-backend-api-client]: Remove: archive file [/home/abi/fetcher/tmp/ambient_backend_api_client-0.1.3.tar.gz]
+[2024-05-11 04:13:38] INFO root fetch - main [MainThread]: End processing [ambient-backend-api-client]: success
+[2024-05-11 04:16:36] ERROR root fetch - processPackages [netron]: Timeout during execution of pkgdiff
+[2024-05-11 04:16:36] INFO root fetch - main [MainThread]: End processing [netron] error
+[2024-05-11 04:16:36] INFO root fetch - main [MainThread]: Store serial: [23156558]
