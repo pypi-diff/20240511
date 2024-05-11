@@ -20997,3 +20997,24 @@
 [2024-05-11 19:53:08] INFO root fetch - processPackages [tkinter-tooltip]: Remove: archive file [/home/abi/fetcher/tmp/tkinter_tooltip-3.1.0.tar.gz]
 [2024-05-11 19:53:08] INFO root fetch - main [MainThread]: End processing [tkinter-tooltip]: success
 [2024-05-11 19:53:08] INFO root fetch - main [MainThread]: Store serial: [23163206]
+[2024-05-11 19:55:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23163206]
+[2024-05-11 19:55:17] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2024-05-11 19:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: symptomatologiesz
+[2024-05-11 19:55:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lrcup
+[2024-05-11 19:55:17] INFO root fetch - processPackages [symptomatologiesz]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 19:55:17] INFO root fetch - processPackages [lrcup]: New version: [0.3.2] Old Version: [0.3]
+[2024-05-11 19:55:17] INFO root fetch - processPackages [symptomatologiesz]: Downloading https://files.pythonhosted.org/packages/49/8f/012b037c34b64f06bf025c8b63886cc9d4f23a93291573eb35dd0263a49c/symptomatologiesz-1.1.tar.gz
+[2024-05-11 19:55:17] INFO root fetch - processPackages [lrcup]: Downloading https://files.pythonhosted.org/packages/43/23/66e0f614dbadf7648072700ad07f702355318046a0b58765e00d4b15b988/lrcup-0.3.tar.gz
+[2024-05-11 19:55:18] INFO root fetch - processPackages [symptomatologiesz]: Downloading https://files.pythonhosted.org/packages/a3/98/dd8591f4b21c6de05623627ed40f4a4dcda054cd03a51c22e44f60d1886f/symptomatologiesz-2.1.tar.gz
+[2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: Downloading https://files.pythonhosted.org/packages/a3/8b/36692a2787c28be53466f315cbc82af82930285de8e8226f4c118f68ad69/lrcup-0.3.2.tar.gz
+[2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: executing diffoscope
+[2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lrcup-0.3.tar.gz tmp/lrcup-0.3.2.tar.gz --markdown 20240511/l/lrcup/0.3-0.3.2/README.md --exclude *.pyd
+[2024-05-11 19:55:18] INFO root fetch - processPackages [symptomatologiesz]: executing diffoscope
+[2024-05-11 19:55:18] INFO root fetch - processPackages [symptomatologiesz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/symptomatologiesz-1.1.tar.gz tmp/symptomatologiesz-2.1.tar.gz --markdown 20240511/s/symptomatologiesz/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 19:55:18] INFO root fetch - processPackages [symptomatologiesz]: Remove: archive file [/home/abi/fetcher/tmp/symptomatologiesz-1.1.tar.gz]
+[2024-05-11 19:55:18] INFO root fetch - processPackages [symptomatologiesz]: Remove: archive file [/home/abi/fetcher/tmp/symptomatologiesz-2.1.tar.gz]
+[2024-05-11 19:55:18] INFO root fetch - main [MainThread]: End processing [symptomatologiesz]: success
+[2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: Remove: archive file [/home/abi/fetcher/tmp/lrcup-0.3.tar.gz]
+[2024-05-11 19:55:18] INFO root fetch - processPackages [lrcup]: Remove: archive file [/home/abi/fetcher/tmp/lrcup-0.3.2.tar.gz]
+[2024-05-11 19:55:18] INFO root fetch - main [MainThread]: End processing [lrcup]: success
+[2024-05-11 19:55:18] INFO root fetch - main [MainThread]: Store serial: [23163211]
