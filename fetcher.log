@@ -14263,3 +14263,38 @@
 [2024-05-11 12:17:32] INFO root fetch - processPackages [epyt]: Remove: archive file [/home/abi/fetcher/tmp/epyt-1.1.4-py3-none-any.whl.zip]
 [2024-05-11 12:17:32] INFO root fetch - main [MainThread]: End processing [epyt]: success
 [2024-05-11 12:17:32] INFO root fetch - main [MainThread]: Store serial: [23159894]
+[2024-05-11 12:19:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23159894]
+[2024-05-11 12:19:42] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 12:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: forbidden
+[2024-05-11 12:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FreeBack
+[2024-05-11 12:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: splupy2check
+[2024-05-11 12:19:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: maya-umbrella
+[2024-05-11 12:19:43] INFO root fetch - processPackages [maya-umbrella]: New version: [0.9.0] Old Version: [0.8.0]
+[2024-05-11 12:19:43] INFO root fetch - processPackages [splupy2check]: New version: [1.0.2] Old Version: [1.0.1]
+[2024-05-11 12:19:43] INFO root fetch - processPackages [splupy2check]: Downloading https://files.pythonhosted.org/packages/41/3a/c9a0175024f20f0e5210d7e6f2a405f3903690a256a461b68fc37422f06b/splupy2check-1.0.1.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/ea/6b/26c26f681f5b1f45934840440691471fa200f1ccbc8578c21fae359d1fb0/maya_umbrella-0.8.0.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [forbidden]: New version: [10.9] Old Version: [10.8]
+[2024-05-11 12:19:43] INFO root fetch - processPackages [FreeBack]: New version: [4.6.3] Old Version: [4.6.1b0]
+[2024-05-11 12:19:43] INFO root fetch - processPackages [forbidden]: Downloading https://files.pythonhosted.org/packages/2d/df/6c76ede86d494d32862a7456c84390f99721f20dbcb085a367a38a42f3ac/forbidden-10.8.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/62/e0/aa74981b4b1aa7bdef602378198d5fcd25175aed8edb84d1efa29b50c44c/FreeBack-4.6.1b0.tar.gz
+[2024-05-11 12:19:43] ERROR root fetch - processPackages [splupy2check]: Unable to fetch info: No such project/version 'splupy2check' 1.0.2
+[2024-05-11 12:19:43] INFO root fetch - main [MainThread]: End processing [splupy2check] error
+[2024-05-11 12:19:43] INFO root fetch - processPackages [maya-umbrella]: Downloading https://files.pythonhosted.org/packages/ec/b1/f3d7b22945a630095c335f5ac74d05e26b4c5ba425a01e9660d169d29b99/maya_umbrella-0.9.0.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [maya-umbrella]: executing diffoscope
+[2024-05-11 12:19:43] INFO root fetch - processPackages [maya-umbrella]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/maya_umbrella-0.8.0.tar.gz tmp/maya_umbrella-0.9.0.tar.gz --markdown 20240511/m/maya-umbrella/0.8.0-0.9.0/README.md --exclude *.pyd
+[2024-05-11 12:19:43] INFO root fetch - processPackages [forbidden]: Downloading https://files.pythonhosted.org/packages/1f/2a/5c3209a31bc4c77eda57a0a6199f030a6c9332473b7b0e262948b74c9584/forbidden-10.9.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [FreeBack]: Downloading https://files.pythonhosted.org/packages/8b/d3/37dd0dac7ca9d18816db995e166abc641892d8454f50fae14a4d2f4062aa/FreeBack-4.6.3.tar.gz
+[2024-05-11 12:19:43] INFO root fetch - processPackages [forbidden]: executing diffoscope
+[2024-05-11 12:19:43] INFO root fetch - processPackages [forbidden]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/forbidden-10.8.tar.gz tmp/forbidden-10.9.tar.gz --markdown 20240511/f/forbidden/10.8-10.9/README.md --exclude *.pyd
+[2024-05-11 12:19:43] INFO root fetch - processPackages [FreeBack]: executing diffoscope
+[2024-05-11 12:19:43] INFO root fetch - processPackages [FreeBack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeBack-4.6.1b0.tar.gz tmp/FreeBack-4.6.3.tar.gz --markdown 20240511/F/FreeBack/4.6.1b0-4.6.3/README.md --exclude *.pyd
+[2024-05-11 12:19:44] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.8.0.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - processPackages [maya-umbrella]: Remove: archive file [/home/abi/fetcher/tmp/maya_umbrella-0.9.0.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - main [MainThread]: End processing [maya-umbrella]: success
+[2024-05-11 12:19:44] INFO root fetch - processPackages [forbidden]: Remove: archive file [/home/abi/fetcher/tmp/forbidden-10.8.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - processPackages [forbidden]: Remove: archive file [/home/abi/fetcher/tmp/forbidden-10.9.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - main [MainThread]: End processing [forbidden]: success
+[2024-05-11 12:19:44] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.6.1b0.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - processPackages [FreeBack]: Remove: archive file [/home/abi/fetcher/tmp/FreeBack-4.6.3.tar.gz]
+[2024-05-11 12:19:44] INFO root fetch - main [MainThread]: End processing [FreeBack]: success
+[2024-05-11 12:19:44] INFO root fetch - main [MainThread]: Store serial: [23159913]
