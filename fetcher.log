@@ -15689,3 +15689,36 @@
 [2024-05-11 13:47:15] INFO root fetch - processPackages [protestantlyz]: Remove: archive file [/home/abi/fetcher/tmp/protestantlyz-2.1.tar.gz]
 [2024-05-11 13:47:15] INFO root fetch - main [MainThread]: End processing [protestantlyz]: success
 [2024-05-11 13:47:15] INFO root fetch - main [MainThread]: Store serial: [23160685]
+[2024-05-11 13:49:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23160685]
+[2024-05-11 13:49:24] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2024-05-11 13:49:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lprocess
+[2024-05-11 13:49:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyanno4rt
+[2024-05-11 13:49:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nonebot-plugin-kurogames
+[2024-05-11 13:49:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmexio
+[2024-05-11 13:49:24] INFO root fetch - processPackages [lprocess]: New version: [0.0.5] Old Version: [0.0.4]
+[2024-05-11 13:49:24] WARNING root fetch - processPackages [nonebot-plugin-kurogames]: Skipping, unable to determine old version
+[2024-05-11 13:49:24] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-kurogames] error
+[2024-05-11 13:49:24] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/74/1f/dad4fc8145a1b8c6ec69ba82ce1a170fd3c8f40a5ace41c550d7062298e3/lprocess-0.0.4.tar.gz
+[2024-05-11 13:49:24] INFO root fetch - processPackages [pyanno4rt]: New version: [0.14.0] Old Version: [0.13.0]
+[2024-05-11 13:49:24] INFO root fetch - processPackages [tmexio]: New version: [0.1.0] Old Version: [0.0.1]
+[2024-05-11 13:49:24] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/4e/96/cfaad2bb64ec19965130f5ef81a2d929d2319a392cbf5b9856a9023da573/pyanno4rt-0.13.0.tar.gz
+[2024-05-11 13:49:24] INFO root fetch - processPackages [tmexio]: Downloading https://files.pythonhosted.org/packages/74/48/1ea6772ce0bdaef58c672dab6cb56a33304b35d75b09ebf176c81fd6204d/tmexio-0.0.1.tar.gz
+[2024-05-11 13:49:25] INFO root fetch - processPackages [lprocess]: Downloading https://files.pythonhosted.org/packages/d3/b9/5b6bfb0cc555d4a5242733c080481d6e0f09a798f652c9ddf1664a871f06/lprocess-0.0.5.tar.gz
+[2024-05-11 13:49:25] INFO root fetch - processPackages [lprocess]: executing diffoscope
+[2024-05-11 13:49:25] INFO root fetch - processPackages [lprocess]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lprocess-0.0.4.tar.gz tmp/lprocess-0.0.5.tar.gz --markdown 20240511/l/lprocess/0.0.4-0.0.5/README.md --exclude *.pyd
+[2024-05-11 13:49:25] INFO root fetch - processPackages [tmexio]: Downloading https://files.pythonhosted.org/packages/e8/0f/30f788e178ef9e0ed7cbd2faec1cf25a85cd912412b6d4cef468fc1fad9f/tmexio-0.1.0.tar.gz
+[2024-05-11 13:49:25] INFO root fetch - processPackages [pyanno4rt]: Downloading https://files.pythonhosted.org/packages/82/88/97f2ccc6371217e5702e5222ebcb57f043a36626c4501105bf6ae619a590/pyanno4rt-0.14.0.tar.gz
+[2024-05-11 13:49:25] INFO root fetch - processPackages [tmexio]: executing diffoscope
+[2024-05-11 13:49:25] INFO root fetch - processPackages [tmexio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmexio-0.0.1.tar.gz tmp/tmexio-0.1.0.tar.gz --markdown 20240511/t/tmexio/0.0.1-0.1.0/README.md --exclude *.pyd
+[2024-05-11 13:49:25] INFO root fetch - processPackages [pyanno4rt]: executing diffoscope
+[2024-05-11 13:49:25] INFO root fetch - processPackages [pyanno4rt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyanno4rt-0.13.0.tar.gz tmp/pyanno4rt-0.14.0.tar.gz --markdown 20240511/p/pyanno4rt/0.13.0-0.14.0/README.md --exclude *.pyd
+[2024-05-11 13:49:25] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.4.tar.gz]
+[2024-05-11 13:49:25] INFO root fetch - processPackages [lprocess]: Remove: archive file [/home/abi/fetcher/tmp/lprocess-0.0.5.tar.gz]
+[2024-05-11 13:49:25] INFO root fetch - main [MainThread]: End processing [lprocess]: success
+[2024-05-11 13:49:25] INFO root fetch - processPackages [tmexio]: Remove: archive file [/home/abi/fetcher/tmp/tmexio-0.0.1.tar.gz]
+[2024-05-11 13:49:25] INFO root fetch - processPackages [tmexio]: Remove: archive file [/home/abi/fetcher/tmp/tmexio-0.1.0.tar.gz]
+[2024-05-11 13:49:25] INFO root fetch - main [MainThread]: End processing [tmexio]: success
+[2024-05-11 13:49:28] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.13.0.tar.gz]
+[2024-05-11 13:49:28] INFO root fetch - processPackages [pyanno4rt]: Remove: archive file [/home/abi/fetcher/tmp/pyanno4rt-0.14.0.tar.gz]
+[2024-05-11 13:49:28] INFO root fetch - main [MainThread]: End processing [pyanno4rt]: success
+[2024-05-11 13:49:28] INFO root fetch - main [MainThread]: Store serial: [23160697]
