@@ -12461,3 +12461,9 @@
 [2024-05-11 10:15:14] INFO root fetch - processPackages [pyLodStorage]: Remove: archive file [/home/abi/fetcher/tmp/pylodstorage-0.9.2.tar.gz]
 [2024-05-11 10:15:14] INFO root fetch - main [MainThread]: End processing [pyLodStorage]: success
 [2024-05-11 10:15:14] INFO root fetch - main [MainThread]: Store serial: [23158900]
+[2024-05-11 10:17:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23158900]
+[2024-05-11 10:17:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2024-05-11 10:17:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nardz
+[2024-05-11 10:17:23] WARNING root fetch - processPackages [nardz]: Skipping, unable to determine old version
+[2024-05-11 10:17:23] INFO root fetch - main [MainThread]: End processing [nardz] error
+[2024-05-11 10:17:23] INFO root fetch - main [MainThread]: Store serial: [23158905]
