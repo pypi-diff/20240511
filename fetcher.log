@@ -10662,3 +10662,33 @@
 [2024-05-11 07:50:59] INFO root fetch - processPackages [logrich]: Remove: archive file [/home/abi/fetcher/tmp/logrich-1.0.5.tar.gz]
 [2024-05-11 07:51:00] INFO root fetch - main [MainThread]: End processing [logrich]: success
 [2024-05-11 07:51:00] INFO root fetch - main [MainThread]: Store serial: [23157992]
+[2024-05-11 07:53:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [23157992]
+[2024-05-11 07:53:08] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2024-05-11 07:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hgraph
+[2024-05-11 07:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kgdata
+[2024-05-11 07:53:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: noctilucencez
+[2024-05-11 07:53:09] INFO root fetch - processPackages [noctilucencez]: New version: [2.1] Old Version: [1.1]
+[2024-05-11 07:53:09] INFO root fetch - processPackages [hgraph]: New version: [0.2.9] Old Version: [0.2.8]
+[2024-05-11 07:53:09] INFO root fetch - processPackages [kgdata]: New version: [7.0.2] Old Version: [7.0.1]
+[2024-05-11 07:53:09] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/da/ad/e83b1d8661a0e583d3a8e4e301911d6797358607dad40d27057574e75081/hgraph-0.2.8.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [noctilucencez]: Downloading https://files.pythonhosted.org/packages/16/fc/95c02304d4e410a2f256a894e5a8494bb702fe6786ef40152924aee2dac8/noctilucencez-1.1.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [kgdata]: Downloading https://files.pythonhosted.org/packages/24/d7/acfff7774282bebc7af178954f0d9fc25524174f778beb852b6444edd79c/kgdata-7.0.1.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [noctilucencez]: Downloading https://files.pythonhosted.org/packages/10/04/78dd632013ce5512d7b29aed28f34ad141ba2c8bbd97940e9301f64df75a/noctilucencez-2.1.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [hgraph]: Downloading https://files.pythonhosted.org/packages/22/05/43ea3ada7d538f8592b51d36721d624366793ada729a497eaaff2db9b540/hgraph-0.2.9.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [kgdata]: Downloading https://files.pythonhosted.org/packages/88/bf/4a85b457eb21d20634dba085240b8f996646ef7b9e6990d2666d9fd899d8/kgdata-7.0.2.tar.gz
+[2024-05-11 07:53:09] INFO root fetch - processPackages [noctilucencez]: executing diffoscope
+[2024-05-11 07:53:09] INFO root fetch - processPackages [noctilucencez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noctilucencez-1.1.tar.gz tmp/noctilucencez-2.1.tar.gz --markdown 20240511/n/noctilucencez/1.1-2.1/README.md --exclude *.pyd
+[2024-05-11 07:53:09] INFO root fetch - processPackages [hgraph]: executing diffoscope
+[2024-05-11 07:53:09] INFO root fetch - processPackages [hgraph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hgraph-0.2.8.tar.gz tmp/hgraph-0.2.9.tar.gz --markdown 20240511/h/hgraph/0.2.8-0.2.9/README.md --exclude *.pyd
+[2024-05-11 07:53:09] INFO root fetch - processPackages [kgdata]: executing diffoscope
+[2024-05-11 07:53:09] INFO root fetch - processPackages [kgdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20240511:/home/abi/fetcher/20240511:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kgdata-7.0.1.tar.gz tmp/kgdata-7.0.2.tar.gz --markdown 20240511/k/kgdata/7.0.1-7.0.2/README.md --exclude *.pyd
+[2024-05-11 07:53:10] INFO root fetch - processPackages [noctilucencez]: Remove: archive file [/home/abi/fetcher/tmp/noctilucencez-1.1.tar.gz]
+[2024-05-11 07:53:10] INFO root fetch - processPackages [noctilucencez]: Remove: archive file [/home/abi/fetcher/tmp/noctilucencez-2.1.tar.gz]
+[2024-05-11 07:53:10] INFO root fetch - main [MainThread]: End processing [noctilucencez]: success
+[2024-05-11 07:53:10] INFO root fetch - processPackages [kgdata]: Remove: archive file [/home/abi/fetcher/tmp/kgdata-7.0.1.tar.gz]
+[2024-05-11 07:53:10] INFO root fetch - processPackages [kgdata]: Remove: archive file [/home/abi/fetcher/tmp/kgdata-7.0.2.tar.gz]
+[2024-05-11 07:53:10] INFO root fetch - main [MainThread]: End processing [kgdata]: success
+[2024-05-11 07:53:11] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.8.tar.gz]
+[2024-05-11 07:53:11] INFO root fetch - processPackages [hgraph]: Remove: archive file [/home/abi/fetcher/tmp/hgraph-0.2.9.tar.gz]
+[2024-05-11 07:53:11] INFO root fetch - main [MainThread]: End processing [hgraph]: success
+[2024-05-11 07:53:11] INFO root fetch - main [MainThread]: Store serial: [23158016]
